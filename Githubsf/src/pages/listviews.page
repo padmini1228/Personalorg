@@ -1,0 +1,41 @@
+<apex:page controller="ListViewscontroller">
+
+ <script type="text/javascript">
+        function selectAllCheckboxes(obj,receivedInputID){
+            var inputCheckBox = document.getElementsByTagName("input");                  
+            for(var i=0; i<inputCheckBox.length; i++){          
+                if(inputCheckBox[i].id.indexOf(receivedInputID)!=-1){                                     
+                    inputCheckBox[i].checked = obj.checked;
+                }
+            }
+        }
+    </script>
+Available List Views for Account :
+  <apex:form id="pageForm">
+       <apex:selectList value="{!AccFilterId}" size="1" id="filterMenu">
+            <apex:selectOptions value="{!AccountExistingViews}"></apex:selectOptions>
+            <apex:actionSupport event="onchange"  action="{!resetFilter}" rerender="AccntTable" status="ajaxStatus"/>
+       </apex:selectList>
+
+       <apex:actionStatus id="ajaxStatus" startText="Loading..."  stopText=""/>
+
+     <apex:pageBlock title="Accounts">
+        <apex:pageBlockButtons >
+                <apex:commandButton action="{!firstPage}" value="|<<" reRender="AccntTable"  status="ajaxStatus" />
+                <apex:commandButton action="{!prev}" value="<" reRender="AccntTable"  status="ajaxStatus" />
+                <apex:commandButton action="{!next}" value=">" reRender="AccntTable"  status="ajaxStatus" />
+                <apex:commandButton action="{!lastPage}" value=">>|" reRender="AccntTable"  status="ajaxStatus" />
+            </apex:pageBlockButtons>
+
+            <apex:pageBlockTable value="{!wrapAccountList}" var="item" id="AccntTable">
+             <apex:column >
+                        <apex:facet name="header">
+                            <apex:inputCheckbox onclick="selectAllCheckboxes(this,'inputId')"/>
+                        </apex:facet>
+                        <apex:inputCheckbox value="{!item.selected}" id="inputId"/>
+                    </apex:column>
+                <apex:column value="{!item.acc.name}"/>
+            </apex:pageBlockTable>
+     </apex:pageBlock>
+   </apex:form>
+</apex:page>
