@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Person Debts</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Person&apos;s Debts</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>ApplicantDebt__c</name>
+        <relationshipLabel><!-- Person&apos;s Debts (Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Card Repayment 3% --></label>
+        <name>CardRepayment3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cleared before HPP starts? --></label>
+        <name>Cleared_before_HPP_starts__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Date of last payment --></label>
+        <name>Date_of_last_payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lender --></label>
+        <name>Debt_Lender_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- If yes, how much will be repaid? --></label>
+        <name>If_yes_how_much_will_be_repaid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly repayment --></label>
+        <name>Monthly_repayment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outstanding balance --></label>
+        <name>Outstanding_balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner of debt --></label>
+        <name>Owner_of_debt__c</name>
+        <relationshipLabel><!-- Person&apos;s Debts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PaidOffDebt --></label>
+        <name>PaidOffDebt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secured on property? --></label>
+        <name>Secured_on_property__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Start date --></label>
+        <name>Start_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of debt --></label>
+        <name>Type_of_debt__c</name>
+        <picklistValues>
+            <masterLabel>Credit Card</masterLabel>
+            <translation><!-- Credit Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hire purchase</masterLabel>
+            <translation><!-- Hire purchase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan</masterLabel>
+            <translation><!-- Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mail order: account</masterLabel>
+            <translation><!-- Mail order: account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mail order: monthly repayment</masterLabel>
+            <translation><!-- Mail order: monthly repayment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Contract Hire (Car scheme)</masterLabel>
+            <translation><!-- Personal Contract Hire (Car scheme) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Store Card</masterLabel>
+            <translation><!-- Store Card --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Will Dept Be Paid Off --></label>
+        <name>Will_Dept_Be_Paid_Off__c</name>
+    </fields>
+    <fields>
+        <help><!-- Will this debt be fully or partially repaid by this application? --></help>
+        <label><!-- Will this debt be paid off by this app? --></label>
+        <name>Will_this_debt_be_paid_off_by_this_app__c</name>
+    </fields>
+    <layouts>
+        <layout>Person Debts Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

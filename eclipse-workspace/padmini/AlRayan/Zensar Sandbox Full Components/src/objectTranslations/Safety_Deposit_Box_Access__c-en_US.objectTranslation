@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Safe Deposit Box Access</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Safe Deposit Box Accesses</value>
+    </caseValues>
+    <fields>
+        <label><!-- Accessed by --></label>
+        <name>Accessed_by__c</name>
+        <relationshipLabel><!-- Safe Deposit Box Accesses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Charge for access --></label>
+        <name>Charge_for_access__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date and time of access --></label>
+        <name>Date_and_time_of_access__c</name>
+    </fields>
+    <fields>
+        <label><!-- Safe Deposit Box --></label>
+        <name>Safety_Deposit_Box__c</name>
+        <relationshipLabel><!-- Safe Deposit Box Accesses --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Safety Deposit Box Access Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="1" >
+<![CDATA[To whom it may concern,<div><br></div><div>A new accident/near miss has been reported on Salesforce. Please see the details below.&nbsp;</div><div><br></div><div>Link:&nbsp;{!Accident_Near_Miss__c.Link}</div><div>Date reported:&nbsp;{!Accident_Near_Miss__c.Date_reported__c}</div><div>Type of report:&nbsp;{!Accident_Near_Miss__c.Type__c}</div><div>Reported by:&nbsp;{!Accident_Near_Miss__c.User__c}</div><div><br></div>]]></td>
+</tr>
+</table>

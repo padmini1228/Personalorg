@@ -1,0 +1,1111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Branch Observation Form</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Branch Observation Forms</value>
+    </caseValues>
+    <fields>
+        <label><!-- Agree Agenda for Appointment --></label>
+        <name>Agree_Agenda_for_Appointment__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Development</masterLabel>
+            <translation><!-- Major Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor Development</masterLabel>
+            <translation><!-- Minor Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Workstation - Tidy and stocked of stationary --></help>
+        <label><!-- Appearance of Staff and Office --></label>
+        <name>Appearance_of_Staff_and_Office__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Development</masterLabel>
+            <translation><!-- Major Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor Development</masterLabel>
+            <translation><!-- Minor Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Open and approachable for customer to engage. --></help>
+        <label><!-- Appropriate Body Language --></label>
+        <name>Appropriate_Body_Language__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Development</masterLabel>
+            <translation><!-- Major Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor Development</masterLabel>
+            <translation><!-- Minor Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Asked is there anything else I can help you with? --></help>
+        <label><!-- Asked Is There Anything Else? --></label>
+        <name>Asked_ITAEICHYW__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Development</masterLabel>
+            <translation><!-- Major Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor Development</masterLabel>
+            <translation><!-- Minor Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Asked for Referrals --></label>
+        <name>Asked_for_Referrals__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Development</masterLabel>
+            <translation><!-- Major Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor Development</masterLabel>
+            <translation><!-- Minor Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Closure Score --></label>
+        <name>Closure_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments11__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments12__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments13__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments14__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments15__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments16__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments17__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments18__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments19__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments20__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments21__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments22__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments23__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments24__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments25__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments26__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments27__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments28__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments29__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments30__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments31__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments32__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments33__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments34__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments_C10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments_C2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments_C3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments_C4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments_C5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments_C6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments_C7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments_C8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments_C9__c</name>
+    </fields>
+    <fields>
+        <help><!-- Observers overall summary comments of the observation. --></help>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <help><!-- For any products agreed --></help>
+        <label><!-- Compliance Disclosures: FSA/DPA/Sharia --></label>
+        <name>Compliance_Disclosures__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Development</masterLabel>
+            <translation><!-- Major Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor Development</masterLabel>
+            <translation><!-- Minor Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Confirm Customer Details Up to Date --></label>
+        <name>Confirm_Customer_Details_Up_to_Date__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Development</masterLabel>
+            <translation><!-- Major Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor Development</masterLabel>
+            <translation><!-- Minor Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Handles customer and communicates professional. --></help>
+        <label><!-- Courteous &amp; Professional --></label>
+        <name>Courteous_Professional__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Development</masterLabel>
+            <translation><!-- Major Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor Development</masterLabel>
+            <translation><!-- Minor Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sale Score 2 --></label>
+        <name>Cross_Sale_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sale Score --></label>
+        <name>Cross_Sale_Score__c</name>
+    </fields>
+    <fields>
+        <help><!-- Staff processed request correctly on system. --></help>
+        <label><!-- Customer Request Processed Accurately --></label>
+        <name>Customer_Request_Processed_Accurately__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Devleopment</masterLabel>
+            <translation><!-- Major Devleopment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor Development</masterLabel>
+            <translation><!-- Minor Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer&apos;s Name --></label>
+        <name>Customer_s_Name__c</name>
+        <relationshipLabel><!-- Branch Observation Forms --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date and Time of Observation --></label>
+        <name>Date_and_Time_of_Observation__c</name>
+    </fields>
+    <fields>
+        <help><!-- What development has been identified this observation? --></help>
+        <label><!-- Development Areas (Maximum of 3) --></label>
+        <name>Development_Areas_Maximum_of_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Establish Correct Documents for Appt --></label>
+        <name>Establish_Correct_Documents_for_Appt__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Development</masterLabel>
+            <translation><!-- Major Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor Development</masterLabel>
+            <translation><!-- Minor Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Establish OK to talk and Reason for call --></label>
+        <name>Establish_OK_to_talk_and_Reason_for_call__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Development</masterLabel>
+            <translation><!-- Major Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor Development</masterLabel>
+            <translation><!-- Minor Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Noted follow up on SFDC/Outlook/etc if applicable. --></help>
+        <label><!-- Follow up task added to diary --></label>
+        <name>Follow_up_task_added_to_diary__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Development</masterLabel>
+            <translation><!-- Major Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor Development</masterLabel>
+            <translation><!-- Minor Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Shows willingness to help customer with their request. --></help>
+        <label><!-- Friendly and Helpful --></label>
+        <name>Friendly_and_Helpful__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Development</masterLabel>
+            <translation><!-- Major Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor Development</masterLabel>
+            <translation><!-- Minor Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- What does the staff member actually need to be? --></help>
+        <label><!-- GOAL - Aims and vision (SMART)? --></label>
+        <name>GOAL_Aims_and_vision_SMART__c</name>
+    </fields>
+    <fields>
+        <help><!-- Customer appropriately greeted and staff member introduced self where applicable. --></help>
+        <label><!-- Greeting --></label>
+        <name>Greeting__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Development</masterLabel>
+            <translation><!-- Major Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor Development</masterLabel>
+            <translation><!-- Minor Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Staff member explored, through open/closed questioning, customers potential wider needs. --></help>
+        <label><!-- Identified Needs --></label>
+        <name>Identified_Needs__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Development</masterLabel>
+            <translation><!-- Major Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor Development</masterLabel>
+            <translation><!-- Minor Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Inital Query Score 2 --></label>
+        <name>Inital_Query_Score_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial Query Score Total --></label>
+        <name>Initial_Query_Score_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial Query Score --></label>
+        <name>Initial_Query_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Introduction Score 2 --></label>
+        <name>Introduction2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Introduction Score Total --></label>
+        <name>Introduction_Score_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Introduction Score --></label>
+        <name>Introduction_Score__c</name>
+    </fields>
+    <fields>
+        <help><!-- All applicable leaflets handed over e.g. Customer care, Product leaflets, Charges, etc --></help>
+        <label><!-- Leaflets &amp; Cards handed to customer --></label>
+        <name>Leaflets_Cards_handed_to_customer__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Development</masterLabel>
+            <translation><!-- Major Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor Development</masterLabel>
+            <translation><!-- Minor Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+        <picklistValues>
+            <masterLabel>East Ham</masterLabel>
+            <translation><!-- East Ham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edgware Road</masterLabel>
+            <translation><!-- Edgware Road --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leicester</masterLabel>
+            <translation><!-- Leicester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manchester</masterLabel>
+            <translation><!-- Manchester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Off site.</masterLabel>
+            <translation><!-- Off site. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier Banking</masterLabel>
+            <translation><!-- Premier Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Heath</masterLabel>
+            <translation><!-- Small Heath --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southall</masterLabel>
+            <translation><!-- Southall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Whitechapel</masterLabel>
+            <translation><!-- Whitechapel --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MOS Confirmed Customer Request --></label>
+        <name>MOS_Confirmed_Customer_Request__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Development</masterLabel>
+            <translation><!-- Major Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor Development</masterLabel>
+            <translation><!-- Minor Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Manager&apos;s Signature --></label>
+        <name>Manager_s_Signature__c</name>
+        <relationshipLabel><!-- Branch Observation Forms (Manager&apos;s Signature) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- How can the staff member achieve the goal? What opportunities can they explore? --></help>
+        <label><!-- OPTIONS - What’s possible? --></label>
+        <name>OPTIONS_What_s_possible__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person Undertaking Observation --></label>
+        <name>Observee_s_Line_Manager__c</name>
+        <relationshipLabel><!-- Branch Observation Forms (Person Undertaking Observation) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Overall Rating --></label>
+        <name>Overall_Rating__c</name>
+        <picklistValues>
+            <masterLabel>Developing(Major) : Some important areas need extra work</masterLabel>
+            <translation><!-- Developing(Major) : Some important areas need extra work --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Developing(Minor): Generally good: minor development points.</masterLabel>
+            <translation><!-- Developing(Minor): Generally good: minor development points. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fail: Below an acceptable standard.</masterLabel>
+            <translation><!-- Fail: Below an acceptable standard. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass: High standard throughout</masterLabel>
+            <translation><!-- Pass: High standard throughout --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Staff completed related documentation correctly. --></help>
+        <label><!-- Paperwork Completed Compliantly --></label>
+        <name>Paperwork_Completed_Compliantly__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Development</masterLabel>
+            <translation><!-- Major Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor Development</masterLabel>
+            <translation><!-- Minor Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Total points available to use to calculate the % are:
+Calls = 124 
+Enquiries = 120
+Meetings = 132 --></help>
+        <label><!-- Percentage Scored --></label>
+        <name>Percentage_Scored__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person File --></label>
+        <name>Person_File__c</name>
+        <relationshipLabel><!-- Branch Observation Forms --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- What development was raised from last observation? --></help>
+        <label><!-- Previous Development --></label>
+        <name>Previous_Development__c</name>
+    </fields>
+    <fields>
+        <help><!-- Staff was aware how to process customer request --></help>
+        <label><!-- Process System Knowledge --></label>
+        <name>Process_System_Knowledge__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Development</masterLabel>
+            <translation><!-- Major Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor Development</masterLabel>
+            <translation><!-- Minor Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Processed Customer Request Accurately --></label>
+        <name>Processed_Customer_Request_Accurately__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Development</masterLabel>
+            <translation><!-- Major Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor Development</masterLabel>
+            <translation><!-- Minor Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Staff had sufficient knowledge of the product discussed. --></help>
+        <label><!-- Product Knowledge --></label>
+        <name>Product_Knowledge__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Development</masterLabel>
+            <translation><!-- Major Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor Development</masterLabel>
+            <translation><!-- Minor Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Pitched for products and service matching Features/benefits to customer needs. --></help>
+        <label><!-- Proposed Prod &amp; Related benefits to need --></label>
+        <name>Proposed_Products__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Development</masterLabel>
+            <translation><!-- Major Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor Development</masterLabel>
+            <translation><!-- Minor Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Able to answer all customers questions accurately and confidently. --></help>
+        <label><!-- Provide Confident &amp; Accurate Answers --></label>
+        <name>Provide__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Development</masterLabel>
+            <translation><!-- Major Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor Development</masterLabel>
+            <translation><!-- Minor Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Where is the staff member at present? Actual performance at present? --></help>
+        <label><!-- REALITY - Current PTT/obs? --></label>
+        <name>REALITY_Current_PTT_obs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rapport Building Score --></label>
+        <name>Rapport_Building_Score__c</name>
+    </fields>
+    <fields>
+        <help><!-- Was a referral gained or competently requested for? --></help>
+        <label><!-- Referral Won? --></label>
+        <name>Referral_Won__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Development</masterLabel>
+            <translation><!-- Major Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor Development</masterLabel>
+            <translation><!-- Minor Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>Role__c</name>
+        <picklistValues>
+            <masterLabel>Branch Customer Advisor</masterLabel>
+            <translation><!-- Branch Customer Advisor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Branch Manager</masterLabel>
+            <translation><!-- Branch Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cashier</masterLabel>
+            <translation><!-- Cashier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deputy Branch Manager</masterLabel>
+            <translation><!-- Deputy Branch Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier banking</masterLabel>
+            <translation><!-- Premier banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales and Service Advisor</masterLabel>
+            <translation><!-- Sales and Service Advisor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SMART Banking Options Explained --></label>
+        <name>SMART_Banking_Options_Explained__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Development</masterLabel>
+            <translation><!-- Major Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor Development</masterLabel>
+            <translation><!-- Minor Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Was a sale concluded or competently attempted to be concluded? --></help>
+        <label><!-- Sale Completed? --></label>
+        <name>Sale_Completed__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Development</masterLabel>
+            <translation><!-- Major Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor Development</masterLabel>
+            <translation><!-- Minor Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sales Score Total --></label>
+        <name>Sales_Score_Total__c</name>
+    </fields>
+    <fields>
+        <help><!-- Has the staff member completed all the necessary details on Salesforce? --></help>
+        <label><!-- Salesforce Updated --></label>
+        <name>Salesforce_Updated__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Development</masterLabel>
+            <translation><!-- Major Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor Development</masterLabel>
+            <translation><!-- Minor Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Via EBA for existing customers or KYC/KYB docs for new. --></help>
+        <label><!-- Security ID &amp; V Completed --></label>
+        <name>Security_ID_V_Completed__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Development</masterLabel>
+            <translation><!-- Major Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor Development</masterLabel>
+            <translation><!-- Minor Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Staff member summarized what has been done for them and what will happen next with SLA&apos;s of Cards, PIB, etc. --></help>
+        <label><!-- Staff Member Summarised --></label>
+        <name>Staff_Member_Summarised__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Development</masterLabel>
+            <translation><!-- Major Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor Development</masterLabel>
+            <translation><!-- Minor Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Staff Member&apos;s Name --></label>
+        <name>Staff_Member_s_Name__c</name>
+        <relationshipLabel><!-- Branch Observation Forms (Staff Member&apos;s Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Staff Signature --></label>
+        <name>Staff_Signature__c</name>
+        <relationshipLabel><!-- Branch Observation Forms (Staff Signature) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- What is the specific area of improvement? --></help>
+        <label><!-- TOPIC - Area of improvement? --></label>
+        <name>TOPIC_Area_of_improvement__c</name>
+    </fields>
+    <fields>
+        <label><!-- T&amp;Cs Explained including Sharia --></label>
+        <name>T_Cs__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Development</masterLabel>
+            <translation><!-- Major Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor Development</masterLabel>
+            <translation><!-- Minor Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- T&amp;Cs explained for cross sales --></label>
+        <name>T_Cs_explained_cross_sale__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Development</masterLabel>
+            <translation><!-- Major Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor Development</masterLabel>
+            <translation><!-- Minor Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Speaks clearly, at appropriate pace, pitch varied to emphasize importance where applicable. --></help>
+        <label><!-- Tone, Pace &amp; Clarity --></label>
+        <name>Tone_Pace_Clarity__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Development</masterLabel>
+            <translation><!-- Major Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor Development</masterLabel>
+            <translation><!-- Minor Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Points Scored --></label>
+        <name>Total_Points_Scored_del__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Observation --></label>
+        <name>Type_of_Observation__c</name>
+        <picklistValues>
+            <masterLabel>Call</masterLabel>
+            <translation><!-- Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enquiry</masterLabel>
+            <translation><!-- Enquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting</masterLabel>
+            <translation><!-- Meeting --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- What specific actions/activities will they do? When? --></help>
+        <label><!-- WILL - Commitment(s) agreed to? --></label>
+        <name>WILL_Commitment_s_agreed_to__c</name>
+    </fields>
+    <layouts>
+        <layout>Branch Observation Form Layout</layout>
+        <sections>
+            <label><!-- Closure --></label>
+            <section>Closure</section>
+        </sections>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Initial Query --></label>
+            <section>Initial Query</section>
+        </sections>
+        <sections>
+            <label><!-- Introduction --></label>
+            <section>Introduction</section>
+        </sections>
+        <sections>
+            <label><!-- Learning and Development --></label>
+            <section>Learning and Development</section>
+        </sections>
+        <sections>
+            <label><!-- Observation Coaching Record --></label>
+            <section>Observation Coaching Record</section>
+        </sections>
+        <sections>
+            <label><!-- Rapport Building --></label>
+            <section>Rapport Building</section>
+        </sections>
+        <sections>
+            <label><!-- Sale --></label>
+            <section>Sale</section>
+        </sections>
+        <sections>
+            <label><!-- Staff Information --></label>
+            <section>Staff Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

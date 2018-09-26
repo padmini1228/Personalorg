@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- AIP Allowed? --></label>
+        <name>AIP_Allowed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- BDM Manager --></label>
+        <name>BDM_Manager__c</name>
+        <picklistValues>
+            <masterLabel>Jim Madden</masterLabel>
+            <translation><!-- Jim Madden --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Simon Walker</masterLabel>
+            <translation><!-- Simon Walker --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Branch --></label>
+        <name>Branch__c</name>
+        <picklistValues>
+            <masterLabel>DEWSBURY</masterLabel>
+            <translation><!-- DEWSBURY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edgware Road</masterLabel>
+            <translation><!-- Edgware Road --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GLASGOW</masterLabel>
+            <translation><!-- GLASGOW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Head Office Birmingham</masterLabel>
+            <translation><!-- Head Office Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Knightsbridge</masterLabel>
+            <translation><!-- Knightsbridge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LUTON</masterLabel>
+            <translation><!-- LUTON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leicester</masterLabel>
+            <translation><!-- Leicester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manchester</masterLabel>
+            <translation><!-- Manchester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On-line</masterLabel>
+            <translation><!-- On-line --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Heath</masterLabel>
+            <translation><!-- Small Heath --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TOOTING</masterLabel>
+            <translation><!-- TOOTING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UIFM Internet Connec</masterLabel>
+            <translation><!-- UIFM Internet Connec --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Whitechapel</masterLabel>
+            <translation><!-- Whitechapel --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Call Centre Team Leader --></label>
+        <name>Call_Centre_Team_Leader__c</name>
+        <picklistValues>
+            <masterLabel>David</masterLabel>
+            <translation><!-- David --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mark</masterLabel>
+            <translation><!-- Mark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reena</masterLabel>
+            <translation><!-- Reena --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sajjad</masterLabel>
+            <translation><!-- Sajjad --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IGNORE --></label>
+        <name>Default_Branch__c</name>
+        <picklistValues>
+            <masterLabel>Alum Rock</masterLabel>
+            <translation><!-- Alum Rock --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coventry Road - Birmingham</masterLabel>
+            <translation><!-- Coventry Road - Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>East Ham London</masterLabel>
+            <translation><!-- East Ham London --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edgware Road - London</masterLabel>
+            <translation><!-- Edgware Road - London --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Head Office Birmingham</masterLabel>
+            <translation><!-- Head Office Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>London Road - Leicester</masterLabel>
+            <translation><!-- London Road - Leicester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manchester</masterLabel>
+            <translation><!-- Manchester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier</masterLabel>
+            <translation><!-- Premier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Clients Division</masterLabel>
+            <translation><!-- Private Clients Division --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southall - London</masterLabel>
+            <translation><!-- Southall - London --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Whitechapel - London</masterLabel>
+            <translation><!-- Whitechapel - London --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- EBSUserId --></label>
+        <name>EBSUserId__c</name>
+    </fields>
+    <fields>
+        <label><!-- EBS Username --></label>
+        <name>EBS_Username__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPPAuthorityLevel --></label>
+        <name>HPPAuthorityLevel__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IBB Autonum --></label>
+        <name>IBB_Autonum__c</name>
+    </fields>
+    <fields>
+        <label><!-- IBB Contact Name --></label>
+        <name>IBB_Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- IBB Division --></label>
+        <name>IBB_Division__c</name>
+        <picklistValues>
+            <masterLabel>Back Office</masterLabel>
+            <translation><!-- Back Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Branch</masterLabel>
+            <translation><!-- Branch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call Centre</masterLabel>
+            <translation><!-- Call Centre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operations</masterLabel>
+            <translation><!-- Operations --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IBB Employee Number --></label>
+        <name>IBB_Employee_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- KPIMGR Business Area --></label>
+        <name>KPIMGR_Business_Area__c</name>
+        <picklistValues>
+            <masterLabel>Contact Centre</masterLabel>
+            <translation><!-- Contact Centre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IBB</masterLabel>
+            <translation><!-- IBB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sajjad&apos;s team</masterLabel>
+            <translation><!-- Sajjad&apos;s team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation><!-- Sales --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Limit of authority --></label>
+        <name>Limit_of_authority__c</name>
+        <picklistValues>
+            <masterLabel>Board Risk Credit Committee</masterLabel>
+            <translation><!-- Board Risk Credit Committee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Committee</masterLabel>
+            <translation><!-- Credit Committee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Head of Credit</masterLabel>
+            <translation><!-- Head of Credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Underwriter</masterLabel>
+            <translation><!-- Lead Underwriter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Managing Director</masterLabel>
+            <translation><!-- Managing Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Underwriter</masterLabel>
+            <translation><!-- Senior Underwriter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Underwriter</masterLabel>
+            <translation><!-- Underwriter --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+        <picklistValues>
+            <masterLabel>Call Centre</masterLabel>
+            <translation><!-- Call Centre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edgware Road</masterLabel>
+            <translation><!-- Edgware Road --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP Sales</masterLabel>
+            <translation><!-- HPP Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Head Office</masterLabel>
+            <translation><!-- Head Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Knightsbridge Branch</masterLabel>
+            <translation><!-- Knightsbridge Branch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leicester</masterLabel>
+            <translation><!-- Leicester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manchester</masterLabel>
+            <translation><!-- Manchester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier</masterLabel>
+            <translation><!-- Premier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Heath</masterLabel>
+            <translation><!-- Small Heath --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Whitechapel</masterLabel>
+            <translation><!-- Whitechapel --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location of Lead Provider --></label>
+        <name>Location_of_Lead_Provider__c</name>
+        <picklistValues>
+            <masterLabel>Community BDM (North)</masterLabel>
+            <translation><!-- Community BDM (North) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community BDM (South)</masterLabel>
+            <translation><!-- Community BDM (South) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edgware Road (1201)</masterLabel>
+            <translation><!-- Edgware Road (1201) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Head Office Birmingham (1100)</masterLabel>
+            <translation><!-- Head Office Birmingham (1100) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Knightsbridge Branch (1212)</masterLabel>
+            <translation><!-- Knightsbridge Branch (1212) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leicester (1120)</masterLabel>
+            <translation><!-- Leicester (1120) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manchester (1301)</masterLabel>
+            <translation><!-- Manchester (1301) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier Banking</masterLabel>
+            <translation><!-- Premier Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Heath (1101)</masterLabel>
+            <translation><!-- Small Heath (1101) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Whitechapel (1210)</masterLabel>
+            <translation><!-- Whitechapel (1210) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Most Recent Call Event Timestamp --></label>
+        <name>NVMContactWorld__MostRecentCallEventTimestamp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Most Recent Call Is Active --></label>
+        <name>NVMContactWorld__MostRecentCallIsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Most Recent Call --></label>
+        <name>NVMContactWorld__MostRecentCall__c</name>
+    </fields>
+    <fields>
+        <help><!-- NVM Agent Id for Contact World for Salesforce. This should be set to the correct NVM Agent Id to make sure that call tasks are assigned to the correct Salesforce user. --></help>
+        <label><!-- NVM Agent Id --></label>
+        <name>NVMContactWorld__NVM_Agent_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Click to dial Cell Phone --></help>
+        <label><!-- NVM Cell --></label>
+        <name>NVMContactWorld__NVM_Cell__c</name>
+    </fields>
+    <fields>
+        <help><!-- Click to dial Extension Phone --></help>
+        <label><!-- NVM Extension --></label>
+        <name>NVMContactWorld__NVM_Extension__c</name>
+    </fields>
+    <fields>
+        <help><!-- Click to dial Phone --></help>
+        <label><!-- NVM Phone --></label>
+        <name>NVMContactWorld__NVM_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Selected --></label>
+        <name>Risk__Selected__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select a role which which be used on the HPP letters. If this is left blank, the letters will use the normal Salesforce role. --></help>
+        <label><!-- Role to appear on HPP letters --></label>
+        <name>Role_to_appear_on_HPP_letters__c</name>
+        <picklistValues>
+            <masterLabel>Agency Manager</masterLabel>
+            <translation><!-- Agency Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP Sales Support</masterLabel>
+            <translation><!-- HPP Sales Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP Specialist</masterLabel>
+            <translation><!-- HPP Specialist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intermediary Specialist</masterLabel>
+            <translation><!-- Intermediary Specialist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Sales Manager</masterLabel>
+            <translation><!-- Senior Sales Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Sales and Service</masterLabel>
+            <translation><!-- Senior Sales and Service --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Salesforce Org Username --></label>
+        <name>Salesforce_Org_Username__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sellers delegated approver email --></label>
+        <name>Sellers_delegated_approver_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special condition team --></label>
+        <name>Special_condition_team__c</name>
+        <picklistValues>
+            <masterLabel>Reat</masterLabel>
+            <translation><!-- Reat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Underwriting</masterLabel>
+            <translation><!-- Underwriting --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Target: HPP: Leads --></label>
+        <name>Target_HPP_Leads__c</name>
+    </fields>
+    <fields>
+        <label><!-- TellerBranch --></label>
+        <name>TellerBranch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Teller Branch Number --></label>
+        <name>Teller_Branch_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Teller Group --></label>
+        <name>Teller_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Marketing Cloud Page --></label>
+        <name>et4ae5__Default_ET_Page__c</name>
+    </fields>
+    <fields>
+        <label><!-- @deprecated --></label>
+        <name>et4ae5__Default_MID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Cloud for AppExchange Admin --></label>
+        <name>et4ae5__ExactTargetForAppExchangeAdmin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Cloud for AppExchange User --></label>
+        <name>et4ae5__ExactTargetForAppExchangeUser__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Cloud Username --></label>
+        <name>et4ae5__ExactTargetUsername__c</name>
+    </fields>
+    <fields>
+        <label><!-- @deprecated --></label>
+        <name>et4ae5__ExactTarget_OAuth_Token__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valid Marketing Cloud Admin --></label>
+        <name>et4ae5__ValidExactTargetAdmin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valid Marketing Cloud User --></label>
+        <name>et4ae5__ValidExactTargetUser__c</name>
+    </fields>
+    <layouts>
+        <layout>External User</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>User Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- HPP CAA --></label>
+            <section>HPP CAA</section>
+        </sections>
+        <sections>
+            <label><!-- NVM --></label>
+            <section>NVM</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- You must specify the department this user works in. --></errorMessage>
+        <name>Department_is_required</name>
+    </validationRules>
+</CustomObjectTranslation>

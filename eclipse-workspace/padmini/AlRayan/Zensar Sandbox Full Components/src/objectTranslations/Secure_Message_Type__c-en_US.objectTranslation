@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Secure Message Type</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Secure Message Types</value>
+    </caseValues>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>Account admin</masterLabel>
+            <translation><!-- Account admin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account maintenance</masterLabel>
+            <translation><!-- Account maintenance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complaint</masterLabel>
+            <translation><!-- Complaint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General enquiries</masterLabel>
+            <translation><!-- General enquiries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISA</masterLabel>
+            <translation><!-- ISA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Report a problem</masterLabel>
+            <translation><!-- Report a problem --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Queue Name --></label>
+        <name>Queue_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Account Box --></label>
+        <name>Show_Account_Box__c</name>
+    </fields>
+    <fields>
+        <label><!-- SubCategory --></label>
+        <name>SubCategory__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

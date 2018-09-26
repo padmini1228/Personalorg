@@ -1,0 +1,45 @@
+<apex:page standardController="grc__Incident__c" sidebar="false" showHeader="false" extensions="Risk.LogIncident" tabstyle="grc__Incident__c">
+<div style="padding:20px;">
+<img src="https://c.na7.content.force.com/servlet/servlet.ImageServer?id=015A00000010UKI&oid=00DA00000009EXC&lastMod=1315835084000"/>
+</div>
+<div style="width:100%; border-bottom: 1px solid #bbb">&nbsp;</div>
+<div style="text-align:center; ">
+<div style="padding:30px;background:#94B9D1;"><font size="5" face="Verdana" color="#fff">Welcome to the Incident Portal</font></div>
+<div style="height:20px">&nbsp;</div>
+<div style="width:20%; float:left;">&nbsp;</div>
+<div style="width:60%; float:left">
+
+    <p style="text-align:left"><font size="2" face="Verdana" color="">Please use the form below to log any incident that you feel should be brought to the attention of the Risk Management Team.</font></p>
+    <p style="text-align:left"><font size="2" face="Verdana" color="">Full instructions and Terms and Conditions can be found <a href="#">here</a>. Please read these before submitting your incident. If in doubt please contact your line manager.</font></p>
+<apex:form >
+
+    <apex:pageblock rendered="{!!Submitted}">
+
+        <apex:pageblockSection columns="1" title="Incident Information" collapsible="false">
+            <apex:inputField value="{!me.grc__Title__c}" required="true"/>
+            <apex:inputField value="{!me.grc__Originator__c}" required="true"/>
+
+            <apex:inputField value="{!me.grc__Incident_Category__c}" required="true" />
+            <apex:inputField value="{!me.grc__Severity__c}" required="true" />
+
+            <apex:inputField value="{!me.grc__Issue_Date__c}" required="true"/>
+        </apex:pageblockSection>
+        <apex:pageBlockSection title="Full Description" collapsible="false">
+            <apex:inputField value="{!me.grc__Description__c}" style="width:500px; height:250px" required="true"/>
+        </apex:pageBlockSection>
+        <apex:commandButton value="Save" action="{!Save}"/>
+    </apex:pageblock>
+    <apex:pageblock rendered="{!Submitted}">
+        <h1>Thank you for your incident. It has been logged within the RM system for appraisal by a manager.</h1>
+        <p>Click&nbsp;<apex:outputLink value="{!$Page.Risk__LogIncident}">here</apex:outputLink> to log another incident.</p>
+    </apex:pageblock>
+</apex:form>
+
+<p style="text-align:left"><font size="2" face="Verdana" color="">In case of problems please email the Risk Management Administrators <a href="mailto:">here</a>.</font></p>
+<p style="text-align:left; background:#94B9D1;"><font size="2" face="Verdana" color="#fff">Intranet > Risk Management > Incident Portal > Log Incident</font></p>
+User: Andy Evans &nbsp;&nbsp;&nbsp;&nbsp;Last Login: 14/07/2009<br/><br/>
+<a href="mailto:">Contact System Admin here</a>
+
+</div>
+</div>
+</apex:page>

@@ -1,0 +1,1462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>HPP T&amp;C Observation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>HPP T&amp;C Observation</value>
+    </caseValues>
+    <fields>
+        <label><!-- AIP Date &amp; Time of call --></label>
+        <name>AIP_Date_Time_of_call__c</name>
+    </fields>
+    <fields>
+        <help><!-- AIP in two parts - Eligibility/ Personal Finance info --></help>
+        <label><!-- AIP - Eligibility/ Personal Finance info --></label>
+        <name>AIP_Eligibility_Personal_Finance_info__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the Customers AIP number --></help>
+        <label><!-- AIP Reference Number --></label>
+        <name>AIP_Reference_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Generates AIP decision - show understanding where the request is declined or confirm the customer is happy to proceed to application if appropriate. --></help>
+        <label><!-- AIP decision - show understanding --></label>
+        <name>AIP_decision_show_understanding__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Confirm affordability with customer --></help>
+        <label><!-- Affordability --></label>
+        <name>Affordability__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Agree with the customer that e-mail notification is acceptable (If appropriate) --></help>
+        <label><!-- Agree E-mail notification  If applicable --></label>
+        <name>Agree_E_mail_notification_If_applicable__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Has all the relevant information for the HPP Application been recorded? --></help>
+        <label><!-- All relevant information recorded --></label>
+        <name>All_relevant_information_recorded__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If there are any questions on the product please do not hesitate to contact me? --></help>
+        <label><!-- Any questions on product please contact --></label>
+        <name>Any_questions_on_product_please_contact__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With learning points</masterLabel>
+            <translation><!-- Yes - With learning points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please enter the date and time of the application call observed (if applicable) --></help>
+        <label><!-- Application Date &amp; time of call --></label>
+        <name>Application_Date_time_of_call__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the HPp Application reference number --></help>
+        <label><!-- Application Reference Number --></label>
+        <name>Application_Reference_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Print off application form and confirm with the customer that this will be posted to them to sign and return along with any other documentation required for the Application e.g. bank Statements, Passport etc. --></help>
+        <label><!-- Application form Posted --></label>
+        <name>Application_form_Posted__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Confirmation that the HPP Application form has been completed correctly from the information supplied by the customer --></help>
+        <label><!-- Application form completed correctly --></label>
+        <name>Application_form_completed_correctly__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Ask all qualifying questions --></help>
+        <label><!-- Ask all qualifying questions --></label>
+        <name>Ask_all_qualifying_questions__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the seller fully explain the benefits of the product to the customer? --></help>
+        <label><!-- Benefits fully explained? --></label>
+        <name>Benefits_fully_explained__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the seller personalise the close of the interview and go through contact details for any questions throughout the application process.  Customer to confirm that business card is held? --></help>
+        <label><!-- Business Card/Personalise Sale --></label>
+        <name>Business_Card_Personalise_Sale__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the seller clearly explain that the call would be recorded for training and monitoring purposes --></help>
+        <label><!-- Call Recorded Disclaimer --></label>
+        <name>Call_Recorded_Disclaimer__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Appropriate greeting, including that call will be monitored &amp; recorded:  Interview elements/time discussed: ok to proceed? --></help>
+        <label><!-- Call Greeting &amp; Call Monitored --></label>
+        <name>Call_greeting__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the seller sound clear and confident during the call with the customer? --></help>
+        <label><!-- Clear and confident on the call? --></label>
+        <name>Clear_and_confident_on_the_call__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Closing wording, explain the next steps i.e.credit search, underwriting, survey, offer and completion --></help>
+        <label><!-- Closing wording --></label>
+        <name>Closing_wording__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Comments1 --></label>
+        <name>Comments1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments2 --></label>
+        <name>Comments2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 10 --></label>
+        <name>Comments_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 11 --></label>
+        <name>Comments_11__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 12 --></label>
+        <name>Comments_12__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 13 --></label>
+        <name>Comments_13__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 14 --></label>
+        <name>Comments_14__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 15 --></label>
+        <name>Comments_15__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 16 --></label>
+        <name>Comments_16__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 17 --></label>
+        <name>Comments_17__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 18 --></label>
+        <name>Comments_18__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 19 --></label>
+        <name>Comments_19__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 20 --></label>
+        <name>Comments_20__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 21 --></label>
+        <name>Comments_21__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 22 --></label>
+        <name>Comments_22__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 23 --></label>
+        <name>Comments_23__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 24 --></label>
+        <name>Comments_24__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 25 --></label>
+        <name>Comments_25__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 26 --></label>
+        <name>Comments_26__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 27 --></label>
+        <name>Comments_27__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 28 --></label>
+        <name>Comments_28__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 29 --></label>
+        <name>Comments_29__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 30 --></label>
+        <name>Comments_30__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 31 --></label>
+        <name>Comments_31__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 32 --></label>
+        <name>Comments_32__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 33 --></label>
+        <name>Comments_33__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 34 --></label>
+        <name>Comments_34__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 35 --></label>
+        <name>Comments_35__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 37 --></label>
+        <name>Comments_37__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 3 --></label>
+        <name>Comments_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 4 --></label>
+        <name>Comments_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 50 --></label>
+        <name>Comments_50__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 51 --></label>
+        <name>Comments_51__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 52 --></label>
+        <name>Comments_52__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 5 --></label>
+        <name>Comments_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 6 --></label>
+        <name>Comments_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 7 --></label>
+        <name>Comments_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 8 --></label>
+        <name>Comments_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments 9 --></label>
+        <name>Comments_9__c</name>
+    </fields>
+    <fields>
+        <label><!-- Copmments 36 --></label>
+        <name>Copmments_36__c</name>
+    </fields>
+    <fields>
+        <help><!-- Stress to the customer that this agreement is subject to credit scoring and further underwriting --></help>
+        <label><!-- Credit Scoring/Further undewriting --></label>
+        <name>Credit_Scoring_Further_undewriting__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Seller establishes if the customer meets the criteria for the HPP product --></help>
+        <label><!-- Criteria Met? --></label>
+        <name>Criteria_Met__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Check Customer understanding of the Inituial Disclosure Document --></help>
+        <label><!-- Customer Understanding - IDD --></label>
+        <name>Customer_Understanding_IDD__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- HPP Applicant name --></label>
+        <name>Customer_name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Clarified customer understanding by use of examples - Risks &amp; features document --></help>
+        <label><!-- Customer understanding Risk &amp; Features --></label>
+        <name>Customer_understanding_Risk_Features__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the seller ask the customer for any potential referral business? --></help>
+        <label><!-- Did the seller ask for referral business --></label>
+        <name>Did_the_seller_ask_for_referral_business__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the seller close the sales correctly? --></help>
+        <label><!-- Did the seller close the sale? --></label>
+        <name>Did_the_seller_close_the_sale__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the seller interrupt the customer of talk over them during the call? --></help>
+        <label><!-- Did the seller interrupt or talk over? --></label>
+        <name>Did_the_seller_interrupt_or_talk_over__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the seller overcome any of the customers objections? --></help>
+        <label><!-- Did the seller overcome any objections? --></label>
+        <name>Did_the_seller_overcome_any_objections__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the seller overcome the customers objections? --></help>
+        <label><!-- Did the seller overcome objections? --></label>
+        <name>Did_the_seller_overcome_objections__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the Seller explain the documentation requirements correctly to the customer? --></help>
+        <label><!-- Documentation requirements explained? --></label>
+        <name>Documentation_requirements_explained__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Ensure that the IDD, risks and features, proof of ID/address (KYC) &amp; tarfiif checklists and HPP information booklet prepared --></help>
+        <label><!-- Ensure IDD R &amp; F IS etc. --></label>
+        <name>Ensure_IDD_R_F_IS_etc__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Seller explains concept of Ijara &amp; Diminishing Musharaka, rental and acquisition payment --></help>
+        <label><!-- Explain Ijara &amp; Diminishing Musharaka --></label>
+        <name>Explain_Ijara_Diminishing_Musharaka__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Seller explains use of Base rate and how rental (Occupancy)is calculated --></help>
+        <label><!-- Explain Use of Base rate and rental --></label>
+        <name>Explain_Use_of_Base_rate_and_rental__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the seller explain clearly to the customer how the product works? --></help>
+        <label><!-- Explained how the Product works? --></label>
+        <name>Explained_how_the_Product_works__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Explains need for Buiildings Insurance --></help>
+        <label><!-- Explains Buildings Insurance --></label>
+        <name>Explains_Buildings_Insurance__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Explains Product /rate Options Standard/Fixed Has the seller discussed whether the deposit can be increased? --></help>
+        <label><!-- Explains Product Options Standard/Fixed --></label>
+        <name>Explains_Product_Options_Standard_Fixed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Explains the administration fee, valuation fee applicable, SDLT, legal fees (Bank &amp; Customers), CHAPS using reference to the current Tariff list --></help>
+        <label><!-- Explains fees from Tariff List --></label>
+        <name>Explains_fees_from_Tariff_List__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the seller clearly explain the Sharia aspect of the the product to the customer and the difference between conventional mortgages? --></help>
+        <label><!-- Explanation- products Sharia compliance? --></label>
+        <name>Explanation_of_products_Sharia_complianc__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Customer gives explicit consent to hold data --></help>
+        <label><!-- Explicit Consent to hold Data --></label>
+        <name>Explicit_Consent_to_hold_Data__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Was the seller friendly, polite and welcoming during the call? --></help>
+        <label><!-- Friendly, Polite and welcoming? --></label>
+        <name>Friendly_Polite_and_welcoming__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Was the whole HPP/BTL process explained correctly? --></help>
+        <label><!-- HPP/BTL Process explained correctly? --></label>
+        <name>HPP_BTL_Process_explained_correctly__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please select the opportunity that is linked to this record --></help>
+        <label><!-- HPP Opportunity Name --></label>
+        <name>HPP_Customer_Name__c</name>
+        <relationshipLabel><!-- HPP T&amp;C Observation --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- HPP Observation Number --></label>
+        <name>HPP_Observation_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Seller name --></label>
+        <name>HPP_Seller_name__c</name>
+        <relationshipLabel><!-- HPP T&amp;C Observation --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- HPP Sharia Compliant --></label>
+        <name>HPP_Sharia_Compliant__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With learning points</masterLabel>
+            <translation><!-- Yes - With learning points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the seller identify all sales opportunities? --></help>
+        <label><!-- Identify all sales opportunities? --></label>
+        <name>Identify_all_sales_opportunities__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the Seller identify all sales opportunities on the call i.e.cross sales for LTS/savings etc --></help>
+        <label><!-- Identify all selling opportunities --></label>
+        <name>Identify_all_selling_opportunities__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- HPP Website, complete calculator and inform customer of outcomes - indicative quote only --></help>
+        <label><!-- Indicative Quote --></label>
+        <name>Indicative_Quote__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Initial Disclosure Document --></help>
+        <label><!-- Initial Disclosure Document --></label>
+        <name>Initial_Disclosure_Document__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location of Seller --></label>
+        <name>Location_of_Seller__c</name>
+        <picklistValues>
+            <masterLabel>BDM</masterLabel>
+            <translation><!-- BDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Head Office Seller</masterLabel>
+            <translation><!-- Head Office Seller --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intermediary</masterLabel>
+            <translation><!-- Intermediary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier</masterLabel>
+            <translation><!-- Premier --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Seller explains availability of lump sum payments and ERC (where applicable for Fixed Product) and options to reduce term or payments --></help>
+        <label><!-- Lump Sum / ERC Options --></label>
+        <name>Lump_Sum_ERC_Options__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Explain Lump Sum Payments, ERC, options to reduce term and payments --></help>
+        <label><!-- Lumpsum options --></label>
+        <name>Lumpsum_options__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Confirm with the customer their consent for Marketing by IBB and ensure that the online form is completed correctly as part of the application process --></help>
+        <label><!-- Marketing Consent confirmation --></label>
+        <name>Marketing_Consent_confirmation__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- No inaccurate information was given to the customer during the interview --></help>
+        <label><!-- No inaccurate information given to cust --></label>
+        <name>NO_inaccurate_information_given_to_cust__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Name of Seller observed --></label>
+        <name>Name_of_Seller_observed__c</name>
+        <relationshipLabel><!-- HPP T&amp;C Observation (Name of Seller observed) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Seller explains to the customer the next steps &amp; timescales involved using theHPP Information Booklet as a reference, i.e. Credit search/underwriting/survey/offer/completion! --></help>
+        <label><!-- Next Steps - Product guide --></label>
+        <name>Next_Steps_Product_guide__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the Seller clearly outline that no advice would be given during the call? --></help>
+        <label><!-- No Advice Given Disclaimer --></label>
+        <name>No_Advice_Given_Disclaimer__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- During the call did the seller clearly explain to the customer that no advice or recommendations would be made? --></help>
+        <label><!-- No Advice/Recommendation made? --></label>
+        <name>No_Advice_Recommendation_made__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Stress no Advice/guidance offered only, note which product to be discussed. --></help>
+        <label><!-- No Advice --></label>
+        <name>No_Advice__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Seller did not give advice or make a recommendation --></help>
+        <label><!-- No Advice/recommendations made? --></label>
+        <name>No_Advice_recommendations_made__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Observation Completed By --></label>
+        <name>Observation_Completed_By__c</name>
+        <relationshipLabel><!-- HPP T&amp;C Observation (Observation Completed By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Overall Commentary --></label>
+        <name>Overall_Commentary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overall Rating --></label>
+        <name>Overall_Rating_New__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overall rating --></label>
+        <name>Overall_rating__c</name>
+    </fields>
+    <fields>
+        <help><!-- Seller should advise the customer that either a cheque or debit card payment instruction form MUST be returned with the application form in order for us to progress the application.  Aslo confirm that they will be contacted for their CVC code once rec&apos;d. --></help>
+        <label><!-- Payment Instruction form --></label>
+        <name>Payment_Instruction_form__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payment rent &amp; acquisition --></label>
+        <name>Payment_rent_acquisition__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With learning points</masterLabel>
+            <translation><!-- Yes - With learning points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Prepaid envelope will be provided &amp; instructions to return --></help>
+        <label><!-- Pre-paid envelope provided --></label>
+        <name>Pre_paid_envelope_provided__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the seller display a professional manner throughout the call? --></help>
+        <label><!-- Professional manner throughout call? --></label>
+        <name>Professional_manner_throughout_call__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Seller  provides FIS, reviews information shown with customer, confirms the importance and that this will be sent out to the customer --></help>
+        <label><!-- Provides FIS &amp; confirms importance --></label>
+        <name>Provides_FIS_confirms_importance__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Was the product risk and features and the Initial disclosure document read out correctly to the customer? --></help>
+        <label><!-- R&amp;F and IDD read our correctly? --></label>
+        <name>R_F_and_IDD_read_our_correctly__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rating --></label>
+        <name>Rating__c</name>
+        <picklistValues>
+            <masterLabel>Compliant</masterLabel>
+            <translation><!-- Compliant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compliant with development</masterLabel>
+            <translation><!-- Compliant with development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-compliant</masterLabel>
+            <translation><!-- Non-compliant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Seller explains how rental(occupancy) charge and acquisition payments are calculated --></help>
+        <label><!-- Rental Charge/Acquisition Payment exp. --></label>
+        <name>Rental_Charge_Acquisition_Payment_exp__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Seller explains the risks &amp; features document --></help>
+        <label><!-- Risks &amp; features Document --></label>
+        <name>Risks_features_Document__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- has seller clarified the Source of deposit for the HPP Application and confirmed that this is satisfactory for IBB Purposes --></help>
+        <label><!-- Source of Deposit - clarified --></label>
+        <name>Source_of_Deposit_clarified__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Steps 1-6 completed by using information provided by the customer --></help>
+        <label><!-- Steps 1-6 completed using info from cust --></label>
+        <name>Steps_1_6_completed_using_info_from_cust__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Seller explains that we have list of Panel solicitors that are experinced in islamic finance without making a recommendation but enabling the customer to make an informed choice --></help>
+        <label><!-- Use of Solicitors - No recommendation --></label>
+        <name>Use_of_Solicitors_No_recommendation__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Give the customer the appropriate warning that if they decide to withdraw what their laibility to expenses will be if they withdraw from sale --></help>
+        <label><!-- Warning - Liability fees if withdraw --></label>
+        <name>Warning_Liability_fees_if_withdraw__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Learning Points</masterLabel>
+            <translation><!-- Yes - With Learning Points --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Was eligibility for the product completed correctly by the seller? --></help>
+        <label><!-- Was Eligibility Done Correctly? --></label>
+        <name>Was_Eligibility_Done_Correctly__c</name>
+        <picklistValues>
+            <masterLabel>NO</masterLabel>
+            <translation><!-- NO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Was the application form completed correctly? --></help>
+        <label><!-- Was the App form completed correctly? --></label>
+        <name>Was_the_App_form_completed_correctly__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Was the FIS explained correctly to the customer? --></help>
+        <label><!-- Was the FIS Explained correctly? --></label>
+        <name>Was_the_FIS_Explained_correctly__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Was the seller friendly and helpful throughout the call --></help>
+        <label><!-- Was the Seller friendly and helpful? --></label>
+        <name>Was_the_Seller_friendly_and_helpful__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Was the information from the customer recorded accurately and correctly on the IBB Systems? --></help>
+        <label><!-- Was the information recorded correctly? --></label>
+        <name>Was_the_information_recorded_correctly__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the seller clearly and accurately read out the full script to the customer --></help>
+        <label><!-- Was the script read out correctly? --></label>
+        <name>Was_the_script_read_out_correctly__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the Seller clearly explain the different products to the customer? --></help>
+        <label><!-- Were the different products explained? --></label>
+        <name>Were_the_different_products_explained__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the seller avoid long silences during the call with the customer? --></help>
+        <label><!-- Did seller avoid long silences on call? --></label>
+        <name>Were_there_long_silences_during_call__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- refer to Risk &amp; Features sent to you --></label>
+        <name>refer_to_Risk_Features_sent_to_you__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With learning points</masterLabel>
+            <translation><!-- Yes - With learning points --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>HPP T&amp;C Observation Phone Layout</layout>
+        <sections>
+            <label><!-- Application Form (If no Standard Decline used) --></label>
+            <section>Application Form (If no Standard Decline used)</section>
+        </sections>
+        <sections>
+            <label><!-- Basic Finance Calculator --></label>
+            <section>Basic Finance Calculator</section>
+        </sections>
+        <sections>
+            <label><!-- Close Interview --></label>
+            <section>Close Interview</section>
+        </sections>
+        <sections>
+            <label><!-- Closing Sale --></label>
+            <section>Closing Sale</section>
+        </sections>
+        <sections>
+            <label><!-- Confirmation of IDD and Risk &amp; features documents --></label>
+            <section>Confirmation of IDD and Risk &amp; features documents</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Establish Detailed Eligibility via AIP Part 1 (if no Standard decline used) --></label>
+            <section>Establish Detailed Eligibility via AIP Part 1 (if no Standard decline used)</section>
+        </sections>
+        <sections>
+            <label><!-- Establish Personal Details Via AIP Part 2 (If no Standard decline used) --></label>
+            <section>Establish Personal Details Via AIP Part 2 (If no Standard decline used)</section>
+        </sections>
+        <sections>
+            <label><!-- Explanation of Product Details --></label>
+            <section>Explanation of Product Details</section>
+        </sections>
+        <sections>
+            <label><!-- General --></label>
+            <section>General</section>
+        </sections>
+        <sections>
+            <label><!-- Greeting/Interview Monitored --></label>
+            <section>Greeting/Interview Monitored</section>
+        </sections>
+        <sections>
+            <label><!-- Observation Summary/Development --></label>
+            <section>Observation Summary/Development</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Line Manager HPP Observation Layout</layout>
+        <sections>
+            <label><!-- Application Form (If no Standard Decline used) --></label>
+            <section>Application Form (If no Standard Decline used)</section>
+        </sections>
+        <sections>
+            <label><!-- Basic Finance Calculator --></label>
+            <section>Basic Finance Calculator</section>
+        </sections>
+        <sections>
+            <label><!-- Close Interview --></label>
+            <section>Close Interview</section>
+        </sections>
+        <sections>
+            <label><!-- Closing Sale --></label>
+            <section>Closing Sale</section>
+        </sections>
+        <sections>
+            <label><!-- Confirmation of IDD and Risk &amp; features documents --></label>
+            <section>Confirmation of IDD and Risk &amp; features documents</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Establish Detailed Eligibility via AIP Part 1 (if no Standard decline used) --></label>
+            <section>Establish Detailed Eligibility via AIP Part 1 (if no Standard decline used)</section>
+        </sections>
+        <sections>
+            <label><!-- Establish Personal Details Via AIP Part 2 (If no Standard decline used) --></label>
+            <section>Establish Personal Details Via AIP Part 2 (If no Standard decline used)</section>
+        </sections>
+        <sections>
+            <label><!-- Explanation of Product Details --></label>
+            <section>Explanation of Product Details</section>
+        </sections>
+        <sections>
+            <label><!-- General --></label>
+            <section>General</section>
+        </sections>
+        <sections>
+            <label><!-- Observation Summary/Development --></label>
+            <section>Observation Summary/Development</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

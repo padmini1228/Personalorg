@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Update_opportunity_field_with_name_of_3</fullName>
+        <field>Applicant_3__c</field>
+        <formula>Full_name__c</formula>
+        <name>Update opportunity field with name of 3</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>Opportunity__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_opportunity_field_with_name_of_4</fullName>
+        <field>Applicant_4__c</field>
+        <formula>Full_name__c</formula>
+        <name>Update opportunity field with name of 4</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>Opportunity__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_opportunity_field_with_name_of_5</fullName>
+        <field>Applicant_5__c</field>
+        <formula>Full_name__c</formula>
+        <name>Update opportunity field with name of 5</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>Opportunity__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_opportunity_field_with_name_of_ap</fullName>
+        <field>Applicant_2__c</field>
+        <formula>Full_name__c</formula>
+        <name>Update opportunity field with name of ap</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>Opportunity__c</targetObject>
+    </fieldUpdates>
+    <rules>
+        <fullName>Update opportunity field with name of applicant 2</fullName>
+        <actions>
+            <name>Update_opportunity_field_with_name_of_ap</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Applicant__c.Applicant_Number__c</field>
+            <operation>equals</operation>
+            <value>2</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Applicant__c.Full_name__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update opportunity field with name of applicant 3</fullName>
+        <actions>
+            <name>Update_opportunity_field_with_name_of_3</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Applicant__c.Applicant_Number__c</field>
+            <operation>equals</operation>
+            <value>3</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Applicant__c.Full_name__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update opportunity field with name of applicant 4</fullName>
+        <actions>
+            <name>Update_opportunity_field_with_name_of_4</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Applicant__c.Applicant_Number__c</field>
+            <operation>equals</operation>
+            <value>4</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Applicant__c.Full_name__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update opportunity field with name of applicant 5</fullName>
+        <actions>
+            <name>Update_opportunity_field_with_name_of_5</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Applicant__c.Applicant_Number__c</field>
+            <operation>equals</operation>
+            <value>5</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Applicant__c.Full_name__c</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

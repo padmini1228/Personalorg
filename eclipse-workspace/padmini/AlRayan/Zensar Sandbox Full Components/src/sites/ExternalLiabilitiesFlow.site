@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomSite xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowHomePage>false</allowHomePage>
+    <allowStandardAnswersPages>false</allowStandardAnswersPages>
+    <allowStandardIdeasPages>false</allowStandardIdeasPages>
+    <allowStandardLookups>false</allowStandardLookups>
+    <allowStandardSearch>false</allowStandardSearch>
+    <authorizationRequiredPage>LiabilitiesErrorPage</authorizationRequiredPage>
+    <bandwidthExceededPage>LiabilitiesErrorPage</bandwidthExceededPage>
+    <changePasswordPage>ChangePassword</changePasswordPage>
+    <clickjackProtectionLevel>AllowAllFraming</clickjackProtectionLevel>
+    <fileNotFoundPage>LiabilitiesErrorPage</fileNotFoundPage>
+    <genericErrorPage>LiabilitiesErrorPage</genericErrorPage>
+    <inMaintenancePage>LiabilitiesErrorPage</inMaintenancePage>
+    <inactiveIndexPage>LiabilitiesErrorPage</inactiveIndexPage>
+    <indexPage>ProxyLogonPage</indexPage>
+    <masterLabel>ExternalLiabilitiesFlow</masterLabel>
+    <portal>Customer Portal</portal>
+    <requireHttps>true</requireHttps>
+    <requireInsecurePortalAccess>false</requireInsecurePortalAccess>
+    <siteAdmin>f4c@islamic-bank.com</siteAdmin>
+    <siteTemplate>SiteTemplate</siteTemplate>
+    <siteType>Visualforce</siteType>
+    <subdomain>islamic-bank</subdomain>
+    <urlPathPrefix>ProxyLogonPage</urlPathPrefix>
+</CustomSite>

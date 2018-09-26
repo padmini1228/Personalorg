@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Strategic Plan</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Strategic Plans</value>
+    </caseValues>
+    <fields>
+        <label><!-- Business Unit --></label>
+        <name>Business_Unit__c</name>
+        <relationshipLabel><!-- Strategic Plans --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Strategic Plan Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Create_SI_Report --></label>
+        <name>Create_SI_Report</name>
+    </webLinks>
+</CustomObjectTranslation>

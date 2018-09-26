@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>HPP Deal Funds Released Over £500,000</name>
+    <style>freeForm</style>
+    <subject>Payment ready for release to Solicitor: {!Opportunity.Name}</subject>
+    <textOnly>To whom it may concern,
+
+The following payment has been sent to the solicitors for completion of the below HPP. The payment is over £500,000 and will need to be approved in SWIFT.
+
+Name: {!Opportunity.Name}
+Solicitor: {!HPP_extended_opportunity__c.IBB_Solicitor__c}
+Finance Required: {!Opportunity.Finance_Required__c}
+Approved by: {!HPP_extended_opportunity__c.ApproverName1__c}, {!HPP_extended_opportunity__c.ApproverName2__c} and {!HPP_extended_opportunity__c.ApproverName3__c}.
+
+Link: {!Opportunity.Link}</textOnly>
+    <type>html</type>
+</EmailTemplate>

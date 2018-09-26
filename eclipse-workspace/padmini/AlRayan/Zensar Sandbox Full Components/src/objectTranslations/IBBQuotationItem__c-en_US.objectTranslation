@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>QuotationItem</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>QuotationItems</value>
+    </caseValues>
+    <fields>
+        <label><!-- AcquisitionAmount --></label>
+        <name>AcquisitionAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- FinalAcquisitionPayment --></label>
+        <name>FinalAcquisitionPayment__c</name>
+    </fields>
+    <fields>
+        <label><!-- FirstRentReviewDate --></label>
+        <name>FirstRentReviewDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPPRepaymentDate --></label>
+        <name>HPPRepaymentDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPPStartDate --></label>
+        <name>HPPStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- IBBQuotation --></label>
+        <name>IBBQuotation__c</name>
+        <relationshipLabel><!-- QuotationItems --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- MonthlyPaymentFixed --></label>
+        <name>MonthlyPaymentFixed__c</name>
+    </fields>
+    <fields>
+        <label><!-- MonthlyPaymentVariable --></label>
+        <name>MonthlyPaymentVariable__c</name>
+    </fields>
+    <fields>
+        <label><!-- NumberOfMonthsFixed --></label>
+        <name>NumberOfMonthsFixed__c</name>
+    </fields>
+    <fields>
+        <label><!-- NumberOfMonthsVariable --></label>
+        <name>NumberOfMonthsVariable__c</name>
+    </fields>
+    <fields>
+        <label><!-- NumberOfMonths --></label>
+        <name>NumberOfMonths__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer first rent review date --></label>
+        <name>Offer_first_rent_review_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- ProductSwitchBalance --></label>
+        <name>ProductSwitchBalance__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCEFirstPaymentDate --></label>
+        <name>RCEFirstPaymentDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCEFirstProfitDate --></label>
+        <name>RCEFirstProfitDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCEMaturityDate --></label>
+        <name>RCEMaturityDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- RatioPerPound --></label>
+        <name>RatioPerPound__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rent --></label>
+        <name>Rent__c</name>
+    </fields>
+    <fields>
+        <label><!-- RevertRate --></label>
+        <name>RevertRate__c</name>
+    </fields>
+    <fields>
+        <label><!-- RunningBal --></label>
+        <name>RunningBal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repayment Date --></label>
+        <name>Str_Repayment_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- TheStartDate --></label>
+        <name>TheStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalAcquisitionFixed --></label>
+        <name>TotalAcquisitionFixed__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalAcquisitionVariable --></label>
+        <name>TotalAcquisitionVariable__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalPaymentAfterFixedPeriod --></label>
+        <name>TotalPaymentAfterFixedPeriod__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalRent --></label>
+        <name>TotalRent__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalRentalFixed --></label>
+        <name>TotalRentalFixed__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalRentalVariable --></label>
+        <name>TotalRentalVariable__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalRepayment --></label>
+        <name>TotalRepayment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Variable next rent review --></label>
+        <name>Variable_next_rent_review__c</name>
+    </fields>
+    <fields>
+        <label><!-- repaymentdate1 --></label>
+        <name>repaymentdate1__c</name>
+    </fields>
+    <layouts>
+        <layout>IBBQuotationItem Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

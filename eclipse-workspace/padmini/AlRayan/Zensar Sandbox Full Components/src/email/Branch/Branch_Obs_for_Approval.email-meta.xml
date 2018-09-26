@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>Branch Obs for Approval</name>
+    <style>freeForm</style>
+    <subject>Branch Observation Form for your Approval</subject>
+    <textOnly>Dear {!01I20000000Ah3r.00N20000002RMsY}, 
+ 
+Your observation form number {!01I20000000Ah3r.Name} is now ready for your approval. Please approve on Salesforce. 
+ 
+Thanks
+ 
+Matthew Glover,
+Branch Operations Manager</textOnly>
+    <type>html</type>
+</EmailTemplate>

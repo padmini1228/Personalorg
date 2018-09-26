@@ -1,0 +1,15 @@
+Well done we have now processed the above application for this client, the funds are in and we have made a contribution towards our savings targets for 2011.
+
+lead provided by {!Opportunity.OwnerFirstName}
+
+Opportunity Name {!Opportunity.Name}
+
+EBS Customer no. {!Account.Customer_Number__c}
+
+New Money Amount {!Opportunity.New_Money__c}
+
+Existing Money Amount {!Opportunity.Existing_Money_Amount__c}
+
+Keep the leads coming and we will convert them
+
+The Outbound Sales Team

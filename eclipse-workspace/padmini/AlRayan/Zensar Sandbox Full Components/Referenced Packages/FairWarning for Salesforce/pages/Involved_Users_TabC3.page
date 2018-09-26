@@ -1,0 +1,36 @@
+<apex:page standardController="fairwarn__Alert__c" showHeader="true" extensions="fairwarn.fairwarn_Alert_Controller"  >
+    
+    <h1><apex:pageMessages ></apex:pageMessages></h1>
+
+    <div class="forceRelatedList">
+        
+    <ul>
+        <apex:repeat value="{!Records}" var="var">
+            
+            <li class="forceListRecord">
+                <a href="javascript:sforce.one.navigateToSObject('{!var.fairwarn__assocUser__r.id}');" style="text-decoration: initial;" >
+                	<div class="body">
+                        <div class="itemTitle"><span dir="ltr" class="uiOutputText">{!var.fairwarn__assocUser__r.Username}</span></div>
+                        
+                    	<label for="fwSel_{!var.fairwarn__assocUser__r.id}">
+                            
+                            <p>
+                                <label>Name:</label>
+                                <strong>{!var.fairwarn__assocUser__r.FirstName} {!var.fairwarn__assocUser__r.LastName}</strong>
+                                <br/>
+                                <apex:outputPanel rendered="{!(var.fairwarn__assocUser__r.Title != null || var.fairwarn__assocUser__r.Department != null)}" layout="none">
+                                        <br/><strong>{!var.fairwarn__assocUser__r.Title} - {!var.fairwarn__assocUser__r.Department}</strong>
+                                </apex:outputPanel>
+                            </p>
+                            
+                        </label>
+                    </div>
+                </a>
+            </li>
+            
+        </apex:repeat>
+    </ul>
+    </div>
+    
+    
+</apex:page>

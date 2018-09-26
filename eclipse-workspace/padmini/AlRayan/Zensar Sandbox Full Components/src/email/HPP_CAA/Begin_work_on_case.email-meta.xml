@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email sent to solicitors when offfer letter has been sent</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>Begin work on case</name>
+    <style>freeForm</style>
+    <subject>New IBB Instruction for {!Opportunity.New_property_street__c}</subject>
+    <textOnly>Dear Mohammed Saqub,
+
+The documents have been sent to the customer for the case below:
+
+Client:
+{!Account.Salutation} {!Account.FirstName} {!Account.LastName}
+
+Property address:
+{!Opportunity.New_property_street__c}, {!Opportunity.New_property_postcode__c}
+
+Finance type:
+{!Opportunity.Purpose_of_Finance__c}
+
+Amount of finance agreed:
+{!Opportunity.Finance_Required__c}
+
+Payment term:
+{!Opportunity.Term_of_Finance__c}
+
+Clients solicitor details:
+{!HPP_extended_opportunity__c.Solicitor_contact_name__c}, {!HPP_extended_opportunity__c.Solicitor_company_name__c}, {!HPP_extended_opportunity__c.Solicitor_street__c}, {!HPP_extended_opportunity__c.Solicitor_city__c}, {!HPP_extended_opportunity__c.Solicitor_postcode__c}
+
+Clients solicitor contact number:
+{!HPP_extended_opportunity__c.Solicitor_contact_telephone_number__c}
+
+You will be receiving our written instruction in due course,
+
+Yours sincerely,
+
+Islamic Bank of Britain</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>OpportunityPayment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>OpportunityPayments</value>
+    </caseValues>
+    <fields>
+        <label><!-- AccountNumber --></label>
+        <name>AccountNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Reference Information --></label>
+        <name>Account_Reference_Information__c</name>
+        <relationshipLabel><!-- OpportunityPayments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account with IBB --></label>
+        <name>Account_with_IBB__c</name>
+        <relationshipLabel><!-- OpportunityPayments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ActionOutcome --></label>
+        <name>ActionOutcome__c</name>
+        <picklistValues>
+            <masterLabel>AJE FAILED</masterLabel>
+            <translation><!-- AJE FAILED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARD FAILED</masterLabel>
+            <translation><!-- CARD FAILED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARD OK - AJE FAILED</masterLabel>
+            <translation><!-- CARD OK - AJE FAILED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENDING</masterLabel>
+            <translation><!-- PENDING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PROGRESSING</masterLabel>
+            <translation><!-- PROGRESSING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUCCESS</masterLabel>
+            <translation><!-- SUCCESS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUSPENDED</masterLabel>
+            <translation><!-- SUSPENDED --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IBBPaymentType --></label>
+        <name>IBBPaymentType__c</name>
+        <relationshipLabel><!-- OpportunityPayments (IBBPaymentType) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- OpportunityPayments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- IBBPaymentType --></label>
+        <name>PassedPaymentType__c</name>
+        <relationshipLabel><!-- OpportunityPayments (IBBPaymentType) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PaymentAmount --></label>
+        <name>PaymentAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card --></label>
+        <name>PaymentCard__c</name>
+        <relationshipLabel><!-- OpportunityPayments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PaymentComments --></label>
+        <name>PaymentComments__c</name>
+    </fields>
+    <fields>
+        <label><!-- PaymentMethod --></label>
+        <name>PaymentMethod__c</name>
+        <picklistValues>
+            <masterLabel>Card</masterLabel>
+            <translation><!-- Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Transfer</masterLabel>
+            <translation><!-- External Transfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Transfer</masterLabel>
+            <translation><!-- Internal Transfer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Transaction --></label>
+        <name>PaymentTransaction__c</name>
+        <relationshipLabel><!-- OpportunityPayments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PaymentTypeAmount --></label>
+        <name>PaymentTypeAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Prospect_Customer__c</name>
+        <relationshipLabel><!-- OpportunityPayments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SortCode --></label>
+        <name>SortCode__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

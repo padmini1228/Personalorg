@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email automatically issued when a SAR form is raised</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_letterhead</letterhead>
+    <name>Suspicion Report Acknowledged</name>
+    <style>freeForm</style>
+    <subject>Your SAR has been logged with FCU</subject>
+    <textOnly>Thank you for your referral.  
+
+Please note:
+Your Suspicious Activity Report (SAR) has been logged with FCU
+Your case reference is -
+Your case subject is:
+
+Your SAR will be investigated within the approved time frames.
+ 
+Kind regards,
+
+FCU Team</textOnly>
+    <type>html</type>
+</EmailTemplate>

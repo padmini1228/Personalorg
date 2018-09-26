@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Support_Email</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Support Email</shortDescription>
+        <value>Support Email:</value>
+    </labels>
+    <labels>
+        <fullName>Support_Email_Address</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Support Email Address</shortDescription>
+        <value>support.desk@xactium.com</value>
+    </labels>
+    <labels>
+        <fullName>Xactium_Support</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Xactium Support</shortDescription>
+        <value>Xactium Support</value>
+    </labels>
+    <labels>
+        <fullName>Xactium_Support_URL</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Xactium Support URL</shortDescription>
+        <value>xactium.desk.com</value>
+    </labels>
+</CustomLabels>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Secure Trading Settings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Secure Trading Settings</value>
+    </caseValues>
+    <fields>
+        <label><!-- Alias --></label>
+        <name>Alias__c</name>
+    </fields>
+    <fields>
+        <label><!-- Endpoint --></label>
+        <name>Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Password --></label>
+        <name>Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site Reference --></label>
+        <name>SiteReference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Term URL --></label>
+        <name>TermURL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Card Type Mapping --></label>
+        <name>UseCardTypeMapping__c</name>
+    </fields>
+    <fields>
+        <label><!-- Username --></label>
+        <name>Username__c</name>
+    </fields>
+    <fields>
+        <label><!-- Version --></label>
+        <name>Version__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

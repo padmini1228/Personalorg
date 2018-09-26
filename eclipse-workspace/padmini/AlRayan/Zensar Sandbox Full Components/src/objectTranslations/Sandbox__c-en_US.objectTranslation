@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sandbox</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sandboxes</value>
+    </caseValues>
+    <fields>
+        <label><!-- Being used for --></label>
+        <name>Being_used_for__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created date --></label>
+        <name>Created_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date last refreshed --></label>
+        <name>Date_last_refreshed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Created</masterLabel>
+            <translation><!-- Created --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deleted</masterLabel>
+            <translation><!-- Deleted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refreshed</masterLabel>
+            <translation><!-- Refreshed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Developer</masterLabel>
+            <translation><!-- Developer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Developer Pro</masterLabel>
+            <translation><!-- Developer Pro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full</masterLabel>
+            <translation><!-- Full --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Sandbox Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

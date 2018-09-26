@@ -1,0 +1,40 @@
+<apex:page sideBar="false" showHeader="false">
+
+<head>
+	<apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'HelpPageStylesheet.css')}"/>
+</head>
+
+<div class="heading">
+    <div class="icon">&nbsp;</div>
+    <h2>Help Pages</h2>
+    <h1>Controls</h1>
+</div>
+
+<div class="content">
+<p>
+A Control is a Business process or action that is put into place to mitigate (limit) the Impact and Probability of a Risk. These controls can have many attributes:-
+<ul>
+    <li>Implementation Cost - this could be a one off cost or a recurring cost each time the Control is implemented.</li>
+    <li>Status - The Control maybe Not Implemented, Implemented or Retired depending on its lifecycle.</li>
+    <li>Type - Corrective (to fix something), Preventative (to stop something) or Detective (to discover something).</li>
+    <li>Implementation Type - Defines how the control is implemented (manual, automatic, mixed).</li>
+    <li>Frequency - Annually, Quarterly, Monthly, Weekly, Daily.</li>
+    <li>Parent Control - It is possible to define a 'Control Hierarchy' if there is a relationship between your controls.</li>
+</ul>
+</p>
+<p>The ideal definition of a Control would be one that is Automatic and Preventative i.e. Automatically stops something happening without human intervention.</p>
+<p>A Control can be defined and implemented to mitigate a number of Risks. This relationship is managed by the Related List 'Associated Risks' on the Control page.</p>
+<p>Control Deficiency Logs can be created against a Control to record when something has gone wrong with the Control. These CDLs can be useful in monitoring the effectiveness of the Control and when it may need redefining.</p>
+<br/>
+<br/>
+<br/>
+
+<h3 >Contact Details</h3>
+
+<p>
+For further support information, please contact your local administrator.</p>
+
+
+    <div class="clear"></div>
+</div>
+</apex:page>

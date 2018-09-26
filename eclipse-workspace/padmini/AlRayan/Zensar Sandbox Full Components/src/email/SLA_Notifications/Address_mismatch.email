@@ -1,0 +1,14 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="1" aEditID="c1r1" >
+<![CDATA[To whom it may concern,<div style="color: rgb(0, 0, 0); "><br></div><div style="color: rgb(0, 0, 0); ">The below application has resulted in an address mismatch:</div><div style="color: rgb(0, 0, 0); "><b>Case number:</b>&nbsp;{!Case.CaseNumber}</div><div style="color: rgb(0, 0, 0); "><b>Case type:</b>&nbsp;{!Case.Subject}</div><div style="color: rgb(0, 0, 0); "><b>Created by:</b>&nbsp;{!Case.CreatedBy}</div><div style="color: rgb(0, 0, 0); "><b>Time created:</b>&nbsp;{!Case.CreatedDate}</div><div style="color: rgb(0, 0, 0); "><b>Case link:&nbsp;</b></div><div style="color: rgb(0, 0, 0); ">{!Case.Link}</div><div style="color: rgb(0, 0, 0); "><br></div><div style="color: rgb(0, 0, 0); "><b>ITServicedesk</b>: for information only</div><div style="color: rgb(0, 0, 0); "><b>User:</b> please follow the steps below:</div><div style="color: rgb(0, 0, 0); "><br></div><div><span style="text-indent: -18pt; font-size: 12pt; ">The customer who is
+opening the account should be asked to confirm their current address as well as
+their previous and previous previous address (if they have been at their
+current address less than 3 years)</span></div><div><span style="text-indent: -18pt; font-size: 12pt; "><br></span></div><div><span style="text-indent: -18pt; font-size: 12pt; ">These addresses should be then entered into
+the case description.</span></div><div><span style="text-indent: -18pt; font-size: 12pt; "><br></span></div><div><span style="text-indent: -18pt; font-size: 12pt; ">The case should then
+be assigned to ITHelpdesk.</span></div><div><span style="text-indent: -18pt; font-size: 12pt; "><br></span></div><div><span style="text-indent: -18pt; font-size: 12pt; ">IT will look into
+this and come back to you to let you know the next steps.</span></div><div>
+
+<p class="MsoListParagraph" style="text-indent: -18pt; "><!--[if !supportLists]-->4</p></div>]]></td>
+</tr>
+</table>

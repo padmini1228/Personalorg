@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Add</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Add</shortDescription>
+        <value>Add</value>
+    </labels>
+    <labels>
+        <fullName>Add_Row</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Add_Row</shortDescription>
+        <value>Add Row</value>
+    </labels>
+    <labels>
+        <fullName>Aggregated_Opp_Risk_Matrix</fullName>
+        <categories>DrawHeatmap Component</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Aggregated Risk Matrix</shortDescription>
+        <value>Aggregated Opportunity Risks</value>
+    </labels>
+    <labels>
+        <fullName>Aggregated_Risk_Matrix</fullName>
+        <categories>DrawHeatmap Component</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Aggregated Risk Matrix</shortDescription>
+        <value>Aggregated Threat Risks</value>
+    </labels>
+    <labels>
+        <fullName>Available</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Available</shortDescription>
+        <value>Available</value>
+    </labels>
+    <labels>
+        <fullName>Back_To</fullName>
+        <categories>Report selection page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Back_to</shortDescription>
+        <value>Back to</value>
+    </labels>
+    <labels>
+        <fullName>Build</fullName>
+        <categories>Report Builder, CreateReport page, DetailReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Build</shortDescription>
+        <value>Build</value>
+    </labels>
+    <labels>
+        <fullName>Build_Report</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Build_Report</shortDescription>
+        <value>Build</value>
+    </labels>
+    <labels>
+        <fullName>Build_Risk_Register</fullName>
+        <categories>Select Report page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Build_Risk_Register</shortDescription>
+        <value>Build Risk Register</value>
+    </labels>
+    <labels>
+        <fullName>Business_Unit</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Business_Unit</shortDescription>
+        <value>Business Unit</value>
+    </labels>
+    <labels>
+        <fullName>Business_Unit_Required</fullName>
+        <categories>Report Builder, CreateReportController class</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Business_Unit_Required</shortDescription>
+        <value>Business unit is required.</value>
+    </labels>
+    <labels>
+        <fullName>Cancel_Report</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cancel_Report</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Clone</fullName>
+        <categories>Report Builder, DetailReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Clone</shortDescription>
+        <value>Clone</value>
+    </labels>
+    <labels>
+        <fullName>Collapse_All</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Collapse_All</shortDescription>
+        <value>Collapse All</value>
+    </labels>
+    <labels>
+        <fullName>Created_By</fullName>
+        <categories>Report Builder, DetailReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Created_By</shortDescription>
+        <value>Created By</value>
+    </labels>
+    <labels>
+        <fullName>Date_Filter</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Date_Filter</shortDescription>
+        <value>Date Filter</value>
+    </labels>
+    <labels>
+        <fullName>Default_Band_Color</fullName>
+        <categories>Report Builder, CustomReportPDFA3 page, CustomReportPDFA4 page, AggregatedRisksHelper class</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Default Band Color</shortDescription>
+        <value>#CCCCCC</value>
+    </labels>
+    <labels>
+        <fullName>Delete</fullName>
+        <categories>Report Builder, DetailReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Delete</shortDescription>
+        <value>Delete</value>
+    </labels>
+    <labels>
+        <fullName>Delete_Report_Confirm</fullName>
+        <categories>Report Builder, DetailReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Delete_Report_Confirm</shortDescription>
+        <value>Are you sure you want to delete</value>
+    </labels>
+    <labels>
+        <fullName>Display_Options</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Display_Options</shortDescription>
+        <value>Display Options</value>
+    </labels>
+    <labels>
+        <fullName>Down</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Down</shortDescription>
+        <value>Down</value>
+    </labels>
+    <labels>
+        <fullName>Edit</fullName>
+        <categories>Report Builder, CreateReport page, DetailReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Edit</shortDescription>
+        <value>Edit</value>
+    </labels>
+    <labels>
+        <fullName>Edit_Report</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Edit_Report</shortDescription>
+        <value>Edit</value>
+    </labels>
+    <labels>
+        <fullName>Enter_Record_Limit</fullName>
+        <categories>Report Builder, CreateReportController class</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Enter_Record_Limit</shortDescription>
+        <value>Please enter a Record Limit</value>
+    </labels>
+    <labels>
+        <fullName>Error_Occurred</fullName>
+        <categories>Report Builder, CreateReportController class</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error_Occurred</shortDescription>
+        <value>Error Occurred :</value>
+    </labels>
+    <labels>
+        <fullName>Excel</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Excel</shortDescription>
+        <value>Excel</value>
+    </labels>
+    <labels>
+        <fullName>Existing_Risk_Register</fullName>
+        <categories>Select Report page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Existing_Risk_Register</shortDescription>
+        <value>Please select an existing Risk Register Template</value>
+    </labels>
+    <labels>
+        <fullName>Expand_All</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Expand_All</shortDescription>
+        <value>Expand All</value>
+    </labels>
+    <labels>
+        <fullName>Field</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Fields</shortDescription>
+        <value>Field</value>
+    </labels>
+    <labels>
+        <fullName>Field_Filters</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Field_Filters</shortDescription>
+        <value>Field Filters</value>
+    </labels>
+    <labels>
+        <fullName>Fields</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Fields</shortDescription>
+        <value>Fields</value>
+    </labels>
+    <labels>
+        <fullName>Filter_Logic</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Filter_Logic</shortDescription>
+        <value>Filter Logic</value>
+    </labels>
+    <labels>
+        <fullName>Filter_Requires_Value</fullName>
+        <categories>Report Builder, ReportHelper class</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Filter_Requires_Value</shortDescription>
+        <value>A value is required</value>
+    </labels>
+    <labels>
+        <fullName>Filters</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Filters</shortDescription>
+        <value>Filters</value>
+    </labels>
+    <labels>
+        <fullName>Filters_Section</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Filters_Section</shortDescription>
+        <value>Filters Section</value>
+    </labels>
+    <labels>
+        <fullName>Financial_Aggregation_Limit</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Financial Threshold</shortDescription>
+        <value>Financial Threshold</value>
+    </labels>
+    <labels>
+        <fullName>Heading_Logos</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Heading_Logos</shortDescription>
+        <value>Heading Logos</value>
+    </labels>
+    <labels>
+        <fullName>Help_text_for_Child_Business_Units</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Help text for Child Business Units</shortDescription>
+        <value>Risks with financial impact lower than the entered threshold will NOT be included in the report.</value>
+    </labels>
+    <labels>
+        <fullName>Home</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Home</shortDescription>
+        <value>Home</value>
+    </labels>
+    <labels>
+        <fullName>Information</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Information</shortDescription>
+        <value>Information</value>
+    </labels>
+    <labels>
+        <fullName>Invalid_Filter</fullName>
+        <categories>Report Builder, CreateReportController class</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Invalid_Filter</shortDescription>
+        <value>A value must be entered for the operator chosen</value>
+    </labels>
+    <labels>
+        <fullName>Last_Modified_By</fullName>
+        <categories>Report Builder, DetailReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Last_Modified_By</shortDescription>
+        <value>Last Modified By</value>
+    </labels>
+    <labels>
+        <fullName>New_Report</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>New_Report</shortDescription>
+        <value>New</value>
+    </labels>
+    <labels>
+        <fullName>New_Report_Title</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>New_Report_Title</shortDescription>
+        <value>New Report</value>
+    </labels>
+    <labels>
+        <fullName>No</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No</shortDescription>
+        <value>No</value>
+    </labels>
+    <labels>
+        <fullName>No_Report_Selected</fullName>
+        <categories>Select Report page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No_Report_Selected</shortDescription>
+        <value>Please select a Report Builder Template before running the Report Builder.</value>
+    </labels>
+    <labels>
+        <fullName>None</fullName>
+        <categories>Report Builder, CreateReport page, DetailReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>None</shortDescription>
+        <value>None</value>
+    </labels>
+    <labels>
+        <fullName>Operator</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Operator</shortDescription>
+        <value>Operator</value>
+    </labels>
+    <labels>
+        <fullName>Opp_Risk_Matrix</fullName>
+        <categories>DrawHeatmap Component</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Risk Matrix</shortDescription>
+        <value>Opportunity Risks</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_Risks_Not_Included</fullName>
+        <categories>Report Builder, CreateReportController class</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity_Risks_Not_Included</shortDescription>
+        <value>The current version of {0} supports only risks of type Threat.</value>
+    </labels>
+    <labels>
+        <fullName>Order</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Order</shortDescription>
+        <value>Order</value>
+    </labels>
+    <labels>
+        <fullName>PDF_A3</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PDF_A3</shortDescription>
+        <value>PDF (A3)</value>
+    </labels>
+    <labels>
+        <fullName>PDF_A3_Flat</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PDF_A3_Flat</shortDescription>
+        <value>PDF (A3 FLAT)</value>
+    </labels>
+    <labels>
+        <fullName>PDF_A4</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PDF_A4</shortDescription>
+        <value>PDF (A4)</value>
+    </labels>
+    <labels>
+        <fullName>PDF_Font_Size_Check</fullName>
+        <categories>CreateReportController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PDF Font Size Check</shortDescription>
+        <value>PDF font-size is required</value>
+    </labels>
+    <labels>
+        <fullName>Picklist_none</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Picklist_none</shortDescription>
+        <value>--None--</value>
+    </labels>
+    <labels>
+        <fullName>Plot_inherent_score</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Plot inherent score</shortDescription>
+        <value>Plot inherent score when residual is not available</value>
+    </labels>
+    <labels>
+        <fullName>RA_Limit</fullName>
+        <categories>Report Builder, CreateReportController class</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RA Limit</shortDescription>
+        <value>* Limited to {0} {1}</value>
+    </labels>
+    <labels>
+        <fullName>Record_Limit</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Record Limit</shortDescription>
+        <value>Record Limit</value>
+    </labels>
+    <labels>
+        <fullName>Related_List_Section</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Related List Section</shortDescription>
+        <value>Related List Section</value>
+    </labels>
+    <labels>
+        <fullName>Remove</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Remove</shortDescription>
+        <value>Remove</value>
+    </labels>
+    <labels>
+        <fullName>Remove_Row</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Remove Row</shortDescription>
+        <value>Remove Row</value>
+    </labels>
+    <labels>
+        <fullName>Report</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Report</shortDescription>
+        <value>Report</value>
+    </labels>
+    <labels>
+        <fullName>Report_Type</fullName>
+        <categories>Report Builder, CreateReport page, CreateReportController class</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Report_Type</shortDescription>
+        <value>Report Type</value>
+    </labels>
+    <labels>
+        <fullName>Report_Type_Required</fullName>
+        <categories>Report Builder, CreateReportController class</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Report_Type_Required</shortDescription>
+        <value>Report type is required.</value>
+    </labels>
+    <labels>
+        <fullName>Result_For_Child_Bu</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Result For Child Bu</shortDescription>
+        <value>Show results for child Business Units</value>
+    </labels>
+    <labels>
+        <fullName>Risk_Matrix</fullName>
+        <categories>DrawHeatmap Component</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Risk Matrix</shortDescription>
+        <value>Threat Risks</value>
+    </labels>
+    <labels>
+        <fullName>Risk_Register</fullName>
+        <categories>Select Report page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Risk_Register</shortDescription>
+        <value>Risk Register</value>
+    </labels>
+    <labels>
+        <fullName>Risk_Register_Selection</fullName>
+        <categories>Select Report page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Risk_Register_Selection</shortDescription>
+        <value>Risk Register Selection</value>
+    </labels>
+    <labels>
+        <fullName>Save_Report</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Save Report</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>Selected</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Selected</shortDescription>
+        <value>Selected</value>
+    </labels>
+    <labels>
+        <fullName>Selection_Form</fullName>
+        <categories>Select Report page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Selection_Form</shortDescription>
+        <value>Selection Form</value>
+    </labels>
+    <labels>
+        <fullName>Sharing</fullName>
+        <categories>Report Builder, DetailReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sharing</shortDescription>
+        <value>Sharing</value>
+    </labels>
+    <labels>
+        <fullName>Show_Inherent</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Show Inherent</shortDescription>
+        <value>Show Inherent</value>
+    </labels>
+    <labels>
+        <fullName>Show_Report</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Show Report</shortDescription>
+        <value>Show</value>
+    </labels>
+    <labels>
+        <fullName>Sort_By</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sort By</shortDescription>
+        <value>Sort By</value>
+    </labels>
+    <labels>
+        <fullName>Up</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Up</shortDescription>
+        <value>Up</value>
+    </labels>
+    <labels>
+        <fullName>Valid_Record_Limit</fullName>
+        <categories>Report Builder, CreateReportController class</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Valid_Record_Limit</shortDescription>
+        <value>Please enter a valid Record Limit between 1 and {0}</value>
+    </labels>
+    <labels>
+        <fullName>Value</fullName>
+        <categories>Report Builder, CreateReport page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Value</shortDescription>
+        <value>Value</value>
+    </labels>
+    <labels>
+        <fullName>equals</fullName>
+        <categories>Report Builder, ReportHelper class</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>equals</shortDescription>
+        <value>equals</value>
+    </labels>
+    <labels>
+        <fullName>greater_or_equal</fullName>
+        <categories>Report Builder, ReportHelper class</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>greater_or_equal</shortDescription>
+        <value>greater or equal</value>
+    </labels>
+    <labels>
+        <fullName>greater_than</fullName>
+        <categories>Report Builder, ReportHelper class</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>greater_than</shortDescription>
+        <value>greater than</value>
+    </labels>
+    <labels>
+        <fullName>less_or_equal</fullName>
+        <categories>Report Builder, ReportHelper class</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>less_or_equal</shortDescription>
+        <value>less or equal</value>
+    </labels>
+    <labels>
+        <fullName>less_than</fullName>
+        <categories>Report Builder, ReportHelper class</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>less_than</shortDescription>
+        <value>less than</value>
+    </labels>
+    <labels>
+        <fullName>not_equal</fullName>
+        <categories>Report Builder, ReportHelper class</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>not_equal</shortDescription>
+        <value>not equal to</value>
+    </labels>
+</CustomLabels>

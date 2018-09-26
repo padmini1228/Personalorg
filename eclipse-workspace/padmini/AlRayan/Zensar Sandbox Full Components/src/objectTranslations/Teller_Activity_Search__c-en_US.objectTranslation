@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Teller Activity Search</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Teller Activity Search</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account (Credit) --></label>
+        <name>Account_Credit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account (Debit) --></label>
+        <name>Account_Debit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Type --></label>
+        <name>Activity_Type__c</name>
+        <picklistValues>
+            <masterLabel>Customer Image</masterLabel>
+            <translation><!-- Customer Image --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Depository</masterLabel>
+            <translation><!-- Depository --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mandate</masterLabel>
+            <translation><!-- Mandate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transaction</masterLabel>
+            <translation><!-- Transaction --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Amount From --></label>
+        <name>Amount_From__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount To --></label>
+        <name>Amount_To__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch --></label>
+        <name>Branch__c</name>
+        <relationshipLabel><!-- Teller Activity Search --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Currency --></label>
+        <name>Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current User Branch --></label>
+        <name>Current_User_Branch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current User --></label>
+        <name>Current_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- DateTime From --></label>
+        <name>DateTime_From__c</name>
+    </fields>
+    <fields>
+        <label><!-- DateTime To --></label>
+        <name>DateTime_To__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Roles --></label>
+        <name>Roles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort By --></label>
+        <name>Sort_By__c</name>
+        <picklistValues>
+            <masterLabel>Activity_Amount__c</masterLabel>
+            <translation><!-- Activity_Amount__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Activity_Currency__c</masterLabel>
+            <translation><!-- Activity_Currency__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Activity_Date_Time__c</masterLabel>
+            <translation><!-- Activity_Date_Time__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Activity_Description__c</masterLabel>
+            <translation><!-- Activity_Description__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Activity_Type__c</masterLabel>
+            <translation><!-- Activity_Type__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Branch</masterLabel>
+            <translation><!-- Branch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Created_By_User__c</masterLabel>
+            <translation><!-- Created_By_User__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Status__c</masterLabel>
+            <translation><!-- Status__c --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>Sort_Order__c</name>
+        <picklistValues>
+            <masterLabel>Ascending</masterLabel>
+            <translation><!-- Ascending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Descending</masterLabel>
+            <translation><!-- Descending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Created</masterLabel>
+            <translation><!-- Created --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation><!-- Declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted for Authorisation</masterLabel>
+            <translation><!-- Submitted for Authorisation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Till --></label>
+        <name>Till__c</name>
+        <relationshipLabel><!-- Teller Activity Search --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Transaction Type --></label>
+        <name>Transaction_Type__c</name>
+        <relationshipLabel><!-- Teller Activity Search --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Teller Activity Search --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Teller Activity Search Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

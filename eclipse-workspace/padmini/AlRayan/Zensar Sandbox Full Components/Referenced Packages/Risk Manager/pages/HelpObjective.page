@@ -1,0 +1,36 @@
+<apex:page sideBar="false" showHeader="false">
+
+<head>
+	<apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'HelpPageStylesheet.css')}"/>
+</head>
+
+<div class="heading">
+<div class="icon">&nbsp;</div>
+    <h2>Help Pages</h2>
+    <h1>Objectives</h1>
+</div>
+
+<div class="content">
+<p>An objective is a measurable target of how to achieve an organization's aims, e.g. "Operate within budget" or "Achieve 100M in turnover by 2015". </p>
+
+<p>Objectives provide the primary means of relating key aims of the organization to the risks that may impact their achievement.</p>
+
+<p>
+A Heatmap custom link has been provided to show all Risks that have been assigned to a specific Objective, enabling them to be viewed by their Impact and Likelihood ratings. Inherent/residual risk heatmaps show risks before and after mitigation respectively.
+Numeric values in the heatmap cells show the number of instances of risks in that probability/impact group. Clicking on a Heatmap cell will list these risks. These can then be navigated to by clicking on the risk name.  The "clear search filter" button clears the list.</p>
+
+<p>
+The Associated Risks related list allows management of the relationship between an Objective and its related risks.</p>
+
+
+<br/>
+<br/>
+<br/>
+
+<h3 >Contact Details</h3>
+
+<p>
+For further support information, please contact your local administrator.</p>
+<div class="clear"></div>
+</div>
+</apex:page>

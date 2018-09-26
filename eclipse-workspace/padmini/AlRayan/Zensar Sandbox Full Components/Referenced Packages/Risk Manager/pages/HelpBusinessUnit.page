@@ -1,0 +1,46 @@
+<apex:page sideBar="false" showHeader="false" standardStylesheets="false">
+
+<head>
+	<apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'HelpPageStylesheet.css')}"/>
+</head>
+
+<div class="heading">
+    <div class="icon">&nbsp;</div>
+    <h2>Help Pages</h2>
+    <h1>Business Units</h1>
+</div>
+
+<div class="content">
+<p>
+A Business Unit is a clearly defined unit of organization, such as a Division, Subsidiary, Function or Project. Business Units provide the primary means of breaking down risk management information across an organization.
+</p>
+<p>
+How you use Business Units will depend on your user profile. If you have read only access, then you will be able to view Business Units that you have visibility of and all associated risk information. If you have create or edit access, then you will be able to create new Business Units and edit their details.</p>
+<p>
+A Risk Heatmap custom link has been provided to show all Risks that have been assigned to a specific Business Unit on a Heatmap. 
+</p>
+<p>
+If you have permission, you can create a new Business Unit by clicking on the New button under the Business Units Tab. 
+</p>
+<p>
+To create a hierarchy within your organization, when adding or updating a Business Unit choose a parent Business Unit to which the current Business Unit belongs. Clicking on the View Hierarchy custom link allows the organization structure to be seen (and navigated) in a graphical manner.
+</p>
+<p>Administrators can use the Manage Members link to assign Users to a Business Unit. Users assigned to a Business Unit have visibility of the record, and all its associated records, e.g. Risks and Controls.
+</p>
+<p>As a System Administrator or Super User you can also set the Threat and Opportunity Scoring Scheme that is assigned to the Business Unit. The Scoring Scheme defines the Impact and Likelihood ratings that apply to Risks linked to the Business Unit. For more information on Scoring Schemes, see "Help for this Page" under the Scoring Schemes tab.
+</p>
+<p>Related lists (Risk, Objectives, etc) are provided to show the relationships between a Business Unit and the related risk entities.
+</p>
+<br/>
+<br/>
+<br/>
+
+<h3 >Contact Details</h3>
+
+<p>
+For further support information, please contact your local administrator.</p>
+
+
+    <div class="clear"></div>
+</div>
+</apex:page>

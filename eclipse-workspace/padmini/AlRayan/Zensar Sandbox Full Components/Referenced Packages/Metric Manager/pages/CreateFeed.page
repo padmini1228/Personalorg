@@ -1,0 +1,100 @@
+<apex:page showHeader="true" sidebar="true" standardController="xmetric__Data_Feed__c" extensions="xmetric.CreateFeedController">
+    <c:ProcessingStatus />
+    
+    <apex:pageMessages id="pgMsgs"/>
+    <apex:form id="formId">
+    <apex:actionFunction name="saveManual" action="{!saveManual}" rendered="{!feed.xmetric__Source_Type__c == 'Manual'}" status="processingStatus" reRender="formId, pgMsgs"/>
+    <apex:actionFunction name="saveReport" action="{!saveReport}" status="processingStatus" reRender="formId, pgMsgs"/>
+
+        <apex:pageBlock title="{!$Label.Select_Feed_Type}" mode="edit">
+            <apex:pageBlockSection columns="2">
+                <apex:inputField required="true" value="{!feed.Name}"/>
+                <apex:pageblocksectionitem >
+                <apex:outputLabel styleClass="customLabel" for="sourceType" value="{!$ObjectType.xmetric__Data_Feed__c.fields.xmetric__Source_Type__c.Label}"/>
+                    <apex:actionRegion >
+                        <apex:inputField id="sourceType" value="{!feed.xmetric__Source_Type__c}">
+                            <apex:actionSupport event="onchange" reRender="pgMsgs,step2,manSaveBtn" action="{!setSource}" />
+                        </apex:inputField>
+                    </apex:actionRegion>
+                </apex:pageblocksectionitem>
+                <apex:inputField value="{!feed.xmetric__Description__c}"/>
+            </apex:pageBlockSection>
+           
+            <apex:pageBlockButtons location="bottom">
+                <apex:outputPanel id="manSaveBtn" >
+                    <apex:commandButton value="{!$Label.Save_Metric}" onclick="saveManual();" rendered="{!feed.xmetric__Source_Type__c == 'Manual'}" reRender="formId"/>
+                </apex:outputPanel>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+        <apex:outputPanel id="step2">
+            <apex:pageBlock title="{!$Label.Select_Report_Value}" id="step2Report" rendered="{!reportSelected}">
+                <style type="text/css">
+                    .selected 
+                    {
+                        background-color: #76DED7;
+                    }
+                </style>
+                <script type="text/javascript">
+                    function setColumnAndRowValues(colValue, rowValue)
+                    {
+                        if(colValue != '0')
+                        {
+                            var newId = rowValue + ':' + colValue;
+                            var colElem = document.getElementById('{!$Component.reportCol}');
+                            var rowElem = document.getElementById('{!$Component.reportRow}');
+                            var oldId = rowElem.value + ':' + colElem.value;
+                            console.log(oldId);
+                            colElem.value = colValue;
+                            rowElem.value = rowValue;
+                            if(oldId != ':')
+                            {
+                                document.getElementById(oldId).className = '';
+                            }
+                            document.getElementById(newId).className = 'selected';
+                        }
+                    }
+                   
+                </script>
+                <apex:inputHidden id="reportCol" value="{!reportCol}" />
+                <apex:inputHidden id="reportRow" value="{!reportRow}" />
+
+                <apex:actionRegion >
+                    <apex:pageBlockSection columns="2">
+                        <apex:selectList value="{!reportId}" label="{!$Label.Source_Report}" multiselect="false" size="1">
+                            <apex:selectOptions value="{!reportsList}"/>
+                                <apex:actionSupport event="onchange" reRender="reportTable" action="{!retrieveReport}"/>
+                        </apex:selectList>
+
+                        <apex:inputField value="{!feed.xmetric__Schedule__c}"/>
+                    </apex:pageBlockSection>
+                </apex:actionRegion>
+                
+                <apex:outputPanel id="reportTable">
+                    <table class="list " border="0" cellpadding="0" cellspacing="0">
+                        <tr class="headerRow">
+                            <apex:repeat value="{!headerRow.values}" var="val">
+                                <th class="headerRow">{!val}</th>
+                            </apex:repeat>
+                        </tr>
+                        <apex:variable var="rowNum" value="{!1}" />
+                        <apex:repeat value="{!rows}" var="row">
+                            <tr id="{!rowNum}">
+                                <apex:variable var="colNum" value="{!0}" />
+                                <apex:repeat value="{!row.values}" var="aggVal">
+                                    <td id="{!rowNum}:{!colNum}" onclick="setColumnAndRowValues({!colNum}, {!rowNum});" class="{!if(TEXT(rowNum) == reportRow && TEXT(colNum) == reportCol, 'selected', '')}">
+                                        {!aggVal}
+                                    </td>
+                                    <apex:variable var="colNum" value="{!colNum + 1}" />
+                                </apex:repeat>
+                            </tr>
+                            <apex:variable var="rowNum" value="{!rowNum + 1}" />
+                        </apex:repeat>
+                    </table>
+                </apex:outputPanel>
+                <apex:pageBlockButtons location="bottom">
+                    <apex:commandButton onclick="saveReport();" value="{!$Label.Save_Metric}" reRender="formId"/>
+                </apex:pageBlockButtons>
+            </apex:pageBlock>
+        </apex:outputPanel>
+    </apex:form>
+</apex:page>

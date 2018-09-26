@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Note</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Notes</value>
+    </caseValues>
+    <fields>
+        <label><!-- Date for follow up --></label>
+        <name>Date_for_follow_up__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date/time --></label>
+        <name>Date_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job --></label>
+        <name>Job__c</name>
+        <relationshipLabel><!-- Notes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Note --></label>
+        <name>Note__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Applicant</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Applicants</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account number --></label>
+        <name>Account_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- ApplicantName --></label>
+        <name>ApplicantName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicant Number --></label>
+        <name>Applicant_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Reference Number --></label>
+        <name>Application_Reference_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF Relationship --></label>
+        <name>CPF_Relationship__c</name>
+        <relationshipLabel><!-- Applicants --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Decision --></label>
+        <name>Decision__c</name>
+    </fields>
+    <fields>
+        <label><!-- Full name --></label>
+        <name>Full_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- HTBQ1 --></label>
+        <name>HTBQ1__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- HTBQ2 --></label>
+        <name>HTBQ2__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- HTBQ3 --></label>
+        <name>HTBQ3__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Has Card --></label>
+        <name>Has_Card__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Mandate --></label>
+        <name>Has_Mandate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has card for conga --></label>
+        <name>Has_card_for_conga__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is_ Beneficialowner --></label>
+        <name>Is_Beneficialowner__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is Director --></label>
+        <name>Is_Director__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is_ Settlor --></label>
+        <name>Is_Settlor__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is Shareholder --></label>
+        <name>Is_Shareholder__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is Signatory --></label>
+        <name>Is_Signatory__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is_Trustee --></label>
+        <name>Is_Trustee__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Mandate Limit --></label>
+        <name>Mandate_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mandate Unlimited --></label>
+        <name>Mandate_Unlimited__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mandate unlimited for conga --></label>
+        <name>Mandate_unlimited_for_conga__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Applicants --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Position Held --></label>
+        <name>Position_Held__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Account Holder --></label>
+        <name>Primary_Account_Holder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prospect/Customer --></label>
+        <name>Prospect_Customer__c</name>
+        <relationshipLabel><!-- Applicants --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Shareholder Percentage --></label>
+        <name>Shareholder_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signature Required --></label>
+        <name>Signature_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>Stage__c</name>
+        <picklistValues>
+            <masterLabel>Created in EBS</masterLabel>
+            <translation><!-- Created in EBS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Performed Credit Check</masterLabel>
+            <translation><!-- Performed Credit Check --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Credit Check</masterLabel>
+            <translation><!-- Pre-Credit Check --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submit to Decision Engine</masterLabel>
+            <translation><!-- Submit to Decision Engine --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Applicant Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

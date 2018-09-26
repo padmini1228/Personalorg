@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <body>&lt;div style=&quot;padding: 5px; margin: 5px 0 5px 0; border-radius: 3px;background: #CFEEF8;border-radius: 3px;&quot;&gt;&lt;iframe name=&quot;ChatterAnnouncementsNewsReel&quot; src=&quot;/apex/ChatterAnnouncementsNewsReel&quot; height=&quot;100&quot; width=&quot;100%&quot; style=&quot;border: 0px;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;</body>
+    <pageComponentType>htmlArea</pageComponentType>
+    <width>wide</width>
+</HomePageComponent>

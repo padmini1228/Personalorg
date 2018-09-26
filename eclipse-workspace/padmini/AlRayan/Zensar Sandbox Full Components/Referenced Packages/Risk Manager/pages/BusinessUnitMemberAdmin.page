@@ -1,0 +1,93 @@
+<apex:page standardController="grc__Business_Unit__c" extensions="Risk.BusinessUnitMemberAdmin" standardStylesheets="true">
+
+<apex:form id="form">
+
+	<apex:sectionHeader title="{!theBusinessUnit.Name} - ({!IF(theBusinessUnit.Risk__Read_Write_Access_to_Child_BUs__c == true, 'Read/Write Access to Child Business Unit - further permissions controlled by immediate child', 'Read ONLY Access to Child Business Unit')})" subtitle="Member Selection">
+	</apex:sectionHeader>
+
+	<a href="/{!theBusinessUnit.Id}">back to {!theBusinessUnit.Name}</a>
+
+	<br /><br />
+
+	<apex:pageBlock title="Child Access Level - {!IF(theBusinessUnit.Risk__Read_Write_Access_to_Child_BUs__c == true, 'Read/Write', 'Read ONLY')}">
+		<apex:commandButton action="{!changeAccess}" value="{!IF(theBusinessUnit.Risk__Read_Write_Access_to_Child_BUs__c == true, 'Change to Read Only Access', 'Change to Read/Write Access')}" reRender="form"/>
+	</apex:pageBlock>
+
+	<apex:pageBlock title="Users for Selection">
+		<apex:pageBlockTable value="{!paginatedUsers}" var="user">
+	        <apex:column value="{!user.FirstName}"/>
+	        <apex:column value="{!user.LastName}"/>
+	        <apex:column headerValue="Profile">
+	        	{!user.Profile.Name}
+	        </apex:column>
+	        <apex:column headerValue="Role">
+	        	{!user.UserRole.Name}
+	        </apex:column>
+	        <apex:column headerValue="License Type">
+	        	{!user.UserType}
+	        </apex:column>
+			<apex:column style="text-align: center;" headerValue="Add Users" rendered="{!IF(user.Id == theBusinessUnit.OwnerId, false, true)}">
+				<apex:inputField value="{!user.Risk__Selected__c}" />
+			</apex:column>
+	    </apex:pageBlockTable>
+
+        <apex:panelGrid columns="4" rendered="{!IF(selectionUsers.size > 100, true, false)}">
+
+			<a href="/apex/BusinessUnitMemberAdmin?id={!theBusinessUnit.Id}&currentUserPageNumber=1&currentMemberPageNumber={!currentMemberPageNumber}">First</a>
+
+			<apex:outputPanel layout="none" rendered="{!IF(previousUserPageNumber > 0, true, false)}">
+				<a href="/apex/BusinessUnitMemberAdmin?id={!theBusinessUnit.Id}&currentUserPageNumber={!previousUserPageNumber}&currentMemberPageNumber={!currentMemberPageNumber}">Previous</a>
+			</apex:outputPanel>
+
+			<a href="/apex/BusinessUnitMemberAdmin?id={!theBusinessUnit.Id}&currentUserPageNumber={!nextUserPageNumber}&currentMemberPageNumber={!currentMemberPageNumber}">Next</a>
+
+		</apex:panelGrid>
+
+		<apex:pageBlockButtons >
+        	<apex:commandButton action="{!multipleAddMember}" value="Add Users" oncomplete="location.reload();"/>
+        </apex:pageBlockButtons>
+
+	</apex:pageBlock>
+
+	<apex:pageBlock title="Current Members">
+
+		<apex:messages />
+
+		<apex:pageBlockTable value="{!paginatedMembers}" var="member">
+	        <apex:column value="{!member.FirstName}"/>
+	        <apex:column value="{!member.LastName}"/>
+	        <apex:column headerValue="Profile">
+	        	{!member.Profile.Name}
+	        </apex:column>
+	        <apex:column headerValue="Role">
+	        	{!member.UserRole.Name}
+	        </apex:column>
+	        <apex:column headerValue="License Type">
+	        	{!member.UserType}
+	        </apex:column>
+			<apex:column style="text-align: center;" headerValue="Remove Members" rendered="{!IF(member.Id == theBusinessUnit.OwnerId, false, true)}">
+				<apex:inputField value="{!member.Risk__Selected__c}" />
+			</apex:column>
+	    </apex:pageBlockTable>
+
+	    <apex:panelGrid columns="4" rendered="{!IF(userMembers.size > 100, true, false)}">
+
+			<a href="/apex/BusinessUnitMemberAdmin?id={!theBusinessUnit.Id}&currentMemberPageNumber=1&currentUserPageNumber={!currentUserPageNumber}">First</a>
+
+			<apex:outputPanel layout="none" rendered="{!IF(previousMemberPageNumber > 0, true, false)}">
+				<a href="/apex/BusinessUnitMemberAdmin?id={!theBusinessUnit.Id}&currentMemberPageNumber={!previousMemberPageNumber}&currentUserPageNumber={!currentUserPageNumber}">Previous</a>
+			</apex:outputPanel>
+
+			<a href="/apex/BusinessUnitMemberAdmin?id={!theBusinessUnit.Id}&currentMemberPageNumber={!nextMemberPageNumber}&currentUserPageNumber={!currentUserPageNumber}">Next</a>
+
+		</apex:panelGrid>
+
+	    <apex:pageBlockButtons >
+        	<apex:commandButton action="{!multipleRemoveMember}" value="Remove Members" oncomplete="location.reload();"/>
+        </apex:pageBlockButtons>
+
+	</apex:pageBlock>
+
+</apex:form>
+
+</apex:page>

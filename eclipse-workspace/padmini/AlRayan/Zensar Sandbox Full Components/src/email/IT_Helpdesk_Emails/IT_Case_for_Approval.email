@@ -1,0 +1,13 @@
+Please approve the following IT Case to approve:
+
+Case Number: {!Case.CaseNumber}
+Logged by: {!Case.CreatedBy}
+Category: {!Case.Category_1__c}
+Sub-Category: {!Case.Category_2__c}
+
+Subject: {!Case.Subject}
+Description: {!Case.Description}
+
+You need to click onto the link below and Select Approve or Reject and any comments, thanks.
+
+https://eu1.salesforce.com/{!Case.Id}

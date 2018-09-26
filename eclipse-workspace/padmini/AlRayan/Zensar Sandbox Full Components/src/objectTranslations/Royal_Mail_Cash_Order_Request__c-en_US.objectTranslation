@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Royal Mail Cash Order Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Royal Mail Cash Order Requests</value>
+    </caseValues>
+    <fields>
+        <label><!-- API Server URL --></label>
+        <name>API_Server_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- API Session ID --></label>
+        <name>API_Session_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Conga URL --></label>
+        <name>Conga_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Conga Workflow Debug URL --></label>
+        <name>Conga_Workflow_Debug_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Week --></label>
+        <name>Delivery_Week__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Sent --></label>
+        <name>Order_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation><!-- Sent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Trigger Conga Workflow --></label>
+        <name>Trigger_Conga_Workflow__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Emergency Cash Order</masterLabel>
+            <translation><!-- Emergency Cash Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard Cash Order</masterLabel>
+            <translation><!-- Standard Cash Order --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Royal Mail Cash Order Request Layout</layout>
+        <sections>
+            <label><!-- API Details --></label>
+            <section>API Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Conga --></label>
+        <name>Conga</name>
+    </webLinks>
+</CustomObjectTranslation>

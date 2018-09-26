@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Workflow Event</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Workflow Events</value>
+    </caseValues>
+    <fields>
+        <label><!-- Amount of Finance --></label>
+        <name>Amount_of_Finance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Checked by Change Delivery? --></label>
+        <name>Checked_by_Change_Delivery__c</name>
+    </fields>
+    <fields>
+        <label><!-- End date --></label>
+        <name>End_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Completion Date --></label>
+        <name>Estimated_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Description Convert --></label>
+        <name>Event_Description_Convert__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Description --></label>
+        <name>Event_Description__c</name>
+        <picklistValues>
+            <masterLabel>Agreement In Principle</masterLabel>
+            <translation><!-- Agreement In Principle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Awaiting Missing Documents</masterLabel>
+            <translation><!-- Awaiting Missing Documents --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancel Application</masterLabel>
+            <translation><!-- Cancel Application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Certificate of Title Accepted</masterLabel>
+            <translation><!-- Certificate of Title Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Certificate of Title Received</masterLabel>
+            <translation><!-- Certificate of Title Received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Confirm Check List</masterLabel>
+            <translation><!-- Confirm Check List --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer returned offer</masterLabel>
+            <translation><!-- Customer returned offer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decline Letter</masterLabel>
+            <translation><!-- Decline Letter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FCU Check 1</masterLabel>
+            <translation><!-- FCU Check 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FCU Check 2</masterLabel>
+            <translation><!-- FCU Check 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP BTL Agreement in Principle</masterLabel>
+            <translation><!-- HPP BTL Agreement in Principle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP BTL Application</masterLabel>
+            <translation><!-- HPP BTL Application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP BTL Customer withdrawn</masterLabel>
+            <translation><!-- HPP BTL Customer withdrawn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP Eligibility Assessment</masterLabel>
+            <translation><!-- HPP Eligibility Assessment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP Experian Credit Check</masterLabel>
+            <translation><!-- HPP Experian Credit Check --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Purchase Plan Application</masterLabel>
+            <translation><!-- Home Purchase Plan Application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Instruct Solicitor</masterLabel>
+            <translation><!-- Instruct Solicitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Instruct Valuation</masterLabel>
+            <translation><!-- Instruct Valuation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance in place</masterLabel>
+            <translation><!-- Insurance in place --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Managing Director Approval</masterLabel>
+            <translation><!-- Managing Director Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pay procurement fee to intermediary</masterLabel>
+            <translation><!-- Pay procurement fee to intermediary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refer to Credit Risk</masterLabel>
+            <translation><!-- Refer to Credit Risk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repayment Schedule</masterLabel>
+            <translation><!-- Repayment Schedule --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Send Offer and Contract</masterLabel>
+            <translation><!-- Send Offer and Contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Setup Finance on System</masterLabel>
+            <translation><!-- Setup Finance on System --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed Application Received</masterLabel>
+            <translation><!-- Signed Application Received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solicitor Confirmation</masterLabel>
+            <translation><!-- Solicitor Confirmation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Start Finance Workflow</masterLabel>
+            <translation><!-- Start Finance Workflow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer Funds</masterLabel>
+            <translation><!-- Transfer Funds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Update Application Details</masterLabel>
+            <translation><!-- Update Application Details --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Valuation Received</masterLabel>
+            <translation><!-- Valuation Received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Welcome Letter</masterLabel>
+            <translation><!-- Welcome Letter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>obtain invoice re fee assisted only</masterLabel>
+            <translation><!-- obtain invoice re fee assisted only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>when cancel app: chase fees from cust</masterLabel>
+            <translation><!-- when cancel app: chase fees from cust --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event Source --></label>
+        <name>Event_Source__c</name>
+        <picklistValues>
+            <masterLabel>EBA</masterLabel>
+            <translation><!-- EBA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EBS</masterLabel>
+            <translation><!-- EBS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFDC</masterLabel>
+            <translation><!-- SFDC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weblabs</masterLabel>
+            <translation><!-- Weblabs --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Intermediary Contact --></label>
+        <name>Intermediary_Contact__c</name>
+        <relationshipLabel><!-- Workflow Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Legacy Created Date --></label>
+        <name>Legacy_Created_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legacy Workflow Event ID --></label>
+        <name>Legacy_Workflow_Event_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Business Days Open --></label>
+        <name>Number_of_Days_Open__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Workflow Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Overall Stage --></label>
+        <name>Overall_Stage__c</name>
+        <picklistValues>
+            <masterLabel>Abandoned application</masterLabel>
+            <translation><!-- Abandoned application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Application received</masterLabel>
+            <translation><!-- Application received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before completion</masterLabel>
+            <translation><!-- Before completion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancel HPP</masterLabel>
+            <translation><!-- Cancel HPP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completion</masterLabel>
+            <translation><!-- Completion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined application</masterLabel>
+            <translation><!-- Declined application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP eligibility</masterLabel>
+            <translation><!-- HPP eligibility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Managing Director Approval - HPP</masterLabel>
+            <translation><!-- Managing Director Approval - HPP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offer</masterLabel>
+            <translation><!-- Offer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post completion</masterLabel>
+            <translation><!-- Post completion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Report on title</masterLabel>
+            <translation><!-- Report on title --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation><!-- Submitted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Underwriting</masterLabel>
+            <translation><!-- Underwriting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Valuation</masterLabel>
+            <translation><!-- Valuation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Written</masterLabel>
+            <translation><!-- Written --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>valuation recieved back</masterLabel>
+            <translation><!-- valuation recieved back --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Code --></label>
+        <name>Product_Code__c</name>
+        <picklistValues>
+            <masterLabel>?</masterLabel>
+            <translation><!-- ? --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>??</masterLabel>
+            <translation><!-- ?? --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Start date --></label>
+        <name>Start_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Actioned</masterLabel>
+            <translation><!-- Actioned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resubmitted</masterLabel>
+            <translation><!-- Resubmitted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unused</masterLabel>
+            <translation><!-- Unused --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Workflow Event ID --></label>
+        <name>Workflow_Event_ID__c</name>
+    </fields>
+    <layouts>
+        <layout>BDM View</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HPP Event Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>HPP Event number</nameFieldLabel>
+    <recordTypes>
+        <label><!-- BDM View --></label>
+        <name>BDM_View</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- IT Servicedesk --></label>
+        <name>IT_Servicedesk</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <webLinks>
+        <fullName>Enter_KRI_Reviews</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>page</linkType>
+        <masterLabel>Enter KRI Reviews</masterLabel>
+        <openType>replace</openType>
+        <page>KRIReviewWizard</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>Review_All</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Review All</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>{!URLFOR(&apos;/apex/&apos;+$Setup.Risk__NamespacePrefix__c.Value__c+&apos;KRIReviewWizard&apos;, null, 
+[
+reviewall= &quot;true&quot;
+]
+)}</url>
+    </webLinks>
+</CustomObject>

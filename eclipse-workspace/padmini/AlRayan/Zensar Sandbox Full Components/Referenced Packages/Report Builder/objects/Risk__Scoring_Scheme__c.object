@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>No_of_Cost_Impacts__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>No of Cost Impacts</label>
+        <summaryFilterItems>
+            <field>Risk__Impact_Category__c.Risk__Type_of_Risk__c</field>
+            <operation>equals</operation>
+            <value>Cost, %Cost</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Risk__Impact_Category__c.Risk__Scoring_Scheme__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>No_of_Percentage_Cost_or_Time_Impacts__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>No of Percentage Cost or Time Impacts</label>
+        <summaryFilterItems>
+            <field>Risk__Impact_Category__c.Risk__Type_of_Risk__c</field>
+            <operation>equals</operation>
+            <value>%Cost, %Time, Time</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Risk__Impact_Category__c.Risk__Scoring_Scheme__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>No_of_Time_Impacts__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>No of Time Impacts</label>
+        <summaryFilterItems>
+            <field>Risk__Impact_Category__c.Risk__Type_of_Risk__c</field>
+            <operation>equals</operation>
+            <value>%Time, Time</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Risk__Impact_Category__c.Risk__Scoring_Scheme__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+</CustomObject>

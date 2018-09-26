@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email sent to the customer when the offer letter has expired</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>Offer letter has expired</name>
+    <style>freeForm</style>
+    <subject>Al Rayan Bank property finance application update</subject>
+    <textOnly>Dear {!Account.Salutation} {!Account.FirstName} {!Account.LastName},
+
+Please find below an update on the progress of your application for property finance from Al Rayan.
+
+We recently sent you a letter advising that as yet we have not received back your signed copy of our offer.
+
+
+Al Rayan Bank PLC offers are subject to acceptance within thirty days of the date of the offer letter. After this time, if we have not received a signed copy of the offer letter, we reserve the right to withdraw the offer.
+
+
+As we have not received your signed acceptance, we have now withdrawn the offer.
+
+
+We would be happy to provide you with a new offer. If you would like to reinstate your case, please call our Sales Support team on 0121 456 7878 or email salessupport@alrayanbank.co.uk, between 9.00am and 5.30pm, Monday to Friday. They will be happy to send you a new offer for you to sign.
+
+
+If you have already responded to the letter we sent you, please disregard this email. If you respond to this email and subsequently receive our letter, please ignore the letter.
+
+
+If you are no longer proceeding with the offer, and in line with our Terms and Conditions and the details contained within the Tariff List, you will not receive a refund of either the valuation fee or the administration fee that you will have paid up to this point. These fees are charged to cover the costs incurred by Al Rayan Bank.
+
+
+
+
+Kind regards
+
+
+Al Rayan Bank
+
+
+**********************************************************************************************************************************
+
+NOTICE - PLEASE READ
+
+This e-mail is intended for the recipient only and may contain confidential and/or legally privileged information which may be protected by law.
+
+Access to this e-mail by anyone other than the addressee is unauthorized. Unofficial use, copying or disclosure of all or part of this communication is strictly prohibited and may be unlawful. Please notify the sender by return e-mail and destroy all copies. Any opinions expressed in this message are those of the sender only and do not necessarily represent the views or opinions of Al Rayan Bank. No employee or agent is authorised to conclude any binding agreement on behalf of Al Rayan Bank with another party by email without express written confirmation by a director of the company. Reasonable steps have been taken to ensure that this communication and any attachments are free from computer virus, you are advised to take your own steps to ensure that they are actually virus free.
+
+Al Rayan Bank may monitor email traffic data and also the content of email for the purposes of security and staff training.
+
+Registered Office, Al Rayan Bank PLC, 44 Hans Crescent, Knightsbridge, London SW1X 0LZ. Registered as a Limited Company in England and Wales No. 4483430.
+
+
+**********************************************************************************************************************************</textOnly>
+    <type>html</type>
+</EmailTemplate>

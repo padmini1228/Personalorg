@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Attachment Data</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Attachment Data</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Attachment Data --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Docugen Job --></label>
+        <name>Docugen_Job__c</name>
+        <relationshipLabel><!-- Attachment Data --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Attachment Data --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Attachment Data Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

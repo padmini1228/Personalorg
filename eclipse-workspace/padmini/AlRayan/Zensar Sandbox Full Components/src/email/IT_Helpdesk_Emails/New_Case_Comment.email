@@ -1,0 +1,16 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="1" aEditID="c1r1" >
+<![CDATA[<p>Dear {!Case.Contact},</p>
+<p>&nbsp;</p>
+<p>I can confirm that your case number {!Case.CaseNumber}&nbsp;has been updated. Please review the case to see the update. </p>
+<p>&nbsp;</p>
+<p>Thanks</p>
+<p>&nbsp;</p>
+<p>{!Case.OwnerFullName}</p>
+<p>&nbsp;</p>
+<p>{!Case.Link}</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>]]></td>
+</tr>
+</table>

@@ -1,0 +1,9 @@
+Hi,
+
+Please note that a new HPP opportunity has been updated (www.salesforce.com/{!Opportunity.Id}) and a proc fee is required. 
+
+The proc fee amount is {!Opportunity.Proc_Fee__c}
+
+Thanks
+
+Salesforce

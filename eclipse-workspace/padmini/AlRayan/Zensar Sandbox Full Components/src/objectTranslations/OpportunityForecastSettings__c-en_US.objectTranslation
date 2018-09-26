@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Opportunity Forecast Settings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Opportunity Forecast Settings</value>
+    </caseValues>
+    <fields>
+        <help><!-- The Opportunity field which should be used to populate the Amount field. --></help>
+        <label><!-- Amount Field --></label>
+        <name>AmountField__c</name>
+    </fields>
+    <fields>
+        <help><!-- The value which should be populated in the Quantity field. --></help>
+        <label><!-- Quantity --></label>
+        <name>Quantity__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

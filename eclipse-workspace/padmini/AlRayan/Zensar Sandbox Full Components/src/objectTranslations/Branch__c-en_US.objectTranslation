@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Branch</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Branches</value>
+    </caseValues>
+    <fields>
+        <label><!-- Branch Limit --></label>
+        <name>Branch_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Location --></label>
+        <name>Branch_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Mnemonic --></label>
+        <name>Branch_Mnemonic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Number --></label>
+        <name>Branch_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Open Days --></label>
+        <name>Branch_Open_Days__c</name>
+        <picklistValues>
+            <masterLabel>Friday</masterLabel>
+            <translation><!-- Friday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monday</masterLabel>
+            <translation><!-- Monday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saturday</masterLabel>
+            <translation><!-- Saturday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sunday</masterLabel>
+            <translation><!-- Sunday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thursday</masterLabel>
+            <translation><!-- Thursday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuesday</masterLabel>
+            <translation><!-- Tuesday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wednesday</masterLabel>
+            <translation><!-- Wednesday --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cash Order Approver --></label>
+        <name>Cash_Order_Approver__c</name>
+        <relationshipLabel><!-- Branches (Cash Order Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Used for Loomis Cash Order Deliveries --></help>
+        <label><!-- Ref Number --></label>
+        <name>D_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Currency --></label>
+        <name>Default_Currency__c</name>
+        <picklistValues>
+            <masterLabel>EUR</masterLabel>
+            <translation><!-- EUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GBP</masterLabel>
+            <translation><!-- GBP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QAR</masterLabel>
+            <translation><!-- QAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USD</masterLabel>
+            <translation><!-- USD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Deputy Branch Manager --></label>
+        <name>Deputy_Branch_Manager__c</name>
+        <relationshipLabel><!-- Branches (Deputy Branch Manager) --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Branch Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

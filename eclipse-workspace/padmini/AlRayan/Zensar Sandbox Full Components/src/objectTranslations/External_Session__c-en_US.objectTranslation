@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>External Session</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>External Sessions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- External Sessions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Active Date --></label>
+        <name>Active_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Continue Application --></label>
+        <name>Continue_Application__c</name>
+        <relationshipLabel><!-- External Sessions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Expires --></label>
+        <name>Expires__c</name>
+    </fields>
+    <fields>
+        <label><!-- IP Address --></label>
+        <name>IP_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Active --></label>
+        <name>Is_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- External Sessions --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>External Session Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

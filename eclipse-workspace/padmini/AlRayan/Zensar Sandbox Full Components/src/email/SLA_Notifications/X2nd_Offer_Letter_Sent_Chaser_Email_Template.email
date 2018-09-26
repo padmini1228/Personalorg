@@ -1,0 +1,14 @@
+It has now been 15 days since the initial offer letter was sent to the customer, therefore can you please chase the customer urgently to sign and return the offer letter.
+
+Customer 6 digit number: {!Opportunity.Customer_EBS_Number__c}
+Product: {!Opportunity.IBB_Product__c}
+Customer Name : {!Opportunity.Account}
+Customer Security Address :  {!Opportunity.00ND0000003MZOC}, {!Opportunity.00ND0000003MZR0}, {!Opportunity.00ND0000003MZRD}, {!Opportunity.00ND0000003MZPz} 
+2nd Offer letter sent {!Opportunity.00ND0000003MZRY}
+
+
+{!Opportunity.Link}
+
+
+Yours sincerely,
+Islamic Bank of Britain plc

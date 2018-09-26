@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Monthly 1-2-1 IBb Retail Notification e-mail</name>
+    <style>none</style>
+    <subject>Monthly 1-2-1 for {!IBB_Retail_1_2_1_Form_2012__c.Performance_Month_reviewed__c}</subject>
+    <type>text</type>
+</EmailTemplate>

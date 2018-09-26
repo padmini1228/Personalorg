@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Teller Print Template</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Teller Print Templates</value>
+    </caseValues>
+    <fields>
+        <label><!-- Allow Re-Print --></label>
+        <name>Allow_Re_Print__c</name>
+    </fields>
+    <fields>
+        <label><!-- Print Type --></label>
+        <name>Print_Type__c</name>
+        <picklistValues>
+            <masterLabel>Activity Log</masterLabel>
+            <translation><!-- Activity Log --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>After host</masterLabel>
+            <translation><!-- After host --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before host</masterLabel>
+            <translation><!-- Before host --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mini Statement</masterLabel>
+            <translation><!-- Mini Statement --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Teller Function --></label>
+        <name>Teller_Function__c</name>
+        <relationshipLabel><!-- Teller Print Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Template HTML --></label>
+        <name>Template_HTML__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

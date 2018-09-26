@@ -1,0 +1,15 @@
+It has now been 48 hours since the initial offer letter was sent to the customer’s solicitors can you please chase.  
+
+Customer 6 digit number: {!Opportunity.Customer_EBS_Number__c}
+Product: {!Opportunity.IBB_Product__c}
+Customer Name : {!Opportunity.Account}
+Customer Security Address :  {!Opportunity.00ND0000003MZOC}, {!Opportunity.00ND0000003MZR0}, {!Opportunity.00ND0000003MZRD}, {!Opportunity.00ND0000003MZPz} 
+Offer letter sent {!Opportunity.00ND0000003MZPb}
+Customer Solicitor Name: {!Opportunity.00ND0000003MZQp}
+Customer Solicitor Phone Number: {!Opportunity.00ND0000003MZQt}
+
+{!Opportunity.Link}
+
+
+Yours sincerely,
+Islamic Bank of Britain plc

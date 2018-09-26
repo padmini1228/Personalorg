@@ -1,0 +1,125 @@
+<apex:page controller="Risk.RiskMapReport" showheader="{! !isPrintableView}" sidebar="{! !isPrintableView}" id="pg" >
+
+<head>
+	<apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'A4landscapeHeatmapReport.css')}"/>
+</head>
+
+<script>
+    window.onload = checkPrintView;
+    function checkPrintView(){
+        if({! isPrintableView}){window.print();}
+    }
+</script>
+
+<apex:form id="riskTable" style="width: 100%">
+
+        <div class="header">
+            <apex:sectionHeader title="Risk Maps" subTitle="Risks shown for {!currentBU} {!IF(showChildren,'and its child Business Units.','')}"/>
+        </div>
+
+        <apex:outputPanel rendered="{! !isPrintableView}" style="width: 1000px;" >
+            <br/>
+
+            <apex:outputPanel style="float:left;" rendered="{! IF(topLevelBusinessUnit != null, true, false)}" >
+                <a href="{! URLFOR($Page.RiskMap)}" >Clear filters</a>
+            </apex:outputPanel>
+            <div style="float:right;">
+<!--                <apex:outputPanel rendered="{!ratingKeyDocId != ''}"> -->
+<!--                    <apex:outputLink target="_blank" value="/servlet/servlet.FileDownload?file={!ratingKeyDocId}">View Rating Key</apex:outputLink> -->
+<!--                    | -->
+<!--                </apex:outputPanel> -->
+
+                <a href="{! URLFOR($Page.RiskMap, null, [isPrintableView='true', scbu=showChildren, f=Filter, tlbu=topLevelBusinessUnit])}" target="_blank">Printable View</a>
+                |
+                <a href="javascript:openPopupFocusEscapePounds(%27{!$Page.HelpRiskMap}%27, %27Help%27, 700, 600, %27width=700,height=600,resizable=yes,toolbar=yes,status=no,scrollbars=yes,menubar=yes,directories=no,location=no,dependant=no%27, false, false);" title="Help Printing Heatmap Report">
+                    Help for this Page
+                    <img src="/s.gif" alt="Help"  class="helpIcon" title="Help"/>
+                </a>
+            </div>
+            <div style="clear:both;" />
+            <br/>
+        </apex:outputPanel>
+
+        <apex:outputPanel rendered="{! !isPrintableView}" style="width: 1000px;">
+            <apex:pageBlock >
+            <apex:pageMessage severity="warning" rendered="{! IF(topLevelBusinessUnit == null, true, false)}" summary="You are not assigned to a Business Unit, please contact your system administrator for support." strength="3" />
+            <apex:pageMessages />
+            <apex:pageBlockSection rendered="{! IF(topLevelBusinessUnit != null, true, false)}" >
+            <apex:pageBlockSectionItem >
+            Filter By Business Unit:
+
+            <apex:outputPanel layout="block" style="height: 200px; width:400px; overflow-y:auto;">
+                <apex:repeat value="{!availableBusinessUnitHierarchy}" var="buId">
+                    <apex:repeat value="{!availableBusinessUnitHierarchy[buId]}" var="busUnit">
+                        <apex:outputPanel layout="block" style="cursor: pointer; margin-left:{!busUnit.level * 10}px">
+                            <apex:outputField value="{!busUnit.me.name}" />
+                            <apex:actionSupport event="onclick" rerender="riskTable" action="{!updateFilterParam}">
+                                <apex:param name="bob" assignTo="{!topLevelBusinessUnit}" value="{!busUnit.me.Id}"/>
+                            </apex:actionSupport>
+                        </apex:outputPanel>
+                    </apex:repeat>
+                    <br/>
+                </apex:repeat>
+            </apex:outputPanel>
+
+            </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            </apex:pageBlock>
+        </apex:outputPanel>
+
+        <apex:outputPanel rendered="{!scoringScheme != null}" style="float: left; margin-bottom: 20px; margin-left: 80px;">
+            <c:RiskMap ScoringScheme="{!scoringScheme}" fieldToUpdate="{!$Component.filter}" fieldToNull="" width="{!horizontalSize}" height="{!verticalSize}" data="{!riskMapDataString}" LineData="{!linesData}" returnURLParam="&scbu={!showChildren}&tlbu={!topLevelBusinessUnit}" showLabels="true" xLabels="{!Probabilities}" yLabels="{!Impacts}" xLabelsText="{!ProbabilitiesLabels}" yLabelsText="{!ImpactsLabels}" xAxisName="{!$Label.risk__Probability}" yAxisName="{!$Label.risk__Impact}" title="Risk Map"  disableActions="{!isPrintableView}" />
+            <apex:inputHidden id="filter" value="{!Filter}" />
+        </apex:outputPanel>
+
+
+        <div style="clear: both;" />
+
+        <apex:outputPanel rendered="{! IF(topLevelBusinessUnit != null && !isPrintableView, true, false)}" >
+            <a href="." onclick="document.getElementById('{!$Component.filter}').value=''; actionfilter(); window.location = '{! URLFOR($Page.RiskMap)}?scbu={!showChildren}&tlbu={!topLevelBusinessUnit}'; return false;" style="margin-left: 20px;">Clear Impact/Probability filter</a>
+            <br /><br />
+            <apex:actionStatus startText="(loading data...)" stopText="" id="myStatus"/>
+        </apex:outputPanel>
+
+    <apex:outputPanel id="riskTables" >
+    <apex:pageBlock title="Risks" >
+        <apex:outputPanel rendered="{!EntrySize == 0}">
+            No records to display.
+        </apex:outputPanel>
+
+        <apex:pageblockTable styleClass="riskTables" value="{!Entries}" var="entry" rendered="{!EntrySize > 0}">
+            <apex:column >
+                <apex:facet name="header">Risk Title</apex:facet>
+                <apex:outputPanel rendered="{! !isPrintableView}" >
+                    <a href="{!URLFOR($Action.grc__Risk__c.View,entry.Id)}">{!entry.Name}</a>
+                </apex:outputPanel>
+                <apex:outputPanel rendered="{! isPrintableView}" >
+                    <apex:outputText >{!entry.Name}</apex:outputText>
+                </apex:outputPanel>
+            </apex:column>
+            <apex:column value="{!entry.grc__Risk_Name__c}"/>
+            <apex:column value="{!entry.grc__Status__c}"/>
+            <apex:column value="{!entry.grc__Category__c}"/>
+            <apex:column value="{!entry.grc__Key_Risk__c}"/>
+            <apex:column value="{!entry.Risk__Inherent_Score__c}"/>
+
+            <apex:column width="100px">
+                 <apex:facet name="header">{!$ObjectType.grc__Risk__c.fields.Risk__Inherent_Rating__c.Label}</apex:facet>
+                    <apex:outputField value="{!entry.Risk__Inherent_Rating__c}" />
+             </apex:column>
+
+            <apex:column value="{!entry.Risk__Residual_Score__c}"/>
+
+             <apex:column width="100px" >
+                 <apex:facet name="header">{!$ObjectType.grc__Risk__c.fields.Risk__Residual_Rating__c.Label}</apex:facet>
+                     <apex:outputField value="{!entry.Risk__Residual_Rating__c}" />
+             </apex:column>
+
+            <apex:column value="{!entry.Risk__Control_Effectiveness__c}"/>
+        </apex:pageblockTable>
+
+    </apex:pageBlock>
+    </apex:outputPanel>
+    <apex:outputPanel id="bob"></apex:outputPanel>
+    </apex:form>
+</apex:page>

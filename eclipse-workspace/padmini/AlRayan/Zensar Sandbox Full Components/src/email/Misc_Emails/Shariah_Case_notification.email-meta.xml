@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>To notify Mohammed Fadloun and Samir Alamad when a case is assigned to Shariah and Product Development</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Shariah Case notification</name>
+    <style>none</style>
+    <subject>Case Assigned to Compliance - {!Case.CaseNumber}</subject>
+    <type>text</type>
+</EmailTemplate>

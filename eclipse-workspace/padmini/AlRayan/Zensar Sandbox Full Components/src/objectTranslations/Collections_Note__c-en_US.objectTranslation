@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Collections Note</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Collections Notes</value>
+    </caseValues>
+    <fields>
+        <help><!-- Please include root cause analysis --></help>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Type --></label>
+        <name>Contact_Type__c</name>
+        <picklistValues>
+            <masterLabel>Inbound call</masterLabel>
+            <translation><!-- Inbound call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inbound email</masterLabel>
+            <translation><!-- Inbound email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Letter from customer</masterLabel>
+            <translation><!-- Letter from customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Letter to customer</masterLabel>
+            <translation><!-- Letter to customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outbound call</masterLabel>
+            <translation><!-- Outbound call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outbound email</masterLabel>
+            <translation><!-- Outbound email --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Account --></label>
+        <name>Customer_Account__c</name>
+        <relationshipLabel><!-- Collections Notes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer --></label>
+        <name>Customer__c</name>
+        <relationshipLabel><!-- Collections Notes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>Title__c</name>
+    </fields>
+    <layouts>
+        <layout>Collections Note Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Collections_Letters_Business --></label>
+        <name>Collections_Letters_Business</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Collections_Letters_Personal --></label>
+        <name>Collections_Letters_Personal</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,111 @@
+<apex:page controller="Risk.RiskActionReportListCont" tabstyle="grc__Risk__c">
+
+	<apex:sectionHeader title="Risk Action Report: step 2" subtitle="Risks with Open Actions" />
+
+    <script type="text/javascript">
+        function selectRisks(risksTable, selectAllState)
+        {
+            var thisTable = document.getElementById(risksTable);
+            var inputArray = thisTable.getElementsByTagName('input');
+
+            for(var x = 0;  x < inputArray.length; x++)
+            {
+                var thisElement = inputArray[x];
+
+                if(thisElement.type == 'checkbox')
+                {
+                    thisElement.checked = selectAllState;
+                }
+            }
+        }
+
+        function CallNext()
+        {
+        	if (document.getElementById('selectAll').checked)
+            {
+            	window.open('{!URLFOR($Page.RiskActionReport, null, [ ssbu = SelectAllBusinessUnits, bu = topLevelBusinessUnit, risks = 'all', renderAs = "PDF" ])}','_blank');
+            }
+            else
+            {
+            	window.open('{!URLFOR($Page.RiskActionReport, null, [ risks = riskIds, renderAs = "PDF" ])}','_blank');
+            }
+        }
+
+    </script>
+
+    <apex:form >
+
+		<apex:outputPanel id="redirectPDF">
+
+        	<apex:outputPanel rendered="{!RiskIDs.size > 0}">
+
+                    <script>
+
+                    	if (document.getElementById('selectAll').checked)
+                        {
+                      		window.open('{!URLFOR($Page.RiskActionReport, null, [ ssbu = SelectAllBusinessUnits, bu = topLevelBusinessUnit, risks = riskIds, renderAs = "PDF" ])}','_blank');
+                        }
+                        else
+                        {
+                      		window.open('{!URLFOR($Page.RiskActionReport, null, [ risks = riskIds, renderAs = "PDF" ])}','_blank');
+                        }
+
+                    </script>
+
+                </apex:outputPanel>
+            </apex:outputPanel>
+
+            <apex:outputPanel id="redirectHTML">
+                <apex:outputPanel rendered="{!RiskIDs.size > 0}">
+                    <script>window.open('{!URLFOR($Page.Risk__RiskActionReport, null, [ risks = riskIds, renderAs = "HTML" ])}');</script>
+                </apex:outputPanel>
+            </apex:outputPanel>
+
+        	<apex:outputPanel id="Risktable" rendered="{!WizardSet == '1'}">
+
+        		<apex:messages style="color:red;" />
+
+            	<apex:pageBlock title="Risks with Open Actions">
+
+                	<apex:pageMessage severity="warning" rendered="{! IF(Risks.size < 1, true, false)}" summary="There are no risks with open actions to display." strength="3" />
+
+                	<apex:pageBlockButtons rendered="{! IF(Risks.size > 0, true, false)}">
+						<apex:commandButton value="PDF Report" rerender="redirectPDF"/>
+                    	<apex:commandButton value="Web Report" rerender="redirectHTML"/>
+                	</apex:pageBlockButtons>
+
+                <apex:pageBlockTable value="{!Risks}" var="r" id="risksTable" rendered="{! IF(Risks.size > 0, true, false)}" >
+                    <apex:column width="80px">
+                        <apex:facet name="header">
+                            <input type="checkbox" name="selectAll" id='selectAll' onclick="selectRisks('{!$component.risksTable}',this.checked);"/>&nbsp;Select All
+                        </apex:facet>
+                        <apex:inputCheckbox value="{!r.Selected}"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">Risk No</apex:facet>
+                        <apex:outputField value="{!r.Risk.grc__Risk_Name__c}"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">Risk Name</apex:facet>
+                        <apex:outputLink value="/{!r.Risk.Id}" >
+                            <apex:outputField value="{!r.Risk.Name}"/>
+                        </apex:outputLink>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">Business Unit</apex:facet>
+                        <apex:outputField value="{!r.Risk.grc__Business_Unit__c}"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">Status</apex:facet>
+                        <apex:outputField value="{!r.Risk.grc__Status__c}"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">Category</apex:facet>
+                        <apex:outputField value="{!r.Risk.grc__Category__c}"/>
+                    </apex:column>
+                </apex:pageBlockTable>
+            </apex:pageBlock>
+
+        </apex:outputPanel>
+    </apex:form>
+</apex:page>

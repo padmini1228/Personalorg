@@ -1,0 +1,31 @@
+<apex:page standardController="fairwarn__Alert__c" showHeader="true" extensions="fairwarn.fairwarn_Alert_Controller" standardStylesheets="false" >
+    <h1><apex:pageMessages ></apex:pageMessages></h1>
+    <ul class="list-view right-one-icons">
+        <apex:repeat value="{!Records}" var="var">
+            
+            <li class="content">
+                <label for="fwSel_{!var.fairwarn__assocUser__r.id}">
+                    <apex:outputPanel rendered="{!hasPermission && not usersLogins[var.fairwarn__assocUser__r.id].isFrozen }" layout="none"> 
+                        <input type="checkbox" name="fwSel_{!var.fairwarn__assocUser__r.id}" id="fwSel_{!var.fairwarn__assocUser__r.id}" value="1" data-mini="true" />
+                    </apex:outputPanel>
+                    <h2>{!var.fairwarn__assocUser__r.Username}</h2>
+                    <p>
+                        <strong>{!var.fairwarn__assocUser__r.FirstName} {!var.fairwarn__assocUser__r.LastName}</strong><br/>                        
+                    </p>
+                    <apex:outputPanel rendered="{!(var.fairwarn__assocUser__r.Title != null || var.fairwarn__assocUser__r.Department != null)}" layout="none"> 
+                        <p>
+                            <strong>{!var.fairwarn__assocUser__r.Title} - {!var.fairwarn__assocUser__r.Department}</strong><br/>                        
+                        </p>
+                    </apex:outputPanel>
+                </label>
+                <a href="javascript:sforce.one.navigateToSObject('{!var.fairwarn__assocUser__r.id}');" >
+                    <div class="list-view-icons">
+                        <span class="icon-right-arrow">&nbsp;</span>
+                    </div>
+                </a>           
+            </li>
+            
+        </apex:repeat>
+    </ul>
+    
+</apex:page>

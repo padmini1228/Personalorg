@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>Sales support notification</name>
+    <style>freeForm</style>
+    <subject>Case assigned to Sales Support Queue</subject>
+    <textOnly>A case has been assigned to the Sales Support Queue:
+Case number: {!Case.CaseNumber}
+Subject: {!Case.Subject}
+Link to case: {!Case.Link}</textOnly>
+    <type>html</type>
+</EmailTemplate>

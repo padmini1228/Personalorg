@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Example Notice Approval Re-Work template from the Improved Apps team</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Improved_Apps_NoticeBoard_Letterhead</letterhead>
+    <name>Notice Approval Re-Work</name>
+    <style>promotionLeft</style>
+    <subject>Notice Approval REJECTED for Re-Work - {!Notice__c.Title__c}</subject>
+    <textOnly>This Notice has been rejected, re-Work required.
+
+Created by: {!Notice__c.CreatedBy}
+Created on:{!Notice__c.CreatedDate}
+Last modified by:{!Notice__c.LastModifiedBy}
+
+To review this Notice, please follow this link.
+{!Notice__c.Link}
+
+Notice Approval Rejected, re-Work Required.
+
+Approval Request Comments:
+{!ApprovalRequest.Comments}
+
+Notice: {!Notice__c.Title__c}
+Notice Summary: {!Notice__c.Summary__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

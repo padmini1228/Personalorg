@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_letterhead</letterhead>
+    <name>Financial Accounts Due</name>
+    <style>freeForm</style>
+    <subject>Financial Accounts Due</subject>
+    <textOnly>The Financial Accounts Due for {!Opportunity.Name} are due on {!Covenant_Information__c.Financial_Year__c}
+
+Name - {!Opportunity.Account}
+
+Link to Opportunity - {!Opportunity.Link}</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_letterhead</letterhead>
+    <name>Client Account Alert</name>
+    <style>freeForm</style>
+    <subject>Client Account Alert</subject>
+    <textOnly>Details of a new prospect/customer has been added to Salesforce containing the following -
+
+- The word &apos;Client&apos; has been mentioned in the Name
+or
+- An Al Rayan Bank premises has been mentioned in the address
+
+Please click on the link below to review the details:
+{!Account.Link}</textOnly>
+    <type>html</type>
+</EmailTemplate>

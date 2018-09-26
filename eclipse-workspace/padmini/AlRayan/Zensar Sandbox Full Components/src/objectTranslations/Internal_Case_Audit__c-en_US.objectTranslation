@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Internal Case Audit</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Internal Case Audits</value>
+    </caseValues>
+    <fields>
+        <label><!-- Action Due --></label>
+        <name>Action_Due__c</name>
+    </fields>
+    <fields>
+        <label><!-- Breached External SLA --></label>
+        <name>Breached_External_SLA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Breached Internal SLA --></label>
+        <name>Breached_Internal_SLA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Internal Case Audits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- New Owner --></label>
+        <name>New_Owner__c</name>
+        <relationshipLabel><!-- Internal Case Audits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Team --></label>
+        <name>Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Case Assigned --></label>
+        <name>Time_Case_Assigned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Case Moved --></label>
+        <name>Time_Case_Moved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Taken --></label>
+        <name>Time_Taken__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

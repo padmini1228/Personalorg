@@ -1,0 +1,131 @@
+<apex:page controller="Risk.AddMetric" >
+	<apex:sectionHeader title="Add/Edit Metrics" subtitle="{!recordName}" />
+	<apex:pageMessages id="messagePanel" />
+	<style type="text/css" >
+		.popupBackground {
+		       background-color:black;
+		       opacity: 0.20;
+		       filter: alpha(opacity = 20);
+		       width: 100%;
+		       height: 100%;
+		       top: 0;
+		       left: 0;
+		       z-index: 998;
+		       position: absolute;
+		 }
+		.popupPanel {
+		       border: solid 1px;
+		       background-color: white;
+		       left: 50%;
+		       width: 200px;
+		       margin-left: -100px;
+		       top: 50%;
+		       height: 50px;
+		       margin-top: -25px;
+		       z-index: 999;
+		       position:fixed;
+		   }
+		 .metric_data_block{
+		 	resize:both !important;
+		 	height:90px;
+		 	width:100px;
+		 }
+	</style>
+
+	<!-- "Loading" or "Processing" popup --->
+	<apex:actionStatus id="processingStatus" stopText="" onstop="addTableHeader();" >
+	    <apex:facet name="start">
+	        <div>
+	            <div class="popupBackground" />
+	            <div class="popupPanel">
+	                <table border="0" width="100%" height="100%">
+	                    <tr>
+	                        <td align="center" style="font-family: Calibri; font-size: 13px; font-weight: normal;"><b>Processing... Please Wait</b></td>
+	                    </tr>
+	                    <tr>
+	                        <td align="center"><img src="/img/loading.gif"/></td>
+	                    </tr>
+	                </table>
+	            </div>
+	        </div>
+	    </apex:facet>
+	</apex:actionStatus>
+
+	<apex:form >
+
+		<apex:pageBlock title="Metrics" id="pbBlock" >
+			<apex:pageBlockButtons >
+				<apex:commandButton value="Save" action="{!saveMetric}" />
+				<apex:commandButton value="Cancel" action="{!cancel}" />
+			</apex:pageBlockButtons>
+
+			<apex:pageBlockTable id="pbTable" value="{!metricsList}" var="metric" rendered="{!metricsList.size > 0}" >
+				<apex:column headerValue="Action" style="width:5%; padding:25px;">
+					<apex:commandLink status="processingStatus" action="{!removeMetric}" value="Remove" rerender="pbBlock, messagePanel" rendered="{!isBlank(metric.objMetric.Id) == false || isBlank(metric.objMetric.Risk__Metric_Type__c) == false}">
+						<apex:param name="Selected Metric" value="{!metric.tableCellOrder}" assignTo="{!selMetric}" />
+					</apex:commandLink>
+				</apex:column>
+				<apex:column Headervalue="Metric Name" style="width:15%; padding:25px;">
+					<apex:inputField value="{!metric.objMetric.Name}" />
+				</apex:column>
+				<apex:column Headervalue="Metric Type" style="width:15%; padding:25px;" >
+					<apex:inputField value="{!metric.objMetric.Risk__Metric_Type__c}" >
+						<apex:actionSupport status="processingStatus" event="onchange" action="{!addMetric}" rerender="pbBlock, messagePanel" >
+							<apex:param name="Selected Metric" value="{!metric.tableCellOrder}" assignTo="{!selMetric}" />
+						</apex:actionSupport>
+					</apex:inputField>
+				</apex:column>
+				<apex:column Headervalue="Threshold Type" style="width:10%; padding:25px;" >
+					<apex:inputField value="{!metric.objMetric.Risk__Threshold_Type__c}" rendered="{!metric.objMetric.Risk__Metric_Type__c != 'Qualitative'}"/>
+				</apex:column>
+				<apex:column style="width:55%; padding:25px;">
+					<table style="padding-bottom:23px;">
+						<tr>
+							<apex:outputPanel layout="none" rendered="{!metric.objMetric.Risk__Metric_Type__c == 'Currency'}" >
+								<td >{!$ObjectType.Metric__c.Fields.Currency_Threshold__c.Label}</td>
+								<td >{!$ObjectType.Metric__c.Fields.Amber_Currency_Threshold__c.Label}</td>
+							</apex:outputPanel>
+							<apex:outputPanel layout="none" rendered="{!metric.objMetric.Risk__Metric_Type__c == 'Number'}">
+								<td >{!$ObjectType.Metric__c.Fields.Number_Threshold__c.Label}</td>
+								<td >{!$ObjectType.Metric__c.Fields.Amber_Number_Threshold__c.Label}</td>
+							</apex:outputPanel>
+							<apex:outputPanel layout="none" rendered="{!metric.objMetric.Risk__Metric_Type__c == 'Percentage'}">
+								<td >{!$ObjectType.Metric__c.Fields.Percentage_Threshold__c.Label}</td>
+								<td >{!$ObjectType.Metric__c.Fields.Amber_Percentage_Threshold__c.Label}</td>
+							</apex:outputPanel>
+							<apex:outputPanel layout="none" rendered="{!metric.objMetric.Risk__Metric_Type__c == 'Qualitative'}">
+								<td >{!$ObjectType.Metric__c.Fields.Green_Threshold_Text__c.Label}</td>
+								<td >{!$ObjectType.Metric__c.Fields.Amber_Threshold_Text__c.Label}</td>
+								<td >{!$ObjectType.Metric__c.Fields.Red_Threshold_Text__c.Label}</td>
+							</apex:outputPanel>
+						</tr>
+						<tr>
+							<apex:outputPanel layout="none" rendered="{!metric.objMetric.Risk__Metric_Type__c == 'Currency'}" >
+								<td ><apex:inputField value="{!metric.objMetric.Risk__Currency_Threshold__c}" /></td>
+								<td ><apex:inputField value="{!metric.objMetric.Risk__Amber_Currency_Threshold__c}" /></td>
+							</apex:outputPanel>
+							<apex:outputPanel layout="none" rendered="{!metric.objMetric.Risk__Metric_Type__c == 'Number'}" >
+								<td ><apex:inputField value="{!metric.objMetric.Risk__Number_Threshold__c}" /></td>
+								<td ><apex:inputField value="{!metric.objMetric.Risk__Amber_Number_Threshold__c}" /></td>
+							</apex:outputPanel>
+							<apex:outputPanel layout="none" rendered="{!metric.objMetric.Risk__Metric_Type__c == 'Percentage'}">
+								<td ><apex:inputField value="{!metric.objMetric.Risk__Percentage_Threshold__c}" /></td>
+								<td ><apex:inputField value="{!metric.objMetric.Risk__Amber_Percentage_Threshold__c}" /></td>
+							</apex:outputPanel>
+							<apex:outputPanel layout="none" rendered="{!metric.objMetric.Risk__Metric_Type__c == 'Qualitative'}">
+								<td ><apex:inputField value="{!metric.objMetric.Risk__Green_Threshold_Text__c}" /></td>
+								<td ><apex:inputField value="{!metric.objMetric.Risk__Amber_Threshold_Text__c}" /></td>
+								<td ><apex:inputField value="{!metric.objMetric.Risk__Red_Threshold_Text__c}" /></td>
+							</apex:outputPanel>
+						</tr>
+					</table>
+				</apex:column>
+			</apex:pageBlockTable>
+
+			<apex:outputPanel layout="none" rendered="{!metricsList.size == 0}" >
+				There is no associated {!$ObjectType.Metric__c} to this {!recordName}.
+				<apex:outputLink value="{!Referer}" > Click here</apex:outputLink> to relate metrics to this {!$ObjectType.Risk__Metric__c.LabelPlural}.
+			</apex:outputPanel>
+		</apex:pageBlock>
+	</apex:form>
+</apex:page>

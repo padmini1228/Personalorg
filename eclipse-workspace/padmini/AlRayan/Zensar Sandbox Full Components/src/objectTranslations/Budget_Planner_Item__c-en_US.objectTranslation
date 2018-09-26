@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Budget Planner Item</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Budget Planner Items</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Value --></label>
+        <name>Account_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Budget Planner Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Applicant Total --></label>
+        <name>Applicant_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- BDM Comments --></label>
+        <name>BDM_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- BudgetPlannerConfig --></label>
+        <name>BudgetPlannerConfig__c</name>
+        <relationshipLabel><!-- Budget Planner Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Credit Value --></label>
+        <name>Credit_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display Name --></label>
+        <name>Display_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Budget Planner Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Value to be used --></label>
+        <name>Value_to_be_used__c</name>
+    </fields>
+    <layouts>
+        <layout>BudgetPlannerAccount Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,830 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <content>RecipientView</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>A Recipient (User) of an Improved Noticeboard Notice</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>AcknowledgedAndFlagged__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates that you have Acknowledged receipt of this Notification and Flagged the need to follow-up with someone before you can fulfil the terms of the Acknowledgement Statement</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Flag to indicate that you have concerns acknowledging this Notification. You may expect follow-up if you have clicked the button &apos;Acknowledge and Flag&apos;..</inlineHelpText>
+        <label>Acknowledged and Flagged</label>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AcknowledgedDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date and time when you Acknowledged this Notification</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>The date and time when you Acknowledged this Notification.</inlineHelpText>
+        <label>Acknowledged Date</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>AcknowledgementStatement__c</fullName>
+        <deprecated>false</deprecated>
+        <description>If this Notification requires acknowledgment, clicking &apos;Acknowledge&apos;, means you agree to this statement unconditionally. If you click &apos;Acknowledge and Flag&apos; you acknowledge receipt of the Notification and Flag to follow-up with someone on its fulfilment.</description>
+        <externalId>false</externalId>
+        <formula>Notice__r.AcknowledgementStatement__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>If this Notification requires Acknowledgment, when you click &apos;Acknowledge&apos;, you are agreeing to this statement unconditionally. If you click &apos;Acknowledge and Flag&apos; you acknowledge the Notification and Flag for follow up with the Notice Editor.</inlineHelpText>
+        <label>Acknowledgement Statement</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comment__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Any note you wish to add to support your response to this Notification</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Any note you wish to add to support your response to this Notification</inlineHelpText>
+        <label>Comment</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>DeadlineToAcknowledgedDays__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Days elapsed between the Required Action Deadline and your Acknowedgement response to this Notification</description>
+        <externalId>false</externalId>
+        <formula>IF(OR(ISNULL(  Notice__r.RequiredActionDeadline__c  ),ISNULL( AcknowledgedDate__c )), null,  
+floor( AcknowledgedDate__c -  Notice__r.RequiredActionDeadline__c ))</formula>
+        <inlineHelpText>Days elapsed between Required Action Deadline and Notification being Acknowledged</inlineHelpText>
+        <label>Deadline-to-Acknowledged (Days)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DeadlineToOpenedDays__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Days elapsed between the Required Action Deadline and you first Opening this Notification</description>
+        <externalId>false</externalId>
+        <formula>IF(OR(ISNULL(  Notice__r.RequiredActionDeadline__c  ),ISNULL( OpenedDate__c )), null, floor( OpenedDate__c -  Notice__r.RequiredActionDeadline__c ))</formula>
+        <inlineHelpText>Days elapsed between Required Action Deadline and Notification being Opened</inlineHelpText>
+        <label>Deadline-to-Opened (Days)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DisplayedDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date and time that this Notification was first displayed in your Banner</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>The date and time that this Notification was first displayed in your Banner.</inlineHelpText>
+        <label>Displayed Date</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>DisplayedLagDays__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Days elapsed between this Notification being issued to you and being first Displayed in your Banner</description>
+        <externalId>false</externalId>
+        <formula>IF(OR(ISNULL( Notice__r.PublishedDate__c ),ISNULL(DisplayedDate__c)), null, floor( DisplayedDate__c - Notice__r.PublishedDate__c))</formula>
+        <inlineHelpText>Days elapsed between Notice Publication and Notification Display (Recipient&apos;s next page refresh)</inlineHelpText>
+        <label>Displayed Lag (Days)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DisplayedToOpenedLagDays__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Days elapsed between this Notification first being Displayed in your Banner and you Opening it</description>
+        <externalId>false</externalId>
+        <formula>IF(OR(ISNULL( DisplayedDate__c ),ISNULL(  OpenedDate__c  )), null, floor(  OpenedDate__c  - DisplayedDate__c))</formula>
+        <inlineHelpText>Days elapsed between first Displayed in Recipient&apos;s Notification Banner and being Opened by Recipient</inlineHelpText>
+        <label>Displayed-to-Opened Lag (Days)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NoticeBoard_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <description>De-normalisation for With Sharing access</description>
+        <externalId>false</externalId>
+        <formula>Notice__r.NoticeBoard__r.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>De-normalisation for With Sharing access</inlineHelpText>
+        <label>NoticeBoard Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NoticeBoard_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Notice__r.NoticeBoard__r.Name</formula>
+        <inlineHelpText>Hidden field used to show parent field when visbility on parent record might be different</inlineHelpText>
+        <label>NoticeBoard Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NoticeBoard_Theme_Image_Url__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Hidden field used to show parent field when visbility on parent record might be different</description>
+        <externalId>false</externalId>
+        <formula>Notice__r.NoticeBoard__r.ThemeImageUrl__c</formula>
+        <label>NoticeBoard Theme Image Url</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Notice_Allow_Comment__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Hidden field used to show parent field when visbility on parent record might be different</description>
+        <externalId>false</externalId>
+        <formula>Notice__r.AllowComment__c</formula>
+        <label>Notice Allow Comment</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Notice_Banner_Required_Action__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Hidden field used to show parent field when visbility on parent record might be different</description>
+        <externalId>false</externalId>
+        <formula>Notice__r.BannerRequiredAction__c</formula>
+        <label>Notice Banner Required Action</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Notice_CustomStyle__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Notice__r.CustomStyle__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Notice Custom Style</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Notice_Detail__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Hidden field used to show parent field when visbility on parent record might be different. Needs to be populated with a trigger as salesforce formulas cant reference &apos;rich text&apos; fields.</description>
+        <externalId>false</externalId>
+        <label>Notice Detail</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Notice_NoticeBoardName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Denormalisation for sharing rules</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Denormalisation for sharing rules</inlineHelpText>
+        <label>NoticeBoard Name (Text)</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Notice_Published_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Hidden field to pull down potentially non visible parent field</description>
+        <externalId>false</externalId>
+        <formula>Notice__r.PublishedDate__c</formula>
+        <label>Notice Published Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Notice_Required_Action_Deadline__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Hidden field to display potentially non visible parent field</description>
+        <externalId>false</externalId>
+        <formula>Notice__r.RequiredActionDeadline__c</formula>
+        <label>Notice Required Action Deadline</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Notice_Required_Action__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Hidden field to show parent record details even though record visibility might be different</description>
+        <externalId>false</externalId>
+        <formula>TEXT(Notice__r.RequiredAction__c)</formula>
+        <label>Notice Required Action</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Notice_Salutation_Other__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Notice__r.Salutation_Other__c</description>
+        <externalId>false</externalId>
+        <formula>Notice__r.Salutation_Other__c</formula>
+        <label>Notice Salutation Other</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Notice_Salutation__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Hidden field used to show parent field when visbility on parent record might be different</description>
+        <externalId>false</externalId>
+        <formula>TEXT(Notice__r.Salutation__c)</formula>
+        <label>Notice Salutation</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Notice_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Hidden field used to pull status from parent object which may have different record visibility</description>
+        <externalId>false</externalId>
+        <formula>TEXT(Notice__r.NoticeStatus__c)</formula>
+        <label>Notice Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Notice_Vote_Choices__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Hidden field used to show parent field when visbility on parent record might be different</description>
+        <externalId>false</externalId>
+        <formula>Notice__r.VoteChoices__c</formula>
+        <label>Notice Vote Choices</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Notice__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The parent, generic Notice record that controls this personalised Notification</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Notice associated with this Recipient&apos;s personal Notification</inlineHelpText>
+        <label>Notice</label>
+        <referenceTo>Notice__c</referenceTo>
+        <relationshipLabel>Notifications</relationshipLabel>
+        <relationshipName>Recipients</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>NotificationStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows Notification lifecycle progress through Draft, Issued, Displayed, Opened and optionally Acknowledged</description>
+        <externalId>false</externalId>
+        <formula>if( ispickval( Notice__r.NoticeStatus__c,&quot;Drafted&quot;),&quot;A: Draft&quot;, if( ISBLANK( AcknowledgedDate__c),if(isblank( OpenedDate__c ),if(isblank( DisplayedDate__c ),&quot;B: Issued&quot;,&quot;C: Displayed&quot;),&quot;D: Opened&quot;),&quot;E: Acknowledged&quot;))</formula>
+        <label>Notification Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OpenedDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date and time when you first opened this Notification</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>The date and time when you first opened this Notification.</inlineHelpText>
+        <label>Opened Date</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>OpenedToAcknowledgedLagDays__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Days elapsed between when you first Opened and subsequently Acknowledged this Notification</description>
+        <externalId>false</externalId>
+        <formula>IF(OR(ISNULL(  OpenedDate__c  ),ISNULL(  AcknowledgedDate__c  )), null, floor(  AcknowledgedDate__c  -  OpenedDate__c ))</formula>
+        <inlineHelpText>Days Elapsed between Recipient Opening the Notification and Acknowledging it (with or without Flag)</inlineHelpText>
+        <label>Opened-to-Acknowledged Lag (Days)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PublishedDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date and time when this Notification was first issued to you</description>
+        <externalId>false</externalId>
+        <formula>Notice__r.PublishedDate__c</formula>
+        <inlineHelpText>The date and time when this Notification was first issued to you.</inlineHelpText>
+        <label>Published Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Recipient__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The specific User who will receive this Notification</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The named User Recipient for this Notice Notification</inlineHelpText>
+        <label>Recipient</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>RecipientNotices</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>RequiredActionComplete__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Formula confirming that Required Action has been completed by Recipient (1 = True; 0 = False)</description>
+        <externalId>false</externalId>
+        <formula>IF(  OR(ISPICKVAL( Notice__r.NoticeStatus__c , &quot;Published&quot;),ISPICKVAL( Notice__r.NoticeStatus__c , &quot;Suspended&quot;), ISPICKVAL( Notice__r.NoticeStatus__c , &quot;Closed&quot;))   ,  IF(  ISPICKVAL( Notice__r.RequiredAction__c , &quot;Read and Acknowledge&quot;) ,  IF( ISNULL( AcknowledgedDate__c ) , 0, 1)  ,  IF( ISNULL( OpenedDate__c ) , 0, 1) ) , null)</formula>
+        <inlineHelpText>Formula confirming that Required Action has been completed by Recipient (1 = True; 0 = False)</inlineHelpText>
+        <label>Required Action Complete?</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RequiredActionCompletedByDeadline__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Formula confirming that Required Action was completed by Recipient before Required Action Deadline (1 = True; 0 = False)</description>
+        <externalId>false</externalId>
+        <formula>IF( OR(ISPICKVAL( Notice__r.NoticeStatus__c , &quot;Published&quot;),ISPICKVAL( Notice__r.NoticeStatus__c , &quot;Suspended&quot;), ISPICKVAL( Notice__r.NoticeStatus__c , &quot;Closed&quot;)) , IF( ISPICKVAL( Notice__r.RequiredAction__c , &quot;Read and Acknowledge&quot;) , IF(  Notice__r.RequiredActionDeadline__c &lt; AcknowledgedDate__c , 0, 1) , IF(  Notice__r.RequiredActionDeadline__c &lt; OpenedDate__c  , 0, 1) ) , 0)</formula>
+        <inlineHelpText>Formula confirming that Required Action was completed by Recipient before Required Action Deadline (1 = True; 0 = False)</inlineHelpText>
+        <label>Required Action Completed By Deadline?</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RequiredActionDeadline__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date and time by which you must complete the &apos;Required Action&apos;</description>
+        <externalId>false</externalId>
+        <formula>Notice__r.RequiredActionDeadline__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The date/time by which you must complete the &apos;Required Action&apos;.</inlineHelpText>
+        <label>Required Action Deadline</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>RequiredAction__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Inherits Notice Banner Required Action</description>
+        <externalId>false</externalId>
+        <formula>Notice__r.BannerRequiredAction__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The &apos;Required Action&apos; needed by you for this Notification. You must...</inlineHelpText>
+        <label>Required Action</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ResponseOption__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Inherits Notice: Notification Response Option</description>
+        <externalId>false</externalId>
+        <formula>TEXT(Notice__r.NotificationResponseOption__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Response Option</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Signatory__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The person, role, function or team that Issued this Notification - as in an email&apos;s &apos;From&apos; field</description>
+        <externalId>false</externalId>
+        <formula>Notice__r.Signatory__c</formula>
+        <inlineHelpText>The name, role, function or team from whom this Notification was sent - as in an email&apos;s &apos;From&apos; field.</inlineHelpText>
+        <label>Signatory</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Summary__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A succinct statement which can constitute the entire Notice or summarise its Detail</description>
+        <externalId>false</externalId>
+        <formula>Notice__r.Summary__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The summary of this Notification.</inlineHelpText>
+        <label>Summary</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Title__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The subject or headline for this Notice</description>
+        <externalId>false</externalId>
+        <formula>Notice__r.Title__c</formula>
+        <inlineHelpText>The subject or headline for this Notice</inlineHelpText>
+        <label>Title</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Urgency__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(ISNULL(RequiredActionDeadline__c), &apos;&apos;,
+IF((RequiredActionDeadline__c - NOW())*24 &gt; 24, IMAGE(&apos;/resource/1334066325000/ianb__noticeboard_resources/noticeboard_resources/images/dot-green.png&apos;,&apos;Low&apos;,18,18),
+IF((RequiredActionDeadline__c - NOW())*24 &gt; 1, IMAGE(&apos;/resource/1334066325000/ianb__noticeboard_resources/noticeboard_resources/images/dot-amber.png&apos;,&apos;Normal&apos;,18,18),
+IF((RequiredActionDeadline__c - NOW())*24 &lt; 0, IMAGE(&apos;/resource/1334066325000/ianb__noticeboard_resources/noticeboard_resources/images/dot-black.png&apos;,&apos;Very High&apos;,18,18),
+IMAGE(&apos;/resource/1334066325000/ianb__noticeboard_resources/noticeboard_resources/images/dot-red.png&apos;,&apos;High&apos;,18,18)
+))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Urgency</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VoteChoice__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Vote Choice</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Notification</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Urgency__c</columns>
+        <columns>NotificationStatus__c</columns>
+        <columns>Signatory__c</columns>
+        <columns>RequiredAction__c</columns>
+        <columns>AcknowledgedDate__c</columns>
+        <columns>RequiredActionDeadline__c</columns>
+        <columns>PublishedDate__c</columns>
+        <columns>DisplayedDate__c</columns>
+        <columns>OpenedDate__c</columns>
+        <columns>RequiredActionComplete__c</columns>
+        <filterScope>Mine</filterScope>
+        <label>1. All My Notifications</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Notifications_ActionToday</fullName>
+        <columns>NAME</columns>
+        <columns>Urgency__c</columns>
+        <columns>Signatory__c</columns>
+        <columns>RequiredAction__c</columns>
+        <columns>RequiredActionDeadline__c</columns>
+        <columns>PublishedDate__c</columns>
+        <columns>DisplayedDate__c</columns>
+        <columns>OpenedDate__c</columns>
+        <columns>AcknowledgedDate__c</columns>
+        <columns>RequiredActionComplete__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>RequiredActionDeadline__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>RequiredActionComplete__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>6. My Notifications - Must ACTION Today</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Notifications_Commented_On</fullName>
+        <columns>NAME</columns>
+        <columns>Title__c</columns>
+        <columns>Signatory__c</columns>
+        <columns>NotificationStatus__c</columns>
+        <columns>Comment__c</columns>
+        <columns>PublishedDate__c</columns>
+        <columns>RequiredActionComplete__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>Comment__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>8. My Notifications - Commented On</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Notifications_Flagged</fullName>
+        <columns>NAME</columns>
+        <columns>Urgency__c</columns>
+        <columns>Signatory__c</columns>
+        <columns>RequiredAction__c</columns>
+        <columns>RequiredActionDeadline__c</columns>
+        <columns>PublishedDate__c</columns>
+        <columns>DisplayedDate__c</columns>
+        <columns>OpenedDate__c</columns>
+        <columns>AcknowledgedDate__c</columns>
+        <columns>RequiredActionComplete__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>AcknowledgedAndFlagged__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>7. My Notifications - Flagged</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Notifications_Last_Week</fullName>
+        <columns>NAME</columns>
+        <columns>Urgency__c</columns>
+        <columns>Signatory__c</columns>
+        <columns>RequiredAction__c</columns>
+        <columns>RequiredActionDeadline__c</columns>
+        <columns>PublishedDate__c</columns>
+        <columns>DisplayedDate__c</columns>
+        <columns>OpenedDate__c</columns>
+        <columns>AcknowledgedDate__c</columns>
+        <columns>RequiredActionComplete__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>PublishedDate__c</field>
+            <operation>equals</operation>
+            <value>LAST_WEEK</value>
+        </filters>
+        <label>3. My Notifications - Last Week</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Notifications_RequiringAction</fullName>
+        <columns>NAME</columns>
+        <columns>Urgency__c</columns>
+        <columns>Signatory__c</columns>
+        <columns>RequiredAction__c</columns>
+        <columns>RequiredActionDeadline__c</columns>
+        <columns>PublishedDate__c</columns>
+        <columns>DisplayedDate__c</columns>
+        <columns>OpenedDate__c</columns>
+        <columns>AcknowledgedDate__c</columns>
+        <columns>RequiredActionComplete__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>RequiredActionComplete__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>5. My Notifications - Requiring ACTION</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>My_Notifications_This_Month</fullName>
+        <columns>NAME</columns>
+        <columns>Urgency__c</columns>
+        <columns>Signatory__c</columns>
+        <columns>RequiredAction__c</columns>
+        <columns>RequiredActionDeadline__c</columns>
+        <columns>PublishedDate__c</columns>
+        <columns>DisplayedDate__c</columns>
+        <columns>OpenedDate__c</columns>
+        <columns>AcknowledgedDate__c</columns>
+        <columns>RequiredActionComplete__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>PublishedDate__c</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <label>4. My Notifications - This Month</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Notifications_This_Week</fullName>
+        <columns>NAME</columns>
+        <columns>Urgency__c</columns>
+        <columns>Signatory__c</columns>
+        <columns>RequiredAction__c</columns>
+        <columns>RequiredActionDeadline__c</columns>
+        <columns>PublishedDate__c</columns>
+        <columns>DisplayedDate__c</columns>
+        <columns>OpenedDate__c</columns>
+        <columns>AcknowledgedDate__c</columns>
+        <columns>RequiredActionComplete__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>PublishedDate__c</field>
+            <operation>equals</operation>
+            <value>THIS_WEEK</value>
+        </filters>
+        <label>2. My Notifications - This Week</label>
+    </listViews>
+    <nameField>
+        <label>Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Notifications</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Urgency__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>NotificationStatus__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Signatory__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>RequiredAction__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>RequiredActionDeadline__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PublishedDate__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>DisplayedDate__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OpenedDate__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>AcknowledgedDate__c</customTabListAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Urgency__c</searchFilterFields>
+        <searchFilterFields>Recipient__c</searchFilterFields>
+        <searchFilterFields>Signatory__c</searchFilterFields>
+        <searchFilterFields>RequiredAction__c</searchFilterFields>
+        <searchFilterFields>RequiredActionDeadline__c</searchFilterFields>
+        <searchFilterFields>PublishedDate__c</searchFilterFields>
+        <searchFilterFields>DisplayedDate__c</searchFilterFields>
+        <searchFilterFields>OpenedDate__c</searchFilterFields>
+        <searchFilterFields>AcknowledgedDate__c</searchFilterFields>
+        <searchResultsAdditionalFields>Urgency__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Summary__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Signatory__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>RequiredAction__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>RequiredActionDeadline__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PublishedDate__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>DisplayedDate__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OpenedDate__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>AcknowledgedDate__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+</CustomObject>

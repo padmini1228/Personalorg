@@ -1,0 +1,1015 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Premier/DPS Factfind</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Premier/DPS Factfinds</value>
+    </caseValues>
+    <fields>
+        <label><!-- Amount in 60 days plus savings --></label>
+        <name>Amount_in_60_days_plus_savings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount in instant access savings --></label>
+        <name>Amount_in_instant_access_savings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount invested --></label>
+        <name>Amount_invested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Are you married? --></label>
+        <name>Are_you_married__c</name>
+    </fields>
+    <fields>
+        <label><!-- Are you saving for your retirement? --></label>
+        <name>Are_you_saving_for_your_retirement__c</name>
+    </fields>
+    <fields>
+        <help><!-- What plans do you have in place to fund your intemded retirement age --></help>
+        <label><!-- At what age do you intend to retire? --></label>
+        <name>At_what_age_do_you_intend_to_retire__c</name>
+    </fields>
+    <fields>
+        <label><!-- Board Limits --></label>
+        <name>Board_Limits__c</name>
+        <relationshipLabel><!-- Premier/DPS Factfinds --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Client name --></label>
+        <name>Client_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Colleague Payment --></label>
+        <name>Colleague_Payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Consent Declaration --></label>
+        <name>Consent_Declaration__c</name>
+        <picklistValues>
+            <masterLabel>Customer Signature</masterLabel>
+            <translation><!-- Customer Signature --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Date</masterLabel>
+            <translation><!-- Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I confirm that the above information is</masterLabel>
+            <translation><!-- I confirm that the above information is --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>correct and true. I consent to this</masterLabel>
+            <translation><!-- correct and true. I consent to this --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>information being provided to third</masterLabel>
+            <translation><!-- information being provided to third --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>my needs:</masterLabel>
+            <translation><!-- my needs: --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>party service providers to match</masterLabel>
+            <translation><!-- party service providers to match --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Customer has given consent for their information to be shared with the IFA? --></help>
+        <label><!-- Consent to share information --></label>
+        <name>Consent_to_share_information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer E-mail address --></label>
+        <name>Customer_E_mail_address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Name --></label>
+        <name>Customer_Name_del__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please print DPS/IFA factfind and ask customer tosign to confirm consent of information being passed to IFA --></help>
+        <label><!-- Customer Signature --></label>
+        <name>Customer_Signature__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Address --></label>
+        <name>Customer_address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer phone Number --></label>
+        <name>Customer_phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer&apos;s Profile --></label>
+        <name>Customer_s_Profile__c</name>
+        <relationshipLabel><!-- Premier/DPS Factfinds --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The IFA is to enter the date the commission will be paid to IBB (Usually 2 months post sign up) --></help>
+        <label><!-- Anticipated Commission date --></label>
+        <name>Date_Commission_to_be_paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Completed --></label>
+        <name>Date_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date IHT planning last reviewed --></label>
+        <name>Date_IHT_planning_last_reviewed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date factfind completed --></label>
+        <name>Date_factfind_completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Birth --></label>
+        <name>Date_of_Birth__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the date the lead was referred to the IFA --></help>
+        <label><!-- Date &amp; time appointment booked with IFA --></label>
+        <name>Date_time_appointment_booked_with_IFA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do you have a pension plan in place? --></label>
+        <name>Do_you_have_a_pension_plan_in_place__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do you have any Savings? --></label>
+        <name>Do_you_have_any_Savings__c</name>
+    </fields>
+    <fields>
+        <help><!-- Do you have any kind of protection for you and your family such as life assurance, critical illness or permanent health insurance? --></help>
+        <label><!-- Do you have any kind of protection? --></label>
+        <name>Do_you_have_any_kind_of_protection__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do you save each month? --></label>
+        <name>Do_you_save_each_month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employment Type --></label>
+        <name>Employment_Type__c</name>
+        <picklistValues>
+            <masterLabel>Business Owner</masterLabel>
+            <translation><!-- Business Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employed</masterLabel>
+            <translation><!-- Employed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self Employed</masterLabel>
+            <translation><!-- Self Employed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Gross Annual Income --></label>
+        <name>Gross_Annual_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gross Turnover of Business --></label>
+        <name>Gross_Turnover_of_Business__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please ask the client if they have any existing Inheritance tax planning in place and date they did this? --></help>
+        <label><!-- Do you have any IHT Planning in place --></label>
+        <name>Have_you_done_any_IHT_Planning__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Used this years ISA Allowances --></label>
+        <name>Have_you_used_this_years_ISA_Allow__c</name>
+        <picklistValues>
+            <masterLabel>Neither</masterLabel>
+            <translation><!-- Neither --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Cash &amp; Stocks &amp; Shares</masterLabel>
+            <translation><!-- Yes - Cash &amp; Stocks &amp; Shares --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Cash ONLY</masterLabel>
+            <translation><!-- Yes - Cash ONLY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Stocks and Shares ONLY</masterLabel>
+            <translation><!-- Yes - Stocks and Shares ONLY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Includes children and any one else that is dependant on you such as elderly relatives. --></help>
+        <label><!-- How many dependant do you have --></label>
+        <name>How_many_dependant_do_you_have__c</name>
+    </fields>
+    <fields>
+        <label><!-- How much are your monthly expenses? --></label>
+        <name>How_much_are_your_monthly_expenses__c</name>
+    </fields>
+    <fields>
+        <label><!-- How much do you have in savings? --></label>
+        <name>How_much_do_you_have_in_savings__c</name>
+    </fields>
+    <fields>
+        <label><!-- How much do you save a month? --></label>
+        <name>How_much_do_you_save_a_month__c</name>
+    </fields>
+    <fields>
+        <help><!-- IFa to enter the amount of commission due to IBB on completion of the sales --></help>
+        <label><!-- IBB Commission --></label>
+        <name>IBB_Commission__c</name>
+    </fields>
+    <fields>
+        <label><!-- IBB Lump Sum Commission fee --></label>
+        <name>IBB_Lump_Sum_Commission_fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- IBB Trail Fee --></label>
+        <name>IBB_Trail_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- IBB Up Front Fee --></label>
+        <name>IBB_Up_Front_Commission_fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- IFA Client name --></label>
+        <name>IFA_Client_name__c</name>
+    </fields>
+    <fields>
+        <help><!-- The IFA WILL COMPLETE THIS FIELD TO CONFIRM THE OUTCOME OF THE FIRST ATTEMPTED CONTACT WITH THE CUSTOMER --></help>
+        <label><!-- IFA Contact 1 --></label>
+        <name>IFA_Contact_1__c</name>
+        <picklistValues>
+            <masterLabel>1st meeting Booked</masterLabel>
+            <translation><!-- 1st meeting Booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2nd Meeting booked</masterLabel>
+            <translation><!-- 2nd Meeting booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appointment attended - Business agreed</masterLabel>
+            <translation><!-- Appointment attended - Business agreed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appointment attended - next meeting booked</masterLabel>
+            <translation><!-- Appointment attended - next meeting booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appointment attended - no business written</masterLabel>
+            <translation><!-- Appointment attended - no business written --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appointment booked - Customer no show</masterLabel>
+            <translation><!-- Appointment booked - Customer no show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Agreed</masterLabel>
+            <translation><!-- Business Agreed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Written</masterLabel>
+            <translation><!-- Business Written --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Callback arranged</masterLabel>
+            <translation><!-- Callback arranged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer not Interested</masterLabel>
+            <translation><!-- Customer not Interested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Initial Conversation with Customer</masterLabel>
+            <translation><!-- Initial Conversation with Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Initial E-mail contact with client</masterLabel>
+            <translation><!-- Initial E-mail contact with client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Booked</masterLabel>
+            <translation><!-- Meeting Booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Answer</masterLabel>
+            <translation><!-- No Answer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paperwork Signed and Business Set Up</masterLabel>
+            <translation><!-- Paperwork Signed and Business Set Up --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IFA Contact 2 --></label>
+        <name>IFA_Contact_2__c</name>
+        <picklistValues>
+            <masterLabel>1st meeting Booked</masterLabel>
+            <translation><!-- 1st meeting Booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2nd Meeting booked</masterLabel>
+            <translation><!-- 2nd Meeting booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appointment attended - Business agreed</masterLabel>
+            <translation><!-- Appointment attended - Business agreed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appointment attended - next meeting booked</masterLabel>
+            <translation><!-- Appointment attended - next meeting booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appointment attended - no business written</masterLabel>
+            <translation><!-- Appointment attended - no business written --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appointment booked - Customer no show</masterLabel>
+            <translation><!-- Appointment booked - Customer no show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Agreed</masterLabel>
+            <translation><!-- Business Agreed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Written</masterLabel>
+            <translation><!-- Business Written --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Callback arranged</masterLabel>
+            <translation><!-- Callback arranged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer not Interested</masterLabel>
+            <translation><!-- Customer not Interested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Initial Conversation with Customer</masterLabel>
+            <translation><!-- Initial Conversation with Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Booked</masterLabel>
+            <translation><!-- Meeting Booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Answer</masterLabel>
+            <translation><!-- No Answer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paperwork Signed and Business Set Up</masterLabel>
+            <translation><!-- Paperwork Signed and Business Set Up --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IFA Contact 3 --></label>
+        <name>IFA_Contact_3__c</name>
+        <picklistValues>
+            <masterLabel>1st meeting Booked</masterLabel>
+            <translation><!-- 1st meeting Booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2nd Meeting booked</masterLabel>
+            <translation><!-- 2nd Meeting booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appointment attended - Business agreed</masterLabel>
+            <translation><!-- Appointment attended - Business agreed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appointment attended - next meeting booked</masterLabel>
+            <translation><!-- Appointment attended - next meeting booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appointment attended - no business written</masterLabel>
+            <translation><!-- Appointment attended - no business written --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appointment booked - Customer no show</masterLabel>
+            <translation><!-- Appointment booked - Customer no show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Agreed</masterLabel>
+            <translation><!-- Business Agreed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Written</masterLabel>
+            <translation><!-- Business Written --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Callback arranged</masterLabel>
+            <translation><!-- Callback arranged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer not Interested</masterLabel>
+            <translation><!-- Customer not Interested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Initial Conversation with Customer</masterLabel>
+            <translation><!-- Initial Conversation with Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Booked</masterLabel>
+            <translation><!-- Meeting Booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Answer</masterLabel>
+            <translation><!-- No Answer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paperwork Signed and Business Set Up</masterLabel>
+            <translation><!-- Paperwork Signed and Business Set Up --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IFA Contact Date 1 --></label>
+        <name>IFA_Contact_Date_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- IFA Contact Date 2 --></label>
+        <name>IFA_Contact_Date_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- IFA Contact Date 3 --></label>
+        <name>IFA_Contact_Date_3__c</name>
+    </fields>
+    <fields>
+        <help><!-- The IFA will include notes on the referral and any business generated.  This area can also be used to provide details on when any commission will fall due. --></help>
+        <label><!-- IFA Notes for IBB on Referral --></label>
+        <name>IFA_Notes_for_IBB_on_Referral__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial Lead Provider --></label>
+        <name>Initial_Lead_Provider__c</name>
+        <relationshipLabel><!-- Premier/DPS Factfinds (Initial Lead Provider) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Interested in --></label>
+        <name>Interested_in__c</name>
+        <picklistValues>
+            <masterLabel>Commercial Finance</masterLabel>
+            <translation><!-- Commercial Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Group Pension Scheme</masterLabel>
+            <translation><!-- Group Pension Scheme --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lump Sum Investments</masterLabel>
+            <translation><!-- Lump Sum Investments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pensions</masterLabel>
+            <translation><!-- Pensions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Protection &amp; Wealth Planning</masterLabel>
+            <translation><!-- Protection &amp; Wealth Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regular Investments</masterLabel>
+            <translation><!-- Regular Investments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tax efficient investments</masterLabel>
+            <translation><!-- Tax efficient investments --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+        <picklistValues>
+            <masterLabel>Call Centre</masterLabel>
+            <translation><!-- Call Centre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>East Ham</masterLabel>
+            <translation><!-- East Ham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edgware Road</masterLabel>
+            <translation><!-- Edgware Road --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP Team referral</masterLabel>
+            <translation><!-- HPP Team referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leicester</masterLabel>
+            <translation><!-- Leicester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manchester</masterLabel>
+            <translation><!-- Manchester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier Banking</masterLabel>
+            <translation><!-- Premier Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Heath</masterLabel>
+            <translation><!-- Small Heath --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southall</masterLabel>
+            <translation><!-- Southall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Whitechapel</masterLabel>
+            <translation><!-- Whitechapel --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- IFA Should enter details of any lump sum investment done following DPS referral --></help>
+        <label><!-- Lump Sum Amount Invested --></label>
+        <name>Lump_Sum_Amount_Invested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile Number --></label>
+        <name>Mobile_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly contribution to pension plan --></label>
+        <name>Monthly_contribution_to_pension_plan__c</name>
+    </fields>
+    <fields>
+        <help><!-- If Business owner please enter the last Net profit for the business --></help>
+        <label><!-- Net Business Profit --></label>
+        <name>Net_Business_Profit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please ask the client what their Net monthly Income is (take home Pay) --></help>
+        <label><!-- Net Montly Income --></label>
+        <name>Net_Montly_Income__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please Enter the number of employees for the group Pension Scheme --></help>
+        <label><!-- No. of Employees --></label>
+        <name>No_of_Employees__c</name>
+    </fields>
+    <fields>
+        <help><!-- Notes to aid both manager and IFA --></help>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please specify which Banks/Stockbroker/Fund Manager currently manages the customers savings/investments. --></help>
+        <label><!-- Other (please specify) --></label>
+        <name>Other_please_specify__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outcome --></label>
+        <name>Outcome__c</name>
+        <picklistValues>
+            <masterLabel>Appointment attended: business written</masterLabel>
+            <translation><!-- Appointment attended: business written --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appointment attended: no business written</masterLabel>
+            <translation><!-- Appointment attended: no business written --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appointment attended: secondary meeting booked</masterLabel>
+            <translation><!-- Appointment attended: secondary meeting booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appointment no show with IFA</masterLabel>
+            <translation><!-- Appointment no show with IFA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The IFA will completed details of products sold following the referral. --></help>
+        <label><!-- Products Sold --></label>
+        <name>Products_Sold__c</name>
+        <picklistValues>
+            <masterLabel>ISA Fund</masterLabel>
+            <translation><!-- ISA Fund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lump Sum Investment</masterLabel>
+            <translation><!-- Lump Sum Investment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Pension</masterLabel>
+            <translation><!-- New Pension --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pension Transfer</masterLabel>
+            <translation><!-- Pension Transfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SIPP Fund</masterLabel>
+            <translation><!-- SIPP Fund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sharia DPS</masterLabel>
+            <translation><!-- Sharia DPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stocks &amp; Shares ISA</masterLabel>
+            <translation><!-- Stocks &amp; Shares ISA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tax Planning</masterLabel>
+            <translation><!-- Tax Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wills</masterLabel>
+            <translation><!-- Wills --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrap Fund</masterLabel>
+            <translation><!-- Wrap Fund --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If the customer has protection polciies in place please seect which of the following types of cover they have? --></help>
+        <label><!-- Protection Policies in Place --></label>
+        <name>Protection_Policies_in_Place__c</name>
+        <picklistValues>
+            <masterLabel>Critical illness Cover</masterLabel>
+            <translation><!-- Critical illness Cover --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Life assurance (Term)</masterLabel>
+            <translation><!-- Life assurance (Term) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mortgage Life Cover</masterLabel>
+            <translation><!-- Mortgage Life Cover --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Permanent health insurance</masterLabel>
+            <translation><!-- Permanent health insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tax Planning</masterLabel>
+            <translation><!-- Tax Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trust Planning</masterLabel>
+            <translation><!-- Trust Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Whole of Life</masterLabel>
+            <translation><!-- Whole of Life --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Will and IHT planning</masterLabel>
+            <translation><!-- Will and IHT planning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Purpose of savings --></label>
+        <name>Purpose_of_savings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason ineligible --></label>
+        <name>Reason_ineligible__c</name>
+        <picklistValues>
+            <masterLabel>Funds not avaliable to invest.</masterLabel>
+            <translation><!-- Funds not avaliable to invest. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No identified needs.</masterLabel>
+            <translation><!-- No identified needs. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not enough free income to save.</masterLabel>
+            <translation><!-- Not enough free income to save. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Savings needed in the short term.</masterLabel>
+            <translation><!-- Savings needed in the short term. --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- the IFA will enter details of any regular premium business he has done with the IBb client including Stocks &amp; Shares ISA&apos;s or regular premium Pension saving where IBB is due a commission. --></help>
+        <label><!-- Regular Amount Invested --></label>
+        <name>Regular_premium_business__c</name>
+    </fields>
+    <fields>
+        <label><!-- Seller&apos;s Name --></label>
+        <name>Seller_s_Name__c</name>
+        <relationshipLabel><!-- Premier/DPS Factfinds (Seller&apos;s Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>Stage__c</name>
+        <picklistValues>
+            <masterLabel>1st meeting attended</masterLabel>
+            <translation><!-- 1st meeting attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2nd meeting attended</masterLabel>
+            <translation><!-- 2nd meeting attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved.</masterLabel>
+            <translation><!-- Approved. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Awaiting Approval</masterLabel>
+            <translation><!-- Awaiting Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business agreed</masterLabel>
+            <translation><!-- Business agreed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed (Lost) - Client not proceeding</masterLabel>
+            <translation><!-- Closed (Lost) - Client not proceeding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed (Lost) - Client unsuitable</masterLabel>
+            <translation><!-- Closed (Lost) - Client unsuitable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed (Lost) - No needs identified</masterLabel>
+            <translation><!-- Closed (Lost) - No needs identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Initial conversation held</masterLabel>
+            <translation><!-- Initial conversation held --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting booked</masterLabel>
+            <translation><!-- Meeting booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting requested</masterLabel>
+            <translation><!-- Meeting requested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paperwork signed and business setup.</masterLabel>
+            <translation><!-- Paperwork signed and business setup. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected (before IFA)</masterLabel>
+            <translation><!-- Rejected (before IFA) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsuitable referral - insufficient funds</masterLabel>
+            <translation><!-- Unsuitable referral - insufficient funds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsuitable referral - no RSK</masterLabel>
+            <translation><!-- Unsuitable referral - no RSK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsuitable referral - no client needs</masterLabel>
+            <translation><!-- Unsuitable referral - no client needs --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tell me about your family --></label>
+        <name>Tell_me_about_your_family__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tell me about your lifestyle --></label>
+        <name>Tell_me_about_your_lifestyle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tell me about your work --></label>
+        <name>Tell_me_about_your_work__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please ask the customer what is the value of the annual Payroll.  If they give a monthly figure x 12 --></help>
+        <label><!-- Total Value of Payroll (annual) --></label>
+        <name>Total_Value_of_Payroll_annual__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please ask the customer whether they have a Pension in place to fund their retirement.  If they do ask them whether this is provided by their employer or a Personal pension? --></help>
+        <label><!-- Type of Pension Provision --></label>
+        <name>Type_of_Pension_Provision__c</name>
+        <picklistValues>
+            <masterLabel>Defined benefit (Final Salary Pension)</masterLabel>
+            <translation><!-- Defined benefit (Final Salary Pension) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Group Employyer Pension Scheme</masterLabel>
+            <translation><!-- Group Employyer Pension Scheme --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Pension Provision</masterLabel>
+            <translation><!-- No Pension Provision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self Invested Personal pension Scheme</masterLabel>
+            <translation><!-- Self Invested Personal pension Scheme --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stakehodler Pension</masterLabel>
+            <translation><!-- Stakehodler Pension --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of customer --></label>
+        <name>Type_of_customer__c</name>
+        <picklistValues>
+            <masterLabel>Exisiting Customer</masterLabel>
+            <translation><!-- Exisiting Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Customer</masterLabel>
+            <translation><!-- New Customer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Value of commision earned --></label>
+        <name>Value_of_commision_earned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value of other investments --></label>
+        <name>Value_of_other_investments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value of stocks and shares holdings --></label>
+        <name>Value_of_stocks_and_shares_holdings__c</name>
+    </fields>
+    <fields>
+        <help><!-- Which of the following is most important to you? --></help>
+        <label><!-- Which is most important to you? --></label>
+        <name>Which_is_most_important_to_you__c</name>
+        <picklistValues>
+            <masterLabel>Growth</masterLabel>
+            <translation><!-- Growth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Income</masterLabel>
+            <translation><!-- Income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Return</masterLabel>
+            <translation><!-- Return --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Security</masterLabel>
+            <translation><!-- Security --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Ask the customer who currently manages their savingsinvestments for them? --></help>
+        <label><!-- Who manages your Investments/Savings --></label>
+        <name>Who_manages_your_Investments_Savings__c</name>
+        <picklistValues>
+            <masterLabel>Islamic Bank of Britain</masterLabel>
+            <translation><!-- Islamic Bank of Britain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other (Please Specify)</masterLabel>
+            <translation><!-- Other (Please Specify) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please tell us about what you are saving for. --></help>
+        <label><!-- What are you saving for? --></label>
+        <name>what_are_you_saving_for__c</name>
+        <picklistValues>
+            <masterLabel>Car</masterLabel>
+            <translation><!-- Car --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Holiday</masterLabel>
+            <translation><!-- Holiday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home</masterLabel>
+            <translation><!-- Home --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Second home</masterLabel>
+            <translation><!-- Second home --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>University Fees</masterLabel>
+            <translation><!-- University Fees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wedding</masterLabel>
+            <translation><!-- Wedding --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>IFA</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Consent and Declaration --></label>
+            <section>Customer Consent and Declaration</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- General Information --></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label><!-- IFA Notes on referral --></label>
+            <section>IFA Notes on referral</section>
+        </sections>
+        <sections>
+            <label><!-- Inheritance Tax Planning --></label>
+            <section>Inheritance Tax Planning</section>
+        </sections>
+        <sections>
+            <label><!-- Investment Information --></label>
+            <section>Investment Information</section>
+        </sections>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Pensions Information --></label>
+            <section>Pensions Information</section>
+        </sections>
+        <sections>
+            <label><!-- Protection Planning --></label>
+            <section>Protection Planning</section>
+        </sections>
+        <sections>
+            <label><!-- Staff Information - to be completed by lead provider --></label>
+            <section>Staff Information - to be completed by lead provider</section>
+        </sections>
+        <sections>
+            <label><!-- TO BE COMPLETED BY THE IFA ONLY --></label>
+            <section>TO BE COMPLETED BY THE IFA ONLY</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Premier Lead Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Consent and Declaration --></label>
+            <section>Customer Consent and Declaration</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- General Information --></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label><!-- IFA Notes on Referral --></label>
+            <section>IFA Notes on Referral</section>
+        </sections>
+        <sections>
+            <label><!-- Inheritance Tax Planning --></label>
+            <section>Inheritance Tax Planning</section>
+        </sections>
+        <sections>
+            <label><!-- Investment Information --></label>
+            <section>Investment Information</section>
+        </sections>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Pensions Information --></label>
+            <section>Pensions Information</section>
+        </sections>
+        <sections>
+            <label><!-- Protection Planning --></label>
+            <section>Protection Planning</section>
+        </sections>
+        <sections>
+            <label><!-- Staff Information --></label>
+            <section>Staff Information</section>
+        </sections>
+        <sections>
+            <label><!-- TO BE COMPLETED BY THE IFA ONLY --></label>
+            <section>TO BE COMPLETED BY THE IFA ONLY</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Create_customer_form_to_sign --></label>
+        <name>Create_customer_form_to_sign</name>
+    </webLinks>
+</CustomObjectTranslation>

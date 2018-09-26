@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>Solution for review</name>
+    <style>freeForm</style>
+    <subject>SOLUTION FOR REVIEW FROM {!Solution.CreatedBy}</subject>
+    <textOnly>Dear {!Receiving_User.FirstName},
+
+Please review the following solution and approve.
+{!Solution.Link}
+Name:
+{!Solution.SolutionName}
+
+Detail:
+{!Solution.SolutionNote}</textOnly>
+    <type>html</type>
+</EmailTemplate>

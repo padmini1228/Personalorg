@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Branch Dashboard</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Branch Dashboards</value>
+    </caseValues>
+    <fields>
+        <label><!-- AIPs Actual --></label>
+        <name>AIPs_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- AIPs RAG --></label>
+        <name>AIPs_RAg__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- AIPs Target --></label>
+        <name>AIPs_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch --></label>
+        <name>Branch__c</name>
+        <relationshipLabel><!-- Branch Dashboards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Budget FTE Actual --></label>
+        <name>Budget_FTE_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Budget FTE: RAG --></label>
+        <name>Budget_FTE_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Budget FTE: Variance --></label>
+        <name>Budget_FTE_Variance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Budget FTE --></label>
+        <name>Budget_FTE__c</name>
+    </fields>
+    <fields>
+        <label><!-- CFL RAG --></label>
+        <name>CFL_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CFL Score Actual --></label>
+        <name>CFL_Score_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- CFL Score Target --></label>
+        <name>CFL_Score_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- CFL Score Variance --></label>
+        <name>CFL_Score_Variance__c</name>
+    </fields>
+    <fields>
+        <label><!-- CSI Actual --></label>
+        <name>CSI_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- CSI RAG --></label>
+        <name>CSI_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CSI Target --></label>
+        <name>CSI_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- CSI Variance --></label>
+        <name>CSI_Variance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Complaints Logged RAG --></label>
+        <name>Complaints_Logged_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cost of Error RAG --></label>
+        <name>Cost_of_Error_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cost of Errors Actual --></label>
+        <name>Cost_of_Errors_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost of Errors Target --></label>
+        <name>Cost_of_Errors_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost of Errors Variance --></label>
+        <name>Cost_of_Errors_Variance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Counter Transactions --></label>
+        <name>Counter_Transactions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eligible Opps RAG --></label>
+        <name>Eligible_Opps_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- GOGW Actual --></label>
+        <name>GOGW_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- GOGW RAG --></label>
+        <name>GOGW_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- GOGW Target --></label>
+        <name>GOGW_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- GOGW Variance --></label>
+        <name>GOGW_Variance__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Eligible Opps Actual --></label>
+        <name>HPP_Eligible_Opps_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Eligible Opps Targets --></label>
+        <name>HPP_Eligible_Opps_Targets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Highlight --></label>
+        <name>Highlight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issues --></label>
+        <name>Issues__c</name>
+    </fields>
+    <fields>
+        <label><!-- Liabilities Actual --></label>
+        <name>Liabilities_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Liabilities RAG --></label>
+        <name>Liabilities_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Liabilities Target --></label>
+        <name>Liabilities_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Management Keep In View --></label>
+        <name>Management_Keep_In_View__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month --></label>
+        <name>Month__c</name>
+        <picklistValues>
+            <masterLabel>Apr 2012</masterLabel>
+            <translation><!-- Apr 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>April</masterLabel>
+            <translation><!-- April --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aug 2012</masterLabel>
+            <translation><!-- Aug 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>August</masterLabel>
+            <translation><!-- August --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dec 2012</masterLabel>
+            <translation><!-- Dec 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>December</masterLabel>
+            <translation><!-- December --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Feb 2012</masterLabel>
+            <translation><!-- Feb 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>February</masterLabel>
+            <translation><!-- February --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jan 2012</masterLabel>
+            <translation><!-- Jan 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>January</masterLabel>
+            <translation><!-- January --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jul 2012</masterLabel>
+            <translation><!-- Jul 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>July</masterLabel>
+            <translation><!-- July --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jun 2012</masterLabel>
+            <translation><!-- Jun 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>June</masterLabel>
+            <translation><!-- June --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mar 2012</masterLabel>
+            <translation><!-- Mar 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>March</masterLabel>
+            <translation><!-- March --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>May</masterLabel>
+            <translation><!-- May --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>May 2012</masterLabel>
+            <translation><!-- May 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nov 2012</masterLabel>
+            <translation><!-- Nov 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>November</masterLabel>
+            <translation><!-- November --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oct 2012</masterLabel>
+            <translation><!-- Oct 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>October</masterLabel>
+            <translation><!-- October --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sep 2012</masterLabel>
+            <translation><!-- Sep 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>September</masterLabel>
+            <translation><!-- September --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- New Customers --></label>
+        <name>New_Customers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Complaints Logged Actual --></label>
+        <name>Number_of_Complaints_Logged_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Complaints Logged Variance --></label>
+        <name>Number_of_Complaints_Logged_Variance__c</name>
+    </fields>
+    <fields>
+        <help><!-- Should be no more than 8% of the number of complaints logged. --></help>
+        <label><!-- Number of Upheld Complaints Actual --></label>
+        <name>Number_of_Upheld_Complaints_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Upheld Complaints Variance --></label>
+        <name>Number_of_Upheld_Complaints_Variance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plan for the Month --></label>
+        <name>Plan_for_the_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shrinkage: Holidays: Target --></label>
+        <name>Shrinkage_Holidays_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shrinkage: Holidays Variance --></label>
+        <name>Shrinkage_Holidays_Variance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shrinkage: Holidays: RAG --></label>
+        <name>Shrinkage_Holidays__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Shrinkage: Sickness RAG --></label>
+        <name>Shrinkage_Sickness_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Shrinkage: Sickness Variance --></label>
+        <name>Shrinkage_Sickness_Variance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shrinkage: Sickness % --></label>
+        <name>Shrinkage_Sickness__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shrinkage: Target % --></label>
+        <name>Shrinkage_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shrinkage: Holidays Actual % --></label>
+        <name>Shrinkage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Till Differences Targets --></label>
+        <name>Till_Differences_Targets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Till Differences Variance --></label>
+        <name>Till_Differences_Variance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Till Differences RAG --></label>
+        <name>Till_Differences__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Till differences Actual --></label>
+        <name>Till_differences_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Upheld Complaints RAG --></label>
+        <name>Upheld_Complaints_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Branch Dashboard Layout</layout>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Service --></label>
+            <section>Customer Service</section>
+        </sections>
+        <sections>
+            <label><!-- General Information --></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label><!-- Operations --></label>
+            <section>Operations</section>
+        </sections>
+        <sections>
+            <label><!-- People --></label>
+            <section>People</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Performance --></label>
+            <section>Sales Performance</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

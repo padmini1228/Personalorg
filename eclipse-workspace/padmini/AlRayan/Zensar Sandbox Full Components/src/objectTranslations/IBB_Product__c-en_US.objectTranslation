@@ -1,0 +1,2916 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Product</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Products</value>
+    </caseValues>
+    <fields>
+        <label><!-- Ability to add ongoing deposits --></label>
+        <name>Ability_to_add_ongoing_deposits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ability to setup DDs? --></label>
+        <name>Ability_to_setup_DDs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ability to setup SOs? --></label>
+        <name>Ability_to_setup_SOs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Type --></label>
+        <name>Account_Type__c</name>
+        <picklistValues>
+            <masterLabel>120 Day Notice Account</masterLabel>
+            <translation><!-- 120 Day Notice Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 Day Notice Account</masterLabel>
+            <translation><!-- 60 Day Notice Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90 Day Notice account</masterLabel>
+            <translation><!-- 90 Day Notice account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Acceptances</masterLabel>
+            <translation><!-- Acceptances --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accumulated Depreciation</masterLabel>
+            <translation><!-- Accumulated Depreciation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amendments</masterLabel>
+            <translation><!-- Amendments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bid Bonds</masterLabel>
+            <translation><!-- Bid Bonds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bullet Pay. Cons. Fin-Deferred Inco</masterLabel>
+            <translation><!-- Bullet Pay. Cons. Fin-Deferred Inco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bullet Pay. Consu-Finance Provision</masterLabel>
+            <translation><!-- Bullet Pay. Consu-Finance Provision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bullet Payment Consumer Financing</masterLabel>
+            <translation><!-- Bullet Payment Consumer Financing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Charity Savings Account</masterLabel>
+            <translation><!-- Business Charity Savings Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Current Account</masterLabel>
+            <translation><!-- Business Current Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Finance - Sec Provision</masterLabel>
+            <translation><!-- Business Finance - Sec Provision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Finance - Secured</masterLabel>
+            <translation><!-- Business Finance - Secured --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Finance - Unsecured</masterLabel>
+            <translation><!-- Business Finance - Unsecured --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Finance Unsec - Provision</masterLabel>
+            <translation><!-- Business Finance Unsec - Provision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Savings Account</masterLabel>
+            <translation><!-- Business Savings Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Term Deposit</masterLabel>
+            <translation><!-- Business Term Deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Capital</masterLabel>
+            <translation><!-- Capital --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Car FFinance - Ijara</masterLabel>
+            <translation><!-- Car FFinance - Ijara --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash</masterLabel>
+            <translation><!-- Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cashiers Chq Outstanding</masterLabel>
+            <translation><!-- Cashiers Chq Outstanding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charities 100 Day Notice Account</masterLabel>
+            <translation><!-- Charities 100 Day Notice Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comercial Property Finance</masterLabel>
+            <translation><!-- Comercial Property Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial Property - Provision</masterLabel>
+            <translation><!-- Commercial Property - Provision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commodity Murabaha Deposit</masterLabel>
+            <translation><!-- Commodity Murabaha Deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commodity Murabaha Investments</masterLabel>
+            <translation><!-- Commodity Murabaha Investments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contingent Contra Account</masterLabel>
+            <translation><!-- Contingent Contra Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contra - Delivery Order</masterLabel>
+            <translation><!-- Contra - Delivery Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contra - IBC</masterLabel>
+            <translation><!-- Contra - IBC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contra - Local Purchase Order</masterLabel>
+            <translation><!-- Contra - Local Purchase Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contra - OBC</masterLabel>
+            <translation><!-- Contra - OBC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contra Contingent Post Dated Account</masterLabel>
+            <translation><!-- Contra Contingent Post Dated Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contra Finance Commitment</masterLabel>
+            <translation><!-- Contra Finance Commitment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contra Sundry Memo</masterLabel>
+            <translation><!-- Contra Sundry Memo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Account</masterLabel>
+            <translation><!-- Current Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Contingent Account</masterLabel>
+            <translation><!-- Customer Contingent Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Post Dated Contingent A/C</masterLabel>
+            <translation><!-- Customer Post Dated Contingent A/C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DPS</masterLabel>
+            <translation><!-- DPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Default Account Information Group</masterLabel>
+            <translation><!-- Default Account Information Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery Order</masterLabel>
+            <translation><!-- Delivery Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diminis.Musharaka Hou. -Fin.Provisi</masterLabel>
+            <translation><!-- Diminis.Musharaka Hou. -Fin.Provisi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diminishing Musharaka Housing</masterLabel>
+            <translation><!-- Diminishing Musharaka Housing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Savings Account</masterLabel>
+            <translation><!-- Direct Savings Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discount in Adv Contra</masterLabel>
+            <translation><!-- Discount in Adv Contra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Documentary Letter of Credit- Sight</masterLabel>
+            <translation><!-- Documentary Letter of Credit- Sight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Documentary Letter of Credit-Usance</masterLabel>
+            <translation><!-- Documentary Letter of Credit-Usance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Documentaryletter of Credit-Confirm</masterLabel>
+            <translation><!-- Documentaryletter of Credit-Confirm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exchange Position -Actual</masterLabel>
+            <translation><!-- Exchange Position -Actual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exchange Position -Forward</masterLabel>
+            <translation><!-- Exchange Position -Forward --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance Contingent Assets</masterLabel>
+            <translation><!-- Finance Contingent Assets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financing Commitment Account</masterLabel>
+            <translation><!-- Financing Commitment Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed Assets</masterLabel>
+            <translation><!-- Fixed Assets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forward Exch P &amp; L Contra</masterLabel>
+            <translation><!-- Forward Exch P &amp; L Contra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forward Exchange Bought</masterLabel>
+            <translation><!-- Forward Exchange Bought --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forward Exchange Sold</masterLabel>
+            <translation><!-- Forward Exchange Sold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Funding Conting - Asset</masterLabel>
+            <translation><!-- Funding Conting - Asset --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Funding Contingent - Liabality</masterLabel>
+            <translation><!-- Funding Contingent - Liabality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Funds Control</masterLabel>
+            <translation><!-- Funds Control --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Goods in Transit - Car Murabaha</masterLabel>
+            <translation><!-- Goods in Transit - Car Murabaha --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Goods in Transit - Murabaha</masterLabel>
+            <translation><!-- Goods in Transit - Murabaha --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Goods in Transit-Commodity (Deposit</masterLabel>
+            <translation><!-- Goods in Transit-Commodity (Deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Goods in Transit-Commodity Investme</masterLabel>
+            <translation><!-- Goods in Transit-Commodity Investme --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Goods in Transit-Housing Murabaha</masterLabel>
+            <translation><!-- Goods in Transit-Housing Murabaha --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Goods in Transit-Tawarraq Commodity</masterLabel>
+            <translation><!-- Goods in Transit-Tawarraq Commodity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Purchase Plan</masterLabel>
+            <translation><!-- Home Purchase Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Purchase Plan (Scotland)</masterLabel>
+            <translation><!-- Home Purchase Plan (Scotland) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Purchase Plan- Provision</masterLabel>
+            <translation><!-- Home Purchase Plan- Provision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Housing Diminishing Musharaka</masterLabel>
+            <translation><!-- Housing Diminishing Musharaka --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ijara Car - Finance Provision</masterLabel>
+            <translation><!-- Ijara Car - Finance Provision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ijara Car Finance</masterLabel>
+            <translation><!-- Ijara Car Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ijara Housing</masterLabel>
+            <translation><!-- Ijara Housing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ijara Housing - Finance Provision</masterLabel>
+            <translation><!-- Ijara Housing - Finance Provision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Impersonal - Customer Payment</masterLabel>
+            <translation><!-- Impersonal - Customer Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual Term Deposit</masterLabel>
+            <translation><!-- Individual Term Deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inst. Consumer Fin.-Deferred Income</masterLabel>
+            <translation><!-- Inst. Consumer Fin.-Deferred Income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Instalment Consu. Finance Provision</masterLabel>
+            <translation><!-- Instalment Consu. Finance Provision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Instalment Payment Consumer Finance</masterLabel>
+            <translation><!-- Instalment Payment Consumer Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Instant Access Cash ISA</masterLabel>
+            <translation><!-- Instant Access Cash ISA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inter Branch Settlement Account</masterLabel>
+            <translation><!-- Inter Branch Settlement Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inward Bills</masterLabel>
+            <translation><!-- Inward Bills --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Letter of Credit - Other</masterLabel>
+            <translation><!-- Letter of Credit - Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Letters of Guarantee</masterLabel>
+            <translation><!-- Letters of Guarantee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liability - Acceptances</masterLabel>
+            <translation><!-- Liability - Acceptances --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liability - Amendments</masterLabel>
+            <translation><!-- Liability - Amendments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liability - Guarantees</masterLabel>
+            <translation><!-- Liability - Guarantees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liability - L/C Confirm</masterLabel>
+            <translation><!-- Liability - L/C Confirm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liability - L/C Other</masterLabel>
+            <translation><!-- Liability - L/C Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liability - L/C Sight</masterLabel>
+            <translation><!-- Liability - L/C Sight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liability - L/C Usance</masterLabel>
+            <translation><!-- Liability - L/C Usance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liability - Other Commitment</masterLabel>
+            <translation><!-- Liability - Other Commitment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liability - Security Held</masterLabel>
+            <translation><!-- Liability - Security Held --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liability - Shipping Guarantee</masterLabel>
+            <translation><!-- Liability - Shipping Guarantee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liability - Travellers  Cheques</masterLabel>
+            <translation><!-- Liability - Travellers  Cheques --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liability -Bid Bonds</masterLabel>
+            <translation><!-- Liability -Bid Bonds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liability-Perfrmnce Bonds</masterLabel>
+            <translation><!-- Liability-Perfrmnce Bonds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limited Companies Murabaha Deposit</masterLabel>
+            <translation><!-- Limited Companies Murabaha Deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limited Companies Term Deposit</masterLabel>
+            <translation><!-- Limited Companies Term Deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local Purchase Order</masterLabel>
+            <translation><!-- Local Purchase Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ltd Co Wakala Deposit</masterLabel>
+            <translation><!-- Ltd Co Wakala Deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Margin Deposit Account</masterLabel>
+            <translation><!-- Margin Deposit Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Masjid Current Account</masterLabel>
+            <translation><!-- Masjid Current Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Murabaha Car - Finance Provision</masterLabel>
+            <translation><!-- Murabaha Car - Finance Provision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Murabaha Car Fin. Deferred Income</masterLabel>
+            <translation><!-- Murabaha Car Fin. Deferred Income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Murabaha Car Financing</masterLabel>
+            <translation><!-- Murabaha Car Financing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Murabaha Funding Deposit</masterLabel>
+            <translation><!-- Murabaha Funding Deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Murabaha Housing</masterLabel>
+            <translation><!-- Murabaha Housing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Murabaha Housing - Finance Provisio</masterLabel>
+            <translation><!-- Murabaha Housing - Finance Provisio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NPA Regular Payment Tawaruq</masterLabel>
+            <translation><!-- NPA Regular Payment Tawaruq --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Accrual Profit Receivable</masterLabel>
+            <translation><!-- Non Accrual Profit Receivable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Accrual Profit Received</masterLabel>
+            <translation><!-- Non Accrual Profit Received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nostro Account</masterLabel>
+            <translation><!-- Nostro Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Notice Cash ISA</masterLabel>
+            <translation><!-- Notice Cash ISA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Commitments</masterLabel>
+            <translation><!-- Other Commitments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Investments &amp; Placements</masterLabel>
+            <translation><!-- Other Investments &amp; Placements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outward Bills</masterLabel>
+            <translation><!-- Outward Bills --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partnership Current Account</masterLabel>
+            <translation><!-- Partnership Current Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Performance Bonds</masterLabel>
+            <translation><!-- Performance Bonds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Finance Facility</masterLabel>
+            <translation><!-- Personal Finance Facility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Profit &amp; Loss - Current</masterLabel>
+            <translation><!-- Profit &amp; Loss - Current --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Profit &amp; Loss - Previous</masterLabel>
+            <translation><!-- Profit &amp; Loss - Previous --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Profit Payable</masterLabel>
+            <translation><!-- Profit Payable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Profit Receivable</masterLabel>
+            <translation><!-- Profit Receivable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Profit Stabilisation Reserve</masterLabel>
+            <translation><!-- Profit Stabilisation Reserve --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refundable/Urboon Deposit Account</masterLabel>
+            <translation><!-- Refundable/Urboon Deposit Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remittances Payable</masterLabel>
+            <translation><!-- Remittances Payable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remittances Receivable</masterLabel>
+            <translation><!-- Remittances Receivable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reserve - General</masterLabel>
+            <translation><!-- Reserve - General --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reserve-Finance Losses (Not Used)</masterLabel>
+            <translation><!-- Reserve-Finance Losses (Not Used) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Savings Account</masterLabel>
+            <translation><!-- Savings Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Savings Account - Advantage</masterLabel>
+            <translation><!-- Savings Account - Advantage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Savings Account - Premium</masterLabel>
+            <translation><!-- Savings Account - Premium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Security Held</masterLabel>
+            <translation><!-- Security Held --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipping Guarantee</masterLabel>
+            <translation><!-- Shipping Guarantee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sole Trader Current Account</masterLabel>
+            <translation><!-- Sole Trader Current Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spot Exchange Purchased</masterLabel>
+            <translation><!-- Spot Exchange Purchased --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spot Exchange Sold</masterLabel>
+            <translation><!-- Spot Exchange Sold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sundry (Counter) FX</masterLabel>
+            <translation><!-- Sundry (Counter) FX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sundry Assets</masterLabel>
+            <translation><!-- Sundry Assets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sundry Liabilities</masterLabel>
+            <translation><!-- Sundry Liabilities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sundry Memo</masterLabel>
+            <translation><!-- Sundry Memo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supplier&apos;s Murabaha Finance Account</masterLabel>
+            <translation><!-- Supplier&apos;s Murabaha Finance Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suspense A/C - Creditors</masterLabel>
+            <translation><!-- Suspense A/C - Creditors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suspense A/C - Debtors</masterLabel>
+            <translation><!-- Suspense A/C - Debtors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suspense Default A/Cs</masterLabel>
+            <translation><!-- Suspense Default A/Cs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tawarraq Bullet- Finance Provision</masterLabel>
+            <translation><!-- Tawarraq Bullet- Finance Provision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tawarraq Fin. Bullet-Deferred Incom</masterLabel>
+            <translation><!-- Tawarraq Fin. Bullet-Deferred Incom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tawarraq Fin. Inst.-Deferred Income</masterLabel>
+            <translation><!-- Tawarraq Fin. Inst.-Deferred Income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tawarraq Finance - Bullet</masterLabel>
+            <translation><!-- Tawarraq Finance - Bullet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tawarraq Instalm. Finance Provision</masterLabel>
+            <translation><!-- Tawarraq Instalm. Finance Provision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Term Contingent Asset</masterLabel>
+            <translation><!-- Term Contingent Asset --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Term Contingent Liab</masterLabel>
+            <translation><!-- Term Contingent Liab --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Travellers Cheques</masterLabel>
+            <translation><!-- Travellers Cheques --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unrealised FX accruals</masterLabel>
+            <translation><!-- Unrealised FX accruals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vostro Account</masterLabel>
+            <translation><!-- Vostro Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wakala Funding Deposit</masterLabel>
+            <translation><!-- Wakala Funding Deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wakala Investment</masterLabel>
+            <translation><!-- Wakala Investment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wakala Treasury Deposit</masterLabel>
+            <translation><!-- Wakala Treasury Deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Young Person&apos;s Notice Savings</masterLabel>
+            <translation><!-- Young Person&apos;s Notice Savings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Young Person&apos;s Notice Savings Account</masterLabel>
+            <translation><!-- Young Person&apos;s Notice Savings Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Young Persons Savings Account</masterLabel>
+            <translation><!-- Young Persons Savings Account --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional payment charges --></label>
+        <name>Additional_payment_charges__c</name>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repayment of IBB legal contribution</masterLabel>
+            <translation><!-- Repayment of IBB legal contribution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repayment of IBB valuation contribution</masterLabel>
+            <translation><!-- Repayment of IBB valuation contribution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repayment of cashback</masterLabel>
+            <translation><!-- Repayment of cashback --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repayment of customer legal contribution</masterLabel>
+            <translation><!-- Repayment of customer legal contribution --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Administration fee £ --></label>
+        <name>Administration_fee_value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Administration fee % --></label>
+        <name>Administration_fee_value_percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agency fee - Percentage --></label>
+        <name>Agency_fee_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agency fees - Value --></label>
+        <name>Agency_fees_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allow card payment CAA --></label>
+        <name>Allow_card_payment_CAA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Administration fee paid on application £ --></label>
+        <name>Amount_of_application_fee_paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Available for --></label>
+        <name>Available_for__c</name>
+        <picklistValues>
+            <masterLabel>Additional capital</masterLabel>
+            <translation><!-- Additional capital --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Purchase</masterLabel>
+            <translation><!-- New Purchase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remortgage</masterLabel>
+            <translation><!-- Remortgage --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Bank legal cost --></label>
+        <name>Bank_legal_cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Benchmark --></label>
+        <name>Benchmark__c</name>
+        <picklistValues>
+            <masterLabel>BBR</masterLabel>
+            <translation><!-- BBR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LIBOR</masterLabel>
+            <translation><!-- LIBOR --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Where the rate is variable rate, this is the value of the underlying benchmark rate at the time of launch. --></help>
+        <label><!-- Rental Rate --></label>
+        <name>Benchmark_rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bonus condition rate percentage --></label>
+        <name>Bonus_condition_rate_percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bonus period duration --></label>
+        <name>Bonus_period_duration__c</name>
+        <picklistValues>
+            <masterLabel>12 months</masterLabel>
+            <translation><!-- 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 months</masterLabel>
+            <translation><!-- 18 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 months</masterLabel>
+            <translation><!-- 24 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 months</masterLabel>
+            <translation><!-- 36 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 months</masterLabel>
+            <translation><!-- 48 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 months</masterLabel>
+            <translation><!-- 60 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed date</masterLabel>
+            <translation><!-- Fixed date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Bonus period end date --></label>
+        <name>Bonus_period_end_date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The maximum amount that the margin can be increased by throughout the term of the product. --></help>
+        <label><!-- Margin Cap % --></label>
+        <name>Cap_bench_percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revert Rate Margin Cap % --></label>
+        <name>Cap_revert_percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash back amount --></label>
+        <name>Cash_back_amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash back percentage --></label>
+        <name>Cash_back_percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash card (Available to have) --></label>
+        <name>Cash_card_Available_to_have__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category of Product --></label>
+        <name>Category_of_Product__c</name>
+        <picklistValues>
+            <masterLabel>Buy To Let Purchase Plan Sco</masterLabel>
+            <translation><!-- Buy To Let Purchase Plan Sco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Buy to Let Purchase Plan</masterLabel>
+            <translation><!-- Buy to Let Purchase Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Account</masterLabel>
+            <translation><!-- Current Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Purchase Plan</masterLabel>
+            <translation><!-- Home Purchase Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Purchase Plan Premier</masterLabel>
+            <translation><!-- Home Purchase Plan Premier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Purchase Scotland</masterLabel>
+            <translation><!-- Home Purchase Scotland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Savings Account</masterLabel>
+            <translation><!-- Savings Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tax Free Savings</masterLabel>
+            <translation><!-- Tax Free Savings --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cheque book (Available to have) --></label>
+        <name>Cheque_book_Available_to_have__c</name>
+    </fields>
+    <fields>
+        <help><!-- The minimum total rental rate that can apply to the finance product regardless of the benchmark and margin that applies --></help>
+        <label><!-- Collar % --></label>
+        <name>Collar_bench_percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collar rate --></label>
+        <name>Collar_rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collar % --></label>
+        <name>Collar_revert_percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compounded profit rate for letter --></label>
+        <name>Compounded_profit_rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- DocuGen ISA Transfer --></label>
+        <name>CongaISATransfer__c</name>
+        <relationshipLabel><!-- Products (CongaSetting) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CongaOfferLetterEquityRelease --></label>
+        <name>CongaOfferLetterEquityRelease__c</name>
+        <relationshipLabel><!-- Products (CongaOfferLetterEquityRelease) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DocuGenOfferLetterRefinance --></label>
+        <name>CongaOfferLetterRefinance__c</name>
+        <relationshipLabel><!-- Products (CongaOfferLetterRefinance) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DocuGenSettings --></label>
+        <name>CongaSettings__c</name>
+    </fields>
+    <fields>
+        <label><!-- DocuGenWelcomeLetter --></label>
+        <name>CongaWelcomeLetter__c</name>
+        <relationshipLabel><!-- Products (CongaWelcomeLetter) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DocuGen FIS --></label>
+        <name>Conga_FIS__c</name>
+        <relationshipLabel><!-- Products (Conga FIS) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DocuGen Failed EKYC Letter --></label>
+        <name>Conga_Failed_EKYC_Letter__c</name>
+        <relationshipLabel><!-- Products (Conga Failed EKYC Letter) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DocuGen Liability App 1 CAA --></label>
+        <name>Conga_Liability_App_1_CAA__c</name>
+        <relationshipLabel><!-- Products (Conga Liability App 1 CAA) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Conga Liability App 1 --></label>
+        <name>Conga_Liability_App_1__c</name>
+        <relationshipLabel><!-- Products (Conga Liability App 1) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DocuGen Liability App 2 CAA --></label>
+        <name>Conga_Liability_App_2_CAA__c</name>
+        <relationshipLabel><!-- Products (Conga Liability App 2 CAA) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Conga Liability App 2 --></label>
+        <name>Conga_Liability_App_2__c</name>
+        <relationshipLabel><!-- Products (Conga Liability App 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DocuGen Liability App 3 CAA --></label>
+        <name>Conga_Liability_App_3_CAA__c</name>
+        <relationshipLabel><!-- Products (Conga Liability App 3 CAA) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Conga Liability App 3 --></label>
+        <name>Conga_Liability_App_3__c</name>
+        <relationshipLabel><!-- Products (Conga Liability App 3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DocuGen Offer Letter Switch --></label>
+        <name>Conga_Offer_Letter_Switch__c</name>
+        <relationshipLabel><!-- Products (Conga Offer Letter Switch) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DocuGen Offer Letter --></label>
+        <name>Conga_Offer_Letter__c</name>
+        <relationshipLabel><!-- Products (Conga Offer Letter) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DocuGen Signature Required Letter --></label>
+        <name>Conga_Signature_Required_Letter__c</name>
+        <relationshipLabel><!-- Products (Conga Signature Required Letter) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DocuGen Welcome Letter Switch --></label>
+        <name>Conga_Welcome_Letter_Switch__c</name>
+        <relationshipLabel><!-- Products (Conga Welcome Letter Switch) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Currency --></label>
+        <name>Currency__c</name>
+        <picklistValues>
+            <masterLabel>Euro</masterLabel>
+            <translation><!-- Euro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pound Sterling</masterLabel>
+            <translation><!-- Pound Sterling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>United States Dollar</masterLabel>
+            <translation><!-- United States Dollar --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Channel --></label>
+        <name>Customer_Channel__c</name>
+        <picklistValues>
+            <masterLabel>Branch customer</masterLabel>
+            <translation><!-- Branch customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Building insurance customer</masterLabel>
+            <translation><!-- Building insurance customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current account holder</masterLabel>
+            <translation><!-- Current account holder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Existing customer</masterLabel>
+            <translation><!-- Existing customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internet</masterLabel>
+            <translation><!-- Internet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New customer</masterLabel>
+            <translation><!-- New customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone Customer</masterLabel>
+            <translation><!-- Phone Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier</masterLabel>
+            <translation><!-- Premier --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer legal cost --></label>
+        <name>Customer_legal_cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer legal costs paid by --></label>
+        <name>Customer_legal_costs_paid_by__c</name>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IBB</masterLabel>
+            <translation><!-- IBB --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Debit card (Available to have) --></label>
+        <name>Debit_card_Available_to_have__c</name>
+    </fields>
+    <fields>
+        <label><!-- Details of products portability --></label>
+        <name>Details_of_products_portability__c</name>
+    </fields>
+    <fields>
+        <help><!-- For use with the MMR product recommendation letter --></help>
+        <label><!-- Discounted/fixed --></label>
+        <name>Discounted_fixed__c</name>
+    </fields>
+    <fields>
+        <help><!-- If this product is not a discounted product, please leave blank. --></help>
+        <label><!-- Discounted product expiry date --></label>
+        <name>Discounted_product_expiry_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- DocuGenSwitchFIS --></label>
+        <name>DocuGenSwitchFIS__c</name>
+        <relationshipLabel><!-- Products (DocuGenSwitchFIS) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- EBS Deal/Account Type --></label>
+        <name>EBS_Deal_Account_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- EBS Deal Period Code --></label>
+        <name>EBS_Deal_Period_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Early Settlement Allowed? --></label>
+        <name>Early_Settlement_Allowed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Period 2 EPC applies until --></label>
+        <name>Early_payment_charge_applies_until2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Period 1 EPC applies until --></label>
+        <name>Early_payment_charge_applies_until__c</name>
+    </fields>
+    <fields>
+        <label><!-- Early payment charge (Period 1) --></label>
+        <name>Early_repayment_charge_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Early repayment charge (Period 2) --></label>
+        <name>Early_repayment_charge_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Early settlement details --></label>
+        <name>Early_settlement_details__c</name>
+    </fields>
+    <fields>
+        <label><!-- EventDirector --></label>
+        <name>EventDirector__c</name>
+        <relationshipLabel><!-- Products (EventDirector) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- FIS Conga DocumentId --></label>
+        <name>FIS_Conga_DocumentId__c</name>
+    </fields>
+    <fields>
+        <label><!-- FTD Term (Months) --></label>
+        <name>FTD_Term_Months__c</name>
+        <picklistValues>
+            <masterLabel>12</masterLabel>
+            <translation><!-- 12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18</masterLabel>
+            <translation><!-- 18 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24</masterLabel>
+            <translation><!-- 24 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36</masterLabel>
+            <translation><!-- 36 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Featured_product --></label>
+        <name>Featured_product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fee Assisted --></label>
+        <name>Fee_Assisted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fees assistance percentage --></label>
+        <name>Fees_assistance_percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fees assistance value --></label>
+        <name>Fees_assistance_value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fixed or Discounted --></label>
+        <name>Fixed_or_Discounted__c</name>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>discounted</masterLabel>
+            <translation><!-- discounted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>fixed</masterLabel>
+            <translation><!-- fixed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If this product is not a fixed product, please leave blank --></help>
+        <label><!-- Fixed product expiry date --></label>
+        <name>Fixed_product_expiry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fixed product rate duration (months) --></label>
+        <name>Fixed_product_rate_duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product rate until --></label>
+        <name>Fixed_product_rate_until__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fixed rate --></label>
+        <name>Fixed_rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Frequency of rent review --></label>
+        <name>Frequency_of_rent_review__c</name>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Six monthly</masterLabel>
+            <translation><!-- Six monthly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Further advances allowed --></label>
+        <name>Further_advances_allowed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Further advances details --></label>
+        <name>Further_advances_details__c</name>
+    </fields>
+    <fields>
+        <label><!-- IBBHomeFinanceRentalRateMargin --></label>
+        <name>IBBHomeFinanceRentalRateMargin__c</name>
+    </fields>
+    <fields>
+        <help><!-- Only applies for a discounted variable product. --></help>
+        <label><!-- Discount from IBB Finance RR Margin --></label>
+        <name>IBB_Finance_Rental_Rate_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- IBB Legal costs paid by --></label>
+        <name>IBB_Legal_costs_paid_by__c</name>
+        <picklistValues>
+            <masterLabel>Customer in full</masterLabel>
+            <translation><!-- Customer in full --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IBB and Customer</masterLabel>
+            <translation><!-- IBB and Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IBB in full</masterLabel>
+            <translation><!-- IBB in full --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IBB Product Set --></label>
+        <name>IBB_Product_Set__c</name>
+        <relationshipLabel><!-- Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- IDD Document --></label>
+        <name>IDD_Document__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inbound payment types available --></label>
+        <name>Inbound_payment_types_available__c</name>
+        <picklistValues>
+            <masterLabel>BACS</masterLabel>
+            <translation><!-- BACS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash</masterLabel>
+            <translation><!-- Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chaps</masterLabel>
+            <translation><!-- Chaps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cheque</masterLabel>
+            <translation><!-- Cheque --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer</masterLabel>
+            <translation><!-- Transfer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Income per pound --></label>
+        <name>Income_per_pound__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interested in value --></label>
+        <name>Interested_in_value__c</name>
+        <picklistValues>
+            <masterLabel>BTL Purchase Plan</masterLabel>
+            <translation><!-- BTL Purchase Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current account</masterLabel>
+            <translation><!-- Current account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DPS</masterLabel>
+            <translation><!-- DPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP</masterLabel>
+            <translation><!-- HPP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP Premier</masterLabel>
+            <translation><!-- HPP Premier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Long Term Savings</masterLabel>
+            <translation><!-- Long Term Savings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Short Term Savings</masterLabel>
+            <translation><!-- Short Term Savings --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is product portable? --></label>
+        <name>Is_product_portable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Liability Welcome Letter Post --></label>
+        <name>Liability_Welcome_Letter_Post__c</name>
+        <relationshipLabel><!-- Products (Liability Welcome Letter Post) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Liability Welcome Letter Online --></label>
+        <name>Liability_Welcome_Letter__c</name>
+        <relationshipLabel><!-- Products (Liability Welcome Letter) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Limited Company App Form --></label>
+        <name>Limited_Company_App_Form__c</name>
+        <relationshipLabel><!-- Products (Limited Company App Form) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Management fees - Percentage --></label>
+        <name>Management_fees_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Management fees - Value --></label>
+        <name>Management_fees_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Margin After Fixed Period --></label>
+        <name>Margin_After_Fixed_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Margin % --></label>
+        <name>Margin_bench_percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Margin cap --></label>
+        <name>Margin_cap__c</name>
+    </fields>
+    <fields>
+        <label><!-- Margin duration --></label>
+        <name>Margin_duration__c</name>
+        <picklistValues>
+            <masterLabel>12 months</masterLabel>
+            <translation><!-- 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 months</masterLabel>
+            <translation><!-- 18 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 months</masterLabel>
+            <translation><!-- 24 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 months</masterLabel>
+            <translation><!-- 36 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 months</masterLabel>
+            <translation><!-- 48 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 months</masterLabel>
+            <translation><!-- 60 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed date</masterLabel>
+            <translation><!-- Fixed date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Term of product</masterLabel>
+            <translation><!-- Term of product --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Margin duration fixed date --></label>
+        <name>Margin_duration_fixed_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Margin duration term (years) --></label>
+        <name>Margin_duration_term_years__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revert Rate Margin % --></label>
+        <name>Margin_revert_percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing product code --></label>
+        <name>Marketing_product_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- IBB Legal fees --></label>
+        <name>Max_IBB_contribution_IBB_Legal_fees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer legal fees --></label>
+        <name>Max_amount_IBB_will_pay_toward_legal_fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum FTV --></label>
+        <name>Max_finance_to_value_FTV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max IBB contribution to: Valuation fee --></label>
+        <name>Max_valuation_fee_bank_will_pay__c</name>
+    </fields>
+    <fields>
+        <help><!-- If a max FTI does not apply on this product, please enter as 100 --></help>
+        <label><!-- Maxiumum FTI --></label>
+        <name>Maxiumum_FTI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum Deposit Amount --></label>
+        <name>Minimum_Deposit_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notice required for capital withdrawl --></label>
+        <name>Notice_required_for_capital_withdrawl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Letter: Additional Fee Purchase --></label>
+        <name>Offer_Letter_Additional_Fee_Purchase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Letter: Additional fee refinance --></label>
+        <name>Offer_Letter_Additional_fee_refinance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Letter: Buy to Let 1 --></label>
+        <name>Offer_Letter_Buy_to_Let_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Letter: Fixed Rate 1 --></label>
+        <name>Offer_Letter_Fixed_Rate_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Letter: Fixed Rate 2 --></label>
+        <name>Offer_Letter_Fixed_Rate_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Letter: Fixed Rate 3 --></label>
+        <name>Offer_Letter_Fixed_Rate_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Letter: Fixed Rate 4 --></label>
+        <name>Offer_Letter_Fixed_Rate_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Letter: Fixed Rate 5 --></label>
+        <name>Offer_Letter_Fixed_Rate_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Letter: Fixed Rate 6 --></label>
+        <name>Offer_Letter_Fixed_Rate_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Letter: Fixed Rate 7 --></label>
+        <name>Offer_Letter_Fixed_Rate_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Letter: Lease Agreement --></label>
+        <name>Offer_Letter_Lease_Agreement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Letter: Property Outgoings --></label>
+        <name>Offer_Letter_Property_Outgoings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Letter: Purchase Deposit --></label>
+        <name>Offer_Letter_Purchase_Deposit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Letter: Purchase Vacant Possession --></label>
+        <name>Offer_Letter_Purchase_Vacant_Possession__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Letter: Refinance Deposit --></label>
+        <name>Offer_Letter_Refinance_Deposit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Letter: Rights of Third Parties --></label>
+        <name>Offer_Letter_Rights_of_Third_Parties__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Letter: Risk Warning --></label>
+        <name>Offer_Letter_Risk_Warning__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Letter: Transaction Type Eq Rel --></label>
+        <name>Offer_Letter_Transaction_Type_Eq_Rel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Letter: Transaction Type Purchase --></label>
+        <name>Offer_Letter_Transaction_Type_Purchase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Letter: Transaction Type Refinance --></label>
+        <name>Offer_Letter_Transaction_Type_Refinance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Letter: Valuation Report 1 --></label>
+        <name>Offer_Letter_Valuation_Report_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Letter Version --></label>
+        <name>Offer_Letter_Version__c</name>
+        <picklistValues>
+            <masterLabel>Pre-September 2014</masterLabel>
+            <translation><!-- Pre-September 2014 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>September 2014</masterLabel>
+            <translation><!-- September 2014 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Outbound payment types available --></label>
+        <name>Outbound_payment_types_available__c</name>
+        <picklistValues>
+            <masterLabel>BACS</masterLabel>
+            <translation><!-- BACS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash</masterLabel>
+            <translation><!-- Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chaps</masterLabel>
+            <translation><!-- Chaps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cheque</masterLabel>
+            <translation><!-- Cheque --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer</masterLabel>
+            <translation><!-- Transfer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payment Limit (Bank Transfer) --></label>
+        <name>Payment_Limit_Bank_Transfer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Limit (Cash) --></label>
+        <name>Payment_Limit_Cash__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Limit (Cheque) --></label>
+        <name>Payment_Limit_Cheque__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Limit (Debit Card) --></label>
+        <name>Payment_Limit_Debit_Card__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Limit (Direct Debit) --></label>
+        <name>Payment_Limit_Direct_Debit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Limit (IBB Transfer) --></label>
+        <name>Payment_Limit_IBB_Transfer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Limit (Lump Sum Direct Debit) --></label>
+        <name>Payment_Limit_Lump_Sum_Direct_Debit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Penalty charge amount £ --></label>
+        <name>Penalty_charge_amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Penalty charge: no of days interest lost --></label>
+        <name>Penalty_charge_no_of_days_interest_lost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Penalty charge % --></label>
+        <name>Penalty_charge_percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Penalty charge type --></label>
+        <name>Penalty_charge_type__c</name>
+        <picklistValues>
+            <masterLabel>Fixed value</masterLabel>
+            <translation><!-- Fixed value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loss of all interest</masterLabel>
+            <translation><!-- Loss of all interest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loss of fixed days interest</masterLabel>
+            <translation><!-- Loss of fixed days interest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Penalty interest rate</masterLabel>
+            <translation><!-- Penalty interest rate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percentage of withdrawal</masterLabel>
+            <translation><!-- Percentage of withdrawal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Penalty charges --></label>
+        <name>Penalty_charges__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Administration fee paid on application % --></label>
+        <name>Percentage_of_application_fee_paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Period 1 EPC duration (months) --></label>
+        <name>Period_1_EPC_duration_months__c</name>
+    </fields>
+    <fields>
+        <label><!-- Period 2 EPC duration (months) --></label>
+        <name>Period_2_EPC_duration_months__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plan Schedule Section 6: Fixed Product --></label>
+        <name>PlanScheduleSection6FixedProduct__c</name>
+        <picklistValues>
+            <masterLabel>The margin will not change whilst a fixed rate applies.</masterLabel>
+            <translation><!-- The margin will not change whilst a fixed rate applies. --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ProductEventDirector --></label>
+        <name>ProductEventDirector__c</name>
+        <relationshipLabel><!-- Products (ProductEventDirector) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ProductSubType --></label>
+        <name>ProductSubType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Description --></label>
+        <name>Product_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Option --></label>
+        <name>Product_Option__c</name>
+        <picklistValues>
+            <masterLabel>Fees Assisted Fixed Mar 2011</masterLabel>
+            <translation><!-- Fees Assisted Fixed Mar 2011 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fees Assisted Only</masterLabel>
+            <translation><!-- Fees Assisted Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residential Property Invest</masterLabel>
+            <translation><!-- Residential Property Invest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard Fixed until Mar 2011</masterLabel>
+            <translation><!-- Standard Fixed until Mar 2011 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard fixed until 31Dec13</masterLabel>
+            <translation><!-- Standard fixed until 31Dec13 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Switch Admin Fee --></label>
+        <name>Product_Switch_Admin_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Switch Fee --></label>
+        <name>Product_Switch_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product code --></label>
+        <name>Product_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product expiry date --></label>
+        <name>Product_expiry_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product live date --></label>
+        <name>Product_live_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product withdraw date --></label>
+        <name>Product_withdraw_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Profit Rate % --></label>
+        <name>Profit_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Profit accrued --></label>
+        <name>Profit_accrued__c</name>
+        <picklistValues>
+            <masterLabel>Annually</masterLabel>
+            <translation><!-- Annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Matruity</masterLabel>
+            <translation><!-- Matruity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Profit calculated --></label>
+        <name>Profit_calculated__c</name>
+        <picklistValues>
+            <masterLabel>Annually</masterLabel>
+            <translation><!-- Annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maturity</masterLabel>
+            <translation><!-- Maturity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NA</masterLabel>
+            <translation><!-- NA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Profit paid as income --></label>
+        <name>Profit_of_income__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Profit paid --></label>
+        <name>Profit_paid__c</name>
+        <picklistValues>
+            <masterLabel>Annually</masterLabel>
+            <translation><!-- Annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maturity</masterLabel>
+            <translation><!-- Maturity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NA</masterLabel>
+            <translation><!-- NA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Profit paid to --></label>
+        <name>Profit_paid_to__c</name>
+        <picklistValues>
+            <masterLabel>External account</masterLabel>
+            <translation><!-- External account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal IBB account</masterLabel>
+            <translation><!-- Internal IBB account --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Profit per pound --></label>
+        <name>Profit_per_pound__c</name>
+    </fields>
+    <fields>
+        <label><!-- Profit rate for letter --></label>
+        <name>Profit_rate_for_letter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate type --></label>
+        <name>Rate_Type__c</name>
+        <picklistValues>
+            <masterLabel>Fixed</masterLabel>
+            <translation><!-- Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IBB Home Finance Rental Rate</masterLabel>
+            <translation><!-- IBB Home Finance Rental Rate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Variable</masterLabel>
+            <translation><!-- Variable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Variable Discount</masterLabel>
+            <translation><!-- Variable Discount --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rate after fixed/discount period expiry --></label>
+        <name>Rate_after_fixed_period_expiry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate duration 1 --></label>
+        <name>Rate_duration_1__c</name>
+        <picklistValues>
+            <masterLabel>12 months</masterLabel>
+            <translation><!-- 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 months</masterLabel>
+            <translation><!-- 18 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 months</masterLabel>
+            <translation><!-- 24 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 months</masterLabel>
+            <translation><!-- 36 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 months</masterLabel>
+            <translation><!-- 48 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 months</masterLabel>
+            <translation><!-- 60 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed date</masterLabel>
+            <translation><!-- Fixed date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rate duration 2 --></label>
+        <name>Rate_duration_2__c</name>
+        <picklistValues>
+            <masterLabel>12 months</masterLabel>
+            <translation><!-- 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 months</masterLabel>
+            <translation><!-- 18 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 months</masterLabel>
+            <translation><!-- 24 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 months</masterLabel>
+            <translation><!-- 36 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 months</masterLabel>
+            <translation><!-- 48 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 months</masterLabel>
+            <translation><!-- 60 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed date</masterLabel>
+            <translation><!-- Fixed date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rate duration 3 --></label>
+        <name>Rate_duration_3__c</name>
+        <picklistValues>
+            <masterLabel>12 months</masterLabel>
+            <translation><!-- 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 months</masterLabel>
+            <translation><!-- 18 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 months</masterLabel>
+            <translation><!-- 24 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 months</masterLabel>
+            <translation><!-- 36 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 months</masterLabel>
+            <translation><!-- 48 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 months</masterLabel>
+            <translation><!-- 60 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed date</masterLabel>
+            <translation><!-- Fixed date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rate duration 4 --></label>
+        <name>Rate_duration_4__c</name>
+        <picklistValues>
+            <masterLabel>12 months</masterLabel>
+            <translation><!-- 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 months</masterLabel>
+            <translation><!-- 18 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 months</masterLabel>
+            <translation><!-- 24 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 months</masterLabel>
+            <translation><!-- 36 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 months</masterLabel>
+            <translation><!-- 48 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 months</masterLabel>
+            <translation><!-- 60 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed date</masterLabel>
+            <translation><!-- Fixed date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rate duration 5 --></label>
+        <name>Rate_duration_5__c</name>
+        <picklistValues>
+            <masterLabel>12 months</masterLabel>
+            <translation><!-- 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 months</masterLabel>
+            <translation><!-- 18 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 months</masterLabel>
+            <translation><!-- 24 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 months</masterLabel>
+            <translation><!-- 36 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 months</masterLabel>
+            <translation><!-- 48 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 months</masterLabel>
+            <translation><!-- 60 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed date</masterLabel>
+            <translation><!-- Fixed date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rate duration date 1 --></label>
+        <name>Rate_duration_date_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate duration date 2 --></label>
+        <name>Rate_duration_date_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate duration date 3 --></label>
+        <name>Rate_duration_date_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate duration date 4 --></label>
+        <name>Rate_duration_date_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate duration date 5 --></label>
+        <name>Rate_duration_date_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate percentage 1 --></label>
+        <name>Rate_percentage_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate percentage 2 --></label>
+        <name>Rate_percentage_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate percentage 3 --></label>
+        <name>Rate_percentage_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate percentage 4 --></label>
+        <name>Rate_percentage_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate percentage 5 --></label>
+        <name>Rate_percentage_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Redemption given --></label>
+        <name>Redemption_given__c</name>
+        <picklistValues>
+            <masterLabel>Full early payment</masterLabel>
+            <translation><!-- Full early payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No early payment</masterLabel>
+            <translation><!-- No early payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partial early payment</masterLabel>
+            <translation><!-- Partial early payment --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Redemption type --></label>
+        <name>Redemption_type__c</name>
+        <picklistValues>
+            <masterLabel>Cash back</masterLabel>
+            <translation><!-- Cash back --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed fee</masterLabel>
+            <translation><!-- Fixed fee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percentage of the amount paid</masterLabel>
+            <translation><!-- Percentage of the amount paid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refund of Legal</masterLabel>
+            <translation><!-- Refund of Legal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refund of Solicitors Contribution</masterLabel>
+            <translation><!-- Refund of Solicitors Contribution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refund of Valuations</masterLabel>
+            <translation><!-- Refund of Valuations --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Redemption value £ --></label>
+        <name>Redemption_value_currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Redemption value % --></label>
+        <name>Redemption_value_percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rent Review 1 --></label>
+        <name>Rent_Review_1__c</name>
+        <picklistValues>
+            <masterLabel>April</masterLabel>
+            <translation><!-- April --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>August</masterLabel>
+            <translation><!-- August --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>December</masterLabel>
+            <translation><!-- December --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>February</masterLabel>
+            <translation><!-- February --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>January</masterLabel>
+            <translation><!-- January --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>July</masterLabel>
+            <translation><!-- July --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>June</masterLabel>
+            <translation><!-- June --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>March</masterLabel>
+            <translation><!-- March --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>May</masterLabel>
+            <translation><!-- May --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>November</masterLabel>
+            <translation><!-- November --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>October</masterLabel>
+            <translation><!-- October --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>September</masterLabel>
+            <translation><!-- September --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rent Review 2 --></label>
+        <name>Rent_Review_2__c</name>
+        <picklistValues>
+            <masterLabel>April</masterLabel>
+            <translation><!-- April --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>August</masterLabel>
+            <translation><!-- August --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>December</masterLabel>
+            <translation><!-- December --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>February</masterLabel>
+            <translation><!-- February --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>January</masterLabel>
+            <translation><!-- January --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>July</masterLabel>
+            <translation><!-- July --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>June</masterLabel>
+            <translation><!-- June --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>March</masterLabel>
+            <translation><!-- March --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>May</masterLabel>
+            <translation><!-- May --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>November</masterLabel>
+            <translation><!-- November --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>October</masterLabel>
+            <translation><!-- October --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>September</masterLabel>
+            <translation><!-- September --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rent Review 3 --></label>
+        <name>Rent_Review_3__c</name>
+        <picklistValues>
+            <masterLabel>April</masterLabel>
+            <translation><!-- April --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>August</masterLabel>
+            <translation><!-- August --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>December</masterLabel>
+            <translation><!-- December --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>February</masterLabel>
+            <translation><!-- February --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>January</masterLabel>
+            <translation><!-- January --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>July</masterLabel>
+            <translation><!-- July --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>June</masterLabel>
+            <translation><!-- June --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>March</masterLabel>
+            <translation><!-- March --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>May</masterLabel>
+            <translation><!-- May --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>November</masterLabel>
+            <translation><!-- November --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>October</masterLabel>
+            <translation><!-- October --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>September</masterLabel>
+            <translation><!-- September --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rent Review 4 --></label>
+        <name>Rent_Review_4__c</name>
+        <picklistValues>
+            <masterLabel>April</masterLabel>
+            <translation><!-- April --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>August</masterLabel>
+            <translation><!-- August --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>December</masterLabel>
+            <translation><!-- December --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>February</masterLabel>
+            <translation><!-- February --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>January</masterLabel>
+            <translation><!-- January --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>July</masterLabel>
+            <translation><!-- July --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>June</masterLabel>
+            <translation><!-- June --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>March</masterLabel>
+            <translation><!-- March --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>May</masterLabel>
+            <translation><!-- May --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>November</masterLabel>
+            <translation><!-- November --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>October</masterLabel>
+            <translation><!-- October --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>September</masterLabel>
+            <translation><!-- September --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- For use on MMR letters --></help>
+        <label><!-- Rent or occupancy --></label>
+        <name>Rent_or_occupancy__c</name>
+        <picklistValues>
+            <masterLabel>occupancy</masterLabel>
+            <translation><!-- occupancy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>rent</masterLabel>
+            <translation><!-- rent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rent review --></label>
+        <name>Rent_review__c</name>
+        <picklistValues>
+            <masterLabel>Half year</masterLabel>
+            <translation><!-- Half year --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rental Rate Type --></label>
+        <name>Rental_Rate_Type__c</name>
+        <picklistValues>
+            <masterLabel>F</masterLabel>
+            <translation><!-- F --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V</masterLabel>
+            <translation><!-- V --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Repay IBB Customer legal contribution --></label>
+        <name>Repay_IBB_Customer_legal_contribution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repay IBB own legal fee contribution --></label>
+        <name>Repay_IBB_own_legal_fee_contribution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repay IBB valuation contribution --></label>
+        <name>Repay_IBB_valuation_contribution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repay cashback --></label>
+        <name>Repay_cashback__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repayment duration 1 --></label>
+        <name>Repayment_duration_1__c</name>
+        <picklistValues>
+            <masterLabel>12 months</masterLabel>
+            <translation><!-- 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 months</masterLabel>
+            <translation><!-- 18 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 months</masterLabel>
+            <translation><!-- 24 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 months</masterLabel>
+            <translation><!-- 36 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 months</masterLabel>
+            <translation><!-- 48 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 months</masterLabel>
+            <translation><!-- 60 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed date</masterLabel>
+            <translation><!-- Fixed date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Repayment duration 2 --></label>
+        <name>Repayment_duration_2__c</name>
+        <picklistValues>
+            <masterLabel>12 months</masterLabel>
+            <translation><!-- 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 months</masterLabel>
+            <translation><!-- 18 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 months</masterLabel>
+            <translation><!-- 24 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 months</masterLabel>
+            <translation><!-- 36 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 months</masterLabel>
+            <translation><!-- 48 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 months</masterLabel>
+            <translation><!-- 60 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed date</masterLabel>
+            <translation><!-- Fixed date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Repayment duration 3 --></label>
+        <name>Repayment_duration_3__c</name>
+        <picklistValues>
+            <masterLabel>12 months</masterLabel>
+            <translation><!-- 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 months</masterLabel>
+            <translation><!-- 18 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 months</masterLabel>
+            <translation><!-- 24 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 months</masterLabel>
+            <translation><!-- 36 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 months</masterLabel>
+            <translation><!-- 48 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 months</masterLabel>
+            <translation><!-- 60 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed date</masterLabel>
+            <translation><!-- Fixed date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Repayment duration 4 --></label>
+        <name>Repayment_duration_4__c</name>
+        <picklistValues>
+            <masterLabel>12 months</masterLabel>
+            <translation><!-- 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 months</masterLabel>
+            <translation><!-- 18 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 months</masterLabel>
+            <translation><!-- 24 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 months</masterLabel>
+            <translation><!-- 36 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 months</masterLabel>
+            <translation><!-- 48 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 months</masterLabel>
+            <translation><!-- 60 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed date</masterLabel>
+            <translation><!-- Fixed date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Repayment duration 5 --></label>
+        <name>Repayment_duration_5__c</name>
+        <picklistValues>
+            <masterLabel>12 months</masterLabel>
+            <translation><!-- 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 months</masterLabel>
+            <translation><!-- 18 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 months</masterLabel>
+            <translation><!-- 24 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 months</masterLabel>
+            <translation><!-- 36 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 months</masterLabel>
+            <translation><!-- 48 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 months</masterLabel>
+            <translation><!-- 60 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed date</masterLabel>
+            <translation><!-- Fixed date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Repayment end date 1 --></label>
+        <name>Repayment_end_date_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repayment end date 2 --></label>
+        <name>Repayment_end_date_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repayment end date 3 --></label>
+        <name>Repayment_end_date_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repayment end date 4 --></label>
+        <name>Repayment_end_date_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repayment end date 5 --></label>
+        <name>Repayment_end_date_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revert Rate Benchmark Rate --></label>
+        <name>Revert_Rate_Benchmark_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revert Rate Benchmark --></label>
+        <name>Revert_Rate_Benchmark__c</name>
+        <picklistValues>
+            <masterLabel>BBR</masterLabel>
+            <translation><!-- BBR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LIBOR</masterLabel>
+            <translation><!-- LIBOR --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Risk Features Document --></label>
+        <name>Risk_Features_Document__c</name>
+    </fields>
+    <fields>
+        <label><!-- Short  Product Name --></label>
+        <name>Short_Product_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- ShowOnAIP --></label>
+        <name>ShowOnAIP__c</name>
+    </fields>
+    <fields>
+        <label><!-- ShowOnProductSwitch --></label>
+        <name>ShowOnProductSwitch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show On Liabilities External --></label>
+        <name>Show_On_Liabilities_External__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show On Liabilities --></label>
+        <name>Show_On_Liabilities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Staff Only Product --></label>
+        <name>Staff_Only_Product__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Statement Frequency Details --></label>
+        <name>Statement_Frequency_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Statement frequency --></label>
+        <name>Statement_frequency__c</name>
+        <picklistValues>
+            <masterLabel>Annually</masterLabel>
+            <translation><!-- Annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NA</masterLabel>
+            <translation><!-- NA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Terms Months Number --></label>
+        <name>Terms_Months_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Product --></label>
+        <name>Type_of_Product__c</name>
+        <picklistValues>
+            <masterLabel>12 Month Fixed Term Deposit ISA</masterLabel>
+            <translation><!-- 12 Month Fixed Term Deposit ISA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>120 Day Notice Savings Account</masterLabel>
+            <translation><!-- 120 Day Notice Savings Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 Day Notice Savings Account</masterLabel>
+            <translation><!-- 60 Day Notice Savings Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90 Day Notice account</masterLabel>
+            <translation><!-- 90 Day Notice account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BTL Purchase Plan</masterLabel>
+            <translation><!-- BTL Purchase Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Buy To Let Purchase Plan Scotland</masterLabel>
+            <translation><!-- Buy To Let Purchase Plan Scotland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charities 100 Day Notice Account</masterLabel>
+            <translation><!-- Charities 100 Day Notice Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial Property Finance</masterLabel>
+            <translation><!-- Commercial Property Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Account</masterLabel>
+            <translation><!-- Current Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed Term Savings Account</masterLabel>
+            <translation><!-- Fixed Term Savings Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Purchase Plan</masterLabel>
+            <translation><!-- Home Purchase Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Purchase Plan Premier</masterLabel>
+            <translation><!-- Home Purchase Plan Premier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Purchase Scotland</masterLabel>
+            <translation><!-- Home Purchase Scotland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Instant Access Cash ISA</masterLabel>
+            <translation><!-- Instant Access Cash ISA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Notice Cash ISA</masterLabel>
+            <translation><!-- Notice Cash ISA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Demand Notice Savings Account</masterLabel>
+            <translation><!-- On Demand Notice Savings Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wakala Treasury</masterLabel>
+            <translation><!-- Wakala Treasury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Young Person&apos;s Notice Savings Account</masterLabel>
+            <translation><!-- Young Person&apos;s Notice Savings Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Young Persons Savings Account</masterLabel>
+            <translation><!-- Young Persons Savings Account --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please select from the drop down. This is for use in the offer letters. --></help>
+        <label><!-- Type of product for solicitor letter --></label>
+        <name>Type_of_product_for_solicitor_letter__c</name>
+        <picklistValues>
+            <masterLabel>BTL</masterLabel>
+            <translation><!-- BTL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BTL Rent Only</masterLabel>
+            <translation><!-- BTL Rent Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP</masterLabel>
+            <translation><!-- HPP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPPP</masterLabel>
+            <translation><!-- HPPP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Valuation Contribution Amount --></label>
+        <name>Valuation_Contribution_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valuation Type --></label>
+        <name>Valuation_Type__c</name>
+        <picklistValues>
+            <masterLabel>Discounted</masterLabel>
+            <translation><!-- Discounted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full Valuation Required</masterLabel>
+            <translation><!-- Full Valuation Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refunded</masterLabel>
+            <translation><!-- Refunded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waived</masterLabel>
+            <translation><!-- Waived --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Valuation fee amount paid --></label>
+        <name>Valuation_fee_amount_paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valuation fee paid by --></label>
+        <name>Valuation_fee_paid_by__c</name>
+        <picklistValues>
+            <masterLabel>Bank</masterLabel>
+            <translation><!-- Bank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Value of IBB legal fees --></label>
+        <name>Value_of_IBB_legal_fees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value of customer legal fee --></label>
+        <name>Value_of_customer_legal_fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Variable product benchmark --></label>
+        <name>Variable_product_benchmark__c</name>
+        <picklistValues>
+            <masterLabel>BBR</masterLabel>
+            <translation><!-- BBR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liable</masterLabel>
+            <translation><!-- Liable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Variable rate</masterLabel>
+            <translation><!-- Variable rate --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select full amortisation warning or partial/no warning for BRO. Search for FULL or BRO. --></help>
+        <label><!-- Warning Clause Offer Letter --></label>
+        <name>Warning_Clause_Offer_Letter__c</name>
+        <relationshipLabel><!-- Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Where does product revert to --></label>
+        <name>Where_does_product_revert_to__c</name>
+        <relationshipLabel><!-- Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Wording for Compounded Profits 2 --></label>
+        <name>Wording_for_Compounded_Profits_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wording for Compounded Profits --></label>
+        <name>Wording_for_Compounded_Profits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wording for Quarterly Profits --></label>
+        <name>Wording_for_Quarterly_Profits__c</name>
+    </fields>
+    <fields>
+        <label><!-- 5 Year NPV --></label>
+        <name>X5_Year_NPV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year 1 Value --></label>
+        <name>Year_1_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiry date of fixed/discount rate --></label>
+        <name>expiry_date_of_fixed_product__c</name>
+    </fields>
+    <layouts>
+        <layout>ANC</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>IBB Asset Product Layout</layout>
+        <sections>
+            <label><!-- Al Rayan Bank Product Information --></label>
+            <section>Al Rayan Bank Product Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- DocuGen Settings --></label>
+            <section>DocuGen Settings</section>
+        </sections>
+        <sections>
+            <label><!-- Fees Information --></label>
+            <section>Fees Information</section>
+        </sections>
+        <sections>
+            <label><!-- Marketing Information --></label>
+            <section>Marketing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Offer Letter Fields Required --></label>
+            <section>Offer Letter Fields Required</section>
+        </sections>
+        <sections>
+            <label><!-- Rate Information --></label>
+            <section>Rate Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>IBB Liabilities Product Layout</layout>
+        <sections>
+            <label><!-- CAA Settings --></label>
+            <section>CAA Settings</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- DocuGen Settings --></label>
+            <section>DocuGen Settings</section>
+        </sections>
+        <sections>
+            <label><!-- IBB Product Description --></label>
+            <section>IBB Product Description</section>
+        </sections>
+        <sections>
+            <label><!-- IBB Product Information --></label>
+            <section>IBB Product Information</section>
+        </sections>
+        <sections>
+            <label><!-- Operational Information --></label>
+            <section>Operational Information</section>
+        </sections>
+        <sections>
+            <label><!-- Payment Limits --></label>
+            <section>Payment Limits</section>
+        </sections>
+        <sections>
+            <label><!-- Product Information --></label>
+            <section>Product Information</section>
+        </sections>
+        <sections>
+            <label><!-- Product Profitability --></label>
+            <section>Product Profitability</section>
+        </sections>
+        <sections>
+            <label><!-- Profit Features --></label>
+            <section>Profit Features</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Restricted External Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- IBB Product Information --></label>
+            <section>IBB Product Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- ANC --></label>
+        <name>ANC</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- IBB Asset Product --></label>
+        <name>IBB_Asset_Product</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- IBB Liabilities Product --></label>
+        <name>IBB_Liabilities_Product</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

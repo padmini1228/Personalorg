@@ -1,0 +1,3005 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Job</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Jobs</value>
+    </caseValues>
+    <fields>
+        <label><!-- A1 Fraud confirmed, new case filed --></label>
+        <name>A1_Fraud_confirmed_new_case_filed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- A1 Fraud confirmed, new case filed amt --></label>
+        <name>A1_Fraud_confirmed_new_case_filed_amt__c</name>
+    </fields>
+    <fields>
+        <label><!-- A2 no fraud, application rejected --></label>
+        <name>A2_no_fraud_application_rejected__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- A2 no fraud, application rejected amt --></label>
+        <name>A2_no_fraud_application_rejected_amt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional --></label>
+        <name>Additional__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application SFDC id --></label>
+        <name>Application_SFDC_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application customer address --></label>
+        <name>Application_customer_address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application customer name --></label>
+        <name>Application_customer_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application customer previous address --></label>
+        <name>Application_customer_previous_address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application customer date of birth --></label>
+        <name>Application_date_of_birth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application product --></label>
+        <name>Application_product__c</name>
+    </fields>
+    <fields>
+        <label><!-- CIFAS details --></label>
+        <name>CIFAS_details__c</name>
+    </fields>
+    <fields>
+        <label><!-- CIFAS from --></label>
+        <name>CIFAS_from__c</name>
+        <picklistValues>
+            <masterLabel>Al Rayan Branch Staff</masterLabel>
+            <translation><!-- Al Rayan Branch Staff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Al Rayan Head Office Staff</masterLabel>
+            <translation><!-- Al Rayan Head Office Staff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FCU</masterLabel>
+            <translation><!-- FCU --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CIFAS match --></label>
+        <name>CIFAS_match__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CIFAS match to our customer --></label>
+        <name>CIFAS_match_to_our_customer__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CIFAS reason reported --></label>
+        <name>CIFAS_reason_reported__c</name>
+        <picklistValues>
+            <masterLabel>419 Scam</masterLabel>
+            <translation><!-- 419 Scam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account Conduct</masterLabel>
+            <translation><!-- Account Conduct --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AccountTakeOver</masterLabel>
+            <translation><!-- AccountTakeOver --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Activity Review</masterLabel>
+            <translation><!-- Activity Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alias With Adverse</masterLabel>
+            <translation><!-- Alias With Adverse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Altered cheque</masterLabel>
+            <translation><!-- Altered cheque --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amount Out of Profile</masterLabel>
+            <translation><!-- Amount Out of Profile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Application Documentation</masterLabel>
+            <translation><!-- Application Documentation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Application Inconsistencies</masterLabel>
+            <translation><!-- Application Inconsistencies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bogus Company</masterLabel>
+            <translation><!-- Bogus Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Card Misuse</masterLabel>
+            <translation><!-- Card Misuse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Card Not Present</masterLabel>
+            <translation><!-- Card Not Present --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Category 1 match</masterLabel>
+            <translation><!-- Category 1 match --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Category 6 Match</masterLabel>
+            <translation><!-- Category 6 Match --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cheque Fraud Conversion</masterLabel>
+            <translation><!-- Cheque Fraud Conversion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compromised ATMs</masterLabel>
+            <translation><!-- Compromised ATMs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compromised Card</masterLabel>
+            <translation><!-- Compromised Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Counterfeit Cheque</masterLabel>
+            <translation><!-- Counterfeit Cheque --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crossfiring</masterLabel>
+            <translation><!-- Crossfiring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Behaviour</masterLabel>
+            <translation><!-- Customer Behaviour --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Profile</masterLabel>
+            <translation><!-- Customer Profile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Debit Fraud</masterLabel>
+            <translation><!-- Direct Debit Fraud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dishonestly retaining a wrongful credit</masterLabel>
+            <translation><!-- Dishonestly retaining a wrongful credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Docs - Altered</masterLabel>
+            <translation><!-- Docs - Altered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Docs - False</masterLabel>
+            <translation><!-- Docs - False --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Docs - Stolen</masterLabel>
+            <translation><!-- Docs - Stolen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email Scam</masterLabel>
+            <translation><!-- Email Scam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emp - False employment</masterLabel>
+            <translation><!-- Emp - False employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emp - False employment status</masterLabel>
+            <translation><!-- Emp - False employment status --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emp - False income</masterLabel>
+            <translation><!-- Emp - False income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>False Identity</masterLabel>
+            <translation><!-- False Identity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>False Instruments Paid in</masterLabel>
+            <translation><!-- False Instruments Paid in --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>False owner/occupier status</masterLabel>
+            <translation><!-- False owner/occupier status --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Falsehoods on application</masterLabel>
+            <translation><!-- Falsehoods on application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fraudulent Transaction</masterLabel>
+            <translation><!-- Fraudulent Transaction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gone Away</masterLabel>
+            <translation><!-- Gone Away --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP App</masterLabel>
+            <translation><!-- HPP App --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>High Cash Activity</masterLabel>
+            <translation><!-- High Cash Activity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>High Deposit</masterLabel>
+            <translation><!-- High Deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Impersonation</masterLabel>
+            <translation><!-- Impersonation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Impersonation - Current Address</masterLabel>
+            <translation><!-- Impersonation - Current Address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Impersonation - Previous Address</masterLabel>
+            <translation><!-- Impersonation - Previous Address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Innocent party</masterLabel>
+            <translation><!-- Innocent party --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MailOrder</masterLabel>
+            <translation><!-- MailOrder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Misuse Of Facility</masterLabel>
+            <translation><!-- Misuse Of Facility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multiple Encashment Fraud</masterLabel>
+            <translation><!-- Multiple Encashment Fraud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multiple Encashment Fraud + false employment</masterLabel>
+            <translation><!-- Multiple Encashment Fraud + false employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Application</masterLabel>
+            <translation><!-- New Application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Fraud Confirmed</masterLabel>
+            <translation><!-- No Fraud Confirmed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NonPlasticDispute</masterLabel>
+            <translation><!-- NonPlasticDispute --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Yet Confirmed</masterLabel>
+            <translation><!-- Not Yet Confirmed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Order</masterLabel>
+            <translation><!-- Other Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Police Enquiry</masterLabel>
+            <translation><!-- Police Enquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre - Production Order Enquiry</masterLabel>
+            <translation><!-- Pre - Production Order Enquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Activity Consent</masterLabel>
+            <translation><!-- Pre-Activity Consent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Previous Fraud Links</masterLabel>
+            <translation><!-- Previous Fraud Links --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regular Payment Fraud</masterLabel>
+            <translation><!-- Regular Payment Fraud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request for Information</masterLabel>
+            <translation><!-- Request for Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residence - False address</masterLabel>
+            <translation><!-- Residence - False address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residence - False owner/occupier</masterLabel>
+            <translation><!-- Residence - False owner/occupier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residence - False time at address</masterLabel>
+            <translation><!-- Residence - False time at address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residence - Undisclosed Address + Adverse</masterLabel>
+            <translation><!-- Residence - Undisclosed Address + Adverse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residence - Undisclosed Adverse</masterLabel>
+            <translation><!-- Residence - Undisclosed Adverse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residence - Undisclosed address(es)</masterLabel>
+            <translation><!-- Residence - Undisclosed address(es) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retain Wrongful Credit</masterLabel>
+            <translation><!-- Retain Wrongful Credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Serious Misuse @ Address</masterLabel>
+            <translation><!-- Serious Misuse @ Address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stolen cheque</masterLabel>
+            <translation><!-- Stolen cheque --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uncleared Effects Fraud</masterLabel>
+            <translation><!-- Uncleared Effects Fraud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Undeclared CCJs</masterLabel>
+            <translation><!-- Undeclared CCJs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unpaid Cheque</masterLabel>
+            <translation><!-- Unpaid Cheque --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CIFAS reference --></label>
+        <name>CIFAS_reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card number --></label>
+        <name>Card_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Jobs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Case created by --></label>
+        <name>Case_created_by__c</name>
+    </fields>
+    <fields>
+        <label><!-- Chargeback amount --></label>
+        <name>Chargeback_amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments if CIFAS match to our customer --></label>
+        <name>Comments_if_CIFAS_match_to_our_customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Consent granted date --></label>
+        <name>Consent_granted_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Consent granted reference --></label>
+        <name>Consent_granted_reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Consent required --></label>
+        <name>Consent_required__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact address --></label>
+        <name>Contact_address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact email address --></label>
+        <name>Contact_email_address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact fax --></label>
+        <name>Contact_fax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact name --></label>
+        <name>Contact_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact telephone number --></label>
+        <name>Contact_telephone_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Court address --></label>
+        <name>Court_address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Court contact details --></label>
+        <name>Court_contact_details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Court name --></label>
+        <name>Court_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Court reference number --></label>
+        <name>Court_reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Court status --></label>
+        <name>Court_status__c</name>
+        <picklistValues>
+            <masterLabel>Attended</masterLabel>
+            <translation><!-- Attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suspended</masterLabel>
+            <translation><!-- Suspended --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Account --></label>
+        <name>Customer_Account__c</name>
+        <relationshipLabel><!-- Jobs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer liability amount --></label>
+        <name>Customer_liability_amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Reviewed --></label>
+        <name>Date_Reviewed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date for follow up --></label>
+        <name>Date_for_follow_up__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of trial or court case --></label>
+        <name>Date_of_trial_or_court_case__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date reported to NCA --></label>
+        <name>Date_reported_to_NCA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date/time completed --></label>
+        <name>Date_time_completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date/time received --></label>
+        <name>Date_time_recieved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date witness statement sent --></label>
+        <name>Date_witness_statement_received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date witness statement requested --></label>
+        <name>Date_witness_statement_requested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 1 refund comments --></label>
+        <name>Day_1_refund_comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decision --></label>
+        <name>Decision__c</name>
+        <picklistValues>
+            <masterLabel>Accept</masterLabel>
+            <translation><!-- Accept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Awaiting docs</masterLabel>
+            <translation><!-- Awaiting docs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decline</masterLabel>
+            <translation><!-- Decline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kill</masterLabel>
+            <translation><!-- Kill --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Decision comments --></label>
+        <name>Decision_comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Details --></label>
+        <name>Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Diarised closure date --></label>
+        <name>Diarised_closure_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Due date --></label>
+        <name>Due_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- EBS ID --></label>
+        <name>EBS_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fraud Type --></label>
+        <name>Fraud_Type__c</name>
+        <picklistValues>
+            <masterLabel>1st Party</masterLabel>
+            <translation><!-- 1st Party --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account Takeover</masterLabel>
+            <translation><!-- Account Takeover --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Application Fraud</masterLabel>
+            <translation><!-- Application Fraud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash Machine</masterLabel>
+            <translation><!-- Cash Machine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cheque Fraud</masterLabel>
+            <translation><!-- Cheque Fraud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compromised</masterLabel>
+            <translation><!-- Compromised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contactless</masterLabel>
+            <translation><!-- Contactless --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Courier Fraud</masterLabel>
+            <translation><!-- Courier Fraud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family Fraud</masterLabel>
+            <translation><!-- Family Fraud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Impersonation</masterLabel>
+            <translation><!-- Impersonation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost/Stolen</masterLabel>
+            <translation><!-- Lost/Stolen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online Fraud</masterLabel>
+            <translation><!-- Online Fraud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Fraud</masterLabel>
+            <translation><!-- Payment Fraud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phishing/vishing/smishing</masterLabel>
+            <translation><!-- Phishing/vishing/smishing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- From --></label>
+        <name>From__c</name>
+        <picklistValues>
+            <masterLabel>ABN AMRO</masterLabel>
+            <translation><!-- ABN AMRO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>APS (Advanced Payment Solutions)</masterLabel>
+            <translation><!-- APS (Advanced Payment Solutions) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARA</masterLabel>
+            <translation><!-- ARA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Abbey</masterLabel>
+            <translation><!-- Abbey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Abbey Fraud Office</masterLabel>
+            <translation><!-- Abbey Fraud Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Acton Police Station</masterLabel>
+            <translation><!-- Acton Police Station --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Al Rayan Bank Staff - Edgware Road</masterLabel>
+            <translation><!-- Al Rayan Bank Staff - Edgware Road --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Al Rayan Bank Staff - FCU</masterLabel>
+            <translation><!-- Al Rayan Bank Staff - FCU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Al Rayan Bank Staff - Head Office</masterLabel>
+            <translation><!-- Al Rayan Bank Staff - Head Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Al Rayan Bank Staff - Head Office Call Centre</masterLabel>
+            <translation><!-- Al Rayan Bank Staff - Head Office Call Centre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Al Rayan Bank Staff - Head Office Processing</masterLabel>
+            <translation><!-- Al Rayan Bank Staff - Head Office Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Al Rayan Bank Staff - Leicester</masterLabel>
+            <translation><!-- Al Rayan Bank Staff - Leicester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Al Rayan Bank Staff - Manchester</masterLabel>
+            <translation><!-- Al Rayan Bank Staff - Manchester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Al Rayan Bank Staff - Premier</masterLabel>
+            <translation><!-- Al Rayan Bank Staff - Premier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Al Rayan Bank Staff - Small Heath</masterLabel>
+            <translation><!-- Al Rayan Bank Staff - Small Heath --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Al Rayan Bank Staff - Whitechapel</masterLabel>
+            <translation><!-- Al Rayan Bank Staff - Whitechapel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Al Rayan Branch staff</masterLabel>
+            <translation><!-- Al Rayan Branch staff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Al Rayan Head office staff</masterLabel>
+            <translation><!-- Al Rayan Head office staff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alliance and Leicester</masterLabel>
+            <translation><!-- Alliance and Leicester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Armstrong Solicitors</masterLabel>
+            <translation><!-- Armstrong Solicitors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asset Freezing Unit</masterLabel>
+            <translation><!-- Asset Freezing Unit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Avon Constabulary</masterLabel>
+            <translation><!-- Avon Constabulary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bank Of Ireland</masterLabel>
+            <translation><!-- Bank Of Ireland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Barclays</masterLabel>
+            <translation><!-- Barclays --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Barclays Cheque Team</masterLabel>
+            <translation><!-- Barclays Cheque Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Barnet Borough Police Station - Collindale</masterLabel>
+            <translation><!-- Barnet Borough Police Station - Collindale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Barnet London Borough</masterLabel>
+            <translation><!-- Barnet London Borough --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bedfordshire Constabulary</masterLabel>
+            <translation><!-- Bedfordshire Constabulary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Birmingham CTU</masterLabel>
+            <translation><!-- Birmingham CTU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Birmingham City Council</masterLabel>
+            <translation><!-- Birmingham City Council --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Birmingham Midshires</masterLabel>
+            <translation><!-- Birmingham Midshires --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bond Adams</masterLabel>
+            <translation><!-- Bond Adams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Border &amp; Immigration Agency</masterLabel>
+            <translation><!-- Border &amp; Immigration Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brent Council</masterLabel>
+            <translation><!-- Brent Council --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brighton &amp; Hove City Council</masterLabel>
+            <translation><!-- Brighton &amp; Hove City Council --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bristol</masterLabel>
+            <translation><!-- Bristol --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>British High Commission Kenya</masterLabel>
+            <translation><!-- British High Commission Kenya --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>British Transport Police</masterLabel>
+            <translation><!-- British Transport Police --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bury Council</masterLabel>
+            <translation><!-- Bury Council --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CPChecks</masterLabel>
+            <translation><!-- CPChecks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CPS</masterLabel>
+            <translation><!-- CPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CTIU (East)</masterLabel>
+            <translation><!-- CTIU (East) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cambridgeshire Constabulary</masterLabel>
+            <translation><!-- Cambridgeshire Constabulary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cameron McKenna LLP</masterLabel>
+            <translation><!-- Cameron McKenna LLP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ch Hausmann &amp; Co</masterLabel>
+            <translation><!-- Ch Hausmann &amp; Co --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charity Commission</masterLabel>
+            <translation><!-- Charity Commission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charity Commisssion</masterLabel>
+            <translation><!-- Charity Commisssion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chelsea Police</masterLabel>
+            <translation><!-- Chelsea Police --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cheshire Constabulary</masterLabel>
+            <translation><!-- Cheshire Constabulary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cheshire Police</masterLabel>
+            <translation><!-- Cheshire Police --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Child Maintenance Service</masterLabel>
+            <translation><!-- Child Maintenance Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Child Support Agency</masterLabel>
+            <translation><!-- Child Support Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chiltern District Council</masterLabel>
+            <translation><!-- Chiltern District Council --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chingford Police</masterLabel>
+            <translation><!-- Chingford Police --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Citizens Advice</masterLabel>
+            <translation><!-- Citizens Advice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>City of London Police</masterLabel>
+            <translation><!-- City of London Police --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>City of Westminster</masterLabel>
+            <translation><!-- City of Westminster --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>City of York Council</masterLabel>
+            <translation><!-- City of York Council --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Croyden CID</masterLabel>
+            <translation><!-- Croyden CID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cumbria Police</masterLabel>
+            <translation><!-- Cumbria Police --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCPCU</masterLabel>
+            <translation><!-- DCPCU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DT &amp; I - Ireland</masterLabel>
+            <translation><!-- DT &amp; I - Ireland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DWP</masterLabel>
+            <translation><!-- DWP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dawson Cornwell Solicitors</masterLabel>
+            <translation><!-- Dawson Cornwell Solicitors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dc Craig Rogers</masterLabel>
+            <translation><!-- Dc Craig Rogers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deduction Order Team</masterLabel>
+            <translation><!-- Deduction Order Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Defra Investigation Services</masterLabel>
+            <translation><!-- Defra Investigation Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Derbyshire Police</masterLabel>
+            <translation><!-- Derbyshire Police --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Devon and Cornwall Constabulary</masterLabel>
+            <translation><!-- Devon and Cornwall Constabulary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dorset police</masterLabel>
+            <translation><!-- Dorset police --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dumfries &amp; Gallow</masterLabel>
+            <translation><!-- Dumfries &amp; Gallow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Durham Constabulary</masterLabel>
+            <translation><!-- Durham Constabulary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ealing Council</masterLabel>
+            <translation><!-- Ealing Council --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Economic Crime Unit</masterLabel>
+            <translation><!-- Economic Crime Unit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eve Wee Solicitors</masterLabel>
+            <translation><!-- Eve Wee Solicitors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eversheds</masterLabel>
+            <translation><!-- Eversheds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ExceptionReport</masterLabel>
+            <translation><!-- ExceptionReport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ExternalMember/Organisation</masterLabel>
+            <translation><!-- ExternalMember/Organisation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FCU</masterLabel>
+            <translation><!-- FCU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FIS</masterLabel>
+            <translation><!-- FIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Conduct Authority</masterLabel>
+            <translation><!-- Financial Conduct Authority --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finscan</masterLabel>
+            <translation><!-- Finscan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Folkestone</masterLabel>
+            <translation><!-- Folkestone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freemans Solicitors</masterLabel>
+            <translation><!-- Freemans Solicitors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frisby &amp; Co Solicitors</masterLabel>
+            <translation><!-- Frisby &amp; Co Solicitors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gloucester Constabulary</masterLabel>
+            <translation><!-- Gloucester Constabulary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gloucestershire Constabulary</masterLabel>
+            <translation><!-- Gloucestershire Constabulary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greater Manchester Police</masterLabel>
+            <translation><!-- Greater Manchester Police --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greenheyes</masterLabel>
+            <translation><!-- Greenheyes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greenwich Council</masterLabel>
+            <translation><!-- Greenwich Council --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greenwoods Solicitors</masterLabel>
+            <translation><!-- Greenwoods Solicitors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gwent Police</masterLabel>
+            <translation><!-- Gwent Police --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HM Courts &amp; Tribunal Service</masterLabel>
+            <translation><!-- HM Courts &amp; Tribunal Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HM Customs &amp; Excise</masterLabel>
+            <translation><!-- HM Customs &amp; Excise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HM Revenue &amp; Customs</masterLabel>
+            <translation><!-- HM Revenue &amp; Customs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HM Treasury</masterLabel>
+            <translation><!-- HM Treasury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HMRC</masterLabel>
+            <translation><!-- HMRC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HSBC</masterLabel>
+            <translation><!-- HSBC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hackney Finance &amp; Resources Directorate</masterLabel>
+            <translation><!-- Hackney Finance &amp; Resources Directorate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hampshire Constabulary</masterLabel>
+            <translation><!-- Hampshire Constabulary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Handsworth</masterLabel>
+            <translation><!-- Handsworth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Harborne, Birmingham</masterLabel>
+            <translation><!-- Harborne, Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Harrow Borough Council</masterLabel>
+            <translation><!-- Harrow Borough Council --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Harrow Council</masterLabel>
+            <translation><!-- Harrow Council --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hertfordshire Constabulary</masterLabel>
+            <translation><!-- Hertfordshire Constabulary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Office</masterLabel>
+            <translation><!-- Home Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Office Immigration &amp; Visa Service</masterLabel>
+            <translation><!-- Home Office Immigration &amp; Visa Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Office, I.N.D.</masterLabel>
+            <translation><!-- Home Office, I.N.D. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Office, U.K Border Agency</masterLabel>
+            <translation><!-- Home Office, U.K Border Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Homocide and Serious Crime Command</masterLabel>
+            <translation><!-- Homocide and Serious Crime Command --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Howes Percival Solicitors</masterLabel>
+            <translation><!-- Howes Percival Solicitors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Islington Council</masterLabel>
+            <translation><!-- Islington Council --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jobcentre Plus</masterLabel>
+            <translation><!-- Jobcentre Plus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kent Police</masterLabel>
+            <translation><!-- Kent Police --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kenya - British High Commission</masterLabel>
+            <translation><!-- Kenya - British High Commission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kingston Police</masterLabel>
+            <translation><!-- Kingston Police --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LB of Tower Hamlets</masterLabel>
+            <translation><!-- LB of Tower Hamlets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LTSB</masterLabel>
+            <translation><!-- LTSB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lambeth Council</masterLabel>
+            <translation><!-- Lambeth Council --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lancashire constabulary</masterLabel>
+            <translation><!-- Lancashire constabulary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Landmark Legal LLP</masterLabel>
+            <translation><!-- Landmark Legal LLP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LawEnforcementAgency</masterLabel>
+            <translation><!-- LawEnforcementAgency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leamington Police</masterLabel>
+            <translation><!-- Leamington Police --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leciestershire Police</masterLabel>
+            <translation><!-- Leciestershire Police --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leicestershire Police</masterLabel>
+            <translation><!-- Leicestershire Police --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lewisham A-FACT</masterLabel>
+            <translation><!-- Lewisham A-FACT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limehouse Police Station</masterLabel>
+            <translation><!-- Limehouse Police Station --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lloyds TSB</masterLabel>
+            <translation><!-- Lloyds TSB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LloydsTSB</masterLabel>
+            <translation><!-- LloydsTSB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>London Borough of Camden</masterLabel>
+            <translation><!-- London Borough of Camden --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>London Borough of Hammersmith &amp; Fulham</masterLabel>
+            <translation><!-- London Borough of Hammersmith &amp; Fulham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>London Borough of Hammersmith and Fulham</masterLabel>
+            <translation><!-- London Borough of Hammersmith and Fulham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>London Borough of Redbridge</masterLabel>
+            <translation><!-- London Borough of Redbridge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>London Borough of Tower Hamlets</masterLabel>
+            <translation><!-- London Borough of Tower Hamlets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manchester CTU</masterLabel>
+            <translation><!-- Manchester CTU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manchester City Council</masterLabel>
+            <translation><!-- Manchester City Council --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manchester Immigration</masterLabel>
+            <translation><!-- Manchester Immigration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Martin Piddock</masterLabel>
+            <translation><!-- Martin Piddock --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merseyside Police</masterLabel>
+            <translation><!-- Merseyside Police --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merthyr Tydfil</masterLabel>
+            <translation><!-- Merthyr Tydfil --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Met Police</masterLabel>
+            <translation><!-- Met Police --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Metropolitan Police</masterLabel>
+            <translation><!-- Metropolitan Police --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Midlands CTU</masterLabel>
+            <translation><!-- Midlands CTU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Milton Keynes Council</masterLabel>
+            <translation><!-- Milton Keynes Council --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moon Beever</masterLabel>
+            <translation><!-- Moon Beever --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NCA</masterLabel>
+            <translation><!-- NCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NTFIU</masterLabel>
+            <translation><!-- NTFIU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NWCTU</masterLabel>
+            <translation><!-- NWCTU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NatWest</masterLabel>
+            <translation><!-- NatWest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NatWest(RBS)</masterLabel>
+            <translation><!-- NatWest(RBS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National Anti-Fraud Network</masterLabel>
+            <translation><!-- National Anti-Fraud Network --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Natwest Streamline</masterLabel>
+            <translation><!-- Natwest Streamline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Application</masterLabel>
+            <translation><!-- New Application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Newcastle City Council</masterLabel>
+            <translation><!-- Newcastle City Council --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nordea Bank Finland</masterLabel>
+            <translation><!-- Nordea Bank Finland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Norfolk Constabulary</masterLabel>
+            <translation><!-- Norfolk Constabulary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North East Counter Terrorism Unit</masterLabel>
+            <translation><!-- North East Counter Terrorism Unit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North Wales Police</masterLabel>
+            <translation><!-- North Wales Police --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northampton Police</masterLabel>
+            <translation><!-- Northampton Police --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northern Bank Ltd</masterLabel>
+            <translation><!-- Northern Bank Ltd --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northern Ireland FIU</masterLabel>
+            <translation><!-- Northern Ireland FIU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northern Ireland Fraud &amp; Plastic Crime Unit</masterLabel>
+            <translation><!-- Northern Ireland Fraud &amp; Plastic Crime Unit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northern Ireland Police</masterLabel>
+            <translation><!-- Northern Ireland Police --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nottingham Police</masterLabel>
+            <translation><!-- Nottingham Police --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Office of the Public Guadian</masterLabel>
+            <translation><!-- Office of the Public Guadian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Anoms</masterLabel>
+            <translation><!-- Payment Anoms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Police Enquiry</masterLabel>
+            <translation><!-- Police Enquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Punjab Bank</masterLabel>
+            <translation><!-- Punjab Bank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RART</masterLabel>
+            <translation><!-- RART --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RBS</masterLabel>
+            <translation><!-- RBS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reading Borough Council</masterLabel>
+            <translation><!-- Reading Borough Council --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Royal Borough of Kensington and Chelsea</masterLabel>
+            <translation><!-- Royal Borough of Kensington and Chelsea --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Royal Mail Security</masterLabel>
+            <translation><!-- Royal Mail Security --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SECTU</masterLabel>
+            <translation><!-- SECTU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOCA</masterLabel>
+            <translation><!-- SOCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Santander</masterLabel>
+            <translation><!-- Santander --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scottish Court Service</masterLabel>
+            <translation><!-- Scottish Court Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seymours</masterLabel>
+            <translation><!-- Seymours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sheffield City Council</masterLabel>
+            <translation><!-- Sheffield City Council --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sheldon Davidson Solicitors</masterLabel>
+            <translation><!-- Sheldon Davidson Solicitors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slough Borough Council</masterLabel>
+            <translation><!-- Slough Borough Council --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Smartsearch</masterLabel>
+            <translation><!-- Smartsearch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solicitors</masterLabel>
+            <translation><!-- Solicitors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Wales Police</masterLabel>
+            <translation><!-- South Wales Police --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Yorkshire Police</masterLabel>
+            <translation><!-- South Yorkshire Police --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southall Police Station</masterLabel>
+            <translation><!-- Southall Police Station --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southamton City Council</masterLabel>
+            <translation><!-- Southamton City Council --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special Branch North Wales</masterLabel>
+            <translation><!-- Special Branch North Wales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>St Albans City &amp; District Council</masterLabel>
+            <translation><!-- St Albans City &amp; District Council --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Staffordshire Police</masterLabel>
+            <translation><!-- Staffordshire Police --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stechford Police</masterLabel>
+            <translation><!-- Stechford Police --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strathclyde Police</masterLabel>
+            <translation><!-- Strathclyde Police --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suffolk Constabulary</masterLabel>
+            <translation><!-- Suffolk Constabulary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surrey Police</masterLabel>
+            <translation><!-- Surrey Police --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sussex FIU</masterLabel>
+            <translation><!-- Sussex FIU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sussex Police</masterLabel>
+            <translation><!-- Sussex Police --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tameside Metropolitan Borough</masterLabel>
+            <translation><!-- Tameside Metropolitan Borough --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thames Valley Police</masterLabel>
+            <translation><!-- Thames Valley Police --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thorpewood Police Station</masterLabel>
+            <translation><!-- Thorpewood Police Station --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thurrock Council</masterLabel>
+            <translation><!-- Thurrock Council --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tower Hamlets</masterLabel>
+            <translation><!-- Tower Hamlets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trafford Borough Council</masterLabel>
+            <translation><!-- Trafford Borough Council --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UK Border &amp; Immigration Agency</masterLabel>
+            <translation><!-- UK Border &amp; Immigration Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UK Border Agency</masterLabel>
+            <translation><!-- UK Border Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uk Visa &amp; Immigration</masterLabel>
+            <translation><!-- Uk Visa &amp; Immigration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wales Exremism &amp; Counter Terrorism</masterLabel>
+            <translation><!-- Wales Exremism &amp; Counter Terrorism --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warwickshire Police</masterLabel>
+            <translation><!-- Warwickshire Police --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Watchlist Alert</masterLabel>
+            <translation><!-- Watchlist Alert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Watson Woodhouse Solicitors</masterLabel>
+            <translation><!-- Watson Woodhouse Solicitors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wells Fargo</masterLabel>
+            <translation><!-- Wells Fargo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wells Fargo Bank</masterLabel>
+            <translation><!-- Wells Fargo Bank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West Mercia Constabulary</masterLabel>
+            <translation><!-- West Mercia Constabulary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West Midlands CTU</masterLabel>
+            <translation><!-- West Midlands CTU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West Midlands FIU</masterLabel>
+            <translation><!-- West Midlands FIU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West Midlands Police</masterLabel>
+            <translation><!-- West Midlands Police --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West Yorkshire Police</masterLabel>
+            <translation><!-- West Yorkshire Police --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Westminster City Council</masterLabel>
+            <translation><!-- Westminster City Council --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wimbledon Police Station</masterLabel>
+            <translation><!-- Wimbledon Police Station --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wonga.com</masterLabel>
+            <translation><!-- Wonga.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>World Pay</masterLabel>
+            <translation><!-- World Pay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>World check</masterLabel>
+            <translation><!-- World check --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WorldCheck Filter</masterLabel>
+            <translation><!-- WorldCheck Filter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wright Hassall Solicitors</masterLabel>
+            <translation><!-- Wright Hassall Solicitors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>royal borough of Greenwich</masterLabel>
+            <translation><!-- royal borough of Greenwich --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Have you reported to NCA? --></label>
+        <name>Have_you_reported_to_NCA__c</name>
+        <picklistValues>
+            <masterLabel>NA</masterLabel>
+            <translation><!-- NA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Have you unblocked the card? --></label>
+        <name>Have_you_unblocked_the_card__c</name>
+        <picklistValues>
+            <masterLabel>NA</masterLabel>
+            <translation><!-- NA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- High risk? --></label>
+        <name>High_risk__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Status --></label>
+        <name>Job_Status__c</name>
+        <picklistValues>
+            <masterLabel>Assigned</masterLabel>
+            <translation><!-- Assigned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In progress</masterLabel>
+            <translation><!-- In progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not started</masterLabel>
+            <translation><!-- Not started --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On hold</masterLabel>
+            <translation><!-- On hold --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Joint Prospect/Customer --></label>
+        <name>Joint_Prospect_Customer__c</name>
+        <relationshipLabel><!-- Jobs (Joint Prospect/Customer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Justified --></label>
+        <name>Justified__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Loaded to CIFAS --></label>
+        <name>Loaded_to_CIFAS__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Loss amount --></label>
+        <name>Loss_amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name of advisor --></label>
+        <name>Name_of_advisor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of entities --></label>
+        <name>Number_of_entities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of individuals --></label>
+        <name>Number_of_individuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of positive matches --></label>
+        <name>Number_of_positive_matches__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Jobs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order type --></label>
+        <name>Order_type__c</name>
+        <picklistValues>
+            <masterLabel>Arrestment of Funds Order</masterLabel>
+            <translation><!-- Arrestment of Funds Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CCTV Request</masterLabel>
+            <translation><!-- CCTV Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charities Act 1993</masterLabel>
+            <translation><!-- Charities Act 1993 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charities Act 2011</masterLabel>
+            <translation><!-- Charities Act 2011 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Child Abduction and Custody Act 1985</masterLabel>
+            <translation><!-- Child Abduction and Custody Act 1985 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Child Maintances</masterLabel>
+            <translation><!-- Child Maintances --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Child Support Information Regulations 2008</masterLabel>
+            <translation><!-- Child Support Information Regulations 2008 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Children Act 1989</masterLabel>
+            <translation><!-- Children Act 1989 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Children Act 1991</masterLabel>
+            <translation><!-- Children Act 1991 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Children Act 1991 Section 32E</masterLabel>
+            <translation><!-- Children Act 1991 Section 32E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Confiscation Order</masterLabel>
+            <translation><!-- Confiscation Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer Protection from Unfair trading Regulation</masterLabel>
+            <translation><!-- Consumer Protection from Unfair trading Regulation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crime (int. Co-op) Act 2003</masterLabel>
+            <translation><!-- Crime (int. Co-op) Act 2003 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Authority</masterLabel>
+            <translation><!-- Customer Authority --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DPA Section 28</masterLabel>
+            <translation><!-- DPA Section 28 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DPA Section 29</masterLabel>
+            <translation><!-- DPA Section 29 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DPA Section 30</masterLabel>
+            <translation><!-- DPA Section 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DPA Section 35</masterLabel>
+            <translation><!-- DPA Section 35 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discharge Order</masterLabel>
+            <translation><!-- Discharge Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disclosure Order</masterLabel>
+            <translation><!-- Disclosure Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FACT 2006</masterLabel>
+            <translation><!-- FACT 2006 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fraud Act 2006</masterLabel>
+            <translation><!-- Fraud Act 2006 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freezing Order</masterLabel>
+            <translation><!-- Freezing Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Further information</masterLabel>
+            <translation><!-- Further information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lump sum deduction order</masterLabel>
+            <translation><!-- Lump sum deduction order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NIAA 2002</masterLabel>
+            <translation><!-- NIAA 2002 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NIAA 2002 (136)</masterLabel>
+            <translation><!-- NIAA 2002 (136) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Required</masterLabel>
+            <translation><!-- Not Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order</masterLabel>
+            <translation><!-- Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PACE</masterLabel>
+            <translation><!-- PACE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POCA 2002</masterLabel>
+            <translation><!-- POCA 2002 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POCA 2002, Section 345</masterLabel>
+            <translation><!-- POCA 2002, Section 345 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Police and Criminal Evidence Act 1984 sch 1 para 1</masterLabel>
+            <translation><!-- Police and Criminal Evidence Act 1984 sch 1 para 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre Order Enquiry</masterLabel>
+            <translation><!-- Pre Order Enquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prevention of Social Housing Fraud</masterLabel>
+            <translation><!-- Prevention of Social Housing Fraud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Production Order 2002</masterLabel>
+            <translation><!-- Production Order 2002 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request for Information</masterLabel>
+            <translation><!-- Request for Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restraint Order</masterLabel>
+            <translation><!-- Restraint Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SSFA 2001 (109b)</masterLabel>
+            <translation><!-- SSFA 2001 (109b) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Section 109B</masterLabel>
+            <translation><!-- Section 109B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Section 110A</masterLabel>
+            <translation><!-- Section 110A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Section 135 of the Nationality, Immigration &amp; Asyl</masterLabel>
+            <translation><!-- Section 135 of the Nationality, Immigration &amp; Asyl --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Section 17</masterLabel>
+            <translation><!-- Section 17 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Section 29</masterLabel>
+            <translation><!-- Section 29 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Section 30</masterLabel>
+            <translation><!-- Section 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Section 363 POCA 2002</masterLabel>
+            <translation><!-- Section 363 POCA 2002 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Section 51(1)(h) of the Mental Capacity Act 2005</masterLabel>
+            <translation><!-- Section 51(1)(h) of the Mental Capacity Act 2005 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Section 9(1)(b)(i)</masterLabel>
+            <translation><!-- Section 9(1)(b)(i) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Section 9(1)(b)(i) 1993</masterLabel>
+            <translation><!-- Section 9(1)(b)(i) 1993 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Section14, Child Support Act 1991</masterLabel>
+            <translation><!-- Section14, Child Support Act 1991 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Courts Act 1981</masterLabel>
+            <translation><!-- Senior Courts Act 1981 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terrorism Act 2000</masterLabel>
+            <translation><!-- Terrorism Act 2000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Variation Order</masterLabel>
+            <translation><!-- Variation Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Witness Statement</masterLabel>
+            <translation><!-- Witness Statement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>s.52(1)(b)(i) Charities Act 2011</masterLabel>
+            <translation><!-- s.52(1)(b)(i) Charities Act 2011 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Outcome --></label>
+        <name>Outcome__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Approved</masterLabel>
+            <translation><!-- Not Approved --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Overseas address --></label>
+        <name>Overseas_address__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PEP? --></label>
+        <name>PEP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment amount --></label>
+        <name>Payment_amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decision Payment --></label>
+        <name>Payment_status__c</name>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation><!-- Declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FCU checks completed: no concerns</masterLabel>
+            <translation><!-- FCU checks completed: no concerns --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Further information required</masterLabel>
+            <translation><!-- Further information required --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payment type --></label>
+        <name>Payment_type__c</name>
+        <picklistValues>
+            <masterLabel>EMS</masterLabel>
+            <translation><!-- EMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finscan</masterLabel>
+            <translation><!-- Finscan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>High Cash Debit</masterLabel>
+            <translation><!-- High Cash Debit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>High Cash Deposit</masterLabel>
+            <translation><!-- High Cash Deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International Payment - FX</masterLabel>
+            <translation><!-- International Payment - FX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MasterCard</masterLabel>
+            <translation><!-- MasterCard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment To High Risk Country</masterLabel>
+            <translation><!-- Payment To High Risk Country --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>URQ</masterLabel>
+            <translation><!-- URQ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Watchlist transfers &amp; transactions</masterLabel>
+            <translation><!-- Watchlist transfers &amp; transactions --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Primary Victim --></label>
+        <name>Primary_Victim__c</name>
+        <picklistValues>
+            <masterLabel>Bank</masterLabel>
+            <translation><!-- Bank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Prospect/Customer --></label>
+        <name>Prospect_Customer1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prospect/Customer --></label>
+        <name>Prospect_Customer__c</name>
+        <relationshipLabel><!-- Jobs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reason reported --></label>
+        <name>Reason_reported__c</name>
+        <picklistValues>
+            <masterLabel>419 Scam</masterLabel>
+            <translation><!-- 419 Scam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATM Cash Stolen</masterLabel>
+            <translation><!-- ATM Cash Stolen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATM Device Fraud</masterLabel>
+            <translation><!-- ATM Device Fraud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account Conduct</masterLabel>
+            <translation><!-- Account Conduct --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AccountTakeOver</masterLabel>
+            <translation><!-- AccountTakeOver --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Activity Review</masterLabel>
+            <translation><!-- Activity Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alias With Adverse</masterLabel>
+            <translation><!-- Alias With Adverse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Altered cheque</masterLabel>
+            <translation><!-- Altered cheque --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amount Out of Profile</masterLabel>
+            <translation><!-- Amount Out of Profile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Application Documentation</masterLabel>
+            <translation><!-- Application Documentation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Application Inconsistencies</masterLabel>
+            <translation><!-- Application Inconsistencies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bogus Company</masterLabel>
+            <translation><!-- Bogus Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Card Misuse</masterLabel>
+            <translation><!-- Card Misuse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Card Not Present</masterLabel>
+            <translation><!-- Card Not Present --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Card dispute</masterLabel>
+            <translation><!-- Card dispute --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash Not Received</masterLabel>
+            <translation><!-- Cash Not Received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash Not Recognised</masterLabel>
+            <translation><!-- Cash Not Recognised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Category 1 match</masterLabel>
+            <translation><!-- Category 1 match --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Category 6 Match</masterLabel>
+            <translation><!-- Category 6 Match --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cheque Fraud Conversion</masterLabel>
+            <translation><!-- Cheque Fraud Conversion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compromised ATMs</masterLabel>
+            <translation><!-- Compromised ATMs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compromised Card</masterLabel>
+            <translation><!-- Compromised Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Counterfeit Card</masterLabel>
+            <translation><!-- Counterfeit Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Counterfeit Cheque</masterLabel>
+            <translation><!-- Counterfeit Cheque --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crossfiring</masterLabel>
+            <translation><!-- Crossfiring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Behaviour</masterLabel>
+            <translation><!-- Customer Behaviour --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Profile</masterLabel>
+            <translation><!-- Customer Profile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Debit Fraud</masterLabel>
+            <translation><!-- Direct Debit Fraud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dishonestly retaining a wrongful credit</masterLabel>
+            <translation><!-- Dishonestly retaining a wrongful credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dispute</masterLabel>
+            <translation><!-- Dispute --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Docs - Altered</masterLabel>
+            <translation><!-- Docs - Altered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Docs - False</masterLabel>
+            <translation><!-- Docs - False --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Docs - Stolen</masterLabel>
+            <translation><!-- Docs - Stolen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email Scam</masterLabel>
+            <translation><!-- Email Scam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emp - False employment</masterLabel>
+            <translation><!-- Emp - False employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emp - False employment status</masterLabel>
+            <translation><!-- Emp - False employment status --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emp - False income</masterLabel>
+            <translation><!-- Emp - False income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>False ID</masterLabel>
+            <translation><!-- False ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>False Identity</masterLabel>
+            <translation><!-- False Identity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>False instruments paid in</masterLabel>
+            <translation><!-- False instruments paid in --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>False owner/occupier status</masterLabel>
+            <translation><!-- False owner/occupier status --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Falsehoods on application</masterLabel>
+            <translation><!-- Falsehoods on application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fraudulent Transaction</masterLabel>
+            <translation><!-- Fraudulent Transaction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gone Away</masterLabel>
+            <translation><!-- Gone Away --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP App</masterLabel>
+            <translation><!-- HPP App --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>High Cash Activity</masterLabel>
+            <translation><!-- High Cash Activity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>High Deposit</masterLabel>
+            <translation><!-- High Deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Impersonation</masterLabel>
+            <translation><!-- Impersonation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Impersonation - Current Address</masterLabel>
+            <translation><!-- Impersonation - Current Address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Impersonation - Previous Address</masterLabel>
+            <translation><!-- Impersonation - Previous Address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Innocent party</masterLabel>
+            <translation><!-- Innocent party --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost Card</masterLabel>
+            <translation><!-- Lost Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost Chequebook</masterLabel>
+            <translation><!-- Lost Chequebook --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LostCardUsed</masterLabel>
+            <translation><!-- LostCardUsed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MailOrder</masterLabel>
+            <translation><!-- MailOrder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Misuse Of Facility</masterLabel>
+            <translation><!-- Misuse Of Facility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multiple Encashment Fraud</masterLabel>
+            <translation><!-- Multiple Encashment Fraud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multiple Encashment Fraud + false employment</masterLabel>
+            <translation><!-- Multiple Encashment Fraud + false employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Application</masterLabel>
+            <translation><!-- New Application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Fraud Confirmed</masterLabel>
+            <translation><!-- No Fraud Confirmed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NonFraud Dispute</masterLabel>
+            <translation><!-- NonFraud Dispute --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NonPlasticDispute</masterLabel>
+            <translation><!-- NonPlasticDispute --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Yet Confirmed</masterLabel>
+            <translation><!-- Not Yet Confirmed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Case</masterLabel>
+            <translation><!-- Other Case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Order</masterLabel>
+            <translation><!-- Other Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Police Enquiry</masterLabel>
+            <translation><!-- Police Enquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre - Production Order Enquiry</masterLabel>
+            <translation><!-- Pre - Production Order Enquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Activity Consent</masterLabel>
+            <translation><!-- Pre-Activity Consent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Previous Fraud Links</masterLabel>
+            <translation><!-- Previous Fraud Links --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regular Payment Fraud</masterLabel>
+            <translation><!-- Regular Payment Fraud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request for Information</masterLabel>
+            <translation><!-- Request for Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residence - False address</masterLabel>
+            <translation><!-- Residence - False address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residence - False owner/occupier</masterLabel>
+            <translation><!-- Residence - False owner/occupier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residence - False time at address</masterLabel>
+            <translation><!-- Residence - False time at address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residence - Undisclosed Address + Adverse</masterLabel>
+            <translation><!-- Residence - Undisclosed Address + Adverse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residence - Undisclosed Adverse</masterLabel>
+            <translation><!-- Residence - Undisclosed Adverse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residence - Undisclosed address(es)</masterLabel>
+            <translation><!-- Residence - Undisclosed address(es) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retain Wrongful Credit</masterLabel>
+            <translation><!-- Retain Wrongful Credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Serious Misuse @ Address</masterLabel>
+            <translation><!-- Serious Misuse @ Address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stolen Card Used</masterLabel>
+            <translation><!-- Stolen Card Used --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stolen cheque</masterLabel>
+            <translation><!-- Stolen cheque --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uncleared Effects Fraud</masterLabel>
+            <translation><!-- Uncleared Effects Fraud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Undeclared CCJs</masterLabel>
+            <translation><!-- Undeclared CCJs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unpaid Cheque</masterLabel>
+            <translation><!-- Unpaid Cheque --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unrecognised Cheque Debit</masterLabel>
+            <translation><!-- Unrecognised Cheque Debit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Recovery amount --></label>
+        <name>Recovery_amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Refer reason --></label>
+        <name>Refer_reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reference --></label>
+        <name>Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Refund day 1 --></label>
+        <name>Refund_day_1__c</name>
+        <picklistValues>
+            <masterLabel>Believe customer to be involved</masterLabel>
+            <translation><!-- Believe customer to be involved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speaking to Merchant</masterLabel>
+            <translation><!-- Speaking to Merchant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transaction not posted</masterLabel>
+            <translation><!-- Transaction not posted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for further information</masterLabel>
+            <translation><!-- Waiting for further information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting to speak to customer</masterLabel>
+            <translation><!-- Waiting to speak to customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Removal --></label>
+        <name>Removal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reported Reason --></label>
+        <name>Reported_Reason__c</name>
+        <picklistValues>
+            <masterLabel>PoCA</masterLabel>
+            <translation><!-- PoCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terrorism</masterLabel>
+            <translation><!-- Terrorism --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reported to NCA --></label>
+        <name>Reported_to_NCA__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Request type --></label>
+        <name>Request_type__c</name>
+        <picklistValues>
+            <masterLabel>Account Monitoring Order</masterLabel>
+            <translation><!-- Account Monitoring Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Application for Production Order</masterLabel>
+            <translation><!-- Application for Production Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CCTV Request</masterLabel>
+            <translation><!-- CCTV Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIFAS ALERT</masterLabel>
+            <translation><!-- CIFAS ALERT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charity Commission</masterLabel>
+            <translation><!-- Charity Commission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Child Maintenance</masterLabel>
+            <translation><!-- Child Maintenance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Confiscation Order</masterLabel>
+            <translation><!-- Confiscation Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Counter Terrorism Act 2000</masterLabel>
+            <translation><!-- Counter Terrorism Act 2000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Court Attendance</masterLabel>
+            <translation><!-- Court Attendance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Court Order</masterLabel>
+            <translation><!-- Court Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Authority</masterLabel>
+            <translation><!-- Customer Authority --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Enquiry</masterLabel>
+            <translation><!-- Customer Enquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Information Order</masterLabel>
+            <translation><!-- Customer Information Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Disclosure Request(CSA)</masterLabel>
+            <translation><!-- Data Disclosure Request(CSA) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deduction Order</masterLabel>
+            <translation><!-- Deduction Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discharge Order</masterLabel>
+            <translation><!-- Discharge Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disclosure Order</masterLabel>
+            <translation><!-- Disclosure Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Docs - False</masterLabel>
+            <translation><!-- Docs - False --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evidential Package</masterLabel>
+            <translation><!-- Evidential Package --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Information Order</masterLabel>
+            <translation><!-- Financial Information Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Reporting Orders</masterLabel>
+            <translation><!-- Financial Reporting Orders --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fraudulent Transaction</masterLabel>
+            <translation><!-- Fraudulent Transaction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freezing Order</masterLabel>
+            <translation><!-- Freezing Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Further Information</masterLabel>
+            <translation><!-- Further Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>High Cash Activity</masterLabel>
+            <translation><!-- High Cash Activity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indemnity</masterLabel>
+            <translation><!-- Indemnity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interim Third Party Debt Order</masterLabel>
+            <translation><!-- Interim Third Party Debt Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lump sum deduction order</masterLabel>
+            <translation><!-- Lump sum deduction order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order</masterLabel>
+            <translation><!-- Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Order</masterLabel>
+            <translation><!-- Other Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PACE Order</masterLabel>
+            <translation><!-- PACE Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POCA Order</masterLabel>
+            <translation><!-- POCA Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Instruction</masterLabel>
+            <translation><!-- Payment Instruction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Order</masterLabel>
+            <translation><!-- Payment Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Data Request Form</masterLabel>
+            <translation><!-- Personal Data Request Form --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Police Enquiry</masterLabel>
+            <translation><!-- Police Enquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre - Production Order Enquiry</masterLabel>
+            <translation><!-- Pre - Production Order Enquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Previon of social housing fraud</masterLabel>
+            <translation><!-- Previon of social housing fraud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prevsion of social housing fraud</masterLabel>
+            <translation><!-- Prevsion of social housing fraud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Production Order</masterLabel>
+            <translation><!-- Production Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Report from IBB</masterLabel>
+            <translation><!-- Report from IBB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request for Information</masterLabel>
+            <translation><!-- Request for Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restraint Order</masterLabel>
+            <translation><!-- Restraint Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOCA Update</masterLabel>
+            <translation><!-- SOCA Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SSAA</masterLabel>
+            <translation><!-- SSAA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SSFA</masterLabel>
+            <translation><!-- SSFA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Section 109a of the Social Security Act</masterLabel>
+            <translation><!-- Section 109a of the Social Security Act --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Section 18 (Not to part with property)</masterLabel>
+            <translation><!-- Section 18 (Not to part with property) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Section 9 Statement</masterLabel>
+            <translation><!-- Section 9 Statement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Security Admin Act 1992</masterLabel>
+            <translation><!-- Social Security Admin Act 1992 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Statement Verification</masterLabel>
+            <translation><!-- Statement Verification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Summary Statement</masterLabel>
+            <translation><!-- Summary Statement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terrorism MO</masterLabel>
+            <translation><!-- Terrorism MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terrorism Order</masterLabel>
+            <translation><!-- Terrorism Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transaction Enquiry</masterLabel>
+            <translation><!-- Transaction Enquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Witness Statement</masterLabel>
+            <translation><!-- Witness Statement --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SFDC ID --></label>
+        <name>SFDC_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanction name --></label>
+        <name>Sanction_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Savings amount --></label>
+        <name>Savings_amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suspected Perpetrators --></label>
+        <name>Suspected_Perpetrators__c</name>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Friend/Family member</masterLabel>
+            <translation><!-- Friend/Family member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown third party</masterLabel>
+            <translation><!-- Unknown third party --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Time open --></label>
+        <name>Time_open__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total amount --></label>
+        <name>Total_amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unblocked internet/telephone usage? --></label>
+        <name>Unblocked_internet_telephone_usage__c</name>
+        <picklistValues>
+            <masterLabel>NA</masterLabel>
+            <translation><!-- NA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Update --></label>
+        <name>Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- Witness statement contact --></label>
+        <name>Witness_statement_contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Witness statement requested --></label>
+        <name>Witness_statement_requested__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Applications</layout>
+        <sections>
+            <label><!-- Application information --></label>
+            <section>Application information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer information --></label>
+            <section>Customer information</section>
+        </sections>
+        <sections>
+            <label><!-- DAM1 --></label>
+            <section>DAM1</section>
+        </sections>
+        <sections>
+            <label><!-- FCU details --></label>
+            <section>FCU details</section>
+        </sections>
+        <sections>
+            <label><!-- Loaded to CIFAS --></label>
+            <section>Loaded to CIFAS</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Status --></label>
+            <section>Status</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CIFAS</layout>
+        <sections>
+            <label><!-- CIFAS information --></label>
+            <section>CIFAS information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label><!-- Job information --></label>
+            <section>Job information</section>
+        </sections>
+        <sections>
+            <label><!-- Status --></label>
+            <section>Status</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>FCU Notes</layout>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer information --></label>
+            <section>Customer information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Fraud Investigation</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label><!-- Dispute information --></label>
+            <section>Dispute information</section>
+        </sections>
+        <sections>
+            <label><!-- Job information --></label>
+            <section>Job information</section>
+        </sections>
+        <sections>
+            <label><!-- Loaded to CIFAS --></label>
+            <section>Loaded to CIFAS</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Status --></label>
+            <section>Status</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Job Layout</layout>
+        <sections>
+            <label><!-- Contact Details --></label>
+            <section>Contact Details</section>
+        </sections>
+        <sections>
+            <label><!-- Court Attended --></label>
+            <section>Court Attended</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label><!-- Job information --></label>
+            <section>Job information</section>
+        </sections>
+        <sections>
+            <label><!-- Loaded to CIFAS --></label>
+            <section>Loaded to CIFAS</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Status --></label>
+            <section>Status</section>
+        </sections>
+        <sections>
+            <label><!-- Witness Statement --></label>
+            <section>Witness Statement</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Payment screening</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- International payment --></label>
+            <section>International payment</section>
+        </sections>
+        <sections>
+            <label><!-- Loaded to CIFAS --></label>
+            <section>Loaded to CIFAS</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Status --></label>
+            <section>Status</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SAR</layout>
+        <sections>
+            <label><!-- Consent Information --></label>
+            <section>Consent Information</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Details --></label>
+            <section>Contact Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label><!-- Job information --></label>
+            <section>Job information</section>
+        </sections>
+        <sections>
+            <label><!-- Loaded to CIFAS --></label>
+            <section>Loaded to CIFAS</section>
+        </sections>
+        <sections>
+            <label><!-- MLRO Reviewed --></label>
+            <section>MLRO Reviewed</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- SAR Information --></label>
+            <section>SAR Information</section>
+        </sections>
+        <sections>
+            <label><!-- Status --></label>
+            <section>Status</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sanctions</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label><!-- Job information --></label>
+            <section>Job information</section>
+        </sections>
+        <sections>
+            <label><!-- Loaded to CIFAS --></label>
+            <section>Loaded to CIFAS</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Sanctions information --></label>
+            <section>Sanctions information</section>
+        </sections>
+        <sections>
+            <label><!-- Status --></label>
+            <section>Status</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Application --></label>
+        <name>Application</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CIFAS --></label>
+        <name>CIFAS</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- FCU Notes --></label>
+        <name>FCU_Notes</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Fraud Investigation --></label>
+        <name>Fraud_Investigation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Payments screening --></label>
+        <name>Payments_screening</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Police Request --></label>
+        <name>Police_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SAR --></label>
+        <name>SAR</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sanctions --></label>
+        <name>Sanctions</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please complete the loaded to CIFAS field --></errorMessage>
+        <name>Loaded_to_CIFAS</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used to notify when a risk created without using a template</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Risk_Letterhead</letterhead>
+    <name>Risk created WITHOUT using Risk Template</name>
+    <style>freeForm</style>
+    <subject>A risk has been created WITHOUT using a risk template</subject>
+    <textOnly>The following risk has been created WITHOUT using a risk template:
+
+Name: {!grc__Risk__c.Name}
+Description: {!grc__Risk__c.grc__Description__c}
+Business Unit: {!grc__Risk__c.grc__Business_Unit__c}
+Residual Impact: {!grc__Risk__c.grc__Residual_Impact__c}
+Residual Probability: {!grc__Risk__c.grc__Residual_Likelihood__c}
+Owner Name: {!grc__Risk__c.OwnerFullName}
+Modified By: {!grc__Risk__c.LastModifiedBy}
+Modified Date: {!grc__Risk__c.LastModifiedDate}
+Category: {!grc__Risk__c.grc__Category__c}
+Subcategory: {!grc__Risk__c.grc__Subcategory__c}
+
+You can navigate to the risk via this link:
+{!grc__Risk__c.Link}
+
+Please note, you will need access to the JLT Group Risk system and have the appropriate security access to the relevant record.
+
+Thanks,
+
+JLT Group Risk</textOnly>
+    <type>html</type>
+</EmailTemplate>

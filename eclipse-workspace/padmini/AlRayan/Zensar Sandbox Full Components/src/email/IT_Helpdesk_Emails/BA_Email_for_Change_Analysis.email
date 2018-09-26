@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div style=""><font face="arial">Dear {!Case.Owner}</font></div><div style=""><br></div><div style=""><font face="arial">The following concept statement has now been assigned to a Business Analyst whereby they will conduct a change analysis review with you. They will be in touch shortly.&nbsp;</font><span style="font-size: 12pt;">This will help us determine whether the concept statement is a project or an SBC.</span></div><div style=""><font face="arial"><br></font></div><div style=""><font face="arial">{!Case.Link}</font></div><div style=""><font face="arial">{!Case.Subject}</font></div><div style=""><font face="arial"><br></font></div><div style=""><font face="arial">Thanks</font></div><div style=""><font face="arial"><br></font></div><div style=""><font face="arial">Transformation Team</font></div>]]></td>
+</tr>
+</table>

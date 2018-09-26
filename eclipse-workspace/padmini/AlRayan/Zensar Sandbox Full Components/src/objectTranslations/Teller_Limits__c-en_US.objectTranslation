@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Teller Limits</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Teller Limits</value>
+    </caseValues>
+    <fields>
+        <label><!-- Allow Submit For Approval --></label>
+        <name>Allow_Submit_For_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch No --></label>
+        <name>Branch_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- CCY --></label>
+        <name>CCY__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default --></label>
+        <name>Default__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Authorisor --></label>
+        <name>First_Authorisor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fourth Authorisor --></label>
+        <name>Fourth_Authorisor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Function Name --></label>
+        <name>Function_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- T - Transaction Limit Type 
+V - Vault Limit Type --></help>
+        <label><!-- Limit Type --></label>
+        <name>Limit_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lower Limit --></label>
+        <name>Lower_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Second Authorisor --></label>
+        <name>Second_Authorisor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Third Authorisor --></label>
+        <name>Third_Authorisor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Upper Limit --></label>
+        <name>Upper_Limit__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

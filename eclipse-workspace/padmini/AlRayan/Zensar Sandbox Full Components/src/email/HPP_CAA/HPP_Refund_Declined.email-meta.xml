@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>HPP Refund Declined</name>
+    <style>freeForm</style>
+    <subject>{!Case.Opportunity__c} refund declined</subject>
+    <textOnly>Dear {!Case.CreatedBy},
+
+The following case  for a HPP fee refund has been declined.
+Please review the comments provided by {!ApprovalRequest.Process_Approver}
+
+{!Case.Link}
+{!Case.Opportunity__c}
+Amount of refund: {!Case.Amount_to_be_refunded__c}
+Reason for refund: {!Case.Description}</textOnly>
+    <type>html</type>
+</EmailTemplate>

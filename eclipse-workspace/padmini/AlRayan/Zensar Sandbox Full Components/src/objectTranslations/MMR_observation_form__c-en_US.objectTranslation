@@ -1,0 +1,1618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>MMR Observation Form</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>MMR Observation Forms</value>
+    </caseValues>
+    <fields>
+        <help><!-- For Execution only, criteria and documentary evidence needs to be positioned --></help>
+        <label><!-- Advised Sale or Execution Only? --></label>
+        <name>Advised_Sale_or_Execution_Only__c</name>
+        <picklistValues>
+            <masterLabel>Advised Sale</masterLabel>
+            <translation><!-- Advised Sale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Execution Only</masterLabel>
+            <translation><!-- Execution Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- For training and monitoring purposes --></help>
+        <label><!-- Advised calls recorded? --></label>
+        <name>Advised_calls_recorded__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Go through what you will cover today and timescales --></help>
+        <label><!-- Agenda for todays call/meeting covered? --></label>
+        <name>Agenda_for_todays_call_meeting_covered__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- From needs analysis, established customers core priorities --></help>
+        <label><!-- Agreed priorities with customers? --></label>
+        <name>Agreed_priorities_with_customers__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Sufficient detail recorded --></help>
+        <label><!-- All fields adequately completed? --></label>
+        <name>All_fields_adequately_completed__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Sufficient detail recorded --></help>
+        <label><!-- All fields sufficiently completed. --></label>
+        <name>All_fields_sufficiently_completed__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Application completed correctly? --></label>
+        <name>Application_completed_correctly__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Approved by manager on time --></label>
+        <name>Approved_by_manager_on_time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Consistent to customer&apos;s response and financial history --></help>
+        <label><!-- BP accurately completed? --></label>
+        <name>BP_accurately_completed__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Explain: documents to return, next steps and SLAs, questions clarified --></help>
+        <label><!-- Closure summary explained? --></label>
+        <name>Closure_summary_explained__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Comments10 --></label>
+        <name>Comments10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments11 --></label>
+        <name>Comments11__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments12 --></label>
+        <name>Comments12__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments13 --></label>
+        <name>Comments13__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments14 --></label>
+        <name>Comments14__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments15 --></label>
+        <name>Comments15__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments16 --></label>
+        <name>Comments16__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments17 --></label>
+        <name>Comments17__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments18 --></label>
+        <name>Comments18__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments19 --></label>
+        <name>Comments19__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments1 --></label>
+        <name>Comments1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments20 --></label>
+        <name>Comments20__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments21 --></label>
+        <name>Comments21__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments22 --></label>
+        <name>Comments22__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments23 --></label>
+        <name>Comments23__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments24 --></label>
+        <name>Comments24__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments25 --></label>
+        <name>Comments25__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments26 --></label>
+        <name>Comments26__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments27 --></label>
+        <name>Comments27__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments28 --></label>
+        <name>Comments28__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments29 --></label>
+        <name>Comments29__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments2 --></label>
+        <name>Comments2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments30 --></label>
+        <name>Comments30__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments31 --></label>
+        <name>Comments31__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments32 --></label>
+        <name>Comments32__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments33 --></label>
+        <name>Comments33__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments34 --></label>
+        <name>Comments34__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments35 --></label>
+        <name>Comments35__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments36 --></label>
+        <name>Comments36__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments37 --></label>
+        <name>Comments37__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments38 --></label>
+        <name>Comments38__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments39 --></label>
+        <name>Comments39__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments3 --></label>
+        <name>Comments3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments40 --></label>
+        <name>Comments40__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments41 --></label>
+        <name>Comments41__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments42 --></label>
+        <name>Comments42__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments4 --></label>
+        <name>Comments4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments5 --></label>
+        <name>Comments5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments6 --></label>
+        <name>Comments6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments7 --></label>
+        <name>Comments7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments8 --></label>
+        <name>Comments8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments9 --></label>
+        <name>Comments9__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compliance actions update --></label>
+        <name>Compliance_actions_update__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed Late</masterLabel>
+            <translation><!-- Completed Late --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Required</masterLabel>
+            <translation><!-- Required --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Compliant? --></label>
+        <name>Compliant__c</name>
+    </fields>
+    <fields>
+        <help><!-- Advisor links recommendation to agreed core priorities --></help>
+        <label><!-- Correctly recommends/explains? --></label>
+        <name>Correct_recommendation_made_with_satisfa__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Discussed indicative payment &amp; affordability? --></help>
+        <label><!-- Cover indicative payment/affordability? --></label>
+        <name>Cover_indicative_payment_affodability__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Go through each point and conventional mortgages/insurance disclaimers on IDD --></help>
+        <label><!-- Covered IDD sections/disclaimers? --></label>
+        <name>Covered_IDD_sections_disclaimer__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Covered IDD disclaimer? --></label>
+        <name>Covered_IDD_sections_disclaimers__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Explain fees applicable and when due: Admin, Valuation, Stamp duty --></help>
+        <label><!-- Covered Tariff List fees? --></label>
+        <name>Covered_Tariff_List_fees__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the agent identify potential cross selling opportunities? --></help>
+        <label><!-- Cross selling opportunities identified? --></label>
+        <name>Cross_selling_opportunities_identified__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer name --></label>
+        <name>Customer_name__c</name>
+    </fields>
+    <fields>
+        <help><!-- To be completed by Compliance --></help>
+        <label><!-- Date Actions to be completed by --></label>
+        <name>Date_Actions_to_be_completed_by__c</name>
+    </fields>
+    <fields>
+        <help><!-- For use by HPP seller to complete when actions have been completed. --></help>
+        <label><!-- Date actions completed by seller --></label>
+        <name>Date_actions_completed_by_seller__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of application --></label>
+        <name>Date_of_application__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of observation --></label>
+        <name>Date_of_observation__c</name>
+    </fields>
+    <fields>
+        <help><!-- E.g. Possible extra cost of extending repayment period, switching between unsecured to secured lending --></help>
+        <label><!-- Debt consolidation included/impact? --></label>
+        <name>Debt_consolidation_included_impact__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- E.g. Clear, tone, pace, language, allow customer to speak, etc. --></help>
+        <label><!-- Did the advisor communicate effectively? --></label>
+        <name>Did_the_advisor_communicate_effectively__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the advisor manage silence appropriately? Apologise for delays, manage expectations, explain reason for silence. --></help>
+        <label><!-- Advisor managed silence correctly? --></label>
+        <name>Did_the_advisor_manage_silence_appropria__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Did the agent ask for referrals? --></label>
+        <name>Did_the_agent_ask_for_referrals__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Did the seller overcome all objections? --></label>
+        <name>Did_the_seller_overcome_all_objections__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Does the customer have some figures in mind? --></help>
+        <label><!-- Established any term or budget in mind? --></label>
+        <name>Established_any_term_budget_in_mind__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Explained IBB Solicitor charge option, to start pre/post signed offer receipt? --></help>
+        <label><!-- Explained IBB Solicitor charge option? --></label>
+        <name>Explained_IBB_Solicitor_charge_option__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Cover key figs including Finance, term, repayments, total costs and cost per £1, rates breakdown and expiry, reversion to SVR, indicative figs --></help>
+        <label><!-- FIS covered &amp; handed over? --></label>
+        <name>FIS_handed_to_customer_with_key_points__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Consistent to customer&apos;s response --></help>
+        <label><!-- Fact Find completed accurately --></label>
+        <name>Fact_Find_completed_accurately__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- E.g. Repayments(Stability/Early lump sums/Lower initially), foreseeable changes in income/expenditure, Term, Disposable income --></help>
+        <label><!-- Financial considerations discussed? --></label>
+        <name>Financial_considerations_discussion_done__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Select Observation Type --></label>
+        <name>Full_obs_form__c</name>
+        <picklistValues>
+            <masterLabel>Advice Check Form</masterLabel>
+            <translation><!-- Advice Check Form --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full File Checks Form</masterLabel>
+            <translation><!-- Full File Checks Form --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full Observation Form</masterLabel>
+            <translation><!-- Full Observation Form --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Role Play</masterLabel>
+            <translation><!-- Role Play --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Information input correctly? --></label>
+        <name>Information_input_correctly__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Provide business card if F2F --></help>
+        <label><!-- Introduce self and contact details? --></label>
+        <name>Introduce_self_and_contact_details__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Introduced use of &apos;standard ONS&apos; figs? --></label>
+        <name>Introduced_use_of_standard_ONS_figs__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- For use by line manager to confirm date actions completed by --></help>
+        <label><!-- Line manager confirmation --></label>
+        <name>Line_manager_confirmation__c</name>
+    </fields>
+    <fields>
+        <help><!-- NO solicitor recommendation made? --></help>
+        <label><!-- NO solicitor recommendation made? --></label>
+        <name>NO_solicitor_recommendation_made__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Next Observation due --></label>
+        <name>Next_Observation_due__c</name>
+        <picklistValues>
+            <masterLabel>April</masterLabel>
+            <translation><!-- April --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>August</masterLabel>
+            <translation><!-- August --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>December</masterLabel>
+            <translation><!-- December --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>February</masterLabel>
+            <translation><!-- February --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>January</masterLabel>
+            <translation><!-- January --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>July</masterLabel>
+            <translation><!-- July --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>June</masterLabel>
+            <translation><!-- June --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>March</masterLabel>
+            <translation><!-- March --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>May</masterLabel>
+            <translation><!-- May --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Next application</masterLabel>
+            <translation><!-- Next application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>November</masterLabel>
+            <translation><!-- November --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>October</masterLabel>
+            <translation><!-- October --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>September</masterLabel>
+            <translation><!-- September --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Observer Comments --></label>
+        <name>Observer_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Observer name --></label>
+        <name>Observer_name__c</name>
+        <relationshipLabel><!-- MMR Observation Forms --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Name --></label>
+        <name>Opportunity_Name__c</name>
+        <relationshipLabel><!-- MMR Observation Forms --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Outlined applications are subject to Credit scoring and underwriting? --></help>
+        <label><!-- Outline credit scoring and underwriting? --></label>
+        <name>Outline_credit_scoring_and_underwriting__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Compliant (C), Compliant with Development (CD), or Non Compliant (NC) --></help>
+        <label><!-- Overall rating --></label>
+        <name>Overall_rating__c</name>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CD</masterLabel>
+            <translation><!-- CD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the agent explain the Sharia aspect of the product well? Did the agent explain properly how the product worked? --></help>
+        <label><!-- Overview of IBB HPP product/Sharia given --></label>
+        <name>Overview_of_IBB_product_Sharia_given__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- People record link --></label>
+        <name>People_record_link__c</name>
+        <relationshipLabel><!-- MMR Observation Forms (People record link) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- R&amp;F handed to customer, with key points including significant risks covered? Key points covered from R&amp;F document --></help>
+        <label><!-- R&amp;F covered including risks/handed over? --></label>
+        <name>R_F_handed_and_significant_risks_covered__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Read Marketing/DPA disclaimers? --></label>
+        <name>Read_MarketingDPA_disclaimers__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Verifies responses and customers priorities ratings --></help>
+        <label><!-- Recaps responses/importance ratings? --></label>
+        <name>Recaps_responses_importance_ratings_to_c__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- For decline, signed disclaimer obtained? --></help>
+        <label><!-- Recommendation accepted or declined? --></label>
+        <name>Recommendation_accepted_or_declined_fo__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation><!-- Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation><!-- Declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Soft facts should be noted to support later recommendation --></help>
+        <label><!-- Soft facts noted --></label>
+        <name>Soft_facts_noted__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Source of deposit confirmed? --></label>
+        <name>Source_of_deposit_confirmed__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Staff name --></label>
+        <name>Staff_name__c</name>
+        <relationshipLabel><!-- MMR Observation Forms --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Abandoned</masterLabel>
+            <translation><!-- Abandoned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incomplete</masterLabel>
+            <translation><!-- Incomplete --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Complete needs analysis, summarising from importance from responses --></help>
+        <label><!-- Suitability fields correctly completed? --></label>
+        <name>Suitability_questions_and_importance_cor__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Summarised items issued to customer? --></label>
+        <name>Summarised_items_issued_to_customer__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Time scales and process to completletion. - i.e. process guide --></help>
+        <label><!-- Process guide positioned/explained? --></label>
+        <name>Time_scales_and_process_outlined__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Explain IBB pay the first £400 of it&apos;s solicitor fee, customer pays excess, total charge is typically £500, will be notified if significantly different. --></help>
+        <label><!-- Told cust IBB solicitor fee liability? --></label>
+        <name>Told_cust_IBB_solicitor_fee_liability__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Was call/meeting signposted throughout? --></label>
+        <name>Was_call_meeting_signposted_throughout__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- E.g. Advisor was professional, showed empathy, friendly, etc. --></help>
+        <label><!-- Was the customer treated fairly? --></label>
+        <name>Was_the_customer_treated_fairly__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- 1st line assessment accurate? --></label>
+        <name>X1st_line_assessment_accurate__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- 1st line observation completed? --></label>
+        <name>X1st_line_observation_completed__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Learning</masterLabel>
+            <translation><!-- Yes - Learning --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Advice Check Form</layout>
+        <sections>
+            <label><!-- Application Form --></label>
+            <section>Application Form</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Details --></label>
+            <section>Customer Details</section>
+        </sections>
+        <sections>
+            <label><!-- Factfind &amp; Budget Planner --></label>
+            <section>Factfind &amp; Budget Planner</section>
+        </sections>
+        <sections>
+            <label><!-- Needs Analysis --></label>
+            <section>Needs Analysis</section>
+        </sections>
+        <sections>
+            <label><!-- Overall Comments --></label>
+            <section>Overall Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Recommendation --></label>
+            <section>Recommendation</section>
+        </sections>
+        <sections>
+            <label><!-- Staff Member Details --></label>
+            <section>Staff Member Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Advice Check Form Read Only</layout>
+        <sections>
+            <label><!-- Application Form --></label>
+            <section>Application Form</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Details --></label>
+            <section>Customer Details</section>
+        </sections>
+        <sections>
+            <label><!-- Factfind &amp; Budget Planner --></label>
+            <section>Factfind &amp; Budget Planner</section>
+        </sections>
+        <sections>
+            <label><!-- Needs Analysis --></label>
+            <section>Needs Analysis</section>
+        </sections>
+        <sections>
+            <label><!-- Overall Comments --></label>
+            <section>Overall Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Recommendation --></label>
+            <section>Recommendation</section>
+        </sections>
+        <sections>
+            <label><!-- Staff Member Details --></label>
+            <section>Staff Member Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Compliance Full Observation Form</layout>
+        <sections>
+            <label><!-- AIP --></label>
+            <section>AIP</section>
+        </sections>
+        <sections>
+            <label><!-- Application Form --></label>
+            <section>Application Form</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Details --></label>
+            <section>Customer Details</section>
+        </sections>
+        <sections>
+            <label><!-- Factfind &amp; Budget Planner --></label>
+            <section>Factfind &amp; Budget Planner</section>
+        </sections>
+        <sections>
+            <label><!-- Introduction - Eligibility --></label>
+            <section>Introduction - Eligibility</section>
+        </sections>
+        <sections>
+            <label><!-- Needs Analysis --></label>
+            <section>Needs Analysis</section>
+        </sections>
+        <sections>
+            <label><!-- Overall Comments --></label>
+            <section>Overall Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Recommendation --></label>
+            <section>Recommendation</section>
+        </sections>
+        <sections>
+            <label><!-- Soft Skills --></label>
+            <section>Soft Skills</section>
+        </sections>
+        <sections>
+            <label><!-- Staff Member Details --></label>
+            <section>Staff Member Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Full File Checks Form</layout>
+        <sections>
+            <label><!-- Additional Full File checks --></label>
+            <section>Additional Full File checks</section>
+        </sections>
+        <sections>
+            <label><!-- Application Form --></label>
+            <section>Application Form</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Details --></label>
+            <section>Customer Details</section>
+        </sections>
+        <sections>
+            <label><!-- Factfind &amp; Budget Planner --></label>
+            <section>Factfind &amp; Budget Planner</section>
+        </sections>
+        <sections>
+            <label><!-- Needs Analysis --></label>
+            <section>Needs Analysis</section>
+        </sections>
+        <sections>
+            <label><!-- Overall Comments --></label>
+            <section>Overall Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Recommendation --></label>
+            <section>Recommendation</section>
+        </sections>
+        <sections>
+            <label><!-- Staff Member Details --></label>
+            <section>Staff Member Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Full File Checks Form Read Only</layout>
+        <sections>
+            <label><!-- Additional Full File checks --></label>
+            <section>Additional Full File checks</section>
+        </sections>
+        <sections>
+            <label><!-- Application Form --></label>
+            <section>Application Form</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Details --></label>
+            <section>Customer Details</section>
+        </sections>
+        <sections>
+            <label><!-- Factfind &amp; Budget Planner --></label>
+            <section>Factfind &amp; Budget Planner</section>
+        </sections>
+        <sections>
+            <label><!-- Needs Analysis --></label>
+            <section>Needs Analysis</section>
+        </sections>
+        <sections>
+            <label><!-- Overall Comments --></label>
+            <section>Overall Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Recommendation --></label>
+            <section>Recommendation</section>
+        </sections>
+        <sections>
+            <label><!-- Staff Member Details --></label>
+            <section>Staff Member Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Full Observation Form</layout>
+        <sections>
+            <label><!-- AIP --></label>
+            <section>AIP</section>
+        </sections>
+        <sections>
+            <label><!-- Application Form --></label>
+            <section>Application Form</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Details --></label>
+            <section>Customer Details</section>
+        </sections>
+        <sections>
+            <label><!-- Factfind &amp; Budget Planner --></label>
+            <section>Factfind &amp; Budget Planner</section>
+        </sections>
+        <sections>
+            <label><!-- Introduction - Eligibility --></label>
+            <section>Introduction - Eligibility</section>
+        </sections>
+        <sections>
+            <label><!-- Needs Analysis --></label>
+            <section>Needs Analysis</section>
+        </sections>
+        <sections>
+            <label><!-- Overall Comments --></label>
+            <section>Overall Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Recommendation --></label>
+            <section>Recommendation</section>
+        </sections>
+        <sections>
+            <label><!-- Soft Skills --></label>
+            <section>Soft Skills</section>
+        </sections>
+        <sections>
+            <label><!-- Staff Member Details --></label>
+            <section>Staff Member Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Full Observation Form Read Only</layout>
+        <sections>
+            <label><!-- AIP --></label>
+            <section>AIP</section>
+        </sections>
+        <sections>
+            <label><!-- Application Form --></label>
+            <section>Application Form</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Details --></label>
+            <section>Customer Details</section>
+        </sections>
+        <sections>
+            <label><!-- Factfind &amp; Budget Planner --></label>
+            <section>Factfind &amp; Budget Planner</section>
+        </sections>
+        <sections>
+            <label><!-- Introduction - Eligibility --></label>
+            <section>Introduction - Eligibility</section>
+        </sections>
+        <sections>
+            <label><!-- Needs Analysis --></label>
+            <section>Needs Analysis</section>
+        </sections>
+        <sections>
+            <label><!-- Overall Comments --></label>
+            <section>Overall Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Recommendation --></label>
+            <section>Recommendation</section>
+        </sections>
+        <sections>
+            <label><!-- Soft Skills --></label>
+            <section>Soft Skills</section>
+        </sections>
+        <sections>
+            <label><!-- Staff Member Details --></label>
+            <section>Staff Member Details</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Advice Check Form --></label>
+        <name>Advice_Check_Form</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Full Advice Check Form Read Only --></label>
+        <name>Full_Advice_Check_Form_Read_Only</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Full File Checks Form --></label>
+        <name>Full_File_Checks_Form</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Full File Checks Form Read Only --></label>
+        <name>Full_File_Checks_Form_Read_Only</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Full Observation Form --></label>
+        <name>Full_Observation_form</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Full Observation Form Read Only --></label>
+        <name>Read_Only</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You are not authorized to modify this record. Please contact your Salesforce Administrator --></errorMessage>
+        <name>MMR_Observation_Form_Read_Only</name>
+    </validationRules>
+</CustomObjectTranslation>

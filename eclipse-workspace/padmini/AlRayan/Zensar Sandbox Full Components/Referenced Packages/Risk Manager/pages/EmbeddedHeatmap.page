@@ -1,0 +1,128 @@
+<apex:page standardController="grc__Business_Unit__c" extensions="Risk.EmbeddedHeatmap">
+    
+    <apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'ProductUIElements.css')}"/>
+    <apex:includeScript value="{!$Resource.Risk__jQuery}" />
+
+    <script>
+        $( document ).ready(function() {
+            $j = jQuery.noConflict();
+            setRiskType();
+            setMitigationType();
+        });
+        
+        /**
+        * @description to disable or enable the risk type picklist and to set its value selected.
+        **/
+        function setRiskType(){
+            if('{!grc__Business_Unit__c.Risk__Scoring_Scheme__c}' != '' && '{!grc__Business_Unit__c.Risk__Opp_Scoring_Scheme__c}' != ''){
+                $j("option[value={!THREAT_RISK}]").attr("selected", "selected");
+                $j("select[name=selectRT]").removeAttr("disabled");
+            }else if('{!grc__Business_Unit__c.Risk__Scoring_Scheme__c}' === '' && '{!grc__Business_Unit__c.Risk__Opp_Scoring_Scheme__c}' != ''){
+                $j("option[value={!OPP_RISK}]").attr("selected", "selected");
+                $j("select[name=selectRT]").attr("disabled", true);
+            }else if('{!grc__Business_Unit__c.Risk__Scoring_Scheme__c}' != '' && '{!grc__Business_Unit__c.Risk__Opp_Scoring_Scheme__c}' === ''){
+                $j("option[value={!THREAT_RISK}]").attr("selected", "selected");
+                $j("select[name=selectRT]").attr("disabled", true);
+            }
+            else{
+                $j("select[name=selectRT]").attr("disabled", true);
+            } 
+        }
+
+        /**
+        * @description to disable or enable the mitigation type picklist
+        **/
+        function setMitigationType(){
+            if('{!$Setup.RiskManagerVisualforce__c.Hide_Inherent_Tab__c}' === 'true'){
+                $j("select[name=selectIR]").attr("disabled", true);
+            }else{
+                $j("select[name=selectIR]").removeAttr("disabled");
+            }
+        }
+
+        /**
+        * @description Toggle the fade for the cells In Appetite
+        **/
+        function toggleAppetite(element){
+            if(!$j(element).hasClass("selected")){
+                $j("td[appetite='in']").toggleClass("fade");
+                $j(".toggleSwitch").children(".toggleItems").children("div").removeClass("selected");
+                $j(element).addClass("selected");
+            }
+        }
+        
+        /**
+        * @description sets toggle appetite back to default settings
+        **/
+        function resetToggleAppetite(){
+            $j(".toggleSwitch").children(".toggleItems").children("div").removeClass("selected");
+            $j(".toggleSwitch").children(".toggleItems").children("div:first").addClass("selected");
+            $j("td[appetite='in']").removeClass("fade");
+        }
+    </script>
+    
+    <apex:form >
+    <apex:pageBlock id="containerPB" mode="edit">
+
+    <apex:actionFunction name="updateHeatmapType" action="{!setupRisks}" status="processingStatus" rerender="heatmapPanel" oncomplete="resetToggleAppetite();">
+        <apex:param name="value" value="" assignTo="{!hf.directOrAggregate}" />
+    </apex:actionFunction>
+
+    <apex:actionFunction name="updateRiskType" action="{!setupRisks}" status="processingStatus" rerender="heatmapPanel" oncomplete="resetToggleAppetite();">
+        <apex:param name="value" value="" assignTo="{!riskType}" />
+    </apex:actionFunction>
+
+    <apex:actionFunction name="updateMitigation" action="{!setupRisks}" status="processingStatus" rerender="heatmapPanel" oncomplete="resetToggleAppetite();">
+        <apex:param name="value" value="" assignTo="{!mitigationType}" />
+    </apex:actionFunction>
+
+        <apex:pageBlockSection columns="3">
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="{!$Label.risk__HeatmapType}" for="selectHT"/>
+                <select id="selectHT" name="selectHT" onchange="updateHeatmapType(this.value);">
+                  <option value="{!hf.AGGREGATED_TYPE}">{!$Label.risk__Aggregated}</option>
+                  <option value="{!hf.DIRECT_TYPE}">{!$Label.risk__Direct}</option>
+                </select>
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="{!$Label.risk__BusinessUnitHeatmap_RiskType}" for="selectRT" />
+                <select id="selectRT" name="selectRT" onchange="updateRiskType(this.value);">
+                  <option value="{!THREAT_RISK}">{!THREAT_RISK}</option>
+                  <option value="{!OPP_RISK}">{!OPP_RISK}</option>
+                </select>
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="{!$Label.risk__Risk_Mitigation}" for="selectIR" />
+                <select id="selectIR" name="selectIR" onchange="updateMitigation(this.value);">
+                  <option value="{!RESIDUAL_MITIGATION}">{!$Label.risk__Residual}</option>
+                  <option value="{!INHERENT_MITIGATION}">{!$Label.risk__Inherent}</option>
+                </select>
+            </apex:pageBlockSectionItem>
+        </apex:pageBlockSection>
+        
+        <apex:outputPanel rendered="{! appetiteEnabled}">
+            <hr/>
+        </apex:outputPanel>
+        
+        <apex:pageBlockSection rendered="{! appetiteEnabled}">
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="{!$Label.risk__Appetite_Display}" for="appetiteDisplay" />
+                <apex:outputPanel id="appetiteDisplay" layout="block" styleClass="toggleSwitch" rendered="{! appetiteEnabled}">
+                    <div class="toggleItems">
+                        <div class="selected" onclick="toggleAppetite(this);">{!$Label.risk__Appetite_Display_Both}</div>
+                        <div onclick="toggleAppetite(this);">{!$Label.risk__Appetite_Display_Out_Of_Appetite}</div>
+                    </div>
+                </apex:outputPanel>
+            </apex:pageBlockSectionItem>
+        </apex:pageBlockSection>
+
+        <apex:outputPanel id="heatmapPanel" layout="block" style="height:400px; width:100%;">
+            <apex:repeat value="{!heatmaps}" var="heatmap">
+                <c:Heatmap heatmap="{!heatmap}" height="400px" width="100%" riskAggregatedValuesMap="{!riskAggregatedValuesMap}"/>  
+            </apex:repeat>    
+        </apex:outputPanel>
+
+        <c:ProcessingStatus spinnerText="Loading ..."/>
+    </apex:pageBlock>
+    </apex:form>
+</apex:page>

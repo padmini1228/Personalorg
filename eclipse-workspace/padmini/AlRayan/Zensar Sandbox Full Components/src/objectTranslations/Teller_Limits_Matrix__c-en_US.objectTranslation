@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Teller Limits Matrix</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Teller Limits Matrix</value>
+    </caseValues>
+    <fields>
+        <label><!-- Branch No --></label>
+        <name>Branch_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code --></label>
+        <name>Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency --></label>
+        <name>Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Function Name --></label>
+        <name>Function_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Weighting --></label>
+        <name>Weighting__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

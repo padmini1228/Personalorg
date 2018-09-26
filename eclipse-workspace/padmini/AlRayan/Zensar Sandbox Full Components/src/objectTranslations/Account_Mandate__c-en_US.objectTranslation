@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Account Mandate</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Account Mandates</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account No --></label>
+        <name>Account_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account with IBB --></label>
+        <name>Account_with_IBB__c</name>
+        <relationshipLabel><!-- Account Mandates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Added By --></label>
+        <name>Added_By__c</name>
+        <relationshipLabel><!-- Account Mandates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Added Date --></label>
+        <name>Added_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency --></label>
+        <name>Currency__c</name>
+        <picklistValues>
+            <masterLabel>GBP</masterLabel>
+            <translation><!-- GBP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Limit --></label>
+        <name>Limit__c</name>
+    </fields>
+    <layouts>
+        <layout>Account Mandate Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

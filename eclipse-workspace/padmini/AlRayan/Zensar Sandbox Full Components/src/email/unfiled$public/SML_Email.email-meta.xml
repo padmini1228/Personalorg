@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>SML Email</name>
+    <style>freeForm</style>
+    <subject>New Starter Notification</subject>
+    <textOnly>{!Case.Contact} has raised a New Starter Case {!Case.CaseNumber} with IT.
+
+
+
+New Starter Name : {!Case.New_Starter_Full_Name__c}
+
+
+
+Start Date : {!Case.Start_Date__c}
+
+
+
+Thanks
+
+
+{!Case.OwnerFullName}
+
+
+{!Case.Link}</textOnly>
+    <type>html</type>
+</EmailTemplate>

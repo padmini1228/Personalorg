@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Docugen Job</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Docugen Jobs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Completed --></label>
+        <name>Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data_1 --></label>
+        <name>Data_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data_2 --></label>
+        <name>Data_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data_3 --></label>
+        <name>Data_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data_4 --></label>
+        <name>Data_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data_5 --></label>
+        <name>Data_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- DocType --></label>
+        <name>DocType__c</name>
+        <picklistValues>
+            <masterLabel>PDF</masterLabel>
+            <translation><!-- PDF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Word</masterLabel>
+            <translation><!-- Word --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Docugen EBS Template --></label>
+        <name>Docugen_EBS_Template__c</name>
+        <relationshipLabel><!-- Docugen Jobs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Error --></label>
+        <name>Error__c</name>
+    </fields>
+    <fields>
+        <label><!-- MergeFields --></label>
+        <name>MergeFields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Printed --></label>
+        <name>Printed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Progress --></label>
+        <name>Progress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Records --></label>
+        <name>Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deleted</masterLabel>
+            <translation><!-- Deleted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation><!-- Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uploading</masterLabel>
+            <translation><!-- Uploading --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Docugen Job Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

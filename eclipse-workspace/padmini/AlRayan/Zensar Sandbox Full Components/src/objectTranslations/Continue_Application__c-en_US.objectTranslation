@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Continue Application</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Continue Applications</value>
+    </caseValues>
+    <fields>
+        <label><!-- Activated Date --></label>
+        <name>Activated_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invalid Attempt Date --></label>
+        <name>Invalid_Attempt_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Linked Active From --></label>
+        <name>Linked_Active_From__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Continue Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SessionId --></label>
+        <name>SessionId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Url --></label>
+        <name>Url__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

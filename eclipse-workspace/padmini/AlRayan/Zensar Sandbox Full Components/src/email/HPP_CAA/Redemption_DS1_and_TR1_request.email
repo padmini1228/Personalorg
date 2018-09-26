@@ -1,0 +1,23 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="arial">{!Contact.Salutation} {!Contact.FirstName}&nbsp;</font><span style="font-size: medium;">{!Contact.LastName}</span></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="arial">{!Contact.Current_Address_House_Name__c}</font></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="font-size: 12pt;">{!Contact.Current_Address_House_No__c}&nbsp; {!Contact.Current_Address_House_Name__c} {!Contact.Current_Address_Line_2__c}</span></div><div style=""><font face="arial">{!Contact.Current_Address_Line_3__c}</font></div><div style=""><font face="arial">{!Contact.Current_Address_Line_4__c}</font></div><div style=""><font face="arial">{!Contact.Current_Address_Line_5__c}</font></div><div style=""><font face="arial">{!Contact.Current_Address_Post_Code__c}</font></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="arial"><br></font></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><p class="MsoNormal"><span style="font-size: 9pt; font-family: Arial, sans-serif;">Dear ARB Team,<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size: 9pt; font-family: Arial, sans-serif;">&nbsp;</span></p>
+
+<p class="MsoNormal"><span style="font-size: 9pt; font-family: Arial, sans-serif;">The above
+matter has redeemed today, please can you upload the DS1 and TR1 documentation
+to Salesforce in order for the Bank to complete internal checking and send
+executed copies of both documents to you accordingly. <o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size: 9pt; font-family: Arial, sans-serif;">&nbsp;</span></p>
+
+<p class="MsoNormal"><span style="font-size: 9pt; font-family: Arial, sans-serif;">Please note it
+is the Banks requirement as part of the redemption process to send executed
+documentation after 5 working days of the redemption date.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size: 9pt; font-family: Arial, sans-serif;">&nbsp;</span></p>
+
+<p class="MsoNormal"><span style="font-size: 9pt; font-family: Arial, sans-serif;">Many thanks<o:p></o:p></span></p></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font class="Apple-style-span" face="arial"><br></font></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font class="Apple-style-span" face="arial"><br></font><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; "><br></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; "><br></div></div>]]></td>
+</tr>
+</table>

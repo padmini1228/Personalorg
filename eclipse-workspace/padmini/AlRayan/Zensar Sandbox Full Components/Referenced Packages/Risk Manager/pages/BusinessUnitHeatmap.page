@@ -1,0 +1,205 @@
+<apex:page controller="Risk.BusinessUnitHeatmapController" standardStylesheets="{! !isPrintableView}" tabstyle="grc__Business_Unit__c" showheader="{! !isPrintableView}" sidebar="{! !isPrintableView}" id="pg" renderAs="{! IF( isPrintableView, 'pdf', 'html')}">
+
+    <head>
+        <apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'BusinessUnitHeatmapReport.css')}"/>
+        <apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'ProductUIElements.css')}"/>
+        <apex:includeScript value="{!$Resource.Risk__jQuery}" />
+
+        <script>
+        $( document ).ready(function() {
+            $j = jQuery.noConflict();
+        });
+
+        /*
+        * @description Toggles between displaying or hiding Opportunity and risk (threat)heatmap; if currently selected heatmap type is Opportunity
+        *  then the action is t not display Opportunity and show Risk/ threat, otherwise display Opportunity and not display Risk / Threat.
+        *  Display or hide is achieved through manipulation of css display attributes
+        */
+        function switchType() {
+            var selected = $j("[id$='heatmapType']").val();
+            if(selected=='Opportunity') {
+                $j('.riskHeatmaps').css('display', 'none');
+                $j('.oppHeatmaps').css('display', '');
+            } else {
+                $j('.riskHeatmaps').css('display', '');
+                $j('.oppHeatmaps').css('display', 'none');
+            }
+        }
+
+        /*
+        * @description Hides or shows the filter settings panel using a slide up and down effect, adjusting the
+        *   filter arrow to indicate if the settings can be shown or hidden. The toggle action uses the fact of
+        *   if the settings is not displayed then the action is to unhide else it is to hide
+        */
+        function hideSettings() {
+            if($j('.settings').css('display')=='none') {
+                $j('.settings').slideDown('slow');
+                $j('#filterArrow').html('&#9660;');
+            } else {
+                $j('.settings').slideUp('slow');
+                $j('#filterArrow').html('&#9658;');
+            }
+
+        }
+
+        /*
+        * @description Disables the button which applies the filter to update the heatmap, where the
+        *  button is that in the filter component;this is done
+        *  by manipulating disabled attribute and setting the button class to the salesforce standard
+        *  btnDisabled to ensure the disablement is visually apparent
+        */
+        function deactivateButton() {
+
+            $j("[id$='applyButton']").attr('disabled', 'disabled');
+            $j("[id$='applyButton']").addClass('btnDisabled');
+
+        }
+
+        /*
+        * @description Enables the button which applies the filter to update the heatmap, where the
+        *  button is that in the filter component;this is done
+        *  by manipulating disabled attribute and setting the button class to the salesforce standard
+        *  btn to ensure the enablement is visually apparent
+        */
+        function activateButton() {
+
+             $j("[id$='applyButton']").removeAttr('disabled', 'disabled');
+             $j("[id$='applyButton']").removeClass('btnDisabled');
+             $j("[id$='applyButton']").addClass('btn');
+
+        }
+        
+        /**
+        * @description Toggle the fade for the cells In Appetite
+        **/
+        function toggleAppetite(element){
+            if(!$j(element).hasClass("selected")){
+                $j("td[appetite='in']").toggleClass("fade");
+                $j(".toggleSwitch").children(".toggleItems").children("div").removeClass("selected");
+                $j(element).addClass("selected");
+            }
+        }
+        
+        /**
+        * @description sets toggle appetite back to default settings
+        **/
+        function resetToggleAppetite(){
+            $j(".toggleSwitch").children(".toggleItems").children("div").removeClass("selected");
+            $j(".toggleSwitch").children(".toggleItems").children("div:first").addClass("selected");
+            $j("td[appetite='in']").removeClass("fade");
+        }
+        </script>
+    </head>
+
+    <div class="pageHeader">
+        <apex:sectionHeader rendered="{! !isPrintableView}" title="{!$Label.risk__Heatmaps}" subTitle="{!$ObjectType.grc__Business_Unit__c.Label} - '{!businessUnit.Name}'"/>
+    </div>
+
+    <apex:outputPanel id="outputData" rendered="{! isPrintableView}">
+        <h2>{!$Label.risk__BusinessUnitHeatmap_HeatMaps}</h2>
+        <h3>{!$Label.risk__BusinessUnitHeatmap_BusinessUnitTitle} '{!businessUnit.Name}'</h3>
+    </apex:outputPanel>
+
+    <apex:pageMessages rendered="{! !isPrintableView}" />
+    <apex:outputPanel rendered="{!businessUnit.Id!= '' && !isPrintableView}">
+        <div class="ptBreadcrumb">
+            <div style="float:left;" >
+                &nbsp;&#171;&nbsp;
+                <a href="{!URLFOR($Action.grc__Business_Unit__c.View,businessUnit.Id)}">
+                    {!$Label.BusinessUnitHeatmap_BackToBU}
+                </a>
+            </div>
+        <div style="float:right;">
+        <apex:form >
+            <apex:commandlink value="{!$Label.risk__Printable_View}" action="{!printHeatmap}" target="_blank"/>
+            |
+            <a href="javascript:openPopupFocusEscapePounds(%27{!$Page.HelpBusinessUnitHeatmap}%27, %27Help%27, 700, 600, %27width=700,height=600,resizable=yes,toolbar=yes,status=no,scrollbars=yes,menubar=yes,directories=no,location=no,dependant=no%27, false, false);" title="{!$Label.HelpHeatmapReport}">
+                {!$Label.BusinessUnitHeatmap_HelpForThisPage}
+                <img src="/s.gif" alt="Help"  class="helpIcon" title="Help"/>
+            </a>
+        </apex:form>
+        </div>
+        <div style="clear:both;"/>
+            <br/><br/>
+        </div>
+    </apex:outputPanel>
+
+    <div id="card"  class="norequiredlegend">
+        <apex:outputPanel layout="block" rendered="{! !isPrintableView}">
+            <div class="collapseBar">
+                <div style="width:150px; float: left">
+                    <apex:form >
+                        <apex:actionFunction name="buildSearchSummary" action="{!buildSearchSummary}" oncomplete="resetToggleAppetite();" immediate="true" rerender="searchSummaryString,threatHeatmap,oppHeatmap" status="applyingFilter"/>
+
+                        <apex:outputPanel id="searchSummaryString" layout="block">
+                            <div><a style="cursor: pointer; cursor: hand; text-decoration: underline;" onClick="hideSettings();"><span id="filterArrow">&#9660;</span>{!$Label.BusinessUnitHeatmap_Filter}</a></div>
+
+                        </apex:outputPanel>
+                        <br/>
+                    </apex:form>
+                </div>
+                <div>
+                    <apex:actionStatus startText="" stopText="" onstart="deactivateButton()" onstop="activateButton()" id="updatingFilter" />
+                    <apex:actionStatus startText="{!$Label.risk__BusinessUnitHeatmap_ApplyingFilter}" stopText="" id="applyingFilter" />
+                </div>
+            </div>
+            <div class="settings" style="width:100%;">
+                <div >
+                    <c:HeatmapFilter id="heatmapSettings" hf="{!hf}" rf="{!rf}" filterUpdateStatus="{!$Component.updatingFilter}"/>
+                </div>
+            </div>
+        </apex:outputPanel>
+        <div>
+            <apex:pageBlock id="threatRisks" mode="edit">
+                <apex:form >
+                    <apex:actionFunction name="updateScoringSchemeId" action="{!updateScoringSchemeId}" onComplete="switchType();" rerender="heatmapSettings, threatOppOp"/>
+                    <apex:pageBlockSection rendered="{! !isPrintableView}" title="{!$Label.risk__BusinessUnitHeatmap_HeatMaps}">
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="{!$Label.risk__BusinessUnitHeatmap_RiskType}" for="heatmapType" />
+                            <apex:selectList id="heatmapType" value="{!heatmapType}" multiselect="false" size="1">
+                                <!-- rerender is blank because it'll refresh the page otherwise -->
+                                <apex:actionSupport event="onchange" onSubmit="updateScoringSchemeId();" oncomplete="resetToggleAppetite();" rerender=""/>
+                                <apex:selectOption itemValue="{!THREAT_RISK}" itemLabel="{!THREAT_RISK}" />
+                                <apex:selectOption itemValue="{!OPP_RISK}" itemLabel="{!OPP_RISK}" />
+                            </apex:selectList>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem rendered="{! appetiteEnabled}">
+                            <apex:outputLabel value="{!$Label.risk__Appetite_Display}" for="appetiteDisplay" />
+                            <apex:outputPanel id="appetiteDisplay" layout="block" styleClass="toggleSwitch" rendered="{! appetiteEnabled}">
+                                <div class="toggleItems">
+                                    <div class="selected" onclick="toggleAppetite(this);">{!$Label.risk__Appetite_Display_Both}</div>
+                                    <div onclick="toggleAppetite(this);">{!$Label.risk__Appetite_Display_Out_Of_Appetite}</div>
+                                </div>
+                            </apex:outputPanel>
+                        </apex:pageBlockSectionItem>
+                    </apex:pageBlockSection>
+                </apex:form>
+                
+                <apex:outputPanel id="threatOppOp">
+                    
+                    <apex:outputPanel rendered="{!heatmapType == THREAT_RISK}">
+                        <div class="riskHeatmaps" style="background-color:white;">
+                            <c:HeatmapCollection id="threatHeatmap" heatmaps="{!heatmaps}" heatmapFilter="{!hf}" height="400px" width="100%" printableView="{!isPrintableView}" />
+                        </div>
+                        <apex:outputPanel rendered="{!isPrintableView}" styleClass="collectiveRisksList" layout="block">
+                            <c:RisksList ssId="{!businessUnit.Risk__Scoring_Scheme__c}" pCost="{!businessUnit.Risk__Project_Cost__c}" pDuration="{!businessUnit.Risk__Project_Duration__c}" heatmapFilter="{!hf}" columnFieldLabels="{!columnFieldNames}" risks="{!threatRelatedRisks}"/>
+                        </apex:outputPanel>
+                    </apex:outputPanel>
+
+                    <apex:outputPanel rendered="{!heatmapType == OPP_RISK}">
+                        <div class="oppHeatmaps" style="background-color:white;">
+                            <c:HeatmapCollection id="oppHeatmap" heatmaps="{!Oppheatmaps}" heatmapFilter="{!hf}" height="400px" width="100%" printableView="{!isPrintableView}" />
+                        </div>
+                        <apex:outputPanel rendered="{!isPrintableView}" styleClass="collectiveRisksList" layout="block">
+                            <c:RisksList ssId="{!businessUnit.Risk__Opp_Scoring_Scheme__c}" pCost="{!businessUnit.Risk__Project_Cost__c}" pDuration="{!businessUnit.Risk__Project_Duration__c}" heatmapFilter="{!hf}" columnFieldLabels="{!columnFieldNames}" risks="{!oppRelatedRisks}"/>
+                        </apex:outputPanel>
+                    </apex:outputPanel>
+
+                </apex:outputPanel>
+
+
+            </apex:pageBlock>
+        </div>
+    </div>
+
+</apex:page>

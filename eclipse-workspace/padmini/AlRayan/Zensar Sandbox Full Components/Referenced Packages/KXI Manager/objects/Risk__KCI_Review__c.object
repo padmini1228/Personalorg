@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <webLinks>
+        <fullName>Submit_Review</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Submit Review</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>/apex/{!$Setup.Risk__NamespacePrefix__c.Value__c}KXIReviewSubmission?kxiId={!Risk__KCI_Review__c.Risk__KCIId__c}&amp;kxiReviewId={!Risk__KCI_Review__c.Id}</url>
+    </webLinks>
+</CustomObject>

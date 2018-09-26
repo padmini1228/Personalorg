@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Metric Refresh Service Config</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Metric Refresh Service Config</value>
+    </caseValues>
+    <fields>
+        <label><!-- Client Key --></label>
+        <name>Client_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Secret --></label>
+        <name>Client_Secret__c</name>
+    </fields>
+    <fields>
+        <help><!-- The default timeout is 10000 milliseconds . The maximum values will be 120000 milliseconds (Salesforce limit). --></help>
+        <label><!-- Custom Callout Timeout --></label>
+        <name>Custom_Callout_Timeout__c</name>
+    </fields>
+    <fields>
+        <label><!-- Domain URL --></label>
+        <name>Domain_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of reports processed a the same time, current default value is 100, we can let you configure that parameter also (Between 1 and 200 as Salesforce limit). This value is important because there is a cumulative timeout limit per transaction which --></help>
+        <label><!-- Number Reports Per Batch --></label>
+        <name>Number_Reports_Per_Batch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Password --></label>
+        <name>Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Name --></label>
+        <name>User_Name__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

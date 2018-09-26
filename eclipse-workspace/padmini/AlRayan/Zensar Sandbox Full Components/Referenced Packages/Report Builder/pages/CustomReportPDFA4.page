@@ -1,0 +1,163 @@
+<apex:page standardController="XRB__Report__c" extensions="XRB.CreateReportController" showHeader="false" language="en_GB" sidebar="false"  renderAs="pdf" >
+	<head>
+		<apex:stylesheet value="{!URLFOR($Resource.XRB__ReportBuilder,'/css/A4PdfReportStyles.css')}" />
+	</head>
+
+	<body style="font-size:{!Report__c.Font_Size__c}pt;" >
+		<!-- <apex:outputPanel layout="none" rendered="{!NOT(ISNULL(selectedLogo))}" > -->
+		<apex:outputPanel layout="none">
+			<table style="width:100%; margin-top:15px; padding-bottom:5px;" >
+				<tr>
+					<td style="width:33.3%; text-align:left;" ><apex:image value="/servlet/servlet.FileDownload?file={!leftLogo}" rendered="{!NOT(ISNULL(leftLogo))}"/></td>
+					<td style="width:33.3%; font-size:11pt; text-align:center;" >
+						<h2><apex:outputField value="{!XRB__Report__c.Name}" /></h2>
+					</td>
+					<td style="width:33.3%; text-align:right;" ><apex:image value="/servlet/servlet.FileDownload?file={!rightLogo}" rendered="{!NOT(ISNULL(rightLogo))}"/></td>
+				</tr>
+
+				<tr></tr>
+				<tr>
+				<td colspan="{!IF(FLOOR(totalColumns) > 3,FLOOR(totalColumns),3)}" style="width:33%; font-size:11pt; text-align:right;" >
+						<b>Date :</b>
+						<apex:outputText style="text-align:right;" value="{!DateTime}" />
+					</td>
+				</tr>
+			</table>
+		</apex:outputPanel>
+
+		<!-- HEATMAP REPORT -->
+        <apex:outputPanel layout="none" rendered="{!XRB__Report__c.XRB__Heatmap_Type__c != ''}">
+            <apex:variable var="isDirect" value="{!IF(XRB__Report__c.XRB__Heatmap_Type__c == 'Direct', 'true', 'false')}" />
+
+            <c:DrawHeatmap heatmap="{!heatmap}" title="{!IF(isDirect == 'true',$Label.xrb__risk_matrix, $Label.xrb__aggregated_risk_matrix)}" rendered="{!IF(XRB__Report__c.XRB__Include_Risks_Type__c != 'Opportunity Only', 'true', 'false')}" safeMode="true" height="500px" width="40%" disableRiskList="true" showRiskIds="false" position="{!IF(XRB__Report__c.XRB__Include_Risks_Type__c == 'Threat and Opportunity', 'float:left;', '')}"/>
+            <c:DrawHeatmap heatmap="{!oppheatmap}" title="{!IF(isDirect=='true',$Label.xrb__opp_risk_matrix, $Label.xrb__aggregated_opp_risk_matrix)}" rendered="{!IF(XRB__Report__c.XRB__Include_Risks_Type__c != 'Threat Only', 'true', 'false')}" safeMode="true" height="500px" width="40%" disableRiskList="true" showRiskIds="false"  position="{!IF(XRB__Report__c.XRB__Include_Risks_Type__c == 'Threat and Opportunity', 'float:right;', '')}"/>
+            <div style="clear:both; page-break-after:always;" />
+
+        </apex:outputPanel>
+		<!-- Risk Data -->
+		<apex:outputPanel layout="none" >
+
+			<!-- <h2><apex:outputField value="{!XRB__Report__c.Name}" /></h2> -->
+		</apex:outputPanel>
+
+		<!-- Report Data -->
+		<apex:outputPanel layout="none" >
+			<apex:repeat value="{!rsReportRows}" var="reportRow" >
+				<!-- Risk Data -->
+				<table cellpadding="7" style="border-top:1px solid black;border-left:1px solid black;border-right:1px solid black; border-bottom:1px solid black; width:100%;page-break-inside: avoid;font-size:{!Report__c.Font_Size__c}pt;">
+					<tr>
+						<td style="text-align:center;" colspan="{!parentObj.fieldApiNamesList.size}" ><b>{!$ObjectType.grc__risk__c.labelPlural}</b></td>
+					</tr>
+					<tr>
+						<apex:repeat value="{!parentObj.fieldLabelsList}" var="fieldLabel" >
+							<th style="font-size:{!Report__c.Font_Size__c}pt;" ><apex:outputText value="{!fieldLabel}" /></th>
+						</apex:repeat>
+					</tr>
+					<tr>
+						<!-- Report Data -->
+						<!--DISPLAYING RISK TABLE WITH EACH OF THE RISK VALUE FIELDS-->
+						<apex:repeat value="{!parentObj.fieldApiNamesList}" var="field" >
+							<td >
+								<!--Sprint1951- Fixing the Color and the Score for RESIDUAL Aggregated Risk Values-->
+                                <!--Fixes the Aggregated Residual Color-->
+                                <apex:outputPanel layout="block" style="background-color:{!IF(AggregatedMap[reportRow.risk.Id].residualValues != null, AggregatedMap[reportRow.risk.Id].residualValues.colour, '#9C9A9C')}; display:inline-block; width: 100px; height: 25px;" rendered="{!XRB__Report__c.XRB__Heatmap_Type__c == 'Aggregated' && field == 'risk__residual_rating__c' && AggregatedMap[reportRow.risk.Id].residualValues.colour != $Label.xrb__default_band_color}" />
+                                <!--Fixes the Aggregated Residual Score-->
+                                <apex:outputText value="{!AggregatedMap[reportRow.risk.Id].residualValues.score}" rendered="{! Report__c.Heatmap_Type__c == 'Aggregated' && field == 'risk__residual_score__c' && AggregatedMap[reportRow.risk.Id].residualValues.score !=0.00}" />
+
+                               <!--Sprint1951- Fixing the Color and the Score for INHERENT Aggregated Risk Values-->
+                               <!--Fixes the Aggregated Inherent Color-->
+                               <apex:outputPanel layout="block" style="background-color:{!IF(AggregatedMap[reportRow.risk.Id].inherentValues != null, AggregatedMap[reportRow.risk.Id].inherentValues.colour, '#9C9A9C')}; display:inline-block; width: 100px; height: 25px;" rendered="{!XRB__Report__c.XRB__Heatmap_Type__c == 'Aggregated' && field == 'risk__inherent_rating__c' && AggregatedMap[reportRow.risk.Id].inherentValues.colour != $Label.xrb__default_band_color}" />
+                               <!--Fixes the Aggregated Inherent Score-->
+                               <apex:outputText value="{!AggregatedMap[reportRow.risk.Id].inherentValues.score}" rendered="{! Report__c.Heatmap_Type__c == 'Aggregated' && field == 'risk__inherent_score__c' && AggregatedMap[reportRow.risk.Id].inherentValues.score !=0.00}" />
+
+                               <!--Fix the Aggregated Target Color-->
+                               <apex:outputPanel layout="block" style="background-color:{!IF(AggregatedMap[reportRow.risk.Id].targetValues != null, AggregatedMap[reportRow.risk.Id].targetValues.colour, '#9C9A9C')}; display:inline-block; width: 100px; height: 25px;" rendered="{!XRB__Report__c.XRB__Heatmap_Type__c == 'Aggregated' && field == 'risk__target_rating__c' && AggregatedMap[reportRow.risk.Id].targetValues.colour != $Label.xrb__default_band_color}" />
+                               <!--Fix the Aggregated Target Score-->
+                               <apex:outputText value="{!AggregatedMap[reportRow.risk.Id].targetValues.score}" rendered="{! Report__c.Heatmap_Type__c == 'Aggregated' && field == 'risk__target_score__c' && AggregatedMap[reportRow.risk.Id].targetValues.score !=0.00}" />
+
+							   <!-- Display Aggregated Ineherent / Residual Likelihood-Impact Text values-->
+							   <!--Fixes the Aggregated Inherent Impact-->
+							   <apex:outputText rendered="{!field == 'risk__inherent_impact_text__c' && XRB__Report__c.XRB__Heatmap_Type__c == 'Aggregated'}" value="{!AggregatedMap[reportRow.risk.Id].inherentValues.impactText}"/>
+
+							   <!--Fixes the Aggregated Inherent likelihood-->
+							   <apex:outputText rendered="{!field == 'risk__inherent_likelihood_text__c' && XRB__Report__c.XRB__Heatmap_Type__c == 'Aggregated'}" value="{!AggregatedMap[reportRow.risk.Id].inherentValues.likelihoodText}"/>
+
+							   <!--Fixes the Aggregated residual Impact-->
+							   <apex:outputText rendered="{!field == 'risk__residual_impact_text__c' && XRB__Report__c.XRB__Heatmap_Type__c == 'Aggregated'}" value="{!AggregatedMap[reportRow.risk.Id].residualValues.impactText}"/>
+
+							   <!--Fixes the Aggregated residual likelihood-->
+							   <apex:outputText rendered="{!field == 'risk__residual_likelihood_text__c' && XRB__Report__c.XRB__Heatmap_Type__c == 'Aggregated'}" value="{!AggregatedMap[reportRow.risk.Id].residualValues.likelihoodText}"/>
+
+							   <!--Fixes the Aggregated target Impact-->
+							  <apex:outputText rendered="{!XRB__Report__c.XRB__Heatmap_Type__c == 'Aggregated' && field == 'risk__target_impact_text__c'}" value="{!AggregatedMap[reportRow.risk.Id].targetValues.impactText}"/>
+
+							  <!--Fixes the Aggregated target likelihood-->
+							  <apex:outputText rendered="{!XRB__Report__c.XRB__Heatmap_Type__c == 'Aggregated' && field == 'risk__target_likelihood_text__c'}" value="{!AggregatedMap[reportRow.risk.Id].targetValues.likelihoodText}"/>
+
+								<!--This stops rendering double value fields from the Repeat of Field-set values-->
+								<apex:outputField value="{!reportRow.risk[field]}" rendered="{! (Report__c.Heatmap_Type__c == 'Aggregated') &&
+                                    field != 'risk__inherent_rating__c' && 
+                                    field != 'risk__inherent_score__c' && 
+                                    field != 'risk__inherent_impact_text__c' && 
+                                    field != 'risk__inherent_likelihood_text__c' &&
+                                    field != 'risk__residual_rating__c' && 
+                                    field != 'risk__residual_score__c' &&
+                                    field != 'risk__residual_impact_text__c' && 
+                                    field != 'risk__residual_likelihood_text__c' &&
+                                    field != 'risk__target_rating__c' && 
+                                    field != 'risk__target_score__c' && 
+                                    field != 'risk__target_impact_text__c' && 
+                                    field != 'risk__target_likelihood_text__c'}" />
+
+								<!-- Display Fields if the Report Type is Direct -->
+                                <apex:outputField rendered="{! Report__c.Heatmap_Type__c != 'Aggregated' }" value="{!reportRow.risk[field]}"/>
+								
+							</td>
+						</apex:repeat>
+					</tr>
+				</table>
+
+				<!-- Related List Data -->
+				<apex:repeat value="{!relatedList}" var="rList" >
+					<apex:outputPanel layout="none" rendered="{!rList.isSelected && rList.fieldsList.fieldApiNamesList.size > 0}" >
+						<table cellpadding="7" style="border-bottom: 1px solid black;border-left:1px solid black;border-right:1px solid black; width:100%;font-size:{!Report__c.Font_Size__c}pt;">
+							<tr>
+								<td style="text-align:center;" colspan="{!rList.fieldsList.fieldApiNamesList.size}" ><b>{!rList.relationshipLabel}</b></td>
+							</tr>
+							<tr>
+								<apex:repeat value="{!rList.fieldsList.fieldLabelsList}" var="fieldLabel" >
+									<th style="font-size:{!XRB__Report__c.XRB__Font_Size__c}pt;"><apex:outputText value="{!fieldLabel}" /></th>
+								</apex:repeat>
+							</tr>
+
+							<apex:repeat value="{!reportRow.objRecords[rList.relationshipName]}" var="record" >
+								<tr>
+									<apex:repeat value="{!rList.fieldsList.fieldApiNamesList}" var="field" >
+										<td>
+											<apex:outputField value="{!record[field]}" />
+										</td>
+									</apex:repeat>
+								</tr>
+							</apex:repeat>
+						</table>
+					</apex:outputPanel>
+				</apex:repeat>
+				<div style="clear:both;">&nbsp;</div>
+				<div style="clear:both;">&nbsp;</div>
+			</apex:repeat>
+		</apex:outputPanel>
+
+		<apex:outputPanel style="padding-top:15px;" layout="block" >
+			<table style="font-size:11pt;" >
+				<tr>
+					<td >
+						<b>Generated By : </b>Xactium Risk Manager
+					</td>
+					<td>
+						 <apex:outputText value="{!DateTime}" />
+					</td>
+				</tr>
+			</table>
+		</apex:outputPanel>
+	</body>
+</apex:page>

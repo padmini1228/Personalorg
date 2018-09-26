@@ -1,0 +1,38 @@
+<apex:page contentType="text/css">
+
+	.itemWait {
+		color:#D74C3B;
+		margin-left:5px;
+	}
+
+	.clear{
+		clear:both;
+	}
+
+	.filter{
+		border:solid 1px #99BADD;
+		width: 60%;
+		margin:0 auto;
+		margin-top:10px;
+		margin-bottom:10px;
+		padding-bottom:10px;
+		text-align:center;
+	}
+
+	.filter-header{
+		background-color: #99BADD;
+		font-weight: bold;
+		color: #ffffff;
+		padding: 3px;
+	}
+
+	.filter-section{
+		display:inline-block;
+		padding: 5px;
+	}
+
+	.filter-button{
+
+	}
+
+</apex:page>

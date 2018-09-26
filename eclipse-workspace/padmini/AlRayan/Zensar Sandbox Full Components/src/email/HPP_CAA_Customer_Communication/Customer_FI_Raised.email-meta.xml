@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email to Customer on raising of FI at Credit 1st Decision</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>Customer FI Raised</name>
+    <style>freeForm</style>
+    <subject>Al Rayan Bank property finance application update</subject>
+    <textOnly>Dear {!Account.Salutation} {!Account.FirstName} {!Account.LastName},
+
+Please find below an update on the progress of your application for property finance from Al Rayan Bank.
+
+The valuation report and credit documents have been reviewed by our Credit Underwriting team and they have requested further information to be able to provide a decision.
+
+A member of the team would get in touch with you within the next 3 working days.
+
+Please note that the time to provide a decision would be based on the time taken to receive the requested documents / clarifications.
+
+If you have any questions about this email or if you are aware of any issues that may prevent the completion of your case within the next 30 days, please do not hesitate to contact our Sales Support team on 0121 456 7878 or email salessupport@alrayanbank.co.uk, between 9.00am and 5.30pm, Monday to Friday.
+
+Kind regards
+
+Al Rayan Bank</textOnly>
+    <type>html</type>
+</EmailTemplate>

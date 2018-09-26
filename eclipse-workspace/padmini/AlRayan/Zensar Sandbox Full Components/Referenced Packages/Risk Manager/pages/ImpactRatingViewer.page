@@ -1,0 +1,109 @@
+<apex:page standardController="Risk__Scoring_Scheme__c" extensions="Risk.ImpactRatingAdmin" tabStyle="Risk__Scoring_Scheme__c">
+
+<apex:sectionHeader title="Scoring Scheme " subtitle="{!record.Name}" />
+<div class="ptBreadcrumb">&nbsp;&#171;&nbsp;<a href="{!URLFOR($Action.Scoring_Scheme__c.View,Scoring_Scheme__c.Id)}">Back to Scoring Scheme</a></div><br/>
+<style type="text/css">
+
+.ratingTable
+{
+    border: 1px solid #404040;
+    cursor: default;
+}
+
+.ratingTable td
+{
+    text-align: center;
+    padding: 2px;
+    border: 1px solid #404040;
+}
+
+</style>
+
+<apex:pageBlock title="{!$Label.risk__Probability} Rating">
+
+    <apex:outputPanel >
+    <table class="ratingTable" cellpadding="0" cellspacing="0">
+
+        <apex:repeat value="{!probRows}" var="row">
+            <tr>
+                <apex:repeat value="{!row.cells}" var="cell">
+                    <td id="{!cell.id}" class="{!cell.className}" style="{!cell.style}" colspan="{!cell.colSpan}">
+                        &nbsp;<apex:outputText value="{!cell.content}" rendered="{!!cell.hasResult}" />
+
+                        <apex:outputPanel id="input" rendered="{!cell.hasResult}">
+                            <apex:outputPanel id="fromToValue">
+                                <apex:outputLabel value="From" style="float: left;" />
+                                	<div style="width: 200px; float: right; text-align: left;">
+                                		<apex:outputText value="{0, number, integer}" >
+                                			<apex:param value="{!cell.result.Risk__From_Value__c}" />
+                                		</apex:outputText>
+                                	</div>
+                                <br /><br />
+                                <apex:outputLabel value="To" style="float: left;" />
+                                	<div style="width: 200px; float: right; text-align: left;">
+                                		<apex:outputText value="{0, number, integer}" >
+                                			<apex:param value="{!cell.result.Risk__To_Value__c}" />
+                                		</apex:outputText>
+                                	</div>
+                            </apex:outputPanel>
+                            <br /><br />
+                            <apex:outputLabel value="Description" style="float: left;" /><div style="width: 200px; float: right; text-align: left;">{!cell.result.Description__c}</div>
+                            <div style="clear: both;" />
+                        </apex:outputPanel>
+
+                    </td>
+                </apex:repeat>
+            </tr>
+        </apex:repeat>
+
+    </table>
+
+    </apex:outputPanel>
+
+</apex:pageBlock>
+
+
+
+<apex:pageBlock title="{!$Label.risk__Impact} Rating">
+
+    <apex:outputPanel >
+    <table class="ratingTable" cellpadding="0" cellspacing="0">
+
+        <apex:repeat value="{!impactRows}" var="row">
+            <tr>
+                <apex:repeat value="{!row.cells}" var="cell">
+                    <td id="{!cell.id}" class="{!cell.className}" style="{!cell.style}" colspan="{!cell.colSpan}">
+                        &nbsp;<apex:outputText value="{!cell.content}" rendered="{!!cell.hasResult}" />
+
+                        <apex:outputPanel id="inputI" rendered="{!cell.hasResult}">
+                            <apex:outputPanel id="fromToValue">
+                                <apex:outputLabel value="From" style="float: left;" />
+                               	<div style="width: 200px; float: right; text-align: left;">
+                                	<apex:outputText value="{0, number, integer}" >
+                                		<apex:param value="{!cell.result.Risk__From_Value__c}" />
+                                	</apex:outputText>
+                                </div>
+                                <br /><br />
+                                <apex:outputLabel value="To" style="float: left;" />
+                                <div style="width: 200px; float: right; text-align: left;">
+                                	<apex:outputText value="{0, number, integer}" >
+                                		<apex:param value="{!cell.result.Risk__To_Value__c}" />
+                                	</apex:outputText>
+                                </div>
+                            </apex:outputPanel>
+                            <br /><br />
+                            <apex:outputLabel value="Description" style="float: left;" /><div style="width: 200px; float: right; text-align: left;">{!cell.result.Description__c}</div>
+                            <div style="clear: both;" />
+                        </apex:outputPanel>
+                    </td>
+                </apex:repeat>
+            </tr>
+        </apex:repeat>
+
+    </table>
+
+    </apex:outputPanel>
+
+</apex:pageBlock>
+
+</apex:page>

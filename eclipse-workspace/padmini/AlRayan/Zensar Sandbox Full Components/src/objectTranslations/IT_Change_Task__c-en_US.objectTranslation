@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>IT &amp; Change Task</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>IT &amp; Change Tasks</value>
+    </caseValues>
+    <fields>
+        <label><!-- Application --></label>
+        <name>Application__c</name>
+        <picklistValues>
+            <masterLabel>CAA</masterLabel>
+            <translation><!-- CAA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DocuGen</masterLabel>
+            <translation><!-- DocuGen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engage</masterLabel>
+            <translation><!-- Engage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP CAA</masterLabel>
+            <translation><!-- HPP CAA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IBB to MAR messaging</masterLabel>
+            <translation><!-- IBB to MAR messaging --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IVR</masterLabel>
+            <translation><!-- IVR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NPAA</masterLabel>
+            <translation><!-- NPAA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online Banking</masterLabel>
+            <translation><!-- Online Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard Salesforce</masterLabel>
+            <translation><!-- Standard Salesforce --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Assigned to --></label>
+        <name>Assigned_to__c</name>
+        <relationshipLabel><!-- IT &amp; Change Tasks (Assigned to) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Business impact --></label>
+        <name>Business_impact__c</name>
+        <picklistValues>
+            <masterLabel>Critical</masterLabel>
+            <translation><!-- Critical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>Audit issue: level A</masterLabel>
+            <translation><!-- Audit issue: level A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Audit issue: level B</masterLabel>
+            <translation><!-- Audit issue: level B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Audit issue: level C</masterLabel>
+            <translation><!-- Audit issue: level C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enhancement</masterLabel>
+            <translation><!-- Enhancement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal department finding</masterLabel>
+            <translation><!-- Internal department finding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Problem</masterLabel>
+            <translation><!-- Problem --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Change request case --></label>
+        <name>Change_request_case__c</name>
+        <relationshipLabel><!-- IT &amp; Change Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer impact --></label>
+        <name>Customer_impact__c</name>
+        <picklistValues>
+            <masterLabel>Critical</masterLabel>
+            <translation><!-- Critical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Date Completed --></label>
+        <name>Date_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Deployed --></label>
+        <name>Date_Deployed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Started --></label>
+        <name>Date_Started__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date required by --></label>
+        <name>Date_required_by__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Development environment --></label>
+        <name>Development_environment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Completion Date --></label>
+        <name>Estimated_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of days to Complete --></label>
+        <name>No_of_days_to_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous change reference --></label>
+        <name>Previous_change_reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>Project__c</name>
+        <relationshipLabel><!-- IT &amp; Change Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Raised by --></label>
+        <name>Raised_by__c</name>
+        <relationshipLabel><!-- IT &amp; Change Tasks (Raised by) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sandbox --></label>
+        <name>Sandbox__c</name>
+        <relationshipLabel><!-- IT &amp; Change Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Schedule reference --></label>
+        <name>Schedule_reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- System --></label>
+        <name>Service_Application__c</name>
+        <picklistValues>
+            <masterLabel>.Net</masterLabel>
+            <translation><!-- .Net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASP</masterLabel>
+            <translation><!-- ASP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASP.Net</masterLabel>
+            <translation><!-- ASP.Net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BizTalk</masterLabel>
+            <translation><!-- BizTalk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DHCP</masterLabel>
+            <translation><!-- DHCP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Domain controller</masterLabel>
+            <translation><!-- Domain controller --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EBA</masterLabel>
+            <translation><!-- EBA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EBS</masterLabel>
+            <translation><!-- EBS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exchange</masterLabel>
+            <translation><!-- Exchange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IFM</masterLabel>
+            <translation><!-- IFM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MIMIX</masterLabel>
+            <translation><!-- MIMIX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Netapp</masterLabel>
+            <translation><!-- Netapp --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Voice Media</masterLabel>
+            <translation><!-- New Voice Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFDC</masterLabel>
+            <translation><!-- SFDC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SQL Server</masterLabel>
+            <translation><!-- SQL Server --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Server</masterLabel>
+            <translation><!-- Server --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Websense</masterLabel>
+            <translation><!-- Websense --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed: Not actioned</masterLabel>
+            <translation><!-- Closed: Not actioned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deployed</masterLabel>
+            <translation><!-- Deployed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Descoped</masterLabel>
+            <translation><!-- Descoped --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In testing</masterLabel>
+            <translation><!-- In testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On hold</masterLabel>
+            <translation><!-- On hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready for testing</masterLabel>
+            <translation><!-- Ready for testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scheduled</masterLabel>
+            <translation><!-- Scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To be defined</masterLabel>
+            <translation><!-- To be defined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To be deployed</masterLabel>
+            <translation><!-- To be deployed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To be scheduled</masterLabel>
+            <translation><!-- To be scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>With third party</masterLabel>
+            <translation><!-- With third party --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Task Category --></label>
+        <name>Task_Category__c</name>
+        <picklistValues>
+            <masterLabel>Business Requirements</masterLabel>
+            <translation><!-- Business Requirements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Analysis</masterLabel>
+            <translation><!-- Data Analysis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Functional Specification</masterLabel>
+            <translation><!-- Functional Specification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Process Analysis</masterLabel>
+            <translation><!-- Process Analysis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Testing</masterLabel>
+            <translation><!-- Testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training</masterLabel>
+            <translation><!-- Training --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Task Derived From --></label>
+        <name>Task_Derived_From__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project</masterLabel>
+            <translation><!-- Project --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBC</masterLabel>
+            <translation><!-- SBC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Task Priority --></label>
+        <name>Task_Priority__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very High</masterLabel>
+            <translation><!-- Very High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Low</masterLabel>
+            <translation><!-- Very Low --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Task Status --></label>
+        <name>Task_Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In progress</masterLabel>
+            <translation><!-- In progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation><!-- Not Started --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Task Name --></label>
+        <name>Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Approved project/CAT</masterLabel>
+            <translation><!-- Approved project/CAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Defined error</masterLabel>
+            <translation><!-- Defined error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Defined requirement</masterLabel>
+            <translation><!-- Defined requirement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Idea</masterLabel>
+            <translation><!-- Idea --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ongoing tasks</masterLabel>
+            <translation><!-- Ongoing tasks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Undefined error</masterLabel>
+            <translation><!-- Undefined error --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Change Delivery Task</layout>
+        <sections>
+            <label><!-- Business Analysis Tasks --></label>
+            <section>Business Analysis Tasks</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Development list</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- References --></label>
+            <section>References</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>IT list</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- References --></label>
+            <section>References</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Business Analysis Tasks --></label>
+        <name>Change_Delivery_Tasks</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Development Tasks --></label>
+        <name>Development_Tasks</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- IT Tasks --></label>
+        <name>IT_Tasks</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email sent to credit/sales support when the valuation report has been received and attached to the opportunity</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>Valuation Report Received</name>
+    <style>freeForm</style>
+    <subject>Valuation Report Received for {!Valuation_Report__c.Opportunity__c}, {!Valuation_Report__c.New_property_street__c}</subject>
+    <type>html</type>
+</EmailTemplate>

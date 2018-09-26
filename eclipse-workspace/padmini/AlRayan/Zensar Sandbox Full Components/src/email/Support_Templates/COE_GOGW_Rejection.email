@@ -1,0 +1,8 @@
+Dear {!Receiving_User.FirstName} 
+
+Your cost of error / gesture of goodwill request has been rejected. For more information, please review the case below.  
+
+{!Case.Link} 
+
+Thanks
+IBB

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Transaction</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Transactions</value>
+    </caseValues>
+    <fields>
+        <label><!-- ACS Return URL --></label>
+        <name>ACS_Return_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- ACS Url --></label>
+        <name>ACS_Url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Type Description --></label>
+        <name>Account_Type_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Acquirer Response Code --></label>
+        <name>Acquirer_Response_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Acquirer Response Message --></label>
+        <name>Acquirer_Response_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auth Code --></label>
+        <name>Auth_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing - Amount --></label>
+        <name>Billing_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing - Currency Code --></label>
+        <name>Billing_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing - DCC Enabled --></label>
+        <name>Billing_DCC_Enabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing - Issuer Country --></label>
+        <name>Billing_Issuer_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing - PAN --></label>
+        <name>Billing_PAN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing - Payment Type --></label>
+        <name>Billing_Payment_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card --></label>
+        <name>Card__c</name>
+        <relationshipLabel><!-- Transactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Transactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Error - Code --></label>
+        <name>Error_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error - Message --></label>
+        <name>Error_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- MD Index --></label>
+        <name>MD_Index__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merchant Country ISO --></label>
+        <name>Merchant_Country_ISO__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merchant Name --></label>
+        <name>Merchant_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merchant Number --></label>
+        <name>Merchant_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merchant - Order Reference --></label>
+        <name>Merchant_Order_Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Transactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent Transaction Reference --></label>
+        <name>Parent_Transaction_Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pareq --></label>
+        <name>Pareq__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Reference --></label>
+        <name>Request_Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response Type --></label>
+        <name>Response_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secure Trading Response Timestamp --></label>
+        <name>Secure_Trading_Response_Timestamp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Security - Address Status Code --></label>
+        <name>Security_Address_Status_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Security - Address Status --></label>
+        <name>Security_Address_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Security - Postcode Status Code --></label>
+        <name>Security_Postcode_Status_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Security - Postcode Status --></label>
+        <name>Security_Postcode_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Security - Security Code Status Code --></label>
+        <name>Security_Security_Code_Status_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Security - Security Code Status --></label>
+        <name>Security_Security_Code_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Settle Status --></label>
+        <name>Settle_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Settlement - Settle Due Date --></label>
+        <name>Settlement_Settle_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Settlement - Settle Status Code --></label>
+        <name>Settlement_Settle_Status_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merchant - TID --></label>
+        <name>TID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Amount --></label>
+        <name>Transaction_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Complete --></label>
+        <name>Transaction_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Currency --></label>
+        <name>Transaction_Currency__c</name>
+        <picklistValues>
+            <masterLabel>EUR</masterLabel>
+            <translation><!-- EUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GBP</masterLabel>
+            <translation><!-- GBP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USD</masterLabel>
+            <translation><!-- USD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Transaction Date --></label>
+        <name>Transaction_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Description --></label>
+        <name>Transaction_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Reference --></label>
+        <name>Transaction_Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Type --></label>
+        <name>Transaction_Type__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- 3D Enrolled --></label>
+        <name>X3D_Enrolled__c</name>
+    </fields>
+    <fields>
+        <label><!-- 3D Secure Response --></label>
+        <name>X3D_Secure_Response__c</name>
+    </fields>
+    <fields>
+        <label><!-- cavv --></label>
+        <name>cavv__c</name>
+    </fields>
+    <fields>
+        <label><!-- eci --></label>
+        <name>eci__c</name>
+    </fields>
+    <fields>
+        <label><!-- md --></label>
+        <name>md__c</name>
+    </fields>
+    <fields>
+        <label><!-- pares --></label>
+        <name>pares__c</name>
+    </fields>
+    <fields>
+        <label><!-- status --></label>
+        <name>status__c</name>
+    </fields>
+    <fields>
+        <label><!-- xid --></label>
+        <name>xid__c</name>
+    </fields>
+    <layouts>
+        <layout>Transaction Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Secure Trading - Debug --></label>
+            <section>Secure Trading - Debug</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

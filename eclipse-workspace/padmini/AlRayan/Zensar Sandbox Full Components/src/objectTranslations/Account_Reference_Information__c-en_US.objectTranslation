@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Account Reference Information</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Account Reference Information</value>
+    </caseValues>
+    <fields>
+        <label><!-- Credit Transaction Code --></label>
+        <name>Credit_Transaction_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Transaction Narritive --></label>
+        <name>Credit_Transaction_Narritive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debit Transaction Code --></label>
+        <name>Debit_Transaction_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debit Transaction Narritive --></label>
+        <name>Debit_Transaction_Narritive__c</name>
+    </fields>
+    <fields>
+        <label><!-- IBB Credit Acc # / We Pay Funds Via --></label>
+        <name>IBB_Credit_Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- IBB Debit Acc # / We Rec Funds From --></label>
+        <name>IBB_Debit_Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- ISO Currency Code --></label>
+        <name>ISO_Currency_Code__c</name>
+        <picklistValues>
+            <masterLabel>EUR</masterLabel>
+            <translation><!-- EUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GBP</masterLabel>
+            <translation><!-- GBP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USD</masterLabel>
+            <translation><!-- USD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payment Type --></label>
+        <name>Payment_Type__c</name>
+        <picklistValues>
+            <masterLabel>Ad hoc valuation</masterLabel>
+            <translation><!-- Ad hoc valuation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AdminFeeFull</masterLabel>
+            <translation><!-- AdminFeeFull --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AdminFeeFullExternalTransfer</masterLabel>
+            <translation><!-- AdminFeeFullExternalTransfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AdminFeeFullInternalTransfer</masterLabel>
+            <translation><!-- AdminFeeFullInternalTransfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AdminFeeInitial</masterLabel>
+            <translation><!-- AdminFeeInitial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AdminFeeInitialExternalTransfer</masterLabel>
+            <translation><!-- AdminFeeInitialExternalTransfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AdminFeeInitialInternalTransfer</masterLabel>
+            <translation><!-- AdminFeeInitialInternalTransfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bank Transfer</masterLabel>
+            <translation><!-- Bank Transfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash</masterLabel>
+            <translation><!-- Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cheque</masterLabel>
+            <translation><!-- Cheque --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Copies of correspondence</masterLabel>
+            <translation><!-- Copies of correspondence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Copies of statement</masterLabel>
+            <translation><!-- Copies of statement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Copies of title deeds</masterLabel>
+            <translation><!-- Copies of title deeds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debit Card</masterLabel>
+            <translation><!-- Debit Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Debit: Lump sum</masterLabel>
+            <translation><!-- Direct Debit: Lump sum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Faster payments</masterLabel>
+            <translation><!-- Faster payments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inter Account Transfer to</masterLabel>
+            <translation><!-- Inter Account Transfer to --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal costs</masterLabel>
+            <translation><!-- Legal costs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post abandon legal fees</masterLabel>
+            <translation><!-- Post abandon legal fees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ProductSwitchFee</masterLabel>
+            <translation><!-- ProductSwitchFee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ProductSwitchFeeExternalTransfer</masterLabel>
+            <translation><!-- ProductSwitchFeeExternalTransfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ProductSwitchFeeInternalTransfer</masterLabel>
+            <translation><!-- ProductSwitchFeeInternalTransfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Re-inspections</masterLabel>
+            <translation><!-- Re-inspections --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Re-issue of offer letter</masterLabel>
+            <translation><!-- Re-issue of offer letter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redemption</masterLabel>
+            <translation><!-- Redemption --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redemption statement after the first</masterLabel>
+            <translation><!-- Redemption statement after the first --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special delivery eg overseas</masterLabel>
+            <translation><!-- Special delivery eg overseas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ValuationFee</masterLabel>
+            <translation><!-- ValuationFee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ValuationFeeAssisted</masterLabel>
+            <translation><!-- ValuationFeeAssisted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ValuationFeeAssistedExternalTransfer</masterLabel>
+            <translation><!-- ValuationFeeAssistedExternalTransfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ValuationFeeAssistedInternalTransfer</masterLabel>
+            <translation><!-- ValuationFeeAssistedInternalTransfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ValuationFeeDiscounted</masterLabel>
+            <translation><!-- ValuationFeeDiscounted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ValuationFeeExternalTransfer</masterLabel>
+            <translation><!-- ValuationFeeExternalTransfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ValuationFeeInternalTransfer</masterLabel>
+            <translation><!-- ValuationFeeInternalTransfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Via CHAPS</masterLabel>
+            <translation><!-- Via CHAPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Via SWIFT</masterLabel>
+            <translation><!-- Via SWIFT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Via bankers payment</masterLabel>
+            <translation><!-- Via bankers payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Via demand draft</masterLabel>
+            <translation><!-- Via demand draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Via mail transfer</masterLabel>
+            <translation><!-- Via mail transfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Via payment order</masterLabel>
+            <translation><!-- Via payment order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Via telegraphic transfer</masterLabel>
+            <translation><!-- Via telegraphic transfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Via telex</masterLabel>
+            <translation><!-- Via telex --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Request Type --></label>
+        <name>Request_Type__c</name>
+    </fields>
+    <layouts>
+        <layout>External user</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

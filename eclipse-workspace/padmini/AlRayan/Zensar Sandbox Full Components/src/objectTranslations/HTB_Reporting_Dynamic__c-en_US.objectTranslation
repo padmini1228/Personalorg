@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>HTB Reporting Dynamic</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>HTB Reporting Dynamic</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account status --></label>
+        <name>Account_status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Action Code --></label>
+        <name>Action_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Arrears balance --></label>
+        <name>Arrears_balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Behavioural EAD --></label>
+        <name>Behavioural_EAD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Behavioural LGD --></label>
+        <name>Behavioural_LGD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Behavioural PD --></label>
+        <name>Behavioural_PD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brand --></label>
+        <name>Brand__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collections status --></label>
+        <name>Collections_status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current LTV --></label>
+        <name>Current_LTV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Product Rate Type --></label>
+        <name>Current_Product_Rate_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current balance --></label>
+        <name>Current_balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current exposure --></label>
+        <name>Current_exposure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current interest rate --></label>
+        <name>Current_interest_rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer payment amount --></label>
+        <name>Customer_payment_amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default date --></label>
+        <name>Default_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- EBS ID --></label>
+        <name>EBS_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- HTB Reporting Month --></label>
+        <name>HTB_Reporting_Month__c</name>
+        <relationshipLabel><!-- HTB Reporting Dynamics --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- HTB Reporting Static --></label>
+        <name>HTB_Reporting_Static__c</name>
+        <relationshipLabel><!-- HTB Reporting Dynamic --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Indexed property value --></label>
+        <name>Indexed_property_value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lender --></label>
+        <name>Lender__c</name>
+    </fields>
+    <fields>
+        <label><!-- Months in arrears --></label>
+        <name>Months_in_arrears__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment due --></label>
+        <name>Payment_due__c</name>
+    </fields>
+    <fields>
+        <label><!-- Possession date --></label>
+        <name>Possession_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Potential Impairment Indicators 1 --></label>
+        <name>Potential_Impairment_Indicators_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Potential Impairment Indicators 2 --></label>
+        <name>Potential_Impairment_Indicators_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Potential Impairment Indicators 3 --></label>
+        <name>Potential_Impairment_Indicators_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Potential Impairment Indicators 4 --></label>
+        <name>Potential_Impairment_Indicators_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Potential Impairment Indicators 5 --></label>
+        <name>Potential_Impairment_Indicators_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Potential Impairment Indicators 6 --></label>
+        <name>Potential_Impairment_Indicators_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Potential Impairment Indicators 7 --></label>
+        <name>Potential_Impairment_Indicators_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recovered monies after claim --></label>
+        <name>Recovered_monies_after_claim__c</name>
+    </fields>
+    <fields>
+        <label><!-- Redemption date --></label>
+        <name>Redemption_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remaining term --></label>
+        <name>Remaining_term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reporting month --></label>
+        <name>Reporting_month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unique Reference --></label>
+        <name>Unique_Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opp Stage Name --></label>
+        <name>oppStageName__c</name>
+    </fields>
+    <layouts>
+        <layout>HTB Reporting Dynamic Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

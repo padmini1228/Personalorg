@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>HPP Offer Letter Expiry</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>HPP Offer Letter Expiry</value>
+    </caseValues>
+    <fields>
+        <label><!-- CaseCategory --></label>
+        <name>CaseCategory__c</name>
+    </fields>
+    <fields>
+        <label><!-- CaseDescription --></label>
+        <name>CaseDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- CaseOrigin --></label>
+        <name>CaseOrigin__c</name>
+    </fields>
+    <fields>
+        <label><!-- CasePriority --></label>
+        <name>CasePriority__c</name>
+    </fields>
+    <fields>
+        <label><!-- CaseQueue --></label>
+        <name>CaseQueue__c</name>
+    </fields>
+    <fields>
+        <label><!-- CaseRecordType --></label>
+        <name>CaseRecordType__c</name>
+    </fields>
+    <fields>
+        <label><!-- CaseSubject --></label>
+        <name>CaseSubject__c</name>
+    </fields>
+    <fields>
+        <label><!-- ExpiryNumberOfDays --></label>
+        <name>ExpiryNumberOfDays__c</name>
+    </fields>
+    <fields>
+        <label><!-- PerformExpiry --></label>
+        <name>PerformExpiry__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

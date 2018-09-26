@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email sent to BDM when pre-valuation decision is declined</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>Declined Pre-valuation Decision</name>
+    <style>freeForm</style>
+    <subject>Pre-valuation Decision Declined</subject>
+    <textOnly>Dear {!Opportunity.Seller__c}
+
+The pre-valuation decision has been declined for {!Opportunity.Name} , please click on the link below to view the opportunity:
+
+{!Opportunity.Link}
+
+Please arrange a refund of the valuation fee by raising a HPP fees refund case.</textOnly>
+    <type>html</type>
+</EmailTemplate>

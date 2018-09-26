@@ -1,0 +1,1020 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <content>IBBProductSuitabilityEdit</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <content>IBBProductSuitabilityTab</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <content>IBBProductSuitabilityView</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Access_to_Funds__c</fullName>
+        <externalId>false</externalId>
+        <label>What access do you require?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Fixed Term</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Instant Access</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Withdrawal with Notice</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Allow_CCJ_Bankruptcy__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Allow CCJ/Bankruptcy</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Allow_Non_UK__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Allow Non-UK Applicant</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Apply_Online__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Apply Online</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Buy_to_Let_rental_amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Buy to Let rental amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Category_of_Product__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( IBB_Product__r.Category_of_Product__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Category of Product</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Channel__c</fullName>
+        <externalId>false</externalId>
+        <label>Channel</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Existing customer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Intermediary</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Branch Network</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Exclusive</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Internet Only</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>How_many_incomes_can_be_used__c</fullName>
+        <externalId>false</externalId>
+        <label>How many incomes can be used</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IBB_Product_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>IBB_Product__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IBB Product Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IBB_Product__c</fullName>
+        <externalId>false</externalId>
+        <label>IBB Product</label>
+        <referenceTo>IBB_Product__c</referenceTo>
+        <relationshipName>IBB_Product_Suitability</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Income_Multiplier__c</fullName>
+        <externalId>false</externalId>
+        <label>Income Multiplier</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lending_area__c</fullName>
+        <externalId>false</externalId>
+        <label>Lending area</label>
+        <picklist>
+            <picklistValues>
+                <fullName>England &amp; Wales</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Scotland</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Limited_company__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Limited Company</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Max_Finance_Income_Multiplier__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Income_Multiplier__c&gt;0, Maximum_finance_amounts__c /  Income_Multiplier__c,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Max Finance / Income Multiplier</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Maximum_BTL_Properties__c</fullName>
+        <externalId>false</externalId>
+        <label>Maximum BTL Properties</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Maximum_FTV__c</fullName>
+        <externalId>false</externalId>
+        <label>Maximum FTV%</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Maximum_Finance_Term_Years__c</fullName>
+        <externalId>false</externalId>
+        <label>Maximum Finance Term (Years)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Maximum_age__c</fullName>
+        <externalId>false</externalId>
+        <label>Maximum age</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Maximum_deposit_amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Maximum deposit amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Maximum_finance_amounts__c</fullName>
+        <externalId>false</externalId>
+        <label>Maximum finance amounts</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Maximum_withdrawl_amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Maximum withdrawl amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Minimum_Finance_Term_Years__c</fullName>
+        <externalId>false</externalId>
+        <label>Minimum Finance Term (Years)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Minimum_Purchase_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>Minimum Purchase Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Minimum_age__c</fullName>
+        <externalId>false</externalId>
+        <label>Minimum age</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Minimum_deposit_amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Minimum deposit amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Minimum_finance_amounts__c</fullName>
+        <externalId>false</externalId>
+        <label>Minimum finance amounts</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Minimum_withdrawl_amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Minimum withdrawl amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Number_of_applicants__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of applicants</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_withdrawls_allowed__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of withdrawls allowed</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Purpose_of_Account__c</fullName>
+        <description>Field to use in Product Select screen</description>
+        <externalId>false</externalId>
+        <label>Purpose of Account</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Pay everyday bills</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Receive benefits</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Long Term Savings</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Special Occasion Savings/Expenses</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Property Savings/Expenses</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>College/Student Savings/Expenses</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Require_property_to_be_main_residence__c</fullName>
+        <externalId>false</externalId>
+        <label>Require property to be main residence?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Show_On_BAA__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Show On BAA</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Show_On_Liabilities_External__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Show On Liabilities External</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Show_On_Liabilities__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Show On Liabilities</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Suitable_Employment_Types__c</fullName>
+        <externalId>false</externalId>
+        <label>Suitable Employment Types</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Employed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Retired</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Student</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Part time</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Unemployed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Homemaker</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Temporary Employment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Self Employed Professional</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Self Employed non-professional</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Suitable_Property_Types__c</fullName>
+        <externalId>false</externalId>
+        <label>Suitable Property Types</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Council property</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ex- council property</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Privately Owned.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shared Ownership</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Housing Association</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Flat (not retirement flat)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Type_of_Finance__c</fullName>
+        <externalId>false</externalId>
+        <label>Type of Finance</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Re-finance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Purchase</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Release additional capital</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>On shore</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Off shore</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Type_of_Product__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(IBB_Product__r.Type_of_Product__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Type of Product</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Product Suitability</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>IBB_Product__c</columns>
+        <columns>Number_of_applicants__c</columns>
+        <columns>Show_On_Liabilities__c</columns>
+        <columns>Show_On_Liabilities_External__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>IBB_Product_Suitability__c.Suitability_Liab</value>
+        </filters>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>{000000}</displayFormat>
+        <label>Ref</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Product Suitability</pluralLabel>
+    <recordTypes>
+        <fullName>Asset_Suitability</fullName>
+        <active>true</active>
+        <description>Suitability for assets</description>
+        <label>Asset Suitability</label>
+        <picklistValues>
+            <picklist>Access_to_Funds__c</picklist>
+            <values>
+                <fullName>Fixed Term</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instant Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Withdrawal with Notice</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Channel__c</picklist>
+            <values>
+                <fullName>Branch Network</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exclusive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intermediary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internet Only</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lending_area__c</picklist>
+            <values>
+                <fullName>England %26 Wales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scotland</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Purpose_of_Account__c</picklist>
+            <values>
+                <fullName>College%2FStudent Savings%2FExpenses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Long Term Savings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pay everyday bills</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Property Savings%2FExpenses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Receive benefits</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Special Occasion Savings%2FExpenses</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Require_property_to_be_main_residence__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Suitable_Employment_Types__c</picklist>
+            <values>
+                <fullName>Employed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Homemaker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Part time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self Employed Professional</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self Employed non-professional</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Student</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Temporary Employment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unemployed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Suitable_Property_Types__c</picklist>
+            <values>
+                <fullName>Council property</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ex- council property</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flat %28not retirement flat%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Housing Association</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Privately Owned%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shared Ownership</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Finance__c</picklist>
+            <values>
+                <fullName>Off shore</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On shore</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Re-finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Release additional capital</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Suitability_Liab</fullName>
+        <active>true</active>
+        <description>For use with liability products</description>
+        <label>Suitability Liab</label>
+        <picklistValues>
+            <picklist>Access_to_Funds__c</picklist>
+            <values>
+                <fullName>Fixed Term</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instant Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Withdrawal with Notice</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Channel__c</picklist>
+            <values>
+                <fullName>Branch Network</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exclusive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intermediary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internet Only</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lending_area__c</picklist>
+            <values>
+                <fullName>England %26 Wales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scotland</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Purpose_of_Account__c</picklist>
+            <values>
+                <fullName>College%2FStudent Savings%2FExpenses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Long Term Savings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pay everyday bills</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Property Savings%2FExpenses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Receive benefits</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Special Occasion Savings%2FExpenses</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Require_property_to_be_main_residence__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Suitable_Employment_Types__c</picklist>
+            <values>
+                <fullName>Employed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Homemaker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Part time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self Employed Professional</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self Employed non-professional</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Student</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Temporary Employment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unemployed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Suitable_Property_Types__c</picklist>
+            <values>
+                <fullName>Council property</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ex- council property</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flat %28not retirement flat%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Housing Association</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Privately Owned%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shared Ownership</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Finance__c</picklist>
+            <values>
+                <fullName>Off shore</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On shore</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Re-finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Release additional capital</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <excludedStandardButtons>Forward</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
+</CustomObject>

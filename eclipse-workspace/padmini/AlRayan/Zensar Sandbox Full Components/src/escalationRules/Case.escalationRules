@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EscalationRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <escalationRule>
+        <fullName>IT Cases</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <businessHours>IBB - Business Hours</businessHours>
+            <businessHoursSource>Static</businessHoursSource>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>IT Standard,IT System Access</value>
+            </criteriaItems>
+            <escalationAction>
+                <minutesToEscalation>960</minutesToEscalation>
+                <notifyCaseOwner>false</notifyCaseOwner>
+                <notifyTo>imran.rashid@alrayanbank.co.uk</notifyTo>
+                <notifyToTemplate>Support_Templates/Escalation_of_Case</notifyToTemplate>
+            </escalationAction>
+            <escalationStartTime>CaseCreation</escalationStartTime>
+        </ruleEntry>
+    </escalationRule>
+</EscalationRules>

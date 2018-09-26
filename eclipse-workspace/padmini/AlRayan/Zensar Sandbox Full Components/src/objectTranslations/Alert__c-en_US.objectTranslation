@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Alert</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Alerts</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alert Type --></label>
+        <name>Alert_Type__c</name>
+        <picklistValues>
+            <masterLabel>Financial Difficulties</masterLabel>
+            <translation><!-- Financial Difficulties --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General</masterLabel>
+            <translation><!-- General --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Security</masterLabel>
+            <translation><!-- Security --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warning</masterLabel>
+            <translation><!-- Warning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Alert --></label>
+        <name>Alert__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiry Date --></label>
+        <name>Expiry_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legacy Alert ID --></label>
+        <name>Legacy_Alert_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prospect/Customer --></label>
+        <name>Prospect_Customer__c</name>
+        <relationshipLabel><!-- Alerts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reason --></label>
+        <name>Reason__c</name>
+        <picklistValues>
+            <masterLabel>Approaching financial difficulty &amp; breathing space provided</masterLabel>
+            <translation><!-- Approaching financial difficulty &amp; breathing space provided --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Awaiting to be offered forbearance arrangement</masterLabel>
+            <translation><!-- Awaiting to be offered forbearance arrangement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Awaiting to be offered repayment plan</masterLabel>
+            <translation><!-- Awaiting to be offered repayment plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In financial difficulty &amp; breathing space provided</masterLabel>
+            <translation><!-- In financial difficulty &amp; breathing space provided --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On repayment plan</masterLabel>
+            <translation><!-- On repayment plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post Forbearance</masterLabel>
+            <translation><!-- Post Forbearance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under forbearance arrangement</masterLabel>
+            <translation><!-- Under forbearance arrangement --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Special Circumstance --></label>
+        <name>Special_Circumstance__c</name>
+    </fields>
+    <layouts>
+        <layout>Alert Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>FCU Alert</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- FCU Alerts --></label>
+        <name>FCU_Alerts</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Non FCU Alerts --></label>
+        <name>Non_FCU_Alerts</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

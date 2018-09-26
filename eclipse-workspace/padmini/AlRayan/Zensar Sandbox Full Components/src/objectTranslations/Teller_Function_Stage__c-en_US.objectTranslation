@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Teller Function Stage</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Teller Function Stages</value>
+    </caseValues>
+    <fields>
+        <label><!-- Always Show --></label>
+        <name>Always_Show__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto Execute --></label>
+        <name>Auto_Execute__c</name>
+    </fields>
+    <fields>
+        <label><!-- Failure Button Title --></label>
+        <name>Failure_Button_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Keep On Screen --></label>
+        <name>Keep_On_Screen__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Stage --></label>
+        <name>Last_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mapping Section Name --></label>
+        <name>Mapping_Section_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mapping Stage Name --></label>
+        <name>Mapping_Stage_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Button Title --></label>
+        <name>Next_Button_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Button Routing --></label>
+        <name>Previous_Button_Routing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Button Title --></label>
+        <name>Previous_Button_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Print Type --></label>
+        <name>Print_Type__c</name>
+        <picklistValues>
+            <masterLabel>After host</masterLabel>
+            <translation><!-- After host --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before host</masterLabel>
+            <translation><!-- Before host --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Process Function --></label>
+        <name>Process_Function__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Previous Button --></label>
+        <name>Show_Previous_Button__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage Order --></label>
+        <name>Stage_Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Successful Page Routing --></label>
+        <name>Successful_Page_Routing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Teller_Function_Root --></label>
+        <name>Teller_Function_Root__c</name>
+        <relationshipLabel><!-- Teller Function Stages --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Teller Function Stage Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

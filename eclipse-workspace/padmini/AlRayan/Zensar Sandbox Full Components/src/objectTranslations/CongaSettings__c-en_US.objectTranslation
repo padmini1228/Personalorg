@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>DocuGenSetting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>DocuGenSettings</value>
+    </caseValues>
+    <fields>
+        <label><!-- Conga URL --></label>
+        <name>Conga_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- By default DocuGen will save the document with the template name, this can be overidden by entering a different name in this field --></help>
+        <label><!-- Document name --></label>
+        <name>Document_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Offer Letter --></label>
+        <name>Is_Offer_Letter__c</name>
+    </fields>
+    <fields>
+        <help><!-- Must be ticked if the document output when merged is to be in word format. If this is not ticked, the document output will be in PDF format --></help>
+        <label><!-- Output As Word --></label>
+        <name>Output_As_Word__c</name>
+    </fields>
+    <fields>
+        <label><!-- Queries --></label>
+        <name>Queries__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reports --></label>
+        <name>Reports__c</name>
+    </fields>
+    <fields>
+        <help><!-- This must be ticked for offer letter settings only --></help>
+        <label><!-- SplitMerge --></label>
+        <name>SplitMerge__c</name>
+    </fields>
+    <fields>
+        <label><!-- Templates --></label>
+        <name>Templates__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Docugen --></label>
+        <name>Use_Docugen__c</name>
+    </fields>
+    <layouts>
+        <layout>CongaSetting Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Restricted External Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Configure --></label>
+        <name>Configure</name>
+    </webLinks>
+</CustomObjectTranslation>

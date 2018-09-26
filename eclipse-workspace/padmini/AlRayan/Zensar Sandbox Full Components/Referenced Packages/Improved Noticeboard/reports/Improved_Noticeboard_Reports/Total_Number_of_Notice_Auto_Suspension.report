@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>Notice__c.NoticeStatus__c</field>
+    </columns>
+    <columns>
+        <field>Notice__c.ApprovalRequestSubmittedDate__c</field>
+    </columns>
+    <columns>
+        <field>Notice__c.AutoPublishDate__c</field>
+    </columns>
+    <columns>
+        <field>Notice__c.AutoSuspendDate__c</field>
+    </columns>
+    <description>Sample Report - How many Notices are waiting for Suspension?</description>
+    <filter>
+        <criteriaItems>
+            <column>Notice__c.SuspensionOption__c</column>
+            <operator>equals</operator>
+            <value>Scheduled</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Notice__c.AutoSuspendCountdownDays__c</column>
+            <operator>lessOrEqual</operator>
+            <value>0</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Total Number of Notice Auto-Suspension</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Notice__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

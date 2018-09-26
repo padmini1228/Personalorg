@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_letterhead</letterhead>
+    <name>CPF Insurance Expired 1 Week Ago</name>
+    <style>freeForm</style>
+    <subject>CPF Insurance {!CPF_Property__c.Opportunity__c} expired 1 Week ago</subject>
+    <textOnly>Insurance for Opportunity {!CPF_Property__c.Opportunity__c} expired on the {!CPF_Property__c.Insurance_expiry_date__c}
+
+Name - {!Opportunity.Account}
+
+Link to Opportunity - {!Opportunity.Link}</textOnly>
+    <type>html</type>
+</EmailTemplate>

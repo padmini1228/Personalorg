@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>CAT Request awaiting approval to present to CAT</name>
+    <style>freeForm</style>
+    <subject>CAT Request awaiting approval to present to CAT</subject>
+    <textOnly>Dear {!ApprovalRequest.Process_Approver}
+
+The following change request has been raised for your approval. Please review and approve so it can be discussed at the next CAB meeting.
+
+{!Case.Link}
+{!Case.Subject}
+
+Thanks
+
+Change Delivery Team</textOnly>
+    <type>html</type>
+</EmailTemplate>

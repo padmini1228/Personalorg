@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Teller Depository</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Teller_Depository</value>
+    </caseValues>
+    <fields>
+        <label><!-- Accept Date --></label>
+        <name>Accept_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accept User --></label>
+        <name>Accept_User__c</name>
+        <relationshipLabel><!-- Teller_Depository (Accept User) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Branch Name --></label>
+        <name>Branch_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch --></label>
+        <name>Branch__c</name>
+        <relationshipLabel><!-- Teller_Depository --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cash Limit Percentage --></label>
+        <name>Cash_Limit_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash Limit --></label>
+        <name>Cash_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash --></label>
+        <name>Cash__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cheques Value --></label>
+        <name>Cheques_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currencies --></label>
+        <name>Currencies__c</name>
+        <picklistValues>
+            <masterLabel>EUR</masterLabel>
+            <translation><!-- EUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GBP</masterLabel>
+            <translation><!-- GBP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QAR</masterLabel>
+            <translation><!-- QAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USD</masterLabel>
+            <translation><!-- USD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Currency --></label>
+        <name>Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decline Date --></label>
+        <name>Decline_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decline User --></label>
+        <name>Decline_User__c</name>
+        <relationshipLabel><!-- Teller_Depository (Decline User) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- No Of Cheques --></label>
+        <name>No_Of_Cheques__c</name>
+    </fields>
+    <fields>
+        <label><!-- Num Cheques --></label>
+        <name>Num_Cheques__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out of Service</masterLabel>
+            <translation><!-- Out of Service --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Storage Type --></label>
+        <name>Storage_Type__c</name>
+        <picklistValues>
+            <masterLabel>Till</masterLabel>
+            <translation><!-- Till --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vault</masterLabel>
+            <translation><!-- Vault --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total GBP Cash Value --></label>
+        <name>Total_Cash_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total USD Cash Value --></label>
+        <name>Total_USD_Cash_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Value of EUR Denomination --></label>
+        <name>Total_Value_of_EUR_Denomination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Value of QAR Denomination --></label>
+        <name>Total_Value_of_QAR_Denomination__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Logged In --></label>
+        <name>User_Logged_In__c</name>
+        <relationshipLabel><!-- Teller_Depository (User Logged In) --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Teller Setup Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Teller_Money_Storage Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Credit Score</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Credit Scores</value>
+    </caseValues>
+    <fields>
+        <label><!-- Accepted Facilities --></label>
+        <name>Accepted_Facilities__c</name>
+    </fields>
+    <fields>
+        <label><!-- DecisionEnginePerformed --></label>
+        <name>DecisionEnginePerformed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decision ID --></label>
+        <name>Decision_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decision Reason --></label>
+        <name>Decision_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decision --></label>
+        <name>Decision__c</name>
+    </fields>
+    <fields>
+        <label><!-- EBS Number --></label>
+        <name>EBS_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Indebtedness Score --></label>
+        <name>Indebtedness_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- MG Score --></label>
+        <name>MG_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Credit Scores --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Prospect/Customer --></label>
+        <name>Prospect_Customer__c</name>
+        <relationshipLabel><!-- Credit Scores --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rejected Facilities --></label>
+        <name>Rejected_Facilities__c</name>
+    </fields>
+    <fields>
+        <label><!-- SupplierScore --></label>
+        <name>SupplierScore__c</name>
+    </fields>
+    <layouts>
+        <layout>Credit Score Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>External user</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- XML_Viewer --></label>
+        <name>XML_Viewer</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- XML_Viewer2 --></label>
+        <name>XML_Viewer2</name>
+    </webLinks>
+</CustomObjectTranslation>

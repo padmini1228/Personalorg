@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Deployment Plan</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Deployment Plans</value>
+    </caseValues>
+    <fields>
+        <help><!-- List apex classes to be deployed --></help>
+        <label><!-- Apex Classes --></label>
+        <name>Apex_Classes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Communications Completed By --></label>
+        <name>Business_Communications_Completed_By__c</name>
+        <relationshipLabel><!-- Deployment Plans (Business Communications Completed By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Business Communications Completed Date --></label>
+        <name>Business_Communications_Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Communications Details --></label>
+        <name>Business_Communications_Details__c</name>
+    </fields>
+    <fields>
+        <help><!-- New buttons and links to be created in Production --></help>
+        <label><!-- Buttons and Links --></label>
+        <name>Buttons_and_Links__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Customer setting updated/created in Production --></help>
+        <label><!-- Custom Settings --></label>
+        <name>Custom_Settings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deployment Completed Date --></label>
+        <name>Deployment_Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deployment Details --></label>
+        <name>Deployment_Details__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date deployment review meeting scheduled --></help>
+        <label><!-- Deployment Review Meeting --></label>
+        <name>Deployment_Review_Meeting__c</name>
+    </fields>
+    <fields>
+        <help><!-- Docugen settings, templates and queries updated in Production --></help>
+        <label><!-- Docugen Settings/Templates/Queries --></label>
+        <name>Docugen_Settings_Templates_Queries__c</name>
+    </fields>
+    <fields>
+        <label><!-- Due Date --></label>
+        <name>Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Errors --></label>
+        <name>Errors__c</name>
+    </fields>
+    <fields>
+        <label><!-- IT Change Request/CAT Case Link --></label>
+        <name>IT_Change_Request_CAT_Case_Link__c</name>
+        <relationshipLabel><!-- Deployment Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- IT &amp; Change Task Link --></label>
+        <name>IT_Change_Task_Link__c</name>
+        <relationshipLabel><!-- Deployment Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- All new fields created in Production --></help>
+        <label><!-- New Fields --></label>
+        <name>New_Fields__c</name>
+    </fields>
+    <fields>
+        <help><!-- Permissions given for access required --></help>
+        <label><!-- New Permissions To Be Given --></label>
+        <name>New_Permissions_To_Be_Given__c</name>
+    </fields>
+    <fields>
+        <help><!-- List of all new objects to be created in live system --></help>
+        <label><!-- Objects --></label>
+        <name>Objects__c</name>
+    </fields>
+    <fields>
+        <help><!-- Page Layouts checked and updated --></help>
+        <label><!-- Page Layouts --></label>
+        <name>Page_Layouts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Implementation Testing Comp Date --></label>
+        <name>PoPost_Implementation_Testing_Comp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Implementation Testing Completed By --></label>
+        <name>Post_Implementation_Testing_Completed_By__c</name>
+        <relationshipLabel><!-- Deployment Plans (Post Implementation Testing Completed By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Post Implementation Testing Details --></label>
+        <name>Post_Implementation_Testing_Details__c</name>
+    </fields>
+    <fields>
+        <help><!-- List of members attended the review meeting --></help>
+        <label><!-- Review Meeting Members --></label>
+        <name>Review_Meeting_Members__c</name>
+    </fields>
+    <fields>
+        <help><!-- Static Resources updated --></help>
+        <label><!-- Static resources --></label>
+        <name>Static_resources__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In progress</masterLabel>
+            <translation><!-- In progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scheduled</masterLabel>
+            <translation><!-- Scheduled --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Testing Completed By --></label>
+        <name>Testing_Completed_By__c</name>
+        <relationshipLabel><!-- Deployment Plans (Testing Completed By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Testing Completed Date --></label>
+        <name>Testing_Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Testing Details --></label>
+        <name>Testing_Details__c</name>
+    </fields>
+    <fields>
+        <help><!-- List all Triggers to be deployed --></help>
+        <label><!-- Triggers --></label>
+        <name>Triggers__c</name>
+    </fields>
+    <fields>
+        <help><!-- List all VF pages to be deployed --></help>
+        <label><!-- VF Pages --></label>
+        <name>VF_Pages__c</name>
+    </fields>
+    <fields>
+        <help><!-- Visual force components to be deployed --></help>
+        <label><!-- Visual Force Components --></label>
+        <name>Visual_Force_Components__c</name>
+    </fields>
+    <fields>
+        <help><!-- New workflow rules created --></help>
+        <label><!-- Workflow Rules --></label>
+        <name>Workflow_Rules__c</name>
+    </fields>
+    <layouts>
+        <layout>Deployment Plan Layout</layout>
+        <sections>
+            <label><!-- Business Communications --></label>
+            <section>Business Communications</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Deployment --></label>
+            <section>Deployment</section>
+        </sections>
+        <sections>
+            <label><!-- Post Implementation Testing --></label>
+            <section>Post Implementation Testing</section>
+        </sections>
+        <sections>
+            <label><!-- Post Live Errors/Issues --></label>
+            <section>Post Live Errors/Issues</section>
+        </sections>
+        <sections>
+            <label><!-- Testing --></label>
+            <section>Testing</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

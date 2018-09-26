@@ -1,0 +1,36 @@
+<apex:page sideBar="false" showHeader="false" standardStylesheets="false">
+
+<head>
+	<apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'HelpPageStylesheet.css')}"/>
+</head>
+
+<div class="heading">
+    <div class="icon">&nbsp;</div>
+    <h2>Help Pages</h2>
+    <h1>Score Maps</h1>
+</div>
+
+<div class="content">
+<p>Score Maps relate the impact ratings of a Business Unit's Scoring Scheme to the impact ratings of the group's Scoring Scheme. For more information on Business Units, see "Help for this Page" under the Business Units tab.
+</p>
+<p>They enable local ratings to be viewed in terms of their group impact. The resulting group rating is displayed on the Risk via the Group Rating field. Currently this applies to Residual Ratings only.
+</p>
+<p>To create a Score Map for a Business Unit, click on the New Score Map button on the Score Maps related list.
+</p>
+<p>Select the Scoring Scheme of the group Business Unit. Then set the Source Impact value, e.g. 3, and the Target Impact value it maps to, e.g. 2.
+</p>
+<p>Note, setting the Source and Target Category will restrict the map to the specified Impact Category only, e.g. Cost. If other Categories score higher, they will be ignored in the mapping.
+</p>
+<br/>
+<br/>
+<br/>
+
+<h3 >Contact Details</h3>
+
+<p>
+For further support information, please contact your local administrator.</p>
+
+
+    <div class="clear"></div>
+</div>
+</apex:page>

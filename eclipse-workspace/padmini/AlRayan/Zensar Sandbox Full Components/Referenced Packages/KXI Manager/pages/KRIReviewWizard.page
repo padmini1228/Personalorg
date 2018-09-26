@@ -1,0 +1,283 @@
+<apex:page standardcontroller="Risk__KRI__c" extensions="KXI.KRIReviewWizard" recordSetVar="Risk__KRI__c" tabStyle="Risk__KRI__c" >
+<apex:includeScript value="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"/>
+<apex:includeScript value="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"/>
+<style>
+.row_title
+{
+	color: #4a4a56;
+	font-weight: bold;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size:font-size: 1.1em;
+	padding:3px 2px 2px 8px;
+	text-align:center;
+} 
+.row_content
+{
+	padding:3px 2px 2px 8px;
+	border:1px solid #FFF;
+}
+.risk_header
+{
+	text-align:center;
+	padding: 2px 0px 3px 0px; 
+	background-color: #99badd;
+	color: white;
+	font-weight: bold;
+	font-family: Arial,Helvetica,sans-serif;
+}
+.title_container
+{
+	background-color:#d2e1f0;	
+}
+.dataCol  first  last 
+{
+	width: 100px;
+}
+.selected {
+	border: 2px solid #333;
+}
+
+.deselected {
+	border: 1px solid #CCCCCC;
+}
+.btn
+{
+	margin-left: 10px;
+}
+
+.popupBackground {
+       background-color:black;
+       opacity: 0.20;
+       filter: alpha(opacity = 20);
+       width: 100%; 
+       height: 100%;
+       top: 0;
+       left: 0;
+       z-index: 998;
+       position: absolute;
+ }
+.popupPanel {
+       border: solid 1px;
+       background-color: white;
+       left: 50%;
+       width: 200px;
+       margin-left: -100px;
+       top: 50%;
+       height: 50px;
+       margin-top: -25px;
+       z-index: 999;
+       position:fixed;
+   }  
+</style>
+
+	<apex:actionStatus id="fetchStatus" stopText="" >
+	    <apex:facet name="start">
+	        <div>
+	            <div class="popupBackground" />
+	            <div class="popupPanel">
+	                <table border="0" width="100%" height="100%">
+	                    <tr>
+	                        <td align="center" style="font-family: Calibri; font-size: 13px; font-weight: normal;"><b>Processing... Please Wait</b></td>
+	                    </tr>
+	                    <tr>
+	                        <td align="center"><img src="/img/loading.gif"/></td>
+	                    </tr>
+	                </table>
+	            </div>
+	        </div>
+	    </apex:facet>
+	</apex:actionStatus>
+	
+	<apex:form id="reviewForm">
+		<apex:pageMessages id="info_page_message" escape="false" />
+		<apex:actionFunction name="skip" action="{!skip}" status="fetchStatus" rerender="main_block,info_page_message" /> 
+		<apex:outputPanel id="main_block" rendered="{!currentKRIs != null && currentKRIs.size > 0}">
+		
+		<apex:pageBlock id="reviewblock" rendered="{!!SummaryPage}" title="{!step+1} of {!currentKRIs.size} ">  
+			
+			<apex:pageBlockButtons >
+	             <apex:commandButton status="fetchStatus" reRender="info_page_message,reviewblock,navigation_block" style="margin-right:10px;" value="Previous" action="{!previous}" disabled="{!hasPrevious}" title="Previous Page" immediate="true"/>
+	             <apex:commandButton status="fetchStatus"  reRender="info_page_message,reviewblock,navigation_block" style="margin-right:10px;" value="Save and Next"  action="{!next}" rendered="{!hasNext}" title="Next Page"/> 
+				 <apex:commandButton action="{!cancel}" value="Cancel"/>
+				 <apex:commandButton status="fetchStatus" reRender="reviewForm" value="Summary/Submit" action="{!Summary}"  title="Summary Page" rendered="{!!hasNext || currentKRIs.size == accessedKRIsSize}"/>
+			</apex:pageBlockButtons>
+
+			<apex:pageBlockSection title="{!$ObjectType.Risk__KRI__c.Label} Information" columns="2" >
+				<apex:PageBlockSectionItem > 
+					 <apex:outputLabel value="{!$ObjectType.Risk__KRI__c.Fields.Name.Label}" />
+					 <apex:outputText value="{!currentKRI.KRI.Name}"/> 
+				</apex:PageBlockSectionItem>
+				
+				<apex:pageBlockSectionItem rendered="{!currentKRI.KRI.Risk__KRI_Metrics__r.size > 0}">
+					 <apex:outputLabel value="{!$ObjectType.Risk__KRI_Review__c.Fields.Risk__Review_Date__c.Label}" />
+					 <apex:inputField required="true" value="{!currentKRI.review.Risk__Review_Date__c}" /> 
+				</apex:pageBlockSectionItem>
+				
+				<apex:PageBlockSectionItem >
+					 <apex:outputLabel value="{!$ObjectType.Risk__KRI__c.Fields.Risk__Description__c.Label}" />
+					 <apex:outputField value="{!currentKRI.KRI.Risk__Description__c}"/> 
+				</apex:PageBlockSectionItem>
+				
+				<apex:pageBlockSectionItem rendered="{!currentKRI.KRI.Risk__KRI_Metrics__r.size > 0}">
+					 <apex:outputLabel value="{!$ObjectType.Risk__KRI_Review__c.Fields.Risk__Review_Summary__c.Label}" />
+					 <apex:inputField value="{!currentKRI.review.Risk__Review_Summary__c}" style="width: 360px" /> 
+				</apex:pageBlockSectionItem> 
+			</apex:pageBlockSection>
+				
+			<!-- Associated Risk Information Section --> 
+			<apex:pageBlockSection id="Risk_section"  title="Associated {!$ObjectType.grc__Risk__c.Label} Information" collapsible="true" columns="1" rendered="{!currentKRI.KRI.Risk__Risk_KRI_Lookups__r.size > 0}">
+				<apex:outputPanel layout="block">
+					<table style="width:100%;text-align:center;">
+					<tbody>
+						<tr class="title_container" >
+							<th class="row_title">{!$ObjectType.grc__Risk__c.Fields.grc__Risk_Name__c.Label}</th>
+							<th class="row_title">{!$ObjectType.grc__Risk__c.Fields.Name.Label}</th>
+							<th class="row_title">{!$ObjectType.grc__Risk__c.Fields.grc__Category__c.Label}</th>
+						</tr>
+							
+						<apex:repeat value="{!currentKRI.KRI.Risk__Risk_KRI_Lookups__r}" var="RiskLookup">
+							<tr class="row_container">
+							<td class="row_content">
+						 		{!RiskLookup.Risk__Risk__r.grc__Risk_Name__c}
+						 	</td>
+						 	<td class="row_content">
+						 		<apex:outputField value="{!RiskLookup.Risk__Risk__c}"/>
+						 	</td>
+						 	<td class="row_content">{!RiskLookup.Risk__Risk__r.grc__Category__c}</td>
+							</tr>
+						</apex:repeat>
+					</tbody>
+					</table>	 
+				</apex:outputPanel>			
+			</apex:pageBlockSection>
+			<script>
+        			twistSection(document.getElementById('{!$Component.reviewblock.Risk_section}').getElementsByTagName('img')[0])
+    		</script>
+		<!-- Metrics Section -->
+		<apex:pageBlockSection title="{!$ObjectType.Risk__Metric__c.LabelPlural}" columns="1">
+			<!-- Quantitative Table -->
+			<apex:pageBlockTable value="{!currentKRI.results}" var="result" rendered="{!currentKRI.results.size > 0}">
+				<apex:column headerValue="{!$ObjectType.Risk__Metric__c.Fields.Name.Label}" >
+					<apex:outputField styleClass="metric_name_block" value="{!result.Risk__Metric__r.Name}" />
+				</apex:column>
+				<apex:column headerValue="Threshold" >
+					<apex:outputField value="{!result.Risk__Metric__r.Risk__Currency_Threshold__c}" rendered="{!result.Risk__Metric__r.Risk__Metric_Type__c =='Currency'}"/>
+					<apex:outputField value="{!result.Risk__Metric__r.Risk__Number_Threshold__c}" rendered="{!result.Risk__Metric__r.Risk__Metric_Type__c =='Number'}" />
+					<apex:outputField value="{!result.Risk__Metric__r.Risk__Percentage_Threshold__c}" rendered="{!result.Risk__Metric__r.Risk__Metric_Type__c =='Percentage'}" />
+				</apex:column>
+				<apex:column headerValue="Threshold Type"> 
+					<apex:outputField value="{!result.Risk__Metric__r.Risk__Threshold_Type__c}"/>
+				</apex:column>
+				<apex:column headerValue="Amber Threshold" >
+					<apex:outputField value="{!result.Risk__Metric__r.Risk__Amber_Currency_Threshold__c}"  rendered="{!result.Risk__Metric__r.Risk__Metric_Type__c =='Currency'}" />
+					<apex:outputField value="{!result.Risk__Metric__r.Risk__Amber_Number_Threshold__c}" rendered="{!result.Risk__Metric__r.Risk__Metric_Type__c =='Number'}" />
+					<apex:outputField value="{!result.Risk__Metric__r.Risk__Amber_Percentage_Threshold__c}" rendered="{!result.Risk__Metric__r.Risk__Metric_Type__c =='Percentage'}" />
+				</apex:column>
+				<apex:column headerValue="{!$ObjectType.Risk__KRI_Review_Result__c.Fields.Risk__Value__c.Label}" >
+					<apex:inputField required="true" value="{!result.Risk__Value__c}" styleClass="decimal_value_block"/>
+			    </apex:column>
+				<apex:column headerValue="{!$ObjectType.Risk__Metric__c.Fields.Risk__Metric_Type__c.Label}" >
+					<apex:outputLabel value="{!result.Risk__Metric__r.Risk__Metric_Type__c}" />
+				</apex:column>
+			</apex:pageBlockTable> 
+			
+			<!-- Qualitative Table -->
+			<apex:pageBlockTable value="{!currentKRI.qualitativeResults}" var="qualitativeResult" rendered="{!currentKRI.qualitativeResults.size > 0}">
+				<apex:column headerValue="{!$ObjectType.Risk__Metric__c.Fields.Name.Label}" style="width:10%">
+					<div class="requiredInput" >
+						<div class="requiredBlock"></div>
+						<apex:outputField value="{!qualitativeResult.Risk__Metric__r.Name}" />
+					</div>
+				</apex:column>
+				<apex:column headerValue="Green Threshold" style="width:30px;height:75px;">
+					<apex:outputPanel id="green" styleClass="{!IF(qualitativeResult.Risk__Value__c == 'green' , 'selected', 'deselected')}" layout="block" style="padding:0px 0px 8px 0px;height: 100%;float:left;background-repeat:repeat-y; text-align: left; cursor: pointer;">
+	                	<div style="border-left: 8px solid green;height: 100%;padding: 4px 2px 4px 10px;background-color:#FFF;">
+	                		<apex:outputField value="{!qualitativeResult.Risk__Metric__r.Risk__Green_Threshold_Text__c}"/>
+	                	</div>
+	                 	<apex:actionSupport event="onclick" action="{!setQualitativeValue}" rerender="green, amber, red" immediate="true">
+	                 		<apex:param name="selectedValue" value="green" assignTo="{!selectedValue}" />
+	                 		<apex:param name="metricId" value="{!qualitativeResult.Risk__Metric__c}" assignTo="{!selectedMetricId}" />
+	                 	</apex:actionSupport>
+	                </apex:outputPanel>
+				</apex:column>
+				<apex:column headerValue="Amber Threshold" style="width:30px;height:75px;">
+					<apex:outputPanel id="amber" styleClass="{!IF(qualitativeResult.Risk__Value__c == 'amber' , 'selected', 'deselected')}"  layout="block" style="padding: 0px 0px 8px 0px;;height: 100%;float:left;background-repeat:repeat-y; text-align: left; cursor: pointer;">
+						<div style="border-left: 8px solid orange;height: 100%;padding: 4px 2px 4px 10px;background-color:#FFF;">
+							<apex:outputField value="{!qualitativeResult.Risk__Metric__r.Risk__Amber_Threshold_Text__c}"/>
+						</div>
+						<apex:actionSupport event="onclick" action="{!setQualitativeValue}" rerender="green, amber, red" immediate="true">
+							<apex:param name="selectedValue" value="amber" assignTo="{!selectedValue}" />
+							<apex:param name="metricId" value="{!qualitativeResult.Risk__Metric__c}" assignTo="{!selectedMetricId}" />
+						</apex:actionSupport>
+		            </apex:outputPanel>
+				</apex:column>
+				<apex:column headerValue="Red Threshold" style="width:30px;height:75px;">
+					<apex:outputPanel id="red" styleClass="{!IF(qualitativeResult.Risk__Value__c == 'red' , 'selected', 'deselected')}" layout="block" style="padding:0px 0px 8px 0px;;height: 100%;background-repeat:repeat-y; float: left; text-align: left; cursor: pointer;">
+			        	<div style="border-left: 8px solid red;height: 100%;padding: 4px 2px 4px 10px;background-color:#FFF;">
+			        		<apex:outputField value="{!qualitativeResult.Risk__Metric__r.Risk__Red_Threshold_Text__c}"/>
+			        	</div>
+			            <apex:actionSupport event="onclick" action="{!setQualitativeValue}" rerender="green, amber, red" immediate="true">
+			            	<apex:param name="selectedValue" value="red" assignTo="{!selectedValue}" />
+			                <apex:param name="metricId" value="{!qualitativeResult.Risk__Metric__c}" assignTo="{!selectedMetricId}" />
+			            </apex:actionSupport>
+			        </apex:outputPanel>
+				</apex:column>
+			</apex:pageBlockTable>
+			
+		</apex:pageBlockSection>
+		
+		</apex:pageBlock>
+		
+		<apex:pageBlock title="{!$ObjectType.Risk__KRI__c.Label} Summary" rendered="{!SummaryPage}">
+			<apex:variable value="{!0}" var="rowNum"/>
+			
+			<apex:repeat value="{!accessedKRIs}" var="KRIreviewValidate">
+				<apex:outputPanel rendered="{!accessedKRIs[KRIreviewValidate].review.Id == null}">
+						<apex:variable var="rowNum" value="{!rowNum + 1}"/>
+				</apex:outputPanel>
+			</apex:repeat>
+			
+			<apex:pageBlockButtons >
+				<apex:commandButton action="{!submit}" value="Submit" onclick="if(!confirmation()) return false;" rendered="{!accessedKRIsSize != rowNum}"/>
+				<apex:commandButton action="{!cancel}" value="Cancel"/>
+			</apex:pageBlockButtons>
+			<apex:pageBlockTable value="{!accessedKRIs}" var="KRIReview">
+				<apex:column headerValue="Name">
+					<apex:outputPanel >
+						<a href="#">{!accessedKRIs[KRIReview].KRI.Name}</a>
+						<apex:actionSupport event="onclick" action="{!gotoKRIWizard}" rerender="reviewForm" immediate="true">
+				            	<apex:param name="selectedStep" value="{!accessedKRIs[KRIReview].stepNumber}" assignTo="{!SelectedStep}" />
+				        </apex:actionSupport>
+			        </apex:outputPanel>
+				</apex:column>  
+				
+				<apex:column headerValue="Previous Rating">
+					<div style="width:100px;height:30px;background-color:{!if(accessedKRIs[KRIReview].KRI.Risk__Score__c == 1,'#59E817',if(accessedKRIs[KRIReview].KRI.Risk__Score__c == 2,'#FDD017',if(accessedKRIs[KRIReview].KRI.Risk__Score__c == 3,'#F62817','grey')))}">
+					</div>
+				</apex:column> 
+				
+				<apex:column headerValue="KRI Rating">
+					<div style="width:100px;height:30px;background-color:{!if(accessedKRIs[KRIReview].latestRating == 1,'#59E817',if(accessedKRIs[KRIReview].latestRating == 2,'#FDD017',if(accessedKRIs[KRIReview].latestRating == 3,'#F62817','grey'))) }">
+					</div>
+				</apex:column>
+
+				<apex:column headerValue="Movement Direction"> 
+					<img src="/resource/{!$Setup.Risk__NamespacePrefix__c.Risk__Value__c}{!if(accessedKRIs[KRIReview].KRI.Risk__Score__c != 0 && accessedKRIs[KRIReview].KRI.Risk__Score__c == accessedKRIs[KRIReview].latestRating,'RiskClimateRightYellowArrow', 
+					  if(accessedKRIs[KRIReview].KRI.Risk__Score__c != 0 && accessedKRIs[KRIReview].latestRating < accessedKRIs[KRIReview].KRI.Risk__Score__c, 'RiskClimateDownGreenArrow',
+					  if(accessedKRIs[KRIReview].KRI.Risk__Score__c != 0 && accessedKRIs[KRIReview].latestRating > accessedKRIs[KRIReview].KRI.Risk__Score__c,'RiskClimateUpRedArrow',if(accessedKRIs[KRIReview].KRI.Risk__Score__c == 0 , 'empResidualDirection',''))
+					  ))}">
+					</img>	
+				</apex:column> 
+
+				<apex:column value="{!accessedKRIs[KRIReview].review.Risk__Review_Summary__c}" headerValue="Review Summary"/>  
+			</apex:pageBlockTable> 
+		</apex:pageBlock>  
+		</apex:outputPanel>
+	</apex:form>
+	<script>
+	function confirmation() {
+		return confirm('Are you sure you want to submit? You will only be able to submit one review per month.');
+	}
+	
+	</script>
+</apex:page>

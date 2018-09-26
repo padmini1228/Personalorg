@@ -1,0 +1,6 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="1" aEditID="c1r1" >
+<![CDATA[A new SI review has been completed<div><br></div><div>Link:&nbsp;{!Strategic_Initiative_Review__c.Link}</div><div>SI:&nbsp;{!Strategic_Initiative__c.Name}</div><div>Date of review:&nbsp;{!Strategic_Initiative_Review__c.Date_of_review__c}</div><div>Overall status:&nbsp;{!Strategic_Initiative_Review__c.Status__c}</div><div>RAG rating:&nbsp;{!Strategic_Initiative_Review__c.Overall_strategic_initiative_RAG_rating__c}</div><div><br></div>]]></td>
+</tr>
+</table>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Cash Denomination</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Cash Denominations</value>
+    </caseValues>
+    <fields>
+        <label><!-- CCY of Denomination --></label>
+        <name>CCY_of_Denomination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Computed Value --></label>
+        <name>Computed_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Denomination --></label>
+        <name>Number_of_Denomination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Teller Depository --></label>
+        <name>Teller_Depository__c</name>
+        <relationshipLabel><!-- Cash Denominations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Value of GBP Denomination --></label>
+        <name>Total_Value_of_Denomination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Value of EUR Denomination --></label>
+        <name>Total_Value_of_EUR_Denomination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Value of QAR Denomination --></label>
+        <name>Total_Value_of_QAR_Denomination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Value of USD Denomination --></label>
+        <name>Total_Value_of_USD_Denomination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value of Denomination --></label>
+        <name>Value_of_Denomination__c</name>
+    </fields>
+    <layouts>
+        <layout>Cash Denomination Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

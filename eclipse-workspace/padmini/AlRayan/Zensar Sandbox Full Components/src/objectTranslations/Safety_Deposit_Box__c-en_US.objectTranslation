@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Safe Deposit Box</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Safe Deposit Boxes</value>
+    </caseValues>
+    <fields>
+        <label><!-- Box Number --></label>
+        <name>Box_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date charge taken --></label>
+        <name>Date_charge_taken__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date next charge due --></label>
+        <name>Date_next_charge_due__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date  of Last Charge Due --></label>
+        <name>Date_of_Last_Charge_Due__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last  Charge Taken --></label>
+        <name>Last_Charge_Taken__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary box holder --></label>
+        <name>Primary_box_holder__c</name>
+        <relationshipLabel><!-- Safe Deposit Boxes (Primary box holder) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Secondary box holder --></label>
+        <name>Secondary_box_holder__c</name>
+        <relationshipLabel><!-- Safe Deposit Boxes (Secondary box holder) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Security method --></label>
+        <name>Security_method__c</name>
+        <picklistValues>
+            <masterLabel>PIN</masterLabel>
+            <translation><!-- PIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Palm reader</masterLabel>
+            <translation><!-- Palm reader --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Size of box --></label>
+        <name>Size_of_box__c</name>
+        <picklistValues>
+            <masterLabel>Size 1</masterLabel>
+            <translation><!-- Size 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Size 2</masterLabel>
+            <translation><!-- Size 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Size 3</masterLabel>
+            <translation><!-- Size 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Size 4</masterLabel>
+            <translation><!-- Size 4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status of Quarterly Fee Payments --></label>
+        <name>Status_of_Quarterly_Fee_Payments__c</name>
+        <picklistValues>
+            <masterLabel>OUTSTANDING</masterLabel>
+            <translation><!-- OUTSTANDING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAID</masterLabel>
+            <translation><!-- PAID --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tertiary box holder --></label>
+        <name>Tertiary_box_holder__c</name>
+        <relationshipLabel><!-- Safe Deposit Boxes (Tertiary box holder) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Charge for box per 3 months --></label>
+        <name>Yearly_charge_for_box__c</name>
+    </fields>
+    <layouts>
+        <layout>Safety Deposit Box Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

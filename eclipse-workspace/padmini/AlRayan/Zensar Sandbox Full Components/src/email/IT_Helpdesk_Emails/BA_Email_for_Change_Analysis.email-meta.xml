@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>BA Email for Change Analysis</name>
+    <style>freeForm</style>
+    <subject>Concept Statement Status - Change Analysis</subject>
+    <textOnly>Dear {!Case.Owner}
+
+The following concept statement has now been assigned to a Business Analyst whereby they will conduct a change analysis review with you. They will be in touch shortly. This will help us determine whether the concept statement is a project or an SBC.
+
+{!Case.Link}
+{!Case.Subject}
+
+Thanks
+
+Transformation Team</textOnly>
+    <type>html</type>
+</EmailTemplate>

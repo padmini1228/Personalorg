@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>FCA Reporting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>FCA Reporting</value>
+    </caseValues>
+    <fields>
+        <label><!-- Out Of Hours --></label>
+        <name>Out_Of_Hours__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

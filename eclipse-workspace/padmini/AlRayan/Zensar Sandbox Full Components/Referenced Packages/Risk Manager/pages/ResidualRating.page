@@ -1,0 +1,52 @@
+<apex:page standardController="grc__Risk__c" extensions="Risk.DisplayRiskAssessment" >
+<apex:form >
+    <apex:pageBlock mode="maindetail" >
+    <I><apex:outputLabel value="No Risk Assessments to Display"  rendered="{!ratingsResidual.size == 0}" /></I>
+    <apex:pageBlocktable value="{!ratingsResidual}" var="rating" rendered="{!ratingsResidual.size > 0}" >
+        <apex:repeat value="{!fieldsListRes}" var="field">
+
+            <apex:column value="{!rating.rar.Risk__Category__c}"  rendered="{!field == $Setup.NamespacePrefix__c.Value__c+'Category__c'}"/>
+            <apex:column headerValue="Score"  rendered="{!field == $Setup.NamespacePrefix__c.Value__c+'Band__c'}" style="background-color: {!HTMLENCODE(rating.scoreColour)}; color:#000000; font-size:100%; font-weight:bold; " >
+            <b><apex:facet name="header"> Score </apex:facet></b>
+            	<center><div style="display:block;font-weight:bold;border-radius: 50%;width: 17px;height: 19px;line-height: 20px;border: 1px black solid; background-color:white">
+            		<apex:outputText value="{!rating.rar.Risk__Band__c}" />
+            	</div></center>
+            </apex:column>
+
+            <apex:column headerValue="Value"  value="{!rating.rar.Risk__Value__c}" rendered="{!field == $Setup.NamespacePrefix__c.Value__c+'Value__c'}"/>
+            <apex:column value="{!rating.rar.Risk__Justification__c}"  rendered="{!field == $Setup.NamespacePrefix__c.Value__c+'Justification__c'}"/>
+            <apex:column value="{!rating.rar.Risk__Best_Case__c}"  rendered="{!field == $Setup.NamespacePrefix__c.Value__c+'Best_Case__c'}"/>
+            <apex:column value="{!rating.rar.LastModifiedDate}"  rendered="{!field == $Setup.NamespacePrefix__c.Value__c+'LastModifiedDate'}"/>
+            <apex:column value="{!rating.rar.Risk__Risk_Assessment__c}"  rendered="{!field == $Setup.NamespacePrefix__c.Value__c+'Risk_Assessment__c'}"/>
+            <apex:column value="{!rating.rar.Risk__Worst_Case__c}"  rendered="{!field == $Setup.NamespacePrefix__c.Value__c+'Worst_Case__c'}"/>
+            <apex:column value="{!rating.rar.Risk__Mitigation__c}"  rendered="{!field == $Setup.NamespacePrefix__c.Value__c+'Mitigation__c'}"/>
+            <apex:column value="{!rating.rar.CreatedDate}"  rendered="{!field == 'CreatedDate'}"/>
+            <apex:column value="{!rating.rar.Name}"  rendered="{!field == 'Name'}" />
+            <apex:column value="{!rating.rar.Id}"  rendered="{!field == 'Id'}" />
+
+         </apex:repeat>
+
+            <apex:repeat value="{!impactFieldsListRes}" var="fieldd">
+         <apex:column rendered="{!fieldd == $Setup.NamespacePrefix__c.Value__c+'Symbol__c'}" >
+            	<apex:facet name="header"> <center> Symbol </center></apex:facet>
+            <apex:outputText value="{!rating.Symbol}" />
+            <!-- {!rating.Symbol} -->
+            </apex:column>
+
+         <apex:column rendered="{!fieldd== $Setup.NamespacePrefix__c.Value__c+'Units__c'}">
+            	<apex:facet name="header"><center> Units </center></apex:facet>
+          <apex:outputText value="{!rating.Units}"/>
+            <!-- {!rating.Units} -->
+            </apex:column>
+
+         <apex:column rendered="{!fieldd== $Setup.NamespacePrefix__c.Value__c+'Type_of_Risk__c'}">
+            	<apex:facet name="header"><center> Risk Type </center></apex:facet>
+          <apex:outputText value="{!rating.Type_of_Risk}"/>
+            </apex:column>
+
+         </apex:repeat>
+
+        </apex:pageBlocktable>
+    </apex:pageBlock>
+</apex:form>
+</apex:page>

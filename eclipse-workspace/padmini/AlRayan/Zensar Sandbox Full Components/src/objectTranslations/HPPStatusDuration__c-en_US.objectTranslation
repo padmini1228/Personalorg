@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>HPP Status Duration</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>HPP Status Durations</value>
+    </caseValues>
+    <fields>
+        <label><!-- From Status --></label>
+        <name>FromStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Count --></label>
+        <name>OpportunityCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Run Date --></label>
+        <name>RunDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- To Status --></label>
+        <name>ToStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Status Duration (Days) --></label>
+        <name>TotalStatusDuration__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

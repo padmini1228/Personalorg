@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>60 DAYS OFFER</name>
+    <style>freeForm</style>
+    <subject>Offer letter for {!HPP_MI__c.Name} is over 60 days old</subject>
+    <textOnly>Hello {!HPP_MI__c.BDM__c}
+
+You have a case with an offer letter which is over 60 days old
+
+GET IT SORTED!
+
+{!HPP_MI__c.Link}</textOnly>
+    <type>html</type>
+</EmailTemplate>

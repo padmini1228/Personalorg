@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Actual cost per Contact --></label>
+        <name>Actual_cost_per_contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual response rate --></label>
+        <name>Actual_response_rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Audience --></label>
+        <name>Audience__c</name>
+        <picklistValues>
+            <masterLabel>Customers</masterLabel>
+            <translation><!-- Customers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dormant customers</masterLabel>
+            <translation><!-- Dormant customers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospects: external</masterLabel>
+            <translation><!-- Prospects: external --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospects: internal</masterLabel>
+            <translation><!-- Prospects: internal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Closing date of prize draw --></label>
+        <name>Closing_date_of_prize_draw__c</name>
+    </fields>
+    <fields>
+        <label><!-- Conversion rate achieved --></label>
+        <name>Conversion_rate_achieved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost per opportunity actual --></label>
+        <name>Cost_per_opportunity_actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost per opportunity target --></label>
+        <name>Cost_per_opportunity_target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost per response --></label>
+        <name>Cost_per_response__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost per response actual --></label>
+        <name>Cost_per_response_actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost per response target --></label>
+        <name>Cost_per_response_target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost per sale actual --></label>
+        <name>Cost_per_sale_actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost per sale target --></label>
+        <name>Cost_per_sale_target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Source --></label>
+        <name>Data_Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email address --></label>
+        <name>Email_address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected response --></label>
+        <name>Expected_response__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gross Leads --></label>
+        <name>Gross_Leads__c</name>
+    </fields>
+    <fields>
+        <label><!-- IBB Product --></label>
+        <name>IBB_Product__c</name>
+        <relationshipLabel><!-- Campaigns --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Key Product --></label>
+        <name>Key_Product__c</name>
+        <picklistValues>
+            <masterLabel>BTL</masterLabel>
+            <translation><!-- BTL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BTL ( rent only)</masterLabel>
+            <translation><!-- BTL ( rent only) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP</masterLabel>
+            <translation><!-- HPP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Long Term Savings</masterLabel>
+            <translation><!-- Long Term Savings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Short Term Savngs</masterLabel>
+            <translation><!-- Short Term Savngs --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Line associated to --></label>
+        <name>Line_associated_to__c</name>
+        <picklistValues>
+            <masterLabel>Branch</masterLabel>
+            <translation><!-- Branch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer service</masterLabel>
+            <translation><!-- Customer service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP</masterLabel>
+            <translation><!-- HPP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier</masterLabel>
+            <translation><!-- Premier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation><!-- Sales --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Marketing Code --></label>
+        <name>Marketing_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing or Non Marketing --></label>
+        <name>Marketing_or_Non_Marketing__c</name>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Marketing</masterLabel>
+            <translation><!-- Non Marketing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Calls received --></label>
+        <name>Number_of_calls_recieved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coupon responses --></label>
+        <name>Number_of_coupon_responses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Website responses --></label>
+        <name>Number_of_website_responses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Objective --></label>
+        <name>Objective__c</name>
+        <picklistValues>
+            <masterLabel>Awareness</masterLabel>
+            <translation><!-- Awareness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event</masterLabel>
+            <translation><!-- Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead generation</masterLabel>
+            <translation><!-- Lead generation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Conversion Achieved --></label>
+        <name>Opportunity_Conversion_Achieved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity ROI --></label>
+        <name>Opportunity_ROI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Target (No) --></label>
+        <name>Opportunity_Target_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Online Coupon --></label>
+        <name>Other_responses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personal or Business? --></label>
+        <name>Personal_or_Business__c</name>
+        <picklistValues>
+            <masterLabel>Business</masterLabel>
+            <translation><!-- Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal</masterLabel>
+            <translation><!-- Personal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Prize draw? --></label>
+        <name>Prize_draw__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <relationshipLabel><!-- Campaigns (Product) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ROI --></label>
+        <name>ROI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response Target (No) --></label>
+        <name>Response_Target_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response Target (%) --></label>
+        <name>Response_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response to opportunity (%) --></label>
+        <name>Response_to_opportunity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Conversion Achieved --></label>
+        <name>Sales_Conversion_Achieved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Target (No) --></label>
+        <name>Sales_Target_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Target (%) --></label>
+        <name>Sales_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales achieved --></label>
+        <name>Sales_achieved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Cost per Contact --></label>
+        <name>Target_Cost_per_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Telephone number --></label>
+        <name>Telephone_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Contacts --></label>
+        <name>Total_Contacts_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Responses --></label>
+        <name>Total_Responses__c</name>
+    </fields>
+    <fields>
+        <label><!-- URL --></label>
+        <name>URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- xx --></label>
+        <name>xx__c</name>
+    </fields>
+    <layouts>
+        <layout>2013 Layout</layout>
+        <sections>
+            <label><!-- Actual Performance --></label>
+            <section>Actual Performance</section>
+        </sections>
+        <sections>
+            <label><!-- Costs --></label>
+            <section>Costs</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunities and Sales --></label>
+            <section>Opportunities and Sales</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Campaign Layout</layout>
+        <sections>
+            <label><!-- Actual Performance --></label>
+            <section>Actual Performance</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- 2012 --></label>
+        <name>X2012</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 2013 --></label>
+        <name>X2013</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- ViewAllCampaignMembers --></label>
+        <name>ViewAllCampaignMembers</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ViewCampaignInfluenceReport --></label>
+        <name>ViewCampaignInfluenceReport</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_ExactTarget_Email --></label>
+        <name>et4ae5__Send_ExactTarget_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ViewCampaignInfluenceReport --></label>
+        <name>et4ae5__ViewCampaignInfluenceReport</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Run_SMS_Campaign --></label>
+        <name>smagicinteract__Run_SMS_Campaign</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,16 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="1" aEditID="c1r1" >
+<![CDATA[<P>To whom it may concern, </P>
+<P>&nbsp;</P>
+<P>A new opportunity has just been&nbsp;keyed by {!Opportunity.Seller__c}&nbsp; on {!Opportunity.CreatedDate}. Please review this&nbsp;opportunity and action accordingly. </P>
+<P>&nbsp;</P>
+<P>Thanks</P>
+<P>&nbsp;</P>
+<P>IBB SalesForce</P>
+<P>&nbsp;</P>
+<P>&nbsp;{!Opportunity.Link}</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>]]></td>
+</tr>
+</table>

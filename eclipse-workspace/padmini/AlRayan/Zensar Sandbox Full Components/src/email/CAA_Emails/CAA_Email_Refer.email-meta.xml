@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CAA Email Refer</name>
+    <style>none</style>
+    <subject>Welcome to Al Rayan Bank</subject>
+    <textOnly>Al Rayan Bank
+
+Thank you for your application with Al Rayan Bank
+Call 0800 4086 407
+
+Banking you can believe in
+
+Thank you for your application to open an account with
+Al Rayan Bank
+We will  contact you shortly to complete your application.
+
+Banking you can believe in
+Al Rayan Bank is the UK&apos;s only wholly Sharia compliant retail bank.
+
+We operate without using interest, and follow ethical Islamic finance principles based on trade, entrepreneurship and risk-sharing.
+
+Al Rayan Bank PLC is authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority. Our firm reference is 229148. Al Rayan Bank is incorporated and registered in England and Wales with registration No. 4483430. Registered office: 44 Hans Crescent, Knightsbridge, London, SW1X 0LZ.
+
+Do not reply to this email as the mailbox is unattended. Please submit general enquiries at our
+contact us page.
+
+Copyright 2017 Al Rayan Bank PLC</textOnly>
+    <type>custom</type>
+</EmailTemplate>

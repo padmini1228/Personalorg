@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>KYC Sheet</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>KYC Sheets</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Number --></label>
+        <name>Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application fully completed? --></label>
+        <name>Application_fully_completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Compliance Visit --></label>
+        <name>Branch_Compliance_Visit__c</name>
+        <relationshipLabel><!-- KYC Sheets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Change of address actioned within one month of the date of the application signature? If yes, a fresh POA is required and should be available on Datastore. --></help>
+        <label><!-- COA actioned within 1 month of acc open? --></label>
+        <name>COA_actioned_within_1_month_of_acc_open__c</name>
+        <picklistValues>
+            <masterLabel>NA</masterLabel>
+            <translation><!-- NA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Captured Nature of Business/Background? --></label>
+        <name>Captured_Nature_of_Business_Background__c</name>
+    </fields>
+    <fields>
+        <label><!-- Certified by? --></label>
+        <name>Certified_by1__c</name>
+        <picklistValues>
+            <masterLabel>3rd party</masterLabel>
+            <translation><!-- 3rd party --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Branch</masterLabel>
+            <translation><!-- Branch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HO</masterLabel>
+            <translation><!-- HO --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Certified by? --></label>
+        <name>Certified_by__c</name>
+        <picklistValues>
+            <masterLabel>3rd party</masterLabel>
+            <translation><!-- 3rd party --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Branch</masterLabel>
+            <translation><!-- Branch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HO</masterLabel>
+            <translation><!-- HO --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Doc sampled to state company name/no/date incorporated as on application. Do not proceed if without further info if status is Dormant/Dissolved/In Liquidation/Company Removed, or if accounts/annual return are overdue. --></help>
+        <label><!-- Charity No or Incorporation No --></label>
+        <name>Charity_No_or_Incorporation_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Checklist signed by Processing MOS? --></label>
+        <name>Checklist_signed_by_Processing_MOS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Checklist signed by Sampler? --></label>
+        <name>Checklist_signed_by_Sampler__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ref KYC Matrix, includes UK and overseas address, full name, DOB, nationality, country of residence, course title, course length and contact details --></help>
+        <label><!-- College letter format valid? --></label>
+        <name>College_letter_format_valid__c</name>
+        <picklistValues>
+            <masterLabel>NA</masterLabel>
+            <translation><!-- NA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Guidance: For 3rd party certification record details of 3rd party and that they were were verified by the MOS. For change of address within 30 days of application and new proof of address must be provided. --></help>
+        <label><!-- Comments --></label>
+        <name>Comments2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Guidance: For 3rd party certification record details of 3rd party and that they were were verified by the MOS. For change of address within 30 days of application and new proof of address must be provided. --></help>
+        <label><!-- Comments --></label>
+        <name>Comments3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments6__c</name>
+    </fields>
+    <fields>
+        <help><!-- For joint accounts, include all individual customer numbers in comments and complete a separate check sheet for each signatory. --></help>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed KYC Checklist attached to App? --></label>
+        <name>Completed_KYC_Checklist_attached_to_App__c</name>
+    </fields>
+    <fields>
+        <label><!-- Correct form used? --></label>
+        <name>Correct_form_used__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Number --></label>
+        <name>Customer_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Type --></label>
+        <name>Customer_Type__c</name>
+        <picklistValues>
+            <masterLabel>Business</masterLabel>
+            <translation><!-- Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charity</masterLabel>
+            <translation><!-- Charity --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DOB on ID matches Application? --></label>
+        <name>DOB_on_ID_matches_Application__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Sampled --></label>
+        <name>Date_Sampled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Application --></label>
+        <name>Date_of_Application__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Birth --></label>
+        <name>Date_of_Birth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deadline --></label>
+        <name>Deadline2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deadline --></label>
+        <name>Deadline3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deadline --></label>
+        <name>Deadline4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deadline --></label>
+        <name>Deadline5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deadline --></label>
+        <name>Deadline__c</name>
+    </fields>
+    <fields>
+        <help><!-- Institution appears on DfEs Register of Education &amp; providers? --></help>
+        <label><!-- DfEs Registered? --></label>
+        <name>DfEs_Registered__c</name>
+        <picklistValues>
+            <masterLabel>NA</masterLabel>
+            <translation><!-- NA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Document in date? --></label>
+        <name>Document_in_date1__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Document in date? --></label>
+        <name>Document_in_date__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Entity Name --></label>
+        <name>Entity_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- ID Certified? --></label>
+        <name>ID_Certified__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ID match address proof and Application? --></label>
+        <name>ID_match_address_proof_and_Application__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Check the employment status on it, if it states ‘Employment Prohibited’ check what the application states, if employed check with FCU to see if a SAR was raised, if not then it has failed --></help>
+        <label><!-- IND Card used for ID? --></label>
+        <name>IND_Card_used_for_ID__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Issue date? --></label>
+        <name>Issue_date1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue date? --></label>
+        <name>Issue_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Keesing/PRADO Verified? --></label>
+        <name>Keesing_PRADO_Verified__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Legal Status --></label>
+        <name>Legal_Status__c</name>
+        <picklistValues>
+            <masterLabel>Limited Company</masterLabel>
+            <translation><!-- Limited Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partnership</masterLabel>
+            <translation><!-- Partnership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Registered Charity</masterLabel>
+            <translation><!-- Registered Charity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sole Trader</masterLabel>
+            <translation><!-- Sole Trader --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trust</masterLabel>
+            <translation><!-- Trust --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+        <picklistValues>
+            <masterLabel>Contact Centre</masterLabel>
+            <translation><!-- Contact Centre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edgware Road</masterLabel>
+            <translation><!-- Edgware Road --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Head Office</masterLabel>
+            <translation><!-- Head Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leicester</masterLabel>
+            <translation><!-- Leicester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manchester</masterLabel>
+            <translation><!-- Manchester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier</masterLabel>
+            <translation><!-- Premier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Heath</masterLabel>
+            <translation><!-- Small Heath --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Whitechapel</masterLabel>
+            <translation><!-- Whitechapel --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Name and Address on application matches ID and Address verification correctly --></help>
+        <label><!-- Name/Address on application match KYC? --></label>
+        <name>Name_Address_on_application_match_KYC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name of Country for Non UK Passport? --></label>
+        <name>Name_of_Country_for_Non_UK_Passport__c</name>
+    </fields>
+    <fields>
+        <help><!-- Note: For Non Personal Application, complete a Personal Customer Type Checklist for each Signatory using their own individual Customer number --></help>
+        <label><!-- New/Existing Customer? --></label>
+        <name>New_Existing_Customer__c</name>
+        <picklistValues>
+            <masterLabel>Existing</masterLabel>
+            <translation><!-- Existing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Overall Rating --></label>
+        <name>Overall_Rating__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under Review</masterLabel>
+            <translation><!-- Under Review --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- POA Certified? --></label>
+        <name>POA_Certified__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- POA Doc Address matches Application Add? --></label>
+        <name>POA_Doc_Address_matches_Application_Add__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Parties to Application ALL Identified? --></label>
+        <name>Parties_to_Application_ALL_Identified__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Guidance: Includes all applicable Directors, Shareholders (25%+), Trustees, Signatories, etc. --></help>
+        <label><!-- Parties to Application ALL identified? --></label>
+        <name>Parties_to_the_Application_ALL_identifie__c</name>
+    </fields>
+    <fields>
+        <label><!-- Passport Expiry Date --></label>
+        <name>Passport_Expiry_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personal KYC --></label>
+        <name>Personal_KYC__c</name>
+        <relationshipLabel><!-- KYC Sheets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Processed by --></label>
+        <name>Processed_by__c</name>
+        <relationshipLabel><!-- KYC Sheets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Remedial Action --></label>
+        <name>Remedial_Action2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remedial Action --></label>
+        <name>Remedial_Action3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remedial Action --></label>
+        <name>Remedial_Action4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remedial Action --></label>
+        <name>Remedial_Action5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remedial Action --></label>
+        <name>Remedial_Action__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signed by all parties? --></label>
+        <name>Signed_by_all_parties__c</name>
+    </fields>
+    <fields>
+        <help><!-- If Non Personal: HMRC letter dated within 12m &amp; registration no. Lease copy in business name. Accountants letter on headed paper, stating acts for company. Companies House letters for startups. Name/No./address agree with app. For recent changes 288a,296 --></help>
+        <label><!-- Type of document provided? --></label>
+        <name>Type_of_document_provided1__c</name>
+        <picklistValues>
+            <masterLabel>Accountant Letter</masterLabel>
+            <translation><!-- Accountant Letter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bank Statement</masterLabel>
+            <translation><!-- Bank Statement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College Letter</masterLabel>
+            <translation><!-- College Letter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Companies House Letter</masterLabel>
+            <translation><!-- Companies House Letter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Council Tax Bill</masterLabel>
+            <translation><!-- Council Tax Bill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HMRC correspondence</masterLabel>
+            <translation><!-- HMRC correspondence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lease Agreement</masterLabel>
+            <translation><!-- Lease Agreement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utility Bill</masterLabel>
+            <translation><!-- Utility Bill --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If other, record in comments --></help>
+        <label><!-- Type of document provided? --></label>
+        <name>Type_of_document_provided__c</name>
+        <picklistValues>
+            <masterLabel>Driving Licence and counterpart</masterLabel>
+            <translation><!-- Driving Licence and counterpart --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Office IND</masterLabel>
+            <translation><!-- Home Office IND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Passport</masterLabel>
+            <translation><!-- Passport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Travel Document</masterLabel>
+            <translation><!-- Travel Document --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- For Postal applications 2 address proof’s must be provided --></help>
+        <label><!-- Valid Address proof provided? --></label>
+        <name>Valid_Address_proof_provided__c</name>
+        <picklistValues>
+            <masterLabel>NA</masterLabel>
+            <translation><!-- NA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Valid ID proof provided? --></label>
+        <name>Valid_ID_proof_provided__c</name>
+        <picklistValues>
+            <masterLabel>NA</masterLabel>
+            <translation><!-- NA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Valid Visa Presented? --></label>
+        <name>Valid_Visa_Presented__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Verification Date? --></label>
+        <name>Verification_Date1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verification Date? --></label>
+        <name>Verification_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visa Expiry Date --></label>
+        <name>Visa_Expiry_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is type of Visa compatible with details on application form? e.g. student / holiday / no employment, but applicant employed. If not, SAR appropriate. --></help>
+        <label><!-- Visa Type Valid --></label>
+        <name>Visa_Type_Valid__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>KYC Sheet Layout</layout>
+        <sections>
+            <label><!-- Application --></label>
+            <section>Application</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- KYC Checklist --></label>
+            <section>KYC Checklist</section>
+        </sections>
+        <sections>
+            <label><!-- Parties to Account --></label>
+            <section>Parties to Account</section>
+        </sections>
+        <sections>
+            <label><!-- Proof of Address --></label>
+            <section>Proof of Address</section>
+        </sections>
+        <sections>
+            <label><!-- Proof of ID --></label>
+            <section>Proof of ID</section>
+        </sections>
+        <sections>
+            <label><!-- Summary --></label>
+            <section>Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Non Personal KYC Sheet</layout>
+        <sections>
+            <label><!-- Application --></label>
+            <section>Application</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- KYC Checklist --></label>
+            <section>KYC Checklist</section>
+        </sections>
+        <sections>
+            <label><!-- Non Personal Applications --></label>
+            <section>Non Personal Applications</section>
+        </sections>
+        <sections>
+            <label><!-- Parties to Account --></label>
+            <section>Parties to Account</section>
+        </sections>
+        <sections>
+            <label><!-- Proof of Address --></label>
+            <section>Proof of Address</section>
+        </sections>
+        <sections>
+            <label><!-- Summary --></label>
+            <section>Summary</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Non Personal --></label>
+        <name>Non_Personal</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Personal --></label>
+        <name>Personal</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

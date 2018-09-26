@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email sent to BDM when the pre-valuation decision returns as further information required</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>Further Information Pre-valuation Decision</name>
+    <style>freeForm</style>
+    <subject>Pre-valuation Decision Authorised</subject>
+    <type>html</type>
+</EmailTemplate>

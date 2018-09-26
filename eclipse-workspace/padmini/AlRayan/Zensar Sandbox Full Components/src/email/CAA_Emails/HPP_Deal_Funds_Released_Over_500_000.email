@@ -1,0 +1,6 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="1" aEditID="c1r1" >
+<![CDATA[To whom it may concern,&nbsp;<div><br></div><div>The following payment has been sent to the solicitors for completion of the below HPP. The payment is over £500,000 and will need to be approved in SWIFT.&nbsp;</div><div><br></div><div>Name:&nbsp;{!Opportunity.Name}</div><div>Solicitor:&nbsp;{!HPP_extended_opportunity__c.IBB_Solicitor__c}</div><div>Finance Required:&nbsp;{!Opportunity.Finance_Required__c}</div><div>Approved by:&nbsp;{!HPP_extended_opportunity__c.ApproverName1__c},&nbsp;{!HPP_extended_opportunity__c.ApproverName2__c} and&nbsp;{!HPP_extended_opportunity__c.ApproverName3__c}.&nbsp;</div><div><br></div><div>Link:&nbsp;{!Opportunity.Link}</div>]]></td>
+</tr>
+</table>

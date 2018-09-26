@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>EBS Action Type Config</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>EBS Action Type Config</value>
+    </caseValues>
+    <fields>
+        <label><!-- APIField --></label>
+        <name>APIField__c</name>
+    </fields>
+    <fields>
+        <label><!-- DataDirection --></label>
+        <name>DataDirection__c</name>
+    </fields>
+    <fields>
+        <label><!-- DataLabel --></label>
+        <name>DataLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- DataType --></label>
+        <name>DataType__c</name>
+    </fields>
+    <fields>
+        <label><!-- EBSActionType --></label>
+        <name>EBSActionType__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

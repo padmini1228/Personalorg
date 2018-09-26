@@ -1,0 +1,10 @@
+To whom it may concern,
+
+An emergency cash order request has been submitted by {!Cash_Order__c.Branch__c} on {!Cash_Order__c.Order_Date__c}
+
+Could you please review and approve accordingly.
+
+{!ApprovalRequest.Internal_URL}
+
+Yours sincerely, 
+Al Rayan Bank plc.

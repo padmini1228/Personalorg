@@ -1,0 +1,6 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="1" aEditID="c1r1" >
+<![CDATA[<font face="arial" size="3">To whom it may concern,&nbsp;</font><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Please see the below training request for your approval:</div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div><div><font face="arial">{!Case.Link}</font></div><div><font face="arial">Name of submitter:&nbsp;{!Case.Contact}</font></div><div><font face="arial">Course applied for:&nbsp;{!Case.Title_of_Training_Course_Proposed__c}</font></div><div><font face="arial">Cost:&nbsp;{!Case.Cost_of_course__c}</font></div><div><font face="arial"><br></font></div><div><font face="arial">Thanks</font></div><div><font face="arial"><br></font></div><div><font face="arial">{!Case.Contact}</font></div><div><font face="arial"><br></font></div><div><font face="arial"><br></font></div>]]></td>
+</tr>
+</table>

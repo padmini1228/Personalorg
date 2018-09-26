@@ -1,0 +1,7 @@
+Dear {!Case.OwnerFirstName} 
+
+Your {!Case.RecordType} - case {!Case.CaseNumber} is near breaching an service level agreement (SLA). Please action this case ASAP.  To go straight to the case please use this link: 
+
+{!Case.Link}
+
+Thanks

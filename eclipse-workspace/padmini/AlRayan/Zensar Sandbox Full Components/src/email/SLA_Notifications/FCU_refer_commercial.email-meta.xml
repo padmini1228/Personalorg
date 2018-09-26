@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_letterhead</letterhead>
+    <name>FCU refer commercial</name>
+    <style>freeForm</style>
+    <subject>FCU referral for commercial case</subject>
+    <textOnly>The following user has created a case which has referred to FCU.
+
+Created by: {!Case.CreatedBy}
+Case number: {!Case.CaseNumber}
+Subject: {!Case.Subject}
+Account: {!Case.Account}
+Link to the case: {!Case.Link}</textOnly>
+    <type>html</type>
+</EmailTemplate>

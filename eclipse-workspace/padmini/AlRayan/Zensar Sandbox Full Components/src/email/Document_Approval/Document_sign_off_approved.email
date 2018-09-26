@@ -1,0 +1,6 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="1" aEditID="c1r1" >
+<![CDATA[<font face="arial" size="3">Dear&nbsp;</font><span style="background-color: rgb(255, 255, 255);">&nbsp;{!ApprovalRequest.Process_Assignee}</span><div><font face="arial" size="3"><br></font></div><div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="font-size: 12pt;">This email is to inform you that a case for a document sign off has been approved</span><span style="font-size: 12pt;">. Please see the details below and click on the link to view the case.</span></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div><div><font face="arial">{!Case.Link}</font></div><div><font face="arial">Case number:&nbsp;{!Case.CaseNumber}</font></div><div><font face="arial">Case subject:&nbsp;{!Case.Subject}</font></div><div><br></div><div><font face="arial"><br></font></div></div>]]></td>
+</tr>
+</table>

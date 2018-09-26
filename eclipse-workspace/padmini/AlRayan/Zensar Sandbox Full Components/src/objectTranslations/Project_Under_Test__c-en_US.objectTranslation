@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Project Under Test</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Project Under Test</value>
+    </caseValues>
+    <fields>
+        <label><!-- Project Description --></label>
+        <name>Project_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Testing Stage --></label>
+        <name>Testing_Stage__c</name>
+        <picklistValues>
+            <masterLabel>Functional Testing</masterLabel>
+            <translation><!-- Functional Testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Integration Testing</masterLabel>
+            <translation><!-- Integration Testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Initiation</masterLabel>
+            <translation><!-- Pending Initiation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post-Implementation Testing</masterLabel>
+            <translation><!-- Post-Implementation Testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regression Testing</masterLabel>
+            <translation><!-- Regression Testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unit Testing</masterLabel>
+            <translation><!-- Unit Testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Acceptance Testing</masterLabel>
+            <translation><!-- User Acceptance Testing --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Projects Under Test Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Overview of all projects --></label>
+            <section>Overview of all projects</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

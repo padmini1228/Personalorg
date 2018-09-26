@@ -1,0 +1,1069 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Retail 1-2-1 Form</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Retail 1-2-1 Form</value>
+    </caseValues>
+    <fields>
+        <help><!-- Please include here the agreed action points from previous 1-2-1 along with details of how these actions have been concluded. --></help>
+        <label><!-- Actions from Previous 1-2-1 --></label>
+        <name>Actions_from_Previous_1_2_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter 3-4 key development areas or agreed actions that will be the focus for the colleague and line manager ahead of the next review period. --></help>
+        <label><!-- Agreed Actions development --></label>
+        <name>Agreed_Actions_development__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the AHT time for the agent in seconds for that month --></help>
+        <label><!-- Average Handle Time (AHT) --></label>
+        <name>Average_Handle_Time_AHT__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter number of any branch raised issues or errors during the review period --></help>
+        <label><!-- Branch raised errors/issues --></label>
+        <name>Branch_raised_errors_issues__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please select the CPH actual performance for the review period to nearest whole number --></help>
+        <label><!-- CPH Actual --></label>
+        <name>CPH_Actual__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please enter the CPH target for the staff member in the review period --></help>
+        <label><!-- CPH Target --></label>
+        <name>CPH_Target__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please enter the staff members individual CSI score for the review period --></help>
+        <label><!-- CSI Individual Score --></label>
+        <name>CSI_Individual_Score__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the CSI target score for the individual --></help>
+        <label><!-- CSI Individual Target Score --></label>
+        <name>CSI_Individual_Target_Score__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the calls target for the colleague for that month --></help>
+        <label><!-- Calls Made Target --></label>
+        <name>Calls_Made_Target__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter number of customer calls made --></help>
+        <label><!-- Calls Made --></label>
+        <name>Calls_Made__c</name>
+    </fields>
+    <fields>
+        <help><!-- This area should be used to record details of any Branch/Manager complainace checks or details of any compliance visit interview scores etc. for individuals --></help>
+        <label><!-- Compliance Checks --></label>
+        <name>Compliance_Checks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost of Error (Value) --></label>
+        <name>Cost_of_Error_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- date of the review taking place --></help>
+        <label><!-- Date 1-2-1 Conducted --></label>
+        <name>Date_1_2_1_Conducted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the 2-3 key development points for colleagues during the next review period --></help>
+        <label><!-- Development Points Sales --></label>
+        <name>Development_Points_Sales__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter any service excellence development points for the colleague in here (maximum 2-3 points per colleague) --></help>
+        <label><!-- Development points Service --></label>
+        <name>Development_points_Service__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the volume of issues/errors highlighted for the individual from FCU/Head Office during the review period --></help>
+        <label><!-- FCU/HO raised errors/issues --></label>
+        <name>FCU_HO_raised_errors_issues__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the number of Factfinds completed by the individual for the review period --></help>
+        <label><!-- Factfinds Completed --></label>
+        <name>Factfinds_Completed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the individuals target for Factfinds --></help>
+        <label><!-- Factfinds Target --></label>
+        <name>Factfinds_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- GOGW (Value) --></label>
+        <name>GOGW_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the actual number of AIPs for the staff member during the review period --></help>
+        <label><!-- HPP AIP Actual --></label>
+        <name>HPP_AIP_Actual__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the staff members HPP AIP Target for the review period --></help>
+        <label><!-- HPP AIP Target --></label>
+        <name>HPP_AIP_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP AIP % to Target --></label>
+        <name>HPP_AIP_to_Target__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the actual value of HPP Opportunities by the colleague for the review period --></help>
+        <label><!-- HPP Opportunity Actual --></label>
+        <name>HPP_Opportunity_Actual__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please Enter the colleagues HPP Opportunity target --></help>
+        <label><!-- HPP Opportunity Target --></label>
+        <name>HPP_Opportunity_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hpp Opportunity % to target --></label>
+        <name>Hpp_Opportunity_to_target__c</name>
+    </fields>
+    <fields>
+        <label><!-- LTS Actual --></label>
+        <name>LTS_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- LTS Target (This Month) --></label>
+        <name>LTS_Target_This_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- LTS Target --></label>
+        <name>LTS_Target__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter Line Managers name conducting the 1-2-1 --></help>
+        <label><!-- Line Managers Name --></label>
+        <name>Line_Managers_Name__c</name>
+        <relationshipLabel><!-- Retail 1-2-1 Form (Line Managers Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Line Manager should enter his comments on the performance of the individual during the review period under discussion --></help>
+        <label><!-- Managers Comments on Review Period --></label>
+        <name>Managers_Comments_on_Review_Period__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the staff members target for new money for the review period --></help>
+        <label><!-- New Money Secured Target --></label>
+        <name>New_Money_Secured_Actual__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the value of New Money secured during the review period --></help>
+        <label><!-- New Money Secured --></label>
+        <name>New_Money_Secured__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the volume of complaints raised against the individual during the review period --></help>
+        <label><!-- No. Complaints against individual --></label>
+        <name>No_Complaints_against_individual__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the number of days sickness for the individual during the review period --></help>
+        <label><!-- No. Days Sickness --></label>
+        <name>No_Days_Sickness__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the number of upheld complaints against the individual during the review period --></help>
+        <label><!-- No. Upheld Complaints (Individual) --></label>
+        <name>No_Upheld_Complaints_Individual__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the number times a colleague has been late during the review period --></help>
+        <label><!-- No. Occasions Lateness --></label>
+        <name>No_ocassions_Lateness__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter Observation Score for colleague --></help>
+        <label><!-- Observation Score 1 This Month --></label>
+        <name>Observation_Score_1_This_Month__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter second observation score for review period --></help>
+        <label><!-- Observation Score 2 this Month --></label>
+        <name>Observation_Score_2_this_Month__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter observation score 3 for the review period --></help>
+        <label><!-- Observation Score 3 This Month --></label>
+        <name>Observation_Score_3_This_Month__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter observation score 4 for the review period --></help>
+        <label><!-- Observation Score 4 - This Month --></label>
+        <name>Observation_Score_4_This_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percentage Calls Against Target --></label>
+        <name>Percentage_Calls_Against_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percentage Factfinds against Target --></label>
+        <name>Percentage_Factfinds_against_Target__c</name>
+    </fields>
+    <fields>
+        <help><!-- Auto populated --></help>
+        <label><!-- Percentage LTS Against Target --></label>
+        <name>Percentage_LTS_Against_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percentage NR Time target --></label>
+        <name>Percentage_NR_Time_target__c</name>
+        <picklistValues>
+            <masterLabel>2%</masterLabel>
+            <translation><!-- 2% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3%</masterLabel>
+            <translation><!-- 3% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4%</masterLabel>
+            <translation><!-- 4% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5%</masterLabel>
+            <translation><!-- 5% --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Percentage New Money to Target --></label>
+        <name>Percentage_New_Money_to_Target__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the 5 NR time for the review period --></help>
+        <label><!-- Percentage Not Ready Time --></label>
+        <name>Percentage_Not_Ready_Time__c</name>
+        <picklistValues>
+            <masterLabel>1%</masterLabel>
+            <translation><!-- 1% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10%</masterLabel>
+            <translation><!-- 10% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10-15%</masterLabel>
+            <translation><!-- 10-15% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>16-20%</masterLabel>
+            <translation><!-- 16-20% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2%</masterLabel>
+            <translation><!-- 2% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3%</masterLabel>
+            <translation><!-- 3% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4%</masterLabel>
+            <translation><!-- 4% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5%</masterLabel>
+            <translation><!-- 5% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6%</masterLabel>
+            <translation><!-- 6% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7%</masterLabel>
+            <translation><!-- 7% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8%</masterLabel>
+            <translation><!-- 8% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9%</masterLabel>
+            <translation><!-- 9% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greater than 20%</masterLabel>
+            <translation><!-- Greater than 20% --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- What is the percentage wrap time for the agent for the review period --></help>
+        <label><!-- Percentage Wrap Time --></label>
+        <name>Percentage_Wrap_Time__c</name>
+        <picklistValues>
+            <masterLabel>1%</masterLabel>
+            <translation><!-- 1% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10%</masterLabel>
+            <translation><!-- 10% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11%</masterLabel>
+            <translation><!-- 11% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12%</masterLabel>
+            <translation><!-- 12% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13%</masterLabel>
+            <translation><!-- 13% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14%</masterLabel>
+            <translation><!-- 14% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15%</masterLabel>
+            <translation><!-- 15% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>16%</masterLabel>
+            <translation><!-- 16% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>17%</masterLabel>
+            <translation><!-- 17% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18%</masterLabel>
+            <translation><!-- 18% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>19%</masterLabel>
+            <translation><!-- 19% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2%</masterLabel>
+            <translation><!-- 2% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20%</masterLabel>
+            <translation><!-- 20% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3%</masterLabel>
+            <translation><!-- 3% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4%</masterLabel>
+            <translation><!-- 4% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5%</masterLabel>
+            <translation><!-- 5% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6%</masterLabel>
+            <translation><!-- 6% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7%</masterLabel>
+            <translation><!-- 7% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8%</masterLabel>
+            <translation><!-- 8% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9%</masterLabel>
+            <translation><!-- 9% --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Percentage Wrap Time target --></label>
+        <name>Percentage_Wrap_Time_target__c</name>
+        <picklistValues>
+            <masterLabel>10%</masterLabel>
+            <translation><!-- 10% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11%</masterLabel>
+            <translation><!-- 11% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12%</masterLabel>
+            <translation><!-- 12% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6%</masterLabel>
+            <translation><!-- 6% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7%</masterLabel>
+            <translation><!-- 7% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8%</masterLabel>
+            <translation><!-- 8% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9%</masterLabel>
+            <translation><!-- 9% --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Percentage to target LTS --></label>
+        <name>Percentage_to_target_LTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the month that performance is being reviewed for --></help>
+        <label><!-- Performance Month reviewed --></label>
+        <name>Performance_Month_reviewed__c</name>
+        <picklistValues>
+            <masterLabel>April 17</masterLabel>
+            <translation><!-- April 17 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>April 2012</masterLabel>
+            <translation><!-- April 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>April 2013</masterLabel>
+            <translation><!-- April 2013 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>April 2014</masterLabel>
+            <translation><!-- April 2014 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>April 2015</masterLabel>
+            <translation><!-- April 2015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>April 2016</masterLabel>
+            <translation><!-- April 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>April 2018</masterLabel>
+            <translation><!-- April 2018 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>August 17</masterLabel>
+            <translation><!-- August 17 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>August 2012</masterLabel>
+            <translation><!-- August 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>August 2013</masterLabel>
+            <translation><!-- August 2013 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>August 2014</masterLabel>
+            <translation><!-- August 2014 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>August 2015</masterLabel>
+            <translation><!-- August 2015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>August 2016</masterLabel>
+            <translation><!-- August 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>August 2018</masterLabel>
+            <translation><!-- August 2018 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>December 17</masterLabel>
+            <translation><!-- December 17 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>December 2012</masterLabel>
+            <translation><!-- December 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>December 2013</masterLabel>
+            <translation><!-- December 2013 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>December 2014</masterLabel>
+            <translation><!-- December 2014 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>December 2015</masterLabel>
+            <translation><!-- December 2015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>December 2016</masterLabel>
+            <translation><!-- December 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>December 2018</masterLabel>
+            <translation><!-- December 2018 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>February 17</masterLabel>
+            <translation><!-- February 17 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>February 2012</masterLabel>
+            <translation><!-- February 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>February 2013</masterLabel>
+            <translation><!-- February 2013 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>February 2014</masterLabel>
+            <translation><!-- February 2014 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>February 2015</masterLabel>
+            <translation><!-- February 2015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>February 2016</masterLabel>
+            <translation><!-- February 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>February 2018</masterLabel>
+            <translation><!-- February 2018 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>January 17</masterLabel>
+            <translation><!-- January 17 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>January 2012</masterLabel>
+            <translation><!-- January 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>January 2013</masterLabel>
+            <translation><!-- January 2013 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>January 2014</masterLabel>
+            <translation><!-- January 2014 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>January 2015</masterLabel>
+            <translation><!-- January 2015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>January 2016</masterLabel>
+            <translation><!-- January 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>January 2018</masterLabel>
+            <translation><!-- January 2018 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>July 17</masterLabel>
+            <translation><!-- July 17 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>July 2012</masterLabel>
+            <translation><!-- July 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>July 2013</masterLabel>
+            <translation><!-- July 2013 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>July 2014</masterLabel>
+            <translation><!-- July 2014 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>July 2015</masterLabel>
+            <translation><!-- July 2015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>July 2016</masterLabel>
+            <translation><!-- July 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>July 2018</masterLabel>
+            <translation><!-- July 2018 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>June 17</masterLabel>
+            <translation><!-- June 17 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>June 2012</masterLabel>
+            <translation><!-- June 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>June 2013</masterLabel>
+            <translation><!-- June 2013 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>June 2014</masterLabel>
+            <translation><!-- June 2014 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>June 2015</masterLabel>
+            <translation><!-- June 2015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>June 2016</masterLabel>
+            <translation><!-- June 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>June 2018</masterLabel>
+            <translation><!-- June 2018 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>March 17</masterLabel>
+            <translation><!-- March 17 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>March 2012</masterLabel>
+            <translation><!-- March 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>March 2013</masterLabel>
+            <translation><!-- March 2013 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>March 2014</masterLabel>
+            <translation><!-- March 2014 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>March 2015</masterLabel>
+            <translation><!-- March 2015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>March 2016</masterLabel>
+            <translation><!-- March 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>March 2018</masterLabel>
+            <translation><!-- March 2018 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>May 17</masterLabel>
+            <translation><!-- May 17 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>May 2012</masterLabel>
+            <translation><!-- May 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>May 2013</masterLabel>
+            <translation><!-- May 2013 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>May 2014</masterLabel>
+            <translation><!-- May 2014 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>May 2015</masterLabel>
+            <translation><!-- May 2015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>May 2016</masterLabel>
+            <translation><!-- May 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>May 2018</masterLabel>
+            <translation><!-- May 2018 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>November 17</masterLabel>
+            <translation><!-- November 17 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>November 2012</masterLabel>
+            <translation><!-- November 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>November 2013</masterLabel>
+            <translation><!-- November 2013 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>November 2014</masterLabel>
+            <translation><!-- November 2014 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>November 2015</masterLabel>
+            <translation><!-- November 2015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>November 2016</masterLabel>
+            <translation><!-- November 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>November 2018</masterLabel>
+            <translation><!-- November 2018 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>October 17</masterLabel>
+            <translation><!-- October 17 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>October 2012</masterLabel>
+            <translation><!-- October 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>October 2013</masterLabel>
+            <translation><!-- October 2013 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>October 2014</masterLabel>
+            <translation><!-- October 2014 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>October 2015</masterLabel>
+            <translation><!-- October 2015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>October 2016</masterLabel>
+            <translation><!-- October 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>October 2018</masterLabel>
+            <translation><!-- October 2018 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>September 17</masterLabel>
+            <translation><!-- September 17 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>September 2012</masterLabel>
+            <translation><!-- September 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>September 2013</masterLabel>
+            <translation><!-- September 2013 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>September 2014</masterLabel>
+            <translation><!-- September 2014 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>September 2015</masterLabel>
+            <translation><!-- September 2015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>September 2016</masterLabel>
+            <translation><!-- September 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>September 2018</masterLabel>
+            <translation><!-- September 2018 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Person Related to --></label>
+        <name>Person_Related_to__c</name>
+        <relationshipLabel><!-- Retail 1-2-1 Form --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Personal development: Progress made --></label>
+        <name>Personal_development_Progress_made__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personal development: Agreed actions --></label>
+        <name>Personal_development_agreed_actions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personal development: Objective --></label>
+        <name>Personal_development_objective__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the result of the regulatory training undertaken --></help>
+        <label><!-- Regulatory Training Result --></label>
+        <name>Regulatory_Training_Result__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass (1st Attempt)</masterLabel>
+            <translation><!-- Pass (1st Attempt) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass (2 or more attempts)</masterLabel>
+            <translation><!-- Pass (2 or more attempts) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please provide details of any regulatory training courses completed during the review period. --></help>
+        <label><!-- Regulatory Training completed --></label>
+        <name>Regulatory_Training_completed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the date the regulatory training was completed --></help>
+        <label><!-- Regulatory training Completion Date --></label>
+        <name>Regulatory_training_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- please enter any details of agreed development points in relation to regulatory training undertaken if appropriate. --></help>
+        <label><!-- Regulatory training Development --></label>
+        <name>Regulatory_training_Development__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter details of any risk management issues raised against the individual during the review period along with remedial actions/action plan agreed to address. --></help>
+        <label><!-- Risk Managment Summary --></label>
+        <name>Risk_Managment_Summary__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the value of LTS secured during the review period use the Staff 1-2-1 data dashboard to complete the figures. --></help>
+        <label><!-- Secured LTS Value Actual --></label>
+        <name>Secured_LTS_Value_Actual__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the value of secured LTS accounts for the review period --></help>
+        <label><!-- Secured LTS Value Target --></label>
+        <name>Secured_LTS_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter details of any specific development or training the individual has received during the review period.  This should include a summary of issues and any ROC/HR File Notes if appropriate. --></help>
+        <label><!-- Specific Development/Training --></label>
+        <name>Specific_Development_Training__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please select the correct role for the staff member --></help>
+        <label><!-- Staff Members Role --></label>
+        <name>Staff_Members_Role__c</name>
+        <picklistValues>
+            <masterLabel>Branch Customer Service Advisor</masterLabel>
+            <translation><!-- Branch Customer Service Advisor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Branch Deputy Manager</masterLabel>
+            <translation><!-- Branch Deputy Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Branch Manager</masterLabel>
+            <translation><!-- Branch Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Branch Sales &amp; Service Advisor</masterLabel>
+            <translation><!-- Branch Sales &amp; Service Advisor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Development Manager</masterLabel>
+            <translation><!-- Business Development Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community BDM</masterLabel>
+            <translation><!-- Community BDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Centre Customer Support Advisor</masterLabel>
+            <translation><!-- Contact Centre Customer Support Advisor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Centre Deputy Manager</masterLabel>
+            <translation><!-- Contact Centre Deputy Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Centre MI &amp; Resource Specialist</masterLabel>
+            <translation><!-- Contact Centre MI &amp; Resource Specialist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Centre Outbound Sales Advisor</masterLabel>
+            <translation><!-- Contact Centre Outbound Sales Advisor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Centre Sales &amp; Service Advisor</masterLabel>
+            <translation><!-- Contact Centre Sales &amp; Service Advisor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Centre Sales &amp; Service Team Leader</masterLabel>
+            <translation><!-- Contact Centre Sales &amp; Service Team Leader --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Service Manager</masterLabel>
+            <translation><!-- Customer Service Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intermediary &amp; HPP Direct Manager</masterLabel>
+            <translation><!-- Intermediary &amp; HPP Direct Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior BDM</masterLabel>
+            <translation><!-- Senior BDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Branch Manager</masterLabel>
+            <translation><!-- Senior Branch Manager --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Staff member should enter the general comments on the period under review --></help>
+        <label><!-- Staff Members comments on review period --></label>
+        <name>Staff_Members_comments_on_review_period__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the colleagues name for the 1-2-1 --></help>
+        <label><!-- Staff Name --></label>
+        <name>Staff_Name__c</name>
+        <relationshipLabel><!-- Retail 1-2-1 Form (Staff Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Till Difference (Value) --></label>
+        <name>Till_Difference_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter details of number of till differences/losses for the individual during the review period --></help>
+        <label><!-- Till Differences/Losses Volume (Branch) --></label>
+        <name>Till_Differences_Losses_Branch_only__c</name>
+    </fields>
+    <fields>
+        <help><!-- Staff member should enter 2-3 bullet points/comments on what could have gone better during the review period. --></help>
+        <label><!-- What could have gone better --></label>
+        <name>What_could_have_gone_better__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Staff member should enter details of what they feel they have achieved during the review period and what has gone well for them against their individual objectives/Targets from their PDP. --></help>
+        <label><!-- What went Well during review period --></label>
+        <name>What_went_Well_during_review_period__c</name>
+    </fields>
+    <fields>
+        <label><!-- 121 Form Approved --></label>
+        <name>X121_Form_Approved__c</name>
+    </fields>
+    <layouts>
+        <layout>Contact Centre 1-2-1 2012</layout>
+        <sections>
+            <label><!-- Achievements (Targets, Customer Service, Risk, Behaviours, PDP Objectives) --></label>
+            <section>Achievements (Targets, Customer Service, Risk, Behaviours, PDP Objectives)</section>
+        </sections>
+        <sections>
+            <label><!-- Agreed Actions/Development for next review period --></label>
+            <section>Agreed Actions/Development for next review period</section>
+        </sections>
+        <sections>
+            <label><!-- CC KPI&apos;s (CC Only) --></label>
+            <section>CC KPI&apos;s (CC Only)</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Development Areas (Targets, Customer Service, RISK, Behaviours, PDP Objectives) --></label>
+            <section>Development Areas (Targets, Customer Service, RISK, Behaviours, PDP Objectives)</section>
+        </sections>
+        <sections>
+            <label><!-- IBB Retail Monthly 1-2-1 Summary Information --></label>
+            <section>IBB Retail Monthly 1-2-1 Summary Information</section>
+        </sections>
+        <sections>
+            <label><!-- Line Manager Comments --></label>
+            <section>Line Manager Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Review Previous Actions (from previous 1-2-1) --></label>
+            <section>Review Previous Actions (from previous 1-2-1)</section>
+        </sections>
+        <sections>
+            <label><!-- Risk and Compliance --></label>
+            <section>Risk and Compliance</section>
+        </sections>
+        <sections>
+            <label><!-- Sales &amp; Service Performance --></label>
+            <section>Sales &amp; Service Performance</section>
+        </sections>
+        <sections>
+            <label><!-- Staff Members Comments --></label>
+            <section>Staff Members Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Training &amp; Development --></label>
+            <section>Training &amp; Development</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Staff_1_2_1_Data_Dashboard_link --></label>
+        <name>Staff_1_2_1_Data_Dashboard_link</name>
+    </webLinks>
+</CustomObjectTranslation>

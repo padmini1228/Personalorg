@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>KPI Criteria</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>KPI Criteria</value>
+    </caseValues>
+    <fields>
+        <label><!-- Field --></label>
+        <name>Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- KPI --></label>
+        <name>KPIMGR_Target__c</name>
+        <relationshipLabel><!-- KPI Criteria --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Master KPI Criteria --></label>
+        <name>Master_KPI_Criteria__c</name>
+        <relationshipLabel><!-- KPI Criteria --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Master --></label>
+        <name>Master__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object --></label>
+        <name>Object__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operator --></label>
+        <name>Operator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>Value__c</name>
+    </fields>
+    <layouts>
+        <layout>KPI Criteria Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

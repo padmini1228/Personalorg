@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <customHelpPage>HelpRiskControl</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>This is a many to many table to link a Risk to a Control</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Actual_Effect_on_Impact__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Actual Effect on Impact</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Actual_Effect_on_Likelihood__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Actual Effect on Likelihood</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Anticipated_Control_Effectiveness_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(TEXT(Anticipated_Control_Effectiveness__c)=&apos;Inadequate&apos;, IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_F62817&apos;, &apos;Red&apos;,30,100),
+IF(TEXT(Anticipated_Control_Effectiveness__c)=&apos;Adequate&apos;,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_FDD017&apos;, &apos;Amber&apos;,30,100),
+IF(TEXT(Anticipated_Control_Effectiveness__c)=&apos;Effective&apos;,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_F7FE2E&apos;, &apos;Yellow&apos;,30,100),
+IF(TEXT(Anticipated_Control_Effectiveness__c)=&apos;Strong &amp; Effective&apos;,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_59E817&apos;, &apos;Green&apos;,30,100),
+IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_gray&apos;, &apos;Grey&apos;,30,100)))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Anticipated Control Effectiveness Rating</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Anticipated_Control_Effectiveness_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(TEXT(Anticipated_Control_Effectiveness__c)=&apos;Inadequate&apos;,4,
+IF(TEXT(Anticipated_Control_Effectiveness__c)=&apos;Adequate&apos;,3,
+IF(TEXT(Anticipated_Control_Effectiveness__c)=&apos;Effective&apos;,2,
+IF(TEXT(Anticipated_Control_Effectiveness__c)=&apos;Strong &amp; Effective&apos;,1,0))))</formula>
+        <label>Anticipated Control Effectiveness Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Anticipated_Control_Effectiveness__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Anticipated Control Effectiveness</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Inadequate</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Adequate</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Effective</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Strong &amp; Effective</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Assessment_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Assessment Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Control_Effectiveness_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(TEXT(Control_Effectiveness__c)=&apos;Inadequate&apos;, IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_F62817&apos;, &apos;Red&apos;,30,100),
+IF(TEXT(Control_Effectiveness__c)=&apos;Adequate&apos;,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_FDD017&apos;, &apos;Amber&apos;,30,100),
+IF(TEXT(Control_Effectiveness__c)=&apos;Effective&apos;,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_F7FE2E&apos;, &apos;Yellow&apos;,30,100),
+IF(TEXT( Control_Effectiveness__c)=&apos;Strong &amp; Effective&apos;,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_59E817&apos;, &apos;Green&apos;,30,100),
+IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_gray&apos;, &apos;Grey&apos;,30,100)))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Control Effectiveness Rating</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Control_Effectiveness_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(TEXT(Control_Effectiveness__c)=&apos;Inadequate&apos;,4,
+IF(TEXT(Control_Effectiveness__c)=&apos;Adequate&apos;,3,
+IF(TEXT(Control_Effectiveness__c)=&apos;Effective&apos;,2,
+IF(TEXT( Control_Effectiveness__c)=&apos;Strong &amp; Effective&apos;,1,0))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Control Effectiveness Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Control_Effectiveness__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Control Effectiveness</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Inadequate</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Adequate</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Effective</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Strong &amp; Effective</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Control__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Control</label>
+        <referenceTo>grc__Control__c</referenceTo>
+        <relationshipLabel>Associated Risks</relationshipLabel>
+        <relationshipName>Risk_Control_Lookup</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Is_Key_Control__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Is Key Control</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Risk__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Risk</label>
+        <referenceTo>grc__Risk__c</referenceTo>
+        <relationshipLabel>Associated Controls</relationshipLabel>
+        <relationshipName>Risk_Control_Lookup</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <label>Risk Control Lookup</label>
+    <nameField>
+        <displayFormat>RC{0000}</displayFormat>
+        <label>Risk Control No</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Risk Control Lookup</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <webLinks>
+        <fullName>Assess_Controls</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Assess Controls</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>{!URLFOR(&apos;/apex/&apos;+$Setup.NamespacePrefix__c.Value__c+&apos;SetControlEffectiveness&apos;, null,
+[
+rId = grc__Risk__c.Id
+]
+)}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Control_Associate_Risks</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Associate Risks</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>{!URLFOR(&apos;/apex/&apos;+$Setup.NamespacePrefix__c.Value__c+&apos;Many2ManyAssociator&apos;, null,
+[
+parentId = grc__Control__c.Id ,
+lookupObjectName = $Setup.NamespacePrefix__c.Value__c+&quot;Risk_Control_Lookup__c&quot;,
+childFieldName = $Setup.NamespacePrefix__c.Value__c+&quot;Risk__c&quot;,
+parentFieldName = $Setup.NamespacePrefix__c.Value__c+&quot;Control__c&quot;,
+filterCriteriaCollection = &quot;Many2ManyFilterCriteriaCollection&quot;,
+filterCriteriaDefaults = &quot;Many2ManyFilterCriteriaDefaults&quot;
+]
+)}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Control</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Control</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>{!URLFOR($Action.grc__Control__c.New,null,
+[
+saveURL=URLFOR(&quot;/apex/&quot;+$Setup.NamespacePrefix__c.Value__c+&quot;AddNewRel&quot;,null,
+[
+lookupObjectName = $Setup.NamespacePrefix__c.Value__c+&quot;Risk_Control_Lookup__c&quot;,
+parentFieldName = &quot;Risk__c&quot;,
+parentRecordId = grc__Risk__c.Id ,
+childFieldName = $Setup.NamespacePrefix__c.Value__c+&quot;Control__c&quot;
+]),
+cancelURL=URLFOR($Action.grc__Risk__c.View,grc__Risk__c.Id,[retURL = &quot;&quot;] )
+])}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Risk_Mitigant_Control</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Associate Controls</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>{!URLFOR(&apos;/apex/&apos;+$Setup.NamespacePrefix__c.Value__c+&apos;Many2ManyAssociator&apos;, null,
+[
+parentId = grc__Risk__c.Id ,
+lookupObjectName = $Setup.NamespacePrefix__c.Value__c+&quot;Risk_Control_Lookup__c&quot;,
+parentFieldName = $Setup.NamespacePrefix__c.Value__c+&quot;Risk__c&quot;,
+childFieldName = $Setup.NamespacePrefix__c.Value__c+&quot;Control__c&quot;,
+filterCriteriaCollection = &quot;Many2ManyFilterCriteriaCollection&quot;,
+filterCriteriaDefaults = &quot;Many2ManyFilterCriteriaDefaults&quot;
+]
+)}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Set_Control_Effectiveness</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Assess Controls</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>{!URLFOR(&apos;/apex/&apos;+$Setup.NamespacePrefix__c.Value__c+&apos;SetControlEffectiveness&apos;, null,
+[
+rId = grc__Risk__c.Id
+]
+)}</url>
+    </webLinks>
+</CustomObject>

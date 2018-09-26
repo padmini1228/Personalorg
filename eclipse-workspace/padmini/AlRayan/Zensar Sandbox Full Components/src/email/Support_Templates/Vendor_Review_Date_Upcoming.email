@@ -1,0 +1,6 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="1" aEditID="c1r1" >
+<![CDATA[To whom it may concern,&nbsp;<div><br></div><div>Please note that the vendor review for&nbsp;{!Vendor_Service_Review__c.Vendor__c} is due on&nbsp;{!Vendor_Service_Review__c.Scheduled_Date_for_Next_Review__c}</div><div><br></div><div>Please book this meeting.&nbsp;</div><div><br></div><div>Thanks</div><div><br></div><div>Operations&nbsp;</div>]]></td>
+</tr>
+</table>

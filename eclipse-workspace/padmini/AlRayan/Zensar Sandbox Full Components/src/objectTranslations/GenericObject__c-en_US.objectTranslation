@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>GenericObject</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>GenericObjects</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- GenericObjects --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CCJ Reason --></label>
+        <name>CCJ_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- CCJ amount of CCJ --></label>
+        <name>CCJ_amount_of_CCJ__c</name>
+    </fields>
+    <fields>
+        <label><!-- CCJ amount repaid --></label>
+        <name>CCJ_amount_repaid__c</name>
+    </fields>
+    <fields>
+        <label><!-- CCJ certificate held --></label>
+        <name>CCJ_certificate_held__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CCJ date of CCJ --></label>
+        <name>CCJ_date_of_CCJ__c</name>
+    </fields>
+    <fields>
+        <label><!-- CCJ date repaid --></label>
+        <name>CCJ_date_repaid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debt consolidation text --></label>
+        <name>Debt_consolidation_text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debt warning text --></label>
+        <name>Debt_warning_text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default amount --></label>
+        <name>Default_amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default date --></label>
+        <name>Default_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default date repaid --></label>
+        <name>Default_date_repaid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default reason --></label>
+        <name>Default_reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit Details --></label>
+        <name>Deposit_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit Source --></label>
+        <name>Deposit_Source__c</name>
+        <picklistValues>
+            <masterLabel>Another source</masterLabel>
+            <translation><!-- Another source --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Director&apos;s Loan</masterLabel>
+            <translation><!-- Director&apos;s Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gift</masterLabel>
+            <translation><!-- Gift --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Savings</masterLabel>
+            <translation><!-- Personal Savings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Share equity</masterLabel>
+            <translation><!-- Share equity --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Deposit Value --></label>
+        <name>Deposit_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- GenericObjects --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Refinance_Details --></label>
+        <name>Refinance_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Refinance_Type --></label>
+        <name>Refinance_Type__c</name>
+        <picklistValues>
+            <masterLabel>Business purposes</masterLabel>
+            <translation><!-- Business purposes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cost &amp; fees for home finance arrangement</masterLabel>
+            <translation><!-- Cost &amp; fees for home finance arrangement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deposit on additional property</masterLabel>
+            <translation><!-- Deposit on additional property --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Funeral expenses</masterLabel>
+            <translation><!-- Funeral expenses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gift/donation to a family member friend or charitable organisation</masterLabel>
+            <translation><!-- Gift/donation to a family member friend or charitable organisation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home improvements</masterLabel>
+            <translation><!-- Home improvements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investment (including stocks, shares or third parties)</masterLabel>
+            <translation><!-- Investment (including stocks, shares or third parties) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pay school fees</masterLabel>
+            <translation><!-- Pay school fees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal debt consolidation to a family member or friend</masterLabel>
+            <translation><!-- Personal debt consolidation to a family member or friend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchase pension</masterLabel>
+            <translation><!-- Purchase pension --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repay car loan</masterLabel>
+            <translation><!-- Repay car loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repay home improvements</masterLabel>
+            <translation><!-- Repay home improvements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repay other debts</masterLabel>
+            <translation><!-- Repay other debts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Third party debt consolidation for a family member or friend</masterLabel>
+            <translation><!-- Third party debt consolidation for a family member or friend --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Refinance_Value --></label>
+        <name>Refinance_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>CCJ</masterLabel>
+            <translation><!-- CCJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Default</masterLabel>
+            <translation><!-- Default --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DepositSource</masterLabel>
+            <translation><!-- DepositSource --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RefinanceSource</masterLabel>
+            <translation><!-- RefinanceSource --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>GenericObject Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

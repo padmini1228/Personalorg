@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <content>NoticeBoardEdit</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>NoticeBoardEdit</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <content>NoticeBoardView</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>A Domain-specific NoticeBoard</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ApprovedNotices__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The number of Notices managed under this NoticeBoard, which have been Approved and are awaiting Publication - manually or automatically, based on Notice Publication Mode</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Count of Approved Notices under this NoticeBoard</inlineHelpText>
+        <label>Approved Notices</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ClosedNotices__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The number of Closed Notices managed under this NoticeBoard</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Count of Closed Notices managed by this NoticeBoard</inlineHelpText>
+        <label>Closed Notices</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DefaultAcknowledgementStatement__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The default Acknowledgement Statement for all new Notices created under this NoticeBoard</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>The default Acknowledgement Statement for this NoticeBoard, which will pre-populate the Acknowledgement Statement of any new Notices created under this Noticeboard</inlineHelpText>
+        <label>Default Acknowledgement Statement</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Detailed description of this NoticeBoard</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Detailed description of this NoticeBoard</inlineHelpText>
+        <label>Description</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>DraftedNotices__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The number of Drafted Notices managed under this NoticeBoard - waiting to be Published</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Count of currently Drafted Notices managed by this NoticeBoard</inlineHelpText>
+        <label>Drafted Notices</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NewNotices__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The number of New Notices managed under this NoticeBoard - waiting to be Drafted</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Count of New Notices under this NoticeBoard</inlineHelpText>
+        <label>New Notices</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NoticeStatisticsRefreshed__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date and time when Notice statistics were last refreshed</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Date and Time Notice statistics were last refreshed. Click &apos;Refresh Notice Stats&apos; button to update</inlineHelpText>
+        <label>Notice Statistics Refreshed</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>PublishedNotices__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The number of Published Notices managed under this NoticeBoard - pending Required Action by Recipient and waiting to be Suspended from publication in due course</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Count of Published Notices under this NoticeBoard</inlineHelpText>
+        <label>Published Notices</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RejectedApprovalRequests__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The number of Notices managed under this NoticeBoard with Rejected Approval requests - waiting for review / resubmission or rendering as Void</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Count of Notices with Rejected Approval requests, under this NoticeBoard</inlineHelpText>
+        <label>Rejected Approval Requests</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SubmittedApprovalRequests__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The number of Notices managed under this NoiceBoard with Submitted Approval requests - awaiting review</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Count of Notices with Submitted Approval requests, under this NoticeBoard</inlineHelpText>
+        <label>Submitted Approval Requests</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Summary__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Summary description of this NoticeBoard</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Summary description of this NoticeBoard</inlineHelpText>
+        <label>Summary</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SuspendedNotices__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Te number of Suspended Notices managed under this NoticeBoard - waiting to be Closed</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Count of Suspended Notices under this NoticeBoard</inlineHelpText>
+        <label>Suspended Notices</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ThemeImagePreview__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Previews the Theme Image thumbnail addressed by &apos;Theme Image URL&apos;</description>
+        <externalId>false</externalId>
+        <formula>IMAGE(ThemeImageUrl__c, &quot;&quot;, 100, 100)</formula>
+        <inlineHelpText>Preview of Theme Image thumbnail as defined in field &apos;Theme Image URL&apos;</inlineHelpText>
+        <label>Theme Image Preview</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ThemeImageUrl__c</fullName>
+        <deprecated>false</deprecated>
+        <description>URL for an image file to be used as a Theme Image for this NoticeBoard it&apos;s Notices and Notifications. The image needs to accessible for all users and should use an aspect ratio of 4:3 or 16:9 (TV/Monitor/photo shape) for a good looking thumbnail image.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>URL (http://server/path/filename.png/jpg) for an image file to be used as a Theme Image for this NoticeBoard it&apos;s Notices and Notifications. Use an aspect ratio of 4:3 or 16:9 (TV/Monitor/photo shape) for a good looking thumbnail image.</inlineHelpText>
+        <label>Theme Image URL</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TotalNotices__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The total number of Notices managed under this NoticeBoard</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Count of all Notices under this NoticeBoard</inlineHelpText>
+        <label>Total Notices</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>NoticeBoard</label>
+    <listViews>
+        <fullName>AllNoticeBoards</fullName>
+        <columns>ThemeImagePreview__c</columns>
+        <columns>NAME</columns>
+        <columns>Summary__c</columns>
+        <columns>Description__c</columns>
+        <columns>DraftedNotices__c</columns>
+        <columns>ClosedNotices__c</columns>
+        <columns>TotalNotices__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All NoticeBoards</label>
+    </listViews>
+    <nameField>
+        <label>NoticeBoard Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>NoticeBoards</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>ThemeImagePreview__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OWNER.ALIAS</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Summary__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Description__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATED_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>TotalNotices__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>DraftedNotices__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PublishedNotices__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>ThemeImagePreview__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Summary__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ThemeImagePreview__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Summary__c</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>ThemeImagePreview__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Summary__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Description__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+    <validationRules>
+        <fullName>ImageUrl</fullName>
+        <active>true</active>
+        <errorConditionFormula>NOT(BEGINS( LOWER(ThemeImageUrl__c), &apos;http&apos;))  &amp;&amp; NOT(BEGINS(ThemeImageUrl__c, &apos;/&apos;))</errorConditionFormula>
+        <errorDisplayField>ThemeImageUrl__c</errorDisplayField>
+        <errorMessage>Theme Image Url must begin with ʺhttpʺ or ʺ/ʺ</errorMessage>
+    </validationRules>
+</CustomObject>

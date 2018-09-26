@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Object Audit</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Object Audit</value>
+    </caseValues>
+    <fields>
+        <label><!-- DisableTrigger --></label>
+        <name>DisableTrigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Id Field --></label>
+        <name>Parent_Id_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Type --></label>
+        <name>Parent_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Track Changes --></label>
+        <name>TrackChanges__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

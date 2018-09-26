@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LiveChatDeployment xmlns="http://soap.sforce.com/2006/04/metadata">
+    <displayQueuePosition>false</displayQueuePosition>
+    <domainWhiteList>
+        <domain>http://ibb.web-labs.co.uk</domain>
+        <domain>ibb.web-labs.co.uk</domain>
+        <domain>http://www.islamic-bank.com</domain>
+        <domain>www.islamic-bank.com</domain>
+        <domain>http://www.ibb.bpiagency.com</domain>
+        <domain>www.ibb.bpiagency.com</domain>
+    </domainWhiteList>
+    <enablePrechatApi>false</enablePrechatApi>
+    <enableTranscriptSave>false</enableTranscriptSave>
+    <label>Account Opening</label>
+    <windowTitle>Islamic Bank of Britain Live Chat</windowTitle>
+</LiveChatDeployment>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Letter to instruct credit to create AIP letter for CPF</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>CPF Credit email</name>
+    <style>freeForm</style>
+    <subject>CPF AIP Required</subject>
+    <textOnly>To whom it may concern, 
+Please produce and send an AIP for the following CPF submission form:{!01ID0000000V5Ey.Link}
+If you have any questions, please contact {!01ID0000000V5Ey.OwnerFullName}
+Regards,
+CPF Sales Team</textOnly>
+    <type>html</type>
+</EmailTemplate>

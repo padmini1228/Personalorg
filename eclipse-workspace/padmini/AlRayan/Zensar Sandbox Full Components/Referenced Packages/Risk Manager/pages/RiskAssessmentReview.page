@@ -1,0 +1,17 @@
+<apex:page standardController="Risk__Risk_Assessment__c" extensions="Risk.RiskAssessmentReviewController" action="{!checkFieldAccess}">
+	<apex:pagemessages />
+	<apex:form >
+	    <apex:sectionHeader title="{!$Label.risk__Risk_Assessment_Review_Title}" subtitle="{!Risk__Risk_Assessment__c.Risk__r.Name}" />
+		<apex:pageBlock >
+			<apex:pageBlockButtons location="both">
+				<apex:commandButton value="{!$Label.risk__SaveLabel}" action="{!save}" rendered="{!allowSave}"/>
+				<apex:commandButton value="{!$Label.risk__CancelLabel}" action="{!cancel}"/>
+			</apex:pageBlockButtons>
+			<apex:pageBlockSection >
+	              <apex:repeat value="{!fields}" var="f">
+	                  <apex:inputField value="{!Risk__Risk_Assessment__c[f.fieldPath]}" required="{!OR(f.required, f.dbrequired)}"/>
+	              </apex:repeat>
+			</apex:pageBlockSection>
+		</apex:pageBlock>
+	</apex:form>
+ </apex:page>

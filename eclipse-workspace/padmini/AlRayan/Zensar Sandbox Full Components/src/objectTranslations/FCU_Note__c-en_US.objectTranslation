@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>FCU Note</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>FCU Notes</value>
+    </caseValues>
+    <fields>
+        <label><!-- Case note --></label>
+        <name>Case_note__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date for reminder --></label>
+        <name>Date_for_reminder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related case --></label>
+        <name>Related_case__c</name>
+        <relationshipLabel><!-- FCU Notes --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>FCU Note Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

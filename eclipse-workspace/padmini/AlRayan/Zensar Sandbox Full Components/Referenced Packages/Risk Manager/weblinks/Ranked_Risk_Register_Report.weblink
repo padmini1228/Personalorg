@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPageWebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <availability>online</availability>
+    <displayType>link</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Ranked Risk Register Report</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>{!URLFOR(&apos;/apex/&apos;+$Setup.NamespacePrefix__c.Value__c+&apos;RiskReportSetup&apos;,null,
+[
+reportName = &quot;Ranked Risk Register Report&quot;,
+reportPage= &quot;RankingRiskReport&quot;
+]
+)}</url>
+</CustomPageWebLink>

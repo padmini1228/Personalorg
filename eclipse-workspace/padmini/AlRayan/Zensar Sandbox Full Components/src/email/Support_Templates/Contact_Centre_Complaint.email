@@ -1,0 +1,11 @@
+Team
+
+We have the following customer who is dissatisfied, please ensure their complaint is resolved by close of business tomorrow
+
+Customer Account Number: {!Case.EBS_ID__c}
+
+Contact Name  {!Case.Contact}
+
+Thanks
+
+Jim

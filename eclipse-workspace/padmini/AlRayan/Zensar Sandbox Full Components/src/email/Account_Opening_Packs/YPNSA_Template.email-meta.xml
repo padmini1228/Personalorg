@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <attachedDocuments>Marketing_Outbound/Customer_Care.pdf</attachedDocuments>
+    <attachedDocuments>Marketing_Outbound/Indiciative_Profit_Rates_May_2012.pdf</attachedDocuments>
+    <attachedDocuments>Marketing_Outbound/R85.pdf</attachedDocuments>
+    <attachedDocuments>Marketing_Outbound/R85_Helpsheet.pdf</attachedDocuments>
+    <attachedDocuments>Marketing_Outbound/YPNSA_Special_Conditions.pdf</attachedDocuments>
+    <attachedDocuments>Marketing_Outbound/consumerbanking_termsconditions_0410_pdf_pdf.pdf</attachedDocuments>
+    <available>true</available>
+    <description>T&amp;Cs and all associated documents for new YPNSA accounts</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>YPNSA Template</name>
+    <style>freeForm</style>
+    <subject>Congratulations on your new {!Opportunity.IBB_Product__c}</subject>
+    <textOnly>Dear {!Account.Salutation} {!Account.LastName},
+
+Thankyou for your recent enquiry regarding a {!Opportunity.IBB_Product__c}.
+
+Please find attached to the relevant documents for your new account:
+
+Consumer Banking Terms and Conditions.
+Special conditions for your product.
+Customer Care Leaflet.
+R85 form and helpsheet
+Latest profit rates
+
+If you have any questions, please do not hesitate to contact me on 0845 6060 786.
+
+Regards
+{!Opportunity.Seller__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Teller Function Root</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Teller Function Roots</value>
+    </caseValues>
+    <fields>
+        <label><!-- CssClass --></label>
+        <name>CssClass__c</name>
+    </fields>
+    <fields>
+        <label><!-- EBSFunctionName --></label>
+        <name>EBSFunctionName__c</name>
+    </fields>
+    <fields>
+        <label><!-- FX Limit Amount Field to Check --></label>
+        <name>FX_Limit_Amount_Field_to_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- FX Limit Currency Field to Check --></label>
+        <name>FX_Limit_Currency_Field_to_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- FX Rates Required --></label>
+        <name>FX_Rates_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Page Title --></label>
+        <name>Page_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Page --></label>
+        <name>Page__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Adding to Till --></label>
+        <name>Transaction_Adding_to_Till__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transfer Type --></label>
+        <name>Transfer_Type__c</name>
+    </fields>
+    <layouts>
+        <layout>Teller_Function_Root Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

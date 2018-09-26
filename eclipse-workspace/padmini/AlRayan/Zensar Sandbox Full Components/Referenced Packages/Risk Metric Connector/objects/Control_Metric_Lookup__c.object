@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Control__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Control</label>
+        <referenceTo>grc__Control__c</referenceTo>
+        <relationshipLabel>Associated Metrics</relationshipLabel>
+        <relationshipName>Control_Metric_Lookups</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Max_Weighted_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Max Weighted Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Metric_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(Metric_Score__c =4, IMAGE(&apos;/resource/&apos; + &apos;Risk__hmc_F62817&apos;, &apos;Red&apos;,30,100), 
+IF(Metric_Score__c =3, IMAGE(&apos;/resource/&apos; + &apos;Risk__hmc_FDD017&apos;, &apos;Amber&apos;,30,100), 
+IF(Metric_Score__c =2, IMAGE(&apos;/resource/&apos; + &apos;Risk__hmc_F7FE2E&apos;, &apos;Yellow&apos;,30,100), 
+IF(Metric_Score__c =1, IMAGE(&apos;/resource/&apos; + &apos;Risk__hmc_59E817&apos;, &apos;Green&apos;,30,100), 
+IMAGE(&apos;/resource/&apos; + &apos;Risk__hmc_gray&apos;, &apos;Grey&apos;,30,100)))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Metric Rating</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Metric_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Metric Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Metric__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Metric</label>
+        <referenceTo>xmetric__Metric__c</referenceTo>
+        <relationshipLabel>Associated Controls</relationshipLabel>
+        <relationshipName>Control_Metric_Lookups</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Previous_Metric_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(Previous_Metric_Score__c =4, IMAGE(&apos;/resource/&apos; + &apos;Risk__hmc_F62817&apos;, &apos;Red&apos;,30,100), 
+IF(Previous_Metric_Score__c =3, IMAGE(&apos;/resource/&apos; + &apos;Risk__hmc_FDD017&apos;, &apos;Amber&apos;,30,100), 
+IF(Previous_Metric_Score__c =2, IMAGE(&apos;/resource/&apos; + &apos;Risk__hmc_F7FE2E&apos;, &apos;Yellow&apos;,30,100), 
+IF(Previous_Metric_Score__c =1, IMAGE(&apos;/resource/&apos; + &apos;Risk__hmc_59E817&apos;, &apos;Green&apos;,30,100), 
+IMAGE(&apos;/resource/&apos; + &apos;Risk__hmc_gray&apos;, &apos;Grey&apos;,30,100)))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Previous Metric Rating</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Previous_Metric_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Previous Metric Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Previous_Weighted_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Previous Weighted Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Weighted_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Weighted Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Weighting__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Weighting</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Control Metric Lookup</label>
+    <nameField>
+        <displayFormat>CML-{00000}</displayFormat>
+        <label>Control Metric Lookup Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Control Metric Lookups</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <webLinks>
+        <fullName>Associate_Controls</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Associate Controls</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!URLFOR(&apos;/apex/&apos;+$Setup.Connector_Settings__c.Namespace_prefix__c+&apos;JunctionWizardFormPage&apos;, null,
+[
+            Id = xmetric__Metric__c.Id,
+            junctionObjectTypeName = $Setup.Connector_Settings__c.Namespace_prefix__c+&quot;Control_Metric_Lookup__c&quot;,
+            targetObjectTypeName = &quot;grc__Control__c&quot;,
+            originReference = $Setup.Connector_Settings__c.Namespace_prefix__c+&quot;Metric__c&quot;,
+            targetReference = $Setup.Connector_Settings__c.Namespace_prefix__c+&quot;Control__c&quot;,
+            weightingReference = $Setup.Connector_Settings__c.Namespace_prefix__c+&quot;Weighting__c&quot;
+            ])}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Associate_Metrics</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Associate Metrics</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!URLFOR(&apos;/apex/&apos;+$Setup.Connector_Settings__c.Namespace_prefix__c+&apos;JunctionWizardFormPage&apos;, null,
+[
+Id = grc__Control__c.Id,
+junctionObjectTypeName = $Setup.Connector_Settings__c.Namespace_prefix__c+&quot;Control_Metric_Lookup__c&quot;,
+targetObjectTypeName = &quot;xmetric__Metric__c&quot;,
+originReference = $Setup.Connector_Settings__c.Namespace_prefix__c+&quot;Control__c&quot;,
+targetReference = $Setup.Connector_Settings__c.Namespace_prefix__c+&quot;Metric__c&quot;,
+weightingReference = $Setup.Connector_Settings__c.Namespace_prefix__c+&quot;Weighting__c&quot;,
+metricType = &quot;KCI&quot;
+])}</url>
+    </webLinks>
+</CustomObject>

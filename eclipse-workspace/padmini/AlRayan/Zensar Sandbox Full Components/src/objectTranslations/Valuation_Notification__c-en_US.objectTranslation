@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Valuation Notification</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Valuation Notifications</value>
+    </caseValues>
+    <fields>
+        <label><!-- CaseReference --></label>
+        <name>CaseReference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Valuation --></label>
+        <name>Date_of_Valuation__c</name>
+    </fields>
+    <fields>
+        <label><!-- General Comments --></label>
+        <name>General_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of days since created --></label>
+        <name>No_of_days_since_created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Name --></label>
+        <name>Opportunity_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Seller --></label>
+        <name>Seller__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sellers delegated approver email --></label>
+        <name>Sellers_delegated_approver_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sellers email --></label>
+        <name>Sellers_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valuation Report --></label>
+        <name>Valuation_Report__c</name>
+        <relationshipLabel><!-- Valuation Notifications --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Valuation Notification Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The valuation booked date cannot be in the past. --></errorMessage>
+        <name>Valuation_booked</name>
+    </validationRules>
+</CustomObjectTranslation>

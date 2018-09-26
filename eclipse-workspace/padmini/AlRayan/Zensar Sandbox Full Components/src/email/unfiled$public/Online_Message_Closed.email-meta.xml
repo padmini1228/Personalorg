@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>Online Message Closed</name>
+    <style>freeForm</style>
+    <subject>IBB Online Message Resolution</subject>
+    <textOnly>Dear {!Contact.Name}
+
+
+
+Assalamu Alaikum
+
+
+
+Reference number: {!Case.CaseNumber}
+
+
+Thank you for your recent {!Case.Case_Customer_Description__c} query.
+
+
+I can confirm that your request has been completed.
+
+
+If you require any further information, please call our Customer Services team on 0800 4080 786, between 9.00am and 7.00pm Monday to Friday, and between 9.00am and 1.00pm on Saturdays quoting your reference number.
+
+
+Kind regards
+
+
+Al Rayan Bank</textOnly>
+    <type>html</type>
+</EmailTemplate>

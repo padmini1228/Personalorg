@@ -1,0 +1,2114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>HPP MI</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>HPP MI</value>
+    </caseValues>
+    <fields>
+        <label><!-- AHT --></label>
+        <name>AHT__c</name>
+    </fields>
+    <fields>
+        <label><!-- AccountWithIBBID --></label>
+        <name>AccountWithIBBID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account with IBB --></label>
+        <name>Account_with_IBB__c</name>
+        <relationshipLabel><!-- HPP MI --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- % Achieved --></label>
+        <name>Achieved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Completion Date --></label>
+        <name>Actual_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Completion Date v1 --></label>
+        <name>Actual_Completion_Date_v1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address1and2 --></label>
+        <name>Address1and2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Line 1 --></label>
+        <name>Address_Line_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Line 2 --></label>
+        <name>Address_Line_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Line 3 --></label>
+        <name>Address_Line_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Line 4 --></label>
+        <name>Address_Line_4__c</name>
+        <picklistValues>
+            <masterLabel>Central London</masterLabel>
+            <translation><!-- Central London --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>East England</masterLabel>
+            <translation><!-- East England --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>East London</masterLabel>
+            <translation><!-- East London --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>East Midlands</masterLabel>
+            <translation><!-- East Midlands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>London</masterLabel>
+            <translation><!-- London --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North</masterLabel>
+            <translation><!-- North --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North London</masterLabel>
+            <translation><!-- North London --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North West</masterLabel>
+            <translation><!-- North West --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scotland</masterLabel>
+            <translation><!-- Scotland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South East</masterLabel>
+            <translation><!-- South East --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South London</masterLabel>
+            <translation><!-- South London --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wales</masterLabel>
+            <translation><!-- Wales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West England</masterLabel>
+            <translation><!-- West England --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West London</masterLabel>
+            <translation><!-- West London --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West Midlands</masterLabel>
+            <translation><!-- West Midlands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yorks &amp; HSide</masterLabel>
+            <translation><!-- Yorks &amp; HSide --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Admin Fee Amount --></label>
+        <name>Admin_Fee_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Admin Fee Paid --></label>
+        <name>Admin_Fee_Paid__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to record which member of REAT the application owner is. --></help>
+        <label><!-- Administrator --></label>
+        <name>Administrator__c</name>
+        <relationshipLabel><!-- HPP MI (Administrator) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Advance to Solicitors --></label>
+        <name>Advance_to_Solicitors__c</name>
+    </fields>
+    <fields>
+        <help><!-- N: No --></help>
+        <label><!-- Advised Sale --></label>
+        <name>Advised_Sale__c</name>
+    </fields>
+    <fields>
+        <label><!-- Anticipated Monthly Rental Income --></label>
+        <name>Anticipated_Monthly_Rental_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- App Received to Valuation Instructed --></label>
+        <name>App_Received_to_Valuation_Instructed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Archived --></label>
+        <name>Archived__c</name>
+    </fields>
+    <fields>
+        <help><!-- SALES USE ONLY --></help>
+        <label><!-- Asset Sale Channel --></label>
+        <name>Asset__c</name>
+        <picklistValues>
+            <masterLabel>Agencies</masterLabel>
+            <translation><!-- Agencies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BDM</masterLabel>
+            <translation><!-- BDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Branch</masterLabel>
+            <translation><!-- Branch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Centre</masterLabel>
+            <translation><!-- Contact Centre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GCC</masterLabel>
+            <translation><!-- GCC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intermediary</masterLabel>
+            <translation><!-- Intermediary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online Direct</masterLabel>
+            <translation><!-- Online Direct --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- BDMID --></label>
+        <name>BDMID__c</name>
+    </fields>
+    <fields>
+        <label><!-- BDM --></label>
+        <name>BDM__c</name>
+        <picklistValues>
+            <masterLabel>Ali Chami</masterLabel>
+            <translation><!-- Ali Chami --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ali Vania</masterLabel>
+            <translation><!-- Ali Vania --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Esmail Jesset</masterLabel>
+            <translation><!-- Esmail Jesset --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Farukh Qurban</masterLabel>
+            <translation><!-- Farukh Qurban --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fezal Boodhoo</masterLabel>
+            <translation><!-- Fezal Boodhoo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Haydor Ali</masterLabel>
+            <translation><!-- Haydor Ali --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ihab Al-Derzi</masterLabel>
+            <translation><!-- Ihab Al-Derzi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Imbraz Uddin</masterLabel>
+            <translation><!-- Imbraz Uddin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Imran Mustafa</masterLabel>
+            <translation><!-- Imran Mustafa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intermediary</masterLabel>
+            <translation><!-- Intermediary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Junaid Sarwar</masterLabel>
+            <translation><!-- Junaid Sarwar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MU</masterLabel>
+            <translation><!-- MU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maisam Fazal</masterLabel>
+            <translation><!-- Maisam Fazal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mariam Bhamla</masterLabel>
+            <translation><!-- Mariam Bhamla --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mehwish Mirza</masterLabel>
+            <translation><!-- Mehwish Mirza --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mohammed Kola</masterLabel>
+            <translation><!-- Mohammed Kola --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mohammed Shaikh</masterLabel>
+            <translation><!-- Mohammed Shaikh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Muhammad Shaikh</masterLabel>
+            <translation><!-- Muhammad Shaikh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Naveed Muzaffar</masterLabel>
+            <translation><!-- Naveed Muzaffar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Omar Fansa</masterLabel>
+            <translation><!-- Omar Fansa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Omar Nadhmi</masterLabel>
+            <translation><!-- Omar Nadhmi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Raadi Choudhury</masterLabel>
+            <translation><!-- Raadi Choudhury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rizwan Ali</masterLabel>
+            <translation><!-- Rizwan Ali --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sagheer Malik</masterLabel>
+            <translation><!-- Sagheer Malik --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saquib Ismail</masterLabel>
+            <translation><!-- Saquib Ismail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shaheen Bandali</masterLabel>
+            <translation><!-- Shaheen Bandali --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shamim ChowDavid Harrisury</masterLabel>
+            <translation><!-- Shamim ChowDavid Harrisury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shamim Chowdhury</masterLabel>
+            <translation><!-- Shamim Chowdhury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shazia Tabusam</masterLabel>
+            <translation><!-- Shazia Tabusam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sohaib Bin Hamid</masterLabel>
+            <translation><!-- Sohaib Bin Hamid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Staff</masterLabel>
+            <translation><!-- Staff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suly Mohmed</masterLabel>
+            <translation><!-- Suly Mohmed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zeg Hussain</masterLabel>
+            <translation><!-- Zeg Hussain --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- BDM for letters such as abandonment letter --></help>
+        <label><!-- BDM for letters --></label>
+        <name>BDM_for_letters__c</name>
+        <relationshipLabel><!-- HPP MI (BDM for letters) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- BDM telephone no for letters --></label>
+        <name>BDM_telephone_no_for_letters__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Fee Amount --></label>
+        <name>BTL_Fee_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Fee Paid --></label>
+        <name>BTL_Fee_Paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Monthly Repayment --></label>
+        <name>BTL_Monthly_Repayment__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Type --></label>
+        <name>BTL_Type__c</name>
+        <picklistValues>
+            <masterLabel>NA</masterLabel>
+            <translation><!-- NA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rent Only</masterLabel>
+            <translation><!-- Rent Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Board Limits --></label>
+        <name>Board_Limits__c</name>
+        <relationshipLabel><!-- HPP MI --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CPF Arrangement Fee Amount --></label>
+        <name>CPF_Arrangement_Fee_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF Customer Name --></label>
+        <name>CPF_Customer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Abandoned v1 --></label>
+        <name>Case_Abandoned_v1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case inactive date --></label>
+        <name>Case_inactive_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case status --></label>
+        <name>Case_status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NA</masterLabel>
+            <translation><!-- NA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On hold</masterLabel>
+            <translation><!-- On hold --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Confirmed BTL Repayment Figure --></label>
+        <name>Confirmed_BTL_Repayment_Figure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Confirmed Monthly Rental Cover % --></label>
+        <name>Confirmed_Monthly_Rental_Cover__c</name>
+    </fields>
+    <fields>
+        <label><!-- Confirmed Monthly Rental Income --></label>
+        <name>Confirmed_Monthly_Rental_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Construction Comments --></label>
+        <name>Construction_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact at Solicitor --></label>
+        <name>Contact_at_Solicitor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Stage --></label>
+        <name>Credit_Stage__c</name>
+        <picklistValues>
+            <masterLabel>Abandoned</masterLabel>
+            <translation><!-- Abandoned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Funds Released</masterLabel>
+            <translation><!-- Funds Released --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IBB Solicitor Confirmation</masterLabel>
+            <translation><!-- IBB Solicitor Confirmation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offer Printed</masterLabel>
+            <translation><!-- Offer Printed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offer Returned</masterLabel>
+            <translation><!-- Offer Returned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offer Sent</masterLabel>
+            <translation><!-- Offer Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Original Offer sent to IBB Solicitor</masterLabel>
+            <translation><!-- Original Offer sent to IBB Solicitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post Val (Authorised)</masterLabel>
+            <translation><!-- Post Val (Authorised) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post Val (Declined)</masterLabel>
+            <translation><!-- Post Val (Declined) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post Val (FI)</masterLabel>
+            <translation><!-- Post Val (FI) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre Val (Authorised)</masterLabel>
+            <translation><!-- Pre Val (Authorised) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre Val (Declined)</masterLabel>
+            <translation><!-- Pre Val (Declined) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre Val (FI)</masterLabel>
+            <translation><!-- Pre Val (FI) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ROT (Authorised)</masterLabel>
+            <translation><!-- ROT (Authorised) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ROT (Declined)</masterLabel>
+            <translation><!-- ROT (Declined) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ROT (FI)</masterLabel>
+            <translation><!-- ROT (FI) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ROT Rcvd</masterLabel>
+            <translation><!-- ROT Rcvd --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redeemed</masterLabel>
+            <translation><!-- Redeemed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Val Inst</masterLabel>
+            <translation><!-- Val Inst --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Val Rcvd</masterLabel>
+            <translation><!-- Val Rcvd --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Current FTV % --></label>
+        <name>Current_FTV__c</name>
+    </fields>
+    <fields>
+        <label><!-- CustomerID --></label>
+        <name>CustomerID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Updates --></label>
+        <name>Customer_Updates__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer update indicator --></label>
+        <name>Customer_update_indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Funds Sent --></label>
+        <name>Date_Funds_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Redeemed --></label>
+        <name>Date_Redeemed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Valuation Booked --></label>
+        <name>Date_Valuation_Booked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Valuation Fee Paid --></label>
+        <name>Date_Valuation_Fee_Paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date abandonment letter sent --></label>
+        <name>Date_abandonment_letter_sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of birth --></label>
+        <name>Date_of_birth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of birth of main applicant --></label>
+        <name>Date_of_birth_of_main_applicant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date solicitor&apos;s fees paid --></label>
+        <name>Date_solicitor_s_fees_paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Since 2nd Offer Letter Sent --></label>
+        <name>Days_Since_2nd_Offer_Letter_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Since Offer Letter Sent --></label>
+        <name>Days_Since_Offer_Letter_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Since Submitted to Credit --></label>
+        <name>Days_Since_Submitted_to_Credit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days since valuation received --></label>
+        <name>Days_since_valuation_received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Drawdown Weekly Target --></label>
+        <name>Drawdown_Weekly_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employment Board Limit --></label>
+        <name>Employment_Board_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employment Sector --></label>
+        <name>Employment_Sector__c</name>
+        <picklistValues>
+            <masterLabel>Accounting</masterLabel>
+            <translation><!-- Accounting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advertising,Public Relations and Marketing</masterLabel>
+            <translation><!-- Advertising,Public Relations and Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aerospace and Defence</masterLabel>
+            <translation><!-- Aerospace and Defence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agriculture, Forestry and Fishing</masterLabel>
+            <translation><!-- Agriculture, Forestry and Fishing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Architecture</masterLabel>
+            <translation><!-- Architecture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arts and Entertainment</masterLabel>
+            <translation><!-- Arts and Entertainment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Automotive</masterLabel>
+            <translation><!-- Automotive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aviation and Airlines</masterLabel>
+            <translation><!-- Aviation and Airlines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banking</masterLabel>
+            <translation><!-- Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Biotechnology</masterLabel>
+            <translation><!-- Biotechnology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clergy</masterLabel>
+            <translation><!-- Clergy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction and Installation</masterLabel>
+            <translation><!-- Construction and Installation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consulting Services</masterLabel>
+            <translation><!-- Consulting Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery</masterLabel>
+            <translation><!-- Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation><!-- Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Energy and Utilities</masterLabel>
+            <translation><!-- Energy and Utilities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering</masterLabel>
+            <translation><!-- Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Facilities, Maintenance and Repair</masterLabel>
+            <translation><!-- Facilities, Maintenance and Repair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Services</masterLabel>
+            <translation><!-- Financial Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fire, Law Enforcement and Security</masterLabel>
+            <translation><!-- Fire, Law Enforcement and Security --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food,Beverage and Tobacco</masterLabel>
+            <translation><!-- Food,Beverage and Tobacco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government and Local  Authority</masterLabel>
+            <translation><!-- Government and Local  Authority --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graphic Arts</masterLabel>
+            <translation><!-- Graphic Arts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Healthcare - Administrative</masterLabel>
+            <translation><!-- Healthcare - Administrative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Healthcare - Nursing</masterLabel>
+            <translation><!-- Healthcare - Nursing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Healthcare - Practitioners</masterLabel>
+            <translation><!-- Healthcare - Practitioners --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Healthcare - Technicians</masterLabel>
+            <translation><!-- Healthcare - Technicians --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hotel,Gaming,Leisure and Travel</masterLabel>
+            <translation><!-- Hotel,Gaming,Leisure and Travel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Humans Resources</masterLabel>
+            <translation><!-- Humans Resources --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT - Computers, Hardware</masterLabel>
+            <translation><!-- IT - Computers, Hardware --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT - Software</masterLabel>
+            <translation><!-- IT - Software --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT- All</masterLabel>
+            <translation><!-- IT- All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance</masterLabel>
+            <translation><!-- Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internet and New Media</masterLabel>
+            <translation><!-- Internet and New Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal Services</masterLabel>
+            <translation><!-- Legal Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Library Services</masterLabel>
+            <translation><!-- Library Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing</masterLabel>
+            <translation><!-- Manufacturing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media - Broadcast</masterLabel>
+            <translation><!-- Media - Broadcast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media - Print</masterLabel>
+            <translation><!-- Media - Print --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mining</masterLabel>
+            <translation><!-- Mining --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non - Profit and Social Services</masterLabel>
+            <translation><!-- Non - Profit and Social Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Card and Services</masterLabel>
+            <translation><!-- Personal Card and Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharmaceuticals</masterLabel>
+            <translation><!-- Pharmaceuticals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Printing and Publishing</masterLabel>
+            <translation><!-- Printing and Publishing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Real Estate</masterLabel>
+            <translation><!-- Real Estate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restaurants and Food Services</masterLabel>
+            <translation><!-- Restaurants and Food Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail/Wholesale</masterLabel>
+            <translation><!-- Retail/Wholesale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Science and Research</masterLabel>
+            <translation><!-- Science and Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sports and Recreation</masterLabel>
+            <translation><!-- Sports and Recreation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telecommunications</masterLabel>
+            <translation><!-- Telecommunications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training</masterLabel>
+            <translation><!-- Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transportation and Warehousing</masterLabel>
+            <translation><!-- Transportation and Warehousing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utilities</masterLabel>
+            <translation><!-- Utilities --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Entry must be one of:                                              
+E: Employed
+S: Self-employed
+R: Retired
+O: Other --></help>
+        <label><!-- Employment status --></label>
+        <name>Employment_status__c</name>
+        <picklistValues>
+            <masterLabel>E</masterLabel>
+            <translation><!-- E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>O</masterLabel>
+            <translation><!-- O --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R</masterLabel>
+            <translation><!-- R --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S</masterLabel>
+            <translation><!-- S --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product M --></label>
+        <name>Enter_Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Completion Date --></label>
+        <name>Estimated_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exception --></label>
+        <name>Exception__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- FTV:% --></label>
+        <name>FTV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filed --></label>
+        <name>Filed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finance Period (Years) --></label>
+        <name>Finance_Period_Years__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finance Rate --></label>
+        <name>Finance_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finance Required --></label>
+        <name>Finance_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Firm FSA Ref --></label>
+        <name>Firm_FSA_Ref__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used for letters --></help>
+        <label><!-- Full name of product --></label>
+        <name>Full_name_of_product__c</name>
+        <picklistValues>
+            <masterLabel>Buy to Let Purchase Plan</masterLabel>
+            <translation><!-- Buy to Let Purchase Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial Property Finance</masterLabel>
+            <translation><!-- Commercial Property Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Purchase Plan</masterLabel>
+            <translation><!-- Home Purchase Plan --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Funds Released --></label>
+        <name>Funds_Released__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Live Balance --></label>
+        <name>HPP_Balance__c</name>
+    </fields>
+    <fields>
+        <help><!-- D: Diminishing Musharaka --></help>
+        <label><!-- HPP Characteristics --></label>
+        <name>HPP_Characteristics__c</name>
+    </fields>
+    <fields>
+        <help><!-- FOR SALES USE ONLY PLEASE REFER TO JIM MADDEN IF REQUIRED --></help>
+        <label><!-- HPP Opportunity Owner (sales) --></label>
+        <name>HPP_Opportunity_Owner_sales__c</name>
+        <relationshipLabel><!-- HPP MI (HPP Opportunity Owner (sales)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- HPP Previous Month&apos;s Balance --></label>
+        <name>HPP_Previous_Month_s_Balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP extended opportunity --></label>
+        <name>HPP_extended_opportunity__c</name>
+        <relationshipLabel><!-- HPP MI --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- HomeDetails --></label>
+        <name>HomeDetails__c</name>
+    </fields>
+    <fields>
+        <help><!-- F: First time buyer
+M: Home mover                                                                                           
+R: Re-finance
+C: Council/Registered social landlord exercising their right to buy
+O: Other
+N: Not known --></help>
+        <label><!-- Home Buyer Type --></label>
+        <name>Home_Buyer_Type__c</name>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F</masterLabel>
+            <translation><!-- F --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M</masterLabel>
+            <translation><!-- M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N</masterLabel>
+            <translation><!-- N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>O</masterLabel>
+            <translation><!-- O --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R</masterLabel>
+            <translation><!-- R --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IBBProductID --></label>
+        <name>IBBProductID__c</name>
+    </fields>
+    <fields>
+        <label><!-- IBB Product --></label>
+        <name>IBB_Product__c</name>
+        <relationshipLabel><!-- HPP MI --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- IBB Solicitors Confirmation --></label>
+        <name>IBB_Solicitors_Confirmation__c</name>
+    </fields>
+    <fields>
+        <label><!-- IBB Solicitors --></label>
+        <name>IBB_Solicitors__c</name>
+        <picklistValues>
+            <masterLabel>Hinesh</masterLabel>
+            <translation><!-- Hinesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jeffery Green Russell</masterLabel>
+            <translation><!-- Jeffery Green Russell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Needham &amp; James</masterLabel>
+            <translation><!-- Needham &amp; James --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SGH Martineau</masterLabel>
+            <translation><!-- SGH Martineau --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shakespear Putsman</masterLabel>
+            <translation><!-- Shakespear Putsman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T</masterLabel>
+            <translation><!-- T --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Todds Murray</masterLabel>
+            <translation><!-- Todds Murray --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- If other, please specify --></label>
+        <name>If_other_please_specify__c</name>
+    </fields>
+    <fields>
+        <label><!-- Implied initial collateral value --></label>
+        <name>Implied_initial_collateral_value__c</name>
+    </fields>
+    <fields>
+        <help><!-- S: Single income
+J: Joint income --></help>
+        <label><!-- Income_Basis --></label>
+        <name>Income_Basis__c</name>
+        <picklistValues>
+            <masterLabel>J</masterLabel>
+            <translation><!-- J --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S</masterLabel>
+            <translation><!-- S --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Y: Income evidenced
+N: Income not evidenced --></help>
+        <label><!-- Income Verification --></label>
+        <name>Income_Verification__c</name>
+        <picklistValues>
+            <masterLabel>N</masterLabel>
+            <translation><!-- N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y</masterLabel>
+            <translation><!-- Y --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Insurance figure --></label>
+        <name>Insurance_figure__c</name>
+    </fields>
+    <fields>
+        <label><!-- IntermediaryID --></label>
+        <name>IntermediaryID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Intermediary --></label>
+        <name>Intermediary__c</name>
+        <relationshipLabel><!-- HPP MI --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last Month FTV --></label>
+        <name>Last_Month_FTV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead provider --></label>
+        <name>Lead_provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Title at Land Registry Update --></label>
+        <name>Legal_Title_at_Land_Registry_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Rental Cover % --></label>
+        <name>Monthly_Rental_Cover__c</name>
+    </fields>
+    <fields>
+        <label><!-- New HPP CAA Opp --></label>
+        <name>New_HPP_CAA_Opp__c</name>
+        <relationshipLabel><!-- HPP MI (New HPP CAA Opp) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Next Payment Date --></label>
+        <name>Next_Payment_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of Applicants --></label>
+        <name>No_of_Applicants__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Number of days with Underwriting --></label>
+        <name>Number_of_days_with_Underwriting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Accepted to Drawdown --></label>
+        <name>Offer_Accepted_to_Drawdown__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Letter Reissued Indicator --></label>
+        <name>Offer_Letter_Reissued_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Letter Sent Indicator --></label>
+        <name>Offer_Letter_Sent_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Letter Sent --></label>
+        <name>Offer_Letter_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Printed Date --></label>
+        <name>Offer_Printed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Returned Indicator --></label>
+        <name>Offer_Returned_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Returned --></label>
+        <name>Offer_Returned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Sent to Offer Signed &amp; Accepted --></label>
+        <name>Offer_Sent_to_Offer_Signed_Accepted__c</name>
+    </fields>
+    <fields>
+        <label><!-- On hold since date --></label>
+        <name>On_hold_since_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- OppGrossIncome --></label>
+        <name>OppGrossIncome__c</name>
+    </fields>
+    <fields>
+        <help><!-- This will show the Opportunity owner for the --></help>
+        <label><!-- Opportunity Owner --></label>
+        <name>Opportunity_Owner__c</name>
+        <relationshipLabel><!-- HPP MI (Opportunity Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- HPP MI --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Original Offer  Sent to IBB Solicitors --></label>
+        <name>Original_Offer_Sent_to_IBB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overall Decline Date --></label>
+        <name>Overall_Decline_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This will be ticked automatically for HPP and not for BTL.
+It will need to manually be ticked for any other product manually --></help>
+        <label><!-- Owner Occupied --></label>
+        <name>Owner_Occupired__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person --></label>
+        <name>Person__c</name>
+        <relationshipLabel><!-- HPP MI --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Post Val Auth Date 1 --></label>
+        <name>Post_Val_Auth_Date_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Val Auth Date 2 --></label>
+        <name>Post_Val_Auth_Date_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Val Dec 1 Date --></label>
+        <name>Post_Val_Dec_1_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Val Dec 1 --></label>
+        <name>Post_Val_Dec_1__c</name>
+        <picklistValues>
+            <masterLabel>Authorised</masterLabel>
+            <translation><!-- Authorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation><!-- Declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Further Information Required</masterLabel>
+            <translation><!-- Further Information Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Withdrawal</masterLabel>
+            <translation><!-- Withdrawal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Post Val Dec 2 Date --></label>
+        <name>Post_Val_Dec_2_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Val Dec 2 --></label>
+        <name>Post_Val_Dec_2__c</name>
+        <picklistValues>
+            <masterLabel>Authorised</masterLabel>
+            <translation><!-- Authorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation><!-- Declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Further Information Required</masterLabel>
+            <translation><!-- Further Information Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Withdrawal</masterLabel>
+            <translation><!-- Withdrawal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Postcode --></label>
+        <name>Postcode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre Val Auth Date 1 --></label>
+        <name>Pre_Val_Auth_Date_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre Val Auth Date 2 --></label>
+        <name>Pre_Val_Auth_Date_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre Val Dec 1 Date --></label>
+        <name>Pre_Val_Dec_1_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre Val Dec 1 --></label>
+        <name>Pre_Val_Dec_1__c</name>
+        <picklistValues>
+            <masterLabel>Authorised</masterLabel>
+            <translation><!-- Authorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation><!-- Declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Further Information Required</masterLabel>
+            <translation><!-- Further Information Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Withdrawal</masterLabel>
+            <translation><!-- Withdrawal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pre Val Dec 2 Date --></label>
+        <name>Pre_Val_Dec_2_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre Val Dec 2 --></label>
+        <name>Pre_Val_Dec_2__c</name>
+        <picklistValues>
+            <masterLabel>Authorised</masterLabel>
+            <translation><!-- Authorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation><!-- Declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Further Information Required</masterLabel>
+            <translation><!-- Further Information Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Withdrawal</masterLabel>
+            <translation><!-- Withdrawal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PriAppEmploymentStatus --></label>
+        <name>PriAppEmploymentStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Customer Full Name --></label>
+        <name>Primary_Customer_Full_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Customer Name --></label>
+        <name>Primary_Customer_Name__c</name>
+        <relationshipLabel><!-- HPP MI --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Board Limit% --></label>
+        <name>Product_Board_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Interested in --></label>
+        <name>Product_Interested_in__c</name>
+        <picklistValues>
+            <masterLabel>BTL</masterLabel>
+            <translation><!-- BTL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GCC</masterLabel>
+            <translation><!-- GCC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP</masterLabel>
+            <translation><!-- HPP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPS</masterLabel>
+            <translation><!-- HPS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Value --></label>
+        <name>Property_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purpose of Finance --></label>
+        <name>Purpose_of_Finance_v1__c</name>
+        <picklistValues>
+            <masterLabel>Equity Release</masterLabel>
+            <translation><!-- Equity Release --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Purchase</masterLabel>
+            <translation><!-- New Purchase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refinance</masterLabel>
+            <translation><!-- Refinance --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ROT Decision Date --></label>
+        <name>ROT_Decision_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- ROT Decision --></label>
+        <name>ROT_Decision__c</name>
+        <picklistValues>
+            <masterLabel>Authorised</masterLabel>
+            <translation><!-- Authorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation><!-- Declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Further Information Required</masterLabel>
+            <translation><!-- Further Information Required --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ROT Indicator --></label>
+        <name>ROT_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- ROT Received --></label>
+        <name>ROT_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason for abandonment --></label>
+        <name>Reason_for_abandonment__c</name>
+        <picklistValues>
+            <masterLabel>Change of Property</masterLabel>
+            <translation><!-- Change of Property --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Withdrew</masterLabel>
+            <translation><!-- Customer Withdrew --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FI not supplied</masterLabel>
+            <translation><!-- FI not supplied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resubmitted</masterLabel>
+            <translation><!-- Resubmitted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SLA decision(REAT)</masterLabel>
+            <translation><!-- SLA decision(REAT) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Underwriting decision</masterLabel>
+            <translation><!-- Underwriting decision --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If other, please complete the field below. --></help>
+        <label><!-- Reason for update --></label>
+        <name>Reason_for_update__c</name>
+        <picklistValues>
+            <masterLabel>Change to details</masterLabel>
+            <translation><!-- Change to details --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incomplete documents signed</masterLabel>
+            <translation><!-- Incomplete documents signed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing documents</masterLabel>
+            <translation><!-- Missing documents --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Photocopy/not original documents</masterLabel>
+            <translation><!-- Photocopy/not original documents --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Region Board Limit --></label>
+        <name>Region_Board_Limit__c</name>
+    </fields>
+    <fields>
+        <help><!-- F: Fixed rate                                
+V: Variable rate                             
+O: Other (Use this when product is not one of the above) --></help>
+        <label><!-- Rental Rate Type --></label>
+        <name>Rental_Rate_Type__c</name>
+        <picklistValues>
+            <masterLabel>F</masterLabel>
+            <translation><!-- F --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>O</masterLabel>
+            <translation><!-- O --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V</masterLabel>
+            <translation><!-- V --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Request Completion Date v1 --></label>
+        <name>Request_Completion_Date_v1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested Completion Date --></label>
+        <name>Requested_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- SDLT Received --></label>
+        <name>SDLT_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- SDLT Sent --></label>
+        <name>SDLT_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Second Credit Check --></label>
+        <name>Second_Credit_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Customer Full Name --></label>
+        <name>Secondary_Customer_Full_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Customer Name --></label>
+        <name>Secondary_Customer_Name__c</name>
+        <relationshipLabel><!-- HPP MI (Secondary Customer Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SolicitorLineOneAddress --></label>
+        <name>SolicitorLineOneAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solicitor Flat No/Home Name --></label>
+        <name>Solicitor_Flat_No_Home_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solicitor Name --></label>
+        <name>Solicitor_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solicitor Phone Number --></label>
+        <name>Solicitor_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solicitor Postcode --></label>
+        <name>Solicitor_Postcode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solicitor Street --></label>
+        <name>Solicitor_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solicitor Town/City --></label>
+        <name>Solicitor_Town_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solicitors fees to be paid --></label>
+        <name>Solicitors_fees_to_be_paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submission Quality Notes --></label>
+        <name>Submission_Quality_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submission Quality --></label>
+        <name>Submission_Quality__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation><!-- Excellent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation><!-- Good --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incomplete</masterLabel>
+            <translation><!-- Incomplete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor</masterLabel>
+            <translation><!-- Poor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Submitted to Credit --></label>
+        <name>Submitted_to_Credit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subsidence --></label>
+        <name>Subsidence__c</name>
+    </fields>
+    <fields>
+        <label><!-- TR1 Received --></label>
+        <name>TR1_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- TR1 Sent to IBB --></label>
+        <name>TR1_Sent_to_IBB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Value --></label>
+        <name>Target_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Since 2nd Offer --></label>
+        <name>Time_Since_2nd_Offer__c</name>
+        <picklistValues>
+            <masterLabel>0-30 days</masterLabel>
+            <translation><!-- 0-30 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30-60 days</masterLabel>
+            <translation><!-- 30-60 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60-90 days</masterLabel>
+            <translation><!-- 60-90 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90 plus days</masterLabel>
+            <translation><!-- 90 plus days --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please do not edit or alter.
+This will automatically change based on workflow rules. --></help>
+        <label><!-- Time Since Offer --></label>
+        <name>Time_Since_Offer__c</name>
+        <picklistValues>
+            <masterLabel>0-30 days</masterLabel>
+            <translation><!-- 0-30 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30-60 days</masterLabel>
+            <translation><!-- 30-60 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60-90 days</masterLabel>
+            <translation><!-- 60-90 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90 plus days</masterLabel>
+            <translation><!-- 90 plus days --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Gross Income --></label>
+        <name>Total_Gross_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Finance --></label>
+        <name>Type_of_Finance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of HPP --></label>
+        <name>Type_of_HPP__c</name>
+        <picklistValues>
+            <masterLabel>BTL</masterLabel>
+            <translation><!-- BTL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CPF</masterLabel>
+            <translation><!-- CPF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GCC</masterLabel>
+            <translation><!-- GCC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP</masterLabel>
+            <translation><!-- HPP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPS</masterLabel>
+            <translation><!-- HPS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Underwriter --></label>
+        <name>Underwriter__c</name>
+        <picklistValues>
+            <masterLabel>Aasim Ahmed</masterLabel>
+            <translation><!-- Aasim Ahmed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Board</masterLabel>
+            <translation><!-- Board --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Committee</masterLabel>
+            <translation><!-- Credit Committee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>David Harris</masterLabel>
+            <translation><!-- David Harris --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peter Battersby</masterLabel>
+            <translation><!-- Peter Battersby --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roger Farnsworth</masterLabel>
+            <translation><!-- Roger Farnsworth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sultan Choudhury</masterLabel>
+            <translation><!-- Sultan Choudhury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zahid Butt</masterLabel>
+            <translation><!-- Zahid Butt --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Days with Underwriting --></label>
+        <name>Underwriting_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Val FTV% --></label>
+        <name>Val_FTV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valuation Comments --></label>
+        <name>Valuation_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valuation Fee Amount --></label>
+        <name>Valuation_Fee_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valuation Figure --></label>
+        <name>Valuation_Figure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valuation Instructed --></label>
+        <name>Valuation_Instructed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valuation Received --></label>
+        <name>Valuation_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valuation Received to Offer Sent --></label>
+        <name>Valuation_Received_to_Offer_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- With Scanning --></label>
+        <name>With_Scanning__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2nd IBB Solicitors Confirmation --></label>
+        <name>X2nd_IBB_Solicitors_Confirmation__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2nd Offer Letter Returned --></label>
+        <name>X2nd_Offer_Letter_Returned__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2nd Offer Letter Sent Indicator --></label>
+        <name>X2nd_Offer_Letter_Sent_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2nd Offer Letter Sent --></label>
+        <name>X2nd_Offer_Letter_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2nd Offer Printed Date --></label>
+        <name>X2nd_Offer_Printed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2nd Original Offer Sent to IBB Solicitor --></label>
+        <name>X2nd_Original_Offer_Sent_to_IBB_Solicito__c</name>
+    </fields>
+    <layouts>
+        <layout>Credit Admin View</layout>
+        <sections>
+            <label><!-- Completion/Post Completion --></label>
+            <section>Completion/Post Completion</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Solicitor Details --></label>
+            <section>Customer Solicitor Details</section>
+        </sections>
+        <sections>
+            <label><!-- Finance Required --></label>
+            <section>Finance Required</section>
+        </sections>
+        <sections>
+            <label><!-- Incomplete Customer Returns --></label>
+            <section>Incomplete Customer Returns</section>
+        </sections>
+        <sections>
+            <label><!-- New/Exsiting Property Details --></label>
+            <section>New/Exsiting Property Details</section>
+        </sections>
+        <sections>
+            <label><!-- Offer Section --></label>
+            <section>Offer Section</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Information --></label>
+            <section>Opportunity Information</section>
+        </sections>
+        <sections>
+            <label><!-- Report on Title (ROT) --></label>
+            <section>Report on Title (ROT)</section>
+        </sections>
+        <sections>
+            <label><!-- Revised/Reissue Offer Section --></label>
+            <section>Revised/Reissue Offer Section</section>
+        </sections>
+        <sections>
+            <label><!-- Valuation Section --></label>
+            <section>Valuation Section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HPP MI Layout</layout>
+        <sections>
+            <label><!-- Abandonment --></label>
+            <section>Abandonment</section>
+        </sections>
+        <sections>
+            <label><!-- Completion/Post Completion --></label>
+            <section>Completion/Post Completion</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Solicitor Details --></label>
+            <section>Customer Solicitor Details</section>
+        </sections>
+        <sections>
+            <label><!-- FSA Reporting --></label>
+            <section>FSA Reporting</section>
+        </sections>
+        <sections>
+            <label><!-- Finance Required --></label>
+            <section>Finance Required</section>
+        </sections>
+        <sections>
+            <label><!-- Incomplete Customer Returns --></label>
+            <section>Incomplete Customer Returns</section>
+        </sections>
+        <sections>
+            <label><!-- Information for Letters --></label>
+            <section>Information for Letters</section>
+        </sections>
+        <sections>
+            <label><!-- MI Reporting Fields --></label>
+            <section>MI Reporting Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Offer Section --></label>
+            <section>Offer Section</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Information --></label>
+            <section>Opportunity Information</section>
+        </sections>
+        <sections>
+            <label><!-- Post Valuation Decision --></label>
+            <section>Post Valuation Decision</section>
+        </sections>
+        <sections>
+            <label><!-- Pre Valuation Decision --></label>
+            <section>Pre Valuation Decision</section>
+        </sections>
+        <sections>
+            <label><!-- Report on Title (ROT) --></label>
+            <section>Report on Title (ROT)</section>
+        </sections>
+        <sections>
+            <label><!-- Revised/Reissued Offer Section --></label>
+            <section>Revised/Reissued Offer Section</section>
+        </sections>
+        <sections>
+            <label><!-- Security Property Details --></label>
+            <section>Security Property Details</section>
+        </sections>
+        <sections>
+            <label><!-- Underwriting --></label>
+            <section>Underwriting</section>
+        </sections>
+        <sections>
+            <label><!-- Valuation Section --></label>
+            <section>Valuation Section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Underwriter view</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Solicitor Details --></label>
+            <section>Customer Solicitor Details</section>
+        </sections>
+        <sections>
+            <label><!-- Finance Required --></label>
+            <section>Finance Required</section>
+        </sections>
+        <sections>
+            <label><!-- Initial Decision by Underwriting --></label>
+            <section>Initial Decision by Underwriting</section>
+        </sections>
+        <sections>
+            <label><!-- New Purchase Property Details --></label>
+            <section>New Purchase Property Details</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Information --></label>
+            <section>Opportunity Information</section>
+        </sections>
+        <sections>
+            <label><!-- Post Valuation Decision --></label>
+            <section>Post Valuation Decision</section>
+        </sections>
+        <sections>
+            <label><!-- Pre Valuation Decision --></label>
+            <section>Pre Valuation Decision</section>
+        </sections>
+        <sections>
+            <label><!-- Report on Title (ROT) --></label>
+            <section>Report on Title (ROT)</section>
+        </sections>
+        <sections>
+            <label><!-- Valuation Section --></label>
+            <section>Valuation Section</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- This date field cannot be in the future. --></errorMessage>
+        <name>Advance_to_sols</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date field cannot be in the future. --></errorMessage>
+        <name>Archived</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date field cannot be in the future. --></errorMessage>
+        <name>BTL_fee_paid</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date field cannot be in the future. --></errorMessage>
+        <name>Customer_update</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date cannot be in the past --></errorMessage>
+        <name>Date_Valuation_Booked_not_in_the_past</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date field cannot be in the future. --></errorMessage>
+        <name>Date_funds_sent</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date field cannot be in the future. --></errorMessage>
+        <name>Date_redeemed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- It is mandatory that the exception field is completed --></errorMessage>
+        <name>Exception_Field_Completed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date cannot be less than the offer sent date --></errorMessage>
+        <name>Offer_Returned_not_less_than_Offer_Sent</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This field date cannot be before the offer printed date --></errorMessage>
+        <name>Offer_Sent_equal_more_than_offer_print</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Offer printed date and sent cannot be less than the valuation received date --></errorMessage>
+        <name>Offer_printed_date_less_than_valuation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date field cannot be in the future. --></errorMessage>
+        <name>Offer_returned</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date field cannot be in the future. --></errorMessage>
+        <name>Overall_decline_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date field cannot be in the future. --></errorMessage>
+        <name>Post_val_dec_1_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date field cannot be in the future. --></errorMessage>
+        <name>Post_val_dec_2_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- ROT Received Date must be completed --></errorMessage>
+        <name>ROT_Received</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date field cannot be in the future. --></errorMessage>
+        <name>ROT_dec_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date field cannot be in the future. --></errorMessage>
+        <name>ROT_recieved</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date cannot be in the past --></errorMessage>
+        <name>Request_Completion_cannot_be_in_the_past</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date field cannot be in the future. --></errorMessage>
+        <name>SDLT_Rec</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date field cannot be in the future. --></errorMessage>
+        <name>SDLT_Sent</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date field cannot be in the future. --></errorMessage>
+        <name>Submitted_to_credit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date field cannot be in the future. --></errorMessage>
+        <name>TR1_REC</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date field cannot be in the future. --></errorMessage>
+        <name>TR1_sent_to_IBB</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date cannot be less than the 2nd offer letter sent date --></errorMessage>
+        <name>X2nd_Offer_Returned_not_less_offer_sen</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date field cannot be in the future. --></errorMessage>
+        <name>X2nd_Offer_letter_Returned</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- 2nd Offer letter printed date and sent cannot be less than the valuation received date --></errorMessage>
+        <name>X2nd_offer_letter_printed_not_less_val</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date field cannot be in the future. --></errorMessage>
+        <name>admin_fee_paid</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date field cannot be in the future. --></errorMessage>
+        <name>date_val_fee_paid</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date field cannot be in the future. --></errorMessage>
+        <name>filed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date field cannot be in the future. --></errorMessage>
+        <name>funds_released</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date field cannot be in the future. --></errorMessage>
+        <name>ibb_sols_conf</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Offer printed date and sent cannot be less than the valuation received date --></errorMessage>
+        <name>offer_letter_printed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date field cannot be in the future. --></errorMessage>
+        <name>offer_letter_sent</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date field cannot be in the future. --></errorMessage>
+        <name>offer_printed_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date field cannot be in the future. --></errorMessage>
+        <name>original_offer_returned_to_sols</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date field cannot be in the future. --></errorMessage>
+        <name>second_credit_check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date field cannot be in the future. --></errorMessage>
+        <name>val_instr</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date field cannot be in the future. --></errorMessage>
+        <name>val_rec</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date field cannot be in the future. --></errorMessage>
+        <name>with_scanning</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- 2nd Offer Letter Sent date cannot be less than the valuation received date --></errorMessage>
+        <name>x2nd_Offer_Sent_date_less_valuation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This field date cannot be before the  2nd offer printed date --></errorMessage>
+        <name>x2nd_Offer_Sent_not_less_Offer_Printed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date field cannot be in the future. --></errorMessage>
+        <name>x2nd_offer_letter_printed_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date field cannot be in the future. --></errorMessage>
+        <name>x2nd_offer_letter_sent</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This date field cannot be in the future. --></errorMessage>
+        <name>x2nd_original_offer_sent_to_sols</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Abandonment_Letters --></label>
+        <name>Abandonment_Letters</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Days_Since_Offer_Letter_Sent --></label>
+        <name>Days_Since_Offer_Letter_Sent</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Funds_Request_Daily --></label>
+        <name>Funds_Request_Daily</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Offer_Letter_Pending --></label>
+        <name>Offer_Letter_Pending</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Pipeline_Overview --></label>
+        <name>Pipeline_Overview</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Valuation_Instructed_and_not_received --></label>
+        <name>Valuation_Instructed_and_not_received</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Valuation_Pending --></label>
+        <name>Valuation_Pending</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- X90_Day_Warning --></label>
+        <name>X90_Day_Warning</name>
+    </webLinks>
+</CustomObjectTranslation>

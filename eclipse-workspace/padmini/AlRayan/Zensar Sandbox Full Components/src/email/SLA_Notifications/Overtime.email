@@ -1,0 +1,6 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<p>Dear {!ApprovalRequest.Process_Assignee}</p><p>&nbsp;</p><p>You have a new overtime return to approve. Please review the return and approve.</p><p>&nbsp;</p><p>Staff member: {!01ID0000000VfcV.00ND0000004de5P}</p><p>Normal rate: {!01ID0000000VfcV.00ND0000004de5U} hours</p><p>1.5 rate: {!01ID0000000VfcV.00ND0000004de5Z} hours</p><p>2 rate: {!01ID0000000VfcV.00ND0000004de5e} hours</p><p>&nbsp;</p><p>{!01ID0000000VfcV.Link}</p>]]></td>
+</tr>
+</table>

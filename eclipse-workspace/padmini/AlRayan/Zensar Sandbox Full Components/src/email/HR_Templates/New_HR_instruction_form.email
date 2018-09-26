@@ -1,0 +1,6 @@
+Dear HR,
+
+A new HR instruction form has been submitted for {!Instruction_for_HR__c.Staff_Member__c}.
+
+Type of change: {!Instruction_for_HR__c.Type_of_change__c}
+Details: {!Instruction_for_HR__c.Instruction_Description__c}

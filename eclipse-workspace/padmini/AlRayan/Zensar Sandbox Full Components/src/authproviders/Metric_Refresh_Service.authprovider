@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuthProvider xmlns="http://soap.sforce.com/2006/04/metadata">
+    <authorizeUrl>https://eu1.salesforce.com/services/oauth2/authorize</authorizeUrl>
+    <consumerKey>3MVG9WtWSKUDG.x6b0OkfZ7foGEYm3vwxfKKMYUI7OulQuhAKUDfubRm3rHhSjS_oFhmEJAVQziIeDMyiw7no</consumerKey>
+    <consumerSecret>LEAqmQQgfpyLiYRzzvlTd3UUSuwrL5kz</consumerSecret>
+    <executionUser>kirsty.davies@alrayanbank.co.uk.zensar</executionUser>
+    <friendlyName>Metric Refresh Service</friendlyName>
+    <includeOrgIdInIdentifier>true</includeOrgIdInIdentifier>
+    <providerType>Salesforce</providerType>
+    <registrationHandler>AutocreatedRegHandler1438964662995</registrationHandler>
+    <sendAccessTokenInHeader>false</sendAccessTokenInHeader>
+    <sendClientCredentialsInHeader>false</sendClientCredentialsInHeader>
+    <tokenUrl>https://eu1.salesforce.com/services/oauth2/token</tokenUrl>
+</AuthProvider>

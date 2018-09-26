@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email for first stage of CPF</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>CPF New Enquiry</name>
+    <style>freeForm</style>
+    <subject>New CPF Enquiry</subject>
+    <textOnly>Dear Simon,
+
+A new CPF enquiry has been logged by {!01ID0000000V5Ey.CreatedBy}.
+
+Link to the CPF submission form:
+{!01ID0000000V5Ey.Link}
+
+Name of Business: {!01ID0000000V5Ey.00ND0000003M1UV}
+Amount: {!01ID0000000V5Ey.00ND0000004bRLf}
+Term: {!01ID0000000V5Ey.00ND0000003M2sw}
+Purpose: {!01ID0000000V5Ey.00ND0000004bRM4}
+Rate: {!01ID0000000V5Ey.00ND0000003M2t1}
+
+Thanks
+{!01ID0000000V5Ey.CreatedBy}</textOnly>
+    <type>html</type>
+</EmailTemplate>

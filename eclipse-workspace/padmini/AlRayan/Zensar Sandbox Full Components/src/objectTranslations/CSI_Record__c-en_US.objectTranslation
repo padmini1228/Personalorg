@@ -1,0 +1,1485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CSI Record</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CSI Records</value>
+    </caseValues>
+    <fields>
+        <label><!-- Customer Comments --></label>
+        <name>Customer_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Application Completed --></label>
+        <name>Date_Application_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date &amp; Time of Survey --></label>
+        <name>Date_Time_of_Survey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date &amp; Time when you were last served --></label>
+        <name>Date_Time_when_you_were_last_served__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enter Prize Draw --></label>
+        <name>Enter_Prize_Draw__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Amount --></label>
+        <name>HPP_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Customer Name --></label>
+        <name>HPP_Customer_Name__c</name>
+        <relationshipLabel><!-- CSI Records (HPP Customer Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- HPP Opportunity --></label>
+        <name>HPP_Opportunity__c</name>
+        <relationshipLabel><!-- CSI Records --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Please enter the name of the BDM/HPP Specialist --></help>
+        <label><!-- HPP Specialist/BDM Name --></label>
+        <name>HPP_Specialist_BDM_Name__c</name>
+        <relationshipLabel><!-- CSI Records (HPP Specialist/BDM Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- HPP Survey CSI Score % --></label>
+        <name>HPP_Survey_CSI_Score__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the customers overall comments made during the HPP Survey --></help>
+        <label><!-- HPP Survey Comments --></label>
+        <name>HPP_Survey_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Survey Total CSI Score --></label>
+        <name>HPP_Survey_Total_CSI_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- How Easy Initial IBB Contact --></label>
+        <name>How_EasyInitial_IBB_Contact__c</name>
+        <picklistValues>
+            <masterLabel>Difficult</masterLabel>
+            <translation><!-- Difficult --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Easy</masterLabel>
+            <translation><!-- Easy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very difficult</masterLabel>
+            <translation><!-- Very difficult --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very easy</masterLabel>
+            <translation><!-- Very easy --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- How Happy Info provided formulae --></label>
+        <name>How_Happy_Info_provided_formulae__c</name>
+    </fields>
+    <fields>
+        <help><!-- 1= Extremely Dissatsfied
+2= Dissatisfied
+3= Satisfied
+4= Very Satisfied --></help>
+        <label><!-- How Helpful were the staff? --></label>
+        <name>How_Helpful_were_the_staff__c</name>
+        <picklistValues>
+            <masterLabel>Dissatisfied</masterLabel>
+            <translation><!-- Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extremely Dissatisfied</masterLabel>
+            <translation><!-- Extremely Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Satisfied</masterLabel>
+            <translation><!-- Very Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- 1= Extremely Dissatsfied
+2= Dissatisfied
+3= Satisfied
+4= Very Satisfied --></help>
+        <label><!-- How Professional were the staff --></label>
+        <name>How_Professional_were_the_staff__c</name>
+        <picklistValues>
+            <masterLabel>Dissatisfied</masterLabel>
+            <translation><!-- Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extremely Dissatisfied</masterLabel>
+            <translation><!-- Extremely Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Satisfied</masterLabel>
+            <translation><!-- Very Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- How satisfied were you with how we handled any enquiries you had post application and before completion of your Home Purchase Plan? --></help>
+        <label><!-- How Satisfied - queries handled pre comp --></label>
+        <name>How_Satisfied_queries_handled_pre_comp__c</name>
+        <picklistValues>
+            <masterLabel>Disatisfied</masterLabel>
+            <translation><!-- Disatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Disatisfied</masterLabel>
+            <translation><!-- Very Disatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Satisfied</masterLabel>
+            <translation><!-- Very Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- How satisfied were you with the information provided to you in relation to your Home Purchase Plan application with IBB? --></help>
+        <label><!-- How Satisfied were you with the info --></label>
+        <name>How_Satisfied_were_you_with_the_info__c</name>
+        <picklistValues>
+            <masterLabel>Disatisfied</masterLabel>
+            <translation><!-- Disatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Disatisfied</masterLabel>
+            <translation><!-- Very Disatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Satisfied</masterLabel>
+            <translation><!-- Very Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- How did you rate the level of service provided to you during your Application by our HPP Specialist/Business Development Mnager(BDM)? --></help>
+        <label><!-- How Satisfied with HPP Specialist/BDM --></label>
+        <name>How_did_you_rate_your_HPP_Specialist_BDM__c</name>
+        <picklistValues>
+            <masterLabel>Disatisfied</masterLabel>
+            <translation><!-- Disatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Disatisfied</masterLabel>
+            <translation><!-- Very Disatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Satisfied</masterLabel>
+            <translation><!-- Very Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- How helpful was the Staff member? --></label>
+        <name>How_helpful_was_the_Staff_member__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ask the Customer on a scale of 0-10(with 0 being not likely at all and 10 would be extermely likely) how likely are you to recommend Al Rayan Bank to a friend colleague or relative? --></help>
+        <label><!-- How likely would you be to recommend? --></label>
+        <name>How_likely_would_you_be_to_recommend__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- How long did the customer wait? --></label>
+        <name>How_long_did_the_customer_wait__c</name>
+    </fields>
+    <fields>
+        <help><!-- 1= Extremely Dissatsfied
+2= Dissatisfied
+3= Satisfied
+4= Very Satisfied --></help>
+        <label><!-- How long you had to wait. --></label>
+        <name>How_long_you_had_to_wait__c</name>
+        <picklistValues>
+            <masterLabel>Dissatisfied</masterLabel>
+            <translation><!-- Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extremely Disatisfied</masterLabel>
+            <translation><!-- Extremely Disatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Satisfied</masterLabel>
+            <translation><!-- Very Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- How professional was the Staff member Po --></label>
+        <name>How_professional_was_the_Staff_member_Po__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the customer has not found it extremely or very easy to get the help they wanted today please ask them to explain why as this will be the meaningful insight that will help us to improve our processes and make things easy for them in the future --></help>
+        <label><!-- If not easy then please tell us why? --></label>
+        <name>If_not_easy_then_please_tell_us_why__c</name>
+    </fields>
+    <fields>
+        <help><!-- Scoring for level of Staff Knowledge --></help>
+        <label><!-- Level of Knowledge Points --></label>
+        <name>Level_of_Knowledge_Points__c</name>
+    </fields>
+    <fields>
+        <help><!-- 1= Extremely Dissatsfied
+2= Dissatisfied
+3= Satisfied
+4= Very Satisfied --></help>
+        <label><!-- Level of Staff Knowledge --></label>
+        <name>Level_of_Staff_Knowledge__c</name>
+        <picklistValues>
+            <masterLabel>Dissatisfied</masterLabel>
+            <translation><!-- Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extremely Dissatisfied</masterLabel>
+            <translation><!-- Extremely Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Satisfied</masterLabel>
+            <translation><!-- Very Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Member of Staff/Seller Served by --></label>
+        <name>Member_of_Staff_Served_by__c</name>
+        <relationshipLabel><!-- CSI Records (Member of Staff/Seller Served by) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Name of Customer --></label>
+        <name>Name_of_Customer__c</name>
+        <relationshipLabel><!-- CSI Records --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Overall HPP experience points --></label>
+        <name>Overall_HPP_experience_points__c</name>
+    </fields>
+    <fields>
+        <help><!-- Overall How easy was it to get the help you wanted today? (This question  is to measure how the customer feels about how easy it is to do business with them). --></help>
+        <label><!-- Overall How easy was it to get the help? --></label>
+        <name>Overall_How_easy_was_it_to_get_the_help__c</name>
+        <picklistValues>
+            <masterLabel>Extremely difficult (7)</masterLabel>
+            <translation><!-- Extremely difficult (7) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extremely easy (1)</masterLabel>
+            <translation><!-- Extremely easy (1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fairly Difficult (5)</masterLabel>
+            <translation><!-- Fairly Difficult (5) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fairly easy (3)</masterLabel>
+            <translation><!-- Fairly easy (3) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neither (4)</masterLabel>
+            <translation><!-- Neither (4) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Difficult (6)</masterLabel>
+            <translation><!-- Very Difficult (6) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very easy (2)</masterLabel>
+            <translation><!-- Very easy (2) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- How would you rate the overall experience with IBB in purchasing your new Home? --></help>
+        <label><!-- Overall how satisfied were you with IBB --></label>
+        <name>Overall_how_satisfied_were_you_with_IBB__c</name>
+        <picklistValues>
+            <masterLabel>Disatisfied</masterLabel>
+            <translation><!-- Disatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Disatisfied</masterLabel>
+            <translation><!-- Very Disatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Satisfied</masterLabel>
+            <translation><!-- Very Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Post App pre completion points --></label>
+        <name>Post_App_pre_completion_points__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q10 Score --></label>
+        <name>Q10_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q10 --></label>
+        <name>Q10__c</name>
+        <picklistValues>
+            <masterLabel>IBB was better</masterLabel>
+            <translation><!-- IBB was better --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IBB was much better</masterLabel>
+            <translation><!-- IBB was much better --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IBB was much worse</masterLabel>
+            <translation><!-- IBB was much worse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IBB was the same</masterLabel>
+            <translation><!-- IBB was the same --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IBB was worse</masterLabel>
+            <translation><!-- IBB was worse --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Q11 Score --></label>
+        <name>Q11_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q11 --></label>
+        <name>Q11__c</name>
+        <picklistValues>
+            <masterLabel>Exceeded expectations</masterLabel>
+            <translation><!-- Exceeded expectations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Met expectations</masterLabel>
+            <translation><!-- Met expectations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slightly failed to meet expectations</masterLabel>
+            <translation><!-- Slightly failed to meet expectations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Totally failed to meet expectations</masterLabel>
+            <translation><!-- Totally failed to meet expectations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsure</masterLabel>
+            <translation><!-- Unsure --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Q11a --></label>
+        <name>Q11a__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q12 Score --></label>
+        <name>Q12_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q12 --></label>
+        <name>Q12__c</name>
+        <picklistValues>
+            <masterLabel>Clear</masterLabel>
+            <translation><!-- Clear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Confusing</masterLabel>
+            <translation><!-- Confusing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsure</masterLabel>
+            <translation><!-- Unsure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very clear</masterLabel>
+            <translation><!-- Very clear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very confusing</masterLabel>
+            <translation><!-- Very confusing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Q13 --></label>
+        <name>Q13__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Q14 --></label>
+        <name>Q14__c</name>
+        <picklistValues>
+            <masterLabel>Don&apos;t know</masterLabel>
+            <translation><!-- Don&apos;t know --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Q15 --></label>
+        <name>Q15__c</name>
+        <picklistValues>
+            <masterLabel>Don&apos;t know</masterLabel>
+            <translation><!-- Don&apos;t know --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Q16a --></label>
+        <name>Q16a__c</name>
+        <picklistValues>
+            <masterLabel>Dissatisfied</masterLabel>
+            <translation><!-- Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsure</masterLabel>
+            <translation><!-- Unsure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very dissatisfied</masterLabel>
+            <translation><!-- Very dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very satisfied</masterLabel>
+            <translation><!-- Very satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Q16a score --></label>
+        <name>Q16a_score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q16b Score --></label>
+        <name>Q16b_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q16b --></label>
+        <name>Q16b__c</name>
+        <picklistValues>
+            <masterLabel>Dissatisfied</masterLabel>
+            <translation><!-- Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsure</masterLabel>
+            <translation><!-- Unsure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very dissatisfied</masterLabel>
+            <translation><!-- Very dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very satisfied</masterLabel>
+            <translation><!-- Very satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Q17 --></label>
+        <name>Q17__c</name>
+        <picklistValues>
+            <masterLabel>Don&apos;t know</masterLabel>
+            <translation><!-- Don&apos;t know --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Q17a --></label>
+        <name>Q17a__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q18 Score --></label>
+        <name>Q18_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q18 --></label>
+        <name>Q18__c</name>
+        <picklistValues>
+            <masterLabel>IBB was better</masterLabel>
+            <translation><!-- IBB was better --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IBB was much better</masterLabel>
+            <translation><!-- IBB was much better --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IBB was much worse</masterLabel>
+            <translation><!-- IBB was much worse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IBB was worse</masterLabel>
+            <translation><!-- IBB was worse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>The same</masterLabel>
+            <translation><!-- The same --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Q19 Score --></label>
+        <name>Q19_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q19 --></label>
+        <name>Q19__c</name>
+        <picklistValues>
+            <masterLabel>Exceeded expectations</masterLabel>
+            <translation><!-- Exceeded expectations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Met expectations</masterLabel>
+            <translation><!-- Met expectations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slightly failed to meet expectations</masterLabel>
+            <translation><!-- Slightly failed to meet expectations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Totally failed to meet expectations</masterLabel>
+            <translation><!-- Totally failed to meet expectations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsure</masterLabel>
+            <translation><!-- Unsure --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Q19a --></label>
+        <name>Q19a__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q1 --></label>
+        <name>Q1__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Q20 --></label>
+        <name>Q20__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsure</masterLabel>
+            <translation><!-- Unsure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Q20a --></label>
+        <name>Q20a__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q21 --></label>
+        <name>Q21__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q22 Score --></label>
+        <name>Q22_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q22 --></label>
+        <name>Q22__c</name>
+        <picklistValues>
+            <masterLabel>IBB was better</masterLabel>
+            <translation><!-- IBB was better --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IBB was much better</masterLabel>
+            <translation><!-- IBB was much better --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IBB was much worse</masterLabel>
+            <translation><!-- IBB was much worse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IBB was worse</masterLabel>
+            <translation><!-- IBB was worse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>The same</masterLabel>
+            <translation><!-- The same --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Q23 --></label>
+        <name>Q23__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q24 Score --></label>
+        <name>Q24_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q24 --></label>
+        <name>Q24__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Q2 HPP Survey Comments --></label>
+        <name>Q2_HPP_Survey_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q2 --></label>
+        <name>Q2__c</name>
+        <picklistValues>
+            <masterLabel>Difficult</masterLabel>
+            <translation><!-- Difficult --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Easy</masterLabel>
+            <translation><!-- Easy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsure</masterLabel>
+            <translation><!-- Unsure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very difficult</masterLabel>
+            <translation><!-- Very difficult --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very easy</masterLabel>
+            <translation><!-- Very easy --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Q2 Score --></label>
+        <name>Q2_score__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter any comments in relation to Q3 --></help>
+        <label><!-- Q3 HPP Survey Comments --></label>
+        <name>Q3_HPP_Survey_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q3a --></label>
+        <name>Q3a__c</name>
+        <picklistValues>
+            <masterLabel>Agree</masterLabel>
+            <translation><!-- Agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Definitely agree</masterLabel>
+            <translation><!-- Definitely agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do not agree</masterLabel>
+            <translation><!-- Do not agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do not agree at all</masterLabel>
+            <translation><!-- Do not agree at all --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsure</masterLabel>
+            <translation><!-- Unsure --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Q3a Score --></label>
+        <name>Q3a_score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q3b --></label>
+        <name>Q3b__c</name>
+        <picklistValues>
+            <masterLabel>Agree</masterLabel>
+            <translation><!-- Agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Definitely agree</masterLabel>
+            <translation><!-- Definitely agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do not agree</masterLabel>
+            <translation><!-- Do not agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do not agree at all</masterLabel>
+            <translation><!-- Do not agree at all --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsure</masterLabel>
+            <translation><!-- Unsure --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Q3b Score --></label>
+        <name>Q3b_score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q3c Score --></label>
+        <name>Q3c_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q3c --></label>
+        <name>Q3c__c</name>
+        <picklistValues>
+            <masterLabel>Agree</masterLabel>
+            <translation><!-- Agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Definitely agree</masterLabel>
+            <translation><!-- Definitely agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do not agree</masterLabel>
+            <translation><!-- Do not agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do not agree at all</masterLabel>
+            <translation><!-- Do not agree at all --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsure</masterLabel>
+            <translation><!-- Unsure --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Q3d Score --></label>
+        <name>Q3d_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q3d --></label>
+        <name>Q3d__c</name>
+        <picklistValues>
+            <masterLabel>Agree</masterLabel>
+            <translation><!-- Agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Definitely agree</masterLabel>
+            <translation><!-- Definitely agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do not agree</masterLabel>
+            <translation><!-- Do not agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do not agree at all</masterLabel>
+            <translation><!-- Do not agree at all --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsure</masterLabel>
+            <translation><!-- Unsure --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Q3e Score --></label>
+        <name>Q3e_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q3e --></label>
+        <name>Q3e__c</name>
+        <picklistValues>
+            <masterLabel>Agree</masterLabel>
+            <translation><!-- Agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Definitely agree</masterLabel>
+            <translation><!-- Definitely agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do not agree</masterLabel>
+            <translation><!-- Do not agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do not agree at all</masterLabel>
+            <translation><!-- Do not agree at all --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsure</masterLabel>
+            <translation><!-- Unsure --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Q4 HPP Survey Comments --></label>
+        <name>Q4_HPP_Survey_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q4 Score --></label>
+        <name>Q4_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q4 --></label>
+        <name>Q4__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Q4a --></label>
+        <name>Q4a__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q4b --></label>
+        <name>Q4b__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter any comments in relation to Q5 --></help>
+        <label><!-- Q5 Hpp Survey Comments --></label>
+        <name>Q5_Hpp_Survey_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q5 Score --></label>
+        <name>Q5_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q5 --></label>
+        <name>Q5__c</name>
+        <picklistValues>
+            <masterLabel>IBB was better</masterLabel>
+            <translation><!-- IBB was better --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IBB was much better</masterLabel>
+            <translation><!-- IBB was much better --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IBB was much worse</masterLabel>
+            <translation><!-- IBB was much worse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IBB was the same</masterLabel>
+            <translation><!-- IBB was the same --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IBB was worse</masterLabel>
+            <translation><!-- IBB was worse --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please enter any comments in relation to Q6 --></help>
+        <label><!-- Q6 HPp Survey Comments --></label>
+        <name>Q6_HPp_Survey_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q6 --></label>
+        <name>Q6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q7 --></label>
+        <name>Q7__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Q8 --></label>
+        <name>Q8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q9a Score --></label>
+        <name>Q9a_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q9a --></label>
+        <name>Q9a__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Q9b Score --></label>
+        <name>Q9b_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q9b --></label>
+        <name>Q9b__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Q9c --></label>
+        <name>Q9c__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service by Sales Rep points --></label>
+        <name>Service_by_Sales_Rep_points__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service provided by your solicitor --></label>
+        <name>Service_provided_by_your_solicitor__c</name>
+        <picklistValues>
+            <masterLabel>Dissatisfied</masterLabel>
+            <translation><!-- Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Dissatisfied</masterLabel>
+            <translation><!-- Very Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Satisfied</masterLabel>
+            <translation><!-- Very Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Solicitor Points --></label>
+        <name>Solicitor_Points__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total CSI Score --></help>
+        <label><!-- Total CSI Score --></label>
+        <name>Total_CSI_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total HPP CSI Score --></label>
+        <name>Total_HPP_CSI_Score__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please Enter the Transaction type --></help>
+        <label><!-- Transaction type --></label>
+        <name>Transaction_type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Finally, please could you provide any feedback on anything you feel we could do to improve the service we offered to you during your Home Purchase with IBB? --></help>
+        <label><!-- What if Anything could we do to Improve --></label>
+        <name>What_if_Anything_could_we_do_to_Improve__c</name>
+    </fields>
+    <fields>
+        <label><!-- Where were you last served? --></label>
+        <name>Where_were_you_last_served__c</name>
+        <picklistValues>
+            <masterLabel>Call Centre</masterLabel>
+            <translation><!-- Call Centre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>East Ham</masterLabel>
+            <translation><!-- East Ham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edgware Road</masterLabel>
+            <translation><!-- Edgware Road --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP Survey</masterLabel>
+            <translation><!-- HPP Survey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leicester</masterLabel>
+            <translation><!-- Leicester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manchester</masterLabel>
+            <translation><!-- Manchester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier Banking Survey</masterLabel>
+            <translation><!-- Premier Banking Survey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Heath</masterLabel>
+            <translation><!-- Small Heath --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southall</masterLabel>
+            <translation><!-- Southall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Whitechapel</masterLabel>
+            <translation><!-- Whitechapel --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Based upon your experience with IBB how likely would you be to recommend our Home Purchase Plan to friends and family/others? --></help>
+        <label><!-- Would you be likely to recommend our HPP --></label>
+        <name>Would_you_be_likely_to_recommend_our_HPP__c</name>
+        <picklistValues>
+            <masterLabel>Recommend</masterLabel>
+            <translation><!-- Recommend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strongly Recommend</masterLabel>
+            <translation><!-- Strongly Recommend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Would Not Recommend</masterLabel>
+            <translation><!-- Would Not Recommend --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Would you refer IBB to Friends &amp; Family? --></label>
+        <name>Would_you_refer_IBB_to_Friends_Family__c</name>
+    </fields>
+    <fields>
+        <help><!-- How would you rate the level of service provided to you by the Solicitors dealing with your Home Purchase? --></help>
+        <label><!-- rate the level of Service from Solicitor --></label>
+        <name>rate_the_level_of_Service_from_Solicitor__c</name>
+        <picklistValues>
+            <masterLabel>Disatisfied</masterLabel>
+            <translation><!-- Disatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Disatisfied</masterLabel>
+            <translation><!-- Very Disatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Satisfied</masterLabel>
+            <translation><!-- Very Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- recommendation points --></label>
+        <name>recommendation_points__c</name>
+    </fields>
+    <layouts>
+        <layout>CSI Record Layout</layout>
+        <sections>
+            <label><!-- CSI Information --></label>
+            <section>CSI Information</section>
+        </sections>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- HPP Survey --></label>
+            <section>HPP Survey</section>
+        </sections>
+        <sections>
+            <label><!-- New HPP Survey --></label>
+            <section>New HPP Survey</section>
+        </sections>
+        <sections>
+            <label><!-- Premier Banking Survey --></label>
+            <section>Premier Banking Survey</section>
+        </sections>
+        <sections>
+            <label><!-- Transaction Survey --></label>
+            <section>Transaction Survey</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HPP Survey</layout>
+        <sections>
+            <label><!-- CSI INFORMATION --></label>
+            <section>CSI INFORMATION</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- STAGE 1 - INITIAL ELIGIBILITY CONTACT --></label>
+            <section>STAGE 1 - INITIAL ELIGIBILITY CONTACT</section>
+        </sections>
+        <sections>
+            <label><!-- STAGE 2 - APPLICATION --></label>
+            <section>STAGE 2 - APPLICATION</section>
+        </sections>
+        <sections>
+            <label><!-- STAGE 3 - OFFER AND DEALING WITH SOLICITORS --></label>
+            <section>STAGE 3 - OFFER AND DEALING WITH SOLICITORS</section>
+        </sections>
+        <sections>
+            <label><!-- STAGE 4 - OVERALL PROCESS --></label>
+            <section>STAGE 4 - OVERALL PROCESS</section>
+        </sections>
+        <sections>
+            <label><!-- TOTAL CSI SCORES --></label>
+            <section>TOTAL CSI SCORES</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- HPP Survey --></label>
+        <name>HPP_Survey</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Standard CSI Record --></label>
+        <name>Standard_CSI_Record</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The customer has answered 1,2 or 3 for Q11, Q11a must be answered --></errorMessage>
+        <name>Q11_is_1_Q11a_must_be_answered</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The customer has answered 1,2 or 3 for Q11, Q11a must be answered --></errorMessage>
+        <name>Q11_is_2_Q11a_must_be_answered</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The customer has answered 1,2 or 3 for Q11, Q11a must be answered --></errorMessage>
+        <name>Q11_is_3_Q11a_must_be_answered</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The customer has answered 1,2 or 3 for Q19, Q19a must be answered --></errorMessage>
+        <name>Q19_is_1_Q19a_must_be_answered</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The customer has answered 1,2 or 3 for Q19, Q19a must be answered --></errorMessage>
+        <name>Q19_is_2_Q19a_must_be_answered</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The customer has answered 1,2 or 3 for Q19, Q19a must be answered --></errorMessage>
+        <name>Q19_is_3_Q19a_must_be_answered</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The customer has answered yes to Q1, Q10 must be answered --></errorMessage>
+        <name>Q1_is_yes_Q10_must_be_answered</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The customer has answered yes to Q1, Q18 must be answered --></errorMessage>
+        <name>Q1_is_yes_Q18_must_be_answered</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The customer has answered yes to Q1, Q22 must be answered --></errorMessage>
+        <name>Q1_is_yes_Q22_must_be_answered</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The customer has answered yes to Q1, Q5 must be answered --></errorMessage>
+        <name>Q1_is_yes_Q5_must_be_answered</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The customer has answered yes to Q20, Q20a must be answered --></errorMessage>
+        <name>Q20_is_yes_Q20a_must_be_answered</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The customer has answered 0-5 for Q4, Q4a and Q4b must be answered --></errorMessage>
+        <name>Q4_is_0_Q4ab_must_be_answered</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The customer has answered 0-5 for Q4, Q4a and Q4b must be answered --></errorMessage>
+        <name>Q4_is_1_Q4ab_must_be_answered</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The customer has answered 0-5 for Q4, Q4a and Q4b must be answered --></errorMessage>
+        <name>Q4_is_2_Q4ab_must_be_answered</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The customer has answered 0-5 for Q4, Q4a and Q4b must be answered --></errorMessage>
+        <name>Q4_is_3_Q4ab_must_be_answered</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The customer has answered 0-5 for Q4, Q4a and Q4b must be answered --></errorMessage>
+        <name>Q4_is_4_Q4ab_must_be_answered</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The customer has answered 0-5 for Q4, Q4a and Q4b must be answered --></errorMessage>
+        <name>Q4_is_5_Q4ab_must_be_answered</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The customer has answered 0-5 for Q9a or Q9b, Q9c must be answered --></errorMessage>
+        <name>Q9ab_is_0_Q9c_must_be_answered</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The customer has answered 0-5 for Q9a or Q9b, Q9c must be answered --></errorMessage>
+        <name>Q9ab_is_1_Q9c_must_be_answered</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The customer has answered 0-5 for Q9a or Q9b, Q9c must be answered --></errorMessage>
+        <name>Q9ab_is_2_Q9c_must_be_answered</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The customer has answered 0-5 for Q9a or Q9b, Q9c must be answered --></errorMessage>
+        <name>Q9ab_is_3_Q9c_must_be_answered</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The customer has answered 0-5 for Q9a or Q9b, Q9c must be answered --></errorMessage>
+        <name>Q9ab_is_4_Q9c_must_be_answered</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The customer has answered 0-5 for Q9a or Q9b, Q9c must be answered --></errorMessage>
+        <name>Q9ab_is_5_Q9c_must_be_answered</name>
+    </validationRules>
+</CustomObjectTranslation>

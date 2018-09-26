@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>CAA Change request Approval email</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>CAA Change Request</name>
+    <style>freeForm</style>
+    <subject>CAA Change Request Approval Required</subject>
+    <textOnly>CAA Change Request Awaiting your approval:
+{!01ID0000000V6qD.00ND0000003M2rZ}{!01ID0000000V6qD.00ND0000003M2rj}{!01ID0000000V6qD.00ND0000003M2ro}{!01ID0000000V6qD.00ND0000003M2rF}
+Link below:{!01ID0000000V6qD.Link}
+Thanks
+CAA Team</textOnly>
+    <type>html</type>
+</EmailTemplate>

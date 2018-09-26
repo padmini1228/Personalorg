@@ -1,0 +1,1664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Product Set</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Product Sets</value>
+    </caseValues>
+    <fields>
+        <label><!-- Administration fee value % --></label>
+        <name>Administration_fee_value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Administration fee value % --></label>
+        <name>Administration_fee_value_percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Affordability Percentage --></label>
+        <name>Affordability_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agency fee - Percentage --></label>
+        <name>Agency_fee_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agency fees - Value --></label>
+        <name>Agency_fees_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allow CCJs --></label>
+        <name>Allow_CCJs__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Amount of application fee paid on app --></label>
+        <name>Amount_of_application_fee_paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- AssetorLiability --></label>
+        <name>AssetorLiability__c</name>
+        <picklistValues>
+            <masterLabel>Asset</masterLabel>
+            <translation><!-- Asset --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liability</masterLabel>
+            <translation><!-- Liability --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Bank legal cost --></label>
+        <name>Bank_legal_cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bonus condition rate percentage --></label>
+        <name>Bonus_condition_rate_percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bonus period duration --></label>
+        <name>Bonus_period_duration__c</name>
+        <picklistValues>
+            <masterLabel>12 months</masterLabel>
+            <translation><!-- 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 months</masterLabel>
+            <translation><!-- 18 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 months</masterLabel>
+            <translation><!-- 24 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 months</masterLabel>
+            <translation><!-- 36 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 months</masterLabel>
+            <translation><!-- 48 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 months</masterLabel>
+            <translation><!-- 60 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed date</masterLabel>
+            <translation><!-- Fixed date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Bonus period end date --></label>
+        <name>Bonus_period_end_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cap % --></label>
+        <name>Cap_bench_percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cap % --></label>
+        <name>Cap_revert_percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash back amount --></label>
+        <name>Cash_back_amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash back percentage --></label>
+        <name>Cash_back_percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash card (Available to have) --></label>
+        <name>Cash_card_Available_to_have__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cheque book (Available to have) --></label>
+        <name>Cheque_book_Available_to_have__c</name>
+    </fields>
+    <fields>
+        <help><!-- ONLY APPLICABLE FOR BTL. Select 6 from the lookup. --></help>
+        <label><!-- Clause 6 --></label>
+        <name>Clause_6__c</name>
+        <relationshipLabel><!-- Product Sets (Clause 6) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- FOR HPP PRODUCTS ONLY. Select 5.2 from the lookup. --></help>
+        <label><!-- Clause at the end of 5.2 --></label>
+        <name>Clause_at_the_end_of_5_2__c</name>
+        <relationshipLabel><!-- Product Sets (Clause at the end of 5.2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Collar % --></label>
+        <name>Collar_bench_percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collar % --></label>
+        <name>Collar_revert_percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- DocuGen AIP Letter --></label>
+        <name>Conga_AIP_Letter__c</name>
+        <relationshipLabel><!-- Product Sets (Conga AIP Letter) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DocuGen AIP MMR --></label>
+        <name>Conga_AIP_MMR__c</name>
+        <relationshipLabel><!-- Product Sets (Conga AIP MMR) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DocuGen Application Form --></label>
+        <name>Conga_Application_Form__c</name>
+        <relationshipLabel><!-- Product Sets (Conga Application Form) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DocuGen Welcome Letter --></label>
+        <name>Conga_Welcome_Letter__c</name>
+        <relationshipLabel><!-- Product Sets (Conga Welcome Letter) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer Channel --></label>
+        <name>Customer_Channel__c</name>
+        <picklistValues>
+            <masterLabel>Branch customer</masterLabel>
+            <translation><!-- Branch customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Building insurance customer</masterLabel>
+            <translation><!-- Building insurance customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current account holder</masterLabel>
+            <translation><!-- Current account holder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Existing customer</masterLabel>
+            <translation><!-- Existing customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internet</masterLabel>
+            <translation><!-- Internet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New customer</masterLabel>
+            <translation><!-- New customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone Customer</masterLabel>
+            <translation><!-- Phone Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier</masterLabel>
+            <translation><!-- Premier --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer legal cost --></label>
+        <name>Customer_legal_cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debit card (Available to have) --></label>
+        <name>Debit_card_Available_to_have__c</name>
+    </fields>
+    <fields>
+        <label><!-- Details of products portability --></label>
+        <name>Details_of_products_portability__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distribution/access type --></label>
+        <name>Distribution_access_type__c</name>
+        <picklistValues>
+            <masterLabel>Bank</masterLabel>
+            <translation><!-- Bank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online</masterLabel>
+            <translation><!-- Online --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Postal</masterLabel>
+            <translation><!-- Postal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Early repayment 1 type --></label>
+        <name>Early_repayment_1_type__c</name>
+        <picklistValues>
+            <masterLabel>12 months</masterLabel>
+            <translation><!-- 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 months</masterLabel>
+            <translation><!-- 18 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 months</masterLabel>
+            <translation><!-- 24 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 months</masterLabel>
+            <translation><!-- 36 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 months</masterLabel>
+            <translation><!-- 48 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 months</masterLabel>
+            <translation><!-- 60 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed date</masterLabel>
+            <translation><!-- Fixed date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Early repayment 2 type --></label>
+        <name>Early_repayment_2_type__c</name>
+        <picklistValues>
+            <masterLabel>12 months</masterLabel>
+            <translation><!-- 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 months</masterLabel>
+            <translation><!-- 18 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 months</masterLabel>
+            <translation><!-- 24 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 months</masterLabel>
+            <translation><!-- 36 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 months</masterLabel>
+            <translation><!-- 48 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 months</masterLabel>
+            <translation><!-- 60 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed date</masterLabel>
+            <translation><!-- Fixed date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Early repayment 3 type --></label>
+        <name>Early_repayment_3_type__c</name>
+        <picklistValues>
+            <masterLabel>12 months</masterLabel>
+            <translation><!-- 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 months</masterLabel>
+            <translation><!-- 18 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 months</masterLabel>
+            <translation><!-- 24 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 months</masterLabel>
+            <translation><!-- 36 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 months</masterLabel>
+            <translation><!-- 48 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 months</masterLabel>
+            <translation><!-- 60 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed date</masterLabel>
+            <translation><!-- Fixed date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Early repayment 4 type --></label>
+        <name>Early_repayment_4_type__c</name>
+        <picklistValues>
+            <masterLabel>12 months</masterLabel>
+            <translation><!-- 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 months</masterLabel>
+            <translation><!-- 18 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 months</masterLabel>
+            <translation><!-- 24 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 months</masterLabel>
+            <translation><!-- 36 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 months</masterLabel>
+            <translation><!-- 48 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 months</masterLabel>
+            <translation><!-- 60 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed date</masterLabel>
+            <translation><!-- Fixed date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Early repayment 5 type --></label>
+        <name>Early_repayment_5_type__c</name>
+        <picklistValues>
+            <masterLabel>12 months</masterLabel>
+            <translation><!-- 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 months</masterLabel>
+            <translation><!-- 18 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 months</masterLabel>
+            <translation><!-- 24 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 months</masterLabel>
+            <translation><!-- 36 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 months</masterLabel>
+            <translation><!-- 48 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 months</masterLabel>
+            <translation><!-- 60 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed date</masterLabel>
+            <translation><!-- Fixed date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Early repayment charge 1 --></label>
+        <name>Early_repayment_charge_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Early repayment charge 2 --></label>
+        <name>Early_repayment_charge_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Early repayment charge 3 --></label>
+        <name>Early_repayment_charge_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Early repayment charge 4 --></label>
+        <name>Early_repayment_charge_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Early repayment charge 5 --></label>
+        <name>Early_repayment_charge_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Early repayment charges --></label>
+        <name>Early_repayment_charges__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employment Type Error --></label>
+        <name>Employment_Type_Error__c</name>
+    </fields>
+    <fields>
+        <label><!-- EventDirector --></label>
+        <name>EventDirector__c</name>
+        <relationshipLabel><!-- Product Sets (EventDirector) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Execution only letter --></label>
+        <name>Execution_only_letter__c</name>
+        <relationshipLabel><!-- Product Sets (Execution only letter) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External ProductEventDirector --></label>
+        <name>External_ProductEventDirector__c</name>
+        <relationshipLabel><!-- Product Sets (External ProductEventDirector) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Featured_product --></label>
+        <name>Featured_product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fees assistance percentage --></label>
+        <name>Fees_assistance_percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fees assistance value --></label>
+        <name>Fees_assistance_value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finance Type Error --></label>
+        <name>Finance_Type_Error__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fixed product rate duration (months) --></label>
+        <name>Fixed_product_rate_duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fixed product rate until --></label>
+        <name>Fixed_product_rate_until__c</name>
+    </fields>
+    <fields>
+        <label><!-- IDD Document --></label>
+        <name>IDD_Document__c</name>
+    </fields>
+    <fields>
+        <label><!-- IDD NonF2F Document --></label>
+        <name>IDD_NonF2F_Document__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inbound payment types available --></label>
+        <name>Inbound_payment_types_available__c</name>
+        <picklistValues>
+            <masterLabel>BACS</masterLabel>
+            <translation><!-- BACS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash</masterLabel>
+            <translation><!-- Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chaps</masterLabel>
+            <translation><!-- Chaps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cheque</masterLabel>
+            <translation><!-- Cheque --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer</masterLabel>
+            <translation><!-- Transfer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Income Multiplier --></label>
+        <name>Income_Multiplier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial rate 1 --></label>
+        <name>Initial_rate_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial rate 1 date --></label>
+        <name>Initial_rate_1_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial rate 1 duration --></label>
+        <name>Initial_rate_1_duration__c</name>
+        <picklistValues>
+            <masterLabel>12 months</masterLabel>
+            <translation><!-- 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 months</masterLabel>
+            <translation><!-- 18 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 months</masterLabel>
+            <translation><!-- 24 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 months</masterLabel>
+            <translation><!-- 36 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 months</masterLabel>
+            <translation><!-- 48 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 months</masterLabel>
+            <translation><!-- 60 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed date</masterLabel>
+            <translation><!-- Fixed date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Initial rate 2 --></label>
+        <name>Initial_rate_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial rate 2 date --></label>
+        <name>Initial_rate_2_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial rate 2 duration --></label>
+        <name>Initial_rate_2_duration__c</name>
+        <picklistValues>
+            <masterLabel>12 months</masterLabel>
+            <translation><!-- 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 months</masterLabel>
+            <translation><!-- 18 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 months</masterLabel>
+            <translation><!-- 24 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 months</masterLabel>
+            <translation><!-- 36 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 months</masterLabel>
+            <translation><!-- 48 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 months</masterLabel>
+            <translation><!-- 60 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed date</masterLabel>
+            <translation><!-- Fixed date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Initial rate 3 --></label>
+        <name>Initial_rate_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial rate 3 date --></label>
+        <name>Initial_rate_3_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial rate 3 duration --></label>
+        <name>Initial_rate_3_duration__c</name>
+        <picklistValues>
+            <masterLabel>12 months</masterLabel>
+            <translation><!-- 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 months</masterLabel>
+            <translation><!-- 18 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 months</masterLabel>
+            <translation><!-- 24 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 months</masterLabel>
+            <translation><!-- 36 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 months</masterLabel>
+            <translation><!-- 48 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 months</masterLabel>
+            <translation><!-- 60 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed date</masterLabel>
+            <translation><!-- Fixed date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Initial rate 4 --></label>
+        <name>Initial_rate_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial rate 4 date --></label>
+        <name>Initial_rate_4_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial rate 4 duration --></label>
+        <name>Initial_rate_4_duration__c</name>
+        <picklistValues>
+            <masterLabel>12 months</masterLabel>
+            <translation><!-- 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 months</masterLabel>
+            <translation><!-- 18 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 months</masterLabel>
+            <translation><!-- 24 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 months</masterLabel>
+            <translation><!-- 36 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 months</masterLabel>
+            <translation><!-- 48 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 months</masterLabel>
+            <translation><!-- 60 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed date</masterLabel>
+            <translation><!-- Fixed date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Initial rate 5 --></label>
+        <name>Initial_rate_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial rate 5 date --></label>
+        <name>Initial_rate_5_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial rate 5 duration --></label>
+        <name>Initial_rate_5_duration__c</name>
+        <picklistValues>
+            <masterLabel>12 months</masterLabel>
+            <translation><!-- 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 months</masterLabel>
+            <translation><!-- 18 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 months</masterLabel>
+            <translation><!-- 24 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 months</masterLabel>
+            <translation><!-- 36 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 months</masterLabel>
+            <translation><!-- 48 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 months</masterLabel>
+            <translation><!-- 60 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed date</masterLabel>
+            <translation><!-- Fixed date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Interested in --></label>
+        <name>Interested_in__c</name>
+        <picklistValues>
+            <masterLabel>Buy to let</masterLabel>
+            <translation><!-- Buy to let --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP</masterLabel>
+            <translation><!-- HPP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is product portable? --></label>
+        <name>Is_product_portable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Only to be used for testing, when live the Conga Setting needs to be linked to the Application Form field. Code look at this existing field so it can&apos;t be changed in advance. --></help>
+        <label><!-- MMR App Form Test --></label>
+        <name>MMR_App_Form_Test__c</name>
+        <relationshipLabel><!-- Product Sets (MMR App Form Test) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Management fees - Percentage --></label>
+        <name>Management_fees_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Management fees - Value --></label>
+        <name>Management_fees_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Margin % --></label>
+        <name>Margin_bench_percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Margin cap % --></label>
+        <name>Margin_cap__c</name>
+    </fields>
+    <fields>
+        <label><!-- Margin duration --></label>
+        <name>Margin_duration__c</name>
+        <picklistValues>
+            <masterLabel>12 months</masterLabel>
+            <translation><!-- 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 months</masterLabel>
+            <translation><!-- 18 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 months</masterLabel>
+            <translation><!-- 24 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 months</masterLabel>
+            <translation><!-- 36 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 months</masterLabel>
+            <translation><!-- 48 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 months</masterLabel>
+            <translation><!-- 60 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed date</masterLabel>
+            <translation><!-- Fixed date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Term of product</masterLabel>
+            <translation><!-- Term of product --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Margin duration fixed date --></label>
+        <name>Margin_duration_fixed_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Margin duration term (years) --></label>
+        <name>Margin_duration_term_years__c</name>
+    </fields>
+    <fields>
+        <label><!-- Margin % --></label>
+        <name>Margin_revert_percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Age --></label>
+        <name>Max_Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max FTV --></label>
+        <name>Max_FTV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Finance Amount --></label>
+        <name>Max_Finance_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max No of Applicants --></label>
+        <name>Max_No_of_Applicants__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max No of BTL Prop --></label>
+        <name>Max_No_of_BTL_Prop__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max No of Incomes --></label>
+        <name>Max_No_of_Incomes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Purchase Price --></label>
+        <name>Max_Purchase_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Term of Finance --></label>
+        <name>Max_Term_of_Finance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max amount IBB will pay toward legal fee --></label>
+        <name>Max_amount_IBB_will_pay_toward_legal_fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max finance to value FTV --></label>
+        <name>Max_finance_to_value_FTV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max valuation fee bank will pay --></label>
+        <name>Max_valuation_fee_bank_will_pay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Min Age --></label>
+        <name>Min_Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Min FTV BTL --></label>
+        <name>Min_FTV_BTL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Min Finance Amount --></label>
+        <name>Min_Finance_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Min Purchase Price --></label>
+        <name>Min_Purchase_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Min Term of Finance --></label>
+        <name>Min_Term_of_Finance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notice required for capital withdrawl --></label>
+        <name>Notice_required_for_capital_withdrawl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outbound payment types available --></label>
+        <name>Outbound_payment_types_available__c</name>
+        <picklistValues>
+            <masterLabel>BACS</masterLabel>
+            <translation><!-- BACS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash</masterLabel>
+            <translation><!-- Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chaps</masterLabel>
+            <translation><!-- Chaps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cheque</masterLabel>
+            <translation><!-- Cheque --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer</masterLabel>
+            <translation><!-- Transfer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Penalty charge amount £ --></label>
+        <name>Penalty_charge_amount_currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Penalty charge: no of days interest lost --></label>
+        <name>Penalty_charge_no_of_days_interest_lost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Penalty charge % --></label>
+        <name>Penalty_charge_percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Penalty charge type --></label>
+        <name>Penalty_charge_type__c</name>
+        <picklistValues>
+            <masterLabel>Fixed value</masterLabel>
+            <translation><!-- Fixed value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loss of all interest</masterLabel>
+            <translation><!-- Loss of all interest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loss of fixed days interest</masterLabel>
+            <translation><!-- Loss of fixed days interest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Penalty interest rates</masterLabel>
+            <translation><!-- Penalty interest rates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percentage of withdrawl</masterLabel>
+            <translation><!-- Percentage of withdrawl --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Penalty charges --></label>
+        <name>Penalty_charges__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- % of application fee paid on application --></label>
+        <name>Percentage_of_application_fee_paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Set Type --></label>
+        <name>ProductSetType__c</name>
+        <picklistValues>
+            <masterLabel>BTL</masterLabel>
+            <translation><!-- BTL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDM</masterLabel>
+            <translation><!-- CDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP</masterLabel>
+            <translation><!-- HPP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPS</masterLabel>
+            <translation><!-- HPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HTB</masterLabel>
+            <translation><!-- HTB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier</masterLabel>
+            <translation><!-- Premier --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Description --></label>
+        <name>Product_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Switch Advice Director --></label>
+        <name>Product_Switch_Advice_Director__c</name>
+        <relationshipLabel><!-- Product Sets (Product Switch Advice Director) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Switch Director --></label>
+        <name>Product_Switch_Director__c</name>
+        <relationshipLabel><!-- Product Sets (Product Switch Director) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Type --></label>
+        <name>Product_Type__c</name>
+        <picklistValues>
+            <masterLabel>Fixed Term Deposit</masterLabel>
+            <translation><!-- Fixed Term Deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Demand</masterLabel>
+            <translation><!-- On Demand --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product expiry date --></label>
+        <name>Product_expiry_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product live date --></label>
+        <name>Product_live_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product recommendation letter --></label>
+        <name>Product_recommendation_letter__c</name>
+        <relationshipLabel><!-- Product Sets (Product recommendation letter) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product recommendation rejected letter --></label>
+        <name>Product_recommendation_rejected_letter__c</name>
+        <relationshipLabel><!-- Product Sets (Product recommendation rejected letter) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product withdraw date --></label>
+        <name>Product_withdraw_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Profit accrued --></label>
+        <name>Profit_accrued__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Profit calculated --></label>
+        <name>Profit_calculated__c</name>
+        <picklistValues>
+            <masterLabel>annually</masterLabel>
+            <translation><!-- annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>maturity</masterLabel>
+            <translation><!-- maturity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>monthly</masterLabel>
+            <translation><!-- monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>quarterly</masterLabel>
+            <translation><!-- quarterly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Profit of income --></label>
+        <name>Profit_of_income__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Profit paid --></label>
+        <name>Profit_paid__c</name>
+        <picklistValues>
+            <masterLabel>annually</masterLabel>
+            <translation><!-- annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>maturity</masterLabel>
+            <translation><!-- maturity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>monthly</masterLabel>
+            <translation><!-- monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>quarterly</masterLabel>
+            <translation><!-- quarterly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Profit paid to --></label>
+        <name>Profit_paid_to__c</name>
+        <picklistValues>
+            <masterLabel>External account</masterLabel>
+            <translation><!-- External account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal IBB account</masterLabel>
+            <translation><!-- Internal IBB account --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Property Type Error --></label>
+        <name>Property_Type_Error__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate duration 1 --></label>
+        <name>Rate_duration_1__c</name>
+        <picklistValues>
+            <masterLabel>12 months</masterLabel>
+            <translation><!-- 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 months</masterLabel>
+            <translation><!-- 18 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 months</masterLabel>
+            <translation><!-- 24 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 months</masterLabel>
+            <translation><!-- 36 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 months</masterLabel>
+            <translation><!-- 48 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 months</masterLabel>
+            <translation><!-- 60 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed date</masterLabel>
+            <translation><!-- Fixed date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rate duration 2 --></label>
+        <name>Rate_duration_2__c</name>
+        <picklistValues>
+            <masterLabel>12 months</masterLabel>
+            <translation><!-- 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 months</masterLabel>
+            <translation><!-- 18 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 months</masterLabel>
+            <translation><!-- 24 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 months</masterLabel>
+            <translation><!-- 36 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 months</masterLabel>
+            <translation><!-- 48 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 months</masterLabel>
+            <translation><!-- 60 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed date</masterLabel>
+            <translation><!-- Fixed date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rate duration 3 --></label>
+        <name>Rate_duration_3__c</name>
+        <picklistValues>
+            <masterLabel>12 months</masterLabel>
+            <translation><!-- 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 months</masterLabel>
+            <translation><!-- 18 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 months</masterLabel>
+            <translation><!-- 24 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 months</masterLabel>
+            <translation><!-- 36 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 months</masterLabel>
+            <translation><!-- 48 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 months</masterLabel>
+            <translation><!-- 60 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed date</masterLabel>
+            <translation><!-- Fixed date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rate duration 4 --></label>
+        <name>Rate_duration_4__c</name>
+        <picklistValues>
+            <masterLabel>12 months</masterLabel>
+            <translation><!-- 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 months</masterLabel>
+            <translation><!-- 18 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 months</masterLabel>
+            <translation><!-- 24 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 months</masterLabel>
+            <translation><!-- 36 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 months</masterLabel>
+            <translation><!-- 48 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 months</masterLabel>
+            <translation><!-- 60 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed date</masterLabel>
+            <translation><!-- Fixed date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rate duration 5 --></label>
+        <name>Rate_duration_5__c</name>
+        <picklistValues>
+            <masterLabel>12 months</masterLabel>
+            <translation><!-- 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 months</masterLabel>
+            <translation><!-- 18 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 months</masterLabel>
+            <translation><!-- 24 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 months</masterLabel>
+            <translation><!-- 36 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 months</masterLabel>
+            <translation><!-- 48 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 months</masterLabel>
+            <translation><!-- 60 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed date</masterLabel>
+            <translation><!-- Fixed date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rate duration date 1 --></label>
+        <name>Rate_duration_date_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate duration date 2 --></label>
+        <name>Rate_duration_date_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate duration date 3 --></label>
+        <name>Rate_duration_date_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate duration date 4 --></label>
+        <name>Rate_duration_date_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate duration date 5 --></label>
+        <name>Rate_duration_date_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate percentage 1 --></label>
+        <name>Rate_percentage_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate percentage 2 --></label>
+        <name>Rate_percentage_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate percentage 3 --></label>
+        <name>Rate_percentage_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate percentage 4 --></label>
+        <name>Rate_percentage_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate percentage 5 --></label>
+        <name>Rate_percentage_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Redemption given --></label>
+        <name>Redemption_given__c</name>
+        <picklistValues>
+            <masterLabel>Full redemption</masterLabel>
+            <translation><!-- Full redemption --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No redemption</masterLabel>
+            <translation><!-- No redemption --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partial redemption</masterLabel>
+            <translation><!-- Partial redemption --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Redemption type --></label>
+        <name>Redemption_type__c</name>
+        <picklistValues>
+            <masterLabel>Cash back</masterLabel>
+            <translation><!-- Cash back --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed fee</masterLabel>
+            <translation><!-- Fixed fee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percentage of the amount paid</masterLabel>
+            <translation><!-- Percentage of the amount paid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refund of legal</masterLabel>
+            <translation><!-- Refund of legal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refund of solicitors contribution</masterLabel>
+            <translation><!-- Refund of solicitors contribution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refund of valuations</masterLabel>
+            <translation><!-- Refund of valuations --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Redemption value £ --></label>
+        <name>Redemption_value_currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Redemption value % --></label>
+        <name>Redemption_value_percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repayment duration 1 --></label>
+        <name>Repayment_duration_1__c</name>
+        <picklistValues>
+            <masterLabel>12 months</masterLabel>
+            <translation><!-- 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 months</masterLabel>
+            <translation><!-- 18 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 months</masterLabel>
+            <translation><!-- 24 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 months</masterLabel>
+            <translation><!-- 36 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 months</masterLabel>
+            <translation><!-- 48 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 months</masterLabel>
+            <translation><!-- 60 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed date</masterLabel>
+            <translation><!-- Fixed date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Repayment duration 2 --></label>
+        <name>Repayment_duration_2__c</name>
+        <picklistValues>
+            <masterLabel>12 months</masterLabel>
+            <translation><!-- 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 months</masterLabel>
+            <translation><!-- 18 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 months</masterLabel>
+            <translation><!-- 24 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 months</masterLabel>
+            <translation><!-- 36 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 months</masterLabel>
+            <translation><!-- 48 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 months</masterLabel>
+            <translation><!-- 60 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed date</masterLabel>
+            <translation><!-- Fixed date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Repayment duration 3 --></label>
+        <name>Repayment_duration_3__c</name>
+        <picklistValues>
+            <masterLabel>12 months</masterLabel>
+            <translation><!-- 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 months</masterLabel>
+            <translation><!-- 18 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 months</masterLabel>
+            <translation><!-- 24 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 months</masterLabel>
+            <translation><!-- 36 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 months</masterLabel>
+            <translation><!-- 48 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 months</masterLabel>
+            <translation><!-- 60 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed date</masterLabel>
+            <translation><!-- Fixed date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Repayment duration 4 --></label>
+        <name>Repayment_duration_4__c</name>
+        <picklistValues>
+            <masterLabel>12 months</masterLabel>
+            <translation><!-- 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 months</masterLabel>
+            <translation><!-- 18 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 months</masterLabel>
+            <translation><!-- 24 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 months</masterLabel>
+            <translation><!-- 36 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 months</masterLabel>
+            <translation><!-- 48 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 months</masterLabel>
+            <translation><!-- 60 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed date</masterLabel>
+            <translation><!-- Fixed date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Repayment duration 5 --></label>
+        <name>Repayment_duration_5__c</name>
+        <picklistValues>
+            <masterLabel>12 months</masterLabel>
+            <translation><!-- 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 months</masterLabel>
+            <translation><!-- 18 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 months</masterLabel>
+            <translation><!-- 24 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 months</masterLabel>
+            <translation><!-- 36 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 months</masterLabel>
+            <translation><!-- 48 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 months</masterLabel>
+            <translation><!-- 60 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed date</masterLabel>
+            <translation><!-- Fixed date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Repayment end date 1 --></label>
+        <name>Repayment_end_date_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repayment end date 2 --></label>
+        <name>Repayment_end_date_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repayment end date 3 --></label>
+        <name>Repayment_end_date_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repayment end date 4 --></label>
+        <name>Repayment_end_date_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repayment end date 5 --></label>
+        <name>Repayment_end_date_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- ShortProductType --></label>
+        <name>ShortProductType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Statement frequency --></label>
+        <name>Statement_frequency__c</name>
+        <picklistValues>
+            <masterLabel>Annually</masterLabel>
+            <translation><!-- Annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bi-annually</masterLabel>
+            <translation><!-- Bi-annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Suitable Employment Types --></label>
+        <name>Suitable_Employment_Types__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suitable Property Types --></label>
+        <name>Suitable_Property_Types__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Finance --></label>
+        <name>Type_of_Finance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of account --></label>
+        <name>Type_of_account__c</name>
+        <picklistValues>
+            <masterLabel>Current account</masterLabel>
+            <translation><!-- Current account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed term</masterLabel>
+            <translation><!-- Fixed term --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On demand notice account</masterLabel>
+            <translation><!-- On demand notice account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wakala treasury</masterLabel>
+            <translation><!-- Wakala treasury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Young savers</masterLabel>
+            <translation><!-- Young savers --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Valuation fee amount paid --></label>
+        <name>Valuation_fee_amount_paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valuation fee paid by --></label>
+        <name>Valuation_fee_paid_by__c</name>
+        <picklistValues>
+            <masterLabel>Bank</masterLabel>
+            <translation><!-- Bank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Value of IBB legal fees --></label>
+        <name>Value_of_IBB_legal_fees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value of customer legal fee --></label>
+        <name>Value_of_customer_legal_fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Variable product benchmark --></label>
+        <name>Variable_product_benchmark__c</name>
+        <picklistValues>
+            <masterLabel>BBR</masterLabel>
+            <translation><!-- BBR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liable</masterLabel>
+            <translation><!-- Liable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Variable rate</masterLabel>
+            <translation><!-- Variable rate --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Where does product revert to --></label>
+        <name>Where_does_product_revert_to__c</name>
+        <relationshipLabel><!-- Product Sets --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>IBB Product Set Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Document Settings --></label>
+            <section>Document Settings</section>
+        </sections>
+        <sections>
+            <label><!-- Event Directors --></label>
+            <section>Event Directors</section>
+        </sections>
+        <sections>
+            <label><!-- Offer Letter 2014 Clauses --></label>
+            <section>Offer Letter 2014 Clauses</section>
+        </sections>
+        <sections>
+            <label><!-- Product Eligibility Criteria --></label>
+            <section>Product Eligibility Criteria</section>
+        </sections>
+        <sections>
+            <label><!-- Product Eligibility Error Messages --></label>
+            <section>Product Eligibility Error Messages</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Restricted External Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- HPP --></label>
+        <name>HPP</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

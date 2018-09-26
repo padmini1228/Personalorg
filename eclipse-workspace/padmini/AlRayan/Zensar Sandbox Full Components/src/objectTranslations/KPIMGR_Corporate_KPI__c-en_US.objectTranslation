@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Corporate KPI</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Corporate KPIs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Actual Performance --></label>
+        <name>Actual_Performance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Area --></label>
+        <name>Business_Area__c</name>
+        <relationshipLabel><!-- Corporate KPIs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Master Corporate KPI --></label>
+        <name>Corporate_KPI__c</name>
+        <relationshipLabel><!-- Corporate KPIs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- KPI End Date --></label>
+        <name>KPI_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- KPI Name --></label>
+        <name>KPI_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- KPI Range End Date --></label>
+        <name>KPI_Range_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- KPI Range Start Date --></label>
+        <name>KPI_Range_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- KPI Start Date --></label>
+        <name>KPI_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- KPI Value --></label>
+        <name>KPI_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Master --></label>
+        <name>Master__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Increments --></label>
+        <name>No_of_Increments__c</name>
+        <picklistValues>
+            <masterLabel>01</masterLabel>
+            <translation><!-- 01 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>02</masterLabel>
+            <translation><!-- 02 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>03</masterLabel>
+            <translation><!-- 03 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>04</masterLabel>
+            <translation><!-- 04 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>05</masterLabel>
+            <translation><!-- 05 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>06</masterLabel>
+            <translation><!-- 06 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>07</masterLabel>
+            <translation><!-- 07 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>08</masterLabel>
+            <translation><!-- 08 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>09</masterLabel>
+            <translation><!-- 09 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11</masterLabel>
+            <translation><!-- 11 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12</masterLabel>
+            <translation><!-- 12 --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Increment Corporate KPI Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Information --></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Master Corporate KPI Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Increment Corporate KPI --></label>
+        <name>Increment_Corporate_KPI</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Master Corporate KPI --></label>
+        <name>Master_Corporate_KPI</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Quotation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Quotations</value>
+    </caseValues>
+    <fields>
+        <label><!-- AcquisitionAmount --></label>
+        <name>AcquisitionAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicant 2 --></label>
+        <name>Applicant_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicant 3 --></label>
+        <name>Applicant_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicant 4 --></label>
+        <name>Applicant_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicant 5 --></label>
+        <name>Applicant_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attachment FIS --></label>
+        <name>Attachment_FIS__c</name>
+    </fields>
+    <fields>
+        <label><!-- BalanceAtEndofFRRD --></label>
+        <name>BalanceAtEndofFRRD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash Back Amount --></label>
+        <name>Cash_Back_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- CongaFixed --></label>
+        <name>CongaFixed__c</name>
+    </fields>
+    <fields>
+        <label><!-- CongaTest --></label>
+        <name>CongaTest__c</name>
+    </fields>
+    <fields>
+        <label><!-- Conga FIS --></label>
+        <name>Conga_FIS__c</name>
+        <relationshipLabel><!-- Quotations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Conga_Sent --></label>
+        <name>Conga_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Conga URL --></label>
+        <name>Conga_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- DealAmount --></label>
+        <name>DealAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- DealType --></label>
+        <name>DealType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit --></label>
+        <name>Deposit__c</name>
+    </fields>
+    <fields>
+        <label><!-- DiscountedAmoun --></label>
+        <name>DiscountedAmoun__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiry date of product --></label>
+        <name>Expiry_date_of_product__c</name>
+    </fields>
+    <fields>
+        <label><!-- FIS_Conga_DocumentId --></label>
+        <name>FIS_Conga_DocumentId__c</name>
+    </fields>
+    <fields>
+        <label><!-- FinalAcquisitionPayment --></label>
+        <name>FinalAcquisitionPayment__c</name>
+    </fields>
+    <fields>
+        <label><!-- FinanceRequired --></label>
+        <name>FinanceRequired__c</name>
+    </fields>
+    <fields>
+        <label><!-- FirstRentReviewDate --></label>
+        <name>FirstRentReviewDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPPP Rent --></label>
+        <name>HPPP_Rent__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPPP TotalRepayment --></label>
+        <name>HPPP_TotalRepayment__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP AcquisitionAmount --></label>
+        <name>HPP_AcquisitionAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- IBBProductOpp --></label>
+        <name>IBBProductOpp__c</name>
+    </fields>
+    <fields>
+        <label><!-- IBBProductSet --></label>
+        <name>IBBProductSet__c</name>
+    </fields>
+    <fields>
+        <label><!-- IBBProduct --></label>
+        <name>IBBProduct__c</name>
+    </fields>
+    <fields>
+        <label><!-- Margin --></label>
+        <name>Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- MarketingProductCode --></label>
+        <name>MarketingProductCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum FTV --></label>
+        <name>Maximum_FTV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month --></label>
+        <name>Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- MonthlyPaymentBeforeFRRD --></label>
+        <name>MonthlyPaymentBeforeFRRD__c</name>
+    </fields>
+    <fields>
+        <label><!-- MonthlyPaymentFixed --></label>
+        <name>MonthlyPaymentFixed__c</name>
+    </fields>
+    <fields>
+        <label><!-- MonthlyPaymentUntilFRRD --></label>
+        <name>MonthlyPaymentUntilFRRD__c</name>
+    </fields>
+    <fields>
+        <label><!-- MonthlyPaymentVariable --></label>
+        <name>MonthlyPaymentVariable__c</name>
+    </fields>
+    <fields>
+        <label><!-- NumberOfMonthsFixed --></label>
+        <name>NumberOfMonthsFixed__c</name>
+    </fields>
+    <fields>
+        <label><!-- NumberOfMonthsVariable --></label>
+        <name>NumberOfMonthsVariable__c</name>
+    </fields>
+    <fields>
+        <label><!-- NumberOfMonths --></label>
+        <name>NumberOfMonths__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer IBB variable rental rate --></label>
+        <name>Offer_IBB_variable_rental_rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Margin --></label>
+        <name>Offer_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer schedule o monthly payment --></label>
+        <name>Offer_schedule_o_monthly_payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Quotations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PrimaryName --></label>
+        <name>PrimaryName__c</name>
+    </fields>
+    <fields>
+        <label><!-- ProductSwitchBalance --></label>
+        <name>ProductSwitchBalance__c</name>
+    </fields>
+    <fields>
+        <label><!-- ProductSwitchDate --></label>
+        <name>ProductSwitchDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- PurchasePrice --></label>
+        <name>PurchasePrice__c</name>
+    </fields>
+    <fields>
+        <label><!-- PurposeOfFinance --></label>
+        <name>PurposeOfFinance__c</name>
+    </fields>
+    <fields>
+        <label><!-- QuoteDate --></label>
+        <name>QuoteDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- QuoteReference --></label>
+        <name>QuoteReference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active Quote --></label>
+        <name>QuoteToBeAIP__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCEFirstPaymentDate --></label>
+        <name>RCEFirstPaymentDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCEFirstProfitDate --></label>
+        <name>RCEFirstProfitDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCEMaturityDate --></label>
+        <name>RCEMaturityDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCERetrieved --></label>
+        <name>RCERetrieved__c</name>
+    </fields>
+    <fields>
+        <label><!-- RateAfterFixedPeriodExpiry --></label>
+        <name>RateAfterFixedPeriodExpiry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate --></label>
+        <name>Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate after Fixed rate --></label>
+        <name>Rate_after_Fixed_rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- RatioPerPound --></label>
+        <name>RatioPerPound__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remaing Term --></label>
+        <name>Remaing_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- RentRate --></label>
+        <name>RentRate__c</name>
+    </fields>
+    <fields>
+        <label><!-- RevertRate --></label>
+        <name>RevertRate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sequence --></label>
+        <name>Sequence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Term Of Finance --></label>
+        <name>Term_Of_Finance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Term --></label>
+        <name>Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- TheStartDate --></label>
+        <name>TheStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalAcquisitionFixed --></label>
+        <name>TotalAcquisitionFixed__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalAcquisitionVariable --></label>
+        <name>TotalAcquisitionVariable__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalAmountPayable --></label>
+        <name>TotalAmountPayable__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalMonthlyAquisitionPaymentBeforeFRRD --></label>
+        <name>TotalMonthlyAquisitionPaymentBeforeFRRD__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalMonthlyPaymentBeforeFRRD --></label>
+        <name>TotalMonthlyPaymentBeforeFRRD__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalMonthlyRepayment --></label>
+        <name>TotalMonthlyRepayment__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalPaymentAfterFixedPeriod --></label>
+        <name>TotalPaymentAfterFixedPeriod__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalRent --></label>
+        <name>TotalRent__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalRentalFixed --></label>
+        <name>TotalRentalFixed__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalRentalVariable --></label>
+        <name>TotalRentalVariable__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalRepayment --></label>
+        <name>TotalRepayment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total monthly repayment --></label>
+        <name>Total_amount_you_must_pay_HPP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valuation Contribution Amount --></label>
+        <name>Valuation_Contribution_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- VariableRate --></label>
+        <name>VariableRate__c</name>
+    </fields>
+    <fields>
+        <label><!-- congaSettingFixed --></label>
+        <name>congaSettingFixed__c</name>
+    </fields>
+    <fields>
+        <label><!-- rent --></label>
+        <name>rent__c</name>
+    </fields>
+    <layouts>
+        <layout>IBBQuotation Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Conga_Create_Quote_TEST --></label>
+        <name>Conga_Create_Quote_TEST</name>
+    </webLinks>
+</CustomObjectTranslation>

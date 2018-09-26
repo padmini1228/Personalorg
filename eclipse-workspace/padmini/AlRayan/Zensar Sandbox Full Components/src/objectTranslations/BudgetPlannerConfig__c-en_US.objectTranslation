@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>BudgetPlannerConfig</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>BudgetPlannerConfigs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Car Bill --></label>
+        <name>Car_Bill__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ignore total Commitment --></label>
+        <name>Ignore_total_Commitment__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsStressed --></label>
+        <name>IsStressed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Joint App 1 Dep ONS --></label>
+        <name>Joint_App_1_Dep_ONS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Joint App 1 Dep --></label>
+        <name>Joint_App_1_Dep__c</name>
+    </fields>
+    <fields>
+        <label><!-- Joint App 2 Dep ONS --></label>
+        <name>Joint_App_2_Dep_ONS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Joint App 2 Dep --></label>
+        <name>Joint_App_2_Dep__c</name>
+    </fields>
+    <fields>
+        <label><!-- Joint App 3 Dep ONS --></label>
+        <name>Joint_App_3_Dep_ONS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Joint App 3 Dep --></label>
+        <name>Joint_App_3_Dep__c</name>
+    </fields>
+    <fields>
+        <label><!-- Joint App ONS --></label>
+        <name>Joint_App_ONS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Joint App --></label>
+        <name>Joint_App__c</name>
+    </fields>
+    <fields>
+        <label><!-- LookupField --></label>
+        <name>LookupField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly payment percent --></label>
+        <name>Monthly_payment_percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Paid within months --></label>
+        <name>Paid_within_months__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personal Debt --></label>
+        <name>Personal_Debt__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ticking this removes the amount from the affordability income calculation --></help>
+        <label><!-- Remove from Affordability Income --></label>
+        <name>Remove_from_Affordability_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- ShowOnAppForm --></label>
+        <name>ShowOnAppForm__c</name>
+    </fields>
+    <fields>
+        <label><!-- SingleApp ONS --></label>
+        <name>SingleApp_ONS__c</name>
+    </fields>
+    <fields>
+        <label><!-- SingleApp --></label>
+        <name>SingleApp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Single App + 1 Dep ONS --></label>
+        <name>Single_App_1_Dep_ONS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Single App + 1 Dep --></label>
+        <name>Single_App_1_Dep__c</name>
+    </fields>
+    <fields>
+        <label><!-- Single App + 2 Dep ONS --></label>
+        <name>Single_App_2_Dep_ONS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Single App + 2 Dep --></label>
+        <name>Single_App_2_Dep__c</name>
+    </fields>
+    <fields>
+        <label><!-- Triple ONS --></label>
+        <name>Triple_ONS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Triple --></label>
+        <name>Triple__c</name>
+    </fields>
+    <fields>
+        <label><!-- Triple with children ONS --></label>
+        <name>Triple_with_children_ONS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Triple with children --></label>
+        <name>Triple_with_children__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use ONS Only --></label>
+        <name>Use_ONS_Only__c</name>
+    </fields>
+    <fields>
+        <label><!-- V1 --></label>
+        <name>V1__c</name>
+    </fields>
+    <fields>
+        <label><!-- V2 --></label>
+        <name>V2__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

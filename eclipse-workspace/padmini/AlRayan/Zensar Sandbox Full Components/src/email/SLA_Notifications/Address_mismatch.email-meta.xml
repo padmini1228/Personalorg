@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used to notify user, manager and IT of current address mismatch.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>Address mismatch</name>
+    <style>freeForm</style>
+    <subject>Address mismatch: {!Case.Contact}</subject>
+    <textOnly>To whom it may concern,
+
+The below application has resulted in an address mismatch:
+Case number: {!Case.CaseNumber}
+Case type: {!Case.Subject}
+Created by: {!Case.CreatedBy}
+Time created: {!Case.CreatedDate}
+Case link: {!Case.Link}
+
+Manager &amp; ITServicedesk: for information only
+User: please follow the steps below:
+
+The customer who is opening the account should be asked to confirm their current address as well as their previous and previous previous address (if they have been at their current address less than 3 years)
+
+These addresses should be then entered into the case description.
+
+The case should then be assigned to ITHelpdesk.
+
+IT will look into this and come back to you to let you know the next steps.
+
+4. To ensure none of these are missed, each time one of these cases is produced, you and your manager will receive an email. Please do nothing with this email: it is just to ensure that you are aware that their has been an address mismatch. Please do not worry if you get multiple emails for the one account.</textOnly>
+    <type>html</type>
+</EmailTemplate>

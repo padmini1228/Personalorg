@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>IVRCustomerVerification</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>IVRCustomerVerifications</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account with IBB --></label>
+        <name>Account_with_IBB__c</name>
+        <relationshipLabel><!-- IVRCustomerVerifications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- EBSAccountNoID --></label>
+        <name>EBSAccountNoID__c</name>
+    </fields>
+    <fields>
+        <label><!-- EBSCustomerID --></label>
+        <name>EBSCustomerID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Prospect_Customer__c</name>
+        <relationshipLabel><!-- IVRCustomerVerifications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Verified --></label>
+        <name>Verified__c</name>
+    </fields>
+    <fields>
+        <label><!-- VerifyGUID --></label>
+        <name>VerifyGUID__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

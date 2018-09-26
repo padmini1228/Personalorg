@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>XML Message</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>XML Messages</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Buffered --></label>
+        <name>Buffered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Element Name --></label>
+        <name>Element_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Element Namespace --></label>
+        <name>Element_Namespace__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Tag --></label>
+        <name>End_Tag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Name Element --></label>
+        <name>Service_Name_Element__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Namespace --></label>
+        <name>Service_Namespace__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Tag --></label>
+        <name>Start_Tag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Inbound</masterLabel>
+            <translation><!-- Inbound --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request</masterLabel>
+            <translation><!-- Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Response</masterLabel>
+            <translation><!-- Response --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Restricted External Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>XML Message Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

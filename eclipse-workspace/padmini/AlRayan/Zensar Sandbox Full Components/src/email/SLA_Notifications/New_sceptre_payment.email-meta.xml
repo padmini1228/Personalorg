@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>For use with Sceptre international payment record type</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>New sceptre payment</name>
+    <style>freeForm</style>
+    <subject>New Sceptre International Payment request.</subject>
+    <textOnly>Dear FCU,
+
+There is a new Sceptre international payment. Please review and action.
+
+{!Case.Link}
+
+Thanks
+
+Salesforce!</textOnly>
+    <type>html</type>
+</EmailTemplate>

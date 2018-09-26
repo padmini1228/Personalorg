@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Activate</fullName>
+        <categories>View Schedule</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Activate</shortDescription>
+        <value>Activate</value>
+    </labels>
+    <labels>
+        <fullName>Actual_Value</fullName>
+        <categories>MetricWizard page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Actual Value</shortDescription>
+        <value>Actual Value</value>
+    </labels>
+    <labels>
+        <fullName>Amber</fullName>
+        <categories>MetricWizard page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Amber</shortDescription>
+        <value>Amber</value>
+    </labels>
+    <labels>
+        <fullName>Amber_Color</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Amber Color</shortDescription>
+        <value>#F6A316</value>
+    </labels>
+    <labels>
+        <fullName>Annually</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Annually</shortDescription>
+        <value>Annually</value>
+    </labels>
+    <labels>
+        <fullName>Bi_Annually</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Bi-Annually</shortDescription>
+        <value>Bi-Annually</value>
+    </labels>
+    <labels>
+        <fullName>Cancel</fullName>
+        <categories>Create Metric, ShowDashboard page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Cannot_activate_new_schedule</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Cannot activate a new schedule</shortDescription>
+        <value>You have 5 schedules currently active. You cannot activate a new schedule until you have deactivated an existing one.</value>
+    </labels>
+    <labels>
+        <fullName>Comments</fullName>
+        <categories>MetricWizard page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Comments</shortDescription>
+        <value>Comments</value>
+    </labels>
+    <labels>
+        <fullName>Create_New</fullName>
+        <categories>CreateEditSchedule Page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Create New</shortDescription>
+        <value>Create New</value>
+    </labels>
+    <labels>
+        <fullName>Daily</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Daily</shortDescription>
+        <value>Daily</value>
+    </labels>
+    <labels>
+        <fullName>Data_Feed_Scheduling</fullName>
+        <categories>CreateEditSchedule Page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Data Feed Scheduling</shortDescription>
+        <value>Data Feed Scheduling</value>
+    </labels>
+    <labels>
+        <fullName>Data_Feed_error_message_on_saving_Report_Value</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Data Feed error message on saving Report Value</shortDescription>
+        <value>Please select a value from the report</value>
+    </labels>
+    <labels>
+        <fullName>Deactivate</fullName>
+        <categories>View Schedule</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Deactivate</shortDescription>
+        <value>Deactivate</value>
+    </labels>
+    <labels>
+        <fullName>Delete</fullName>
+        <categories>View Schedule</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Delete</shortDescription>
+        <value>Delete</value>
+    </labels>
+    <labels>
+        <fullName>DuplicateDashboardItem</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DuplicateDashboardItem</shortDescription>
+        <value>You cannot add duplicate Dashboard Items to the same Dashboard.</value>
+    </labels>
+    <labels>
+        <fullName>Duplicate_Schedule_Job_Error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Duplicate Schedule Job Error</shortDescription>
+        <value>Schedule with the same name is already scheduled for execution. Please either rename your Schedule record or go to Monitoring-&gt;Scheduled Jobs to delete existing Schedule.</value>
+    </labels>
+    <labels>
+        <fullName>Edit</fullName>
+        <categories>Create Metric page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Edit</shortDescription>
+        <value>Edit</value>
+    </labels>
+    <labels>
+        <fullName>Enter_Scheduled_Details</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Enter Scheduled Details</shortDescription>
+        <value>Please enter Schedule Details to Save the record</value>
+    </labels>
+    <labels>
+        <fullName>Enter_Scheduled_Details_for_Activation</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Enter Scheduled Details for Activation</shortDescription>
+        <value>Please enter Schedule Details to Save &amp; Activate the record</value>
+    </labels>
+    <labels>
+        <fullName>Enter_a_Value_on_Metric_Wizard</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Enter a Value on Metric Wizard</shortDescription>
+        <value>You must enter a value.</value>
+    </labels>
+    <labels>
+        <fullName>FirstPageLabel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>First Page Label</shortDescription>
+        <value>First</value>
+    </labels>
+    <labels>
+        <fullName>Green</fullName>
+        <categories>MetricWizard page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Green</shortDescription>
+        <value>Green</value>
+    </labels>
+    <labels>
+        <fullName>Green_Color</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Green Color</shortDescription>
+        <value>#008D36</value>
+    </labels>
+    <labels>
+        <fullName>HalfYear</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Half year label used in Metric Wizard. {0} is the index, {1} is the year</shortDescription>
+        <value>Half Year {0} ({1})</value>
+    </labels>
+    <labels>
+        <fullName>Help_for_this_Page</fullName>
+        <categories>MetricWizard page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Help for this Page</shortDescription>
+        <value>Help for this Page</value>
+    </labels>
+    <labels>
+        <fullName>Home</fullName>
+        <categories>Create Metric page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Home</shortDescription>
+        <value>Home</value>
+    </labels>
+    <labels>
+        <fullName>Information</fullName>
+        <categories>CreateEditSchedule Page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Information</shortDescription>
+        <value>Information</value>
+    </labels>
+    <labels>
+        <fullName>LastPageLabel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Last Page Label</shortDescription>
+        <value>Last</value>
+    </labels>
+    <labels>
+        <fullName>Metric_Wizard_No_Active_Metric_Error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Metric Wizard No Active Metric Error</shortDescription>
+        <value>To use this wizard you must activate at least one manual metric.</value>
+    </labels>
+    <labels>
+        <fullName>Metric_Wizard_No_Metric_Error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Metric Wizard No Metric Error</shortDescription>
+        <value>To use this wizard you must create and activate and must have edit access to at least one manual metric.</value>
+    </labels>
+    <labels>
+        <fullName>Monitoring_Frequency_Error_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Monitoring Frequency Error Message</shortDescription>
+        <value>Please make sure Monitoring Frequency picklist values match with Custom Label values for Monitoring Frequency</value>
+    </labels>
+    <labels>
+        <fullName>Monthly</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Monthly</shortDescription>
+        <value>Monthly</value>
+    </labels>
+    <labels>
+        <fullName>Name</fullName>
+        <categories>MetricWizard page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Name</shortDescription>
+        <value>Name</value>
+    </labels>
+    <labels>
+        <fullName>New</fullName>
+        <categories>Create Metric page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>New</shortDescription>
+        <value>New</value>
+    </labels>
+    <labels>
+        <fullName>New_Metric</fullName>
+        <categories>Create Metric page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>New Metric</shortDescription>
+        <value>New Metric</value>
+    </labels>
+    <labels>
+        <fullName>NextLabel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Next Label</shortDescription>
+        <value>Next</value>
+    </labels>
+    <labels>
+        <fullName>None_Option</fullName>
+        <categories>MetricWizard page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>None Option</shortDescription>
+        <value>--None--</value>
+    </labels>
+    <labels>
+        <fullName>OfLabel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Of Label</shortDescription>
+        <value>of</value>
+    </labels>
+    <labels>
+        <fullName>PageLabel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Page Label</shortDescription>
+        <value>Page</value>
+    </labels>
+    <labels>
+        <fullName>PreviousLabel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Previous Label</shortDescription>
+        <value>Previous</value>
+    </labels>
+    <labels>
+        <fullName>Print_All</fullName>
+        <categories>Used in showdashboard page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Print All</shortDescription>
+        <value>Print All</value>
+    </labels>
+    <labels>
+        <fullName>Qualitative_select_threshold_on_Metric_Wizard</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Qualitative select threshold on Metric Wizard</shortDescription>
+        <value>Select threshold for</value>
+    </labels>
+    <labels>
+        <fullName>Quarter</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Quarter used in Metric Wizard. {0} is the index, {1} is the year</shortDescription>
+        <value>Quarter {0}</value>
+    </labels>
+    <labels>
+        <fullName>Quarterly</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Quarterly</shortDescription>
+        <value>Quarterly</value>
+    </labels>
+    <labels>
+        <fullName>Quarterly_Monthly_Check</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Quarterly Monthly Check</shortDescription>
+        <value>You must enter a valid day for the schedule. For dates past the 28th on a monthly or quarterly schedule you should use &quot;L&quot; to designate the last day of the month.</value>
+    </labels>
+    <labels>
+        <fullName>Quick_Save</fullName>
+        <categories>Used in showdashboard page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Quick Save</shortDescription>
+        <value>Quick Save</value>
+    </labels>
+    <labels>
+        <fullName>Red</fullName>
+        <categories>MetricWizard page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Red</shortDescription>
+        <value>Red</value>
+    </labels>
+    <labels>
+        <fullName>Red_Color</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Red Color</shortDescription>
+        <value>#FF0000</value>
+    </labels>
+    <labels>
+        <fullName>Required_Comment</fullName>
+        <categories>MetricWizard page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required Comment</shortDescription>
+        <value>{0} requires a comment to be filled in for the given rating</value>
+    </labels>
+    <labels>
+        <fullName>Save_Metric</fullName>
+        <categories>CreateEditSchedule, CreateMetric, CreateFeed, showdashboard Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Save Metric</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>Save_and_Activate</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Save and Activate</shortDescription>
+        <value>Save and Activate</value>
+    </labels>
+    <labels>
+        <fullName>Save_and_Deactivate</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Save and Deactivate</shortDescription>
+        <value>Save and Deactivate</value>
+    </labels>
+    <labels>
+        <fullName>Save_and_Return</fullName>
+        <categories>Take Reading Page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Save and Return</shortDescription>
+        <value>Save and Return</value>
+    </labels>
+    <labels>
+        <fullName>Saving</fullName>
+        <categories>MetricWizard page, CreateMetric page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Saving</shortDescription>
+        <value>Saving ...</value>
+    </labels>
+    <labels>
+        <fullName>ScheduleNotActiveError</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ScheduleNotActiveError</shortDescription>
+        <value>Schedule is not active and cannot be linked to this Data Feed. Please activate the Schedule before linking to this Data Feed.</value>
+    </labels>
+    <labels>
+        <fullName>Select_Feed_Type</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Select Feed Type</shortDescription>
+        <value>Step 1. Select Feed Type</value>
+    </labels>
+    <labels>
+        <fullName>Select_Report_Value</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Select Report and Value to Record</shortDescription>
+        <value>Step 2. Select Report and Value to Record</value>
+    </labels>
+    <labels>
+        <fullName>Select_Type</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Select Type</shortDescription>
+        <value>You must select a type before saving.</value>
+    </labels>
+    <labels>
+        <fullName>Source_Report</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Source Report</shortDescription>
+        <value>Source Report</value>
+    </labels>
+    <labels>
+        <fullName>Submit</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Submit Metric Result</shortDescription>
+        <value>Submit</value>
+    </labels>
+    <labels>
+        <fullName>Submitted</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Submitted Metric Result</shortDescription>
+        <value>Submitted</value>
+    </labels>
+    <labels>
+        <fullName>TakeReadingMessage</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TakeReadingMessage</shortDescription>
+        <value>Please click &quot;Save and Return&quot; to record the Reading.</value>
+    </labels>
+    <labels>
+        <fullName>Threshold_Detail</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Threshold Detail</shortDescription>
+        <value>Threshold Information</value>
+    </labels>
+    <labels>
+        <fullName>Thresholds</fullName>
+        <categories>MetricWizard page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Thresholds</shortDescription>
+        <value>Thresholds</value>
+    </labels>
+    <labels>
+        <fullName>Trend_Graph</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Trend Graph</shortDescription>
+        <value>Trend Graph</value>
+    </labels>
+    <labels>
+        <fullName>Valid_Day</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Valid Day</shortDescription>
+        <value>You must enter a valid day for the schedule.</value>
+    </labels>
+    <labels>
+        <fullName>Valid_Hour</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Valid Hour</shortDescription>
+        <value>You must enter a valid hour in the 24 hour format (00-23).</value>
+    </labels>
+    <labels>
+        <fullName>Valid_Minute</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Valid Minute</shortDescription>
+        <value>You must enter a valid minute in the 24 hour format (00-59).</value>
+    </labels>
+    <labels>
+        <fullName>Valid_Month</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Valid Month</shortDescription>
+        <value>You must enter a valid month for the schedule.</value>
+    </labels>
+    <labels>
+        <fullName>Valid_Weekday</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Valid Weekday</shortDescription>
+        <value>You must choose a weekday on which the schedule should run.</value>
+    </labels>
+    <labels>
+        <fullName>View_Comment</fullName>
+        <categories>MetricWizard page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>View Comment</shortDescription>
+        <value>View Comment</value>
+    </labels>
+    <labels>
+        <fullName>View_Edit_Comment</fullName>
+        <categories>MetricWizard page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>View/Edit Comment</shortDescription>
+        <value>View/Edit Comment</value>
+    </labels>
+    <labels>
+        <fullName>Warning_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Warning Message</shortDescription>
+        <value>Are you sure you want to submit this?</value>
+    </labels>
+    <labels>
+        <fullName>Week</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Week label used in metric wizard. {0} is the index, {1} is the year</shortDescription>
+        <value>Week {0} ({1})</value>
+    </labels>
+    <labels>
+        <fullName>Weekly</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Weekly</shortDescription>
+        <value>Weekly</value>
+    </labels>
+    <labels>
+        <fullName>Yellow</fullName>
+        <categories>MetricWizard page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Yellow</shortDescription>
+        <value>Yellow</value>
+    </labels>
+    <labels>
+        <fullName>Yellow_Color</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Yellow Color</shortDescription>
+        <value>#FFD911</value>
+    </labels>
+</CustomLabels>

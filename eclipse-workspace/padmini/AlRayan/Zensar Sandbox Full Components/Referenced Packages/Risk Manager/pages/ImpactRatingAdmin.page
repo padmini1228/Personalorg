@@ -1,0 +1,102 @@
+<apex:page standardController="Risk__Scoring_Scheme__c" extensions="Risk.ImpactRatingAdmin" tabStyle="Risk__Scoring_Scheme__c">
+
+
+	<style type="text/css">
+
+	.ratingTable
+	{
+		border: 1px solid #404040;
+		cursor: default;
+	}
+
+	.ratingTable td
+	{
+		text-align: center;
+		padding: 2px;
+		border: 1px solid #404040;
+	}
+
+	</style>
+
+	<apex:sectionHeader title="{! SUBSTITUTE($Label.Setup,'{0}',$ObjectType.Scoring_Scheme__c.label)}" subtitle="{!record.Name}" />
+
+	<div class="ptBreadcrumb">&nbsp;&#171;&nbsp;
+		<apex:outputlink value="/{!Risk__Scoring_Scheme__c.Id}">{! SUBSTITUTE($Label.Back_To,'{0}',$ObjectType.Scoring_Scheme__c.label)}</apex:outputlink>
+	</div><br/>
+
+	<apex:form >
+
+		<apex:pageBlock title="{!$Label.risk__Probability} Rating">
+
+			<apex:outputPanel >
+			<table class="ratingTable" cellpadding="0" cellspacing="0">
+
+				<apex:repeat value="{!probRows}" var="row">
+					<tr>
+						<apex:repeat value="{!row.cells}" var="cell">
+							<td id="{!cell.id}" class="{!cell.className}" style="{!cell.style}" colspan="{!cell.colSpan}">
+								&nbsp;<apex:outputText value="{!cell.content}" rendered="{!!cell.hasResult}" />
+
+								<apex:outputPanel id="input" rendered="{!cell.hasResult}">
+									<apex:outputPanel id="fromToValue">
+										<apex:outputLabel value="From" style="float: left;" /><apex:inputField value="{!cell.result.Risk__From_Value__c}" style="float: right;" />
+										<br /><br />
+										<apex:outputLabel value="To" style="float: left;" /><apex:inputField value="{!cell.result.Risk__To_Value__c}" style="float: right;" />
+									</apex:outputPanel>
+									<br /><br />
+									<apex:outputLabel value="Description" style="float: left;" /><apex:inputTextArea value="{!cell.result.Risk__Description__c}" style="width: 200px; height:80px; float: right;" />
+									<div style="clear: both;" />
+								</apex:outputPanel>
+
+							</td>
+						</apex:repeat>
+					</tr>
+				</apex:repeat>
+
+			</table>
+
+			</apex:outputPanel>
+
+		</apex:pageBlock>
+
+
+
+		<apex:pageBlock title="{!$Label.risk__Impact} Rating">
+
+			<apex:outputPanel >
+			<table class="ratingTable" cellpadding="0" cellspacing="0">
+
+				<apex:repeat value="{!impactRows}" var="row">
+					<tr>
+						<apex:repeat value="{!row.cells}" var="cell">
+							<td id="{!cell.id}" class="{!cell.className}" style="{!cell.style}" colspan="{!cell.colSpan}">
+								&nbsp;<apex:outputText value="{!cell.content}" rendered="{!!cell.hasResult}" />
+
+								<apex:outputPanel id="inputI" rendered="{!cell.hasResult}">
+									<apex:outputPanel id="fromToValue">
+										<apex:outputLabel value="From" style="float: left;" /><apex:inputField value="{!cell.result.Risk__From_Value__c}" style="float: right;" />
+										<br /><br />
+										<apex:outputLabel value="To" style="float: left;" /><apex:inputField value="{!cell.result.Risk__To_Value__c}" style="float: right;" />
+									</apex:outputPanel>
+									<br /><br />
+									<apex:outputLabel value="Description" style="float: left;" /><apex:inputTextArea value="{!cell.result.Risk__Description__c}" style="width: 200px; height:80px; float: right;" />
+									<div style="clear: both;" />
+								</apex:outputPanel>
+							</td>
+						</apex:repeat>
+					</tr>
+				</apex:repeat>
+
+			</table>
+
+			<apex:commandButton rendered="{!impactRows.size > 0}" action="{!save}" value="Save" />
+			<apex:commandButton rendered="{!impactRows.size > 0}" action="{!cancel}" value="Cancel" />
+			<!--<apex:inputHidden id="result" value="{!selectedValues}" />-->
+
+			</apex:outputPanel>
+
+		</apex:pageBlock>
+
+	</apex:form>
+
+</apex:page>

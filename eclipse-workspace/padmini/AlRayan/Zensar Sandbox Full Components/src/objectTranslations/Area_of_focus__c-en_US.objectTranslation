@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Area of focus</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Areas of focus</value>
+    </caseValues>
+    <fields>
+        <label><!-- Corporate objective statement --></label>
+        <name>Corporate_objective_statement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Strategic Plan --></label>
+        <name>Strategic_Plan__c</name>
+        <relationshipLabel><!-- Areas of focus --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Area of focus Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Web Integration Log</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Web Integration Logs</value>
+    </caseValues>
+    <fields>
+        <label><!-- AccountId --></label>
+        <name>AccountId__c</name>
+    </fields>
+    <fields>
+        <label><!-- AccountwithIBBId --></label>
+        <name>AccountwithIBBId__c</name>
+    </fields>
+    <fields>
+        <label><!-- ApplicantId --></label>
+        <name>ApplicantId__c</name>
+    </fields>
+    <fields>
+        <label><!-- AssetRelationshipId --></label>
+        <name>AssetRelationshipId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debug Log --></label>
+        <name>Debug_Log__c</name>
+        <relationshipLabel><!-- Web Integration Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- FromTrigger --></label>
+        <name>FromTrigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- IntegrationTaskPerformed --></label>
+        <name>IntegrationTaskPerformed__c</name>
+    </fields>
+    <fields>
+        <label><!-- OpportunityId --></label>
+        <name>OpportunityId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Action --></label>
+        <name>Request_Action__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Body --></label>
+        <name>Request_Body__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Log Date Time --></label>
+        <name>Request_Log_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Object Type --></label>
+        <name>Request_Object_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Output --></label>
+        <name>Request_Output__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Status --></label>
+        <name>Request_Status__c</name>
+        <picklistValues>
+            <masterLabel>BUFFERED</masterLabel>
+            <translation><!-- BUFFERED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAIL</masterLabel>
+            <translation><!-- FAIL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUCCESS</masterLabel>
+            <translation><!-- SUCCESS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYSTEM FAILURE</masterLabel>
+            <translation><!-- SYSTEM FAILURE --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Response Action --></label>
+        <name>Response_Action__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response Body --></label>
+        <name>Response_Body__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response Log Date Time --></label>
+        <name>Response_Log_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response Message Name --></label>
+        <name>Response_Message_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response Object Type --></label>
+        <name>Response_Object_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response Output --></label>
+        <name>Response_Output__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response Status --></label>
+        <name>Response_Status__c</name>
+        <picklistValues>
+            <masterLabel>BUFFERED</masterLabel>
+            <translation><!-- BUFFERED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAIL</masterLabel>
+            <translation><!-- FAIL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUCCESS</masterLabel>
+            <translation><!-- SUCCESS --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Restricted External Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Web Integration Log Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Request Information --></label>
+            <section>Request Information</section>
+        </sections>
+        <sections>
+            <label><!-- Response Information --></label>
+            <section>Response Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

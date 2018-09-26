@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Impact_Most_Likely_Case_Inherent__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Impact Most Likely Case Inherent</label>
+        <summarizedField>Risk__Risk_Assessment_Rating__c.Risk__Value__c</summarizedField>
+        <summaryFilterItems>
+            <field>Risk__Risk_Assessment_Rating__c.Risk__Category__c</field>
+            <operation>notEqual</operation>
+            <value>Likelihood</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Risk__Risk_Assessment_Rating__c.Risk__Mitigation__c</field>
+            <operation>equals</operation>
+            <value>Inherent</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Risk__Risk_Assessment_Rating__c.Risk__Risk_Assessment__c</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Impact_Most_Likely_Case_Residual__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Impact Most Likely Case Residual</label>
+        <summarizedField>Risk__Risk_Assessment_Rating__c.Risk__Value__c</summarizedField>
+        <summaryFilterItems>
+            <field>Risk__Risk_Assessment_Rating__c.Risk__Category__c</field>
+            <operation>notEqual</operation>
+            <value>Likelihood</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Risk__Risk_Assessment_Rating__c.Risk__Mitigation__c</field>
+            <operation>equals</operation>
+            <value>Residual</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Risk__Risk_Assessment_Rating__c.Risk__Risk_Assessment__c</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Likelihood_Most_Likely_Case_Inherent__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is used to retrieve the most likely inherent likelihood score from the risk assessment ratings.</description>
+        <externalId>false</externalId>
+        <label>Likelihood Most Likely Case Inherent</label>
+        <summarizedField>Risk__Risk_Assessment_Rating__c.Risk__Value__c</summarizedField>
+        <summaryFilterItems>
+            <field>Risk__Risk_Assessment_Rating__c.Risk__Category__c</field>
+            <operation>equals</operation>
+            <value>Likelihood</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Risk__Risk_Assessment_Rating__c.Risk__Mitigation__c</field>
+            <operation>equals</operation>
+            <value>Inherent</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Risk__Risk_Assessment_Rating__c.Risk__Risk_Assessment__c</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Likelihood_Most_Likely_Case_Residual__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is used to retrieve the most likely residual likelihood score from the risk assessment ratings.</description>
+        <externalId>false</externalId>
+        <label>Likelihood Most Likely Case Residual</label>
+        <summarizedField>Risk__Risk_Assessment_Rating__c.Risk__Value__c</summarizedField>
+        <summaryFilterItems>
+            <field>Risk__Risk_Assessment_Rating__c.Risk__Category__c</field>
+            <operation>equals</operation>
+            <value>Likelihood</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Risk__Risk_Assessment_Rating__c.Risk__Mitigation__c</field>
+            <operation>equals</operation>
+            <value>Residual</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Risk__Risk_Assessment_Rating__c.Risk__Risk_Assessment__c</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+</CustomObject>

@@ -1,0 +1,1123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <content>NoticeEdit</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>NoticeEdit</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <content>NoticeView</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>A Notice to be published to Improved Noticeboard Recipients</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>AcknowledgedAndFlaggedNotifications__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The number of Notifications that have been Acknowledged &amp; Flagged by Recipients; to indicate that they need further assistance to fulfil the Required Action and/or the Notice&apos;s purpose</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Count of Flagged Notifications associated with this Notice</inlineHelpText>
+        <label>Flagged Notifications</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AcknowledgedNotifications__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The number of Notifications that hat been Acknowledged in some way by Recipients (where Acknowledgement is the Required Acton)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Count of Acknowledged Notifications associated with this Notice</inlineHelpText>
+        <label>Acknowledged Notifications</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AcknowledgementStatement__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A Notice-specific acknowledgement statement for Recipients to agree (and optionally Flag for follow-up) if the Notice Required Action is to Acknowledge the Notice. New Notices default to the parent NoticeBoards Default Acknowledgement Statement.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>A Notice-specific acknowledgement statement for Recipients to agree (and optionally Flag for follow-up) if the Notice Required Action is to Acknowledge the Notice. New Notices default to the parent NoticeBoards Default Acknowledgement Statement.</inlineHelpText>
+        <label>Acknowledgement Statement</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AllowComment__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Allows Recipients to provide Comments with their Response to this Notice, when checked</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Allows Recipients to provide Comments with their Response to this Notice, when checked</inlineHelpText>
+        <label>Allow Comment</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ApprovalRequestSubmittedDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date and time when this Notice was first submitted for Approval - if pre-publication approval was set as required</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>The date and time when the Notice was first submitted for Approval</inlineHelpText>
+        <label>Approval Request Submitted Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>ApprovalRequired__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Sets whether any Notice Approval process is required before this Notice can be published</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Sets whether formal Approval is required before publishing this Notice</inlineHelpText>
+        <label>Approval Required?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ApprovalStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Tracks the Status of approval process milestones on the Notice Approval tab. (Set via field updates from the approval Process.)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Tracks the Status of approval process milestones on the Notice Approval tab. (Set via field updates from the approval Process.)</inlineHelpText>
+        <label>Approval Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>0: Not Started</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1: Submitted</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2: Rework Required</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3: Resubmitted</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4: Rejected</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5: Approved</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not Required</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ApprovedDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date and time when this Notice was Approved for publication - see the Notice Approvals tab for more detail. (Set via field updates from the approval process.)</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>The date and time when this Notice was Approved for publication - see the Notice Approvals tab for more detail. (Set via field updates from the approval process.)</inlineHelpText>
+        <label>Approved Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>AutoPublishCountdownDays__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The number of days until this Notice is set to be published automatically (by a time-based workflow)</description>
+        <externalId>false</externalId>
+        <formula>IF( ISNULL( AutoPublishDate__c ) , null, round( Now() -  AutoPublishDate__c , 0))</formula>
+        <inlineHelpText>Countdown in days to Auto-Publish Date</inlineHelpText>
+        <label>Auto-Publish Countdown (Days)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AutoPublishDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The future date and time when this Notice is Scheduled to be published automatically (via time-based workflow)</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>The future date and time when this Notice is Scheduled to be published automatically (via time-based workflow)</inlineHelpText>
+        <label>Auto-Publish Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>AutoSuspendCountdownDays__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The number of days until this Notice is set to be suspended from publication, automatically (by a time-based workflow)</description>
+        <externalId>false</externalId>
+        <formula>IF( ISNULL(  AutoSuspendDate__c  ) , null, round( Now() -  AutoSuspendDate__c,0  ))</formula>
+        <inlineHelpText>Countdown in days to Auto-Suspend Date</inlineHelpText>
+        <label>Auto-Suspend Countdown (Days)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AutoSuspendDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The future date and time when this Notice is Scheduled to be suspended from publication, automatically (via time-based workflow)</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>The future date and time when this Notice is Scheduled to be suspended from publication automatically (via time-based workflow)</inlineHelpText>
+        <label>Auto-Suspend Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>BannerActionMessage__c</fullName>
+        <deprecated>false</deprecated>
+        <description>An optional, Notice-specific &apos;call to action&apos; message that overrides the default Required Action statement for this Notice&apos; Required Action setting</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Optional Notice-specific &apos;call to action&apos; message to overwrite the generic Required Action statement</inlineHelpText>
+        <label>Banner Action Message</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BannerRequiredAction__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A formula returning the default Required Action by Recipients for this Notice - for display within the Recipients&apos; Notification Banner (unless overridden by a Notice-specific Banner Action Message)</description>
+        <externalId>false</externalId>
+        <formula>IF (ISBLANK(BannerActionMessage__c), TEXT(RequiredAction__c),  BannerActionMessage__c)</formula>
+        <inlineHelpText>Formula returning the Required Action needed to fulfil the Success Milestone for this Notice’s Lifecycle</inlineHelpText>
+        <label>Banner Required Action</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ClosedDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date and time when this Notice was Closed - having served its purpose and completing its lifecycle, ready for archival, according to local procedures</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>The date and time when this Notice was Closed</inlineHelpText>
+        <label>Closed Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CustomStyle__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The custom style class, if any, to apply to this particular Notice and its Notifications</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>The custom style class, if any, to apply to this particular Notice and its Notifications</inlineHelpText>
+        <label>Custom Style</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Detail__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The core message for this Notice, in rich text format; including any links to resources required by Recipients to meet the Required Action</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Rich text, detailed Notice content</inlineHelpText>
+        <label>Detail</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>DisplayedNotifications__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The number of Notifications that have been Displayed to Recipients via their Notification Banner, but not yet Opened (or Acknowledged in some way, if that is the Required Action)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Count of Displayed Notifications associated with this Notice</inlineHelpText>
+        <label>Displayed Notifications</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IssuedNotifications__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The number of Notifications that have been Issued to Recipients, but not yet Displayed, Opened (and optionally, Acknowledged in some way, if required)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Count of Issued Notifications associated with this Notice</inlineHelpText>
+        <label>Issued Notifications</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NoticeApprover__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The Salesforce User who will approve this Notice for publication, if approval is required (defaults to the NoticeBoard Owner for new Notices)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Salesforce User who will approve this Notice for publication, if approval is required (defaults to the NoticeBoard Owner for new Notices)</inlineHelpText>
+        <label>Notice Approver</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Notice_Approvals</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>NoticeBoard_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Hidden field used to show parent field when visbility on parent record might be different</description>
+        <externalId>false</externalId>
+        <formula>NoticeBoard__r.Name</formula>
+        <label>NoticeBoard Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NoticeBoard_Theme_Image_URL__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Hidden field used to show parent field when visbility on parent record might be different</description>
+        <externalId>false</externalId>
+        <formula>NoticeBoard__r.ThemeImageUrl__c</formula>
+        <label>NoticeBoard Theme Image URL</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NoticeBoard__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The NoticeBoard that contains this Notice - controlling its publishing team, policies, theme and default Signatory &amp; Acknowledgement Statement</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Management NoticeBoard that owns and controls this Notice</inlineHelpText>
+        <label>NoticeBoard</label>
+        <referenceTo>NoticeBoard__c</referenceTo>
+        <relationshipLabel>Notices</relationshipLabel>
+        <relationshipName>Notices</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>NoticeMode__c</fullName>
+        <defaultValue>&quot;User&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Defines the mode in which Recipients were selected - at an individual User level or as sets of Recipients, selected from one or more Lists</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Defines the mode in which Recipients were selected - at an individual User level or as sets of Recipients, selected from one or more Lists</inlineHelpText>
+        <label>Notice Mode</label>
+        <length>4</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NoticeStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows this Notice&apos;s current milestone status within the Notice Management Lifecycle - New, Drafted, Published, Suspended, Closed</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Notice Status within the Notice Management Lifecycle - New, Drafted, Published, Suspended, Closed</inlineHelpText>
+        <label>Notice Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>New</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Drafted</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Published</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Suspended</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>NotificationResponseOption__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Controls arrangements for Required Action = Open &amp; Acknowledge: Acknowledge Only → 1 button; Acknowledge / Acknowledge &amp; Flag (for follow-up) → 2 buttons; Vote → Vote Options visible</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Formats the Notification Acknowledgement section: The &apos;Acknowledge Only&apos; option (and &apos;--None--&apos;) shows just the &apos;Acknowledge&apos; button; &apos;Acknowledge / Acknowledge &amp; Flag&apos; shows two buttons, to allow simple Notification Flagging for follow-up</inlineHelpText>
+        <label>Notification Response Option</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Acknowledge Only</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Acknowledge / Acknowledge &amp; Flag</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>NotificationStatisticsRefreshed__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date and time when Notification statistics for this Notice were last refreshed. Click the &apos;Refresh&apos; button to update</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Date and Time Notification statistics were last refreshed. Click &apos;Refresh&apos; button to update</inlineHelpText>
+        <label>Notification Statistics Last Refreshed</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>OpenedNotifications__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The number of Notifications that have been Opened by Recipients, but not yet Acknowledged in some form, (if that is the Required Action)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Count of Opened Notifications associated with this Notice</inlineHelpText>
+        <label>Opened Notifications</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PublicationOption__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Sets whether this Notice will be published automatically on the Auto-Publish Date (unless pending any Notice Approval) or manually</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Sets whether this Notice will be published automatically on the Auto-Publish Date (unless pending any Notice Approval) or manually</inlineHelpText>
+        <label>Publication Mode</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Manual</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Scheduled</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>PublishedDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date and time when this Notice was Published (and Notifications Issued to its Selected Recipients)</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>The date and time when this Notice was Published (and Notifications issued to its Selected Recipients)</inlineHelpText>
+        <label>Published Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>RecipientListDefinition__c</fullName>
+        <defaultValue>&quot;&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>When using Notice Mode = &apos;List&apos; to select Recipients in bulk, this field records the currently selected lists</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>When using Notice Mode = &apos;List&apos; to select Recipients in bulk, this field records the currently selected lists</inlineHelpText>
+        <label>Recipient List Definition</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>RejectedDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date and time when the (latest) Notice Approval Request for this Notice was Rejected. It is set by field updates from any approval process in play for this Notice - see the Notice Approvals tab for more detail.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>The date and time when the (latest) Notice Approval Request for this Notice was Rejected - see the Notice Approvals tab for more detail. (Set via field updates from the approval process.)</inlineHelpText>
+        <label>Rejected Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>RequiredActionDeadline__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date and time by which Recipients must complete the Required Action associated with this Notice for it to be deemed successful</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>The date/time by which Recipients must complete the Required Action associated with this Notice for it to be deemed successful</inlineHelpText>
+        <label>Required Action Deadline</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>RequiredAction__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Sets the response needed by Recipients for this Notice to be successful: &apos;Open and Read&apos; is an &apos;FYI&apos; announcement, whereas &apos;Read and Acknowledge&apos; means some form of feedback action or &apos;RSVP&apos; is required</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Sets the Required Action needed by Recipients for this Notice to be successful - &apos;Open and Read&apos; (an &apos;FYI&apos; announcement) or &apos;Read and Acknowledge&apos; (an &apos;RSVP&apos; request)</inlineHelpText>
+        <label>Required Action</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Open and Read</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Read and Acknowledge</fullName>
+                <default>true</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Salutation_Other__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Used with &apos;Salutation = Other&apos; to create a Notice-specific opening greeting for personalisation, such as &apos;Hey there, [John]&apos;</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Used with &apos;Salutation = Other&apos; to create a Notice-specific opening greeting for personalisation, such as &apos;Hey there, [John]&apos;</inlineHelpText>
+        <label>Salutation-Other</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Salutation__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enables a choice of formal, informal or custom (&apos;Other&apos;) opening greeting for Recipients to help &apos;set the tone&apos; of this Notice</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enables a choice of formal, informal or custom (&apos;Other&apos;) opening greeting for Recipients to help &apos;set the tone&apos; of this Notice</inlineHelpText>
+        <label>Salutation</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Dear</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hi</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hey</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SelectedRecipients__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>A count of all Selected Recipients for this Notice</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Count of Selected Recipients associated with this Notice</inlineHelpText>
+        <label>Selected Recipients</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Signatory__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The name, role, function or team from whom this Notice is sent - as in an email&apos;s &apos;From&apos; field</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>The name, role, function or team from whom this Notice is sent - as in an email&apos;s &apos;From&apos; field</inlineHelpText>
+        <label>Signatory</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Summary__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A succinct statement which can constitute the entire Notice or summarise its Detail</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>A succinct statement which can constitute the entire Notice or summarise its Detail</inlineHelpText>
+        <label>Summary</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SuspendedDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date and time stamp when this Notice was suspended from publication</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>The date and time stamp when this Notice was suspended from publication</inlineHelpText>
+        <label>Suspended Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>SuspensionOption__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Sets whether this Notice will be suspended from publication automatically on the Auto-Suspend date or manually</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Sets whether this Notice will be suspended from publication automatically on the Auto-Suspend date or manually</inlineHelpText>
+        <label>Suspension Mode</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Manual</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Scheduled</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Title__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The subject or &apos;headline&apos; for this Notice</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>The subject or headline for this Notice</inlineHelpText>
+        <label>Title</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UpdatesPending__c</fullName>
+        <deprecated>false</deprecated>
+        <description>List of the Ids of any Apex Jobs relating to this Notice and its Recipients that have yet to complete execution</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>List of the Ids of any Apex Jobs relating to this Notice and its Recipients that have yet to complete execution</inlineHelpText>
+        <label>Updates Pending</label>
+        <length>1000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>VoidReason__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Traps the reason for Voiding a Notice (setting it&apos;s Status to Closed), which has been submitted for Appoval but not yet Published</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Traps the reason for Voiding a Notice (setting it&apos;s Status to Closed), which has been submitted for Appoval but not yet Published</inlineHelpText>
+        <label>Void Reason</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VoteChoices__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A comma-separated list of the options from which Recipients can choose their vote. To set a default choice, enclose one value in square brackets (not including the comma, no spaces between choices). Examples: &apos;[Yes],No,Maybe&apos; or &apos;Red,Amber,Green&apos;</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>A comma-separated list of the options from which Recipients can choose their vote. To set a default choice, enclose one value in square brackets (not including the comma, no spaces between choices). Examples: &apos;[Yes],No,Maybe&apos; or &apos;Red,Amber,Green&apos;</inlineHelpText>
+        <label>Vote Choices</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Notice</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NoticeBoard__c</columns>
+        <columns>Signatory__c</columns>
+        <columns>NAME</columns>
+        <columns>NoticeStatus__c</columns>
+        <columns>BannerRequiredAction__c</columns>
+        <columns>RequiredActionDeadline__c</columns>
+        <columns>AcknowledgementStatement__c</columns>
+        <columns>ApprovalRequired__c</columns>
+        <columns>ApprovalStatus__c</columns>
+        <columns>NoticeApprover__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>ApprovedDate__c</columns>
+        <columns>PublishedDate__c</columns>
+        <columns>SuspendedDate__c</columns>
+        <columns>ClosedDate__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>ApprovalNotStarted</fullName>
+        <columns>NoticeBoard__c</columns>
+        <columns>Signatory__c</columns>
+        <columns>NAME</columns>
+        <columns>Summary__c</columns>
+        <columns>BannerRequiredAction__c</columns>
+        <columns>RequiredActionDeadline__c</columns>
+        <columns>AcknowledgementStatement__c</columns>
+        <columns>NoticeApprover__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>AutoPublishDate__c</columns>
+        <columns>AutoSuspendDate__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ApprovalStatus__c</field>
+            <operation>equals</operation>
+            <value>0: Not Started</value>
+        </filters>
+        <label>Approval - Not Started</label>
+    </listViews>
+    <listViews>
+        <fullName>ApprovalRejected</fullName>
+        <columns>NoticeBoard__c</columns>
+        <columns>Signatory__c</columns>
+        <columns>NAME</columns>
+        <columns>Summary__c</columns>
+        <columns>BannerRequiredAction__c</columns>
+        <columns>RequiredActionDeadline__c</columns>
+        <columns>AcknowledgementStatement__c</columns>
+        <columns>NoticeApprover__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>AutoPublishDate__c</columns>
+        <columns>AutoSuspendDate__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ApprovalStatus__c</field>
+            <operation>equals</operation>
+            <value>4: Rejected</value>
+        </filters>
+        <label>Approval - Rejected</label>
+    </listViews>
+    <listViews>
+        <fullName>ApprovalSubmitted</fullName>
+        <columns>NoticeBoard__c</columns>
+        <columns>Signatory__c</columns>
+        <columns>NAME</columns>
+        <columns>Summary__c</columns>
+        <columns>BannerRequiredAction__c</columns>
+        <columns>RequiredActionDeadline__c</columns>
+        <columns>AcknowledgementStatement__c</columns>
+        <columns>NoticeApprover__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>AutoPublishDate__c</columns>
+        <columns>AutoSuspendDate__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ApprovalStatus__c</field>
+            <operation>equals</operation>
+            <value>1: Submitted</value>
+        </filters>
+        <label>Approval - Submitted</label>
+    </listViews>
+    <listViews>
+        <fullName>Approved_for_Publication</fullName>
+        <columns>NoticeBoard__c</columns>
+        <columns>Signatory__c</columns>
+        <columns>NAME</columns>
+        <columns>Summary__c</columns>
+        <columns>BannerRequiredAction__c</columns>
+        <columns>RequiredActionDeadline__c</columns>
+        <columns>AcknowledgementStatement__c</columns>
+        <columns>NoticeApprover__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>AutoPublishDate__c</columns>
+        <columns>AutoSuspendDate__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ApprovalStatus__c</field>
+            <operation>equals</operation>
+            <value>5: Approved</value>
+        </filters>
+        <filters>
+            <field>NoticeStatus__c</field>
+            <operation>equals</operation>
+            <value>Drafted</value>
+        </filters>
+        <label>Approved for Publication</label>
+    </listViews>
+    <listViews>
+        <fullName>Closed</fullName>
+        <columns>NoticeBoard__c</columns>
+        <columns>Signatory__c</columns>
+        <columns>NAME</columns>
+        <columns>BannerRequiredAction__c</columns>
+        <columns>RequiredActionDeadline__c</columns>
+        <columns>AcknowledgementStatement__c</columns>
+        <columns>ApprovalStatus__c</columns>
+        <columns>NoticeApprover__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>ApprovedDate__c</columns>
+        <columns>PublishedDate__c</columns>
+        <columns>SuspendedDate__c</columns>
+        <columns>ClosedDate__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NoticeStatus__c</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </filters>
+        <label>Closed</label>
+    </listViews>
+    <listViews>
+        <fullName>Drafted</fullName>
+        <columns>NoticeBoard__c</columns>
+        <columns>Signatory__c</columns>
+        <columns>NAME</columns>
+        <columns>Title__c</columns>
+        <columns>Summary__c</columns>
+        <columns>BannerRequiredAction__c</columns>
+        <columns>BannerActionMessage__c</columns>
+        <columns>RequiredActionDeadline__c</columns>
+        <columns>AcknowledgementStatement__c</columns>
+        <columns>ApprovalRequired__c</columns>
+        <columns>ApprovalStatus__c</columns>
+        <columns>NoticeApprover__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>ApprovedDate__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NoticeStatus__c</field>
+            <operation>equals</operation>
+            <value>Drafted</value>
+        </filters>
+        <label>Drafted</label>
+    </listViews>
+    <listViews>
+        <fullName>Published</fullName>
+        <columns>NoticeBoard__c</columns>
+        <columns>Signatory__c</columns>
+        <columns>NAME</columns>
+        <columns>BannerRequiredAction__c</columns>
+        <columns>RequiredActionDeadline__c</columns>
+        <columns>AcknowledgementStatement__c</columns>
+        <columns>PublishedDate__c</columns>
+        <columns>AutoSuspendDate__c</columns>
+        <columns>DisplayedNotifications__c</columns>
+        <columns>OpenedNotifications__c</columns>
+        <columns>AcknowledgedNotifications__c</columns>
+        <columns>AcknowledgedAndFlaggedNotifications__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NoticeStatus__c</field>
+            <operation>equals</operation>
+            <value>Published</value>
+        </filters>
+        <label>Published</label>
+    </listViews>
+    <listViews>
+        <fullName>Scheduled_for_Auto_Publication</fullName>
+        <columns>NoticeBoard__c</columns>
+        <columns>Signatory__c</columns>
+        <columns>NAME</columns>
+        <columns>BannerRequiredAction__c</columns>
+        <columns>RequiredActionDeadline__c</columns>
+        <columns>AcknowledgementStatement__c</columns>
+        <columns>NoticeStatus__c</columns>
+        <columns>ApprovalRequired__c</columns>
+        <columns>ApprovalStatus__c</columns>
+        <columns>NoticeApprover__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>AutoPublishDate__c</columns>
+        <columns>AutoSuspendDate__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NoticeStatus__c</field>
+            <operation>equals</operation>
+            <value>Drafted</value>
+        </filters>
+        <filters>
+            <field>PublicationOption__c</field>
+            <operation>equals</operation>
+            <value>Scheduled</value>
+        </filters>
+        <label>Scheduled for Auto-Publication</label>
+    </listViews>
+    <listViews>
+        <fullName>Suspended</fullName>
+        <columns>NoticeBoard__c</columns>
+        <columns>Signatory__c</columns>
+        <columns>NAME</columns>
+        <columns>BannerRequiredAction__c</columns>
+        <columns>RequiredActionDeadline__c</columns>
+        <columns>AcknowledgementStatement__c</columns>
+        <columns>ApprovalStatus__c</columns>
+        <columns>NoticeApprover__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>ApprovedDate__c</columns>
+        <columns>PublishedDate__c</columns>
+        <columns>SuspendedDate__c</columns>
+        <columns>ClosedDate__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NoticeStatus__c</field>
+            <operation>equals</operation>
+            <value>Suspended</value>
+        </filters>
+        <label>Suspended</label>
+    </listViews>
+    <nameField>
+        <label>Notice Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Notices</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>NoticeStatus__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ApprovalStatus__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>BannerRequiredAction__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>RequiredActionDeadline__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Summary__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SelectedRecipients__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PublishedDate__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SuspendedDate__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ClosedDate__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Summary__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>RequiredActionDeadline__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PublishedDate__c</lookupDialogsAdditionalFields>
+        <lookupFilterFields>Title__c</lookupFilterFields>
+        <lookupFilterFields>PublishedDate__c</lookupFilterFields>
+        <lookupFilterFields>NoticeApprover__c</lookupFilterFields>
+        <lookupFilterFields>NoticeStatus__c</lookupFilterFields>
+        <lookupFilterFields>ApprovalStatus__c</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>Summary__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>NoticeStatus__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>SelectedRecipients__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>OpenedNotifications__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ApprovalStatus__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>PublishedDate__c</searchFilterFields>
+        <searchFilterFields>Summary__c</searchFilterFields>
+        <searchResultsAdditionalFields>Summary__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>RequiredActionDeadline__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PublishedDate__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SuspendedDate__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+</CustomObject>

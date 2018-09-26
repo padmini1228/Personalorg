@@ -1,0 +1,7 @@
+Dear {!X1_2_1_Head_Office_Form__c.Line_Managers_Name__c},
+
+{!X1_2_1_Head_Office_Form__c.OwnerFullName} has submitted their monthly 1-2-1 form for your review and approval.
+
+Please find the link to this form below:
+
+{!X1_2_1_Head_Office_Form__c.Link}

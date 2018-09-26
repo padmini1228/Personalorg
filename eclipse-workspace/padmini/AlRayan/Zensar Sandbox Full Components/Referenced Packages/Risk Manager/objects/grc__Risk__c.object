@@ -1,0 +1,1527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <fullName>Risk_Register_Report_Field_Set</fullName>
+        <availableFields>
+            <field>grc__Key_Risk__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>grc__Business_Unit__r.Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>RiskReport</description>
+        <displayedFields>
+            <field>grc__Risk_No_Value__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>grc__Description__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>grc__Risk_Owner_Name__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Risk_Mitigation__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>grc__Residual_Likelihood__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>grc__Residual_Impact__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Residual_Rating__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Risk Register Report Field Set</label>
+    </fieldSets>
+    <fields>
+        <fullName>Aggregate_Control_Efficiencies__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Aggregate Control Effectiveness</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Aggregate_Key_Risk_Indicators__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Aggregate Key Risk Indicators</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Anticipated_Control_Effectiveness_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(TEXT( Aggregate_Control_Efficiencies__c) = &apos;Yes&apos;, 
+IF(Anticipated_Control_Effectiveness_Score__c=4, IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;Colours/hmc_F62817.png&apos;, &apos;Red&apos;,30,100), 
+IF(Anticipated_Control_Effectiveness_Score__c=3,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;Colours/hmc_FDD017.png&apos;, &apos;Amber&apos;,30,100), 
+IF(Anticipated_Control_Effectiveness_Score__c=2,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;Colours/hmc_F7FE2E.png&apos;, &apos;Yellow&apos;,30,100), 
+IF(Anticipated_Control_Effectiveness_Score__c=1,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;Colours/hmc_59E817.png&apos;, &apos;Green&apos;,30,100), 
+IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;Colours/hmc_gray.png&apos;, &apos;Grey&apos;,30,100))))), 
+IF(TEXT(Anticipated_Control_Effectiveness__c)=&apos;Inadequate&apos;, IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;Colours/hmc_F62817.png&apos;, &apos;Red&apos;,30,100), 
+IF(TEXT(Anticipated_Control_Effectiveness__c)=&apos;Adequate&apos;,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;Colours/hmc_FDD017.png&apos;, &apos;Amber&apos;,30,100), 
+IF(TEXT(Anticipated_Control_Effectiveness__c)=&apos;Effective&apos;,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;Colours/hmc_F7FE2E.png&apos;, &apos;Yellow&apos;,30,100), 
+IF(TEXT(Anticipated_Control_Effectiveness__c)=&apos;Strong &amp; Effective&apos;,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;Colours/hmc_59E817.png&apos;, &apos;Green&apos;,30,100), 
+IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;Colours/hmc_gray.png&apos;, &apos;Grey&apos;,30,100))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Anticipated Control Effectiveness Rating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Anticipated_Control_Effectiveness_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Anticipated Control Effectiveness Score</label>
+        <summarizedField>Risk_Control_Lookup__c.Anticipated_Control_Effectiveness_Score__c</summarizedField>
+        <summaryForeignKey>Risk_Control_Lookup__c.Risk__c</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Anticipated_Control_Effectiveness__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Anticipated Control Effectiveness</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Inadequate</fullName>
+                <color>#FF0000</color>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Adequate</fullName>
+                <color>#FFCC33</color>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Effective</fullName>
+                <color>#FFFF66</color>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Strong &amp; Effective</fullName>
+                <color>#33CC00</color>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Appetite__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Appetite</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Average_KRI_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(Average_KRI_Score__c &gt;= 2.5,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_F62817&apos;, &apos;Red&apos;,30,100),
+IF(Average_KRI_Score__c &gt;= 1.5,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_FDD017&apos;, &apos;Amber&apos;,30,100),
+IF(Average_KRI_Score__c &gt; 0,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_59E817&apos;, &apos;Green&apos;,30,100),
+IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_gray&apos;, &apos;Grey&apos;,30,100))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Average KRI Rating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Average_KRI_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(Total_KRI_Lookup_Records__c&gt; 0, ROUND(Total_KRI_Lookup_Score__c/Total_KRI_Lookup_Records__c,0),0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Average KRI Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Calibrated_Inherent_Rating_Lookup__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Calibrated Inherent Rating Lookup</label>
+        <referenceTo>Rating_Info__c</referenceTo>
+        <relationshipLabel>Calibrated Inherent Risks</relationshipLabel>
+        <relationshipName>CalibratedInherentRisks</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Calibrated_Residual_Rating_Lookup__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Calibrated Residual Rating Lookup</label>
+        <referenceTo>Rating_Info__c</referenceTo>
+        <relationshipLabel>Risks (Calibrated Residual Rating Lookup)</relationshipLabel>
+        <relationshipName>CalibratedResidualRisks</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Calibrated_Target_Rating_Lookup__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Calibrated Target Rating Lookup</label>
+        <referenceTo>Rating_Info__c</referenceTo>
+        <relationshipLabel>Risks (Calibrated Target Rating Lookup)</relationshipLabel>
+        <relationshipName>CalibratedTargetRisks</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Control_Effectiveness_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(TEXT( Aggregate_Control_Efficiencies__c) = &apos;Yes&apos;, 
+IF(Control_Effectiveness_Score__c=4, IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;Colours/hmc_F62817.png&apos;, &apos;Red&apos;,30,100), 
+IF(Control_Effectiveness_Score__c=3,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;Colours/hmc_FDD017.png&apos;, &apos;Amber&apos;,30,100), 
+IF(Control_Effectiveness_Score__c=2,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;Colours/hmc_F7FE2E.png&apos;, &apos;Yellow&apos;,30,100), 
+IF(Control_Effectiveness_Score__c=1,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;Colours/hmc_59E817.png&apos;, &apos;Green&apos;,30,100), 
+IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;Colours/hmc_gray.png&apos;, &apos;Grey&apos;,30,100))))), 
+IF(TEXT(Control_Effectiveness__c)=&apos;Inadequate&apos;, IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;Colours/hmc_F62817.png&apos;, &apos;Red&apos;,30,100), 
+IF(TEXT(Control_Effectiveness__c)=&apos;Adequate&apos;,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;Colours/hmc_FDD017.png&apos;, &apos;Amber&apos;,30,100), 
+IF(TEXT(Control_Effectiveness__c)=&apos;Effective&apos;,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;Colours/hmc_F7FE2E.png&apos;, &apos;Yellow&apos;,30,100), 
+IF(TEXT( Control_Effectiveness__c)=&apos;Strong &amp; Effective&apos;,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;Colours/hmc_59E817.png&apos;, &apos;Green&apos;,30,100), 
+IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;Colours/hmc_gray.png&apos;, &apos;Grey&apos;,30,100))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Control Effectiveness Rating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Control_Effectiveness_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Control Effectiveness Score</label>
+        <summarizedField>Risk_Control_Lookup__c.Control_Effectiveness_Score__c</summarizedField>
+        <summaryForeignKey>Risk_Control_Lookup__c.Risk__c</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Control_Effectiveness__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Control Effectiveness</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Inadequate</fullName>
+                <color>#FF0000</color>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Adequate</fullName>
+                <color>#FFCC33</color>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Effective</fullName>
+                <color>#FFFF66</color>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Strong &amp; Effective</fullName>
+                <color>#33CC00</color>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Cost_Best_Case__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Residual Cost Best Case</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cost_Most_Likely_Case__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Residual Cost Most Likely Case</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cost_Worst_Case__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Residual Cost Worst Case</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Days_Overdue__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TODAY() - grc__Next_Review_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Days past the next review date</inlineHelpText>
+        <label>Days Overdue</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Estimated_Loss_of_PBT_or_Cash_Flow__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Provide the estimated values based on x,y,z</inlineHelpText>
+        <label>Estimated Loss of PBT or Cash Flow</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Group_Inherent_Rating_Lookup__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Group Inherent Rating Lookup</label>
+        <referenceTo>Rating_Info__c</referenceTo>
+        <relationshipLabel>Risks (Group Inherent Rating Lookup)</relationshipLabel>
+        <relationshipName>Group_Inherent_Ratings</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Group_Inherent_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>&quot;&quot;</formula>
+        <label>Group Inherent Rating *DEPRECATED*</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Group_Residual_Rating_Lookup__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Group Residual Rating Lookup</label>
+        <referenceTo>Rating_Info__c</referenceTo>
+        <relationshipLabel>Risks (Group Residual Rating Lookup)</relationshipLabel>
+        <relationshipName>Risks</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Group_Residual_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>&quot;&quot;</formula>
+        <label>Group Residual Rating *DEPRECATED*</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Group_Target_Rating_Lookup__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Group Target Rating Lookup</label>
+        <referenceTo>Rating_Info__c</referenceTo>
+        <relationshipLabel>Risks (Group Target Rating Lookup)</relationshipLabel>
+        <relationshipName>Group_Target_Ratings</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Group_Target_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>&quot;&quot;</formula>
+        <label>Group Target Rating *DEPRECATED*</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Inherent_Cost_Most_Likely_Case__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Inherent Cost Most Likely Case</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Inherent_Impact_Text__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Inherent_Rating_Lookup__r.Impact__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Inherent Impact</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Inherent_Likelihood_Text__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Inherent_Rating_Lookup__r.Likelihood__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Inherent Likelihood</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Inherent_Rating_Lookup__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Inherent Rating Lookup</label>
+        <referenceTo>Rating_Info__c</referenceTo>
+        <relationshipLabel>Risks (Inherent Rating Lookup)</relationshipLabel>
+        <relationshipName>Risks4</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Inherent_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;Colours/hmc_&apos; + 
+IF(Inherent_Rating_Lookup__r.Colour__c == &apos;&apos; 
+,&apos;gray.png&apos; 
+, UPPER(SUBSTITUTE( 
+Inherent_Rating_Lookup__r.Colour__c, &apos;#&apos;, &apos;&apos; 
+) 
+) + &apos;.png&apos;
+), 
+IF(Inherent_Rating_Lookup__r.Colour__c == &apos;&apos; 
+,&apos;gray&apos; 
+, Inherent_Rating_Lookup__r.Colour__c 
+) 
+, 25, 100 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Inherent Rating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Inherent_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Inherent_Rating_Lookup__r.Overall_Rating__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Inherent Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>KRI_RAG_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The overall KRI RAG Rating</description>
+        <externalId>false</externalId>
+        <label>KRI RAG Rating</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Red</fullName>
+                <color>#FF0000</color>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Amber</fullName>
+                <color>#FFCC66</color>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Green</fullName>
+                <color>#33CC00</color>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>KRI_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(KRI_Score__c=3, IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_F62817&apos;, &apos;Red&apos;,30,100),
+IF(KRI_Score__c=2, IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_FDD017&apos;, &apos;Amber&apos;,30,100),
+IF(KRI_Score__c=1, IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_59E817&apos;, &apos;Green&apos;,30,100),
+IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_gray&apos;, &apos;Grey&apos;,30,100))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>KRI Rating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>KRI_Score_Movement_Direction__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c+
+IF(OR(Previous_KRI_Score__c == KRI_Score__c, Previous_KRI_Score__c == 0),&apos;RiskClimateRightYellowArrow&apos;,
+IF((KRI_Score__c)&lt;(Previous_KRI_Score__c),&apos;RiskClimateDownGreenArrow&apos;,
+IF((KRI_Score__c)&gt;(Previous_KRI_Score__c),&apos;RiskClimateUpRedArrow&apos;,&apos;&apos;))),&apos;&apos;,32,32)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>KRI Score Movement Direction</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>KRI_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Roll up of highest, i.e. worst case KRI scores</description>
+        <externalId>false</externalId>
+        <label>KRI Score</label>
+        <summarizedField>Risk_KRI_Lookup__c.KRI_Score__c</summarizedField>
+        <summaryForeignKey>Risk_KRI_Lookup__c.Risk__c</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Last_Assessment_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Last Assessment Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Monitoring_Frequency__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Automatically populates the Next Review Date following a new assessment.</inlineHelpText>
+        <label>Monitoring Frequency</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Daily</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Weekly</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Monthly</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Quarterly</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Half Yearly</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Annually</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>No_of_Actions__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The number of open actions for the risk</description>
+        <externalId>false</externalId>
+        <label>No of Actions</label>
+        <summaryFilterItems>
+            <field>Mitigation_Action__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Open</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Mitigation_Action__c.Risk__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Previous_Average_KRI_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(Previous_Average_KRI_Score__c &gt; 2.5, IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_F62817&apos;, &apos;Red&apos;,30,100),
+IF(Previous_Average_KRI_Score__c &gt; 1.5, IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_FDD017&apos;, &apos;Amber&apos;,30,100),
+IF(Previous_Average_KRI_Score__c &gt; 0, IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_59E817&apos;, &apos;Green&apos;,30,100),
+IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_gray&apos;, &apos;Grey&apos;,30,100))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Previous Average KRI Rating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Previous_Average_KRI_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF( totalPreviousKRILookupRecords__c &gt; 0, ROUND(Total_Previous_Average_KRI_Score__c / totalPreviousKRILookupRecords__c ,0), 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Previous Average KRI Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Previous_KRI_RAG_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Previous KRI RAG Rating</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Red</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Amber</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Green</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Previous_KRI_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(Previous_KRI_Score__c=3, IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_F62817&apos;, &apos;Red&apos;,30,100), 
+IF(Previous_KRI_Score__c=2, IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_FDD017&apos;, &apos;Amber&apos;,30,100), 
+IF(Previous_KRI_Score__c=1, IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_59E817&apos;, &apos;Green&apos;,30,100), 
+IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_gray&apos;, &apos;Grey&apos;,30,100))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Previous KRI Rating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Previous_KRI_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Previous KRI Score</label>
+        <summarizedField>Risk_KRI_Lookup__c.Previous_KRI_Score__c</summarizedField>
+        <summaryForeignKey>Risk_KRI_Lookup__c.Risk__c</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Previous_Residual_Impact_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Previous_Residual_Rating_Lookup__r.Impact_Rating__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Previous Residual Impact Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Previous_Residual_Likelihood_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Previous_Residual_Rating_Lookup__r.Likelihood_Rating__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Previous Residual Likelihood Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Previous_Residual_Rating_Lookup__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Previous Residual Rating Lookup</label>
+        <referenceTo>Rating_Info__c</referenceTo>
+        <relationshipLabel>Risks (Previous Residual Rating Lookup)</relationshipLabel>
+        <relationshipName>Previous_Residual_Info</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Previous_Residual_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;Colours/hmc_&apos; +
+IF(Previous_Residual_Rating_Lookup__r.Colour__c == &apos;&apos;
+,&apos;gray.png&apos;
+, UPPER(SUBSTITUTE(
+Previous_Residual_Rating_Lookup__r.Colour__c, &apos;#&apos;, &apos;&apos;
+)
+) + &apos;.png&apos;
+),
+IF(Previous_Residual_Rating_Lookup__r.Colour__c == &apos;&apos;
+,&apos;gray&apos;
+, Previous_Residual_Rating_Lookup__r.Colour__c
+)
+, 25, 100
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Previous Residual Rating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Residual_Impact_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Residual_Rating_Lookup__r.Impact_Rating__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Residual Impact Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Residual_Impact_Text__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Residual_Rating_Lookup__r.Impact__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Residual Impact</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Residual_Likelihood_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Residual_Rating_Lookup__r.Likelihood_Rating__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Residual Likelihood Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Residual_Likelihood_Text__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Residual_Rating_Lookup__r.Likelihood__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Residual Likelihood</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Residual_Rating_Lookup__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Residual Rating Lookup</label>
+        <referenceTo>Rating_Info__c</referenceTo>
+        <relationshipLabel>Risks (Residual Rating Lookup)</relationshipLabel>
+        <relationshipName>Risks5</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Residual_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;Colours/hmc_&apos; + 
+IF(Residual_Rating_Lookup__r.Colour__c == &apos;&apos; 
+,&apos;gray.png&apos; 
+, UPPER(SUBSTITUTE( 
+Residual_Rating_Lookup__r.Colour__c, &apos;#&apos;, &apos;&apos; 
+) 
+) + &apos;.png&apos;
+), 
+IF(Residual_Rating_Lookup__r.Colour__c == &apos;&apos; 
+,&apos;gray&apos; 
+, Residual_Rating_Lookup__r.Colour__c 
+) 
+, 25, 100 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Residual Rating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Residual_Score_Movement_Direction__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IMAGE(
+&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c +
+IF(Residual_Score_Movement__c == &apos;Level&apos; ,&apos;RiskClimateRightYellowArrow&apos;,
+IF(Residual_Score_Movement__c == &apos;&apos; ,&apos;empResidualDirection&apos;,
+IF(Residual_Score_Movement__c== &apos;Down&apos; ,IF(ISPICKVAL(Type__c,&apos;Threat&apos;),&apos;RiskClimateDownGreenArrow&apos;,&apos;RiskClimateDownRedArrow&apos;),
+IF(Residual_Score_Movement__c == &apos;Up&apos; ,IF(ISPICKVAL(Type__c,&apos;Threat&apos;),&apos;RiskClimateUpRedArrow&apos;,&apos;RiskClimateUpGreenArrow&apos;),&apos;&apos; )))), &apos;&apos;, 32,32)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Residual Score Movement Direction</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Residual_Score_Movement__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Residual Score Movement</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Residual_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Residual_Rating_Lookup__r.Overall_Rating__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Residual Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Risk_Mitigation__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Risk Mitigation</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Risk_Template__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Risk Template</label>
+        <referenceTo>Risk_Template__c</referenceTo>
+        <relationshipLabel>Risks</relationshipLabel>
+        <relationshipName>Risks</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Scoring_Scheme__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Scoring Scheme</label>
+        <referenceTo>Scoring_Scheme__c</referenceTo>
+        <relationshipLabel>Risks</relationshipLabel>
+        <relationshipName>Risks</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Scoring_Update__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Scoring Update</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Source__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is where the risk came from.</description>
+        <externalId>false</externalId>
+        <label>Source</label>
+        <picklist>
+            <picklistValues>
+                <fullName>External Audit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Internal Audit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Legislation Change</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Risk Assessment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Regulator</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Target_Impact_Text__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Target_Rating_Lookup__r.Impact__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Target Impact</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Target_Likelihood_Text__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Target_Rating_Lookup__r.Likelihood__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Target Likelihood</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Target_Rating_Lookup__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Target Rating Lookup</label>
+        <referenceTo>Rating_Info__c</referenceTo>
+        <relationshipLabel>Risks (Target Rating Lookup)</relationshipLabel>
+        <relationshipName>Risks6</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Target_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;Colours/hmc_&apos; + 
+IF(Target_Rating_Lookup__r.Colour__c == &apos;&apos; 
+,&apos;gray.png&apos; 
+, UPPER(SUBSTITUTE( 
+Target_Rating_Lookup__r.Colour__c, &apos;#&apos;, &apos;&apos; 
+) 
+) + &apos;.png&apos;
+), 
+IF(Target_Rating_Lookup__r.Colour__c == &apos;&apos; 
+,&apos;gray&apos; 
+, Target_Rating_Lookup__r.Colour__c 
+) 
+, 25, 100 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Target Rating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Target_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Target_Rating_Lookup__r.Overall_Rating__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Target Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_Best_Case__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Residual Time Best Case</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_Most_Likely_Case__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Residual Time Most Likely Case</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_Worst_Case__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Residual Time Worst Case</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Action_Cost__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Total Action Cost</label>
+        <summarizedField>Mitigation_Action__c.Action_Cost__c</summarizedField>
+        <summaryForeignKey>Mitigation_Action__c.Risk__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_KRI_Lookup_Records__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Total KRI Lookup Records</label>
+        <summaryFilterItems>
+            <field>Risk_KRI_Lookup__c.Score__c</field>
+            <operation>notEqual</operation>
+            <value>0</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Risk_KRI_Lookup__c.Risk__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_KRI_Lookup_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Total KRI Lookup Score</label>
+        <summarizedField>Risk_KRI_Lookup__c.Average_Score__c</summarizedField>
+        <summaryForeignKey>Risk_KRI_Lookup__c.Risk__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Previous_Average_KRI_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Total Previous Average KRI Score</label>
+        <summarizedField>Risk_KRI_Lookup__c.Previous_Average_Score__c</summarizedField>
+        <summaryForeignKey>Risk_KRI_Lookup__c.Risk__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Previous_KRI_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Total Previous KRI Score</label>
+        <summarizedField>Risk_KRI_Lookup__c.Previous_Score__c</summarizedField>
+        <summaryForeignKey>Risk_KRI_Lookup__c.Risk__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Treatment_Approach__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Treatment Approach</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Treat</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tolerate</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Transfer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Avoid</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Threat</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Opportunity</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>totalPreviousKRILookupRecords__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total KRI Lookup Records with a Previous Score</description>
+        <externalId>false</externalId>
+        <label>Total Previous KRI Lookup Records</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>Active_Risks</fullName>
+        <booleanFilter>1</booleanFilter>
+        <columns>NAME</columns>
+        <columns>grc__Business_Unit__c</columns>
+        <columns>Bank_Risk_Register_ID__c</columns>
+        <columns>grc__Risk_Name__c</columns>
+        <columns>grc__Category__c</columns>
+        <columns>grc__Subcategory__c</columns>
+        <columns>Residual_Score__c</columns>
+        <columns>grc__Key_Risk__c</columns>
+        <columns>Inherent_Rating__c</columns>
+        <columns>Residual_Rating__c</columns>
+        <columns>Target_Rating__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>grc__Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filters>
+        <label>Active Risks</label>
+    </listViews>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Bank_Risk_Register_ID__c</columns>
+        <columns>NAME</columns>
+        <columns>grc__Risk_Name__c</columns>
+        <columns>grc__Business_Unit__c</columns>
+        <columns>grc__Status__c</columns>
+        <columns>grc__Category__c</columns>
+        <columns>grc__Subcategory__c</columns>
+        <columns>grc__Key_Risk__c</columns>
+        <columns>KRI_Rating__c</columns>
+        <columns>Previous_KRI_Rating__c</columns>
+        <columns>Inherent_Rating__c</columns>
+        <columns>Residual_Rating__c</columns>
+        <columns>grc__Ranking__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Emerging_Risks</fullName>
+        <columns>NAME</columns>
+        <columns>grc__Business_Unit__c</columns>
+        <columns>grc__Risk_No_Value__c</columns>
+        <columns>grc__Category__c</columns>
+        <columns>grc__Subcategory__c</columns>
+        <columns>grc__Key_Risk__c</columns>
+        <columns>Residual_Rating__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>grc__Status__c</field>
+            <operation>equals</operation>
+            <value>Emerging</value>
+        </filters>
+        <label>Emerging Risks</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Key_Risks</fullName>
+        <columns>NAME</columns>
+        <columns>grc__Risk_Name__c</columns>
+        <columns>grc__Business_Unit__c</columns>
+        <columns>grc__Category__c</columns>
+        <columns>grc__Subcategory__c</columns>
+        <columns>grc__Key_Risk__c</columns>
+        <columns>grc__Status__c</columns>
+        <columns>Inherent_Rating__c</columns>
+        <columns>Residual_Rating__c</columns>
+        <columns>Target_Rating__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>grc__Key_Risk__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>grc__Status__c</field>
+            <operation>notEqual</operation>
+            <value>Non active</value>
+        </filters>
+        <label>Key Risks</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>My_Risks</fullName>
+        <columns>NAME</columns>
+        <columns>grc__Business_Unit__c</columns>
+        <columns>grc__Risk_Name__c</columns>
+        <columns>grc__Category__c</columns>
+        <columns>grc__Subcategory__c</columns>
+        <columns>grc__Key_Risk__c</columns>
+        <columns>grc__Status__c</columns>
+        <columns>Inherent_Rating__c</columns>
+        <columns>Residual_Rating__c</columns>
+        <columns>Target_Rating__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>grc__Status__c</field>
+            <operation>notEqual</operation>
+            <value>Non active</value>
+        </filters>
+        <label>My Risks</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Non_Active_Risks</fullName>
+        <columns>NAME</columns>
+        <columns>grc__Business_Unit__c</columns>
+        <columns>grc__Risk_Name__c</columns>
+        <columns>grc__Category__c</columns>
+        <columns>grc__Subcategory__c</columns>
+        <columns>grc__Key_Risk__c</columns>
+        <columns>Residual_Rating__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>grc__Status__c</field>
+            <operation>equals</operation>
+            <value>Non active</value>
+        </filters>
+        <label>Non-Active Risks</label>
+        <language>en_US</language>
+    </listViews>
+    <validationRules>
+        <fullName>Unapproved_Risk_Template</fullName>
+        <active>false</active>
+        <errorConditionFormula>Risk_Template__c  == null</errorConditionFormula>
+        <errorMessage>Risk must be assigned with a approved Risk Template</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Create_Assessment</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Assess Risk</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>{!URLFOR(&apos;/apex/&apos;+$Setup.NamespacePrefix__c.Value__c+&apos;RiskAssessmentEntry&apos;, null,
+[
+riskId =  grc__Risk__c.Id 
+]
+)}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Submit_for_Deletion</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Submit for Deletion</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/23.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/23.0/apex.js&quot;)}
+
+var RiskId = &quot;{!grc__Risk__c.Id}&quot;;
+var objRisk = new sforce.SObject(&apos;grc__Risk__c&apos;);
+objRisk .Id = RiskId ;
+objRisk .grc__Submitted_for_Deletion__c= &quot;true&quot;;
+result = sforce.connection.update([objRisk ]);
+location.reload(true);</url>
+    </webLinks>
+</CustomObject>

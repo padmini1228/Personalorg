@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CaseDirector</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CaseDirectors</value>
+    </caseValues>
+    <fields>
+        <label><!-- CAA Refer Type --></label>
+        <name>CAA_Refer_Type__c</name>
+        <picklistValues>
+            <masterLabel>Docs</masterLabel>
+            <translation><!-- Docs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FCU</masterLabel>
+            <translation><!-- FCU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signature</masterLabel>
+            <translation><!-- Signature --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CaseCategory --></label>
+        <name>CaseCategory__c</name>
+    </fields>
+    <fields>
+        <label><!-- CaseCode --></label>
+        <name>CaseCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- CaseDescription --></label>
+        <name>CaseDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- CaseOrigin --></label>
+        <name>CaseOrigin__c</name>
+    </fields>
+    <fields>
+        <label><!-- CasePriority --></label>
+        <name>CasePriority__c</name>
+    </fields>
+    <fields>
+        <label><!-- CaseQueue --></label>
+        <name>CaseQueue__c</name>
+    </fields>
+    <fields>
+        <label><!-- CaseRecordType --></label>
+        <name>CaseRecordType__c</name>
+    </fields>
+    <fields>
+        <label><!-- CaseStatus --></label>
+        <name>CaseStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- CaseSubject --></label>
+        <name>CaseSubject__c</name>
+    </fields>
+    <fields>
+        <label><!-- CaseUseConfigUser --></label>
+        <name>CaseUseConfigUser__c</name>
+        <picklistValues>
+            <masterLabel>CONFIGUSER</masterLabel>
+            <translation><!-- CONFIGUSER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PASSEDUSER</masterLabel>
+            <translation><!-- PASSEDUSER --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CaseUseQueue --></label>
+        <name>CaseUseQueue__c</name>
+    </fields>
+    <fields>
+        <label><!-- CaseUser --></label>
+        <name>CaseUser__c</name>
+        <relationshipLabel><!-- CaseDirectors --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>IBBCaseDirector Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

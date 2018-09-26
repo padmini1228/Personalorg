@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Business Supplier</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Business Suppliers</value>
+    </caseValues>
+    <fields>
+        <help><!-- If there is an alternative vendor who we use for the service, please fill this in. --></help>
+        <label><!-- Alternative Vendor --></label>
+        <name>Alternative_Vendor__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the contract costs for the usage of service per annum if applicable. --></help>
+        <label><!-- Annual cost for services --></label>
+        <name>Annual_cost_for_services__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter a brief description of what the company services. --></help>
+        <label><!-- Brief Description --></label>
+        <name>Brief_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please check this if the following suppliers are: --></help>
+        <label><!-- Business Critical? --></label>
+        <name>Business_Critical__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter a contract number if applicable. This maybe necessary to log a call or speak to someone with regards to an issue. --></help>
+        <label><!-- Contract Number --></label>
+        <name>C__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the suppliers address --></help>
+        <label><!-- Company Address --></label>
+        <name>Company_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Phone No 2 --></label>
+        <name>Company_Phone_No_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the company main phone number --></help>
+        <label><!-- Company Phone No --></label>
+        <name>Company_Phone_No__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please select to go to the suppliers home page. --></help>
+        <label><!-- Company Website --></label>
+        <name>Company_Website__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the renewal date of the contract for the services if applicable. --></help>
+        <label><!-- Contract Renewal Date --></label>
+        <name>Contract_Renewal_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please select the department(s) relating to this supplier. --></help>
+        <label><!-- Department Owner(s) --></label>
+        <name>Department_Owner_s__c</name>
+        <picklistValues>
+            <masterLabel>Call Centre</masterLabel>
+            <translation><!-- Call Centre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collections</masterLabel>
+            <translation><!-- Collections --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compliance</masterLabel>
+            <translation><!-- Compliance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Risk</masterLabel>
+            <translation><!-- Credit Risk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive Management</masterLabel>
+            <translation><!-- Executive Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FCU</masterLabel>
+            <translation><!-- FCU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HR</masterLabel>
+            <translation><!-- HR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT</masterLabel>
+            <translation><!-- IT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operations</masterLabel>
+            <translation><!-- Operations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treasury</masterLabel>
+            <translation><!-- Treasury --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please select the date when the next scheduled service is due. Please leave blank if not applicable. --></help>
+        <label><!-- Next Scheduled Service --></label>
+        <name>Next_Scheduled_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Paid in Arrears --></label>
+        <name>Paid_in_Arrears__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please enter the method of payment. e.g. BACS Invoice. --></help>
+        <label><!-- Payment method --></label>
+        <name>Payment_method__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please select the status of the supplier. Dormant - No activity for more than 12 months.
+Inactive - Do not use (If you have selected this, please enter in the description why this shouldn&apos;t be used. --></help>
+        <label><!-- Relationship_Status --></label>
+        <name>Relationship_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dormant</masterLabel>
+            <translation><!-- Dormant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive - Do not use!</masterLabel>
+            <translation><!-- Inactive - Do not use! --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please select the staff member who manages this supplier/account from IBB. --></help>
+        <label><!-- User who manages this account --></label>
+        <name>User_who_manages_this_account__c</name>
+        <relationshipLabel><!-- Business Suppliers --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>IT Supplier Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- IT Supplier --></label>
+        <name>IT_Supplier</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

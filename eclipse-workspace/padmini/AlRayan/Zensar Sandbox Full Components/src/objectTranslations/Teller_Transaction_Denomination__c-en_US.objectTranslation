@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Teller Transaction Denomination</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Teller Transaction Denominations</value>
+    </caseValues>
+    <fields>
+        <label><!-- CCY of Denomination --></label>
+        <name>CCY_of_Denomination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Depository Reversed --></label>
+        <name>Depository_Reversed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Depository Updated --></label>
+        <name>Depository_Updated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Direction --></label>
+        <name>Direction__c</name>
+        <picklistValues>
+            <masterLabel>From Depository</masterLabel>
+            <translation><!-- From Depository --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To Depository</masterLabel>
+            <translation><!-- To Depository --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Number of Denomination --></label>
+        <name>Number_of_Denomination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Teller Transaction --></label>
+        <name>Teller_Transaction__c</name>
+        <relationshipLabel><!-- Teller Transaction Denominations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Value of GBP Denomination --></label>
+        <name>Total_Value_of_Denomination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Value of EUR Denomination --></label>
+        <name>Total_Value_of_EUR_Denomination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Value of QAR Denomination --></label>
+        <name>Total_Value_of_QAR_Denomination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Value of USD Denomination --></label>
+        <name>Total_Value_of_USD_Denomination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value of Denomination --></label>
+        <name>Value_of_Denomination__c</name>
+    </fields>
+    <layouts>
+        <layout>Teller Transaction Denomination Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

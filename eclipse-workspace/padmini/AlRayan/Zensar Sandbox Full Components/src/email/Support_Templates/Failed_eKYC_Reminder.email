@@ -1,0 +1,13 @@
+It has now been 14 days since the application form was sent to the customer, therefore can you please chase the customer urgently to sign and return the application form with supporting documentation.
+
+Customer Application Number: {!Case.Opportunity_Reference_Number__c}
+Product: {!Case.Opportunity_IBB_Product_Name__c}
+Customer Name: {!Case.Contact}
+Customer Address: 
+{!Account.BillingAddress}
+Application Date Sent: {!Case.CreatedDate}
+
+{!Case.Link}
+
+Yours sincerely,
+Islamic Bank of Britain plc

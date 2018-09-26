@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Qualtrics Survey</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Qualtrics_Surveys</value>
+    </caseValues>
+    <fields>
+        <label><!-- Agent --></label>
+        <name>Agent__c</name>
+        <relationshipLabel><!-- Qualtrics_Surveys --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date Survey Taken --></label>
+        <name>Date_Survey_Taken__c</name>
+    </fields>
+    <fields>
+        <label><!-- EBS ID --></label>
+        <name>EBS_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPS --></label>
+        <name>NPS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Easy --></label>
+        <name>Net_Easy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prospect/Customer Name --></label>
+        <name>Prospect_Customer_Name__c</name>
+        <relationshipLabel><!-- Qualtrics_Surveys --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Question 2 --></label>
+        <name>Question_12__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 1e --></label>
+        <name>Question_1e__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 1f --></label>
+        <name>Question_1f__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 1g --></label>
+        <name>Question_1g__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 1h --></label>
+        <name>Question_1h__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 1i --></label>
+        <name>Question_1i__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 2b --></label>
+        <name>Question_2b__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 2c --></label>
+        <name>Question_2c__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 2d --></label>
+        <name>Question_2d__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 2e --></label>
+        <name>Question_2e__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 2f --></label>
+        <name>Question_2f__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 2g --></label>
+        <name>Question_2g__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 1 --></label>
+        <name>Question_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 1a --></label>
+        <name>Question_3_a__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 1b --></label>
+        <name>Question_3b__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 1c --></label>
+        <name>Question_3c__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 1d --></label>
+        <name>Question_3d__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 4 --></label>
+        <name>Question_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 4a --></label>
+        <name>Question_4a__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 3 --></label>
+        <name>Question_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 5a --></label>
+        <name>Question_5a__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 5b --></label>
+        <name>Question_5b__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 5c --></label>
+        <name>Question_5c__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 5d --></label>
+        <name>Question_5d__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 3a --></label>
+        <name>Question_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 2a --></label>
+        <name>Question_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question --></label>
+        <name>Question__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 2 --></label>
+        <name>Response_12__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 1e --></label>
+        <name>Response_1e__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 1f --></label>
+        <name>Response_1f__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 1g --></label>
+        <name>Response_1g__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 1h --></label>
+        <name>Response_1h__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 1i --></label>
+        <name>Response_1i__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 2b --></label>
+        <name>Response_2b__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 2c --></label>
+        <name>Response_2c__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 2d --></label>
+        <name>Response_2d__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 2e --></label>
+        <name>Response_2e__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 2f --></label>
+        <name>Response_2f__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 2g --></label>
+        <name>Response_2g__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 1a --></label>
+        <name>Response_3a__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 1b --></label>
+        <name>Response_3b__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 1c --></label>
+        <name>Response_3c__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 1d --></label>
+        <name>Response_3d__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 4 --></label>
+        <name>Response_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 4a --></label>
+        <name>Response_4a__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 3 --></label>
+        <name>Response_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 5a --></label>
+        <name>Response_5a__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 5b --></label>
+        <name>Response_5b__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 5c --></label>
+        <name>Response_5c__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 5d --></label>
+        <name>Response_5d__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 3a --></label>
+        <name>Response_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 2a --></label>
+        <name>Response_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response --></label>
+        <name>Response__c</name>
+    </fields>
+    <fields>
+        <label><!-- Staff Member Location --></label>
+        <name>Staff_Member_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey Taken --></label>
+        <name>Survey_Taken__c</name>
+    </fields>
+    <layouts>
+        <layout>Qualtrics Survey Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Question 1 --></label>
+            <section>Question 1</section>
+        </sections>
+        <sections>
+            <label><!-- Question 2 --></label>
+            <section>Question 2</section>
+        </sections>
+        <sections>
+            <label><!-- Question 3 --></label>
+            <section>Question 3</section>
+        </sections>
+        <sections>
+            <label><!-- Question 4 --></label>
+            <section>Question 4</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

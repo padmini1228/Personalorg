@@ -1,0 +1,8 @@
+Your case has been approved:
+
+Case Number: {!Case.CaseNumber} 
+Subject: {!Case.Subject}
+Description: {!Case.Description}
+
+Click on the link below to access your case:
+https://eu1.salesforce.com/{!Case.Id}

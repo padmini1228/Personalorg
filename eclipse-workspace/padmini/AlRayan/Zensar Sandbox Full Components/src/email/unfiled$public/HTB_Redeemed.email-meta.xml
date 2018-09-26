@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_letterhead</letterhead>
+    <name>HTB Redeemed</name>
+    <style>freeForm</style>
+    <subject>{!Opportunity.Name} has been redeemed, please update the next months XML file submission  to UKAR</subject>
+    <textOnly>Opportunity Name: {!Opportunity.Name}
+
+UKAR XML File Reference: {!Opportunity.UKAR_Ref_Help_to_Buy__c}
+
+Date redeemed: {!HPP_extended_opportunity__c.Date_Redeemed__c}
+
+Please follow the steps below:
+
+For cases which have been redeemed (account status 4), the XML for the dynamic file needs to be updated for the relevant unique reference.
+
+
+
+Example:
+
+
+
+&lt;DynamicData&gt;&lt;LoanPerformanceData&gt;&lt;actionCode&gt;A&lt;/actionCode&gt;&lt;uniqueReference&gt;ARB000006&lt;/uniqueReference&gt;&lt;lender&gt;ARB&lt;/lender&gt;&lt;brand&gt;ARB&lt;/brand&gt;&lt;reportingMonth&gt;2014-11&lt;/reportingMonth&gt;&lt;currentBalance&gt;170000&lt;/currentBalance&gt;&lt;currentExposure&gt;170000&lt;/currentExposure&gt;&lt;remainingTerm&gt;239&lt;/remainingTerm&gt;&lt;paymentDue&gt;800&lt;/paymentDue&gt;&lt;customerPaymentAmount&gt;800&lt;/customerPaymentAmount&gt;&lt;currentInterestRate&gt;4.19&lt;/currentInterestRate&gt;&lt;currentProductRateType&gt;1&lt;/currentProductRateType&gt;&lt;indexedPropertyValue&gt;220000&lt;/indexedPropertyValue&gt;&lt;currentLTV&gt;77.27&lt;/currentLTV&gt;&lt;behaviouralPD&gt;0.00&lt;/behaviouralPD&gt;&lt;behaviouralEAD&gt;0&lt;/behaviouralEAD&gt;&lt;behaviouralLGD&gt;0&lt;/behaviouralLGD&gt;&lt;accountStatus&gt;4&lt;/accountStatus&gt;&lt;redemptionDate&gt;2014-11-30&lt;/redemptionDate&gt;&lt;/LoanPerformanceData&gt;&lt;LoanArrearsShortfall&gt;&lt;monthsInArrears&gt;0.00&lt;/monthsInArrears&gt;&lt;arrearsBalance&gt;0&lt;/arrearsBalance&gt;&lt;potentialImpairmentIndicators1&gt;N&lt;/potentialImpairmentIndicators1&gt;&lt;potentialImpairmentIndicators2&gt;N&lt;/potentialImpairmentIndicators2&gt;&lt;potentialImpairmentIndicators3&gt;N&lt;/potentialImpairmentIndicators3&gt;&lt;potentialImpairmentIndicators4&gt;N&lt;/potentialImpairmentIndicators4&gt;&lt;potentialImpairmentIndicators5&gt;N&lt;/potentialImpairmentIndicators5&gt;&lt;potentialImpairmentIndicators6&gt;N&lt;/potentialImpairmentIndicators6&gt;&lt;potentialImpairmentIndicators7&gt;N&lt;/potentialImpairmentIndicators7&gt;&lt;recoveredMoniesAfterClaim&gt;0&lt;/recoveredMoniesAfterClaim&gt;&lt;/LoanArrearsShortfall&gt;&lt;/DynamicData&gt;</textOnly>
+    <type>html</type>
+</EmailTemplate>

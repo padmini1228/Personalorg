@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>XML Message Tag</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>XML Message Tags</value>
+    </caseValues>
+    <fields>
+        <label><!-- Data Type --></label>
+        <name>Data_Type__c</name>
+        <picklistValues>
+            <masterLabel>Date</masterLabel>
+            <translation><!-- Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Double</masterLabel>
+            <translation><!-- Double --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Integer</masterLabel>
+            <translation><!-- Integer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>String</masterLabel>
+            <translation><!-- String --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- End Tag --></label>
+        <name>End_Tag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field API Name --></label>
+        <name>Field_API_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Label --></label>
+        <name>Field_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order In Message --></label>
+        <name>Message_Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Tag --></label>
+        <name>Start_Tag__c</name>
+    </fields>
+    <fields>
+        <label><!-- XML Message --></label>
+        <name>XML_Message__c</name>
+        <relationshipLabel><!-- XML Message Tags --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Restricted External Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>XML Message Tag Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CMS Cash Order Currency Settings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CMS Cash Order Currency Settings</value>
+    </caseValues>
+    <fields>
+        <help><!-- Used to validate the minimum amount matches what the user has input --></help>
+        <label><!-- Cash Order API Field Label --></label>
+        <name>Cash_Order_API_Field_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Denomination --></label>
+        <name>Denomination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Coin Bag Delivery Charge --></label>
+        <name>Has_Coin_Bag_Delivery_Charge__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the minimum value allows for Cash Order Amount --></help>
+        <label><!-- Minimum Value --></label>
+        <name>Minimum_Value__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

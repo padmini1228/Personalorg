@@ -1,0 +1,12 @@
+<apex:page showHeader="true" sidebar="true" standardController="xmetric__Data_Feed__c" extensions="xmetric.TakeReadingController">
+    <c:ProcessingStatus />
+    <apex:form id="theFormId">
+    <apex:actionFunction name="saveReturn" action="{!saveAndBackToDataFeed}" status="processingStatus" reRender="theFormId, pgMessage"/>
+    <apex:pageBlock >
+        <apex:pageMessage id="pgMessage" severity="info" strength="3" detail="{!$Label.TakeReadingMessage}"/>
+        <apex:pageBlockButtons location="bottom">
+                <apex:commandButton value="{!$Label.Save_and_Return}" onclick="saveReturn();" reRender="theFormId, pgMessage"/>
+        </apex:pageBlockButtons>
+    </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Actual Performance</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Actual Performance</value>
+    </caseValues>
+    <fields>
+        <label><!-- Target --></label>
+        <name>KPIMGR_Target__c</name>
+        <relationshipLabel><!-- Actual Performance --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Related To Id --></label>
+        <name>Related_To_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unique Reference --></label>
+        <name>Unique_Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>Value__c</name>
+    </fields>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

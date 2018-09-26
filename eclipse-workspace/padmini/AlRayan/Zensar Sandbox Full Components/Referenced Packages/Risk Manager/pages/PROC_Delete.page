@@ -1,0 +1,27 @@
+<apex:page standardcontroller="grc__Process__c" extensions="Risk.PROCDeleteController" tabstyle="grc__Process__c">
+<apex:form >
+    <apex:pageBlock >    When deleting this process you will be deleting:
+
+
+      <apex:pageBlockTable value="{!Processes}" var="proc" title="Sub proceses">
+          <apex:column >{!proc.name}
+              <apex:facet name="header">Process</apex:facet>
+          </apex:column>
+      </apex:pageBlockTable>
+      <br/><br/>
+<!--
+      <apex:pageBlockTable value="{!Walks}" var="walk" title="Walkthroughs" rendered="{!WalksCount > 0}">
+          <apex:column >{!walk.name}
+              <apex:facet name="header">Walkthrough</apex:facet>
+          </apex:column>
+                </apex:pageBlockTable>
+      <br/><br/>
+-->
+       <apex:outputText rendered="{!StepsCount > 0}">Deleting <span style="font-weight: bold">{!StepsCount}</span> process steps in total.</apex:OutputText>
+    <apex:pageBlockButtons >
+        <apex:commandButton value="Delete" action="{!DeleteProcess}"/>
+        <apex:commandButton value="Cancel" action="{!CancelDelete}"/>
+    </apex:pageBlockButtons>
+    </apex:pageBlock>
+</apex:form>
+</apex:page>

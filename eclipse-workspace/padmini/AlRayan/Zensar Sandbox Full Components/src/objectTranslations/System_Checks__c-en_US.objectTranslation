@@ -1,0 +1,2712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>System Checks</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>System Checks</value>
+    </caseValues>
+    <fields>
+        <label><!-- ACS Server Manual Time Check Comments --></label>
+        <name>ACS_Server_Manual_Time_Check_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- ACS Server Manual Time Check Comp By --></label>
+        <name>ACS_Server_Manual_Time_Check_Comp_By__c</name>
+        <relationshipLabel><!-- System Checks (ACS Server Manual Time Check Comp By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ACS Server Manual Time Check Comp Date --></label>
+        <name>ACS_Server_Manual_Time_Check_Comp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- ACS Server Manual Time Check Priority --></label>
+        <name>ACS_Server_Manual_Time_Check_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- ACS Server Manual Time Final RAG --></label>
+        <name>ACS_Server_Manual_Time_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ACS Server Manual Time Initial RAG --></label>
+        <name>ACS_Server_Manual_Time_Initial_R__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- AV installed checked date --></label>
+        <name>AV_installed_checked_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- AV installed comments --></label>
+        <name>AV_installed_comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- AV installed on new machines --></label>
+        <name>AV_installed_on_new_machines__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Active Directory Check Comments --></label>
+        <name>Active_Directory_Check_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active Directory Check Completed By --></label>
+        <name>Active_Directory_Check_Completed_By__c</name>
+        <relationshipLabel><!-- System Checks (Active Directory Check Completed By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Active Directory Check Completed Date --></label>
+        <name>Active_Directory_Check_Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active Directory Check Final RAG --></label>
+        <name>Active_Directory_Check_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Active Directory Check Initial RAG --></label>
+        <name>Active_Directory_Check_Initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Active Directory Check Priority --></label>
+        <name>Active_Directory_Check_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active Sync Check Comments --></label>
+        <name>Active_Sync_Check_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active Sync Check Completed By --></label>
+        <name>Active_Sync_Check_Completed_By__c</name>
+        <relationshipLabel><!-- System Checks (Active Sync Check Completed By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Active Sync Check Completion Date --></label>
+        <name>Active_Sync_Check_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active Sync Check Final RAG --></label>
+        <name>Active_Sync_Check_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Active Sync Check Initial RAG --></label>
+        <name>Active_Sync_Check_Initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- App credits check comments --></label>
+        <name>App_credits_check_comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- App credits check date --></label>
+        <name>App_credits_check_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Backup PAC Card System Comments --></label>
+        <name>Backup_PAC_Card_System_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Backup PAC Card System Comp By --></label>
+        <name>Backup_PAC_Card_System_Comp_By__c</name>
+        <relationshipLabel><!-- System Checks (Backup PAC Card System Comp By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Backup PAC Card System Comp Date --></label>
+        <name>Backup_PAC_Card_System_Comp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Backup PAC Card System Final RAG --></label>
+        <name>Backup_PAC_Card_System_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Backup PAC Card System Initial RAG --></label>
+        <name>Backup_PAC_Card_System_Initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Backup PAC Card System Priority --></label>
+        <name>Backup_PAC_Card_System_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Camera Check Comments --></label>
+        <name>Branch_Camera_Check_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Camera Check Completed By --></label>
+        <name>Branch_Camera_Check_Completed_By__c</name>
+        <relationshipLabel><!-- System Checks (Branch Camera Check Completed By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Branch Camera Check Completed Date --></label>
+        <name>Branch_Camera_Check_Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Camera Check Final RAG --></label>
+        <name>Branch_Camera_Check_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Branch Camera Check Initial RAG --></label>
+        <name>Branch_Camera_Check_Initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CSC Report Check Completed By --></label>
+        <name>CSC_Report_Check_Completed_By__c</name>
+        <relationshipLabel><!-- System Checks (CSC Report Check Completed By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CSC Report Check Completed Date --></label>
+        <name>CSC_Report_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- CSC Report Final RAG --></label>
+        <name>CSC_Report_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CSC Report Initial RAG --></label>
+        <name>CSC_Report_RAG_Status__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CSC Report Comments --></label>
+        <name>CSC_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Guest Wifi Password Comments --></label>
+        <name>Change_Guest_Wifi_Password_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Guest Wifi Password Comp By --></label>
+        <name>Change_Guest_Wifi_Password_Comp_By__c</name>
+        <relationshipLabel><!-- System Checks (Change Guest Wifi Password Comp By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Change Guest Wifi Password Comp Date --></label>
+        <name>Change_Guest_Wifi_Password_Comp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Guest Wifi Password Final RAG --></label>
+        <name>Change_Guest_Wifi_Password_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Change Guest Wifi Password Initial RAG --></label>
+        <name>Change_Guest_Wifi_Password_Initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Change Guest Wifi Password Priority --></label>
+        <name>Change_Guest_Wifi_Password_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check 2 Daily Schedule Comments --></label>
+        <name>Check_2_Daily_Schedule_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check 2 Daily Schedule Completed By --></label>
+        <name>Check_2_Daily_Schedule_Completed_By__c</name>
+        <relationshipLabel><!-- System Checks (Check 2 Daily Schedule Completed By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Check 2 Daily Schedule Completed Date --></label>
+        <name>Check_2_Daily_Schedule_Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check 2 Daily Schedule Final RAG --></label>
+        <name>Check_2_Daily_Schedule_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Check 2 Daily Schedule Initial RAG --></label>
+        <name>Check_2_Daily_Schedule_Initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Check 5 Random Patch Ports Comments --></label>
+        <name>Check_5_Random_Patch_Ports_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check 5 Random Patch Ports Comp By --></label>
+        <name>Check_5_Random_Patch_Ports_Comp_By__c</name>
+        <relationshipLabel><!-- System Checks (Check 5 Random Patch Ports Comp By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Check 5 Random Patch Ports Comp Date --></label>
+        <name>Check_5_Random_Patch_Ports_Comp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check 5 Random Patch Ports Final RAG --></label>
+        <name>Check_5_Random_Patch_Ports_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Check 5 Random Patch Ports Initial RAG --></label>
+        <name>Check_5_Random_Patch_Ports_Initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Check 5 Random Patch Ports Priority --></label>
+        <name>Check_5_Random_Patch_Ports_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check Laptops Are Encrypted Comments --></label>
+        <name>Check_Laptops_Are_Encrypted_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check Laptops Are Encrypted Comp By --></label>
+        <name>Check_Laptops_Are_Encrypted_Comp_By__c</name>
+        <relationshipLabel><!-- System Checks (Check Laptops Are Encrypted Comp By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Check Laptops Are Encrypted Comp Date --></label>
+        <name>Check_Laptops_Are_Encrypted_Comp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check Laptops Are Encrypted Final RAG --></label>
+        <name>Check_Laptops_Are_Encrypted_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Check Laptops Are Encrypted Initial RAG --></label>
+        <name>Check_Laptops_Are_Encrypted_Initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Check Laptops Are Encrypted Priority --></label>
+        <name>Check_Laptops_Are_Encrypted_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check User Account HR List initial RAG --></label>
+        <name>Check_User_Account_HR_List_initial_RA__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Check User Accounts HR List Comments --></label>
+        <name>Check_User_Accounts_HR_List_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check User Accounts HR List Comp By --></label>
+        <name>Check_User_Accounts_HR_List_Comp_By__c</name>
+        <relationshipLabel><!-- System Checks (Check User Accounts HR List Comp By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Check User Accounts HR List Comp Date --></label>
+        <name>Check_User_Accounts_HR_List_Comp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check User Accounts HR List Final RAG --></label>
+        <name>Check_User_Accounts_HR_List_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Check User Accounts HR List Priority --></label>
+        <name>Check_User_Accounts_HR_List_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check devices Websense Initial RAG --></label>
+        <name>Check_devices_Websense_Initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Check devices using Websense Comments --></label>
+        <name>Check_devices_using_Websense_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check devices using Websense Comp By --></label>
+        <name>Check_devices_using_Websense_Comp_By__c</name>
+        <relationshipLabel><!-- System Checks (Check devices using Websense Comp By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Check devices using Websense Comp Date --></label>
+        <name>Check_devices_using_Websense_Comp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check devices using Websense Final RAG --></label>
+        <name>Check_devices_using_Websense_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Check devices using Websense Priority --></label>
+        <name>Check_devices_using_Websense_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check firewall rules - HO Comments --></label>
+        <name>Check_firewall_rules_HO_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check firewall rules - HO Comp By --></label>
+        <name>Check_firewall_rules_HO_Comp_By__c</name>
+        <relationshipLabel><!-- System Checks (Check firewall rules - HO Comp By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Check firewall rules - HO Comp Date --></label>
+        <name>Check_firewall_rules_HO_Comp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check firewall rules - HO Final RAG --></label>
+        <name>Check_firewall_rules_HO_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Check firewall rules - HO Initial RAG --></label>
+        <name>Check_firewall_rules_HO_Initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Check firewall rules - HO Priority --></label>
+        <name>Check_firewall_rules_HO_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check list view security comments --></label>
+        <name>Check_list_view_security_comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check list view security completed date --></label>
+        <name>Check_list_view_security_completed_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check list view security final RAG --></label>
+        <name>Check_list_view_security_final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Check list view security initial RAG --></label>
+        <name>Check_list_view_security_initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Completed date --></label>
+        <name>Completed_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Core customer data amendments check date --></label>
+        <name>Core_customer_data_amendments_check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Core customer data amendments comments --></label>
+        <name>Core_customer_data_amendments_comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delete any test customers comments --></label>
+        <name>Delete_any_test_customers_comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delete any test customers comp date --></label>
+        <name>Delete_any_test_customers_comp_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delete any test customers final RAG --></label>
+        <name>Delete_any_test_customers_final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Delete any test customers initial RAG --></label>
+        <name>Delete_any_test_customers_initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Delete new account profiles comments --></label>
+        <name>Delete_new_account_profiles_comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delete new account profiles comp date --></label>
+        <name>Delete_new_account_profiles_comp_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delete new account profiles final RAG --></label>
+        <name>Delete_new_account_profiles_final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Delete new account profiles initial RAG --></label>
+        <name>Delete_new_account_profiles_initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Delete reports run 1 year comments --></label>
+        <name>Delete_reports_run_1_year_comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delete reports run 1 year comp date --></label>
+        <name>Delete_reports_run_1_year_comp_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delete reports run 1 year final RAG --></label>
+        <name>Delete_reports_run_1_year_final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Delete reports run 1 year initial RAG --></label>
+        <name>Delete_reports_run_1_year_initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Desktop Patch Management Check Comments --></label>
+        <name>Desktop_Patch_Management_Check_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Desktop Patch Management Check Comp By --></label>
+        <name>Desktop_Patch_Management_Check_Comp_By__c</name>
+        <relationshipLabel><!-- System Checks (Desktop Patch Management Check Comp By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Desktop Patch Management Check Comp Date --></label>
+        <name>Desktop_Patch_Management_Check_Comp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Desktop Patch Management Check Priority --></label>
+        <name>Desktop_Patch_Management_Check_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Desktop Patch Management Final RAG --></label>
+        <name>Desktop_Patch_Management_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Desktop Patch Management Initial RAG --></label>
+        <name>Desktop_Patch_Management_Initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Domain Admin Group Check Comments --></label>
+        <name>Domain_Admin_Group_Check_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Domain Admin Group Check Completed By --></label>
+        <name>Domain_Admin_Group_Check_Completed_By__c</name>
+        <relationshipLabel><!-- System Checks (Domain Admin Group Check Completed By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Domain Admin Group Check Completed Date --></label>
+        <name>Domain_Admin_Group_Check_Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Domain Admin Group Check Final RAG --></label>
+        <name>Domain_Admin_Group_Check_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Domain Admin Group Check Initial RAG --></label>
+        <name>Domain_Admin_Group_Check_Initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Domain Admin Group Check Priority --></label>
+        <name>Domain_Admin_Group_Check_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Domain Management Check Comments --></label>
+        <name>Domain_Management_Check_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Domain Management Check Comp By --></label>
+        <name>Domain_Management_Check_Comp_By__c</name>
+        <relationshipLabel><!-- System Checks (Domain Management Check Comp By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Domain Management Check Comp Date --></label>
+        <name>Domain_Management_Check_Comp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Domain Management Check Final RAG --></label>
+        <name>Domain_Management_Check_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Domain Management Check Initial RAG --></label>
+        <name>Domain_Management_Check_Initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Domain Management Check Priority --></label>
+        <name>Domain_Management_Check_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange Webmail Security Comments --></label>
+        <name>Exchange_Webmail_Security_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange Webmail Security Comp By --></label>
+        <name>Exchange_Webmail_Security_Comp_By__c</name>
+        <relationshipLabel><!-- System Checks (Exchange Webmail Security Comp By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Exchange Webmail Security Comp Date --></label>
+        <name>Exchange_Webmail_Security_Comp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange Webmail Security Final RAG --></label>
+        <name>Exchange_Webmail_Security_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Exchange Webmail Security Initial RAG --></label>
+        <name>Exchange_Webmail_Security_Initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Exchange Webmail Security Priority --></label>
+        <name>Exchange_Webmail_Security_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- External CAA check comments --></label>
+        <name>External_CAA_check_comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- External CAA check comp date --></label>
+        <name>External_CAA_check_comp_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- External user records check comments --></label>
+        <name>External_user_opps_check_comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- External user records check comp date --></label>
+        <name>External_user_opps_check_comp_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- External user records final RAG --></label>
+        <name>External_user_records_final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- External user records initial RAG --></label>
+        <name>External_user_records_initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- File Server Access Check Comments --></label>
+        <name>File_Server_Access_Check_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- File Server Access Check Completed By --></label>
+        <name>File_Server_Access_Check_Completed_By__c</name>
+        <relationshipLabel><!-- System Checks (File Server Access Check Completed By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- File Server Access Check Completed Date --></label>
+        <name>File_Server_Access_Check_Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- File Server Access Check Final RAG --></label>
+        <name>File_Server_Access_Check_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- File Server Access Check Initial RAG --></label>
+        <name>File_Server_Access_Check_Initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- File Server Access Check Priority --></label>
+        <name>File_Server_Access_Check_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Firewall rules Internet Bank Comments --></label>
+        <name>Firewall_rules_Internet_Bank_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Firewall rules Internet Bank Comp By --></label>
+        <name>Firewall_rules_Internet_Bank_Comp_By__c</name>
+        <relationshipLabel><!-- System Checks (Firewall rules Internet Bank Comp By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Firewall rules Internet Bank Comp Date --></label>
+        <name>Firewall_rules_Internet_Bank_Comp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Firewall rules Internet Bank Final RAG --></label>
+        <name>Firewall_rules_Internet_Bank_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Firewall rules Internet Bank Initial RAG --></label>
+        <name>Firewall_rules_Internet_Bank_Initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Firewall rules Internet Bank Priority --></label>
+        <name>Firewall_rules_Internet_Bank_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fortnight --></label>
+        <name>Fortnight__c</name>
+    </fields>
+    <fields>
+        <label><!-- HO CCTV Cameras/System Check Comments --></label>
+        <name>HO_CCTV_Cameras_System_Check_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- HO CCTV Cameras/System Check Comp By --></label>
+        <name>HO_CCTV_Cameras_System_Check_Comp_By__c</name>
+        <relationshipLabel><!-- System Checks (HO CCTV Cameras/System Check Comp By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- HO CCTV Cameras/System Check Comp Date --></label>
+        <name>HO_CCTV_Cameras_System_Check_Comp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- HO CCTV Cameras/System Check Final RAG --></label>
+        <name>HO_CCTV_Cameras_System_Check_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- HO CCTV Cameras/System Check Initial RAG --></label>
+        <name>HO_CCTV_Cameras_System_Check_Initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- HO CCTV Cameras/System Check Priority --></label>
+        <name>HO_CCTV_Cameras_System_Check_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Al Rayan Bank SSL Cert Check Comments --></label>
+        <name>IBB_SSL_Certificate_Check_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Al Rayan Bank SSL Cert Check Comp By --></label>
+        <name>IBB_SSL_Certificate_Check_Comp_By__c</name>
+        <relationshipLabel><!-- System Checks (Al Rayan Bank SSL Cert Check Comp By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Al Rayan Bank SSL Cert Check Comp Date --></label>
+        <name>IBB_SSL_Certificate_Check_Comp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Al Rayan Bank SSL Cert Check Final RAG --></label>
+        <name>IBB_SSL_Certificate_Check_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Al Rayan Bank SSL Cert Check Initial RAG --></label>
+        <name>IBB_SSL_Certificate_Check_Initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Al Rayan Bank SSL Cert Check Priority --></label>
+        <name>IBB_SSL_Certificate_Check_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- IFM Check IIS SSL Certificate Comments --></label>
+        <name>IFM_Check_IIS_SSL_Certificate_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- IFM Check IIS SSL Certificate Comp By --></label>
+        <name>IFM_Check_IIS_SSL_Certificate_Comp_By__c</name>
+        <relationshipLabel><!-- System Checks (IFM Check IIS SSL Certificate Comp By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- IFM Check IIS SSL Certificate Comp Date --></label>
+        <name>IFM_Check_IIS_SSL_Certificate_Comp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- IFM Check IIS SSL Certificate Final RAG --></label>
+        <name>IFM_Check_IIS_SSL_Certificate_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IFM Check IIS SSLCertificate Initial RAG --></label>
+        <name>IFM_Check_IIS_SSL_Certificate_Initial_RA__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IFM Check IIS SSL Certificate Priority --></label>
+        <name>IFM_Check_IIS_SSL_Certificate_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- IFM Domain Monitoring &amp; Check Comments --></label>
+        <name>IFM_Domain_Monitoring_Check_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- IFM Domain Monitoring &amp; Check Comp By --></label>
+        <name>IFM_Domain_Monitoring_Check_Comp_By__c</name>
+        <relationshipLabel><!-- System Checks (IFM Domain Monitoring &amp; Check Comp By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- IFM Domain Monitoring &amp; Check Comp Date --></label>
+        <name>IFM_Domain_Monitoring_Check_Comp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- IFM Domain Monitoring &amp; Check Final RAG --></label>
+        <name>IFM_Domain_Monitoring_Check_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IFM Domain Monitoring Check Initial RAG --></label>
+        <name>IFM_Domain_Monitoring_Check_Initial_RA__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IFM Domain Monitoring &amp; Check Priority --></label>
+        <name>IFM_Domain_Monitoring_Check_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- IFM Servers - Kaspersky Update Comments --></label>
+        <name>IFM_Servers_Kaspersky_Update_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- IFM Servers - Kaspersky Update Comp By --></label>
+        <name>IFM_Servers_Kaspersky_Update_Comp_By__c</name>
+        <relationshipLabel><!-- System Checks (IFM Servers - Kaspersky Update Comp By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- IFM Servers - Kaspersky Update Comp Date --></label>
+        <name>IFM_Servers_Kaspersky_Update_Comp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- IFM Servers - Kaspersky Update Final RAG --></label>
+        <name>IFM_Servers_Kaspersky_Update_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IFM Servers Kaspersky Update Initial RAG --></label>
+        <name>IFM_Servers_Kaspersky_Update_Initial_R__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IFM Servers - Kaspersky Update Priority --></label>
+        <name>IFM_Servers_Kaspersky_Update_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- IFM System Access Logs Check Comments --></label>
+        <name>IFM_System_Access_Logs_Check_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- IFM System Access Logs Check Comp By --></label>
+        <name>IFM_System_Access_Logs_Check_Comp_By__c</name>
+        <relationshipLabel><!-- System Checks (IFM System Access Logs Check Comp By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- IFM System Access Logs Check Comp Date --></label>
+        <name>IFM_System_Access_Logs_Check_Comp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- IFM System Access Logs Check Priority --></label>
+        <name>IFM_System_Access_Logs_Check_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- IFM System Access Logs Final RAG --></label>
+        <name>IFM_System_Access_Logs_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IFM System Access Logs Initial RAG --></label>
+        <name>IFM_System_Access_Logs_Initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Internet Access Usage Check Comments --></label>
+        <name>Internet_Access_Usage_Check_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internet Access Usage Check Comp By --></label>
+        <name>Internet_Access_Usage_Check_Comp_By__c</name>
+        <relationshipLabel><!-- System Checks (Internet Access Usage Check Comp By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Internet Access Usage Check Comp Date --></label>
+        <name>Internet_Access_Usage_Check_Comp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internet Access Usage Check Final RAG --></label>
+        <name>Internet_Access_Usage_Check_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Internet Access Usage Check Initial RAG --></label>
+        <name>Internet_Access_Usage_Check_Initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Internet Access Usage Check Priority --></label>
+        <name>Internet_Access_Usage_Check_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kaspersky Antivirus Check Comments --></label>
+        <name>Kaspersky_Antivirus_Check_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kaspersky Antivirus Check Completed By --></label>
+        <name>Kaspersky_Antivirus_Check_Completed_By__c</name>
+        <relationshipLabel><!-- System Checks (Kaspersky Antivirus Check Completed By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Kaspersky Antivirus Check Completed Date --></label>
+        <name>Kaspersky_Antivirus_Check_Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kaspersky Antivirus Check Final RAG --></label>
+        <name>Kaspersky_Antivirus_Check_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Kaspersky Antivirus Check Initial RAG --></label>
+        <name>Kaspersky_Antivirus_Check_Initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Kaspersky Antivirus Check Priority --></label>
+        <name>Kaspersky_Antivirus_Check_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kaspersky  Servers Check Comments --></label>
+        <name>Kaspersky_Servers_Check_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kaspersky  Servers Check Comp By --></label>
+        <name>Kaspersky_Servers_Check_Comp_By__c</name>
+        <relationshipLabel><!-- System Checks (Kaspersky  Servers Check Comp By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Kaspersky  Servers Check Comp Date --></label>
+        <name>Kaspersky_Servers_Check_Comp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kaspersky Servers Check Final RAG --></label>
+        <name>Kaspersky_Servers_Check_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Kaspersky Servers Check Initial RAG --></label>
+        <name>Kaspersky_Servers_Check_Initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Kaspersky  Servers Check Priority --></label>
+        <name>Kaspersky_Servers_Check_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Links to external CAA check comments --></label>
+        <name>Links_to_external_CAA_check_comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Links to external CAA check comp date --></label>
+        <name>Links_to_external_CAA_check_comp_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Links to external CAA check final RAG --></label>
+        <name>Links_to_external_CAA_check_final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Links to external CAA check initial RAG --></label>
+        <name>Links_to_external_CAA_check_initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Month --></label>
+        <name>Month__c</name>
+        <picklistValues>
+            <masterLabel>April</masterLabel>
+            <translation><!-- April --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>August</masterLabel>
+            <translation><!-- August --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>December</masterLabel>
+            <translation><!-- December --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>February</masterLabel>
+            <translation><!-- February --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>January</masterLabel>
+            <translation><!-- January --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>July</masterLabel>
+            <translation><!-- July --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>June</masterLabel>
+            <translation><!-- June --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>March</masterLabel>
+            <translation><!-- March --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>May</masterLabel>
+            <translation><!-- May --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>November</masterLabel>
+            <translation><!-- November --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>October</masterLabel>
+            <translation><!-- October --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>September</masterLabel>
+            <translation><!-- September --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Office 365 Access Comments --></label>
+        <name>Office_365_Access_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Office 365 Access Completed By --></label>
+        <name>Office_365_Access_Completed_By__c</name>
+        <relationshipLabel><!-- System Checks (Office 365 Access Completed By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Office 365 Access Completed Date --></label>
+        <name>Office_365_Access_Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Office 365 Access Final RAG --></label>
+        <name>Office_365_Access_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Office 365 Access Initial RAG --></label>
+        <name>Office_365_Access_Initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PAC Card Entry Check Comments --></label>
+        <name>PAC_Card_Entry_Check_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- PAC Card Entry Check Completed By --></label>
+        <name>PAC_Card_Entry_Check_Completed_By__c</name>
+        <relationshipLabel><!-- System Checks (PAC Card Entry Check Completed By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PAC Card Entry Check Completed Date --></label>
+        <name>PAC_Card_Entry_Check_Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- PAC Card Entry Check Final RAG --></label>
+        <name>PAC_Card_Entry_Check_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PAC Card Entry Check Initial RAG --></label>
+        <name>PAC_Card_Entry_Check_Initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PAC Card Entry Check Priority --></label>
+        <name>PAC_Card_Entry_Check_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quarter --></label>
+        <name>Quarter__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RC IT Report Comments --></label>
+        <name>RC_IT_Report_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- RC IT Report Completed By --></label>
+        <name>RC_IT_Report_Completed_By__c</name>
+        <relationshipLabel><!-- System Checks (RC IT Report Completed By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- RC IT Report Completed Date --></label>
+        <name>RC_IT_Report_Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- RC IT Report Final RAG --></label>
+        <name>RC_IT_Report_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RC IT Report Initial RAG --></label>
+        <name>RC_IT_Report_Initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Review Baseline Docs Comments --></label>
+        <name>Review_Baseline_Docs_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Review Baseline Docs Completed By --></label>
+        <name>Review_Baseline_Docs_Completed_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Review Baseline Docs Completed Date --></label>
+        <name>Review_Baseline_Docs_Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Review Baseline Docs Final RAG --></label>
+        <name>Review_Baseline_Docs_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Review Baseline Docs Initial RAG --></label>
+        <name>Review_Baseline_Docs_Initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Review DR Procedure Comments --></label>
+        <name>Review_DR_Procedure_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Review DR Procedure Completed By --></label>
+        <name>Review_DR_Procedure_Completed_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Review DR Procedure Completed Date --></label>
+        <name>Review_DR_Procedure_Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Review DR Procedure Final RAG --></label>
+        <name>Review_DR_Procedure_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Review DR Procedure Initial RAG --></label>
+        <name>Review_DR_Procedure_Initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SFDC TockenDS Change Comments --></label>
+        <name>SFDC_TockenDS_Change_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- SFDC TockenDS Change Completed By --></label>
+        <name>SFDC_TockenDS_Change_Completed_By__c</name>
+        <relationshipLabel><!-- System Checks (SFDC TockenDS Change Completed By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SFDC TockenDS Change Completed Date --></label>
+        <name>SFDC_TockenDS_Change_Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- SFDC TockenDS Change Final RAG --></label>
+        <name>SFDC_TockenDS_Change_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SFDC TockenDS Change Initial RAG --></label>
+        <name>SFDC_TockenDS_Change_Initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SFDC TockenDS Change Priority --></label>
+        <name>SFDC_TockenDS_Change_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salesforce Monthly Checks Completed By --></label>
+        <name>Salesforce_Monthly_Checks_Completed_By__c</name>
+        <relationshipLabel><!-- System Checks (Salesforce Monthly Checks Completed By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Server Patch Management Check Comments --></label>
+        <name>Server_Patch_Management_Check_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Server Patch Management Check Comp By --></label>
+        <name>Server_Patch_Management_Check_Comp_By__c</name>
+        <relationshipLabel><!-- System Checks (Server Patch Management Check Comp By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Server Patch Management Check Comp Date --></label>
+        <name>Server_Patch_Management_Check_Comp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Server Patch Management Check Priority --></label>
+        <name>Server_Patch_Management_Check_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Server Patch Management Final RAG --></label>
+        <name>Server_Patch_Management_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Server Patch Management Initial RAG --></label>
+        <name>Server_Patch_Management_Initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In progress</masterLabel>
+            <translation><!-- In progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scheduled</masterLabel>
+            <translation><!-- Scheduled --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Storage check comments --></label>
+        <name>Storage_check_comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Storage check completed date --></label>
+        <name>Storage_check_completed_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Storage check final RAG --></label>
+        <name>Storage_check_final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Storage check initial RAG --></label>
+        <name>Storage_check_initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Time Check Comments --></label>
+        <name>Time_Check_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Check Completed By --></label>
+        <name>Time_Check_Completed_By__c</name>
+        <relationshipLabel><!-- System Checks (Time Check Completed By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Time Check Completed Date --></label>
+        <name>Time_Check_Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Check Final RAG --></label>
+        <name>Time_Check_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Time Check Initial RAG --></label>
+        <name>Time_Check_Initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Time Check Priority --></label>
+        <name>Time_Check_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- USB Mass Storage Device Check Comments --></label>
+        <name>USB_Mass_Storage_Device_Check_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- USB Mass Storage Device Check Comp By --></label>
+        <name>USB_Mass_Storage_Device_Check_Comp_By__c</name>
+        <relationshipLabel><!-- System Checks (USB Mass Storage Device Check Comp By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- USB Mass Storage Device Check Comp Date --></label>
+        <name>USB_Mass_Storage_Device_Check_Comp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- USB Mass Storage Device Check Priority --></label>
+        <name>USB_Mass_Storage_Device_Check_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- USB Mass Storage Device Final RAG --></label>
+        <name>USB_Mass_Storage_Device_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- USB Mass Storage Device Initial RAG --></label>
+        <name>USB_Mass_Storage_Device_Initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- VPN Disabled Accounts Check Comments --></label>
+        <name>VPN_Disabled_Accounts_Check_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- VPN Disabled Accounts Check Comp By --></label>
+        <name>VPN_Disabled_Accounts_Check_Comp_By__c</name>
+        <relationshipLabel><!-- System Checks (VPN Disabled Accounts Check Comp By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- VPN Disabled Accounts Check Comp Date --></label>
+        <name>VPN_Disabled_Accounts_Check_Comp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- VPN Disabled Accounts Check Final RAG --></label>
+        <name>VPN_Disabled_Accounts_Check_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- VPN Disabled Accounts Check Initial RAG --></label>
+        <name>VPN_Disabled_Accounts_Check_Initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- VPN Disabled Accounts Check Priority --></label>
+        <name>VPN_Disabled_Accounts_Check_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- VPN Systems Access Log Final RAG --></label>
+        <name>VPN_Systems_Access_Log_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- VPN Systems Access Log Initial RAG --></label>
+        <name>VPN_Systems_Access_Log_Initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- VPN Systems Access Log Review Comments --></label>
+        <name>VPN_Systems_Access_Log_Review_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- VPN Systems Access Log Review Comp By --></label>
+        <name>VPN_Systems_Access_Log_Review_Comp_By__c</name>
+        <relationshipLabel><!-- System Checks (VPN Systems Access Log Review Comp By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- VPN Systems Access Log Review Comp Date --></label>
+        <name>VPN_Systems_Access_Log_Review_Comp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- VPN Systems Access Log Review Priority --></label>
+        <name>VPN_Systems_Access_Log_Review_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- VPN Systems Firewall Check Comments --></label>
+        <name>VPN_Systems_Firewall_Check_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- VPN Systems Firewall Check Comp By --></label>
+        <name>VPN_Systems_Firewall_Check_Comp_By__c</name>
+        <relationshipLabel><!-- System Checks (VPN Systems Firewall Check Comp By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- VPN Systems Firewall Check Comp Date --></label>
+        <name>VPN_Systems_Firewall_Check_Comp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- VPN Systems Firewall Check Final RAG --></label>
+        <name>VPN_Systems_Firewall_Check_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- VPN Systems Firewall Check Initial RAG --></label>
+        <name>VPN_Systems_Firewall_Check_Initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- VPN Systems Firewall Check Priority --></label>
+        <name>VPN_Systems_Firewall_Check_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week --></label>
+        <name>Week__c</name>
+    </fields>
+    <fields>
+        <label><!-- iPhone check comments --></label>
+        <name>iPhone_check_comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- iPhone check completed date --></label>
+        <name>iPhone_check_completed_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- iPhone check final RAG --></label>
+        <name>iPhone_check_final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- check of 3 random iphones to ensure touch ID and password are implemented. --></help>
+        <label><!-- iPhone check initial RAG --></label>
+        <name>iPhone_check_initial_RAg__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- iSeries Check Comments --></label>
+        <name>iSeries_Check_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- iSeries Check Completed By --></label>
+        <name>iSeries_Check_Completed_By__c</name>
+        <relationshipLabel><!-- System Checks (iSeries Check Completed By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- iSeries Check Completed Date --></label>
+        <name>iSeries_Check_Completed_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- iSeries Check Final RAG --></label>
+        <name>iSeries_Check_Final_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- iSeries Check Initial RAG --></label>
+        <name>iSeries_Check_Initial_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- iSeries Check Priority --></label>
+        <name>iSeries_Check_Priority__c</name>
+    </fields>
+    <layouts>
+        <layout>Fortnightly Checks</layout>
+        <sections>
+            <label><!-- 1. File Server Access Control Server Logs --></label>
+            <section>1. File Server Access Control Server Logs</section>
+        </sections>
+        <sections>
+            <label><!-- 2. VPN Systems Access Log Review --></label>
+            <section>2. VPN Systems Access Log Review</section>
+        </sections>
+        <sections>
+            <label><!-- 3. VPN Systems Firewall Access Log Review --></label>
+            <section>3. VPN Systems Firewall Access Log Review</section>
+        </sections>
+        <sections>
+            <label><!-- 4. ACS Server Manual Time Sync Check --></label>
+            <section>4. ACS Server Manual Time Sync Check</section>
+        </sections>
+        <sections>
+            <label><!-- 5. IFM System Access Logs --></label>
+            <section>5. IFM System Access Logs</section>
+        </sections>
+        <sections>
+            <label><!-- 6. Kaspersky Antivirus - Servers --></label>
+            <section>6. Kaspersky Antivirus - Servers</section>
+        </sections>
+        <sections>
+            <label><!-- 7. Active Sync Check --></label>
+            <section>7. Active Sync Check</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Monthly Checks</layout>
+        <sections>
+            <label><!-- 1. Server Patch Management --></label>
+            <section>1. Server Patch Management</section>
+        </sections>
+        <sections>
+            <label><!-- 10. Check All Devices Are Using Websense Endpoint --></label>
+            <section>10. Check All Devices Are Using Websense Endpoint</section>
+        </sections>
+        <sections>
+            <label><!-- 11. IFM Domain - Monitoring &amp; Check --></label>
+            <section>11. IFM Domain - Monitoring &amp; Check</section>
+        </sections>
+        <sections>
+            <label><!-- 12. Internet Access Usage Statics --></label>
+            <section>12. Internet Access Usage Statics</section>
+        </sections>
+        <sections>
+            <label><!-- 13. Check firewall rules - Head Office --></label>
+            <section>13. Check firewall rules - Head Office</section>
+        </sections>
+        <sections>
+            <label><!-- 14. Check firewall rules - Internet Banking --></label>
+            <section>14. Check firewall rules - Internet Banking</section>
+        </sections>
+        <sections>
+            <label><!-- 15. RC IT Report --></label>
+            <section>15. RC IT Report</section>
+        </sections>
+        <sections>
+            <label><!-- 16. IFM - Check IIS SSL Certificate --></label>
+            <section>16. IFM - Check IIS SSL Certificate</section>
+        </sections>
+        <sections>
+            <label><!-- 17. Backup PAC Card System (SQL Database) --></label>
+            <section>17. Backup PAC Card System (SQL Database)</section>
+        </sections>
+        <sections>
+            <label><!-- 18. Check 2 Daily Checklists for Completion --></label>
+            <section>18. Check 2 Daily Checklists for Completion</section>
+        </sections>
+        <sections>
+            <label><!-- 19. iPhone security check --></label>
+            <section>19. iPhone security check</section>
+        </sections>
+        <sections>
+            <label><!-- 2. Desktop Patch Management --></label>
+            <section>2. Desktop Patch Management</section>
+        </sections>
+        <sections>
+            <label><!-- 3. Head Office CCTV Cameras &amp; System Check --></label>
+            <section>3. Head Office CCTV Cameras &amp; System Check</section>
+        </sections>
+        <sections>
+            <label><!-- 4. Time Check --></label>
+            <section>4. Time Check</section>
+        </sections>
+        <sections>
+            <label><!-- 5. Office 365 Access Check --></label>
+            <section>5. Office 365 Access Check</section>
+        </sections>
+        <sections>
+            <label><!-- 6. Branch Camera Checks --></label>
+            <section>6. Branch Camera Checks</section>
+        </sections>
+        <sections>
+            <label><!-- 7. USB Mass Storage Device --></label>
+            <section>7. USB Mass Storage Device</section>
+        </sections>
+        <sections>
+            <label><!-- 8. IFM Servers - Kaspersky Update --></label>
+            <section>8. IFM Servers - Kaspersky Update</section>
+        </sections>
+        <sections>
+            <label><!-- 9. Check All Laptops Are Encrypted --></label>
+            <section>9. Check All Laptops Are Encrypted</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Quarterly Checks</layout>
+        <sections>
+            <label><!-- 1. Al Rayan Bank  SSL Certificate Check --></label>
+            <section>1. Al Rayan Bank  SSL Certificate Check</section>
+        </sections>
+        <sections>
+            <label><!-- 2. Domain Management Check --></label>
+            <section>2. Domain Management Check</section>
+        </sections>
+        <sections>
+            <label><!-- 3. Change Guest Wifi Password --></label>
+            <section>3. Change Guest Wifi Password</section>
+        </sections>
+        <sections>
+            <label><!-- 4. PAC Card Entry Check --></label>
+            <section>4. PAC Card Entry Check</section>
+        </sections>
+        <sections>
+            <label><!-- 5. Check User Accounts Against HR List --></label>
+            <section>5. Check User Accounts Against HR List</section>
+        </sections>
+        <sections>
+            <label><!-- 6. Review Baseline Documents --></label>
+            <section>6. Review Baseline Documents</section>
+        </sections>
+        <sections>
+            <label><!-- 7. Review DR Procedure --></label>
+            <section>7. Review DR Procedure</section>
+        </sections>
+        <sections>
+            <label><!-- 8. AV installed on new machines --></label>
+            <section>8. AV installed on new machines</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Salesforce Monthly Checks</layout>
+        <sections>
+            <label><!-- 1. Delete Any Test Customers --></label>
+            <section>1. Delete Any Test Customers</section>
+        </sections>
+        <sections>
+            <label><!-- 2. Delete Any ‘New Account’ Profiles Created --></label>
+            <section>2. Delete Any ‘New Account’ Profiles Created</section>
+        </sections>
+        <sections>
+            <label><!-- 3. Check That All List Views Created Are Not Set To ‘All Users&apos; --></label>
+            <section>3. Check That All List Views Created Are Not Set To ‘All Users&apos;</section>
+        </sections>
+        <sections>
+            <label><!-- 4. Records Owned By External User --></label>
+            <section>4. Records Owned By External User</section>
+        </sections>
+        <sections>
+            <label><!-- 5. Check Storage --></label>
+            <section>5. Check Storage</section>
+        </sections>
+        <sections>
+            <label><!-- 6. Links To External CAA --></label>
+            <section>6. Links To External CAA</section>
+        </sections>
+        <sections>
+            <label><!-- 7. External CAA Checks --></label>
+            <section>7. External CAA Checks</section>
+        </sections>
+        <sections>
+            <label><!-- 8. Core customer data amendments --></label>
+            <section>8. Core customer data amendments</section>
+        </sections>
+        <sections>
+            <label><!-- 9. Check SMS Magic and Postcode Anywhere Credits --></label>
+            <section>9. Check SMS Magic and Postcode Anywhere Credits</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Weekly Checks</layout>
+        <sections>
+            <label><!-- 1. iSeries Sec Adm Account Authority Check --></label>
+            <section>1. iSeries Sec Adm Account Authority Check</section>
+        </sections>
+        <sections>
+            <label><!-- 2. Antivirus - Desktop --></label>
+            <section>2. Antivirus - Desktop</section>
+        </sections>
+        <sections>
+            <label><!-- 3. Active Directory User Accounts Disabled Status --></label>
+            <section>3. Active Directory User Accounts Disabled Status</section>
+        </sections>
+        <sections>
+            <label><!-- 4. VPN Disabled Accounts Status --></label>
+            <section>4. VPN Disabled Accounts Status</section>
+        </sections>
+        <sections>
+            <label><!-- 5. Unauthorised Addition&apos;s To Domain Admin Group --></label>
+            <section>5. Unauthorised Addition&apos;s To Domain Admin Group</section>
+        </sections>
+        <sections>
+            <label><!-- 6. CSC Report --></label>
+            <section>6. CSC Report</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Fortnightly Checks --></label>
+        <name>Fortnightly_Checks</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Monthly Checks --></label>
+        <name>Monthly_Checks</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Quarterly Checks --></label>
+        <name>Quarterly_Checks</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Salesforce Monthly Checks --></label>
+        <name>Salesforce_Monthly_Checks</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Weekly Checks --></label>
+        <name>Weekly_Checks</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

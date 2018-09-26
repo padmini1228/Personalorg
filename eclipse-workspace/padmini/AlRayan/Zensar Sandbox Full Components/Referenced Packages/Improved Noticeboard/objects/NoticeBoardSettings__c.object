@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>BannerTitleAreaColour__c</fullName>
+        <defaultValue>&quot;ff0000&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Web colour (RGB HEX) to use for the title area of the Notification Banner</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Web colour (RGB HEX) to use for the title area of the Notification Banner</inlineHelpText>
+        <label>Banner Title Area Colour</label>
+        <length>6</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BrandCSS__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stylesheet to use as the source of Improved NoticeBoard customer-specific style overrides</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Stylesheet to use as the source of Improved NoticeBoard customer-specific style overrides</inlineHelpText>
+        <label>Brand CSS</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>CustomStyles__c</fullName>
+        <defaultValue>&quot;DemoRedAlert,DemoAmberAlert,DemoGreenAlert&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Names of Custom CSS styles that can be applied to Notices</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Names of Custom CSS styles that can be applied to Notices</inlineHelpText>
+        <label>Custom Styles</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ExternalLicenseTypes__c</fullName>
+        <defaultValue>&quot;zzz&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Salesforce user license types that are considered to represent &quot;external&quot; users</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Salesforce user license types that are considered to represent &quot;external&quot; users</inlineHelpText>
+        <label>External License Types</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MaxNotificationsPerBanner__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The maximum number of Notifications any User&apos;s Banners will display at one time (0 = unlimited)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The maximum number of Notifications any User&apos;s Banners will display at one time (0 = unlimited)</inlineHelpText>
+        <label>Max Notifications per Banner</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MaxStep3Selections__c</fullName>
+        <defaultValue>2000</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The maximum number of entries allowed in the Step 3 (Selected Recipients) listing when authoring Notices</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The maximum number of entries allowed in the Step 3 (Selected Recipients) listing when authoring Notices</inlineHelpText>
+        <label>Max Step 3 Selections</label>
+        <precision>5</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NotificationBannerCounterLink__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Notification Banner Counter Link</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NotificationBannerTitleLink__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Notification Banner Title Link</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NotificationBannerTitle__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Notification Banner Title</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PrimaryFontFamily__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of the font family to be used for key areas of Improved NoticeBoard, such as Notification Banners</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of the font family to be used for key areas of Improved NoticeBoard, such as Notification Banners</inlineHelpText>
+        <label>Primary Font Family</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PrimaryFontURL__c</fullName>
+        <deprecated>false</deprecated>
+        <description>URL of the (typically TTF or OTF) file that defines the NoticeBoard Primary Font Family</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>URL of the (typically TTF or OTF) file that defines the NoticeBoard Primary Font Family</inlineHelpText>
+        <label>Primary Font URL</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>NoticeBoardSettings</label>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Board Limits</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Board Limits</value>
+    </caseValues>
+    <fields>
+        <label><!-- Accounting --></label>
+        <name>Accounting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Advertising, Public Relations,Marketing --></label>
+        <name>Advertising_Public_Relations_Marketing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Aerospace and Defence --></label>
+        <name>Aerospace_and_Defence__c</name>
+    </fields>
+    <fields>
+        <label><!-- AfterSchoolReligiousInstructionBP --></label>
+        <name>AfterSchoolReligiousInstructionBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- ApplicantsMaxBP --></label>
+        <name>ApplicantsMaxBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- ApplicantsMinBP --></label>
+        <name>ApplicantsMinBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Architecture --></label>
+        <name>Architecture__c</name>
+    </fields>
+    <fields>
+        <label><!-- Automotive --></label>
+        <name>Automotive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Aviation and Airlines --></label>
+        <name>Aviation_and_Airlines__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTLDDTargetWeek --></label>
+        <name>BTLDDTargetWeek__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTLSancTargetWeek --></label>
+        <name>BTLSancTargetWeek__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTLSubTargetWeek --></label>
+        <name>BTLSubTargetWeek__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTLWrittenTargetWeek --></label>
+        <name>BTLWrittenTargetWeek__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL --></label>
+        <name>BTL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Banking --></label>
+        <name>Banking__c</name>
+    </fields>
+    <fields>
+        <label><!-- Biotechnology --></label>
+        <name>Biotechnology__c</name>
+    </fields>
+    <fields>
+        <label><!-- BirthdayCelebrationPresentsBP --></label>
+        <name>BirthdayCelebrationPresentsBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP MI --></label>
+        <name>Board_Limits_v2__c</name>
+        <relationshipLabel><!-- Board Limits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Board Risk Credit Committee --></label>
+        <name>Board_Risk_Credit_Committee__c</name>
+    </fields>
+    <fields>
+        <label><!-- BuildingInsuranceBP --></label>
+        <name>BuildingInsuranceBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF --></label>
+        <name>CPF__c</name>
+    </fields>
+    <fields>
+        <label><!-- CarBreakdownBP --></label>
+        <name>CarBreakdownBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- CarInsuranceBP --></label>
+        <name>CarInsuranceBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- CarServicingBP --></label>
+        <name>CarServicingBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- CarTaxBP --></label>
+        <name>CarTaxBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- CharitableDonationsBP --></label>
+        <name>CharitableDonationsBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Chief Risk Officer --></label>
+        <name>Chief_Risk_Officer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Clergy --></label>
+        <name>Clergy__c</name>
+    </fields>
+    <fields>
+        <label><!-- ClothingBP --></label>
+        <name>ClothingBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Construction and Installation --></label>
+        <name>Construction_and_Installation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Consulting Services --></label>
+        <name>Consulting_Services__c</name>
+    </fields>
+    <fields>
+        <label><!-- ContentsInsuranceBP --></label>
+        <name>ContentsInsuranceBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- CouncilTaxBP --></label>
+        <name>CouncilTaxBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Committee --></label>
+        <name>Credit_Committee__c</name>
+    </fields>
+    <fields>
+        <label><!-- DBS Target Month PR --></label>
+        <name>DBS_Target_Month_PR__c</name>
+    </fields>
+    <fields>
+        <label><!-- DBS Target Month --></label>
+        <name>DBS_Target_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- DBS Target Week --></label>
+        <name>DBS_Target_Week__c</name>
+    </fields>
+    <fields>
+        <label><!-- DDMonthTargetBTL --></label>
+        <name>DDMonthTargetBTL__c</name>
+    </fields>
+    <fields>
+        <label><!-- DDMonthTargetPRBTL --></label>
+        <name>DDMonthTargetPRBTL__c</name>
+    </fields>
+    <fields>
+        <label><!-- DDMonthTargetPR --></label>
+        <name>DDMonthTargetPR__c</name>
+    </fields>
+    <fields>
+        <label><!-- DDMonthTarget --></label>
+        <name>DDMonthTarget__c</name>
+    </fields>
+    <fields>
+        <label><!-- DPSTargetMTD --></label>
+        <name>DPSTargetMTD__c</name>
+    </fields>
+    <fields>
+        <label><!-- DPSTargetMonth --></label>
+        <name>DPSTargetMonth__c</name>
+    </fields>
+    <fields>
+        <label><!-- DPSTargetWeek --></label>
+        <name>DPSTargetWeek__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery --></label>
+        <name>Delivery__c</name>
+    </fields>
+    <fields>
+        <label><!-- DependantsMaxBP --></label>
+        <name>DependantsMaxBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- DependantsMinBP --></label>
+        <name>DependantsMinBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Drawdown Weekly Target --></label>
+        <name>Drawdown_Weekly_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- East  England --></label>
+        <name>East_England__c</name>
+    </fields>
+    <fields>
+        <label><!-- East Midlands --></label>
+        <name>East_Midlands__c</name>
+    </fields>
+    <fields>
+        <label><!-- Education --></label>
+        <name>Education__c</name>
+    </fields>
+    <fields>
+        <label><!-- ElectricityBP --></label>
+        <name>ElectricityBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Energy and Utilities --></label>
+        <name>Energy_and_Utilities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Engineering --></label>
+        <name>Engineering__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Completion Date --></label>
+        <name>Estimated_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facilities, Maintenance and Repair --></label>
+        <name>Facilities_Maintenance_and_Repair__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Services --></label>
+        <name>Financial_Services__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fire, Law Enforcement and Security --></label>
+        <name>Fire_Law_Enforcement_and_Security__c</name>
+    </fields>
+    <fields>
+        <label><!-- FoodBP --></label>
+        <name>FoodBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Food, Beverage and Tobacco --></label>
+        <name>Food_Beverage_and_Tobacco__c</name>
+    </fields>
+    <fields>
+        <label><!-- GCC --></label>
+        <name>GCC__c</name>
+    </fields>
+    <fields>
+        <label><!-- GamingBP --></label>
+        <name>GamingBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- GasBP --></label>
+        <name>GasBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- GoingOutBP --></label>
+        <name>GoingOutBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Government and Local Authority --></label>
+        <name>Government_and_Local_Authority__c</name>
+    </fields>
+    <fields>
+        <label><!-- GymHealthClubBP --></label>
+        <name>GymHealthClubBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPPSancTargetWeek --></label>
+        <name>HPPSancTargetWeek__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPPSubTargetWeek --></label>
+        <name>HPPSubmTargetWeek__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPPWrittenTargetWeek --></label>
+        <name>HPPWrittenTargetWeek__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP --></label>
+        <name>HPP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Head of Credit --></label>
+        <name>Head_of_Credit__c</name>
+    </fields>
+    <fields>
+        <label><!-- HealthInsurance --></label>
+        <name>HealthInsurance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Healthcare - Administrative --></label>
+        <name>Healthcare_Administrative__c</name>
+    </fields>
+    <fields>
+        <label><!-- Healthcare - Nursing --></label>
+        <name>Healthcare_Nursing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Healthcare - Practitioners --></label>
+        <name>Healthcare_Practitioners__c</name>
+    </fields>
+    <fields>
+        <label><!-- Healthcare - Technicians --></label>
+        <name>Healthcare_Technicians__c</name>
+    </fields>
+    <fields>
+        <label><!-- HomeTelephoneBP --></label>
+        <name>HomeTelephoneBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- IMT Target Month PR --></label>
+        <name>IMT_Target_Month_PR__c</name>
+    </fields>
+    <fields>
+        <label><!-- IMT Target Month --></label>
+        <name>IMT_Target_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- IMT Target Week --></label>
+        <name>IMT_Target_Week__c</name>
+    </fields>
+    <fields>
+        <label><!-- IT - -  All --></label>
+        <name>IT_All__c</name>
+    </fields>
+    <fields>
+        <label><!-- IT - -  Computers, Hardware --></label>
+        <name>IT_Computers_Hardware__c</name>
+    </fields>
+    <fields>
+        <label><!-- IT - -   Software --></label>
+        <name>IT_Software__c</name>
+    </fields>
+    <fields>
+        <label><!-- IncomeProtectionBP --></label>
+        <name>IncomeProtectionBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Insurance --></label>
+        <name>Insurance__c</name>
+    </fields>
+    <fields>
+        <label><!-- InternetBP --></label>
+        <name>InternetBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Underwriter --></label>
+        <name>Lead_Underwriter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Services --></label>
+        <name>Legal_Services__c</name>
+    </fields>
+    <fields>
+        <label><!-- LifeInsuranceBP --></label>
+        <name>LifeInsuranceBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- London Central --></label>
+        <name>London_Central__c</name>
+    </fields>
+    <fields>
+        <label><!-- London East --></label>
+        <name>London_East__c</name>
+    </fields>
+    <fields>
+        <label><!-- London North --></label>
+        <name>London_North__c</name>
+    </fields>
+    <fields>
+        <label><!-- London South --></label>
+        <name>London_South__c</name>
+    </fields>
+    <fields>
+        <label><!-- London West --></label>
+        <name>London_West__c</name>
+    </fields>
+    <fields>
+        <label><!-- Head of Credit/CRO/CEO --></label>
+        <name>Managing_Director__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manufacturing --></label>
+        <name>Manufacturing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Media - -  Broadcast --></label>
+        <name>Media_Broadcast__c</name>
+    </fields>
+    <fields>
+        <label><!-- Media - -  Print --></label>
+        <name>Media_Print__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mining --></label>
+        <name>Mining__c</name>
+    </fields>
+    <fields>
+        <label><!-- MobilePhoneBP --></label>
+        <name>MobilePhoneBO__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Profit and Social Services --></label>
+        <name>Non_Profit_and_Social_Services__c</name>
+    </fields>
+    <fields>
+        <label><!-- North West --></label>
+        <name>North_West__c</name>
+    </fields>
+    <fields>
+        <label><!-- North --></label>
+        <name>North__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of days --></label>
+        <name>Number_of_days__c</name>
+    </fields>
+    <fields>
+        <label><!-- OtherCommitmentsBP --></label>
+        <name>OtherCommitmentsBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- %OfMonthCompleted --></label>
+        <name>Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personal Care and Services --></label>
+        <name>Personal_Care_and_Services__c</name>
+    </fields>
+    <fields>
+        <label><!-- PetExpensesBP --></label>
+        <name>PetExpensesBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- PetrolDieselBP --></label>
+        <name>PetrolDieselBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pharmaceuticals --></label>
+        <name>Pharmaceuticals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Real Estate --></label>
+        <name>Real_Estate__c</name>
+    </fields>
+    <fields>
+        <label><!-- RegularInvestmentBP --></label>
+        <name>RegularInvestmentBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retail / Wholesale --></label>
+        <name>Retail_Wholesale__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retaurants and Food Services --></label>
+        <name>Retaurants_and_Food_Services__c</name>
+    </fields>
+    <fields>
+        <label><!-- SancMonthTargetBTL --></label>
+        <name>SancMonthTargetBTL__c</name>
+    </fields>
+    <fields>
+        <label><!-- SancMonthTargetPRBTL --></label>
+        <name>SancMonthTargetPRBTL__c</name>
+    </fields>
+    <fields>
+        <label><!-- SancMonthTargetPR --></label>
+        <name>SancMonthTargetPR__c</name>
+    </fields>
+    <fields>
+        <label><!-- SancMonthTarget --></label>
+        <name>SancMonthTarget__c</name>
+    </fields>
+    <fields>
+        <label><!-- SchoolFeesBP --></label>
+        <name>SchoolFeesBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Science and Research --></label>
+        <name>Science_and_Research__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scotland --></label>
+        <name>Scotland__c</name>
+    </fields>
+    <fields>
+        <label><!-- Senior Underwriter --></label>
+        <name>Senior_Underwriter__c</name>
+    </fields>
+    <fields>
+        <label><!-- SkyCableOtherBP --></label>
+        <name>SkyCableOtherBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- South East --></label>
+        <name>South_East__c</name>
+    </fields>
+    <fields>
+        <label><!-- SportingTicketsBP --></label>
+        <name>SportingTicketsBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sports and Recreation --></label>
+        <name>Sports_and_Recreation__c</name>
+    </fields>
+    <fields>
+        <label><!-- SubmMonthTargetBTL --></label>
+        <name>SubmMonthTargetBTL__c</name>
+    </fields>
+    <fields>
+        <label><!-- SubmMonthTargetPRBTL --></label>
+        <name>SubmMonthTargetPRBTL__c</name>
+    </fields>
+    <fields>
+        <label><!-- SubmMonthTargetPR --></label>
+        <name>SubmMonthTargetPR__c</name>
+    </fields>
+    <fields>
+        <label><!-- SubmMonthTarget --></label>
+        <name>SubmMonthTarget__c</name>
+    </fields>
+    <fields>
+        <label><!-- SubscriptionsBP --></label>
+        <name>SubscriptionsBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- TVLicenceBP --></label>
+        <name>TVLicenceBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Telecommunications --></label>
+        <name>Telecommunications__c</name>
+    </fields>
+    <fields>
+        <label><!-- Training --></label>
+        <name>Training__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transportation and Warehousing --></label>
+        <name>Transportation_and_Warehousing__c</name>
+    </fields>
+    <fields>
+        <label><!-- TravelExpensesBP --></label>
+        <name>TravelExpensesBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- TravelInsurance --></label>
+        <name>TravelInsurance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Underwriter --></label>
+        <name>Underwriter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wales --></label>
+        <name>Wales__c</name>
+    </fields>
+    <fields>
+        <label><!-- WaterBP --></label>
+        <name>WaterBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- West England --></label>
+        <name>West_England__c</name>
+    </fields>
+    <fields>
+        <label><!-- West Midlands --></label>
+        <name>West_Midlands__c</name>
+    </fields>
+    <fields>
+        <label><!-- WrittenMonthTargetBTL --></label>
+        <name>WrittenMonthTargetBTL__c</name>
+    </fields>
+    <fields>
+        <label><!-- WrittenMonthTargetPRBTL --></label>
+        <name>WrittenMonthTargetPRBTL__c</name>
+    </fields>
+    <fields>
+        <label><!-- WrittenMonthTargetPR --></label>
+        <name>WrittenMonthTargetPR__c</name>
+    </fields>
+    <fields>
+        <label><!-- WrittenMonthTarget --></label>
+        <name>WrittenMonthTarget__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2Applicants0-1Dependants --></label>
+        <name>X2Applicants0_1Dependants__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2Applicants2-3Dependants --></label>
+        <name>X2Applicants2_3Dependants__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2Applicants3+Dependants --></label>
+        <name>X2Applicants3_Dependants__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2 Head of Credit/CRO/CEO --></label>
+        <name>X2_Head_of_Credit_CRO_CEO__c</name>
+    </fields>
+    <fields>
+        <label><!-- 3Applicants0-1Dependants --></label>
+        <name>X3Applicants0_1Dependants__c</name>
+    </fields>
+    <fields>
+        <label><!-- 3Applicants2-3Dependants --></label>
+        <name>X3Applicants2_3Dependants__c</name>
+    </fields>
+    <fields>
+        <label><!-- 3Applicants3+Dependants --></label>
+        <name>X3Applicants3_Dependants__c</name>
+    </fields>
+    <fields>
+        <label><!-- 4Applicants0-1Dependants --></label>
+        <name>X4Applicants0_1Dependants__c</name>
+    </fields>
+    <fields>
+        <label><!-- 4Applicants2-3Dependants --></label>
+        <name>X4Applicants2_3Dependants__c</name>
+    </fields>
+    <fields>
+        <label><!-- 4Applicants3+Dependants --></label>
+        <name>X4Applicants3_Dependants__c</name>
+    </fields>
+    <fields>
+        <label><!-- Yorks &amp; Hside --></label>
+        <name>Yorks_Hside__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Target --></label>
+        <name>hpp_tARGET__c</name>
+    </fields>
+    <layouts>
+        <layout>Board Limits Layout</layout>
+        <sections>
+            <label><!-- Affordability Settings --></label>
+            <section>Affordability Settings</section>
+        </sections>
+        <sections>
+            <label><!-- Credit Limits --></label>
+            <section>Credit Limits</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Other --></label>
+            <section>Other</section>
+        </sections>
+        <sections>
+            <label><!-- Product Board Limits --></label>
+            <section>Product Board Limits</section>
+        </sections>
+        <sections>
+            <label><!-- Region Board Limits --></label>
+            <section>Region Board Limits</section>
+        </sections>
+        <sections>
+            <label><!-- Sector Board Limits --></label>
+            <section>Sector Board Limits</section>
+        </sections>
+        <sections>
+            <label><!-- Targets --></label>
+            <section>Targets</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Limits of Authority --></label>
+        <name>Limits_of_Authority</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

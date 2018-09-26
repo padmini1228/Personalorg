@@ -1,0 +1,230 @@
+<apex:page standardController="XRB__Report__c" extensions="XRB.CreateReportController" contentType="application/vnd.ms-excel#{!XRB__Report__c.Name}.xls" showHeader="false" sidebar="false" standardStylesheets="false" >
+    <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <style type="text/css" >
+            a{
+                pointer-events: none;
+                cursor: default;
+                text-decoration:none;
+                color:#000;
+            }
+        </style>
+    </head>
+    <body>
+
+        <table cellpadding="10" >
+            <tr>
+                <td style="text-align:left;" ><apex:image style="width:213px; height:119px;" value="{!leftImageUrl}" rendered="{!NOT(ISBLANK(leftImageUrl))}" /></td>
+                <td colspan="{!IF(FLOOR(totalColumns/2) > 2,FLOOR(totalColumns/2),2)}" style="text-align:right;" >
+                    <h2><apex:outputText value="{!XRB__Report__c.Name}" /></h2>
+                </td>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                <td align="right" colspan="{!totalColumns/3}"><apex:image style="width:213px; height:119px; padding-left:100px;" value="{!rightImageUrl}" rendered="{!NOT(ISBLANK(rightImageUrl))}" /></td>
+            </tr>
+            <tr >
+            <td colspan="{!IF(FLOOR(totalColumns) > 2,FLOOR(totalColumns),2)}" style="text-align:right;"><b>Date :</b><apex:outputText style="text-align:right;" value="{!DateTime}" /></td>
+            </tr>
+            <tr ></tr>
+
+            
+        </table>
+
+            <!-- HEATMAP REPORT -->
+        <apex:outputPanel layout="none"  rendered="{!XRB__Report__c.XRB__Heatmap_Type__c != ''}">
+            <apex:variable var="isDirect" value="{!IF(XRB__Report__c.XRB__Heatmap_Type__c == 'Direct', 'true', 'false')}" />
+            <table>
+                <tr>
+                    <td>
+                        <c:DrawHeatmap heatmap="{!heatmap}" title="{!IF(isDirect == 'true',$Label.xrb__risk_matrix, $Label.xrb__aggregated_risk_matrix)}" rendered="{!IF(XRB__Report__c.XRB__Include_Risks_Type__c != 'Opportunity Only', 'true', 'false')}" safeMode="false" height="500px" width="100%" disableRiskList="true" showRiskIds="false" excelMode="true"/>
+                    </td>
+                    <td>
+                        <c:DrawHeatmap heatmap="{!oppheatmap}" title="{!IF(isDirect=='true',$Label.xrb__opp_risk_matrix, $Label.xrb__aggregated_opp_risk_matrix)}" rendered="{!IF(XRB__Report__c.XRB__Include_Risks_Type__c != 'Threat Only', 'true', 'false')}" safeMode="false" height="500px" width="100%" disableRiskList="true" showRiskIds="false" excelMode="true" />
+                    </td>
+                </tr>
+            </table>
+            <br /><br /><br />
+        </apex:outputPanel>
+        
+        <!--
+        IMPORTANT
+
+        The static resource colours must be in a particular format. file names must being with hmc_ and contain the 6 character version of the colours after.
+        -->
+        <!-- Risk Data -->
+        <table cellpadding="10" >
+            
+
+            <tr>
+                <apex:repeat value="{!excelObjLabels}" var="obj" >
+                    <td style="border:1px solid black; padding:15px; text-align:center; font-weight:bold;" colspan="{!obj.colspan}" >
+                        <apex:outputText value="{!obj.objLabel}" />
+                    </td>
+                </apex:repeat>
+            </tr>
+            <apex:repeat value="{!excelObjFields}" var="reportRow" >
+                <tr>
+                    <apex:repeat value="{!reportRow.objRecordsList}" var="data" >
+                        <td style="border:1px solid black; padding:0px; font-weight:bold;" ><apex:outputText value="{!data}" /></td>
+                    </apex:repeat>
+                </tr>
+            </apex:repeat>
+
+            <!-- Report Data -->
+            <apex:repeat value="{!excelData}" var="reportRow" >
+                <tr>
+                    <apex:repeat value="{!parentObj.fieldApiNamesList}" var="field" rendered="{!reportRow.showParent}" >
+                    <!-- Sprint1951- output panel to control over Residual score movement / residual rating / residual score / inherent rating / inherent score -->
+                        <apex:outputPanel layout="none" rendered="{!field != 'risk__residual_score_movement_direction__c' && 
+                        field != 'risk__inherent_rating__c' && 
+                        field != 'risk__inherent_score__c' && 
+                        field != 'risk__inherent_impact_text__c' && 
+                        field != 'risk__inherent_likelihood_text__c' && 
+                        field != 'risk__residual_rating__c' && 
+                        field != 'risk__residual_score__c' && 
+                        field != 'risk__residual_impact_text__c' && 
+                        field != 'risk__residual_likelihood_text__c' && 
+                        field != 'risk__target_rating__c' && 
+                        field != 'risk__target_score__c' && 
+                        field != 'risk__target_impact_text__c' && 
+                        field != 'risk__target_likelihood_text__c'}" >
+
+                            <td rowSpan="{!reportRow.rowSpan}" style="vertical-align:middle; text-align:left; border:1px solid black; background-color:#{!IF(parentObj.mapIsForumulaField[field] && NOT(ISBLANK(reportRow.parentInfo[field])) && RIGHT(field,9) == 'rating__c',IF(CONTAINS(reportRow.parentInfo[field],'<img'), IF((MID(reportRow.parentInfo[field],FIND('hmc_',reportRow.parentInfo[field])+4,4) == 'gray'),'9C9A9C',MID(reportRow.parentInfo[field],FIND('hmc_',reportRow.parentInfo[field])+4,6)),''),'')}" >
+                                <apex:outputText value="{!reportRow.parentInfo[field]}" rendered="{!NOT(ISBLANK(reportRow.parentInfo[field])) && RIGHT(field,9) != 'rating__c'}" />
+                                <apex:outputLabel value=" " rendered="{!ISBLANK(reportRow.parentInfo[field]) && RIGHT(field,9) == 'rating__c'}"  />
+                            </td>
+                        </apex:outputPanel>
+
+                        <apex:outputPanel layout="none" rendered="{!field == 'risk__residual_score_movement_direction__c'}" >
+                            <td rowSpan="{!reportRow.rowSpan}" style="vertical-align:middle; text-align:center; border:1px solid black; min-height:5px;" >
+                                <apex:image width="25" height="25" value="{!IF(CONTAINS(reportRow.parentInfo[field],'Up'),mapClimateMovement['Risk_Climate_Up_Green_Arrow'],'')}"  rendered="{!CONTAINS(reportRow.parentInfo[field],'Up') && reportRow.parentInfo['risk__type__c'] = 'Opportunity'}" />
+                                <apex:image width="25" height="25" value="{!IF(CONTAINS(reportRow.parentInfo[field],'Up'),mapClimateMovement['Risk_Climate_Up_Arrow'],'')}"  rendered="{!CONTAINS(reportRow.parentInfo[field],'Up') && reportRow.parentInfo['risk__type__c'] = 'Threat'}" />
+                                <apex:image width="25" height="25" value="{!IF(CONTAINS(reportRow.parentInfo[field],'Down'),mapClimateMovement['Risk_Climate_Down_Red_Arrow'],'')}" rendered="{!CONTAINS(reportRow.parentInfo[field],'Down') && reportRow.parentInfo['risk__type__c'] = 'Opportunity'}" />
+                                <apex:image width="25" height="25" value="{!IF(CONTAINS(reportRow.parentInfo[field],'Down'),mapClimateMovement['Risk_Climate_Down_Arrow'],'')}" rendered="{!CONTAINS(reportRow.parentInfo[field],'Down') && reportRow.parentInfo['risk__type__c'] = 'Threat'}" />
+                                <apex:image width="25" height="25" value="{!IF(CONTAINS(reportRow.parentInfo[field],'Right'),mapClimateMovement['Risk_Climate_Right_Arrow'],'')}" rendered="{!CONTAINS(reportRow.parentInfo[field],'Right')}"/>
+                                 <apex:image width="16" height="16" value="{!IF(CONTAINS(reportRow.parentInfo[field],''),mapClimateMovement['risk_climate_neutral_dir'],'')}" rendered="{!CONTAINS(reportRow.parentInfo[field],'emp')}"/>
+                            </td>
+                        </apex:outputPanel>
+
+                        <!--Sprint1951- output panel to display Direct Risks after Aggregation added-->
+                        <apex:outputPanel layout="none" rendered="{! Report__c.Heatmap_Type__c != 'Aggregated' && (
+                            field == 'risk__inherent_rating__c' || 
+                            field == 'risk__inherent_score__c' || 
+                            field == 'risk__residual_rating__c' || 
+                            field == 'risk__residual_score__c' || 
+                            field == 'risk__target_rating__c' || 
+                            field == 'risk__target_score__c')}" >
+
+                            <td rowSpan="{!reportRow.rowSpan}" style="vertical-align:middle; text-align:left; border:1px solid black; background-color:#{!IF(parentObj.mapIsForumulaField[field] && NOT(ISBLANK(reportRow.parentInfo[field])) && RIGHT(field,9) == 'rating__c',IF(CONTAINS(reportRow.parentInfo[field],'<img'), IF((MID(reportRow.parentInfo[field],FIND('hmc_',reportRow.parentInfo[field])+4,4) == 'gray'),'9C9A9C',MID(reportRow.parentInfo[field],FIND('hmc_',reportRow.parentInfo[field])+4,6)),''),'')}" >
+                                <apex:outputText value="{!reportRow.parentInfo[field]}" rendered="{!NOT(ISBLANK(reportRow.parentInfo[field])) && RIGHT(field,9) != 'rating__c'}" />
+                                <apex:outputLabel value=" " rendered="{!ISBLANK(reportRow.parentInfo[field]) && RIGHT(field,9) == 'rating__c'}"  />
+                            </td>
+                        </apex:outputPanel>
+
+                        <!-- This section displays Inherent and Residual Impact/Likelihood Text values if users have selected 'Direct'-->
+                       <apex:outputPanel layout="none" rendered="{! Report__c.Heatmap_Type__c != 'Aggregated' && (
+                       field == 'risk__inherent_impact_text__c' || 
+                       field == 'risk__inherent_likelihood_text__c' || 
+                       field == 'risk__residual_impact_text__c' || 
+                       field == 'risk__residual_likelihood_text__c' || 
+                       field == 'risk__target_impact_text__c' || 
+                       field == 'risk__target_likelihood_text__c')}">
+                            <td rowSpan="{!reportRow.rowSpan}" style="vertical-align:middle; text-align:left; border:1px solid black; background-color:#{!IF(parentObj.mapIsForumulaField[field] && NOT(ISBLANK(reportRow.parentInfo[field])) && RIGHT(field,9) == 'rating__c',IF(CONTAINS(reportRow.parentInfo[field],'<img'), IF((MID(reportRow.parentInfo[field],FIND('hmc_',reportRow.parentInfo[field])+4,4) == 'gray'),'9C9A9C',MID(reportRow.parentInfo[field],FIND('hmc_',reportRow.parentInfo[field])+4,6)),''),'')}" >
+                                <apex:outputText value="{!reportRow.parentInfo[field]}" rendered="{!NOT(ISBLANK(reportRow.parentInfo[field])) && RIGHT(field,9) != 'rating__c'}" />
+                                <apex:outputLabel value=" " rendered="{!ISBLANK(reportRow.parentInfo[field]) && RIGHT(field,9) == 'rating__c'}"  />
+                            </td>
+                        </apex:outputPanel>
+
+                        <!--Sprint1951- Fixing the Color and the Score for RESIDUAL & INHERENT Aggregated Risk Values-->
+
+                        <!--Fixes the Aggregated Residual Rating color-->
+                        <apex:outputPanel layout="none" rendered="{!field == 'risk__residual_rating__c' && XRB__Report__c.XRB__Heatmap_Type__c == 'Aggregated'}">
+                        <td rowSpan="{!reportRow.rowSpan}"  style="background-color:{!IF(AggregatedMap[reportRow.parentInfo['id']].residualValues != null, AggregatedMap[reportRow.parentInfo['id']].residualValues.colour, '#9C9A9C')}; display:inline-block; width: 100px; height: 35px; border:1px solid black;"/>
+                        </apex:outputPanel>
+
+                        <!--Fixes the Aggregated Inherent Rating color-->
+                        <apex:outputPanel layout="none" rendered="{!field == 'risk__inherent_rating__c' && XRB__Report__c.XRB__Heatmap_Type__c == 'Aggregated'}">
+                            <td rowSpan="{!reportRow.rowSpan}" style="background-color:{!IF(AggregatedMap[reportRow.parentInfo['id']].inherentValues != null, AggregatedMap[reportRow.parentInfo['id']].inherentValues.colour, '#9C9A9C')}; display:inline-block; width: 100px; height: 35px; border:1px solid black;" />
+                        </apex:outputPanel>
+
+                        <!--Fixes the Aggregated Target Rating color-->
+                        <apex:outputPanel layout="none" rendered="{!field == 'risk__target_rating__c' && XRB__Report__c.XRB__Heatmap_Type__c == 'Aggregated'}">
+                            <td rowSpan="{!reportRow.rowSpan}" style="background-color:{!IF(AggregatedMap[reportRow.parentInfo['id']].targetValues != null, AggregatedMap[reportRow.parentInfo['id']].targetValues.colour, '#9C9A9C')}; display:inline-block; width: 100px; height: 35px; border:1px solid black;" />
+                        </apex:outputPanel>
+
+                        <!--Fixes the Aggregated Inherent Score-->
+                        <apex:outputPanel layout="none" rendered="{!field == 'risk__inherent_score__c' && XRB__Report__c.XRB__Heatmap_Type__c == 'Aggregated'}">
+                        <td rowSpan="{!reportRow.rowSpan}" style="border:1px solid black; text-align: center;">{!AggregatedMap[reportRow.parentInfo['id']].inherentValues.score}</td>
+                        </apex:outputPanel>
+
+                        <!--Fixes the Aggregated Residual Score-->
+                        <apex:outputPanel layout="none" rendered="{!field == 'risk__residual_score__c' && XRB__Report__c.XRB__Heatmap_Type__c == 'Aggregated'}">
+                        <td rowSpan="{!reportRow.rowSpan}" style="border:1px solid black; text-align: center;">{!AggregatedMap[reportRow.parentInfo['id']].residualValues.score}</td>
+                        </apex:outputPanel>
+
+                        <!--Fixes the Aggregated Target Score-->
+                        <apex:outputPanel layout="none" rendered="{!field == 'risk__target_score__c' && XRB__Report__c.XRB__Heatmap_Type__c == 'Aggregated'}">
+                        <td rowSpan="{!reportRow.rowSpan}" style="border:1px solid black; text-align: center;">{!AggregatedMap[reportRow.parentInfo['id']].targetValues.score}</td>
+                        </apex:outputPanel>
+
+                        <!--Fixes the Aggregated Inherent Impact-->
+                        <apex:outputPanel layout="none" rendered="{!field == 'risk__inherent_impact_text__c' && XRB__Report__c.XRB__Heatmap_Type__c == 'Aggregated'}">
+                        <td rowSpan="{!reportRow.rowSpan}" style="border:1px solid black; text-align: center;">{!AggregatedMap[reportRow.parentInfo['id']].inherentValues.impactText}</td>
+                        </apex:outputPanel>
+
+                        <!--Fixes the Aggregated Inherent likelihood-->
+                        <apex:outputPanel layout="none" rendered="{!field == 'risk__inherent_likelihood_text__c' && XRB__Report__c.XRB__Heatmap_Type__c == 'Aggregated'}">
+                        <td rowSpan="{!reportRow.rowSpan}" style="border:1px solid black; text-align: center;">{!AggregatedMap[reportRow.parentInfo['id']].inherentValues.likelihoodText}</td>
+                        </apex:outputPanel>
+
+                        <!--Fixes the Aggregated residual Impact-->
+                        <apex:outputPanel layout="none" rendered="{!field == 'risk__residual_impact_text__c' && XRB__Report__c.XRB__Heatmap_Type__c == 'Aggregated'}">
+                        <td rowSpan="{!reportRow.rowSpan}" style="border:1px solid black; text-align: center;">{!AggregatedMap[reportRow.parentInfo['id']].residualValues.impactText}</td>
+                        </apex:outputPanel>
+
+                        <!--Fixes the Aggregated residual likelihood-->
+                        <apex:outputPanel layout="none" rendered="{!field == 'risk__residual_likelihood_text__c' && XRB__Report__c.XRB__Heatmap_Type__c == 'Aggregated'}">
+                        <td rowSpan="{!reportRow.rowSpan}" style="border:1px solid black; text-align: center;">{!AggregatedMap[reportRow.parentInfo['id']].residualValues.likelihoodText}</td>
+                        </apex:outputPanel>
+
+                        <!--Fixes the Aggregated target Impact-->
+                        <apex:outputPanel layout="none" rendered="{!field == 'risk__target_impact_text__c' && XRB__Report__c.XRB__Heatmap_Type__c == 'Aggregated'}">
+                        <td rowSpan="{!reportRow.rowSpan}" style="border:1px solid black; text-align: center;">{!AggregatedMap[reportRow.parentInfo['id']].targetValues.impactText}</td>
+                        </apex:outputPanel>
+
+                        <!--Fixes the Aggregated target likelihood-->
+                        <apex:outputPanel layout="none" rendered="{!field == 'risk__target_likelihood_text__c' && XRB__Report__c.XRB__Heatmap_Type__c == 'Aggregated'}">
+                        <td rowSpan="{!reportRow.rowSpan}" style="border:1px solid black; text-align: center;">{!AggregatedMap[reportRow.parentInfo['id']].targetValues.likelihoodText}</td>
+                        </apex:outputPanel>
+
+
+                    </apex:repeat>
+
+                    <!-- Related List Data -->
+                    <apex:repeat value="{!relatedList}" var="rList" >
+                        <apex:outputPanel layout="none" rendered="{!rList.isSelected && rList.fieldsList.fieldApiNamesList.size > 0}" >
+                            <apex:repeat value="{!rList.fieldsList.fieldApiNamesList}" var="field"  >
+                                <apex:outputPanel layout="none" >
+                                    <td style="border:1px solid black; text-align:left; background-color:#{!IF(rList.fieldsList.mapIsForumulaField[field] && NOT(ISBLANK(reportRow.mapChildInfo[rList.relationshipName][field])) && RIGHT(field,9) == 'rating__c',IF(CONTAINS(reportRow.mapChildInfo[rList.relationshipName][field],'<img'), IF((MID(reportRow.mapChildInfo[rList.relationshipName][field],FIND('hmc_',reportRow.mapChildInfo[rList.relationshipName][field])+4,4) == 'gray'),'9C9A9C',MID(reportRow.mapChildInfo[rList.relationshipName][field],FIND('hmc_',reportRow.mapChildInfo[rList.relationshipName][field])+4,6)),''),'')}">
+                                        <apex:outputText value="{!reportRow.mapChildInfo[rList.relationshipName][field]}" rendered="{!NOT(ISBLANK(reportRow.mapChildInfo[rList.relationshipName][field])) && RIGHT(field,9) != 'rating__c'}" />
+                                        <apex:outputLabel value=" " rendered="{!ISBLANK(reportRow.mapChildInfo[rList.relationshipName][field]) && RIGHT(field,9) == 'rating__c'}"  />
+                                    </td>
+                                </apex:outputPanel>
+                            </apex:repeat>
+                        </apex:outputPanel>
+                    </apex:repeat>
+                </tr>
+            </apex:repeat>
+        </table><br /><br /><br />
+
+        
+
+        <div align="left" >
+            <!--Following commented line used to display Inherent Risks with an Asterisk - COULD BE USEFUL IN FUTURE-->
+            <!-- <b><apex:outputText value=" ' * '  Indicates Inherent values" rendered="{!showInherent}" style="font-size: 12pt; color:black; margin-top:5px; text-align: center;"/></b> -->
+        </div><br/>
+
+        <div>
+            <b>Generated By : </b>Xactium Risk Manager
+            <apex:outputText value="{!DateTime}" />
+        </div>
+    </body>
+</apex:page>

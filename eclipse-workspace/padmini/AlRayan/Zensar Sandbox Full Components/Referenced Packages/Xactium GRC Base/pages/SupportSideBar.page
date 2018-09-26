@@ -1,0 +1,10 @@
+<apex:page showHeader="true" sidebar="false" standardstylesheets="true" >
+	<div style="width:118px; margin:auto;">
+    	<apex:image url="{!$Resource.grc__XactiumLogo}" width="118" height="67"/>
+    </div>
+    <p />
+    <apex:outputLink value="http://{!URLENCODE($Label.Xactium_Support_URL)}" id="supportLink" type="text/html" target="_blank">{!$Label.Xactium_Support}</apex:outputLink>
+    <p />
+    <apex:outputText >{!$Label.Support_Email}</apex:outputText> <br />
+    <apex:outputLink value="mailto:{!$Label.Support_Email_Address}"  target="_blank">{!$Label.Support_Email_Address}</apex:outputLink>
+</apex:page>

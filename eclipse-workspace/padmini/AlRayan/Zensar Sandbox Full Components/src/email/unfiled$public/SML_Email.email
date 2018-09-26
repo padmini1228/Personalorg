@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<p><font face="Arial, sans-serif" size="2">{!Case.Contact} has raised a New Starter Case&nbsp;{!Case.CaseNumber} with IT.</font></p><p><font face="Arial, sans-serif" size="2"><br></font></p><p><font face="Arial, sans-serif" size="2">New Starter Name :&nbsp;{!Case.New_Starter_Full_Name__c}</font></p><p><font face="Arial, sans-serif" size="2"><br></font></p><p><font face="Arial, sans-serif" size="2">Start Date :&nbsp;{!Case.Start_Date__c}</font></p><p><font face="Arial, sans-serif" size="2"><br></font></p><p><font face="Arial, sans-serif" size="2">Thanks</font></p><p><font face="Arial, sans-serif" size="2">&nbsp;</font></p><p><font face="Arial, sans-serif" size="2">{!Case.OwnerFullName}</font></p><p><font face="Arial, sans-serif" size="2">&nbsp;</font></p><p><font face="Arial, sans-serif" size="2">{!Case.Link}</font></p>]]></td>
+</tr>
+</table>

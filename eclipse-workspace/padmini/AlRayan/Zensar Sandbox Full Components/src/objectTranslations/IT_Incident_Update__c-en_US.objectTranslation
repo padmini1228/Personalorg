@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>IT Incident Update</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>IT Incident Updates</value>
+    </caseValues>
+    <fields>
+        <label><!-- Date &amp; time of update --></label>
+        <name>Date_time_of_update__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has the incident been resolved? --></label>
+        <name>Has_the_incident_been_resolved__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IT Incident --></label>
+        <name>IT_Incident__c</name>
+        <relationshipLabel><!-- IT Incident Updates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Update information --></label>
+        <name>Update_information__c</name>
+    </fields>
+    <layouts>
+        <layout>IT Incident Update Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Update information --></label>
+            <section>Update information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

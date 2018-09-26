@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CAA Welcome Email FTD</name>
+    <style>none</style>
+    <subject>Welcome to Al Rayan Bank</subject>
+    <textOnly>Al Rayan Bank
+
+Thank you for choosing Al Rayan Bank
+Call 0800 4086 407
+
+Banking you can believe in
+
+Thank you
+for choosing
+Al Rayan Bank
+Your application for an account will be complete as soon as you deposit your £1,000 minimum balance
+
+Funding your Fixed Term Deposit
+
+You can make a deposit in any of the  following ways:
+
+By transferring funds from an existing Al  Rayan Bank account or from another bank to the following account:
+
+Sort Code: 30 00 83 Account  Number: {!Opportunity.FIT_Account_Number__c} Reference Number: {!Opportunity.Application_Reference_Number__c}
+
+Please  ensure that you quote your Reference Number as the payment reference.
+
+By taking a cheque or cash to one of our  branches or by sending a cheque to us at the following address:
+
+Al Rayan Bank PLC
+PO Box 12461
+Birmingham
+B16 6AQ
+
+Please ensure your Reference Number is  clearly marked on the back of the cheque.
+
+What happens next?
+
+We will send you a welcome letter in the post; please sign and return any documents contained within it
+
+If you have any questions, please call us on 0800 4086 407* or visit your local branch
+
+* Monday to Friday from 9.00am to 7.00pm, Saturday from 9.00am to 1.00pm
+
+Banking you can believe in
+Al Rayan Bank is the UK&apos;s only wholly Sharia compliant retail bank.
+
+We operate without using interest, and follow ethical Islamic finance principles based on trade, entrepreneurship and risk-sharing.
+
+Al Rayan Bank PLC is authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority. Our firm reference is 229148. Al Rayan Bank is incorporated and registered in England and Wales with registration No. 4483430. Registered office: 44 Hans Crescent, Knightsbridge, London, SW1X 0LZ.
+
+Do not reply to this email as the mailbox is unattended. Please submit general enquiries at our
+contact us page.
+
+Copyright 2017 Al Rayan Bank PLC</textOnly>
+    <type>custom</type>
+</EmailTemplate>

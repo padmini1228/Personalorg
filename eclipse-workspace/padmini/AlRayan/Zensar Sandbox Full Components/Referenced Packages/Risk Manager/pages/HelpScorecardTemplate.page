@@ -1,0 +1,29 @@
+<apex:page sideBar="false" showHeader="false">
+
+<head>
+    <apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'HelpPageStylesheet.css')}"/>
+</head>
+
+<div class="heading">
+<div class="icon">&nbsp;</div>
+    <h2>Help Pages</h2>
+    <h1>Scorecard Templates</h1>
+</div>
+
+<div class="content">
+<p>Scorecard Templates provide a way of grouping together a collection of Risk Templates that be easily reused across the organization.</p>
+
+<p>To create a Scorecard Template, enter a name and description for the Scorecard Template. </p>
+<p>Once created, Risk Templates can then be associated with the Scorecard Template via the Link to Risk Templates button.</p>
+
+<br/>
+<br/>
+<br/>
+
+<h3 >Contact Details</h3>
+
+<p>
+For further support information, please contact your local administrator.</p>
+<div class="clear"></div>
+</div>
+</apex:page>

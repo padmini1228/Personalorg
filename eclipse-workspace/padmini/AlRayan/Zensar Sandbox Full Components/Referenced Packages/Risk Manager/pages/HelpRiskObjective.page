@@ -1,0 +1,33 @@
+<apex:page sideBar="false" showHeader="false">
+
+	<head>
+		<apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'HelpPageStylesheet.css')}"/>
+	</head>
+
+	<div class="heading">
+		<div class="icon">&nbsp;
+		</div>
+	    <h2>Help Pages</h2>
+	    <h1>Risk - Business Objective relationships</h1>
+	</div>
+
+	<div class="content">
+		<p>
+		Within the system there is the ability to define which Business Objectives apply to which Risks. It is possible for a Risk to apply to many Business Objectives and a Business Objective to many Risks.
+		</p>
+		<p>
+		The Related list shows the items that are linked together and allows for new Risk - Business Objective relationships to be managed via the buttons provided.
+		</p>
+		<br/>
+		<br/>
+		<br/>
+
+		<h3 >Contact Details</h3>
+
+		<p>
+		For further support information, please contact your local administrator.</p>
+		<div class="clear">
+
+		</div>
+	</div>
+</apex:page>

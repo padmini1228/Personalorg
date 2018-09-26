@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>IT Equipment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>IT Equipment</value>
+    </caseValues>
+    <fields>
+        <label><!-- Age of equipment --></label>
+        <name>Age_of_equipment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Condition --></label>
+        <name>Condition__c</name>
+        <picklistValues>
+            <masterLabel>Damaged</masterLabel>
+            <translation><!-- Damaged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Used</masterLabel>
+            <translation><!-- Used --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Current User --></label>
+        <name>Current_User__c</name>
+        <relationshipLabel><!-- IT Equipment --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date of purchase --></label>
+        <name>Date_of_purchase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+        <picklistValues>
+            <masterLabel>Blackburn</masterLabel>
+            <translation><!-- Blackburn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial Office</masterLabel>
+            <translation><!-- Commercial Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Centre</masterLabel>
+            <translation><!-- Contact Centre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edgware Road</masterLabel>
+            <translation><!-- Edgware Road --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP Sales</masterLabel>
+            <translation><!-- HPP Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Head office</masterLabel>
+            <translation><!-- Head office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ilford</masterLabel>
+            <translation><!-- Ilford --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leicester</masterLabel>
+            <translation><!-- Leicester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manchester</masterLabel>
+            <translation><!-- Manchester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier Branch</masterLabel>
+            <translation><!-- Premier Branch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier Office</masterLabel>
+            <translation><!-- Premier Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Heath</masterLabel>
+            <translation><!-- Small Heath --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tooting</masterLabel>
+            <translation><!-- Tooting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Whitechapel</masterLabel>
+            <translation><!-- Whitechapel --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Manufacturer --></label>
+        <name>Manufacturer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of equipment --></label>
+        <name>Type_of_equipment__c</name>
+        <picklistValues>
+            <masterLabel>Cashier printer</masterLabel>
+            <translation><!-- Cashier printer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cheque Scanner</masterLabel>
+            <translation><!-- Cheque Scanner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Desktop</masterLabel>
+            <translation><!-- Desktop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inkjet Printer</masterLabel>
+            <translation><!-- Inkjet Printer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Laptop</masterLabel>
+            <translation><!-- Laptop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Laser Printer</masterLabel>
+            <translation><!-- Laser Printer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multi function device</masterLabel>
+            <translation><!-- Multi function device --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scanner</masterLabel>
+            <translation><!-- Scanner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tablet</masterLabel>
+            <translation><!-- Tablet --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Working? --></label>
+        <name>Working__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Computer Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>IT Equipment Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Desktop/Laptop --></label>
+        <name>Desktop_Laptop</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Other Equipment --></label>
+        <name>Other_Equipment</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,66 @@
+<apex:page standardController="grc__Control__c" extensions="Risk.NewControlFromTemplate" >
+
+    <style>
+        .itemWait {
+        color:#D74C3B;
+        margin-left:5px;
+        }
+    </style>
+
+    <apex:sectionHeader title="New Control From Template" subtitle="New Control"/>
+    <apex:form >
+
+        <apex:actionRegion >
+            <apex:pageBlock title="In which Category is the Control?" >
+                <apex:pageBlockButtons location="bottom">
+                    <apex:commandButton value="Find Matching Templates" rerender="matchingTemplates" action="{!retrieveTemplates}"/>
+                </apex:pageBlockButtons>
+                <center>
+                    <apex:actionStatus startStyleClass="itemWait" id="itemWait" startText="Please wait..." />
+                </center>
+                <apex:messages id="themessages"/>
+                <apex:pageBlockSection columns="2">
+                    <apex:inputField value="{!aControl.grc__Category__c}"/>
+
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Show All" for="showAllControlTemplates"/>
+                        <apex:inputCheckbox value="{!showAll}" id="showAllControlTemplates"/>
+                    </apex:pageBlockSectionItem>
+
+                    <apex:inputText value="{!searchFilter}" label="Filter templates based on name:"/>
+
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+        </apex:actionRegion>
+
+        <apex:outputPanel id="matchingTemplates">
+            <apex:pageBlock title="Matching Templates" rendered="{!aControl.grc__Category__c != null}">
+                <apex:pageBlockSection title="Matching Control Templates" collapsible="false"  columns="1">
+
+                    <apex:outputPanel layout="none" rendered="{!matchingTemplates.size == 0}">
+                        No templates found that match criteria
+                    </apex:outputPanel>
+
+                    <apex:pageBlockTable value="{!matchingTemplates}" var="template" rendered="{!matchingTemplates.size > 0}">
+                        <apex:column value="{!template.theControlTemplate.Name}" title="Name"/>
+                        <apex:column value="{!template.theControlTemplate.Risk__Description__c}" title="Description"/>
+                        <apex:column headerValue="Business Unit Selection">
+                            <div class="requiredInput">
+                                <div class="requiredBlock"></div>
+                                    <apex:inputField value="{!template.theControl.grc__Business_Unit__c}"/>
+                                </div>
+                        </apex:column>
+                        <apex:column title="Action"  width="100px">
+                            <apex:commandLink action="{!createControl}" styleClass="btn" style="text-decoration: none;" reRender="matchingTemplates">
+                                Create&nbsp;Control
+                                <apex:param name="templateId" assignTo="{!templateId}" value="{!template.theControlTemplate.Id}" />
+                            </apex:commandLink>
+                        </apex:column>
+                    </apex:pageBlockTable>
+
+
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+        </apex:outputPanel>
+    </apex:form>
+</apex:page>

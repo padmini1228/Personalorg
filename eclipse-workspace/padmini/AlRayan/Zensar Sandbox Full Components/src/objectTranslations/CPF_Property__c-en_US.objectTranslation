@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CPF Property</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CPF Properties</value>
+    </caseValues>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Date for Next Valuation --></label>
+        <name>Estimated_Date_for_Next_Valuation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Insurance amount --></label>
+        <name>Insurance_amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Insurance amount comments --></label>
+        <name>Insurance_amount_comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Insurance expiry date --></label>
+        <name>Insurance_expiry_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Market value --></label>
+        <name>Market_value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- CPF Properties --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- List of Properties and other comments --></help>
+        <label><!-- Other Comments --></label>
+        <name>Other_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post code --></label>
+        <name>Post_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship Support Manager --></label>
+        <name>Relationship_Support_Manager__c</name>
+        <relationshipLabel><!-- CPF Properties (Relationship Support Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Revaluation Due Date --></label>
+        <name>Revaluation_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street --></label>
+        <name>Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Manager --></label>
+        <name>Transaction_Manager__c</name>
+        <relationshipLabel><!-- CPF Properties (Transaction Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Valuation date --></label>
+        <name>Valuation_date__c</name>
+    </fields>
+    <layouts>
+        <layout>CPF Property Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

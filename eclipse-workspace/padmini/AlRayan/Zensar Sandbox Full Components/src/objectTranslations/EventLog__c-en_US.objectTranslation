@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>EventLog</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>EventLogs</value>
+    </caseValues>
+    <fields>
+        <label><!-- ActualCompletedDate --></label>
+        <name>ActualCompletedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- CaseID --></label>
+        <name>CaseID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comment --></label>
+        <name>Comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- CompletedBy --></label>
+        <name>CompletedBy__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreatedDate --></label>
+        <name>CreatedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days to complete event --></label>
+        <name>Days_to_complete_event__c</name>
+    </fields>
+    <fields>
+        <label><!-- EventStatus --></label>
+        <name>EventStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event --></label>
+        <name>Event__c</name>
+        <relationshipLabel><!-- EventLogs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ExpectedCompletionDate --></label>
+        <name>ExpectedCompletionDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsExpired --></label>
+        <name>IsExpired__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- EventLogs --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>EventLog Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

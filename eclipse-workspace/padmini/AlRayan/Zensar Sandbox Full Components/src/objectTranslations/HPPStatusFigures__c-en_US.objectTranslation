@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>HPP Status Figures</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>HPP Status Figures</value>
+    </caseValues>
+    <fields>
+        <label><!-- Number of Closed Opportunities --></label>
+        <name>NumberOfClosedOpportunities__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of opportunities which have at some stage had this status. --></help>
+        <label><!-- Number of Opportunities --></label>
+        <name>NumberOfOpportunities__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of opportunities which have at some stage had this status and have been closed won. --></help>
+        <label><!-- Number of Won Opportunities --></label>
+        <name>NumberOfWonOpportunities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Won Opps with Completed Date --></label>
+        <name>NumberOfWonOppsWithCompletedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Run Date --></label>
+        <name>RunDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- The status/stage. --></help>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of opportunities in Salesforce when the script was run. --></help>
+        <label><!-- Total Number of Opportunities --></label>
+        <name>TotalNumberOfOpportunities__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of days between this stage and closed won, for all opportunities which have been at this stage and have been set to closed won. --></help>
+        <label><!-- Total Status Age to Won --></label>
+        <name>TotalStatusAgeToWon__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

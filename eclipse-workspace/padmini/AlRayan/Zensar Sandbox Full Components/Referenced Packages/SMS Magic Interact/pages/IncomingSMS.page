@@ -1,0 +1,75 @@
+<apex:page standardController="smagicinteract__Incoming_SMS__c" extensions="smagicinteract.IncomingSMSController" tabStyle="smagicinteract__Incoming_SMS__c">
+
+    <apex:pageMessages /><br/>
+
+    <apex:form >
+        <apex:pageBlock title="Edit Incoming SMS" mode="edit">
+
+		<div class="pbBody"> 
+			<div class="pbSubsection">
+				<table class="detailList" border="0" >
+					<tbody>
+			
+					<apex:repeat value="{!stdincnoneditableFields}" var="f">
+					
+						<tr style="padding-bottom:20%">
+							<th class="labelCol vfLabelColTextWrap first" scope="row"> 
+								<label> {!stdincnoneditableFields[f]} </label>
+							</th>
+			
+							<td class="data2Col first">
+								<apex:outputField styleclass="outputTextClass" value="{!incomingSMSObject[f]}" />	
+							</td>	
+						</tr>
+			 		</apex:repeat>
+							
+					</tbody>
+				</table>
+			</div>
+		</div> 
+
+	<hr/>
+    
+          <apex:pageBlockSection columns="1">
+               <apex:repeat value="{!editableFields}" var="f">
+                  <apex:inputField value="{!incomingSMSObject[f]}" />
+              </apex:repeat>
+         </apex:pageBlockSection>
+		
+	<hr/>
+ 		
+		<div class="pbBody"> 
+			<div class="pbSubsection">
+				<table class="detailList" border="0" >
+					<tbody>
+			
+					<apex:repeat value="{!noneditableFields}" var="field">
+					
+						<tr style="padding-bottom:20%">
+							<th class="labelCol vfLabelColTextWrap first" scope="row"> 
+							<label> {!noneditableFields[field]} </label>
+							</th>
+				
+							<td class="data2Col first">
+								<apex:outputField styleclass="outputTextClass" value="{!incomingSMSObject[field]}" />	
+							</td>	
+						</tr>
+			 		</apex:repeat>
+							
+					</tbody>
+				</table>
+			</div>
+		</div> 
+
+ 
+  
+	  	<apex:pageBlockButtons location="bottom">
+	      <apex:commandButton title="Save" value="Save" action="{!save}"/>
+	      <apex:commandButton title="Cancel" value="Cancel" action="{!cancel}"/>
+	    </apex:pageBlockButtons>
+
+        </apex:pageBlock>
+
+    </apex:form>
+    
+</apex:page>

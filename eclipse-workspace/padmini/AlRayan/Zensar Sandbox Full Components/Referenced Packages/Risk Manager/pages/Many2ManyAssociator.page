@@ -1,0 +1,59 @@
+<!--
+/**
+* @Description The Many2ManyAssociator page provides a generic user interface for creating/deleting records that are part of a
+*              junction table.
+*              This page takes the following parameters:
+*                   - parentId : Id of the parent record [Required]
+*                   - lookupObjectName : The API Name of the lookup object [Required]
+*                   - childFieldName : The API Name of the child field on the lookup object [Required]
+*                   - parentFieldName : The API Name of the parent field on the lookup object [Required]
+*                   - filterCriteriaCollection : The class name used to provide the Filter Criteria Collection [Optional]
+*                   - filterCriteriaDefaults : The class name used to provide the Filter Criteria Defaults [Optional]
+**/
+-->
+<apex:page controller="Risk.Many2ManyAssociator" id="page">
+    <c:ProcessingStatus spinnerText="{!$Label.risk__Saving}"/>
+    <apex:form id="formM2M">
+        <apex:actionFunction name="refreshOptions" action="{!refreshChildren}" reRender="selection" />
+
+        <apex:pageBlock id="pb" title="{! IF(parentRecord != null, childObjectLabel + ' ' + $Label.Many2ManyAssociator_Title_For + ' ' + parentRecord['Name'], '') }" >            
+            <apex:pageMessages id="pageMsg"/>
+            <apex:pageMessage summary="{!$Label.risk__Many2ManyAssociator_Insufficient_Privilege_Error}" severity="Info" strength="3" rendered="{!NOT(HasCreateAccess)}" />
+
+            <apex:pageBlockSection columns="1" rendered="{!parentRecord != null}">
+
+                <apex:outputText value="{0} {1} {2} {3}">
+                    <apex:param value="{!$Label.risk__Many2ManyAssociator_Intro_p1}" />
+                    <apex:param value="{!childObjectLabel}" />
+                    <apex:param value="{!$Label.risk__Many2ManyAssociator_Intro_p2}" />
+                    <apex:param value="{!parentRecord['Name']}:" />
+                </apex:outputText>
+
+                <apex:outputText style="margin-left: 30px;" value="{0} {1}{2} {1} {3} {4} {1}{5}">
+                    <apex:param value="{!$Label.risk__Many2ManyAssociator_description_p1}" />
+                    <apex:param value="{!childObjectLabel}" />
+                    <apex:param value="{!$Label.risk__Many2ManyAssociator_description_p2}" />
+                    <apex:param value="{!$Label.risk__Many2ManyAssociator_description_p3}" />
+                    <apex:param value="{!$Label.risk__Many2ManyAssociator_description_p4}" />
+                    <apex:param value="{!$Label.risk__Many2ManyAssociator_description_p5}" />
+                </apex:outputText>
+
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection columns="1" rendered="{!parentRecord != null}">
+                <c:FilterPanel title="{!$Label.risk__Many2ManyAssociator_Filter_Available} {!childObjectLabel}" filterCriteria="{!availableChildrenFilterCriteria}" filterAction="refreshOptions();" isReadOnly="{!NOT(HasCreateAccess)}" />
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection id="pbsMultiselect" columns="1" rendered="{!parentRecord != null}">
+                <apex:outputPanel id="selection">
+                    <c:MultiselectPicklist uniqueId="selection" availableLabel="Available {!childObjectLabel}" availableOption="{!selectOptions}" selectedLabel="Selected {!childObjectLabel}" selectedOption="{!selectedOptions}" size="14" width="250px" manualSort="false" availableMessage="{!IF(hasMore, $Label.risk__Many2ManyAssociator_More_Results,'')}" isReadOnly="{!NOT(HasCreateAccess)}" />
+                </apex:outputPanel>
+            </apex:pageBlockSection>
+            <br/>
+            <center>
+                <apex:commandButton action="{!save}" value="{!$Label.risk__Many2ManyAssociator_Save}" status="processingStatus" reRender="pageMsg" rendered="{!parentRecord != null && HasCreateAccess}" />
+                <apex:commandButton action="{!cancel}" value="{!$Label.risk__Many2ManyAssociator_Cancel}" />
+            </center>
+        </apex:pageBlock>    
+    </apex:form>
+</apex:page>

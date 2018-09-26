@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email sent to branch when MAR cash withdrawal case is created</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>MAR Funds Movement</name>
+    <style>freeForm</style>
+    <subject>MAR Funds Movement Cash Withdrawal Case</subject>
+    <textOnly>A case {!Case.CaseNumber} has been received in the Premier Queue following a request from MAR regarding a cash withdrawal.
+
+Please check the case and action accordingly.</textOnly>
+    <type>html</type>
+</EmailTemplate>

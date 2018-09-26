@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>Overtime</name>
+    <style>freeForm</style>
+    <subject>New overtime return for approval</subject>
+    <textOnly>Dear {!ApprovalRequest.Process_Assignee}
+
+
+You have a new overtime return to approve. Please review the return and approve.
+
+
+Staff member: {!01ID0000000VfcV.00ND0000004de5P}
+
+Normal rate: {!01ID0000000VfcV.00ND0000004de5U} hours
+
+1.5 rate: {!01ID0000000VfcV.00ND0000004de5Z} hours
+
+2 rate: {!01ID0000000VfcV.00ND0000004de5e} hours
+
+
+{!01ID0000000VfcV.Link}</textOnly>
+    <type>html</type>
+</EmailTemplate>

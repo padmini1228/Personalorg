@@ -1,0 +1,21 @@
+You are recieving this email as a new High Withdrawal Request case has been logged.  Please see the below details regarding this case:
+
+Status: {!Case.Status}
+
+Branch to collect from: {!Case.Branch_to_collect_from__c}
+
+Amount Required:  {!Case.Approval_Required__c}
+
+Date & time funds requested for: {!Case.Date_time_funds_requested_for__c}
+
+Are funds going over seas?: {!Case.Are_funds_going_overseas__c}
+
+Country funds are going to: {!Case.Country_funds_are_going_to__c}
+
+Type of withdrawal: {!Case.Type_of_withdrawal__c}
+
+Subject: {!Case.Subject}
+
+Reason for withdrawal: {!Case.Description}
+
+Case Link: {!Case.Link}

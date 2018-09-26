@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Click to dial Mobile Phone --></help>
+        <label><!-- NVM Mobile --></label>
+        <name>NVMContactWorld__NVM_Mobile__c</name>
+    </fields>
+    <fields>
+        <help><!-- Click to dial Phone --></help>
+        <label><!-- NVM Phone --></label>
+        <name>NVMContactWorld__NVM_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity --></label>
+        <name>et4ae5__Activity__c</name>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation>Inviati</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsubscribed</masterLabel>
+            <translation>Iscrizione annullata</translation>
+        </picklistValues>
+    </fields>
+    <recordTypes>
+        <label><!-- Member --></label>
+        <name>Member</name>
+    </recordTypes>
+</CustomObjectTranslation>

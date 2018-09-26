@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>No document issued to Sols</name>
+    <style>freeForm</style>
+    <subject>HPP {!HPP_MI__c.Name}</subject>
+    <textOnly>To whom it may concern,
+
+Please investigate the below HPP MI  as an offer letter has been returned and no document has been issued to IBB sols within 5 days.
+
+{!HPP_MI__c.Link}
+
+Thanks
+
+IT Servicedesk</textOnly>
+    <type>html</type>
+</EmailTemplate>

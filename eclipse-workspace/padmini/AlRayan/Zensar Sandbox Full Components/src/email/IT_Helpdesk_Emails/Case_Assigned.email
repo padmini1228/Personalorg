@@ -1,0 +1,10 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="1" aEditID="c1r1" >
+<![CDATA[<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; font-size: 10pt;">Dear {!Case.CreatedBy}</span></p>
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; font-size: 10pt;"></span>&nbsp;</p>
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; font-size: 10pt;">Your incident, {!Case.CaseNumber} has been assigned to {!Case.OwnerFullName} for further investigation and resolution.</span></p>
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; font-size: 10pt;"></span>&nbsp;</p><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; font-size: 10pt;">
+<p><span style="color: black; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><a href="https://eu1.salesforce.com/" target="_BLANK����"><span style="color: black;"><font size="3"></font></span></a><font size="3">{!Case.Link}</font></span><font size="3"><u><font color="#800080"></font></u></font></p></span><p></p>]]></td>
+</tr>
+</table>

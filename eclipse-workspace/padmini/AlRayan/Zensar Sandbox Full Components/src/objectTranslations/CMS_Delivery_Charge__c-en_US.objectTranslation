@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CMS Delivery Charge</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CMS Delivery Charge</value>
+    </caseValues>
+    <fields>
+        <label><!-- Cash Order Amount Charge Value --></label>
+        <name>Cash_Order_Amount_Charge_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash Order Amount Range --></label>
+        <name>Cash_Order_Amount_Range__c</name>
+    </fields>
+    <fields>
+        <help><!-- per coin amount ordered --></help>
+        <label><!-- Coin Bag Charge --></label>
+        <name>Coin_Bag_Charge__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collection Amount Charge Value --></label>
+        <name>Collection_Amount_Charge_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collection Amount To Range --></label>
+        <name>Collection_Amount_To_Range__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

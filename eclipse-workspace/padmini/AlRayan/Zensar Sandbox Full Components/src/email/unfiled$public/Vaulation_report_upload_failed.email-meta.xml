@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_letterhead</letterhead>
+    <name>Vaulation report upload failed</name>
+    <style>freeForm</style>
+    <subject>Valuation report upload failed for {!Valuation_Notification__c.Opportunity_Name__c}</subject>
+    <textOnly>The pdf valuation report has failed to attach for {!Valuation_Notification__c.Opportunity_Name__c}.
+
+Please retrieve the report from the Surventrix portal.</textOnly>
+    <type>html</type>
+</EmailTemplate>

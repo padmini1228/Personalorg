@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Additional Funds Secured</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Additional Funds Secured</value>
+    </caseValues>
+    <fields>
+        <label><!-- Amount secured --></label>
+        <name>Amount_secured__c</name>
+    </fields>
+    <fields>
+        <label><!-- Balance on account --></label>
+        <name>Balance_on_account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of deposit --></label>
+        <name>Date_of_deposit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Existing money --></label>
+        <name>Existing_money__c</name>
+    </fields>
+    <fields>
+        <label><!-- New money --></label>
+        <name>New_money__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Additional Funds Secured --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Funds Owner --></label>
+        <name>Owner__c</name>
+        <relationshipLabel><!-- Additional Funds Secured (Additional Funds Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Owner branch --></label>
+        <name>Owner_branch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Funds Seller --></label>
+        <name>Seller__c</name>
+        <relationshipLabel><!-- Additional Funds Secured (Additional Funds Seller) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Awaiting funds</masterLabel>
+            <translation><!-- Awaiting funds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed won</masterLabel>
+            <translation><!-- Closed won --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Additional Funds Secured Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

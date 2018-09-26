@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Customer Account</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Customer Accounts</value>
+    </caseValues>
+    <fields>
+        <label><!-- Absolute balance --></label>
+        <name>Absolute_balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Blocked --></label>
+        <name>Account_Blocked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Closed --></label>
+        <name>Account_Closed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Conduct --></label>
+        <name>Account_Conduct__c</name>
+        <picklistValues>
+            <masterLabel>Acceptable</masterLabel>
+            <translation><!-- Acceptable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not acceptable</masterLabel>
+            <translation><!-- Not acceptable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account Currency --></label>
+        <name>Account_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Inactive --></label>
+        <name>Account_Inactive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Is Joint --></label>
+        <name>Account_Is_Joint__c</name>
+        <picklistValues>
+            <masterLabel>NO</masterLabel>
+            <translation><!-- NO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YES</masterLabel>
+            <translation><!-- YES --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account Number Dashes --></label>
+        <name>Account_Number_Dashes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Status --></label>
+        <name>Account_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Suffix --></label>
+        <name>Account_Suffix__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Type --></label>
+        <name>Account_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Available Balance --></label>
+        <name>Available_Balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch --></label>
+        <name>Branch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch code --></label>
+        <name>Branch_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch name --></label>
+        <name>Branch_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Chequebook Required --></label>
+        <name>Chequebook_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cleared Balance --></label>
+        <name>Cleared_Balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collections Log --></label>
+        <name>Collections_Log__c</name>
+    </fields>
+    <fields>
+        <label><!-- Conga Overdrawn Letter TEST --></label>
+        <name>Conga_Overdrawn_Letter_TEST__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created in EBS --></label>
+        <name>Created_in_EBS__c</name>
+    </fields>
+    <fields>
+        <label><!-- CurrentRate --></label>
+        <name>CurrentRate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date entered collections --></label>
+        <name>Date_entered_collections__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Last Transaction --></label>
+        <name>Date_of_Last_Transaction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Direct Debit Bank Account --></label>
+        <name>Direct_Debit_Bank_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Direct Debit Sort Code --></label>
+        <name>Direct_Debit_Sort_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- EBS Customer number --></label>
+        <name>EBS_Customer_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- EBS Deal Account Type --></label>
+        <name>EBS_Deal_Account_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- EBS ID --></label>
+        <name>EBS_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Account Number Search --></label>
+        <name>External_Account_Number_Search__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Account Number --></label>
+        <name>External_Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- IBB Product Name --></label>
+        <name>IBB_Product_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- IBB Product --></label>
+        <name>IBB_Product__c</name>
+        <relationshipLabel><!-- Customer Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- IsLinkedToOpp --></label>
+        <name>IsLinkedToOpp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ledger Balance --></label>
+        <name>Ledger_Balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maturity Date --></label>
+        <name>Maturity_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Repayment --></label>
+        <name>Monthly_Repayment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Repayment date --></label>
+        <name>Next_Repayment_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of months in arrears --></label>
+        <name>NoOfMonthsInArrears__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Primary account holders --></label>
+        <name>No_Primary_account_holders__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of account holders --></label>
+        <name>Number_of_account_holders__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is open account --></label>
+        <name>Open_account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Customer Accounts (Opportunity) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pool --></label>
+        <name>Pool__c</name>
+        <picklistValues>
+            <masterLabel>Never Use</masterLabel>
+            <translation><!-- Never Use --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pool A</masterLabel>
+            <translation><!-- Pool A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pool X</masterLabel>
+            <translation><!-- Pool X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redeemed</masterLabel>
+            <translation><!-- Redeemed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pool entry date --></label>
+        <name>Pool_entry_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Month&apos;s Balance --></label>
+        <name>Previous_Month_s_Balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Customer Default Branch --></label>
+        <name>Primary_Customer_Default_Branch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Customer EBS ID --></label>
+        <name>Primary_Customer_EBS_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary SFDC Account --></label>
+        <name>Primary_SFDC_Account__c</name>
+        <relationshipLabel><!-- Customer Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reference --></label>
+        <name>Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Opportunity --></label>
+        <name>Related_Opportunity__c</name>
+        <relationshipLabel><!-- Customer Accounts (Related Opportunity) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- RepAccountType --></label>
+        <name>RepAccountType__c</name>
+    </fields>
+    <fields>
+        <label><!-- RepDealAccountType --></label>
+        <name>RepDealAccountType__c</name>
+    </fields>
+    <fields>
+        <help><!-- Collections agent to manually enter the agreed repayment due date --></help>
+        <label><!-- Repayment due date --></label>
+        <name>Repayment_due_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reserved Balance --></label>
+        <name>Reserved_Balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Seller1 --></label>
+        <name>Seller1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Seller --></label>
+        <name>Seller__c</name>
+        <picklistValues>
+            <masterLabel>External User</masterLabel>
+            <translation><!-- External User --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Shadow Credit --></label>
+        <name>Shadow_Credit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shadow Debit --></label>
+        <name>Shadow_Debit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Single Payment Amount --></label>
+        <name>Single_Payment_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Balance --></label>
+        <name>Status_Balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Code Description --></label>
+        <name>Status_Code_Description__c</name>
+        <picklistValues>
+            <masterLabel>Being worked by IBB Collections internally</masterLabel>
+            <translation><!-- Being worked by IBB Collections internally --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customers who are making payments to cover NMR and clear arrears</masterLabel>
+            <translation><!-- Customers who are making payments to cover NMR and clear arrears --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IVA and need to know if a dividend will be paid.</masterLabel>
+            <translation><!-- IVA and need to know if a dividend will be paid. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment plans</masterLabel>
+            <translation><!-- Payment plans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Promise to pay</masterLabel>
+            <translation><!-- Promise to pay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready to submit for write-off</masterLabel>
+            <translation><!-- Ready to submit for write-off --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Undergoing litigation with Drydens solicitors.</masterLabel>
+            <translation><!-- Undergoing litigation with Drydens solicitors. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voluntary charge secured on debtor&apos;s property</masterLabel>
+            <translation><!-- Voluntary charge secured on debtor&apos;s property --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for payment to clear</masterLabel>
+            <translation><!-- Waiting for payment to clear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for submission to DCA</masterLabel>
+            <translation><!-- Waiting for submission to DCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>With external agents (CRS) undergoing debt collection activity</masterLabel>
+            <translation><!-- With external agents (CRS) undergoing debt collection activity --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>-1</masterLabel>
+            <translation><!-- -1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>-2</masterLabel>
+            <translation><!-- -2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>-3</masterLabel>
+            <translation><!-- -3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>-4</masterLabel>
+            <translation><!-- -4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>-5</masterLabel>
+            <translation><!-- -5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sum of balance in arrears --></label>
+        <name>SumOfBalanceInArrears__c</name>
+    </fields>
+    <layouts>
+        <layout>Account with IBB Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CPF and Premier</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Collections</layout>
+        <sections>
+            <label><!-- Collections Details --></label>
+            <section>Collections Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Customer Account Admin Only</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Mandate approvers</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Restricted External Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+    <webLinks>
+        <label><!-- Collections_Letters_DocuGen --></label>
+        <name>Collections_Letters_DocuGen</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- DSX_Record --></label>
+        <name>DSX_Record</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Engage --></label>
+        <name>Engage</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Transaction_History --></label>
+        <name>Transaction_History</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Unable_To_Contact_Customer_Letter_DocuGen --></label>
+        <name>Unable_To_Contact_Customer_Letter_DocuGen</name>
+    </webLinks>
+</CustomObjectTranslation>

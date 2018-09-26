@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>IT Component Specification</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>IT Component Specifications</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset Type --></label>
+        <name>Asset_Type__c</name>
+        <picklistValues>
+            <masterLabel>Desktop</masterLabel>
+            <translation><!-- Desktop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Laptop</masterLabel>
+            <translation><!-- Laptop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monitor</masterLabel>
+            <translation><!-- Monitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Printer</masterLabel>
+            <translation><!-- Printer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tablet</masterLabel>
+            <translation><!-- Tablet --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Bluetooth --></label>
+        <name>Bluetooth__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Brand --></label>
+        <name>Brand__c</name>
+        <picklistValues>
+            <masterLabel>Acer</masterLabel>
+            <translation><!-- Acer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Apple</masterLabel>
+            <translation><!-- Apple --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asus</masterLabel>
+            <translation><!-- Asus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brother</masterLabel>
+            <translation><!-- Brother --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canon</masterLabel>
+            <translation><!-- Canon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dell</masterLabel>
+            <translation><!-- Dell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Epson</masterLabel>
+            <translation><!-- Epson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gateway</masterLabel>
+            <translation><!-- Gateway --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HP</masterLabel>
+            <translation><!-- HP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hewlett-Packard</masterLabel>
+            <translation><!-- Hewlett-Packard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Konica Minolta</masterLabel>
+            <translation><!-- Konica Minolta --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kyocera</masterLabel>
+            <translation><!-- Kyocera --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LG</masterLabel>
+            <translation><!-- LG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lenovo</masterLabel>
+            <translation><!-- Lenovo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lexmark</masterLabel>
+            <translation><!-- Lexmark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OKI</masterLabel>
+            <translation><!-- OKI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Olivetti</masterLabel>
+            <translation><!-- Olivetti --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Packard Bell</masterLabel>
+            <translation><!-- Packard Bell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ricoh</masterLabel>
+            <translation><!-- Ricoh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Samsung</masterLabel>
+            <translation><!-- Samsung --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Samsung Electronics</masterLabel>
+            <translation><!-- Samsung Electronics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TVS Electronics</masterLabel>
+            <translation><!-- TVS Electronics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Xerox</masterLabel>
+            <translation><!-- Xerox --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Graphic --></label>
+        <name>Graphic__c</name>
+    </fields>
+    <fields>
+        <label><!-- IT Component --></label>
+        <name>IT_Component__c</name>
+        <relationshipLabel><!-- IT Component Specifications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Keyboard --></label>
+        <name>Keyboard__c</name>
+        <picklistValues>
+            <masterLabel>Included</masterLabel>
+            <translation><!-- Included --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Included</masterLabel>
+            <translation><!-- Not Included --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Mouse --></label>
+        <name>Mouse__c</name>
+        <picklistValues>
+            <masterLabel>Included</masterLabel>
+            <translation><!-- Included --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Included</masterLabel>
+            <translation><!-- Not Included --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Office --></label>
+        <name>Office__c</name>
+        <picklistValues>
+            <masterLabel>2003</masterLabel>
+            <translation><!-- 2003 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2007</masterLabel>
+            <translation><!-- 2007 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2010</masterLabel>
+            <translation><!-- 2010 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2013</masterLabel>
+            <translation><!-- 2013 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2013 RT</masterLabel>
+            <translation><!-- 2013 RT --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Operating System --></label>
+        <name>Operating_System__c</name>
+        <picklistValues>
+            <masterLabel>Windows 7</masterLabel>
+            <translation><!-- Windows 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Windows 8</masterLabel>
+            <translation><!-- Windows 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Windows 8.1</masterLabel>
+            <translation><!-- Windows 8.1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Windows Vista</masterLabel>
+            <translation><!-- Windows Vista --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Windows XP</masterLabel>
+            <translation><!-- Windows XP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Windows XP Professional x64</masterLabel>
+            <translation><!-- Windows XP Professional x64 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Processor --></label>
+        <name>Processor__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identify the Product Make and Model --></help>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ram --></label>
+        <name>Ram__c</name>
+    </fields>
+    <fields>
+        <label><!-- Screen Size --></label>
+        <name>Screen__c</name>
+        <picklistValues>
+            <masterLabel>14 Inches</masterLabel>
+            <translation><!-- 14 Inches --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15 Inches</masterLabel>
+            <translation><!-- 15 Inches --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20 Inches</masterLabel>
+            <translation><!-- 20 Inches --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>22 Inches</masterLabel>
+            <translation><!-- 22 Inches --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Storage --></label>
+        <name>Storage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Touchscreen --></label>
+        <name>Touchscreen__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If no update cycle can be identified, use value 0 --></help>
+        <label><!-- Update Cycle (Years) --></label>
+        <name>Update_Cycle_Years__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Laptop/Desktop</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label><!-- Type --></label>
+            <section>Type</section>
+        </sections>
+        <sections>
+            <label><!-- Update --></label>
+            <section>Update</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Monitor</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label><!-- Type --></label>
+            <section>Type</section>
+        </sections>
+        <sections>
+            <label><!-- Update --></label>
+            <section>Update</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Phones</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Printer</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Laptop/Desktop --></label>
+        <name>Laptop_Desktop</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Monitor --></label>
+        <name>Monitor</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Phone --></label>
+        <name>Phone</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Printer --></label>
+        <name>Printer</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

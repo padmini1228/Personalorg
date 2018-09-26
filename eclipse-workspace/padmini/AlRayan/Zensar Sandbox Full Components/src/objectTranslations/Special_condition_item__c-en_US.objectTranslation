@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Special condition item</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Special condition items</value>
+    </caseValues>
+    <fields>
+        <label><!-- Accepted By --></label>
+        <name>Accepted_By__c</name>
+        <relationshipLabel><!-- Special condition items (Accepted By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Accepted Date --></label>
+        <name>Accepted_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accepted --></label>
+        <name>Accepted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Added By --></label>
+        <name>Added_By__c</name>
+        <relationshipLabel><!-- Special condition items (Added By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Chase condition by --></label>
+        <name>Chase_condition_by__c</name>
+    </fields>
+    <fields>
+        <label><!-- Chase within months --></label>
+        <name>Chase_within_months__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11</masterLabel>
+            <translation><!-- 11 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12</masterLabel>
+            <translation><!-- 12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Chase within months number --></label>
+        <name>Chase_within_months_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Condition Conga HTML --></label>
+        <name>Condition_Conga_HTML__c</name>
+    </fields>
+    <fields>
+        <label><!-- Condition Data --></label>
+        <name>Condition_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Condition HTML --></label>
+        <name>Condition_HTML__c</name>
+    </fields>
+    <fields>
+        <label><!-- Condition Letter --></label>
+        <name>Condition_Letter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Allowed --></label>
+        <name>Credit_Allowed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Special condition items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Post_Completion --></label>
+        <name>Post_Completion__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre or Post --></label>
+        <name>Pre_or_Post__c</name>
+        <picklistValues>
+            <masterLabel>Post</masterLabel>
+            <translation><!-- Post --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre</masterLabel>
+            <translation><!-- Pre --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reet Allowed --></label>
+        <name>Reet_Allowed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ref --></label>
+        <name>Ref__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Condition Data --></label>
+        <name>Special_Condition_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Condition Text --></label>
+        <name>Special_Condition_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Condition --></label>
+        <name>Special_Condition__c</name>
+        <relationshipLabel><!-- Special condition items --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Special condition item Layout</layout>
+        <sections>
+            <label><!-- Approval --></label>
+            <section>Approval</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Special Condition Text --></label>
+            <section>Special Condition Text</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

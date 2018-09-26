@@ -1,0 +1,3 @@
+The case {!Case.CaseNumber} was opened on {!Case.CreatedDate} and the customer has not been sent an initial letter.  The case has now passed two days please issue the customer an initial letter.
+
+{!Case.Link}

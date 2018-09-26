@@ -1,0 +1,117 @@
+<apex:page controller="Risk.PROCViewDetailsController" tabstyle="grc__Process__c" >
+    <script>
+        function showDiv(){
+            document.getElementById('messages').innerHTML = 'Please wait - loading data';
+        }
+        function hideDiv(){
+            document.getElementById('messages').innerHTML = '';
+        }
+    </script>
+
+	<apex:sectionHeader title="Process Control Details"/>
+
+    <div id="messages" style="color: #ff0000; font-weight: bold"/>
+  <apex:form >
+  <apex:actionStatus id="showData" onstart="showDiv();" onstop="hideDiv();"/>
+  <apex:outputPanel rendered="{!ProcessID != ''}">
+      <div class="ptBreadcrumb">&nbsp;&#171;&nbsp;<a href="/{!ProcessID}">Back to Process</a></div><br/>
+  </apex:outputPanel>
+
+<apex:pageBlock title="1. Choose Business Unit">
+
+    <apex:outputPanel >
+    <apex:selectList value="{!BusinessUnitID}" size="1" required="true" >
+        <apex:actionSupport event="onchange" action="{!populateProcesses}" rerender="pnlProcesses, pnlData" status="showData"/>
+
+        <apex:selectOption itemValue="" itemLabel="Please choose..." />
+        <apex:selectOptions value="{!BusinessUnitSelectOptions}"></apex:selectOptions>
+    </apex:selectList>
+
+    </apex:outputPanel>
+</apex:pageBlock>
+
+<br/>
+<br/>
+
+
+<!--<apex:outputPanel id="pnlProcesses" >-->
+    <apex:PageBlock title="2. Choose Process" id="pnlProcesses">
+        <apex:outputPanel >
+        <apex:selectList value="{!ProcessID}" size="1" disabled="">
+            <apex:actionSupport event="onchange" action="{!showProcessDetails}" rerender="pnlData" status="showData" />
+
+        <apex:selectOption itemValue="" itemLabel="Please choose..."/>
+      <apex:selectOptions value="{!ProcessesSelectOptions}"></apex:selectOptions>
+    </apex:selectList>
+    </apex:outputPanel>
+    </apex:pageBlock>
+<!--</apex:outputPanel>-->
+  <br/>
+ <br/>
+
+<apex:outputPanel id="pnlData">
+
+
+
+<apex:pageBlock rendered="{!ProcessID <> '' && RowCount == 0}">
+    No controls have been defined as being used in this process.
+</apex:pageBlock>
+<apex:pageBlock rendered="{!ProcessID <> '' && RowCount > 0}">
+
+<div class="pbBody">
+    <table  class="list">
+    <tr class="headerRow">
+        <th style="width:300px">Controls</th>
+    <apex:repeat value="{!processSteps}" var="step">
+            <th class="" style="text-align: center; width:50px">
+                {!step.name}
+            </th>
+    </apex:repeat>
+    <th style="width:%"></th>
+    </tr>
+    <apex:repeat value="{!rows}" var="row">
+        <tr class="dataRow even first">
+        <th scope="row" class="dataCell">
+            {!row.control.name}
+        </th>
+            <apex:repeat value="{!row.cells}" var="cell">
+                <td class="dataCell" style="text-align: center">
+                    {!cell.countAsString}
+                </td>
+            </apex:repeat>
+        </tr>
+    </apex:repeat>
+        <tr class="headerRow">
+            <th style="text-align: right;">SUMMARY</th>
+        </tr>
+        <apex:repeat value="{!SummaryRows}" var="row">
+        <tr>
+            <td style="text-align: right">
+            {!row.objective}
+            </td>
+            <apex:repeat value="{!row.cells}" var="cell">
+                <td class="dataCell" style="text-align: center">
+                    {!cell.countAsString}
+                </td>
+            </apex:repeat>
+        </tr>
+        </apex:repeat>
+    </table>
+    <br/>
+    <br/>
+    <apex:datatable value="{!ControlsInProcess}" var="control" styleclass="list" style="width: 450px">
+    <apex:column >
+        <apex:facet name="header">Control name</apex:facet>
+        {!control.name}
+    </apex:column>
+    <apex:column >
+        <apex:facet name="header">Objectives</apex:facet>
+        {!Substitute(control.Risk__Objectives__c,';',',')}
+    </apex:column>
+</apex:datatable>
+    </div>
+  </apex:pageBlock>
+</apex:outputPanel>
+
+</apex:form>
+</apex:page>

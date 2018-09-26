@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Valuation Report</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Valuation Reports</value>
+    </caseValues>
+    <fields>
+        <label><!-- Building reinstatement value --></label>
+        <name>Building_reinstatement_value__c</name>
+    </fields>
+    <fields>
+        <label><!-- CaseReference --></label>
+        <name>CaseReference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Inspection --></label>
+        <name>Date_of_Inspection__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Instruction --></label>
+        <name>Date_of_Instruction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Report --></label>
+        <name>Date_of_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days between creation and valuation --></label>
+        <name>Days_between_creation_and_valuation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days until valuation report expires --></label>
+        <name>Days_until_valuation_report_expires__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fair Market Rental (pcm) --></label>
+        <name>Fair_Market_Rental_pcm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Floor Number --></label>
+        <name>Floor_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Garage --></label>
+        <name>Garage__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Ground Rent P.A --></help>
+        <label><!-- Ground Rent --></label>
+        <name>Ground_Rent__c</name>
+    </fields>
+    <fields>
+        <label><!-- How Many Parking Spaces --></label>
+        <name>How_Many_Parking_Spaces__c</name>
+    </fields>
+    <fields>
+        <label><!-- LenderReference --></label>
+        <name>LenderReference__c</name>
+    </fields>
+    <fields>
+        <help><!-- Market Value (after essential repairs, or on completion for new properties) --></help>
+        <label><!-- Market Value After Repairs/Completion --></label>
+        <name>Market_Value_After_Repairs_Completion__c</name>
+    </fields>
+    <fields>
+        <label><!-- Market Value Present Condition --></label>
+        <name>Market_Value_Present_Condition__c</name>
+    </fields>
+    <fields>
+        <label><!-- New property street --></label>
+        <name>New_property_street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Bedrooms --></label>
+        <name>Number_of_Bedrooms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Floors --></label>
+        <name>Number_of_Floors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Valuation Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parking --></label>
+        <name>Parking__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Property Location Type --></label>
+        <name>Property_Location_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Postcode --></label>
+        <name>Property_Postcode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Tenure --></label>
+        <name>Property_Tenure__c</name>
+        <picklistValues>
+            <masterLabel>Freehold</masterLabel>
+            <translation><!-- Freehold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leasehold</masterLabel>
+            <translation><!-- Leasehold --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Property Type --></label>
+        <name>Property_Type__c</name>
+        <picklistValues>
+            <masterLabel>Bungalow</masterLabel>
+            <translation><!-- Bungalow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Detached</masterLabel>
+            <translation><!-- Detached --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>End Terrace</masterLabel>
+            <translation><!-- End Terrace --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flat</masterLabel>
+            <translation><!-- Flat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>House</masterLabel>
+            <translation><!-- House --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maisonette</masterLabel>
+            <translation><!-- Maisonette --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mid Terrace</masterLabel>
+            <translation><!-- Mid Terrace --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Semi-detached</masterLabel>
+            <translation><!-- Semi-detached --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- How would you rate the market demand for the property in it&apos;s current condition? --></help>
+        <label><!-- Rate Market Demand for Property --></label>
+        <name>Rate_Market_Demand_for_Property__c</name>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation><!-- Good --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor</masterLabel>
+            <translation><!-- Poor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reasonable</masterLabel>
+            <translation><!-- Reasonable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ReportStatus --></label>
+        <name>ReportStatus__c</name>
+        <picklistValues>
+            <masterLabel>InstructionCreated</masterLabel>
+            <translation><!-- InstructionCreated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>InstructionInProgress</masterLabel>
+            <translation><!-- InstructionInProgress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ReportReceived</masterLabel>
+            <translation><!-- ReportReceived --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Report expiry date --></label>
+        <name>Report_expiry_date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the property being used solely as a residential dwelling? --></help>
+        <label><!-- Residential Dwelling --></label>
+        <name>Residential_Dwelling__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Roof --></label>
+        <name>Roof__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service/Maintenance Charges --></label>
+        <name>Service_Maintenance_Charges__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Confirmation of instruction from Fast Surveyors received</masterLabel>
+            <translation><!-- Confirmation of instruction from Fast Surveyors received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Instruction Sent to Fast Surveyors</masterLabel>
+            <translation><!-- Instruction Sent to Fast Surveyors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>error</masterLabel>
+            <translation><!-- error --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Surveyor Firm --></label>
+        <name>Surveyor_Firm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unexpired Term --></label>
+        <name>Unexpired_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Walls --></label>
+        <name>Walls__c</name>
+    </fields>
+    <fields>
+        <label><!-- 90-day (Restricted Value) --></label>
+        <name>X90_day_Restricted_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year Built --></label>
+        <name>Year_Built__c</name>
+    </fields>
+    <layouts>
+        <layout>Valuation Report Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Valuation General Information --></label>
+            <section>Valuation General Information</section>
+        </sections>
+        <sections>
+            <label><!-- Valuation Property Information --></label>
+            <section>Valuation Property Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <workflowTasks>
+        <name>Email_sent_for_Valuation_report</name>
+        <subject><!-- Email sent for Valuation report --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

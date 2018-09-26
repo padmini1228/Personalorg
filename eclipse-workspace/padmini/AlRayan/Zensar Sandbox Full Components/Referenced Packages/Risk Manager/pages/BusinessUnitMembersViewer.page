@@ -1,0 +1,56 @@
+<apex:page controller="Risk.BusinessUnitMembersViewer" standardStylesheets="true" showHeader="{! !renderAsExcel}" sidebar="false" cache="{!renderAsExcel}" contentType="{!IF(renderAsExcel, 'application/vnd.ms-excel#'+filename+'.xls;charset=UTF-8', 'text/html')}">
+
+	<!-- Output to screen using Group paginator component -->
+    <apex:outputPanel rendered="{!!renderAsExcel}">
+        <apex:stylesheet value="{!URLFOR($Resource.Risk__UsersOnBUStyles)}"/>
+        <apex:form >
+        	<div class="bPageTitle">
+        		<div class="ptBody">
+        			<div class="content">
+        				<h1 class="noSecondHeader">{!$ObjectType[childSObjectType].labelPlural} {!$Label.risk__ByLabel} {!$ObjectType[parentSObjectType].label}</h1>
+         			</div>
+        		</div>
+        	</div>
+        	<!-- Group paginator --> 
+            <c:GroupPaginator id="PaginatorList" groupRecords="{!groupRecords}" parentFieldAPINames="{!parentFieldList}" childFieldAPINames="{!childFieldList}" recPerPage="{!recPerPage}" currentPage="{!currentPage}" >
+            	<!-- Anything placed within the GroupPaginator component will be displayed within component body section of the component -->
+                <apex:actionRegion >
+                    <apex:commandButton id="exportToExcel" value="{!$Label.risk__ExportToExcelLabel}" action="{!returnExcelPage}" html-target="_parent"/>
+                </apex:actionRegion>
+                <div style="float: right; margin: 5px;">
+                    <!-- Alphabet selection -->
+                    <c:AtoZSelector alphaFilter="{!alphaFilter}" rerenderTarget="{!$Component.PaginatorList}"/>
+                </div>
+            </c:GroupPaginator>
+        </apex:form>
+    </apex:outputPanel>
+
+    <!-- Output to Excel Section -->
+    <apex:dataTable id="recordBlock" value="{!groupRecords}" var="group" rendered="{!renderAsExcel}">
+        <apex:repeat value="{!parentFieldList}" var="parentFieldAPIName">
+        	<apex:column >
+        		<apex:facet name="header">{!$ObjectType[parentSobjectType].fields[parentFieldAPIName].Label}</apex:facet>
+        		<apex:outputText value="{!group.parent[parentFieldAPIName]}"  rendered="{!(displayNameAsLinks == false) || (displayNameAsLinks == true && LOWER(parentFieldAPIName) != 'name') && LOWER(parentFieldAPIName) != 'profileid'}"/>
+
+        		<apex:outputLink value="/{!URLFOR(group.parent['ProfileId'])}" rendered="{! LOWER(parentFieldAPIName) == 'profileid' }">
+        			<apex:outputText value="{!group.parent['Profile.Name']}"/>
+        		</apex:outputLink>
+
+                <apex:outputLink value="/{!URLFOR(group.parent.id)}" rendered="{!(displayNameAsLinks == true && LOWER(parentFieldAPIName) == 'name')}">{!group.parent[parentFieldAPIName]}</apex:outputLink> 
+        	</apex:column>
+        </apex:repeat>
+        <apex:repeat value="{!childFieldList}" var="childFieldAPIName">
+        	<apex:column >
+        		<apex:facet name="header">{!$ObjectType[childSobjectType].fields[childFieldAPIName].Label}</apex:facet>
+        		<apex:outputText value="{!group.child[childFieldAPIName]}" rendered="{!(displayNameAsLinks == false) || (displayNameAsLinks == true && LOWER(childFieldAPIName) != 'name') && LOWER(childFieldAPIName) != 'profileid' }"/>
+
+        		<apex:outputLink value="/{!URLFOR(group.child['ProfileId'])}" rendered="{! LOWER(childFieldAPIName) == 'profileid' }">
+        			<apex:outputText value="{!group.child['Profile.Name']}"/>
+        		</apex:outputLink>
+
+                <apex:outputLink value="/{!URLFOR(group.child.id)}" rendered="{!(displayNameAsLinks == true && LOWER(childFieldAPIName) == 'name')}">{!group.child[childFieldAPIName]}</apex:outputLink> 
+        	</apex:column>
+        </apex:repeat>    	                       
+	</apex:dataTable>
+
+</apex:page>

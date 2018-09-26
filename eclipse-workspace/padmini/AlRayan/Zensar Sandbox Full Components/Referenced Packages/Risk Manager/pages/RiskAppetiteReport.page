@@ -1,0 +1,59 @@
+<apex:page controller="Risk.RiskReport" showHeader="false" sidebar="false" standardStylesheets="false" renderAs="pdf">
+
+<head>
+	<apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'RiskReportStylesheet.css')}"/>
+</head>
+
+	<apex:pagemessages />
+
+	<apex:repeat value="{!riskBusinessUnits}" var="riskBU">
+
+		<h1 class="header">Risk Appetite Report - {!reportType} <br/> {!riskBU.Name} <br/> <apex:outputText value="{0, date,dd MMMM yyyy}"><apex:param value="{!today()}"/></apex:outputText>
+		<br/>
+		<apex:outputText value="Categories: " rendered="{!Categories.size > 1}"/>
+		      <apex:outputText value="Category: " rendered="{!Categories.size == 1}"/>
+		      <apex:outputText value="{!chosenCategories}" rendered="{!!(LEFT(chosenCategories,3) =='all')}"/>
+		      <apex:outputText value="ALL" rendered="{!(LEFT(chosenCategories,3) =='all')}"/>
+
+		</h1>
+
+		<table class="riskTable" cellpadding="0" cellspacing="0">
+		    <thead>
+		        <tr>
+		            <th style="width: 45px; text-align:center;">Risk No.</th>
+		            <th style="width: 200px;">{!$ObjectType.grc__Risk__c.fields.grc__Category__c.Label}</th>
+		            <th style="width: 470px;">{!$ObjectType.grc__Risk__c.fields.grc__Description__c.Label}</th>
+		            <th style="width: 100px; text-align:center;">{!$ObjectType.grc__Risk__c.fields.Residual_Rating__c.Label}</th>
+		            <th style="width: 100px; text-align:center;">{!$ObjectType.grc__Risk__c.fields.Target_Rating__c.Label}</th>
+		            <th style="width: 470px;">{!$ObjectType.grc__Risk__c.fields.grc__Risk_Appetite_Statement__c.Label}</th>
+		        </tr>
+		    </thead>
+		    <tbody>
+
+			<!-- 	<tr style="background-color: #ffff99; font-size:12pt; font-weight:bold;"><td colspan="13"> {!riskBU.Name}</td></tr>-->
+				<apex:repeat value="{!riskBU.riskCategories}" var="riskCat">
+				    <apex:repeat value="{!riskCat.riskItems}" var="riskItem">
+				        <tr>
+					        <td style="text-align:center"><apex:outputText value="{!riskItem.therisk.grc__Risk_Name__c}"/></td>
+					        <td><apex:outputText value="{!riskItem.therisk.grc__Category__c}"/></td>
+					        <td>
+					        	<b><apex:outputField value="{!riskItem.therisk.Name}"/></b><br/>
+					        	<apex:outputField value="{!riskItem.therisk.grc__Description__c}"/>
+					        </td>
+					        <td><apex:outputField value="{!riskItem.therisk.Risk__Residual_Rating__c}" /></td>
+					        <td><apex:outputField value="{!riskItem.therisk.Risk__Target_Rating__c}" /></td>
+					        <td><apex:outputField value="{!riskItem.therisk.grc__Risk_Appetite_Statement__c}" /></td>
+				        </tr>
+				    </apex:repeat>
+			    </apex:repeat>
+
+		   </tbody>
+		</table>
+		<apex:outputPanel rendered="{! riskBU != LastRiskBusinessUnit}" >
+			<div style="page-break-before:always;"></div>
+		</apex:outputPanel>
+	</apex:repeat>
+
+
+
+</apex:page>

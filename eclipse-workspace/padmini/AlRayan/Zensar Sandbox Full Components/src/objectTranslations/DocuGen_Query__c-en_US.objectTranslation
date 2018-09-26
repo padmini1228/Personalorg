@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>DocuGen Query</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>DocuGen Queries</value>
+    </caseValues>
+    <fields>
+        <label><!-- Old Id --></label>
+        <name>Old_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Query Name --></label>
+        <name>Query_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Query Soql --></label>
+        <name>Query_Soql__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

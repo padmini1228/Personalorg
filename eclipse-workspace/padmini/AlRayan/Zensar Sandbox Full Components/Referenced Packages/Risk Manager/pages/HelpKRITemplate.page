@@ -1,0 +1,32 @@
+<apex:page sideBar="false" showHeader="false">
+
+<head>
+    <apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'HelpPageStylesheet.css')}"/>
+</head>
+
+<div class="heading">
+<div class="icon">&nbsp;</div>
+    <h2>Help Pages</h2>
+    <h1>KRI Templates</h1>
+</div>
+
+<div class="content">
+<p>KRI Templates are used to capture libraries of reusable KRIs, which can be generated automatically from a template. KRI Templates are linked to Risk Template, thus enabling generated KRIs to be linked with Risks from their associated Risk Template.</p>
+
+<p>To create a KRI Template, enter a name and description for the template. </p>
+<p>Next, select the Value Type and Monitoring Period for the KRI Template.</p>
+<p>Then enter the thresholds that apply to the KRI Template, including the Threshold Type (i.e. whether the thresholds are Upper or Lower thresholds.</p>
+<p>Click Save.</p>
+<p>You can then link the KRI Template to one or more Risk Templates by clicking on the Link to Risk Templates button on the record.</p>
+
+<br/>
+<br/>
+<br/>
+
+<h3 >Contact Details</h3>
+
+<p>
+For further support information, please contact your local administrator.</p>
+<div class="clear"></div>
+</div>
+</apex:page>

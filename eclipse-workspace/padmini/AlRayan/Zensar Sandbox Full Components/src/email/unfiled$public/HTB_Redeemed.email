@@ -1,0 +1,23 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="1" aEditID="c1r1" >
+<![CDATA[<font face="Arial, sans-serif">Opportunity Name:&nbsp;{!Opportunity.Name}</font><div><font face="Arial, sans-serif"><br></font><div><font face="Arial, sans-serif">UKAR XML File Reference:&nbsp;{!Opportunity.UKAR_Ref_Help_to_Buy__c}</font></div></div><div><font face="Arial, sans-serif"><br></font></div><div><font face="Arial, sans-serif">Date redeemed:&nbsp;{!HPP_extended_opportunity__c.Date_Redeemed__c}</font></div><div><font face="Arial, sans-serif"><br></font></div><div><font face="Arial, sans-serif">Please follow the steps below:</font></div><div style="font-size: 12pt;"><br></div><div>
+
+<p class="MsoNormal"><span style="line-height: 107%; font-family: Arial, sans-serif;">For cases which have been redeemed (account status <b>4</b>), the XML for the dynamic file needs
+to be updated for the relevant unique reference.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="line-height: 107%; font-family: Arial, sans-serif;"><br></span></p><p class="MsoNormal"><span style="line-height: 107%; font-family: Arial, sans-serif;">Example:<span style="font-size: 10pt;"><o:p></o:p></span></span></p><p class="MsoNormal" style="font-size: 12pt;"><span style="font-size:10.0pt;line-height:107%;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;"><br></span></p>
+
+<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="font-size: 12pt; border-collapse: collapse; border: none; border-image-source: initial; border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial;">
+ <tbody><tr>
+  <td width="616" valign="top" style="width:462.1pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal"><span style="font-size:10.0pt;line-height:107%;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">&lt;DynamicData&gt;&lt;LoanPerformanceData&gt;&lt;actionCode&gt;A&lt;/actionCode&gt;&lt;uniqueReference&gt;ARB000006&lt;/uniqueReference&gt;&lt;lender&gt;ARB&lt;/lender&gt;&lt;brand&gt;ARB&lt;/brand&gt;&lt;reportingMonth&gt;2014-11&lt;/reportingMonth&gt;&lt;currentBalance&gt;170000&lt;/currentBalance&gt;&lt;currentExposure&gt;170000&lt;/currentExposure&gt;&lt;remainingTerm&gt;239&lt;/remainingTerm&gt;&lt;paymentDue&gt;800&lt;/paymentDue&gt;&lt;customerPaymentAmount&gt;800&lt;/customerPaymentAmount&gt;&lt;currentInterestRate&gt;4.19&lt;/currentInterestRate&gt;&lt;currentProductRateType&gt;1&lt;/currentProductRateType&gt;&lt;indexedPropertyValue&gt;220000&lt;/indexedPropertyValue&gt;&lt;currentLTV&gt;77.27&lt;/currentLTV&gt;&lt;behaviouralPD&gt;0.00&lt;/behaviouralPD&gt;&lt;behaviouralEAD&gt;0&lt;/behaviouralEAD&gt;&lt;behaviouralLGD&gt;0&lt;/behaviouralLGD&gt;<b><span style="background:yellow;
+  mso-highlight:yellow">&lt;accountStatus&gt;4&lt;/accountStatus&gt;&lt;redemptionDate&gt;2014-11-30&lt;/redemptionDate&gt;</span></b>&lt;/LoanPerformanceData&gt;&lt;LoanArrearsShortfall&gt;&lt;monthsInArrears&gt;0.00&lt;/monthsInArrears&gt;&lt;arrearsBalance&gt;0&lt;/arrearsBalance&gt;&lt;potentialImpairmentIndicators1&gt;N&lt;/potentialImpairmentIndicators1&gt;&lt;potentialImpairmentIndicators2&gt;N&lt;/potentialImpairmentIndicators2&gt;&lt;potentialImpairmentIndicators3&gt;N&lt;/potentialImpairmentIndicators3&gt;&lt;potentialImpairmentIndicators4&gt;N&lt;/potentialImpairmentIndicators4&gt;&lt;potentialImpairmentIndicators5&gt;N&lt;/potentialImpairmentIndicators5&gt;&lt;potentialImpairmentIndicators6&gt;N&lt;/potentialImpairmentIndicators6&gt;&lt;potentialImpairmentIndicators7&gt;N&lt;/potentialImpairmentIndicators7&gt;&lt;recoveredMoniesAfterClaim&gt;0&lt;/recoveredMoniesAfterClaim&gt;&lt;/LoanArrearsShortfall&gt;&lt;/DynamicData&gt;<o:p></o:p></span></p>
+  </td>
+ </tr>
+</tbody></table></div>]]></td>
+</tr>
+</table>

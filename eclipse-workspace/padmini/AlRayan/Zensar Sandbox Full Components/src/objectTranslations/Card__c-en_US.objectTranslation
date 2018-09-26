@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Card</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Cards</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Cards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing City --></label>
+        <name>Billing_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Country --></label>
+        <name>Billing_Country__c</name>
+        <picklistValues>
+            <masterLabel>United Kingdom</masterLabel>
+            <translation><!-- United Kingdom --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Billing County/State --></label>
+        <name>Billing_County_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Post Code --></label>
+        <name>Billing_Post_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Street --></label>
+        <name>Billing_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card Currency --></label>
+        <name>Card_Currency__c</name>
+        <picklistValues>
+            <masterLabel>EUR</masterLabel>
+            <translation><!-- EUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GBP</masterLabel>
+            <translation><!-- GBP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USD</masterLabel>
+            <translation><!-- USD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Card Name --></label>
+        <name>Card_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card Number Encrypted --></label>
+        <name>Card_Number_Encrypted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card Type --></label>
+        <name>Card_Type__c</name>
+        <picklistValues>
+            <masterLabel>Electron</masterLabel>
+            <translation><!-- Electron --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maestro</masterLabel>
+            <translation><!-- Maestro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MasterCard</masterLabel>
+            <translation><!-- MasterCard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MasterCard Debit</masterLabel>
+            <translation><!-- MasterCard Debit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visa</masterLabel>
+            <translation><!-- Visa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visa Debit</masterLabel>
+            <translation><!-- Visa Debit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Cards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Expiry Date (Encrypted) --></label>
+        <name>Expiry_Date_Encrypted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiry Month --></label>
+        <name>Expiry_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiry Year Text --></label>
+        <name>Expiry_Year_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiry Year --></label>
+        <name>Expiry_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue Number --></label>
+        <name>Issue_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Middle Name --></label>
+        <name>Middle_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary --></label>
+        <name>Primary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Security Code (Encrypted) --></label>
+        <name>Security_Code_Encrypted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Security Code --></label>
+        <name>Security_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Token (Encrypted) --></label>
+        <name>Token_Encrypted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Token --></label>
+        <name>Token__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valid From Month --></label>
+        <name>Valid_From_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valid From Year Text --></label>
+        <name>Valid_From_Year_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valid From Year --></label>
+        <name>Valid_From_Year__c</name>
+    </fields>
+    <layouts>
+        <layout>Card Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

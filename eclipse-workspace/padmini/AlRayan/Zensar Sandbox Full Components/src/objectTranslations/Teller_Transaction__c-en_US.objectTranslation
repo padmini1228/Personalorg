@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Teller Transaction</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Teller Transaction</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Type --></label>
+        <name>Account_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Notes --></label>
+        <name>Additional_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Type --></label>
+        <name>Amount_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved Date --></label>
+        <name>Approved_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved User --></label>
+        <name>Approved_User__c</name>
+        <relationshipLabel><!-- Teller Transaction (Approved User) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Authenticated Date Time --></label>
+        <name>Authenticated_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authenticated --></label>
+        <name>Authenticated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Beneficiary Account No --></label>
+        <name>Beneficiary_Account_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Beneficiary Detail Lines --></label>
+        <name>Beneficiary_Detail_Lines__c</name>
+    </fields>
+    <fields>
+        <label><!-- Beneficiary Sort Code --></label>
+        <name>Beneficiary_Sort_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch --></label>
+        <name>Branch__c</name>
+        <relationshipLabel><!-- Teller Transaction --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Buy Amount --></label>
+        <name>Buy_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Buy CCY --></label>
+        <name>Buy_CCY__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancellation Teller Depository --></label>
+        <name>Cancellation_Teller_Depository__c</name>
+        <relationshipLabel><!-- Teller Transaction --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cancelled By --></label>
+        <name>Cancelled_By__c</name>
+        <relationshipLabel><!-- Teller Transaction (Cancelled By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cancelled Date --></label>
+        <name>Cancelled_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancelled Value --></label>
+        <name>Cancelled_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- sfOwnerId --></label>
+        <name>CashierID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charge Amount --></label>
+        <name>Charge_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charge Code --></label>
+        <name>Charge_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cheque Serial No --></label>
+        <name>Cheque_Serial_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cheque Type --></label>
+        <name>Cheque_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cheque Value --></label>
+        <name>Cheque_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Date Time --></label>
+        <name>Created_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Account Currency --></label>
+        <name>Credit_Account_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Account No --></label>
+        <name>Credit_Account_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Account with IBB --></label>
+        <name>Credit_Account_with_IBB__c</name>
+        <relationshipLabel><!-- Teller Transaction --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Credit Amount --></label>
+        <name>Credit_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit System Parameter --></label>
+        <name>Credit_System_Parameter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debit Account Currency --></label>
+        <name>Debit_Account_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debit Account No --></label>
+        <name>Debit_Account_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debit Account with IBB --></label>
+        <name>Debit_Account_with_IBB__c</name>
+        <relationshipLabel><!-- Teller Transaction (Debit Account with IBB) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Debit Amount --></label>
+        <name>Debit_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debit System Parameter --></label>
+        <name>Debit_System_Parameter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Declined Date --></label>
+        <name>Declined_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Declined User --></label>
+        <name>Declined_User__c</name>
+        <relationshipLabel><!-- Teller Transaction (Declined User) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Deposit Currency --></label>
+        <name>Deposit_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Customer EBS ID --></label>
+        <name>EBS_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- EUR --></label>
+        <name>EUR__c</name>
+    </fields>
+    <fields>
+        <label><!-- EmailAddress --></label>
+        <name>EmailAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange Amount --></label>
+        <name>Exchange_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange Rate --></label>
+        <name>Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- From Account --></label>
+        <name>From_Account__c</name>
+        <relationshipLabel><!-- Teller Transaction --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- From Depository --></label>
+        <name>From_Depository__c</name>
+        <relationshipLabel><!-- Teller Transaction (From Depository) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- From Storage --></label>
+        <name>From_Storage__c</name>
+        <relationshipLabel><!-- Teller Transaction (From Storage) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- GBP --></label>
+        <name>GBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issuing Bank --></label>
+        <name>Issuing_Bank__c</name>
+    </fields>
+    <fields>
+        <label><!-- LargeCashCase --></label>
+        <name>LargeCashCase__c</name>
+    </fields>
+    <fields>
+        <label><!-- MobileNumber --></label>
+        <name>MobileNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Narrative Lines --></label>
+        <name>Narrative_Lines__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Of Cheques --></label>
+        <name>No_Of_Cheques__c</name>
+    </fields>
+    <fields>
+        <label><!-- Num Cheques --></label>
+        <name>Num_Cheques__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opt Out of Survey --></label>
+        <name>Opt_Out_of_Survey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Detail Lines --></label>
+        <name>Payment_Detail_Lines__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Purpose --></label>
+        <name>Payment_Purpose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Type --></label>
+        <name>Payment_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Customer Name --></label>
+        <name>Primary_Customer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Printed HTML Reciept --></label>
+        <name>Printed_HTML_Reciept__c</name>
+    </fields>
+    <fields>
+        <label><!-- QAR --></label>
+        <name>QAR__c</name>
+    </fields>
+    <fields>
+        <label><!-- sfWhatId --></label>
+        <name>RelatedtoID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remainder Amount --></label>
+        <name>Remainder_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remainder Currency --></label>
+        <name>Remainder_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remainder Deposit Amount --></label>
+        <name>Remainder_Deposit_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remainder Exchange Rate --></label>
+        <name>Remainder_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response Reference --></label>
+        <name>Response_Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reverse Exchange Rate --></label>
+        <name>Reverse_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sell Amount --></label>
+        <name>Sell_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sell CCY --></label>
+        <name>Sell_CCY__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey Sent --></label>
+        <name>Survey_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- TelephoneNumber --></label>
+        <name>TelephoneNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Teller Depository --></label>
+        <name>Teller_Depository__c</name>
+        <relationshipLabel><!-- Teller Transaction (Teller Depository) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Teller Function Text --></label>
+        <name>Teller_Function_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Teller Function --></label>
+        <name>Teller_Function__c</name>
+        <relationshipLabel><!-- Teller Transaction --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Teller Transfer Currency --></label>
+        <name>Teller_Transfer_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Teller User --></label>
+        <name>Teller_User__c</name>
+        <relationshipLabel><!-- Teller Transaction --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Template Id --></label>
+        <name>Template_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time taken for transaction (minutes) --></label>
+        <name>Time_taken_for_transaction_minutes__c</name>
+    </fields>
+    <fields>
+        <label><!-- To Depository --></label>
+        <name>To_Depository__c</name>
+        <relationshipLabel><!-- Teller Transaction (To Depository) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- To Storage --></label>
+        <name>To_Storage__c</name>
+        <relationshipLabel><!-- Teller Transaction (To Storage) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Transaction Adding to Depository --></label>
+        <name>Transaction_Adding_to_Depository__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Amount --></label>
+        <name>Transaction_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Created --></label>
+        <name>Transaction_Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Currency --></label>
+        <name>Transaction_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Notes --></label>
+        <name>Transaction_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Reference --></label>
+        <name>Transaction_Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Status Description --></label>
+        <name>Transaction_Status_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Status --></label>
+        <name>Transaction_Status__c</name>
+        <picklistValues>
+            <masterLabel>Authorised</masterLabel>
+            <translation><!-- Authorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Created</masterLabel>
+            <translation><!-- Created --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted for Authorisation</masterLabel>
+            <translation><!-- Submitted for Authorisation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TransferType --></label>
+        <name>TransferType__c</name>
+        <picklistValues>
+            <masterLabel>Cash Deposit</masterLabel>
+            <translation><!-- Cash Deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash Withdraw</masterLabel>
+            <translation><!-- Cash Withdraw --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cheque Deposit</masterLabel>
+            <translation><!-- Cheque Deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cheque Withdraw</masterLabel>
+            <translation><!-- Cheque Withdraw --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Storage Transfer</masterLabel>
+            <translation><!-- Storage Transfer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Transfer Due Date --></label>
+        <name>Transfer_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transfer Status --></label>
+        <name>Transfer_Status__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation><!-- Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Authenticated</masterLabel>
+            <translation><!-- Authenticated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Created</masterLabel>
+            <translation><!-- Created --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation><!-- Declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Authenticated</masterLabel>
+            <translation><!-- Not Authenticated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recieved</masterLabel>
+            <translation><!-- Recieved --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- USD --></label>
+        <name>USD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Withdrawal Currency --></label>
+        <name>Withdrawal_Currency__c</name>
+    </fields>
+    <layouts>
+        <layout>Teller Transaction Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

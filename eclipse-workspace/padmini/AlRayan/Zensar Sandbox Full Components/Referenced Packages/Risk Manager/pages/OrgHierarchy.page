@@ -1,0 +1,9 @@
+<apex:page standardController="grc__Business_Unit__c" sidebar="true" tabStyle="BUHierarchy__tab">
+    <apex:variable var="hierarchyLevel" value="{!IF($Setup.RiskManagerVisualforce__c.Business_Unit_Hierarchy_Level__c == null || $Setup.RiskManagerVisualforce__c.Business_Unit_Hierarchy_Level__c < 2, 2,$Setup.RiskManagerVisualforce__c.Business_Unit_Hierarchy_Level__c)}" />
+    
+    <apex:sectionHeader title="{!$Label.risk__Organisation_Hierarchy}" />
+    
+    <apex:pageMessages />
+    <c:Hierarchy defaultLevels="{!hierarchyLevel}" rootId="{!$CurrentPage.parameters.rootId}" mode="{!$CurrentPage.parameters.mode}" objectAPI="grc__Business_Unit__c" parentAPI="grc__Parent_Business_Unit__c" childRelationshipAPI="grc__Business_Units__r"/>
+    
+</apex:page>

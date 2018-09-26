@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email sent to the customer when the valuation has been approved and the offer letter has been sent</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>Valuation has been approved &amp; offer letter sent</name>
+    <style>freeForm</style>
+    <subject>Al Rayan Bank property finance application update</subject>
+    <textOnly>Dear {!Account.Salutation} {!Account.FirstName} {!Account.LastName},
+
+I am pleased to inform you that your application for finance has been approved
+
+You will receive your offer letter within the next 5 working days. If your home finance is with regards to a new property purchase, you should instruct your solicitors if you have not already done so. 
+
+Your offer letter may contain some special conditions in Section 6 which may require you to complete some actions before completion can take place. We recommend you read through this section with your solicitor.
+
+Some important timeframes worth bearing in mind are noted below:
+
+• Your offer letter is valid for 4 months from the date of issue.
+• Your valuation report is valid for 6 months from the date of report.
+
+Both the offer letter and valuation report must be in-date for completion to take place.
+
+Moving forward your solicitor will be your main point of contact and will update you on the progress of the legal work. 
+
+If you have any questions or concerns, please don’t hesitate to contact us at salessupport@alrayanbank.co.uk or call is +44 (0) 121 456 7878
+
+Kind regards
+Al Rayan Bank
+
+**********************************************************************************************************************************
+
+NOTICE - PLEASE READ
+
+This e-mail is intended for the recipient only and may contain confidential and/or legally privileged information which may be protected by law.
+
+Access to this e-mail by anyone other than the addressee is unauthorized. Unofficial use, copying or disclosure of all or part of this communication is strictly prohibited and may be unlawful. Please notify the sender by return e-mail and destroy all copies. Any opinions expressed in this message are those of the sender only and do not necessarily represent the views or opinions of Al Rayan Bank. No employee or agent is authorised to conclude any binding agreement on behalf of Al Rayan Bank with another party by email without express written confirmation by a director of the company. Reasonable steps have been taken to ensure that this communication and any attachments are free from computer virus, you are advised to take your own steps to ensure that they are actually virus free.
+
+Al Rayan Bank may monitor email traffic data and also the content of email for the purposes of security and staff training.
+
+Registered Office, Al Rayan Bank PLC, 44 Hans Crescent, Knightsbridge, London SW1X 0LZ. Registered as a Limited Company in England and Wales No. 4483430.
+
+**********************************************************************************************************************************</textOnly>
+    <type>html</type>
+</EmailTemplate>

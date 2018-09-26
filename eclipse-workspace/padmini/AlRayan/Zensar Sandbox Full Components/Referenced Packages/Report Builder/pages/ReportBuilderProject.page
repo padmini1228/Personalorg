@@ -1,0 +1,33 @@
+<apex:page standardController="grc__Business_Unit__c" extensions="XRB.ReportBuilderProject" standardStylesheets="true">
+
+<apex:form id="form">
+    
+    <apex:sectionHeader title="{!theBusinessUnit.Name} - {!$Label.xrb__risk_register}" subtitle="{!$Label.xrb__selection_form}">
+    </apex:sectionHeader>
+    <apex:pageMessages id="msg"/>
+    
+    <a href="/{!theBusinessUnit.Id}">{!$Label.back_To} {!theBusinessUnit.Name}</a>
+    
+    <br /><br />
+    
+    <apex:pageBlock title="{!$Label.xrb__risk_register_selection}">
+    
+        <apex:pageBlockSection columns="1">
+        
+            <apex:outputLabel value="{!$Label.xrb__existing_risk_register}" for="selection"/>
+        
+            <apex:selectList id="selection" value="{!selectedReport}" multiselect="false">
+                <apex:selectOptions value="{!reports}"/>
+            </apex:selectList>
+        
+        </apex:pageBlockSection>
+        
+    </apex:pageBlock>
+    
+    <br /><br />
+    
+    <apex:commandButton action="{!runReportBuilder}" value="{!$Label.xrb__build_risk_register}" />
+    
+</apex:form>
+
+</apex:page>

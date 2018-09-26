@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CAA Picklists</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CAA Picklists</value>
+    </caseValues>
+    <fields>
+        <help><!-- Tick if this pick list value is to show on external CAA --></help>
+        <label><!-- External --></label>
+        <name>External__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the field tag in the code --></help>
+        <label><!-- Field --></label>
+        <name>Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tick if this pick list value is to show on internal CAA --></help>
+        <label><!-- Internal --></label>
+        <name>Internal__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is only to be used for the nationality pick list values for the EU validation --></help>
+        <label><!-- IsEuroCountry --></label>
+        <name>IsEuroCountry__c</name>
+    </fields>
+    <fields>
+        <help><!-- Type YES if this value is only applicable for a young person (if the question is asked). Type NO is this is only applicable for an adult. Leave blank if this should show for both an adult and a young person. --></help>
+        <label><!-- IsYPSA --></label>
+        <name>IsYPSA__c</name>
+    </fields>
+    <fields>
+        <help><!-- Decides the order in which the pick list value is shown on screen --></help>
+        <label><!-- Order --></label>
+        <name>Order__c</name>
+    </fields>
+    <fields>
+        <help><!-- How the pick list value displays on screen --></help>
+        <label><!-- Text --></label>
+        <name>Text__c</name>
+    </fields>
+    <fields>
+        <help><!-- The value which saves in the Salesforce record (e.g. account) --></help>
+        <label><!-- Value --></label>
+        <name>Value__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

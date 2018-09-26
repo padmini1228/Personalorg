@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SOQLQuery</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SOQLQuery</value>
+    </caseValues>
+    <fields>
+        <label><!-- Soql 10 --></label>
+        <name>Soql_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Soql 1 --></label>
+        <name>Soql_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Soql 2 --></label>
+        <name>Soql_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Soql 3 --></label>
+        <name>Soql_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Soql 4 --></label>
+        <name>Soql_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Soql 5 --></label>
+        <name>Soql_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Soql 6 --></label>
+        <name>Soql_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Soql 7 --></label>
+        <name>Soql_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Soql 8 --></label>
+        <name>Soql_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Soql 9 --></label>
+        <name>Soql_9__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

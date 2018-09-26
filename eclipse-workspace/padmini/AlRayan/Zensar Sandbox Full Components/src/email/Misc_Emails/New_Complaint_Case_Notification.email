@@ -1,0 +1,15 @@
+You are recieving this email as a new complaint case has been logged.  Please see the below details regarding this case:
+
+Status: {!Case.Status}
+
+Date of complaint: {!Case.CreatedDate}
+
+Case Raised by: {!Case.CreatedBy}
+
+Customer fully identified? : {!Case.Customer_Fully_Identified__c}
+
+Subject: {!Case.Subject}
+
+Description: {!Case.Description}
+
+Case Link: {!Case.Link}

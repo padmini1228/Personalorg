@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
+    <backgroundEndColor>#FFFFFF</backgroundEndColor>
+    <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
+    <backgroundStartColor>#FFFFFF</backgroundStartColor>
+    <dashboardType>SpecifiedUser</dashboardType>
+    <isGridLayout>false</isGridLayout>
+    <leftSection>
+        <columnSize>Medium</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Pie</componentType>
+            <displayUnits>Integer</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>true</expandOthers>
+            <footer>Notices by Noticeboard (All Time)</footer>
+            <header>Notices by Noticeboard</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>Improved_Noticeboard_Reports/Notices_by_Status_by_Noticeboard</report>
+            <showPercentage>false</showPercentage>
+            <showValues>true</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Gauge</componentType>
+            <displayUnits>Integer</displayUnits>
+            <footer>How many Notices have been created, regardless of status. All Time</footer>
+            <gaugeMax>400.0</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <header>Notices Created (All Time)</header>
+            <indicatorBreakpoint1>100.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>200.0</indicatorBreakpoint2>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>Improved_Noticeboard_Reports/Notices_by_Status_by_Noticeboard</report>
+            <showPercentage>false</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>false</showValues>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>ColumnStacked</componentType>
+            <displayUnits>Integer</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>How many Notices by Status are related to which Noticeboards.</footer>
+            <header>Notices by Status</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>Improved_Noticeboard_Reports/Notices_by_Status_by_Noticeboard</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Funnel</componentType>
+            <displayUnits>Integer</displayUnits>
+            <drillEnabled>true</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>true</expandOthers>
+            <footer>All Notices All Time by Approval Status</footer>
+            <header>Notices by Approval Status</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>Improved_Noticeboard_Reports/Notices_by_Approval_Status</report>
+            <showPercentage>true</showPercentage>
+            <showValues>true</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardTableColumn>
+                <column>Notice__c.NoticeApprover__c</column>
+            </dashboardTableColumn>
+            <dashboardTableColumn>
+                <calculatePercent>false</calculatePercent>
+                <column>RowCount</column>
+                <showTotal>true</showTotal>
+                <sortBy>RowValueDescending</sortBy>
+            </dashboardTableColumn>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <footer>This shows who is most involved in Approving Notices</footer>
+            <header>Notices with Approvals by Approver</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>Improved_Noticeboard_Reports/Notices_by_Approver</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+        </components>
+    </leftSection>
+    <middleSection>
+        <columnSize>Medium</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Column</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>true</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Notices by Notification Status, but also shows which Notices have Flagged Notifications.</footer>
+            <header>Published Notices by Notification Status</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>Improved_Noticeboard_Reports/Published_Notices_by_Notification_Status</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <useReportChart>true</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>No.of Notifications Currently Published:</metricLabel>
+            <report>Improved_Noticeboard_Reports/Published_Notices_by_Notification_Status</report>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Funnel</componentType>
+            <displayUnits>Integer</displayUnits>
+            <drillEnabled>true</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>true</expandOthers>
+            <footer>Notification Status Funnel, showing ALL Notifications - Click to Drill Through to the Detail.</footer>
+            <header>All Notifications by Status</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>Improved_Noticeboard_Reports/All_Notifications_by_Status</report>
+            <showPercentage>true</showPercentage>
+            <showValues>true</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Column</componentType>
+            <displayUnits>Integer</displayUnits>
+            <drillEnabled>true</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>All Time</footer>
+            <header>All Notifications by Month</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>Improved_Noticeboard_Reports/All_Notifications_by_Calendar_Month</report>
+            <showPercentage>false</showPercentage>
+            <showValues>true</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Total Notifications (Selected Recipients)</metricLabel>
+            <report>Improved_Noticeboard_Reports/All_Notifications_by_Status</report>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Total Number of Flagged Notifications</metricLabel>
+            <report>Improved_Noticeboard_Reports/Recipients_with_Flagged_Notifications</report>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardTableColumn>
+                <column>FK_NAME</column>
+                <sortBy>RowLabelDescending</sortBy>
+            </dashboardTableColumn>
+            <dashboardTableColumn>
+                <aggregateType>Sum</aggregateType>
+                <calculatePercent>false</calculatePercent>
+                <column>FK_$Notice__c.AcknowledgedAndFlaggedNotifications__c</column>
+                <showTotal>true</showTotal>
+            </dashboardTableColumn>
+            <dashboardTableColumn>
+                <aggregateType>Sum</aggregateType>
+                <calculatePercent>false</calculatePercent>
+                <column>FK_$Notice__c.SelectedRecipients__c</column>
+                <showTotal>true</showTotal>
+            </dashboardTableColumn>
+            <displayUnits>Integer</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <footer>When the Dashboard was last refreshed, this is how many Notices were LIVE at that time and also shows which LIVE notices have Flagged Notifications.</footer>
+            <header>Current &apos;Published&apos; Notices (Live!) with Flagged Notifications</header>
+            <indicatorBreakpoint1>0.5</indicatorBreakpoint1>
+            <indicatorBreakpoint2>10.0</indicatorBreakpoint2>
+            <indicatorHighColor>#C25454</indicatorHighColor>
+            <indicatorLowColor>#54C254</indicatorLowColor>
+            <indicatorMiddleColor>#C25454</indicatorMiddleColor>
+            <report>Improved_Noticeboard_Reports/Notifications_Curr_Published_LIVE</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+        </components>
+    </middleSection>
+    <rightSection>
+        <columnSize>Medium</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardTableColumn>
+                <column>FK_$Notice__c.NoticeBoard__c</column>
+            </dashboardTableColumn>
+            <dashboardTableColumn>
+                <calculatePercent>false</calculatePercent>
+                <column>RowCount</column>
+                <showTotal>true</showTotal>
+                <sortBy>RowValueDescending</sortBy>
+            </dashboardTableColumn>
+            <displayUnits>Integer</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <footer>Across All Time : Shows which Noticeboards get the most exceptions to Acknowledgment requests</footer>
+            <header>Noticeboards with Flagged Notifications</header>
+            <indicatorBreakpoint1>5.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>10.0</indicatorBreakpoint2>
+            <indicatorHighColor>#C25454</indicatorHighColor>
+            <indicatorLowColor>#C2C254</indicatorLowColor>
+            <indicatorMiddleColor>#C28B54</indicatorMiddleColor>
+            <report>Improved_Noticeboard_Reports/Noticeboards_with_Flagged_Notificatio</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardTableColumn>
+                <column>Notification__c.Recipient__c</column>
+            </dashboardTableColumn>
+            <dashboardTableColumn>
+                <calculatePercent>false</calculatePercent>
+                <column>RowCount</column>
+                <showTotal>true</showTotal>
+                <sortBy>RowValueDescending</sortBy>
+            </dashboardTableColumn>
+            <displayUnits>Integer</displayUnits>
+            <drillDownUrl>https://na12.salesforce.com/01ZU0000000MH4h</drillDownUrl>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <footer>This highlights those recipients who Acknowledge Notifications with Exceptions the most. If you click this dashboard component you will be taken to the COMPLIANCE DASHBOARD.</footer>
+            <header>Flagged Notifications by Recipient</header>
+            <indicatorBreakpoint1>5.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>10.0</indicatorBreakpoint2>
+            <indicatorHighColor>#C25454</indicatorHighColor>
+            <indicatorLowColor>#C2C254</indicatorLowColor>
+            <indicatorMiddleColor>#C28B54</indicatorMiddleColor>
+            <report>Improved_Noticeboard_Reports/Recipients_with_Flagged_Notifications</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+            <title>Click to go to the Compliance Dashboard</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardTableColumn>
+                <column>FK_NAME</column>
+            </dashboardTableColumn>
+            <dashboardTableColumn>
+                <calculatePercent>false</calculatePercent>
+                <column>RowCount</column>
+                <showTotal>true</showTotal>
+                <sortBy>RowValueDescending</sortBy>
+            </dashboardTableColumn>
+            <displayUnits>Integer</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <footer>Notifications requiring Acknowledgment, that have not been Acknowledged yet. Drill into this to see the offending Recipients.</footer>
+            <header>Unacknowledged Notifications by Notice</header>
+            <indicatorBreakpoint1>7.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>14.0</indicatorBreakpoint2>
+            <indicatorHighColor>#C25454</indicatorHighColor>
+            <indicatorLowColor>#C2C254</indicatorLowColor>
+            <indicatorMiddleColor>#C28B54</indicatorMiddleColor>
+            <report>Improved_Noticeboard_Reports/Unacknowledged_Notification</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+        </components>
+    </rightSection>
+    <runningUser>abdul.salam@alrayanbank.co.uk</runningUser>
+    <textColor>#000000</textColor>
+    <title>1. Improved NoticeBoard Sample Dashboard</title>
+    <titleColor>#000000</titleColor>
+    <titleSize>12</titleSize>
+</Dashboard>

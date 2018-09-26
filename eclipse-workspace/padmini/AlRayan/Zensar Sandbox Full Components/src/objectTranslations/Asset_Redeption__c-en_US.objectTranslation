@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Asset Redemption</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Asset Redemptions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Arrears --></label>
+        <name>Arrears__c</name>
+    </fields>
+    <fields>
+        <label><!-- Checked by 1 --></label>
+        <name>Checked_by_1__c</name>
+        <relationshipLabel><!-- Asset Redemptions (Checked by 1) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Checked by 2 --></label>
+        <name>Checked_by_2__c</name>
+        <relationshipLabel><!-- Asset Redemptions (Checked by 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer Account --></label>
+        <name>Customer_Account__c</name>
+        <relationshipLabel><!-- Asset Redemptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer Name --></label>
+        <name>Customer_Name__c</name>
+        <relationshipLabel><!-- Asset Redemptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- DS1 to be executed 5 working days after last payment --></help>
+        <label><!-- DS1 5 working days after last payment --></label>
+        <name>DS1_5_working_days_after_last_payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date checked for approval --></label>
+        <name>Date_checked_for_approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date documents sent --></label>
+        <name>Date_documents_sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Redemption (TH) --></label>
+        <name>Date_of_Redemption_TH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Earliest DS1 Execution Date --></label>
+        <name>Earliest_DS1_Execution_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fees Received in 1100-841020-826 --></label>
+        <name>Fees_Received_in_1100_841020_826__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- If &quot;Other&quot; please complete --></label>
+        <name>If_Other_please_complete__c</name>
+    </fields>
+    <fields>
+        <help><!-- Monies Received EBS Screen Print Attached (TH) --></help>
+        <label><!-- Monies Screen Print Attached --></label>
+        <name>Monies_Screen_Print_Attached__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Ref --></label>
+        <name>Opportunity_Ref__c</name>
+        <relationshipLabel><!-- Asset Redemptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Property EBS Screen Print attached (AAE) --></label>
+        <name>Property_EBS_Screen_Print_attached_AAE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Redemption Case --></label>
+        <name>Redemption_Case__c</name>
+        <relationshipLabel><!-- Asset Redemptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Security Address --></label>
+        <name>Security_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zero Balance &amp; Cleared EBS Screen Print --></label>
+        <name>Zero_Balance_Cleared_EBS_Screen_Print__c</name>
+    </fields>
+    <layouts>
+        <layout>Asset Redemption Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

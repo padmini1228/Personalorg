@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Case Type Helper</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Case Type Helper</value>
+    </caseValues>
+    <fields>
+        <label><!-- Display Order --></label>
+        <name>Display_Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal Staff --></label>
+        <name>Internal_Staff__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Active --></label>
+        <name>Is_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Option --></label>
+        <name>Option__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Option --></label>
+        <name>Parent_Option__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent --></label>
+        <name>Parent__c</name>
+        <relationshipLabel><!-- Case Type Helper --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Record Type --></label>
+        <name>RecordType__c</name>
+    </fields>
+    <layouts>
+        <layout>Case Type Helper Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

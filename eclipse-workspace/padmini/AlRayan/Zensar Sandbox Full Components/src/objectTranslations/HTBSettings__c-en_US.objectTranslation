@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>HTB Settings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>HTB Settings</value>
+    </caseValues>
+    <fields>
+        <help><!-- The three character Brand code supplied by UKARcs. --></help>
+        <label><!-- Brand Code --></label>
+        <name>BrandCode__c</name>
+    </fields>
+    <fields>
+        <help><!-- To indicate which environment the data is destined for:
+pd      Production
+pp      pre-prod
+dv      Dev 
+UAT(n)  UAT 1-99 (proposed) --></help>
+        <label><!-- Environment --></label>
+        <name>Environment__c</name>
+    </fields>
+    <fields>
+        <help><!-- The format of the filenames which are produced by the system. --></help>
+        <label><!-- Filename Format --></label>
+        <name>FilenameFormat__c</name>
+    </fields>
+    <fields>
+        <help><!-- The three character Lender code supplied by UKARcs. --></help>
+        <label><!-- Lender Code --></label>
+        <name>LenderCode__c</name>
+    </fields>
+    <fields>
+        <help><!-- To indicate which mode the data is intended to represent:
+VERIFY  Lender onboarding / XSD change
+LIVE	Lender data treated as LIVE --></help>
+        <label><!-- Mode --></label>
+        <name>Mode__c</name>
+    </fields>
+    <fields>
+        <help><!-- ID/Code/Name of the Receiver organisation. --></help>
+        <label><!-- Receiver --></label>
+        <name>Receiver__c</name>
+    </fields>
+    <fields>
+        <help><!-- ID/Code/Name of the sender organisation. --></help>
+        <label><!-- Sender --></label>
+        <name>Sender__c</name>
+    </fields>
+    <fields>
+        <help><!-- The length of the number section of the generated URNs. e.g. 3 = 001, 4 = 0001, 5 = 00001, etc. --></help>
+        <label><!-- URN Length --></label>
+        <name>URNLength__c</name>
+    </fields>
+    <fields>
+        <help><!-- Text which will be prefixed to the beginning of generated URNS. --></help>
+        <label><!-- URN Prefix --></label>
+        <name>URNPrefix__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

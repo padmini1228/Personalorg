@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>template to be sent out for all cases with an estimated completion date.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>Estimated completion dates</name>
+    <style>freeForm</style>
+    <subject>Your case reference {!Case.CaseNumber} has been updated with an estimated completion time &amp; date</subject>
+    <textOnly>The below case has been update with an estimated completion date and time. Please expect your case to be completed by this date/time.
+
+If this needs to be amended for any reason, you will be notified.
+
+If you have any questions, please contact the case owner or the IT Servicedesk on 0121-452-7333
+
+Case: {!Case.CaseNumber}
+Subject: {!Case.Subject}
+Current owner: {!Case.OwnerFullName}
+Estimated date &amp; time: {!Case.Estimated_completion_date__c}
+Link to case: {!Case.Link}</textOnly>
+    <type>html</type>
+</EmailTemplate>

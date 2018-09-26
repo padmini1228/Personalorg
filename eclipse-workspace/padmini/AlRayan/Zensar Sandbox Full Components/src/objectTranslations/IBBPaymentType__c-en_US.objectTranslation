@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>PaymentType</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>PaymentTypes</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Reference Information --></label>
+        <name>Account_Reference_Information__c</name>
+        <relationshipLabel><!-- PaymentTypes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PaymentTypeMethod --></label>
+        <name>PaymentTypeMethod__c</name>
+        <picklistValues>
+            <masterLabel>CARD</masterLabel>
+            <translation><!-- CARD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXTERNAL TRANSFER</masterLabel>
+            <translation><!-- EXTERNAL TRANSFER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INTERNAL TRANSFER</masterLabel>
+            <translation><!-- INTERNAL TRANSFER --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TypeAmount --></label>
+        <name>TypeAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- TypeDescription --></label>
+        <name>TypeDescription__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

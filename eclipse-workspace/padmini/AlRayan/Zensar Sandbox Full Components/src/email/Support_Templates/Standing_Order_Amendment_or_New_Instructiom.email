@@ -1,0 +1,13 @@
+Hi
+
+A new Standing order request has been keyed to case
+
+Customer Number  {!Case.EBS_ID__c}
+
+Case Number {!Case.Id}
+
+Please Action within 48 Hours
+
+Thanks
+
+Jim

@@ -1,0 +1,13 @@
+Dear {!Receiving_User.FirstName}
+
+There is currently a cost of error / gesture of goodwill awaiting your approval. 
+
+{!Case.Link}
+
+Please review and approve/reject
+
+
+
+thanks
+
+{!User.FirstName} {!User.LastName}

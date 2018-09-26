@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Budget planner</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Budget planners</value>
+    </caseValues>
+    <fields>
+        <label><!-- Additional Expense 1 Amount --></label>
+        <name>Additional_Expense_1_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Expense 1 Description --></label>
+        <name>Additional_Expense_1_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Expense 2 Amount --></label>
+        <name>Additional_Expense_2_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Expense 2 Description --></label>
+        <name>Additional_Expense_2_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Expense 3 Amount --></label>
+        <name>Additional_Expense_3_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Expense 3 Description --></label>
+        <name>Additional_Expense_3_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Pension commitments --></label>
+        <name>Additional_Pension_commitments__c</name>
+    </fields>
+    <fields>
+        <label><!-- After school instruction --></label>
+        <name>After_school_instruction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Anticipated HPP payment --></label>
+        <name>Anticipated_HPP_payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Birthdays/Celebrations/Presents --></label>
+        <name>Birthdays_Celebrations_Presents__c</name>
+    </fields>
+    <fields>
+        <label><!-- Budget Planner Result --></label>
+        <name>Budget_Planner_Result__c</name>
+    </fields>
+    <fields>
+        <label><!-- Buildings insurance --></label>
+        <name>Buildings_insurance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Car - Petrol/Insurance and Servicing --></label>
+        <name>Car_Petrol_Insurance_and_Servicing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Car breakdown --></label>
+        <name>Car_breakdown__c</name>
+    </fields>
+    <fields>
+        <label><!-- Car insurance --></label>
+        <name>Car_insurance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Car servicing --></label>
+        <name>Car_servicing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Car tax --></label>
+        <name>Car_tax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charitable donations --></label>
+        <name>Charitable_donations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Clothing --></label>
+        <name>Clothing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contents insurance --></label>
+        <name>Contents_Insua__c</name>
+    </fields>
+    <fields>
+        <label><!-- Council tax --></label>
+        <name>Council_tax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit card payments --></label>
+        <name>Credit_card_payments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disposable income --></label>
+        <name>Disposable_income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Electricity --></label>
+        <name>Electricity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Existing Credit/Store card payments --></label>
+        <name>Existing_Credit_Store_card_payments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Existing Life/Personal Protection or Critical illness payments --></help>
+        <label><!-- Existing Life, PP or Critical Illness --></label>
+        <name>Existing_Life_PP_or_Critical_Illness__c</name>
+    </fields>
+    <fields>
+        <label><!-- Existing monthly Loan/HP payments --></label>
+        <name>Existing_monthly_Loan_HP_payments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Existing mortgage payment to continue --></label>
+        <name>Existing_mortgage_payment_to_continue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Food --></label>
+        <name>Food_c__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gaming/Entertainment --></label>
+        <name>Gaming_Entertainment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gas --></label>
+        <name>Gas__c</name>
+    </fields>
+    <fields>
+        <label><!-- Going out --></label>
+        <name>Going_out__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gym/Health clubs --></label>
+        <name>Gym_Health_clubs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Health insurance --></label>
+        <name>Health_insurance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Holidays --></label>
+        <name>Holidays__c</name>
+    </fields>
+    <fields>
+        <label><!-- Home insurance --></label>
+        <name>Home_insurance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Home phone --></label>
+        <name>Home_phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Household eg, Food, cleaning, clothing --></label>
+        <name>Household_eg_Food_cleaning_clothing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internet --></label>
+        <name>Internet__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsProcessed --></label>
+        <name>IsProcessed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Life Insurance --></label>
+        <name>Life__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan payments --></label>
+        <name>Loan_payments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile --></label>
+        <name>Mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Budget planners --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Other Commitments --></label>
+        <name>Other_Commitments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other expenses --></label>
+        <name>Other_expenses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person --></label>
+        <name>Person__c</name>
+        <relationshipLabel><!-- Budget planners --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pet expenses --></label>
+        <name>Pet_expenses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Regular investments/ISA&apos;s --></label>
+        <name>Regular_investments_ISA_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- School fee --></label>
+        <name>School_fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sky/Cable --></label>
+        <name>Sky_Cable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sporting tickets --></label>
+        <name>Sporting_tickets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscriptions --></label>
+        <name>Subscriptions__c</name>
+    </fields>
+    <fields>
+        <label><!-- TV License --></label>
+        <name>TV_License__c</name>
+    </fields>
+    <fields>
+        <label><!-- Take home pay --></label>
+        <name>Take_home_pay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Telephone --></label>
+        <name>Telephone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Commitments --></label>
+        <name>Total_Commitments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel expenses --></label>
+        <name>Travel_expenses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel insurance --></label>
+        <name>Travel_insurance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Underwriter Electricity --></label>
+        <name>Underwriter_Electricity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Underwriter Gas --></label>
+        <name>Underwriter_Gas__c</name>
+    </fields>
+    <fields>
+        <label><!-- Water --></label>
+        <name>Water__c</name>
+    </fields>
+    <layouts>
+        <layout>Budget planner Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

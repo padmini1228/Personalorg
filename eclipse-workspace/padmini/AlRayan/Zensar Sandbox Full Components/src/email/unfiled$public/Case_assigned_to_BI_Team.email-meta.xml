@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>To notify the BI Team when a case is assigned to to the BI Team Queue</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Case assigned to BI Team</name>
+    <style>none</style>
+    <subject>Case Assigned to BI Team - {!Case.CaseNumber}</subject>
+    <type>text</type>
+</EmailTemplate>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Fixed Term Deposit Information</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_letterhead</letterhead>
+    <name>Fixed Term Deposit Information</name>
+    <style>freeForm</style>
+    <subject>Fixed Term Deposit Information</subject>
+    <textOnly>Dear {!Lead.FirstName} {!Lead.LastName}
+Thank you for your recent enquiry regarding information on our Fixed Term Deposit Account.
+ 
+The information you require can be found by clicking on the following link:       
+ 
+http://www.islamic-bank.com/personal-banking/savings-products/fixed-term-deposit-account/
+ 
+This link will take you through to the Islamic Bank of Britain website where you will find all the relevant information about the product as well as how to apply for it.
+ 
+If you have any questions after reading this, please call our Customer Helpline on 0800 4080 786.
+ 
+Yours sincerely
+ 
+{!User.FirstName} {!User.LastName}
+Islamic Bank of Britain
+ </textOnly>
+    <type>html</type>
+</EmailTemplate>

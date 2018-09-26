@@ -1,0 +1,9 @@
+Dear {!Case.OwnerFirstName} 
+
+Your {!Case.RecordType} - case {!Case.CaseNumber} service level agreement (SLA) have not been met.
+
+To go straight to the case please use this link: 
+
+{!Case.Link}
+
+Thanks

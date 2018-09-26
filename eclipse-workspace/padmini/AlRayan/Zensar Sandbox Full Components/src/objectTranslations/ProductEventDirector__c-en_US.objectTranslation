@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>ProductEventDirector</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>ProductEventDirector</value>
+    </caseValues>
+    <fields>
+        <label><!-- Adhoc Events --></label>
+        <name>Adhoc_Events__c</name>
+    </fields>
+    <fields>
+        <label><!-- BaseController --></label>
+        <name>BaseController__c</name>
+        <picklistValues>
+            <masterLabel>BAA</masterLabel>
+            <translation><!-- BAA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAA</masterLabel>
+            <translation><!-- CAA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP</masterLabel>
+            <translation><!-- HPP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MMR</masterLabel>
+            <translation><!-- MMR --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event --></label>
+        <name>Event__c</name>
+        <relationshipLabel><!-- ProductEventDirector --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Flow Events --></label>
+        <name>Flow_Events__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsMMR --></label>
+        <name>IsMMR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rewind Events --></label>
+        <name>Rewind_Events__c</name>
+    </fields>
+    <fields>
+        <label><!-- Version No --></label>
+        <name>Version_No__c</name>
+    </fields>
+    <layouts>
+        <layout>ProductEventDirector Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

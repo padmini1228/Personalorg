@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Regression Test</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Regression Test</value>
+    </caseValues>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Result --></label>
+        <name>Expected_Result__c</name>
+    </fields>
+    <fields>
+        <label><!-- Function --></label>
+        <name>Function__c</name>
+    </fields>
+    <fields>
+        <label><!-- Path --></label>
+        <name>Path__c</name>
+    </fields>
+    <fields>
+        <label><!-- System --></label>
+        <name>System__c</name>
+        <relationshipLabel><!-- Regression Test --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Test Ref --></label>
+        <name>Test_Ref__c</name>
+    </fields>
+    <fields>
+        <label><!-- Complexity --></label>
+        <name>complexity__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Regression Tests Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Compliance Visit</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Compliance Visits</value>
+    </caseValues>
+    <fields>
+        <help><!-- Guidance: Evidence of training / coaching, and if possible, plans completed. 
+Non completion issues will be graded into Red (Major), Amber (Intermediate) and Green (Minor) and carry a penalty score of up to 20 marks which will affect the rating. --></help>
+        <label><!-- ALL actions completed from last visit? --></label>
+        <name>ALL_actions_completed_from_last_visit__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Actions from last Compliance visit? --></label>
+        <name>Actions_from_last_Compliance_visit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applications Passed --></label>
+        <name>Applications_Passed__c</name>
+    </fields>
+    <fields>
+        <help><!-- If failures exceed 10 %, a rating of Low Risk will not be given 
+If failure rate is 10-25%, Medium (Low) Risk is the highest rating achievable 
+Failure rate is 26% - 40 %, Medium (High) Risk is the highest rating achievable 
+Failure rates of 40%: High --></help>
+        <label><!-- Applications Sampled --></label>
+        <name>Applications_Sampled__c</name>
+    </fields>
+    <fields>
+        <label><!-- BCLs / Branch Opening Overall Score (4) --></label>
+        <name>BCLs_Branch_Opening_Overall_Score_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visit Rating --></label>
+        <name>Branch_Visit_Rating__c</name>
+        <picklistValues>
+            <masterLabel>High Risk</masterLabel>
+            <translation><!-- High Risk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low Risk</masterLabel>
+            <translation><!-- Low Risk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium High Risk</masterLabel>
+            <translation><!-- Medium High Risk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium Low Risk</masterLabel>
+            <translation><!-- Medium Low Risk --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Branch --></label>
+        <name>Branch__c</name>
+        <relationshipLabel><!-- Compliance Visits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CBT up to date? --></label>
+        <name>CBT_up_to_date__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CCare Comments --></label>
+        <name>CCare_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments10daysleave__c</name>
+    </fields>
+    <fields>
+        <help><!-- Guidance: Discuss trends identified /actions arising from Complaints report and FCU contact log --></help>
+        <label><!-- Comments --></label>
+        <name>CommentsCC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>CommentsFraudcir__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>CommentsKYC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>CommentsKYCsampling__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments_CBT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments_PDFs__c</name>
+    </fields>
+    <fields>
+        <help><!-- Guidance: Arrangements for protection of customer data in place and is the branch displaying the required statutory notices?  Clear desk policy, confidential waste, computer screens not facing public area / left locked if unoccupied. See attached listing --></help>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Guidance: List all remedial action and development points from this visit each with a target date to update Compliance by. --></help>
+        <label><!-- Comments --></label>
+        <name>Commentsdev__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Commentsopen_tickets__c</name>
+    </fields>
+    <fields>
+        <help><!-- Guidance: Dispensers to be fully stocked with the most recent versions available. Branch Panic Alarm box key removed from unit so it can’t be reset by anyone unless testing the PA’s --></help>
+        <label><!-- Comments --></label>
+        <name>Commentspanic__c</name>
+    </fields>
+    <fields>
+        <help><!-- Guidance: the relevant logs should be present, completed and filed with supporting information. Have relevant actions required by the last monthly inspection by Br. Ops Mgr been implemented? --></help>
+        <label><!-- Comments --></label>
+        <name>Commentsphysical__c</name>
+    </fields>
+    <fields>
+        <help><!-- Branch/Premier/Agency=12, CC=10 --></help>
+        <label><!-- Score --></label>
+        <name>Cust_Care_FCU_actions_Overall_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Type --></label>
+        <name>Customer_Type__c</name>
+        <picklistValues>
+            <masterLabel>Business</masterLabel>
+            <translation><!-- Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charity</masterLabel>
+            <translation><!-- Charity --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DPA / Sinage in order? --></label>
+        <name>DPA_Sinage_in_order__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deadline --></label>
+        <name>Deadline1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deadline --></label>
+        <name>Deadline2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deadline --></label>
+        <name>Deadline3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deadline --></label>
+        <name>Deadline4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deadline --></label>
+        <name>Deadline5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deadline --></label>
+        <name>Deadline6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deadline --></label>
+        <name>Deadline7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deadline --></label>
+        <name>Deadline8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deadline --></label>
+        <name>Deadline__c</name>
+    </fields>
+    <fields>
+        <label><!-- FCU Comments --></label>
+        <name>FCU_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fraud Circulars cascades up to date? --></label>
+        <name>Fraud_Circulars_cascades_up_to_date__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Inbound Calls Observed? --></label>
+        <name>Inbound_Calls_Observed__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Interview 1 Staff Name --></label>
+        <name>Interview_1_Staff_Namr__c</name>
+        <relationshipLabel><!-- Compliance Visits (Interview 1 Staff Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Interview 2 Staff Name --></label>
+        <name>Interview_2_Staff_Name__c</name>
+        <relationshipLabel><!-- Compliance Visits (Interview 2 Staff Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Minimum acceptable levels:
+•	Less than (70%)  = individual action plan (1 wk deadline)
+•	Less than (80%) = individual action plan (2 wk deadline) --></help>
+        <label><!-- Interview Comments --></label>
+        <name>Interview_Comments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Guidance – Has the Branch been applying KYC procedures correctly? Branch staff should be aware of the location of the KYC guidance and be capable of explaining its use. Evidence this via a sample of new applications viewed by Compliance prior to the visit --></help>
+        <label><!-- KYC Procedure Adherence Score (12) --></label>
+        <name>KYC_Procedure_Adherence_Score_13__c</name>
+    </fields>
+    <fields>
+        <label><!-- Leaflet displays full? --></label>
+        <name>Leaflet_displays_full__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- C/CD/NC --></help>
+        <label><!-- Observation Record --></label>
+        <name>Observation_Record__c</name>
+    </fields>
+    <fields>
+        <label><!-- Open Tickets cleared and up to date? --></label>
+        <name>Open_Tickets_cleared_and_up_to_date__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Outbound Calls Observed --></label>
+        <name>Outbound_Calls_Observed__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Overall Visit Comments --></label>
+        <name>Overall_Visit_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- PDFs in order? --></label>
+        <name>PDFs_in_order__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Panic Alarm box key Locked Away? --></label>
+        <name>Panic_Alarm_box_key_Locked_Away__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Percentage Score --></label>
+        <name>Percentage_Score1__c</name>
+    </fields>
+    <fields>
+        <help><!-- The percentage score is based on a maximum of 80%. --></help>
+        <label><!-- Percentage Score --></label>
+        <name>Percentage_Score_Agency__c</name>
+    </fields>
+    <fields>
+        <help><!-- Branch Scoring Brackets:
+•	0 - 69% High Risk
+•	70- 77% Medium (High) Risk
+•	78 - 84% Medium (Low) Risk
+•	85%+ = Low Risk --></help>
+        <label><!-- Percentage Score --></label>
+        <name>Percentage_Score__c</name>
+    </fields>
+    <fields>
+        <help><!-- CCTV Recording, Alarm, Physical Checks, etc completed. --></help>
+        <label><!-- Physical checks completed satisfactorily --></label>
+        <name>Physical_checks_completed_satisfactorily__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Remedial Action --></label>
+        <name>Remedial_Action1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remedial Action --></label>
+        <name>Remedial_Action2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remedial Action --></label>
+        <name>Remedial_Action3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remedial Action --></label>
+        <name>Remedial_Action4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remedial Action --></label>
+        <name>Remedial_Action5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remedial Action --></label>
+        <name>Remedial_Action6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remedial Action --></label>
+        <name>Remedial_Action7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remedial Action --></label>
+        <name>Remedial_Action8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remedial Action --></label>
+        <name>Remedial_Action9__c</name>
+    </fields>
+    <fields>
+        <help><!-- Guidance: Have all staff booked at least one period of leave for at least 10 successive working days? In accordance with IBB company policy. Examine evidence that leave has been booked.
+For branch visit score=2, for CC/Premier/Agency visit score=1 --></help>
+        <label><!-- Score --></label>
+        <name>Score10daysleave__c</name>
+    </fields>
+    <fields>
+        <help><!-- Branch/Agency/CC=30, Premier=25 --></help>
+        <label><!-- Score --></label>
+        <name>Score_15__c</name>
+    </fields>
+    <fields>
+        <help><!-- Observe 2 calls each for 4 MOS. Call rated ‘compliant’= 2, ‘compliant with development’ =1, ‘non – compliant’=0. --></help>
+        <label><!-- Score (16) --></label>
+        <name>Score_16__c</name>
+    </fields>
+    <fields>
+        <help><!-- Guidance: How effectively have Fraud circulars been communicated to staff? Managers should ensure that these have been cascaded. Check file for signatures but not verified by interview. Score of 2 for CC/Agency/Premier and 1 for branch. --></help>
+        <label><!-- Score --></label>
+        <name>Score_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score (1) --></label>
+        <name>Score_1panickey__c</name>
+    </fields>
+    <fields>
+        <help><!-- Branch/Agency=30, Premier/CC=25 --></help>
+        <label><!-- Score --></label>
+        <name>Score_251__c</name>
+    </fields>
+    <fields>
+        <help><!-- Branch/Agency=30, Premier/CC=25 --></help>
+        <label><!-- Score --></label>
+        <name>Score_25__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score (3) --></label>
+        <name>Score_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score (5) --></label>
+        <name>Score_5__c</name>
+    </fields>
+    <fields>
+        <help><!-- Guidance: CASE reports checked – no outstanding complaints for branch action. Random check of non complaint cases should not include any cases which should be treated as complaints.Premier=5, Branch/Agency/CC=3 --></help>
+        <label><!-- Score --></label>
+        <name>Score_5open_tick__c</name>
+    </fields>
+    <fields>
+        <help><!-- Observe 2 calls. Call rated ‘compliant’= 2, ‘compliant with development’ =1, ‘non – compliant’=0. --></help>
+        <label><!-- Score (6) --></label>
+        <name>Score_61__c</name>
+    </fields>
+    <fields>
+        <help><!-- Guidance: Are Personal Development Folders in place and are they being actively used (two checked)? There should be evidence of monthly one to ones/observations being performed etc. Branches/Agencies/CC/Premier=3 --></help>
+        <label><!-- Score --></label>
+        <name>Score_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score (8) --></label>
+        <name>Score_8__c</name>
+    </fields>
+    <fields>
+        <help><!-- Agency/Premier = 3
+Branch/CC = 4 --></help>
+        <label><!-- Score --></label>
+        <name>Score_Branch_or_Agency__c</name>
+    </fields>
+    <fields>
+        <help><!-- Guidance: Has all online training been completed within the required timescales? See reports section of online training for required timescales/Refer to Training Dept… --></help>
+        <label><!-- Score (2) --></label>
+        <name>Score_CBT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score --></label>
+        <name>Score_DPA__c</name>
+    </fields>
+    <fields>
+        <help><!-- Agency = 12, Branch/CC = 2 --></help>
+        <label><!-- Score --></label>
+        <name>Score_HPP_Sales_Process__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score (2) --></label>
+        <name>Score__c</name>
+    </fields>
+    <fields>
+        <help><!-- CC/Agency = 2
+Branch = 1 --></help>
+        <label><!-- Score --></label>
+        <name>Score_agency_branch2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score (1) --></label>
+        <name>Score_leaflet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Security Alarm --></label>
+        <name>Security_Alarm__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Team&apos;s 10 day leave booked in? --></label>
+        <name>Team_s_10_day_leave_booked_in__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Percentage Score out of 80% --></help>
+        <label><!-- Total Score --></label>
+        <name>Total_Score_Agency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Score --></label>
+        <name>Total_Score_CC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Score --></label>
+        <name>Total_Score_branch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Was branch opening procedure adhered to? --></label>
+        <name>Was_branch_opening_procedure_adhered_to__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- percentage Score CC --></label>
+        <name>percentage_Score_CC__c</name>
+    </fields>
+    <layouts>
+        <layout>Agency Compliance Visit</layout>
+        <sections>
+            <label><!-- Actions, Signage and DPA --></label>
+            <section>Actions, Signage and DPA</section>
+        </sections>
+        <sections>
+            <label><!-- Agency Premises Controls --></label>
+            <section>Agency Premises Controls</section>
+        </sections>
+        <sections>
+            <label><!-- CBT --></label>
+            <section>CBT</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Care &amp; FCU --></label>
+            <section>Customer Care &amp; FCU</section>
+        </sections>
+        <sections>
+            <label><!-- DPA --></label>
+            <section>DPA</section>
+        </sections>
+        <sections>
+            <label><!-- Fraud Circulars --></label>
+            <section>Fraud Circulars</section>
+        </sections>
+        <sections>
+            <label><!-- Leaflets and Panic Alarm Key --></label>
+            <section>Leaflets and Panic Alarm Key</section>
+        </sections>
+        <sections>
+            <label><!-- Open Tickets --></label>
+            <section>Open Tickets</section>
+        </sections>
+        <sections>
+            <label><!-- Overall Visit Comments --></label>
+            <section>Overall Visit Comments</section>
+        </sections>
+        <sections>
+            <label><!-- PDFs --></label>
+            <section>PDFs</section>
+        </sections>
+        <sections>
+            <label><!-- Staff Compliance Interviews --></label>
+            <section>Staff Compliance Interviews</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Branch Compliance Visit Layout</layout>
+        <sections>
+            <label><!-- 10 Days Leave --></label>
+            <section>10 Days Leave</section>
+        </sections>
+        <sections>
+            <label><!-- Actions, Signage and DPA --></label>
+            <section>Actions, Signage and DPA</section>
+        </sections>
+        <sections>
+            <label><!-- Branch Procedures --></label>
+            <section>Branch Procedures</section>
+        </sections>
+        <sections>
+            <label><!-- CBT --></label>
+            <section>CBT</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Care &amp; FCU --></label>
+            <section>Customer Care &amp; FCU</section>
+        </sections>
+        <sections>
+            <label><!-- Fraud Circulars --></label>
+            <section>Fraud Circulars</section>
+        </sections>
+        <sections>
+            <label><!-- KYC --></label>
+            <section>KYC</section>
+        </sections>
+        <sections>
+            <label><!-- Leaflets and Panic Alarm Key --></label>
+            <section>Leaflets and Panic Alarm Key</section>
+        </sections>
+        <sections>
+            <label><!-- Open Tickets --></label>
+            <section>Open Tickets</section>
+        </sections>
+        <sections>
+            <label><!-- Overall Visit Comments --></label>
+            <section>Overall Visit Comments</section>
+        </sections>
+        <sections>
+            <label><!-- PDFs --></label>
+            <section>PDFs</section>
+        </sections>
+        <sections>
+            <label><!-- Staff Compliance Interviews --></label>
+            <section>Staff Compliance Interviews</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CC Compliance Visit</layout>
+        <sections>
+            <label><!-- 10 Days Leave --></label>
+            <section>10 Days Leave</section>
+        </sections>
+        <sections>
+            <label><!-- Actions from the last Compliance Visit --></label>
+            <section>Actions from the last Compliance Visit</section>
+        </sections>
+        <sections>
+            <label><!-- CBT --></label>
+            <section>CBT</section>
+        </sections>
+        <sections>
+            <label><!-- Calls --></label>
+            <section>Calls</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Care &amp; FCU --></label>
+            <section>Customer Care &amp; FCU</section>
+        </sections>
+        <sections>
+            <label><!-- Fraud Circulars --></label>
+            <section>Fraud Circulars</section>
+        </sections>
+        <sections>
+            <label><!-- Open Tickets --></label>
+            <section>Open Tickets</section>
+        </sections>
+        <sections>
+            <label><!-- Overall Visit Comments --></label>
+            <section>Overall Visit Comments</section>
+        </sections>
+        <sections>
+            <label><!-- PDFs --></label>
+            <section>PDFs</section>
+        </sections>
+        <sections>
+            <label><!-- Staff Compliance Interviews --></label>
+            <section>Staff Compliance Interviews</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Premier Compliance Visit</layout>
+        <sections>
+            <label><!-- 10 Days Leave --></label>
+            <section>10 Days Leave</section>
+        </sections>
+        <sections>
+            <label><!-- Actions from last visit --></label>
+            <section>Actions from last visit</section>
+        </sections>
+        <sections>
+            <label><!-- Application of HPP Sales Process --></label>
+            <section>Application of HPP Sales Process</section>
+        </sections>
+        <sections>
+            <label><!-- CBT --></label>
+            <section>CBT</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Care &amp; FCU --></label>
+            <section>Customer Care &amp; FCU</section>
+        </sections>
+        <sections>
+            <label><!-- Fraud Circulars --></label>
+            <section>Fraud Circulars</section>
+        </sections>
+        <sections>
+            <label><!-- KYC --></label>
+            <section>KYC</section>
+        </sections>
+        <sections>
+            <label><!-- Leaflets and Panic Alarm Key --></label>
+            <section>Leaflets and Panic Alarm Key</section>
+        </sections>
+        <sections>
+            <label><!-- Open Tickets --></label>
+            <section>Open Tickets</section>
+        </sections>
+        <sections>
+            <label><!-- Overall Visit Comments --></label>
+            <section>Overall Visit Comments</section>
+        </sections>
+        <sections>
+            <label><!-- PDFs --></label>
+            <section>PDFs</section>
+        </sections>
+        <sections>
+            <label><!-- Signage and DPA --></label>
+            <section>Signage and DPA</section>
+        </sections>
+        <sections>
+            <label><!-- Staff Compliance Interviews --></label>
+            <section>Staff Compliance Interviews</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Agency --></label>
+        <name>Agency</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Branch --></label>
+        <name>Branch</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Contact Centre --></label>
+        <name>Contact_Centre</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Premier --></label>
+        <name>Premier</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

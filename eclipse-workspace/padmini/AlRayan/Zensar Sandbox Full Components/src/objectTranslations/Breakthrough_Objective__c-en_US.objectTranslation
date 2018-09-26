@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Breakthrough Objective</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Breakthrough Objectives</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active? --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Key Performance Indicator 1 --></label>
+        <name>Key_Performance_Indicator_1__c</name>
+        <relationshipLabel><!-- Breakthrough Objectives --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Key Performance Indicator 2 --></label>
+        <name>Key_Performance_Indicator_2__c</name>
+        <relationshipLabel><!-- Breakthrough Objectives (Key Performance Indicator 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Key Performance Indicator 3 --></label>
+        <name>Key_Performance_Indicator_3__c</name>
+        <relationshipLabel><!-- Breakthrough Objectives (Key Performance Indicator 3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Related area of focus --></label>
+        <name>Related_area_of_focus__c</name>
+        <relationshipLabel><!-- Breakthrough Objectives --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Breakthrough Objective Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Covenant Information</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Covenant Information</value>
+    </caseValues>
+    <fields>
+        <label><!-- CPF Customer Name --></label>
+        <name>CPF_Customer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Covenant Clause --></label>
+        <name>Covenant_Clause__c</name>
+    </fields>
+    <fields>
+        <label><!-- %FSCR Actual --></label>
+        <name>FSCR_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSCR Calculation --></label>
+        <name>FSCR_Calculation__c</name>
+    </fields>
+    <fields>
+        <label><!-- %FSCR Covenant --></label>
+        <name>FSCR_Covenant__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSCR Met/Breached --></label>
+        <name>FSCR_Met_Breached__c</name>
+    </fields>
+    <fields>
+        <label><!-- %FTV Actual --></label>
+        <name>FTV_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- %FTV Covenant --></label>
+        <name>FTV_Covenant__c</name>
+    </fields>
+    <fields>
+        <label><!-- FTV Met/Breached --></label>
+        <name>FTV_Met_Breached__c</name>
+    </fields>
+    <fields>
+        <label><!-- FTV calculation --></label>
+        <name>FTV_calculation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Year --></label>
+        <name>Financial_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Valuation Completed Date --></label>
+        <name>Last_Valuation_Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Covenant Due Date --></label>
+        <name>Next_Covenant_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Covenant Testing Date --></label>
+        <name>Next_Covenant_Testing_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next FSCR Covenant Review Date --></label>
+        <name>Next_FSCR_Covenant_Review_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next PCR Covenant Review Date --></label>
+        <name>Next_PCR_Covenant_Review_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Covenant Information --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Other Covenants Date --></label>
+        <name>Other_Covenants_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Covenants --></label>
+        <name>Other_Covenants__c</name>
+    </fields>
+    <fields>
+        <label><!-- %PCR Actual --></label>
+        <name>PCR_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- PCR Calculation --></label>
+        <name>PCR_Calculation__c</name>
+    </fields>
+    <fields>
+        <label><!-- PCR Met/Breached --></label>
+        <name>PCR_Met_Breached__c</name>
+    </fields>
+    <fields>
+        <label><!-- %PCR covenant --></label>
+        <name>PCR_covenant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship Manager --></label>
+        <name>Relationship_Manager__c</name>
+        <relationshipLabel><!-- Covenant Information (Relationship Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Transaction Manager --></label>
+        <name>Transaction_Manager__c</name>
+        <relationshipLabel><!-- Covenant Information (Transaction Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Valuation Amount --></label>
+        <name>Valuation_Amount__c</name>
+    </fields>
+    <layouts>
+        <layout>Covenant Information Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

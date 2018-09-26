@@ -1,0 +1,113 @@
+<apex:page tabStyle="NVMStatsSF__NVM_Call_Summary__c" sidebar="false" controller="NVMStatsSF.StatsConfigController">
+
+   <apex:form id="confform">
+      <apex:pageMessages />
+      <apex:pageBlock >
+         <apex:pageBlockButtons >
+            <apex:CommandButton rendered="{!canEdit}" action="{!save}" value="Save All"/>
+            <apex:CommandButton rendered="{!canEdit}" action="{!addChannel}" value="Add Channel" />
+            <apex:CommandButton rendered="{!canEdit}" action="{!delChannels}" value="Delete Channel(s)" />
+            
+         </apex:pageBlockButtons>
+         <apex:pageBlockSection id="chans" columns="9" Title="Channels">
+
+              <apex:pageBlockSectionItem >&nbsp;</apex:pageBlockSectionItem>
+              <apex:pageBlockSectionItem >Name</apex:pageBlockSectionItem>
+              <apex:pageBlockSectionItem >Description</apex:pageBlockSectionItem>
+              <apex:pageBlockSectionItem >Channel URL</apex:pageBlockSectionItem>
+              <apex:pageBlockSectionItem >Client ID</apex:pageBlockSectionItem>
+              <apex:pageBlockSectionItem >Client Secret</apex:pageBlockSectionItem>
+              <apex:pageBlockSectionItem >Timeout (ms)</apex:pageBlockSectionItem>
+              <apex:pageBlockSectionItem >Offset (mins)</apex:pageBlockSectionItem>
+              <apex:pageBlockSectionItem >Q'd?</apex:pageBlockSectionItem>
+
+
+            <apex:repeat var="row" value="{!channels}">
+            
+              <apex:pageBlockSectionItem ><apex:inputCheckbox disabled="{!canEdit == FALSE}" value="{!row.isDeleted}"/> </apex:pageBlockSectionItem>
+
+              <apex:pageBlockSectionItem rendered="{!canEdit == TRUE}"><apex:inputField style="width:150px" value="{!row.Name}"/></apex:pageBlockSectionItem>
+              <apex:pageBlockSectionItem rendered="{!canEdit == FALSE}"><apex:outputField style="width:150px" value="{!row.Name}"/></apex:pageBlockSectionItem>
+
+              <apex:pageBlockSectionItem rendered="{!canEdit == TRUE}"><apex:inputField style="width:160px" value="{!row.NVMStatsSF__Channel_Description__c}"/></apex:pageBlockSectionItem>
+              <apex:pageBlockSectionItem rendered="{!canEdit == FALSE}"><apex:outputField style="width:160px" value="{!row.NVMStatsSF__Channel_Description__c}"/></apex:pageBlockSectionItem>
+
+              <apex:pageBlockSectionItem rendered="{!canEdit == TRUE}"><apex:inputField style="width:200px" value="{!row.NVMStatsSF__Channel_URL__c}"/></apex:pageBlockSectionItem>
+              <apex:pageBlockSectionItem rendered="{!canEdit == FALSE}"><apex:outputField style="width:200px" value="{!row.NVMStatsSF__Channel_URL__c}"/></apex:pageBlockSectionItem>
+              
+              <apex:pageBlockSectionItem rendered="{!canEdit == TRUE}"><apex:inputField style="width:80px" value="{!row.NVMStatsSF__Client_ID__c}"/></apex:pageBlockSectionItem>
+              <apex:pageBlockSectionItem rendered="{!canEdit == FALSE}"><apex:outputField style="width:80px" value="{!row.NVMStatsSF__Client_ID__c}"/></apex:pageBlockSectionItem>
+
+              <apex:pageBlockSectionItem rendered="{!canEdit == TRUE && canReadSecrets == TRUE}"><apex:inputField style="width:160px"  value="{!row.NVMStatsSF__Client_Secret__c}"/></apex:pageBlockSectionItem>
+              <apex:pageBlockSectionItem rendered="{!canEdit == FALSE && canReadSecrets == TRUE}"><apex:outputField style="width:160px"  value="{!row.NVMStatsSF__Client_Secret__c}"/></apex:pageBlockSectionItem>
+              <apex:pageBlockSectionItem rendered="{!canReadSecrets == FALSE}">*****</apex:pageBlockSectionItem>
+              
+              <apex:pageBlockSectionItem rendered="{!canEdit == TRUE}"><apex:inputField style="width:40px" value="{!row.NVMStatsSF__Timeout__c}"/></apex:pageBlockSectionItem>
+              <apex:pageBlockSectionItem rendered="{!canEdit == FALSE}"><apex:outputField style="width:40px" value="{!row.NVMStatsSF__Timeout__c}"/></apex:pageBlockSectionItem>
+
+              <apex:pageBlockSectionItem rendered="{!canEdit == TRUE}"><apex:inputField style="width:50px" value="{!row.NVMStatsSF__Offset__c}"/></apex:pageBlockSectionItem>
+              <apex:pageBlockSectionItem rendered="{!canEdit == FALSE}"><apex:outputField style="width:50px" value="{!row.NVMStatsSF__Offset__c}"/></apex:pageBlockSectionItem>
+
+              <apex:pageBlockSectionItem ><apex:inputCheckbox disabled="{!canEdit == FALSE}" value="{!row.NVMStatsSF__Running__c}"/> </apex:pageBlockSectionItem>
+
+           </apex:repeat>            
+            </apex:pageBlockSection>
+
+         <apex:repeat var="map" value="{!mappings}">
+
+           <apex:pageBlockSection id="maps" columns="4" Title="Global Settings and Mappings">
+              <!-- We only use one Map for all channels 
+              <apex:pageBlockSectionItem >Name:</apex:pageBlockSectionItem>
+              <apex:pageBlockSectionItem rendered="{!canEdit == TRUE}"><apex:inputText size="32" value="{!map.Name}"/></apex:pageBlockSectionItem>
+              <apex:pageBlockSectionItem rendered="{!canEdit == FALSE}"><apex:outputField value="{!map.Name}"/></apex:pageBlockSectionItem>
+ 				-->
+              <apex:pageBlockSectionItem >Statistics Retention:<br/><i>(Days)</i></apex:pageBlockSectionItem>
+              <apex:pageBlockSectionItem rendered="{!canEdit == TRUE}"><apex:inputField style="width:40px" value="{!map.NVMStatsSF__Delete_After_Days__c}"/></apex:pageBlockSectionItem>
+              <apex:pageBlockSectionItem rendered="{!canEdit == FALSE}"><apex:outputField style="width:40px" value="{!map.NVMStatsSF__Delete_After_Days__c}"/></apex:pageBlockSectionItem>
+
+              <apex:pageBlockSectionItem >Flags:</apex:pageBlockSectionItem>
+              <apex:pageBlockSectionItem rendered="{!canEdit == TRUE}"><apex:inputField style="width:850px" value="{!map.NVMStatsSF__Flags__c}"/></apex:pageBlockSectionItem>
+              <apex:pageBlockSectionItem rendered="{!canEdit == FALSE}"><apex:outputField style="width:850px" value="{!map.NVMStatsSF__Flags__c}"/></apex:pageBlockSectionItem>
+
+				<!-- Not yet needed to let people edit the mappings so hide these sections until need arises -->
+
+              <apex:pageBlockSectionItem rendered="false">Event Code Map:</apex:pageBlockSectionItem>
+              <apex:pageBlockSectionItem rendered="false"><apex:inputText style="width:850px;" Size="180" value="{!map.NVMStatsSF__Event_Code_Map__c}"/></apex:pageBlockSectionItem>
+              <apex:pageBlockSectionItem rendered="false"><apex:outputField style="width:850px;" value="{!map.NVMStatsSF__Event_Code_Map__c}"/></apex:pageBlockSectionItem>
+
+              <apex:pageBlockSectionItem rendered="false">Class Map:</apex:pageBlockSectionItem>
+              <apex:pageBlockSectionItem rendered="false"><apex:inputText style="width:850px;" Size="180" value="{!map.NVMStatsSF__Class_Map__c}"/></apex:pageBlockSectionItem>
+              <apex:pageBlockSectionItem rendered="false"><apex:outputField style="width:850px;" value="{!map.NVMStatsSF__Class_Map__c}"/></apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+
+
+           <apex:pageBlockSection rendered="true" id="filters" columns="2" Title="Inbound Call Applet Filters">
+              <apex:pageBlockSectionItem >Include Applet Types:</apex:pageBlockSectionItem>
+              <apex:pageBlockSectionItem rendered="{!canEdit == TRUE}"><apex:inputField style="width:850px; float:left" value="{!map.NVMStatsSF__allowedAppletTypes__c}"/></apex:pageBlockSectionItem>
+              <apex:pageBlockSectionItem rendered="{!canEdit == FALSE}"><apex:outputField style="width:850px; float:left" value="{!map.NVMStatsSF__allowedAppletTypes__c}"/></apex:pageBlockSectionItem>
+
+              <apex:pageBlockSectionItem rendered="true">Applet Name Includes:<br/><i>(comma separated, no leading/trailing spaces)</i></apex:pageBlockSectionItem>
+              <apex:pageBlockSectionItem rendered="{!canEdit == TRUE}"><apex:inputField style="width:850px; float:left" value="{!map.NVMStatsSF__appletnameFragments__c}"/></apex:pageBlockSectionItem>
+              <apex:pageBlockSectionItem rendered="{!canEdit == FALSE}"><apex:outputField style="width:850px; float:left" value="{!map.NVMStatsSF__appletnameFragments__c}"/></apex:pageBlockSectionItem>
+           </apex:pageBlockSection>
+         </apex:repeat>            
+
+         
+      </apex:pageBlock>
+      <apex:pageBlock >
+      
+         <apex:pageBlockSection id="Links" columns="1" Title="Report Templates">
+            <apex:commandLink action="/packaging/installPackage.apexp?p0=04t24000000E9L7" target="_Blank" title="Install Report Templates">Install Report Templates Package v1.5</apex:commandLink>
+         </apex:pageBlockSection>
+
+         <apex:pageBlockSection id="tests" columns="3" Title="Testing">
+            <apex:selectList size="1" multiselect="false" value="{!testChannel}">
+               <apex:selectOptions value="{!selectedChannel}"/>
+            </apex:selectList>
+            <apex:CommandButton rendered="{!canEdit}" action="{!testIBCalls}" value="Test IB Calls"/>
+            <apex:commandLink action="{!gotoLogs}" target="_Blank" title="Transaction Logs">Open Transaction Logs</apex:commandLink>
+         </apex:pageBlockSection>
+      </apex:pageBlock>
+   
+   </apex:form>
+</apex:page>

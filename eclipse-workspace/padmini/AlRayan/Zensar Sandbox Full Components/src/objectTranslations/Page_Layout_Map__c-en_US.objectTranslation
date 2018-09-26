@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Page Layout Map</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Page Layout Maps</value>
+    </caseValues>
+    <fields>
+        <label><!-- DynamicPageConfig --></label>
+        <name>DynamicPageConfig__c</name>
+        <relationshipLabel><!-- Page Layout Maps --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- ProductEventDirector --></label>
+        <name>ProductEventDirector__c</name>
+        <relationshipLabel><!-- Page Layout Maps --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Profile Name --></label>
+        <name>Profile_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Type --></label>
+        <name>Record_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- SObject --></label>
+        <name>SObject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Global</masterLabel>
+            <translation><!-- Global --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Profile</masterLabel>
+            <translation><!-- Profile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RecordType</masterLabel>
+            <translation><!-- RecordType --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User</masterLabel>
+            <translation><!-- User --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Use Standard Layout --></label>
+        <name>Use_Standard_Layout__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Page Layout Maps --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Page Layout Map Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You can&apos;t select both record type and director --></errorMessage>
+        <name>Cant_have_record_type_and_director</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Profile name required --></errorMessage>
+        <name>Profile_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- User required --></errorMessage>
+        <name>User_Required</name>
+    </validationRules>
+</CustomObjectTranslation>

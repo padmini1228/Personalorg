@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_letterhead</letterhead>
+    <name>121 Form Approved</name>
+    <style>freeForm</style>
+    <subject>Your 121 form for {!X1_2_1_Head_Office_Form__c.Performance_Month_Reviewed__c} has been approved</subject>
+    <textOnly>Dear {!X1_2_1_Head_Office_Form__c.OwnerFullName},
+
+Your 121 form for {!X1_2_1_Head_Office_Form__c.Performance_Month_Reviewed__c} has been approved by your Manager.
+
+Please click the link below to review the comments:
+
+{!X1_2_1_Head_Office_Form__c.Link}</textOnly>
+    <type>html</type>
+</EmailTemplate>

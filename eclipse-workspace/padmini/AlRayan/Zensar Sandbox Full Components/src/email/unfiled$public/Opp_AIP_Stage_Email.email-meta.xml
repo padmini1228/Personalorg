@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Send email to Intermediary contact when HPP/BTL is in AIP stage</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Opp_AIP_Stage_Email</name>
+    <style>none</style>
+    <subject>AIP Letter generated for {!Opportunity.Unique_Reference_Number__c}, {!Opportunity.New_property_street__c}</subject>
+    <type>text</type>
+</EmailTemplate>

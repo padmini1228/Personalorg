@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_letterhead</letterhead>
+    <name>Next Covenant Testing Date is Today</name>
+    <style>freeForm</style>
+    <subject>Next Covenant Testing Date for {!Opportunity.Name} is Today</subject>
+    <textOnly>The Next Covenant Testing Date for {!Opportunity.Name} is {!Covenant_Information__c.Next_Covenant_Testing_Date__c}
+
+Name - {!Opportunity.Account}
+
+Link to Opportunity - {!Opportunity.Link}</textOnly>
+    <type>html</type>
+</EmailTemplate>

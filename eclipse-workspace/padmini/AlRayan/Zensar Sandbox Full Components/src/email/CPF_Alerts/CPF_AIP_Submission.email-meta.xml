@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email for use when an AIP is ready for submission to SW</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>CPF AIP Submission</name>
+    <style>freeForm</style>
+    <subject>CPF AIP submission ready for review.</subject>
+    <textOnly>Dear Simon, 
+The following AIP submission is now ready for your review:
+Link to submission form:{!01ID0000000V5Ey.Link}
+Name of the business: {!01ID0000000V5Ey.00ND0000003M1UV}Amount of finance: {!01ID0000000V5Ey.00ND0000003M2sm}Rate: {!01ID0000000V5Ey.00ND0000003M2t1}Arrangement Fee Amount: {!01ID0000000V5Ey.00ND0000003M2tG}Term: {!01ID0000000V5Ey.00ND0000003M2sw}Monthly repayment:
+Please approve/decline this form in order for it to progress to the next stage. 
+Regards{!01ID0000000V5Ey.LastModifiedBy}</textOnly>
+    <type>html</type>
+</EmailTemplate>

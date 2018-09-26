@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>To be issued for existing customers wishing to apply for the 24 month FTD product</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_letterhead</letterhead>
+    <name>Existing Customer FTD Letter &amp; Supp Form</name>
+    <style>formalLetter</style>
+    <subject>Existing Customer Fixed Term Deposit Application</subject>
+    <textOnly> 
+Dear {!Account.Name}
+ 
+Assalamu Alaikum
+ 
+Thank you for your recent request to open a Fixed Term Deposit Account with Islamic Bank of Britain. Simply complete the enclosed Fixed Term Deposit Instruction Form, indicating your chosen term and deposit amount then sign the form and send it to us and we will take care of the rest.    
+ 
+Please Note: we will not be able to set up your Fixed Term Deposit Account before the receipt of your deposit amount. The start date of your Account will commence upon receipt of your cleared deposit amount by us. When your Account is set up, we will send you a confirmation notice stating the details of your Account. 
+ 
+Making a deposit:
+ 
+You can make a deposit in any of the following ways:
+ 
+·           By making an online transfer from another account or by electronic money 
+             transfer
+·           By sending a cheque by post to our Head Office at the following address:
+ 
+                                    Islamic Bank of Britain PLC
+                                    PO Box 12461
+                                    Birmingham
+                                    B16 6AQ  
+(Please note that we can not accept cash deposits by post). 
+·         In branch using cash or cheque  
+ 
+ 
+Should you wish to speak to someone about your options or to find out more information, please:
+ 
+·         Call 0800 4080 786
+ 
+·         Visit one of our branches
+ 
+·         Go online at: www.islamic-bank.com
+ 
+ 
+Yours sincerely,
+ 
+Sultan Choudhury
+Commercial Director
+ </textOnly>
+    <type>html</type>
+</EmailTemplate>

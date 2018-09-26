@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email sent to SGH Martineau requesting DS1 and TR1</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>Redemption DS1 and TR1 request</name>
+    <style>freeForm</style>
+    <subject>DS1 and TR1 Request</subject>
+    <type>html</type>
+</EmailTemplate>

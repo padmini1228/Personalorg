@@ -1,0 +1,42 @@
+<apex:page controller="Risk.PROCHeatmapController" standardStylesheets="{! !isPrintableView}" tabstyle="grc__Process__c" showheader="{! !isPrintableView}" sidebar="{! !isPrintableView}" id="pg" renderAs="{! IF( isPrintableView, 'pdf', 'html')}">
+
+    <head>
+        <apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'BusinessUnitHeatmapReport.css')}"/>
+    </head>
+
+    <div class="header">
+        <apex:sectionHeader rendered="{! !isPrintableView}" title="Heatmaps" subTitle="Process - '{!process.Name}'"/>
+    </div>
+
+    <apex:outputPanel rendered="{! isPrintableView}">
+        <h2>HeatMaps</h2>
+        <h3>Process - '{!process.Name}'</h3>
+    </apex:outputPanel>
+
+    <apex:pageMessages rendered="{! !isPrintableView}" />
+       <apex:outputPanel rendered="{!businessUnit.Id!= '' && !isPrintableView}">
+           <div class="ptBreadcrumb">
+               <div style="float:left;" >
+                    &nbsp;&#171;&nbsp;
+                    <a href="{!URLFOR($Action.grc__Process__c.View,process.Id)}">
+                        Back to Process
+                    </a>
+                </div>
+                <div style="float:right;">
+                	<apex:form >
+	                	<apex:commandlink value="Printable View" action="{!printHeatmap}" target="_blank"/>
+
+                    </apex:form>
+                </div>
+                <div style="clear:both;"/>
+                <br/><br/>
+          </div>
+       </apex:outputPanel>
+
+
+        <div class="riskHeatmaps">
+            <c:HeatmapCollection heatmaps="{!heatmaps}" heatmapFilter="{!hf}" height="400px" width="100%" printableView="{!isPrintableView}" ignoreFieldsOverride="true"/>
+        </div>
+
+
+</apex:page>

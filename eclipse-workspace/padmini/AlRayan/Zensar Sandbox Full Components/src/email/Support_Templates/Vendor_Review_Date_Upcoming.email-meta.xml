@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>Vendor Review Date Upcoming</name>
+    <style>freeForm</style>
+    <subject>Please book review with {!Vendor_Service_Review__c.Vendor__c}</subject>
+    <textOnly>To whom it may concern,
+
+Please note that the vendor review for {!Vendor_Service_Review__c.Vendor__c} is due on {!Vendor_Service_Review__c.Scheduled_Date_for_Next_Review__c}
+
+Please book this meeting.
+
+Thanks
+
+Operations</textOnly>
+    <type>html</type>
+</EmailTemplate>

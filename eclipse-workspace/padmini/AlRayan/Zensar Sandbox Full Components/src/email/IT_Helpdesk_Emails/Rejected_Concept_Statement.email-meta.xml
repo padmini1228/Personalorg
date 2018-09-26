@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>Rejected Concept Statement</name>
+    <style>freeForm</style>
+    <subject>Concept Statement Rejected</subject>
+    <textOnly>Dear {!ApprovalRequest.Process_Approver}
+
+The following Concept Statement has been Rejected by your Line Executive. Please check case for update.
+
+{!Case.Link}
+{!Case.Subject}
+
+Thanks
+
+Transformation Team</textOnly>
+    <type>html</type>
+</EmailTemplate>

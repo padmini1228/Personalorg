@@ -1,0 +1,79 @@
+<apex:page standardController="XRB__Report__c" extensions="XRB.CreateReportController"  >
+    <apex:sectionHeader title="{!$ObjectType.XRB__Report__c.Label}" subtitle="{!XRB__Report__c.Name}" />
+    <apex:includeScript value="//code.jquery.com/jquery-1.10.2.min.js" />
+    <apex:form >
+        <script typ="text/javascript" >
+            // Confirming it from the user before deleting the report.
+            function confirmation(reportName){
+                return confirm('{!$Label.Delete_Report_Confirm} ' + reportName + '?');
+            }
+        </script>
+        <apex:pageBlock title="{!XRB__Report__c.Name} Detail"  >
+            <apex:pageBlockButtons >
+                <apex:commandButton value="{!$Label.xrb__edit}" action="{!URLFOR($Action.Report__c.Edit, Report__c.Id)}" rendered="{!NOT(isReadOnly)}" />
+                <apex:commandButton value="{!$Label.xrb__delete}" onclick="if(!confirmation('{!XRB__Report__c.Name}')) return false;" action="{!URLFOR($Action.Report__c.Delete, Report__c.Id)}" rendered="{!NOT(isReadOnly)}" />
+                <apex:commandButton value="{!$Label.xrb__clone}" action="{!URLFOR($Action.Report__c.Clone, Report__c.Id)}" />
+                <apex:commandButton value="{!$Label.xrb__sharing}" rendered="{!NOT(isReadOnly)}" action="{!URLFOR($Action.Report__c.Share, Report__c.Id)}" />
+                <apex:commandButton value="{!$Label.xrb__build}" action="{!redirectToBuildPage}"  />
+            </apex:pageBlockButtons>
+            
+            <apex:pageBlockSection columns="2" >
+                <apex:outputField value="{!XRB__Report__c.Name}" />
+                <apex:outputField value="{!XRB__Report__c.XRB__Font_Size__c}"/>
+                <apex:outputField value="{!XRB__Report__c.XRB__Date_Filter__c}" />
+                <apex:outputField value="{!XRB__Report__c.XRB__Risk_Owner__c}" />
+                <apex:outputField value="{!XRB__Report__c.XRB__StartDate__c}" />
+                <apex:outputField value="{!XRB__Report__c.XRB__Description__c}" />
+                <apex:outputField value="{!XRB__Report__c.XRB__EndDate__c}" />
+                <apex:pageBlockSectionItem />
+                <!-- Left Logo -->
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="{!$ObjectType.XRB__Report__c.fields.XRB__Left_Logo__c.Label}" />
+                    <apex:outputPanel layout="none" >
+                        <apex:image value="/servlet/servlet.FileDownload?file={!XRB__Report__c.XRB__Left_Logo__c}" rendered="{!NOT(ISNULL(XRB__Report__c.XRB__Left_Logo__c))}" />
+                        <apex:outputLabel value="{!$Label.xrb__none}" rendered="{!ISNULL(XRB__Report__c.XRB__Left_Logo__c)}" />
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+
+                <!-- Right Logo -->
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="{!$ObjectType.XRB__Report__c.fields.XRB__Right_Logo__c.Label}" />
+                    <apex:outputPanel layout="none" >
+                        <apex:image value="/servlet/servlet.FileDownload?file={!XRB__Report__c.XRB__Right_Logo__c}" rendered="{!NOT(ISNULL(XRB__Report__c.XRB__Right_Logo__c))}" />
+                        <apex:outputLabel value="{!$Label.xrb__none}" rendered="{!ISNULL(XRB__Report__c.XRB__Right_Logo__c)}" />
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            
+            <!-- System fields -->
+            <apex:pageBlockSection columns="2" >
+                
+                <!-- Created By -->
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="{!$Label.xrb__created_by}" />
+                    <apex:outputPanel layout="none" >
+                        <table>
+                            <tr>
+                                <td><apex:outputField value="{!XRB__Report__c.CreatedById}" /></td>
+                                <td><apex:outputField value="{!XRB__Report__c.CreatedDate}" /></td>
+                            </tr>
+                        </table>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                
+                <!-- Last Modified By -->
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="{!$Label.xrb__last_modified_by}" />
+                    <apex:outputPanel layout="none" >
+                        <table>
+                            <tr>
+                                <td><apex:outputField value="{!XRB__Report__c.LastModifiedById}" /></td>
+                                <td><apex:outputField value="{!XRB__Report__c.LastModifiedDate}" /></td>
+                            </tr>
+                        </table>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

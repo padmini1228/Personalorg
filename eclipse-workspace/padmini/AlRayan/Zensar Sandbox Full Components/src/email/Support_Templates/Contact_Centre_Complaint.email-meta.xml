@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This will fire when a complaint case is logged to the Contact Centre and notify the management team</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Contact Centre Complaint</name>
+    <style>none</style>
+    <subject>**** PLEASE ACTION**** New Complaint Logged to Contact Centre</subject>
+    <type>text</type>
+</EmailTemplate>

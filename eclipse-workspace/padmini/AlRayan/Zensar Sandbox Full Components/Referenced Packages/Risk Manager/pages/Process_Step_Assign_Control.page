@@ -1,0 +1,101 @@
+<apex:page standardController="Risk__ProcessStep_Control_Lookup__c" extensions="Risk.ProcessStepControlAssign">
+
+	<style>
+		.itemWait {
+		color:#D74C3B;
+		margin-left:5px;
+		}
+
+		.filter{
+			border:solid 1px #9EC96A;
+			width: 60%;
+			margin:0 auto;
+			margin-top:10px;
+			margin-bottom:10px;
+			padding-bottom:10px;
+			text-align:center;
+		}
+
+		.filter-header{
+			background-color: #9EC96A;
+			font-weight: bold;
+			color: #ffffff;
+			padding: 3px;
+		}
+
+		.filter-section{
+			display:inline-block;
+			padding: 5px;
+		}
+	</style>
+
+    <apex:form >
+
+        <apex:sectionHeader title="{!processStepObjectLabel}: {!selectedProcessStepData.processStepRecord.Name}" subtitle="Assign {!controlObjectLabelPlural} "/>
+
+        <apex:pageBlock title="Error" rendered="{!pageError}">
+            <apex:pageBlockSection columns="1" collapsible="false" >
+                <apex:messages />
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+
+        <apex:pageBlock title="{!controlObjectLabelPlural} for '{!selectedProcessStepData.processStepRecord.Name}'" rendered="{!!pageError}">
+
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!save}" value="Save" />
+                <apex:commandButton action="{!cancel}" value="Cancel" />
+            </apex:pageBlockButtons>
+
+            <apex:pageBlockSection columns="1" title="Information" collapsible="false">
+                <p>Managing the list of {!selectedProcessStepData.processStepRecord.Name}:</p>
+                <p style="margin-left: 30px;">
+                	To include additional {!controlObjectLabelPlural}, select the {!controlObjectLabelPlural} on the left
+                	and click Add. To remove any {!controlObjectLabelPlural}, simply select them on the right and
+                	click Remove. Tick Show All {!controlObjectLabelPlural} to show {!controlObjectLabelPlural} unrelated to the related {!processObjectLabel} -> {!businessUnitObjectLabel}.</p>
+            </apex:pageBlockSection>
+
+            <div class="filter">
+                <div class="filter-header">
+                    Filter Unassociated {!controlObjectLabelPlural}
+                </div>
+                <div class="filter-content">
+                    <div class="filter-section">
+                        <apex:pageBlockSection columns="2">
+                            <apex:pageBlockSectionItem >
+                                {!controlObjectLabelPlural} Name:
+                                <apex:inputText value="{!controlNameFilter}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel value="Show All {!controlObjectLabelPlural}" for="showAll"/>
+                                <apex:outputPanel >
+                                    <apex:inputCheckbox value="{!showAllControls}" id="showAll">
+                                        <apex:actionSupport event="onchange" action="{!setupPage}"
+                                                rerender="items" status="itemWait"/>
+                                    </apex:inputCheckbox>
+                                </apex:outputPanel>
+                            </apex:pageBlockSectionItem>
+                        </apex:pageBlockSection>
+                    </div>
+                    <div class="filter-button">
+                        <div style="margin-left:80px; display:inline-block;">
+                            <apex:commandButton action="{!setupPage}" value="Filter" rerender="items" status="itemWait"/>
+                        </div>
+                        <div style="width: 80px; display:inline-block;">
+                            <apex:actionStatus startStyleClass="itemWait" id="itemWait" startText="Please wait..." />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <apex:outputPanel id="items">
+                <div style="text-align:center;">
+                    <c:ManageLinks allList="{!listOfControlItems}" selectedList="{!selected}" linkLabel="{!controlObjectLabelPlural}" resultElementId="{!$Component.result}" />
+                    <apex:inputHidden id="result" value="{!selected}" />
+                </div>
+            </apex:outputPanel>
+
+        </apex:pageBlock>
+
+    </apex:form>
+
+</apex:page>

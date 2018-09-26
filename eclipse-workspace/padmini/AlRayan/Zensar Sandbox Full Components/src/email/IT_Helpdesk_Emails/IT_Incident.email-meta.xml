@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>IT Incident</name>
+    <style>freeForm</style>
+    <subject>New IT Incident with {!IT_Incident__c.Affected_system__c}</subject>
+    <textOnly>You are receiving this email due to an issue with {!IT_Incident__c.Affected_system__c}
+
+Date &amp; time of issue: {!IT_Incident__c.Date_time_of_incident__c}
+Affected system: {!IT_Incident__c.Affected_system__c}
+
+Details of incident:
+{!IT_Incident__c.Details_of_incident__c}
+
+Any known workaround:
+{!IT_Incident__c.Any_known_workaround__c}
+
+Actions being taken:
+{!IT_Incident__c.Any_known_workaround__c}
+
+Date &amp; time of next update:
+{!IT_Incident__c.Date_time_of_next_update__c}
+
+If you do not require updates on this system, please contact Matt Glover so you can be removed from this email.
+
+If there is anyone which should be receiving these updates but is not, please contact Matt Glover.</textOnly>
+    <type>html</type>
+</EmailTemplate>

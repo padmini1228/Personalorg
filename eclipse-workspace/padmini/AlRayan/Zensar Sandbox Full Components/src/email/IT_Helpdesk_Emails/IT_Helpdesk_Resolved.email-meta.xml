@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Case resolved.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_letterhead</letterhead>
+    <name>IT Helpdesk Resolved</name>
+    <style>freeForm</style>
+    <subject>Your case has been resolved: please approve for full closure</subject>
+    <textOnly>Dear {!Case.CreatedBy}
+ 
+Your incident {!Case.CaseNumber} has been resolved by {!Case.OwnerFullName}, please respond to this email confirming that we can close this case, if you do not respond within 48 hours the case will automatically closed.
+ 
+Thanks
+ 
+IT Helpdesk</textOnly>
+    <type>html</type>
+</EmailTemplate>

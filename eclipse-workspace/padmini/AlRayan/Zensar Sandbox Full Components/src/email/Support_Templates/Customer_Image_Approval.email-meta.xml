@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_letterhead</letterhead>
+    <name>Customer Image Approval</name>
+    <style>freeForm</style>
+    <subject>Approval Required for Customer Image</subject>
+    <textOnly>A new customer image has been added by {!Customer_Image__c.CreatedBy} and requires your approval.
+
+Please click on the link below to review the details:
+{!Customer_Image__c.Link}</textOnly>
+    <type>html</type>
+</EmailTemplate>

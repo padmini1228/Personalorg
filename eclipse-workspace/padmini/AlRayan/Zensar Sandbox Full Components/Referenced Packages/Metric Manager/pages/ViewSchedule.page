@@ -1,0 +1,32 @@
+<apex:page standardController="xmetric__Schedule__c" extensions="xmetric.ScheduleController" showHeader="true" sidebar="true">
+    <c:ProcessingStatus />
+    <apex:sectionHeader title="{!schedule.Name}" subtitle="View Schedule"/>
+    <apex:pageMessages />
+    <apex:form id="formID">
+        <apex:actionFunction name="activate" action="{!saveActivate}" status="processingStatus" rendered="{!!schedule.xmetric__Active__c}" reRender="formID, pbBlock"/>
+        <apex:actionFunction name="deActivate" action="{!deactivate}" status="processingStatus" rendered="{!showDeactivate}" reRender="formID, pbBlock"/>
+        <apex:actionFunction name="deleteSchedule" action="{!deleteSchedule}" status="processingStatus" rendered="{!!schedule.xmetric__Active__c}" reRender="formID, pbBlock"/>
+
+        <apex:pageBlock id="pbBlock" title="{!schedule.Name}" tabStyle="Schedule__c" mode="view">
+            <apex:pageBlockSection title="Information" columns="2">
+                
+                <apex:outputText value="{!schedule.Name}" />
+                <apex:outputtext value="{!schedule.xmetric__Type__c}"/>
+                <apex:outputText value="{!schedule.xmetric__When__c}" />
+                <apex:pageBlockSectionItem />
+
+                <apex:outputField value="{!schedule.xmetric__Last_Run_Time__c}" />
+                <apex:outputField value="{!schedule.xmetric__Next_Run_Time__c}" rendered="{!showDeactivate}"/>
+    
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockButtons location="bottom" >
+                <apex:commandButton value="{!$Label.Edit}" action="{!edit}" rendered="{!!schedule.xmetric__Active__c}"/>
+                <apex:commandButton value="{!$Label.Activate}" onclick="activate();" rendered="{!!schedule.xmetric__Active__c}" reRender="formID, pbBlock"/>
+                <apex:commandButton value="{!$Label.Deactivate}" onclick="deActivate();" rendered="{!showDeactivate}" reRender="formID, pbBlock"/>
+                <apex:commandButton value="{!$Label.Delete}" onclick="deleteSchedule();" rendered="{!!schedule.xmetric__Active__c}" reRender="formID, pbBlock"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+    <apex:relatedList list="Data_Feeds__r"/>
+</apex:page>

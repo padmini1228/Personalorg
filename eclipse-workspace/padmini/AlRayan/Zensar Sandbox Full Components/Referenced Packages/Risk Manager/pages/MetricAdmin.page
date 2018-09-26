@@ -1,0 +1,51 @@
+<apex:page standardController="Risk__Metric__c" extensions="Risk.MetricAdmin">
+
+<apex:sectionHeader title="Metric Edit" subtitle="Metric" />
+
+<apex:form id="form" >
+	<apex:pageBlock title="Metric" mode="edit">
+
+		<apex:pageBlockSection title="Create a new Metric" columns="1" >
+
+			<apex:inputField value="{!theMetric.Name}" required="true" />
+
+			<apex:inputField value="{!theMetric.Risk__Metric_Type__c}" required="true">
+				<apex:actionSupport event="onchange"
+				                    rerender="form"
+				/>
+			</apex:inputField>
+
+			<apex:inputField value="{!theMetric.Risk__Threshold_Type__c}" required="true" rendered="{!IF(theMetric.Risk__Metric_Type__c == 'Qualitative' || theMetric.Risk__Metric_Type__c == null, false, true)}"/>
+
+
+			<apex:inputField value="{!theMetric.Risk__Green_Threshold_Text__c}" style="width: 300px; height: 200px;" required="false" rendered="{!IF(theMetric.Risk__Metric_Type__c == 'Qualitative', true, false)}" />
+
+			<apex:inputField value="{!theMetric.Risk__Amber_Threshold_Text__c}" style="width: 300px; height: 200px;" required="false" rendered="{!IF(theMetric.Risk__Metric_Type__c == 'Qualitative', true, false)}" />
+
+			<apex:inputField value="{!theMetric.Risk__Red_Threshold_Text__c}" style="width: 300px; height: 200px;" required="false" rendered="{!IF(theMetric.Risk__Metric_Type__c == 'Qualitative', true, false)}" />
+
+
+			<apex:inputField value="{!theMetric.Risk__Number_Threshold__c}" required="false" rendered="{!IF(theMetric.Risk__Metric_Type__c == 'Number', true, false)}" />
+
+			<apex:inputField value="{!theMetric.Risk__Currency_Threshold__c}" required="false" rendered="{!IF(theMetric.Risk__Metric_Type__c == 'Currency', true, false)}" />
+
+			<apex:inputField value="{!theMetric.Risk__Percentage_Threshold__c}" required="false" rendered="{!IF(theMetric.Risk__Metric_Type__c == 'Percentage', true, false)}" />
+
+
+			<apex:inputField value="{!theMetric.Risk__Amber_Number_Threshold__c}" required="false" rendered="{!IF(theMetric.Risk__Metric_Type__c == 'Number', true, false)}" />
+
+			<apex:inputField value="{!theMetric.Risk__Amber_Currency_Threshold__c}" required="false" rendered="{!IF(theMetric.Risk__Metric_Type__c == 'Currency', true, false)}" />
+
+			<apex:inputField value="{!theMetric.Risk__Amber_Percentage_Threshold__c}" required="false" rendered="{!IF(theMetric.Risk__Metric_Type__c == 'Percentage', true, false)}" />
+
+		</apex:pageBlockSection>
+
+		<apex:pageBlockButtons >
+			<apex:commandButton action="{!savetheMetric}" value="Save" />
+			<apex:commandButton action="{!cancel}" value="Cancel" />
+		</apex:pageBlockButtons>
+
+	</apex:pageBlock>
+</apex:form>
+
+</apex:page>

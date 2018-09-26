@@ -1,0 +1,32 @@
+<apex:page standardcontroller="Risk__Risk_Control_Lookup__c" extensions="Risk.SetControlEffectiveness">
+<apex:sectionHeader title="{!$Label.risk__AssessControlsTitle}" subTitle="Risk - {!risk.name}"/>
+
+<p>{!$Label.risk__ControlEffectivenessParagraph}</p>
+
+<apex:form >
+    <apex:PageBlock >
+    	<apex:pageMessages />
+        <apex:PageBlockButtons >
+            <apex:commandButton value="Save" action="{!save}" rendered="{!controls.size > 0}"/>
+            <apex:commandButton value="Cancel" action="{!cancel}"/>
+        </apex:PageBlockButtons>
+
+        <apex:pageBlockTable value="{!controls}" var="rcl" style="width:1000px" rendered="{!controls.size > 0}">
+            <apex:column >
+                    <apex:inputCheckbox value="{!rcl.selected}"/>
+            </apex:column>
+            <apex:repeat value="{!fieldList}" var="field">
+                <apex:column >
+                    <apex:facet name="header">{!field.fieldLabel}</apex:facet>
+                    <apex:outputText rendered="{!field.editable==true}">
+                      <apex:inputField value="{!rcl.lookup[field.fieldPath]}"/>
+                    </apex:outputText>
+                    <apex:outputText rendered="{!field.editable==false}">
+                      <apex:outputField value="{!rcl.lookup[field.fieldPath]}"/>
+                    </apex:outputText>
+                </apex:column>
+            </apex:repeat>
+        </apex:pageBlockTable>
+    </apex:PageBlock>
+</apex:form>
+</apex:page>

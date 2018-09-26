@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>EventCase</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>EventCases</value>
+    </caseValues>
+    <fields>
+        <label><!-- CaseCode --></label>
+        <name>CaseCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- CaseDescription --></label>
+        <name>CaseDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- CaseQueue --></label>
+        <name>CaseQueue__c</name>
+    </fields>
+    <fields>
+        <label><!-- CaseRecordType --></label>
+        <name>CaseRecordType__c</name>
+    </fields>
+    <fields>
+        <label><!-- CaseSLA --></label>
+        <name>CaseSLA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event --></label>
+        <name>Event__c</name>
+        <relationshipLabel><!-- EventCases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- UseCaseDirector --></label>
+        <name>UseCaseDirector__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- EventCases --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

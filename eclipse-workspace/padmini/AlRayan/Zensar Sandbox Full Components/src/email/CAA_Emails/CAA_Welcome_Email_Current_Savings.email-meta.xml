@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CAA Welcome Email Current/Savings</name>
+    <style>none</style>
+    <subject>Welcome to Al Rayan Bank</subject>
+    <textOnly>Al Rayan Bank
+
+Thank you for choosing to bank with Al Rayan Bank
+Call 0800 4086 407
+
+Banking you can believe in
+
+Thank you for choosing Al Rayan Bank
+We are delighted to welcome you as a customer. Your account is now open.
+
+What happens next?
+
+We will send you a welcome letter in the post; please sign and return any documents contained within it
+
+If you have requested online or telephone banking, we will notify you of your log-in details in a separate correspondence
+
+If you have applied for a current account, you will also be sent your card and pin details. These will be posted individually to you
+
+If, during your application, you agreed to transfer funds from an existing account into your new Al Rayan Bank account, you are now able to make this transfer
+
+If you have any questions, please call us on 0800 4086 407 or visit your local branch
+
+Banking you can believe in
+Al Rayan Bank is the UK&apos;s only wholly Sharia compliant retail bank.
+
+We operate without using interest, and follow ethical Islamic finance principles based on trade, entrepreneurship and risk-sharing.
+
+Al Rayan Bank PLC is authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority. Our firm reference is 229148. Al Rayan Bank is incorporated and registered in England and Wales with registration No. 4483430. Registered office: 44 Hans Crescent, Knightsbridge, London, SW1X 0LZ.
+
+Do not reply to this email as the mailbox is unattended. Please submit general enquiries at our
+contact us page.
+
+Copyright 2017 Al Rayan Bank PLC</textOnly>
+    <type>custom</type>
+</EmailTemplate>

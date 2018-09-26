@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>To be sued with new accident near miss</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>Accident/Near Miss</name>
+    <style>freeForm</style>
+    <subject>New Accident/Near Miss Reported</subject>
+    <textOnly>To whom it may concern,
+
+A new accident/near miss has been reported on Salesforce. Please see the details below.
+
+Link: {!Accident_Near_Miss__c.Link}
+Date reported: {!Accident_Near_Miss__c.Date_reported__c}
+Type of report: {!Accident_Near_Miss__c.Type__c}
+Reported by: {!Accident_Near_Miss__c.User__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,28 @@
+<apex:page sideBar="false" showHeader="false">
+
+<head>
+	<apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'HelpPageStylesheet.css')}"/>
+</head>
+
+    <div class="heading">
+        <div class="icon">&nbsp;</div>
+        <h2>Help Pages</h2>
+        <h1>Metrics</h1>
+    </div>
+
+    <div class="content">
+        <p>This version of Metrics has now been superseded by Metrics in the Metric Manager solution.
+        </p>
+
+        <br/>
+        <br/>
+        <br/>
+
+        <h3 >Contact Details</h3>
+
+        <p>For further support information, please contact your local administrator.
+        </p>
+
+        <div class="clear"></div>
+    </div>
+</apex:page>

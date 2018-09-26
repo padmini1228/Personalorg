@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Case SLA</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Case SLA</value>
+    </caseValues>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- EndTimeHour --></label>
+        <name>EndTimeHour__c</name>
+    </fields>
+    <fields>
+        <label><!-- EndTimeMinute --></label>
+        <name>EndTimeMinute__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Type Name --></label>
+        <name>Record_Type_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA Duration --></label>
+        <name>SLA_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- StartTimeHour --></label>
+        <name>StartTimeHour__c</name>
+    </fields>
+    <fields>
+        <label><!-- StartTimeMinute --></label>
+        <name>StartTimeMinute__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- SubCategory --></label>
+        <name>SubCategory__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FairWarning_for_CRM_oauth</fullName>
+    <apiAccessLevel>Unrestricted</apiAccessLevel>
+    <modules>
+        <module>
+            <label>FairWarning_for_CRM_oauth</label>
+            <moduleType>connected</moduleType>
+            <name>FairWarning_for_CRM_oauth</name>
+            <types>
+                <members>FairWarning_for_CRM_oauth_devConfig</members>
+                <name>ConnectivityDevConfigMetadata</name>
+            </types>
+            <types>
+                <members>fairwarn__FairWarning_for_CRM_oauth</members>
+                <name>Module</name>
+            </types>
+            <version>17.0</version>
+        </module>
+    </modules>
+    <namespacePrefix>fairwarn</namespacePrefix>
+    <version>36.0</version>
+</Package>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>HTB Reporting Month</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>HTB Reporting Months</value>
+    </caseValues>
+    <fields>
+        <help><!-- The end date of the reporting month. --></help>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- To indicate which environment the data is destined for:
+pd      Production
+pp      pre-prod
+dv      Dev --></help>
+        <label><!-- Environment --></label>
+        <name>Environment__c</name>
+        <picklistValues>
+            <masterLabel>dv</masterLabel>
+            <translation><!-- dv --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pd</masterLabel>
+            <translation><!-- pd --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pp</masterLabel>
+            <translation><!-- pp --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- To indicate which mode the data is intended to represent:
+VERIFY  Lender onboarding / XSD change
+LIVE	Lender data treated as LIVE --></help>
+        <label><!-- Mode --></label>
+        <name>Mode__c</name>
+        <picklistValues>
+            <masterLabel>LIVE</masterLabel>
+            <translation><!-- LIVE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VERIFY</masterLabel>
+            <translation><!-- VERIFY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The reporting month in the format of YYYY-MM. --></help>
+        <label><!-- Reporting Month --></label>
+        <name>Reporting_Month__c</name>
+    </fields>
+    <fields>
+        <help><!-- The sequence number used by UKARcs to determine the order in which XML documents were generated. This is per Environment and Mode so may not be unique. This should not skip a number or be repeated within an Environment and Mode. --></help>
+        <label><!-- Sequence Number --></label>
+        <name>Sequence_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- The start date of the reporting month. --></help>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of transactions during the reporting month. --></help>
+        <label><!-- Transaction Count --></label>
+        <name>Transaction_Count__c</name>
+    </fields>
+    <layouts>
+        <layout>HTB Reporting Month Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

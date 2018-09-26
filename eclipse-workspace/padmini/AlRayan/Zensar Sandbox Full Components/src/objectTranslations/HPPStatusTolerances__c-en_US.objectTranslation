@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>HPP Status Tolerances</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>HPP Status Tolerances</value>
+    </caseValues>
+    <fields>
+        <label><!-- Average Duration --></label>
+        <name>AverageDuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Status --></label>
+        <name>HPPStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Largest Duration --></label>
+        <name>LargestDuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum Status Duration (Days) --></label>
+        <name>MaximumStatusDuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Smallest Duration --></label>
+        <name>SmallestDuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tolerance Duration --></label>
+        <name>ToleranceDuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tolerance % --></label>
+        <name>Tolerance__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

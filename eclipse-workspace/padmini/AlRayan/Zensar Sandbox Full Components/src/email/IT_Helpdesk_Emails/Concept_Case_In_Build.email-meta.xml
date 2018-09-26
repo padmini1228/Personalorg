@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>Concept Case In Build</name>
+    <style>freeForm</style>
+    <subject>Concept Statement - In Build</subject>
+    <textOnly>Hello,
+
+Business requirements phase has now been completed and build of this change is now in progress. For more information please speak to the respective Business Analyst.
+
+{!Case.Link}
+{!Case.Subject}
+
+Thanks
+
+Transformation Team</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Security Incident Tracker</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Security Incident Trackers</value>
+    </caseValues>
+    <fields>
+        <label><!-- Action Status --></label>
+        <name>Action_Status__c</name>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resolved</masterLabel>
+            <translation><!-- Resolved --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Action taken --></label>
+        <name>Action_taken__c</name>
+    </fields>
+    <fields>
+        <label><!-- IP Address --></label>
+        <name>IP_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incident Category --></label>
+        <name>Incident_Category__c</name>
+        <picklistValues>
+            <masterLabel>AV Update</masterLabel>
+            <translation><!-- AV Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Access Control</masterLabel>
+            <translation><!-- Access Control --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Access Reconciliation</masterLabel>
+            <translation><!-- Access Reconciliation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BOT</masterLabel>
+            <translation><!-- BOT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bit locker Encryption</masterLabel>
+            <translation><!-- Bit locker Encryption --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Leakage</masterLabel>
+            <translation><!-- Data Leakage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email Phishing</masterLabel>
+            <translation><!-- Email Phishing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email Spam</masterLabel>
+            <translation><!-- Email Spam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email Spoof</masterLabel>
+            <translation><!-- Email Spoof --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Scan</masterLabel>
+            <translation><!-- External Scan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Firewall Denies</masterLabel>
+            <translation><!-- Firewall Denies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leaver not disabled</masterLabel>
+            <translation><!-- Leaver not disabled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Malicious Traffic</masterLabel>
+            <translation><!-- Malicious Traffic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Malware</masterLabel>
+            <translation><!-- Malware --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOC</masterLabel>
+            <translation><!-- SOC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scan</masterLabel>
+            <translation><!-- Scan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System Security</masterLabel>
+            <translation><!-- System Security --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unauthorised Software</masterLabel>
+            <translation><!-- Unauthorised Software --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Error</masterLabel>
+            <translation><!-- User Error --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reported by --></label>
+        <name>Reported_by__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resolution Summary --></label>
+        <name>Resolution_Summary__c</name>
+    </fields>
+    <fields>
+        <label><!-- SOC Offence Id --></label>
+        <name>SOC_Offence_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary of the Issue --></label>
+        <name>Summary_of_the_Issue__c</name>
+    </fields>
+    <fields>
+        <label><!-- System Name --></label>
+        <name>System_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Security Incident Trackers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- System / User affected --></label>
+        <name>User_affected__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>RewindValidation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>RewindValidation</value>
+    </caseValues>
+    <fields>
+        <help><!-- Double, integer, string, date --></help>
+        <label><!-- DataType --></label>
+        <name>DataType__c</name>
+    </fields>
+    <fields>
+        <help><!-- Text to appear on the screen on validation failure. May be useful to include the Business Name of the field being validated --></help>
+        <label><!-- ErrorMessage --></label>
+        <name>ErrorMessage__c</name>
+    </fields>
+    <fields>
+        <help><!-- API Field name not label, must be accurate and must be filled in --></help>
+        <label><!-- Field --></label>
+        <name>Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- opportunity or HPP_extended_opportunity__c only --></help>
+        <label><!-- Object --></label>
+        <name>Object__c</name>
+    </fields>
+    <fields>
+        <help><!-- Values of &quot;=&quot;, &quot;&lt;&quot;, &quot;&lt;=&quot;, &quot;&gt;&quot; , &quot;&gt;=&quot; , &quot;&lt;&gt;&quot; only, any other or blank will assume &quot;=&quot; --></help>
+        <label><!-- Operator --></label>
+        <name>Operator__c</name>
+    </fields>
+    <fields>
+        <help><!-- The value in the field to be compared, if to be compared with empty or null vales, set as 
+ &apos;-BLANK-&apos; --></help>
+        <label><!-- Value --></label>
+        <name>Value__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

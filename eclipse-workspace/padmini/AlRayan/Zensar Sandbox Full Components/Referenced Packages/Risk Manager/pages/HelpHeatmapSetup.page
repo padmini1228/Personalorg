@@ -1,0 +1,28 @@
+<apex:page sideBar="false" showHeader="false" >
+
+<head>
+	<apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'HelpPageStylesheet.css')}"/>
+</head>
+
+    <div class="heading">
+
+        <div class="icon">&nbsp;</div>
+        <h2>Help Pages</h2>
+        <h1>Heatmap Setup</h1>
+
+    </div>
+
+    <div class="content">
+
+        <h3>How do I change the labels on my heatmap?</h3>
+        <p>To change the labels on a heatmap you simply need to update their custom labels.</p>
+        <p>To do this go to Setup, App Setup > Create > Custom Labels</p>
+        <p>Edit the value of the Impact and Probability custom labels to change their values across all Heatmaps.</p>
+
+
+
+        <div class="clear"></div>
+
+    </div>
+
+</apex:page>

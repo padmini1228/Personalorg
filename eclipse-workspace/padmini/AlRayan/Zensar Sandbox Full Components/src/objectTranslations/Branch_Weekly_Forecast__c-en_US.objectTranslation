@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Branch Weekly Forecast</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Branch Weekly Forecast</value>
+    </caseValues>
+    <fields>
+        <help><!-- CC USE ONLY - Team to input forecast AHT for the upcoming week on a friday --></help>
+        <label><!-- AHT --></label>
+        <name>AHT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appointments --></label>
+        <name>Appointments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appointments --></label>
+        <name>Appointments_forecast__c</name>
+    </fields>
+    <fields>
+        <help><!-- For Cc to input forecast calls per hour for team for next week --></help>
+        <label><!-- Average Calls per Hour --></label>
+        <name>Average_Calls_per_Hour__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL App&apos;s Submitted (Volume Forecast) --></label>
+        <name>BTL_App_s_Submitted_Volume_Forecast__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Applications Submitted (Forecast) --></label>
+        <name>BTL_Applications_Submitted_Forecast__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Applications Written (Forecast) --></label>
+        <name>BTL_Applications_Written_Forecast__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Applications Written (Volume F&apos;cast) --></label>
+        <name>BTL_Applications_Written_Volume_F_cast__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the number of forecast BTL leads --></help>
+        <label><!-- BTL Seller Leads --></label>
+        <name>BTL_Seller_Leads__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Value AIP&apos;s (Forecast) --></label>
+        <name>BTL_Value_AIP_s_Forecast__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Volume AIP&apos;s (Forecast) --></label>
+        <name>BTL_Volume_AIP_s_Forecast__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL opportunities --></label>
+        <name>BTL_opportunities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch --></label>
+        <name>Branch1__c</name>
+        <relationshipLabel><!-- Branch Weekly Forecast --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Calls --></label>
+        <name>Calls_Forecast__c</name>
+    </fields>
+    <fields>
+        <label><!-- Calls --></label>
+        <name>Calls__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed by --></label>
+        <name>Completed_by__c</name>
+        <relationshipLabel><!-- Branch Weekly Forecast --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date Completed --></label>
+        <name>Date_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fact Finds --></label>
+        <name>Fact_Finds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fact Finds --></label>
+        <name>Fact_Finds_completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP AIPs --></label>
+        <name>HPP_AIPs__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP AIPs --></label>
+        <name>HPP_AIPs_forecast__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Opportunities --></label>
+        <name>HPP_Opportunities__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Opportunities --></label>
+        <name>HPP_Opportunities_forecast__c</name>
+    </fields>
+    <fields>
+        <help><!-- HPP Seller please enter the value (if known) of AIP&apos;s forecast for next week --></help>
+        <label><!-- HPP Seller AIP Value Forecast --></label>
+        <name>HPP_Seller_AIP_Value_Forecast__c</name>
+    </fields>
+    <fields>
+        <help><!-- HPP Seller Please enter the forecast volume fo AIP&apos;s for next week --></help>
+        <label><!-- HPP Seller AIP Volume Forecast --></label>
+        <name>HPP_Seller_AIP_Volume_Forecast__c</name>
+    </fields>
+    <fields>
+        <help><!-- HPP Seller please enter the Value of Applications written forecast for next week --></help>
+        <label><!-- HPP Seller APPS Written Value forecast --></label>
+        <name>HPP_Seller_APPS_Written_Value_forecast__c</name>
+    </fields>
+    <fields>
+        <help><!-- HPP Seller please enter the value of applications submitted forecast for next week --></help>
+        <label><!-- HPP Seller APPs Submitted Value Forecast --></label>
+        <name>HPP_Seller_APPs_Submitted_Value_Forecast__c</name>
+    </fields>
+    <fields>
+        <help><!-- HPP Seller please enter the volume of Applications written forecast for next week --></help>
+        <label><!-- HPP Seller APPs Written volume forecast --></label>
+        <name>HPP_Seller_APPs_Written_volume_forecast__c</name>
+    </fields>
+    <fields>
+        <help><!-- HPP Seller please enter the forecast applications submitted volume for next week --></help>
+        <label><!-- HPP Seller Apps Submitted Volume F&apos;cast --></label>
+        <name>HPP_Seller_Apps_Submitted_Volume__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the number of forecast leads for the coming week --></help>
+        <label><!-- HPP Seller Leads --></label>
+        <name>HPP_Seller_Opportunities__c</name>
+    </fields>
+    <fields>
+        <label><!-- HTB App&apos;s Submitted (Volume Forecast) --></label>
+        <name>HTB_App_s_Submitted_Volume_Forecast__c</name>
+    </fields>
+    <fields>
+        <label><!-- HTB Applications Submitted (Forecast) --></label>
+        <name>HTB_Applications_Submitted_Forecast__c</name>
+    </fields>
+    <fields>
+        <label><!-- HTB Applications Written (Forecast) --></label>
+        <name>HTB_Applications_Written_Forecast__c</name>
+    </fields>
+    <fields>
+        <label><!-- HTB Applications Written (Volume F&apos;cast) --></label>
+        <name>HTB_Applications_Written_Volume_F_cast__c</name>
+    </fields>
+    <fields>
+        <label><!-- HTB Seller Leads --></label>
+        <name>HTB_Seller_Leads__c</name>
+    </fields>
+    <fields>
+        <label><!-- HTB Value AIP&apos;s (Forecast) --></label>
+        <name>HTB_Value_AIP_s_Forecast__c</name>
+    </fields>
+    <fields>
+        <label><!-- HTB Volume AIP&apos;s (Forecast) --></label>
+        <name>HTB_Volume_AIP_s_Forecast__c</name>
+    </fields>
+    <fields>
+        <label><!-- HTB opportunities --></label>
+        <name>HTB_opportunities__c</name>
+    </fields>
+    <fields>
+        <label><!-- IFA/DPS Lead Volume --></label>
+        <name>IFA_DPS_Lead_Volume__c</name>
+    </fields>
+    <fields>
+        <label><!-- LTS Gross Sales value --></label>
+        <name>LTS_Gross_Sales_value__c</name>
+    </fields>
+    <fields>
+        <help><!-- For the Inbound Teams Only --></help>
+        <label><!-- LTS Opportunity Value --></label>
+        <name>LTS_Opportunity_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter details of the leaflet distribution undertaken by the branch this week. --></help>
+        <label><!-- Leaflet Distribution this Week --></label>
+        <name>Leaflet_Distribution_this_Week__c</name>
+    </fields>
+    <fields>
+        <label><!-- Long Term Savings --></label>
+        <name>Long_Term_Savings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Long Term Savings --></label>
+        <name>Long_Term_Savings_forecast__c</name>
+    </fields>
+    <fields>
+        <label><!-- STS Gross Sales Value --></label>
+        <name>STS_Gross_Sales_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- For CC Inbound Teams only --></help>
+        <label><!-- STS Opportunity value --></label>
+        <name>STS_Opportunity_value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the volumes of leaflets distributed by your outlet this week. --></help>
+        <label><!-- Volume Leaflets Distributed --></label>
+        <name>Volume_Leaflets_Distributed__c</name>
+    </fields>
+    <layouts>
+        <layout>Branch Weekly Forecast Layout</layout>
+        <sections>
+            <label><!-- Buy To Let Sales Weekly Forecast --></label>
+            <section>Buy To Let Sales Weekly Forecast</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Forecast for Next Week --></label>
+            <section>Forecast for Next Week</section>
+        </sections>
+        <sections>
+            <label><!-- Forecast for This Week --></label>
+            <section>Forecast for This Week</section>
+        </sections>
+        <sections>
+            <label><!-- HPP Sales Forecast Next Week --></label>
+            <section>HPP Sales Forecast Next Week</section>
+        </sections>
+        <sections>
+            <label><!-- Help to Buy Sales Weekly Forecast --></label>
+            <section>Help to Buy Sales Weekly Forecast</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contact Centre Forecast Layout</layout>
+        <sections>
+            <label><!-- Contact Centre Use Only --></label>
+            <section>Contact Centre Use Only</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Notice__c.AcknowledgedAndFlaggedNotifications__c:SUM / Notice__c.SelectedRecipients__c:SUM</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>FK_NAME</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% Flagged</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Notice__c.SelectedRecipients__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Notice__c.AcknowledgedAndFlaggedNotifications__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Notice__c.ApprovalRequired__c</field>
+    </columns>
+    <columns>
+        <field>Notice__c.ApprovedDate__c</field>
+    </columns>
+    <columns>
+        <field>Notice__c.PublishedDate__c</field>
+    </columns>
+    <columns>
+        <field>Notice__c.AutoPublishDate__c</field>
+    </columns>
+    <columns>
+        <field>Notice__c.RejectedDate__c</field>
+    </columns>
+    <columns>
+        <field>Notice__c.SuspendedDate__c</field>
+    </columns>
+    <columns>
+        <field>Notice__c.AutoSuspendDate__c</field>
+    </columns>
+    <columns>
+        <field>Notice__c.ClosedDate__c</field>
+    </columns>
+    <description>Sample Report - Notices by Noticeboard</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Notices by Noticeboard</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Notice__c@Notice__c.NoticeBoard__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CURY</interval>
+    </timeFrameFilter>
+</Report>

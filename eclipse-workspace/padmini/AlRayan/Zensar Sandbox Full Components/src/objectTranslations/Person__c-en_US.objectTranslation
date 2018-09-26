@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Person</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>People</value>
+    </caseValues>
+    <fields>
+        <label><!-- All branches achieved IFA target --></label>
+        <name>All_branches_achieved_IFA_target__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- All branches achieved income for IMT --></label>
+        <name>All_branches_achieved_income_for_IMT_tar__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please enter the end of month Net Balance Sheet increase or decrease.  Decreases should be prefixed with a - Thanks Jim --></help>
+        <label><!-- April LTS Net BS Position --></label>
+        <name>April_New_BS_Position__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL April 2014 --></label>
+        <name>BTL_April_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL February 2014 --></label>
+        <name>BTL_February_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL January 2014 --></label>
+        <name>BTL_January_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL June 2014 --></label>
+        <name>BTL_June_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL March 2014 --></label>
+        <name>BTL_March_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL May 2014 --></label>
+        <name>BTL_May_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- Balance Sheet Growth --></label>
+        <name>Balance_Sheet_Growth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch --></label>
+        <name>Branch__c</name>
+        <picklistValues>
+            <masterLabel>East Ham</masterLabel>
+            <translation><!-- East Ham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edgware Road</masterLabel>
+            <translation><!-- Edgware Road --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Glasgow</masterLabel>
+            <translation><!-- Glasgow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Knightsbridge Branch</masterLabel>
+            <translation><!-- Knightsbridge Branch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leicester</masterLabel>
+            <translation><!-- Leicester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manchester</masterLabel>
+            <translation><!-- Manchester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Heath</masterLabel>
+            <translation><!-- Small Heath --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southall</masterLabel>
+            <translation><!-- Southall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Whitechapel</masterLabel>
+            <translation><!-- Whitechapel --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CPF April 2014 --></label>
+        <name>CPF_April_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF February 2014 --></label>
+        <name>CPF_February_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF January 2014 --></label>
+        <name>CPF_January_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF June 2014 --></label>
+        <name>CPF_June_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF March 2014 --></label>
+        <name>CPF_March_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF May 2014 --></label>
+        <name>CPF_May_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- Course Name --></label>
+        <name>Course_Name__c</name>
+        <picklistValues>
+            <masterLabel>Best in Class</masterLabel>
+            <translation><!-- Best in Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coaching</masterLabel>
+            <translation><!-- Coaching --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Concerns</masterLabel>
+            <translation><!-- Customer Concerns --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Excel training</masterLabel>
+            <translation><!-- Excel training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Induction</masterLabel>
+            <translation><!-- Induction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Influencing and Negotiating</masterLabel>
+            <translation><!-- Influencing and Negotiating --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Managing for Success</masterLabel>
+            <translation><!-- Managing for Success --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Power Telesales</masterLabel>
+            <translation><!-- Power Telesales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier</masterLabel>
+            <translation><!-- Premier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales through Service</masterLabel>
+            <translation><!-- Sales through Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce Training</masterLabel>
+            <translation><!-- Salesforce Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sharia Training</masterLabel>
+            <translation><!-- Sharia Training --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DPS Income --></label>
+        <name>DPS_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Department --></label>
+        <name>Department__c</name>
+        <picklistValues>
+            <masterLabel>Branch Network</masterLabel>
+            <translation><!-- Branch Network --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Development Managers</masterLabel>
+            <translation><!-- Business Development Managers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call Centre</masterLabel>
+            <translation><!-- Call Centre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial Team</masterLabel>
+            <translation><!-- Commercial Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP Team</masterLabel>
+            <translation><!-- HPP Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intermediaries</masterLabel>
+            <translation><!-- Intermediaries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier Banking</masterLabel>
+            <translation><!-- Premier Banking --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- GCC April 2014 --></label>
+        <name>GCC_April_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- GCC February 2014 --></label>
+        <name>GCC_February_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- GCC January 2014 --></label>
+        <name>GCC_January_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- GCC June 2014 --></label>
+        <name>GCC_June_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- GCC March 2014 --></label>
+        <name>GCC_March_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- GCC May 2014 --></label>
+        <name>GCC_May_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP/HPS April 2014 --></label>
+        <name>HPP_HPS_April_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP/HPS February 2014 --></label>
+        <name>HPP_HPS_February_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP/HPS January 2014 --></label>
+        <name>HPP_HPS_January_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP/HPS June 2014 --></label>
+        <name>HPP_HPS_June_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP/HPS March 2014 --></label>
+        <name>HPP_HPS_March_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP/HPS May 2014 --></label>
+        <name>HPP_HPS_May_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Seller is compliant --></label>
+        <name>HPP_Seller_is_compliant__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IMT Lead - Value --></label>
+        <name>IMT_Lead_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- IMT Lead - Volume --></label>
+        <name>IMT_Lead_Volume__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the end of month value from balance sheet --></help>
+        <label><!-- January LTS Net BS Actual --></label>
+        <name>January_LTS_Net_BS__c</name>
+    </fields>
+    <fields>
+        <label><!-- LTS April 2014 --></label>
+        <name>LTS_April_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- LTS February 2014 --></label>
+        <name>LTS_February_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- LTS January 2014 --></label>
+        <name>LTS_January_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- LTS June 2014 --></label>
+        <name>LTS_June_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- LTS March 2014 --></label>
+        <name>LTS_March_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- LTS May 2014 --></label>
+        <name>LTS_May_2014__c</name>
+    </fields>
+    <fields>
+        <help><!-- Less than 15% decline rate for sellers during the quarter. 
+Only applications declined that the Head of S&amp;S deems within the control of the seller count towards the decline rate. --></help>
+        <label><!-- Less than 15% decline rate for sellers --></label>
+        <name>Less_than_15_decline_rate_for_sellers__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Less than one upheld complaint against branch and contact centre staff. --></help>
+        <label><!-- Less than 1 upheld complaint --></label>
+        <name>Less_than_1_upheld_complaint__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Less than one upheld miss-selling complaint for HPP Sellers registered against the participating employee during the incentive quarter. --></help>
+        <label><!-- Less than 1 upheld missselling complaint --></label>
+        <name>Less_than_1_upheld_missselling_complaint__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Less than 5% sickness during the quarter --></label>
+        <name>Less_than_5_sickness_during_the_quarter__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Less than 5 working days sickness within the quarter of the incentive. --></help>
+        <label><!-- Less than 5 working days sickness --></label>
+        <name>Less_than_5_working_days_sickness__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Manager&apos;s Name --></label>
+        <name>Manager_s_Name__c</name>
+        <relationshipLabel><!-- People (Manager&apos;s Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Member of Staff Name --></label>
+        <name>Member_of_Staff_Name__c</name>
+        <relationshipLabel><!-- People (Member of Staff Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Net Asset Growth --></label>
+        <name>Net_Asset_Growth__c</name>
+    </fields>
+    <fields>
+        <help><!-- No miss-selling/miss-advice being provided by any colleague which may result in the claw back of any monies paid under this incentive (regardless of timescales). 
+May result in disciplinary action being taken against staff member concerned. --></help>
+        <label><!-- No miss-selling/advice being provided --></label>
+        <name>No_miss_selling_advice_being_provided__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- No incentives will be pad where resignations have been submitted or pending during the period of the incentive. --></help>
+        <label><!-- No resignation submitted/pending --></label>
+        <name>No_resignation_submitted_pending__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- No unauthorised leave of absence --></label>
+        <name>No_unauthorised_leave_of_absence__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Not within probation period --></label>
+        <name>Not_within_probation_period__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Plan Submission Date to be updated on the 1st working day of each quarter --></help>
+        <label><!-- Plan Submission Date --></label>
+        <name>Plan_Submission_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attended</masterLabel>
+            <translation><!-- Attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did not attend</masterLabel>
+            <translation><!-- Did not attend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inivited</masterLabel>
+            <translation><!-- Inivited --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Active</masterLabel>
+            <translation><!-- Non Active --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>HPP Seller</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MD Targets Layout</layout>
+        <sections>
+            <label><!-- BTL Net BS Actuals --></label>
+            <section>BTL Net BS Actuals</section>
+        </sections>
+        <sections>
+            <label><!-- CPF Net BS Actuals --></label>
+            <section>CPF Net BS Actuals</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Disqualification Criteria --></label>
+            <section>Disqualification Criteria</section>
+        </sections>
+        <sections>
+            <label><!-- GCC Net BS Actuals --></label>
+            <section>GCC Net BS Actuals</section>
+        </sections>
+        <sections>
+            <label><!-- HPP/HPS Net BS Actuals --></label>
+            <section>HPP/HPS Net BS Actuals</section>
+        </sections>
+        <sections>
+            <label><!-- LTS Monthly BS Actuals --></label>
+            <section>LTS Monthly BS Actuals</section>
+        </sections>
+        <sections>
+            <label><!-- User Details --></label>
+            <section>User Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Person Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Disqualification Criteria --></label>
+            <section>Disqualification Criteria</section>
+        </sections>
+        <sections>
+            <label><!-- User Details --></label>
+            <section>User Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

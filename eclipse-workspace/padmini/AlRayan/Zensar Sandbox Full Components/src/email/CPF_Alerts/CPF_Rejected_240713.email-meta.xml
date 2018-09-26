@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email for first stage of CPF</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>CPF Rejected 240713</name>
+    <style>freeForm</style>
+    <subject>CPF Enquiry Declined</subject>
+    <textOnly>To whom it may concern,
+
+Your  CPF enquiry has been declined.
+
+Link to the CPF form:
+{!Opportunity.Link}
+
+Amount: {!Opportunity.Finance_Required__c}
+Term: {!Opportunity.Term_of_Finance__c}
+Purpose: {!Opportunity.Purpose_of_Finance__c}
+
+Your case will be looked at by {!Opportunity.SellerName__c}. They will contact the customer and see if there is a way to get the case through.</textOnly>
+    <type>html</type>
+</EmailTemplate>

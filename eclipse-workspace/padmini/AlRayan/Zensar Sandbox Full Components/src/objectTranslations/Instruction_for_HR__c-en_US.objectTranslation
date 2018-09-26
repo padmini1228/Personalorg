@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Instruction for HR</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Instructions for HR</value>
+    </caseValues>
+    <fields>
+        <label><!-- Instruction Description --></label>
+        <name>Instruction_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processed --></label>
+        <name>Processed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Staff Member --></label>
+        <name>Staff_Member__c</name>
+        <relationshipLabel><!-- Instructions for HR --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type of change --></label>
+        <name>Type_of_change__c</name>
+        <picklistValues>
+            <masterLabel>Add Car allowance</masterLabel>
+            <translation><!-- Add Car allowance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Add Temporary Allowance</masterLabel>
+            <translation><!-- Add Temporary Allowance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Address change</masterLabel>
+            <translation><!-- Address change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bank account change</masterLabel>
+            <translation><!-- Bank account change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change of department</masterLabel>
+            <translation><!-- Change of department --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change of pension contribution</masterLabel>
+            <translation><!-- Change of pension contribution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change of role</masterLabel>
+            <translation><!-- Change of role --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change to Hours</masterLabel>
+            <translation><!-- Change to Hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Childcare vouchers change</masterLabel>
+            <translation><!-- Childcare vouchers change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment of Directors fees</masterLabel>
+            <translation><!-- Payment of Directors fees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salary increase</masterLabel>
+            <translation><!-- Salary increase --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- With effect from --></label>
+        <name>With_effect_from__c</name>
+    </fields>
+    <layouts>
+        <layout>Instruction for HR Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

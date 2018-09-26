@@ -1,0 +1,71 @@
+<apex:page controller="Risk.RiskReportSetup" tabstyle="grc__Risk__c">
+
+	<apex:sectionHeader title="Risk Action Report: step 1" subtitle="Filter by Business Unit" />
+
+
+
+	<apex:form id="pageForm" >
+		<apex:pageBlock id="list" title="Risk Action Report">
+
+			<apex:pageMessage summary="You are not assigned to a Business Unit, please contact your system administrator for support." severity="Warning" strength="3" rendered="{!topLevelBusinessUnitIds.Size == 0}" />
+
+			<apex:outputPanel layout="none" rendered="{!topLevelBusinessUnitIds.Size > 0}" >
+		        <apex:pageblocksection title="Report Setup Wizard" collapsible="false" columns="1" >
+					<div>
+						<ul>
+							<li>This report will show all the risks in top Business Unit of the tree below.</li>
+							<li>Use the checkbox to show child Business Units if required.</li>
+						</ul>
+						<br/>
+					</div>
+				</apex:pageblocksection>
+
+		        <apex:pageBlockSection collapsible="false" columns="1">
+			        <apex:pageBlockSectionItem >
+				        Filter By Business Unit:
+				        <apex:outputPanel layout="block" style="height: 200px; width:400px; overflow-y:auto;">
+
+				        	<apex:repeat value="{!availableBusinessUnitHierarchy}" var="buId">
+				        		<apex:repeat value="{!availableBusinessUnitHierarchy[buId]}" var="busUnit">
+				        			<apex:outputPanel layout="block" style="cursor: pointer; margin-left:{!busUnit.level * 10}px">
+				        				<apex:outputField value="{!busUnit.me.name}" />
+				        				<apex:actionSupport event="onclick" rerender="list" action="{!getBusinessUnitsMap}">
+				                        	<apex:param name="bob" assignTo="{!chosenBusinessUnitId}" value="{!busUnit.me.Id}"/>
+				                    	</apex:actionSupport>
+				        			</apex:outputPanel>
+				        		</apex:repeat>
+				        		<br/>
+				        	</apex:repeat>
+				        </apex:outputPanel>
+			        </apex:pageBlockSectionItem>
+
+			        <apex:pageBlockSectionItem >
+				        <apex:outputLabel value="Show results for child Business Units:" for="ssbu"/>
+				        <input type="checkbox" id="ssbu"/>
+				        <!--
+				        <apex:inputCheckBox value="{!showChildren}" >
+				            <apex:actionSupport event="onclick" rerender="list"/>
+				        </apex:inputCheckBox>
+				        -->
+			        </apex:pageBlockSectionItem>
+
+		        </apex:pageBlockSection>
+
+		        <br/>
+
+		    	<apex:commandButton rerender="bobpanel" action="{!getViewReport}" value="View Report" oncomplete="var URL = '{!JSINHTMLENCODE(reportPageURL)}' + '&ssbu='+document.getElementById('ssbu').checked; window.open(URL);" style="text-decoration:none; padding:5px;" />
+		    	<br/><br/>
+		    </apex:outputPanel>
+
+        </apex:pageBlock>
+
+        <apex:outputPanel style="float:left;" rendered="{!topLevelBusinessUnitIds.Size > 0}"  >
+   			<apex:outputLink value="{!$Page.Risk__RiskActionReportSetup}?reportPage={!reportPage}">Clear filters</apex:outputLink>
+   		</apex:outputPanel>
+
+   		<apex:outputPanel id="bobpanel" >
+   		</apex:outputPanel>
+
+	</apex:form>
+
+</apex:page>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <links>Engage</links>
+    <links>New_Customer_CAA</links>
+    <links>New_Customer_Liabilities_Eligibility</links>
+    <links>Add_New_Customer</links>
+    <links>Link_to_Outlook_365</links>
+    <links>Eligibility_Assessment_MMR</links>
+    <links>New_Customer_NPAA</links>
+    <links>Keesing_Prado</links>
+    <links>IBB_Directory</links>
+    <links>FIS_Card_System</links>
+    <links>IBB_Portal</links>
+    <links>Online_Training</links>
+    <links>Notices</links>
+    <links>PeopleHR</links>
+    <links>Campaign_Data_Collection</links>
+    <pageComponentType>links</pageComponentType>
+</HomePageComponent>

@@ -1,0 +1,18 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="1" aEditID="c1r1" >
+<![CDATA[<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'">Dear {!Case.Contact}</SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'"></SPAN>&nbsp;</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'">Your incident&nbsp;has been logged to the IT Service Desk </SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'">Your case reference is - {!Case.CaseNumber}</SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'">Your case subject is: {!Case.Subject}</SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'"></SPAN>&nbsp;</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'">Your case will be looked at within the approved SLAs. </SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'"></SPAN>&nbsp;</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'">Thanks</SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'"></SPAN>&nbsp;</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'">IT Service Desk. </SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'"></SPAN>&nbsp;</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'">{!Case.Link}</SPAN></P>]]></td>
+</tr>
+</table>

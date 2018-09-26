@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>DocuGen Template</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>DocuGen Templates</value>
+    </caseValues>
+    <fields>
+        <label><!-- Att_done --></label>
+        <name>Att_done__c</name>
+    </fields>
+    <fields>
+        <label><!-- Available to customers --></label>
+        <name>Available_to_customers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is FIS Placeholder --></label>
+        <name>Is_FIS_Placeholder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Risk Placeholder --></label>
+        <name>Is_Risk_Placeholder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old_id --></label>
+        <name>Old_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Template Group --></label>
+        <name>Template_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Template Name --></label>
+        <name>Template_Name__c</name>
+    </fields>
+    <layouts>
+        <layout>DocuGen Template Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <customHelpPage>HelpProcess</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>This is a many to many table to link a Process to a Risk</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Process__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Process</label>
+        <referenceTo>grc__Process__c</referenceTo>
+        <relationshipLabel>Associated Risks</relationshipLabel>
+        <relationshipName>R00N40000001gMJEEA2</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Risk__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Risk</label>
+        <referenceTo>grc__Risk__c</referenceTo>
+        <relationshipLabel>Associated Processes</relationshipLabel>
+        <relationshipName>R00N40000001gMJSEA2</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <label>Process Risk Lookup</label>
+    <nameField>
+        <displayFormat>PR{0}</displayFormat>
+        <label>Ref</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Process Risks</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <webLinks>
+        <fullName>Associate_Process</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Associate Process</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!URLFOR(&apos;/apex/&apos;+$Setup.NamespacePrefix__c.Value__c+&apos;Many2ManyAssociator&apos;, null,
+[
+parentId = grc__Risk__c.Id ,
+lookupObjectName = $Setup.NamespacePrefix__c.Value__c+&quot;Process_Risk_Lookup__c&quot;,
+childFieldName = $Setup.NamespacePrefix__c.Value__c+&quot;Process__c&quot;,
+parentFieldName = $Setup.NamespacePrefix__c.Value__c+&quot;Risk__c&quot;,
+filterCriteriaCollection = &quot;Many2ManyFilterCriteriaCollection&quot;,
+filterCriteriaDefaults = &quot;Many2ManyFilterCriteriaDefaults&quot;
+]
+)}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Associate_Processes</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Associate Processes</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!URLFOR(&apos;/apex/&apos;+$Setup.NamespacePrefix__c.Value__c+&apos;Many2ManyAssociator&apos;, null,
+[
+parentId = grc__Risk__c.Id ,
+lookupObjectName = $Setup.NamespacePrefix__c.Value__c+&quot;Process_Risk_Lookup__c&quot;,
+childFieldName = $Setup.NamespacePrefix__c.Value__c+&quot;Process__c&quot;,
+parentFieldName = $Setup.NamespacePrefix__c.Value__c+&quot;Risk__c&quot;,
+filterCriteriaCollection = &quot;Many2ManyFilterCriteriaCollection&quot;,
+filterCriteriaDefaults = &quot;Many2ManyFilterCriteriaDefaults&quot;
+]
+)}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Associate_Risk</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Associate Risk</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>{!URLFOR(&apos;/apex/&apos;+$Setup.NamespacePrefix__c.Value__c+&apos;Many2ManyAssociator&apos;, null,
+[
+parentId = grc__Process__c.Id ,
+lookupObjectName = $Setup.NamespacePrefix__c.Value__c+&quot;Process_Risk_Lookup__c&quot;,
+childFieldName = $Setup.NamespacePrefix__c.Value__c+&quot;Risk__c&quot;,
+parentFieldName = $Setup.NamespacePrefix__c.Value__c+&quot;Process__c&quot;,
+filterCriteriaCollection = &quot;Many2ManyFilterCriteriaCollection&quot;,
+filterCriteriaDefaults = &quot;Many2ManyFilterCriteriaDefaults&quot;
+]
+)}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Associate_Risks</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Associate Risks</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>{!URLFOR(&apos;/apex/&apos;+$Setup.NamespacePrefix__c.Value__c+&apos;Many2ManyAssociator&apos;, null,
+[
+parentId = grc__Process__c.Id ,
+lookupObjectName = $Setup.NamespacePrefix__c.Value__c+&quot;Process_Risk_Lookup__c&quot;,
+childFieldName = $Setup.NamespacePrefix__c.Value__c+&quot;Risk__c&quot;,
+parentFieldName = $Setup.NamespacePrefix__c.Value__c+&quot;Process__c&quot;,
+filterCriteriaCollection = &quot;Many2ManyFilterCriteriaCollection&quot;,
+filterCriteriaDefaults = &quot;Many2ManyFilterCriteriaDefaults&quot;
+]
+)}</url>
+    </webLinks>
+</CustomObject>

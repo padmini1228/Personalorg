@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Request Buffer</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Request Buffers</value>
+    </caseValues>
+    <fields>
+        <label><!-- Buffered XML --></label>
+        <name>Buffered_XML__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date / Time Buffered --></label>
+        <name>Date_Time_Buffered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Message ID --></label>
+        <name>Message_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation><!-- Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting</masterLabel>
+            <translation><!-- Waiting --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

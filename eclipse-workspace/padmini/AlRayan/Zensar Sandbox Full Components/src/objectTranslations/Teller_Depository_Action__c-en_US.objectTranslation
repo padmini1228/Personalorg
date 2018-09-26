@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Teller Depository Action</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Teller Depository Actions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Authorisor --></label>
+        <name>Authorisor__c</name>
+        <relationshipLabel><!-- Teller Depository Actions (Authorisor) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Denominations --></label>
+        <name>Denominations__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Authorisor --></label>
+        <name>First_Authorisor__c</name>
+        <relationshipLabel><!-- Teller Depository Actions (First Authorisor) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Function Name --></label>
+        <name>Function_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Second Authorisor --></label>
+        <name>Second_Authorisor__c</name>
+        <relationshipLabel><!-- Teller Depository Actions (Second Authorisor) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status Description --></label>
+        <name>Status_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Failure</masterLabel>
+            <translation><!-- Failure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success</masterLabel>
+            <translation><!-- Success --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Teller Depository --></label>
+        <name>Teller_Depository__c</name>
+        <relationshipLabel><!-- Teller Depository Actions --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Teller Depository Action Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

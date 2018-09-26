@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>New_accident_near_miss</fullName>
+        <description>New accident/near miss</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>abdul.salam@alrayanbank.co.uk</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>daljit.pal@alrayanbank.co.uk</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>mohiuddin.dulal@alrayanbank.co.uk</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>rosamund.king@alrayanbank.co.uk</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>saquib.ismail@alrayanbank.co.uk</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>thair.hanif@alrayanbank.co.uk</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>umar.ali@alrayanbank.co.uk</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>vc@alrayanbank.co.uk</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>itservicedesk@islamic-bank.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Misc_Emails/Accident_Near_Miss</template>
+    </alerts>
+    <rules>
+        <fullName>email for new accident%2Fnear miss</fullName>
+        <actions>
+            <name>New_accident_near_miss</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Accident_Near_Miss__c.Name</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

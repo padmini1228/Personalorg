@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Product Suitability</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Product Suitability</value>
+    </caseValues>
+    <fields>
+        <label><!-- What access do you require? --></label>
+        <name>Access_to_Funds__c</name>
+        <picklistValues>
+            <masterLabel>Fixed Term</masterLabel>
+            <translation><!-- Fixed Term --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Instant Access</masterLabel>
+            <translation><!-- Instant Access --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Withdrawal with Notice</masterLabel>
+            <translation><!-- Withdrawal with Notice --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Allow CCJ/Bankruptcy --></label>
+        <name>Allow_CCJ_Bankruptcy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allow Non-UK Applicant --></label>
+        <name>Allow_Non_UK__c</name>
+    </fields>
+    <fields>
+        <label><!-- Apply Online --></label>
+        <name>Apply_Online__c</name>
+    </fields>
+    <fields>
+        <label><!-- Buy to Let rental amount --></label>
+        <name>Buy_to_Let_rental_amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category of Product --></label>
+        <name>Category_of_Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Channel --></label>
+        <name>Channel__c</name>
+        <picklistValues>
+            <masterLabel>Branch Network</masterLabel>
+            <translation><!-- Branch Network --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exclusive</masterLabel>
+            <translation><!-- Exclusive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Existing customer</masterLabel>
+            <translation><!-- Existing customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intermediary</masterLabel>
+            <translation><!-- Intermediary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internet Only</masterLabel>
+            <translation><!-- Internet Only --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- How many incomes can be used --></label>
+        <name>How_many_incomes_can_be_used__c</name>
+    </fields>
+    <fields>
+        <label><!-- IBB Product Name --></label>
+        <name>IBB_Product_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- IBB Product --></label>
+        <name>IBB_Product__c</name>
+        <relationshipLabel><!-- Product Suitability --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Income Multiplier --></label>
+        <name>Income_Multiplier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lending area --></label>
+        <name>Lending_area__c</name>
+        <picklistValues>
+            <masterLabel>England &amp; Wales</masterLabel>
+            <translation><!-- England &amp; Wales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scotland</masterLabel>
+            <translation><!-- Scotland --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Limited Company --></label>
+        <name>Limited_company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Finance / Income Multiplier --></label>
+        <name>Max_Finance_Income_Multiplier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum BTL Properties --></label>
+        <name>Maximum_BTL_Properties__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum FTV% --></label>
+        <name>Maximum_FTV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum Finance Term (Years) --></label>
+        <name>Maximum_Finance_Term_Years__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum age --></label>
+        <name>Maximum_age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum deposit amount --></label>
+        <name>Maximum_deposit_amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum finance amounts --></label>
+        <name>Maximum_finance_amounts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum withdrawl amount --></label>
+        <name>Maximum_withdrawl_amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum Finance Term (Years) --></label>
+        <name>Minimum_Finance_Term_Years__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum Purchase Price --></label>
+        <name>Minimum_Purchase_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum age --></label>
+        <name>Minimum_age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum deposit amount --></label>
+        <name>Minimum_deposit_amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum finance amounts --></label>
+        <name>Minimum_finance_amounts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum withdrawl amount --></label>
+        <name>Minimum_withdrawl_amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of applicants --></label>
+        <name>Number_of_applicants__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of withdrawls allowed --></label>
+        <name>Number_of_withdrawls_allowed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purpose of Account --></label>
+        <name>Purpose_of_Account__c</name>
+        <picklistValues>
+            <masterLabel>College/Student Savings/Expenses</masterLabel>
+            <translation><!-- College/Student Savings/Expenses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Long Term Savings</masterLabel>
+            <translation><!-- Long Term Savings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pay everyday bills</masterLabel>
+            <translation><!-- Pay everyday bills --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Property Savings/Expenses</masterLabel>
+            <translation><!-- Property Savings/Expenses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Receive benefits</masterLabel>
+            <translation><!-- Receive benefits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special Occasion Savings/Expenses</masterLabel>
+            <translation><!-- Special Occasion Savings/Expenses --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Require property to be main residence? --></label>
+        <name>Require_property_to_be_main_residence__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Show On BAA --></label>
+        <name>Show_On_BAA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show On Liabilities External --></label>
+        <name>Show_On_Liabilities_External__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show On Liabilities --></label>
+        <name>Show_On_Liabilities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suitable Employment Types --></label>
+        <name>Suitable_Employment_Types__c</name>
+        <picklistValues>
+            <masterLabel>Employed</masterLabel>
+            <translation><!-- Employed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Homemaker</masterLabel>
+            <translation><!-- Homemaker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Part time</masterLabel>
+            <translation><!-- Part time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retired</masterLabel>
+            <translation><!-- Retired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self Employed Professional</masterLabel>
+            <translation><!-- Self Employed Professional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self Employed non-professional</masterLabel>
+            <translation><!-- Self Employed non-professional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Student</masterLabel>
+            <translation><!-- Student --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Temporary Employment</masterLabel>
+            <translation><!-- Temporary Employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unemployed</masterLabel>
+            <translation><!-- Unemployed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Suitable Property Types --></label>
+        <name>Suitable_Property_Types__c</name>
+        <picklistValues>
+            <masterLabel>Council property</masterLabel>
+            <translation><!-- Council property --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ex- council property</masterLabel>
+            <translation><!-- Ex- council property --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flat (not retirement flat)</masterLabel>
+            <translation><!-- Flat (not retirement flat) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Housing Association</masterLabel>
+            <translation><!-- Housing Association --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Privately Owned.</masterLabel>
+            <translation><!-- Privately Owned. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shared Ownership</masterLabel>
+            <translation><!-- Shared Ownership --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of Finance --></label>
+        <name>Type_of_Finance__c</name>
+        <picklistValues>
+            <masterLabel>Off shore</masterLabel>
+            <translation><!-- Off shore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On shore</masterLabel>
+            <translation><!-- On shore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchase</masterLabel>
+            <translation><!-- Purchase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Re-finance</masterLabel>
+            <translation><!-- Re-finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Release additional capital</masterLabel>
+            <translation><!-- Release additional capital --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of Product --></label>
+        <name>Type_of_Product__c</name>
+    </fields>
+    <layouts>
+        <layout>External user</layout>
+        <sections>
+            <label><!-- Asset Multi-Selects --></label>
+            <section>Asset Multi-Selects</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General Product Selection Variables --></label>
+            <section>General Product Selection Variables</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>IBB Liability Suitability</layout>
+        <sections>
+            <label><!-- Asset Multi-Selects --></label>
+            <section>Asset Multi-Selects</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General Product Selection Variables --></label>
+            <section>General Product Selection Variables</section>
+        </sections>
+        <sections>
+            <label><!-- Liabilities Product Selection Variables --></label>
+            <section>Liabilities Product Selection Variables</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>IBB Product Suitability Layout</layout>
+        <sections>
+            <label><!-- Asset Multi-Selects --></label>
+            <section>Asset Multi-Selects</section>
+        </sections>
+        <sections>
+            <label><!-- Asset Product Selection Variables --></label>
+            <section>Asset Product Selection Variables</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General Product Selection Variables --></label>
+            <section>General Product Selection Variables</section>
+        </sections>
+        <sections>
+            <label><!-- Liabilities Product Selection Variables --></label>
+            <section>Liabilities Product Selection Variables</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Asset Suitability --></label>
+        <name>Asset_Suitability</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Suitability Liab --></label>
+        <name>Suitability_Liab</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

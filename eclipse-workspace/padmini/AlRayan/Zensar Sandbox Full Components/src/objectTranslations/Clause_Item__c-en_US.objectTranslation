@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Clause Item</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Clause Items</value>
+    </caseValues>
+    <fields>
+        <label><!-- Clause HTML --></label>
+        <name>Clause_HTML__c</name>
+    </fields>
+    <fields>
+        <label><!-- Clause --></label>
+        <name>Clause__c</name>
+        <relationshipLabel><!-- Clause Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Clause/section --></label>
+        <name>Clause_section__c</name>
+        <picklistValues>
+            <masterLabel>1.1 a</masterLabel>
+            <translation><!-- 1.1 a --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1.1 b</masterLabel>
+            <translation><!-- 1.1 b --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1.1 c</masterLabel>
+            <translation><!-- 1.1 c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1.3.2</masterLabel>
+            <translation><!-- 1.3.2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1.3.5</masterLabel>
+            <translation><!-- 1.3.5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1.6</masterLabel>
+            <translation><!-- 1.6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3.5 c</masterLabel>
+            <translation><!-- 3.5 c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amortisation: Full warning</masterLabel>
+            <translation><!-- Amortisation: Full warning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amortisation: Partial/no warning</masterLabel>
+            <translation><!-- Amortisation: Partial/no warning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>At the end of 5.2</masterLabel>
+            <translation><!-- At the end of 5.2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guarantor</masterLabel>
+            <translation><!-- Guarantor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Important notice Staff</masterLabel>
+            <translation><!-- Important notice Staff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paragraph 7</masterLabel>
+            <translation><!-- Paragraph 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paragraph 8</masterLabel>
+            <translation><!-- Paragraph 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Staff condition 1</masterLabel>
+            <translation><!-- Staff condition 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Staff condition 2</masterLabel>
+            <translation><!-- Staff condition 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>i</masterLabel>
+            <translation><!-- i --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>p</masterLabel>
+            <translation><!-- p --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Clause Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ref --></label>
+        <name>Ref__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type2 --></label>
+        <name>Type2__c</name>
+        <picklistValues>
+            <masterLabel>Non panel</masterLabel>
+            <translation><!-- Non panel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panel</masterLabel>
+            <translation><!-- Panel --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>All products for BTL and HPP excluding BRO</masterLabel>
+            <translation><!-- All products for BTL and HPP excluding BRO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BTL</masterLabel>
+            <translation><!-- BTL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BTL Refinance</masterLabel>
+            <translation><!-- BTL Refinance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BTLLC</masterLabel>
+            <translation><!-- BTLLC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BTLLC New Purchase</masterLabel>
+            <translation><!-- BTLLC New Purchase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BTLLC Refinance</masterLabel>
+            <translation><!-- BTLLC Refinance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BTLLC Rent Only</masterLabel>
+            <translation><!-- BTLLC Rent Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guarantor</masterLabel>
+            <translation><!-- Guarantor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP</masterLabel>
+            <translation><!-- HPP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPPP</masterLabel>
+            <translation><!-- HPPP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Purchase</masterLabel>
+            <translation><!-- New Purchase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Staff</masterLabel>
+            <translation><!-- Non Staff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refinancing</masterLabel>
+            <translation><!-- Refinancing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Staff</masterLabel>
+            <translation><!-- Staff --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

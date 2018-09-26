@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Web Form Data</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Web Form Data</value>
+    </caseValues>
+    <fields>
+        <label><!-- Address City --></label>
+        <name>Address_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Country --></label>
+        <name>Address_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Line 1 --></label>
+        <name>Address_Line_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Line 2 --></label>
+        <name>Address_Line_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Postcode --></label>
+        <name>Address_Postcode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Are you an existing customer --></label>
+        <name>Are_you_an_existing_customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Source Campaign --></label>
+        <name>Campaign__c</name>
+        <relationshipLabel><!-- Web Form Data --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Complaint Details --></label>
+        <name>Complaint_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of birth --></label>
+        <name>Date_of_birth__c</name>
+    </fields>
+    <fields>
+        <label><!-- EBS ID --></label>
+        <name>EBS_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Address --></label>
+        <name>Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enquiry Details --></label>
+        <name>Enquiry_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- FirstName --></label>
+        <name>FirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Form name --></label>
+        <name>Form_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- GA Campaign Content --></label>
+        <name>GA_Campaign_Content__c</name>
+    </fields>
+    <fields>
+        <label><!-- GA Campaign Medium --></label>
+        <name>GA_Campaign_Medium__c</name>
+    </fields>
+    <fields>
+        <label><!-- GA Campaign Name --></label>
+        <name>GA_Campaign_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- GA Campaign Source --></label>
+        <name>GA_Campaign_Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- GA Campaign Term --></label>
+        <name>GA_Campaign_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- GA Unique ID --></label>
+        <name>GA_Unique_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP product to discuss --></label>
+        <name>HPP_product_to_discuss__c</name>
+        <picklistValues>
+            <masterLabel>Buy To Let Purchase Plan</masterLabel>
+            <translation><!-- Buy To Let Purchase Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Purchase Plan (including Help to Buy)</masterLabel>
+            <translation><!-- Home Purchase Plan (including Help to Buy) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Home telephone --></label>
+        <name>Home_telephone__c</name>
+    </fields>
+    <fields>
+        <label><!-- How did you hear about us --></label>
+        <name>How_did_you_hear_about_us__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interested in BTL --></label>
+        <name>Interested_in_BTL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interested in CPF --></label>
+        <name>Interested_in_CPF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interested in DPS --></label>
+        <name>Interested_in_DPS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interested in FTD --></label>
+        <name>Interested_in_FTD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interested in HPP Premier --></label>
+        <name>Interested_in_HPP_Premier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interested in HPP --></label>
+        <name>Interested_in_HPP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interested in HPS --></label>
+        <name>Interested_in_HPS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interested in IMT --></label>
+        <name>Interested_in_IMT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interested in ISA --></label>
+        <name>Interested_in_ISA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interested in Instant Saving --></label>
+        <name>Interested_in_Instant_Saving__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interested in Long Term Saving --></label>
+        <name>Interested_in_Long_Term_Saving__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interested in Notice Saving --></label>
+        <name>Interested_in_Notice_Saving__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interested in Pensions and Investments --></label>
+        <name>Interested_in_Pensions_and_Investments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interested in Short Term Saving --></label>
+        <name>Interested_in_Short_Term_Saving__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interested in YPSA --></label>
+        <name>Interested_in_YPSA__c</name>
+    </fields>
+    <fields>
+        <label><!-- LastName --></label>
+        <name>LastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Reference --></label>
+        <name>Marketing_Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile telephone --></label>
+        <name>Mobile_telephone__c</name>
+    </fields>
+    <fields>
+        <label><!-- NOT by email --></label>
+        <name>NOT_by_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Not By Post --></label>
+        <name>Not_By_Post__c</name>
+    </fields>
+    <fields>
+        <label><!-- Not By SMS --></label>
+        <name>Not_By_SMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Not by phone --></label>
+        <name>Not_by_phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Products --></label>
+        <name>Other_Products__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prefered Contact Method --></label>
+        <name>Prefered_Contact_Method__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred phone number --></label>
+        <name>Preferred_phone_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prospects/Customers --></label>
+        <name>Prospects_Customers__c</name>
+        <relationshipLabel><!-- Web Form Data --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Savings Products to discuss --></label>
+        <name>Savings_Products_to_discuss__c</name>
+        <picklistValues>
+            <masterLabel>Fixed term deposit</masterLabel>
+            <translation><!-- Fixed term deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISA&apos;s</masterLabel>
+            <translation><!-- ISA&apos;s --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Instant access</masterLabel>
+            <translation><!-- Instant access --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Notice accounts</masterLabel>
+            <translation><!-- Notice accounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Young person&apos;s</masterLabel>
+            <translation><!-- Young person&apos;s --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Converted to CAA</masterLabel>
+            <translation><!-- Converted to CAA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Converted to HPP CAA</masterLabel>
+            <translation><!-- Converted to HPP CAA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Converted to case</masterLabel>
+            <translation><!-- Converted to case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Converted to other opportunity</masterLabel>
+            <translation><!-- Converted to other opportunity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not taken forward</masterLabel>
+            <translation><!-- Not taken forward --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>Title__c</name>
+        <picklistValues>
+            <masterLabel>Dr</masterLabel>
+            <translation><!-- Dr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miss</masterLabel>
+            <translation><!-- Miss --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mr</masterLabel>
+            <translation><!-- Mr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mrs</masterLabel>
+            <translation><!-- Mrs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ms</masterLabel>
+            <translation><!-- Ms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of product to discuss --></label>
+        <name>Type_of_product_to_discuss__c</name>
+        <picklistValues>
+            <masterLabel>Current Account</masterLabel>
+            <translation><!-- Current Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General enquiry</masterLabel>
+            <translation><!-- General enquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Finance</masterLabel>
+            <translation><!-- Home Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual savings accounts (ISAs)</masterLabel>
+            <translation><!-- Individual savings accounts (ISAs) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other products</masterLabel>
+            <translation><!-- Other products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Savings</masterLabel>
+            <translation><!-- Savings --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Work telephone --></label>
+        <name>Work_telephone__c</name>
+    </fields>
+    <layouts>
+        <layout>Web Form Layout</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Details --></label>
+            <section>Contact Details</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Preference --></label>
+            <section>Contact Preference</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Google Analytics Tracking --></label>
+            <section>Google Analytics Tracking</section>
+        </sections>
+        <sections>
+            <label><!-- Home Finance --></label>
+            <section>Home Finance</section>
+        </sections>
+        <sections>
+            <label><!-- Other Products --></label>
+            <section>Other Products</section>
+        </sections>
+        <sections>
+            <label><!-- Other details --></label>
+            <section>Other details</section>
+        </sections>
+        <sections>
+            <label><!-- Personal Details --></label>
+            <section>Personal Details</section>
+        </sections>
+        <sections>
+            <label><!-- Savings --></label>
+            <section>Savings</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Action_to_Perform --></label>
+        <name>Action_to_Perform</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_case --></label>
+        <name>Create_case</name>
+    </webLinks>
+</CustomObjectTranslation>

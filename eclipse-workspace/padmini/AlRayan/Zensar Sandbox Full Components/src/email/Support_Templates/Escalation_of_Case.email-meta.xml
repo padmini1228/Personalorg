@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>Escalation of Case</name>
+    <style>freeForm</style>
+    <subject>Case has been open for more than 16 working hours</subject>
+    <textOnly>The below case has been opened for more than 16 hours. Please review and take forward as required.
+
+Case number: {!Case.CaseNumber}
+Subject: {!Case.Subject}
+Date/Time opened: {!Case.CreatedDate}
+Link to case: {!Case.Link}
+Created by: {!Case.CreatedBy}
+Currently with: {!Case.OwnerFullName}</textOnly>
+    <type>html</type>
+</EmailTemplate>

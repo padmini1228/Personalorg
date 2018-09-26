@@ -1,0 +1,25 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="1" aEditID="c1r1" >
+<![CDATA[<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'; mso-ansi-language: EN-GB"><?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p>&nbsp;Dear&nbsp;{!Lead.FirstName} {!Lead.LastName}</o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'; mso-ansi-language: EN-GB"><o:p></o:p></SPAN><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'; mso-ansi-language: EN-GB"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'; mso-ansi-language: EN-GB">Thank you for your recent enquiry regarding information on our <B style="mso-bidi-font-weight: normal">On Demand Savings Account</B>.<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'; mso-ansi-language: EN-GB"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'; mso-ansi-language: EN-GB">The information you require can be found by clicking on the following link:<SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'; mso-ansi-language: EN-GB"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'; mso-ansi-language: EN-GB"><A href="http://www.islamic-bank.com/personal-banking/savings-products/demand-savings-account/">http://www.islamic-bank.com/personal-banking/savings-products/demand-savings-account/</A></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'; mso-ansi-language: EN-GB"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'; mso-ansi-language: EN-GB">This link will take you through to the Islamic Bank of Britain website where you will find all the relevant information about the product as well as how to apply for it.<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'; mso-ansi-language: EN-GB"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'; mso-ansi-language: EN-GB">If you have any questions after reading this, please call our Customer Helpline on 0800 4080 786.<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'; mso-ansi-language: EN-GB"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'; mso-ansi-language: EN-GB"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'; mso-ansi-language: EN-GB">Yours sincerely</SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'; mso-ansi-language: EN-GB"></SPAN>&nbsp;</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'; mso-ansi-language: EN-GB">{!User.FirstName} {!User.LastName}</SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'; mso-ansi-language: EN-GB">Islamic Bank of Britain</SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'; mso-ansi-language: EN-GB"></SPAN>&nbsp;</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'; mso-ansi-language: EN-GB"></SPAN>&nbsp;</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'; mso-ansi-language: EN-GB"><o:p></o:p></SPAN>&nbsp;</P>]]></td>
+</tr>
+</table>

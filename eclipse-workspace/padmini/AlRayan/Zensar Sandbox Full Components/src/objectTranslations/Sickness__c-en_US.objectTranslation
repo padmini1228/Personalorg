@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sickness</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sickness</value>
+    </caseValues>
+    <fields>
+        <label><!-- Absence caused by an injury at work? --></label>
+        <name>Absence_caused_by_an_injury_at_work__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Adjustments to work required? --></label>
+        <name>Adjustments_to_work_required__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Are you taking any medication? --></label>
+        <name>Are_you_taking_any_medication__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Correct reporting procedure followed? --></label>
+        <name>Correct_reporting_procedure_followed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Day you returned to work --></label>
+        <name>Day_you_returned_to_work__c</name>
+    </fields>
+    <fields>
+        <label><!-- Did you visit the hospital or GP? --></label>
+        <name>Did_you_visit_the_hospital_or_GP__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Do you feel fit to return to duties? --></label>
+        <name>Do_you_feel_fit_to_return_to_duties__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- If so, on what date? --></label>
+        <name>Doctors_visit_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- If yes, was the accident reported to HR? --></label>
+        <name>If_yes_was_the_accident_reported_to_HR__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- If so, please give details --></label>
+        <name>Injury_at_work_details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last day you worked --></label>
+        <name>Last_day_you_worked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of days off sick --></label>
+        <name>Number_of_days_off_sick__c</name>
+    </fields>
+    <fields>
+        <label><!-- Please give details --></label>
+        <name>Please_give_details_medication__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason for absence --></label>
+        <name>Reason_for_absence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Staff name --></label>
+        <name>Staff_name__c</name>
+        <relationshipLabel><!-- Sickness --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Awaiting approval</masterLabel>
+            <translation><!-- Awaiting approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Time you left the workplace --></label>
+        <name>Time_you_left_the_workplace__c</name>
+        <picklistValues>
+            <masterLabel>AM</masterLabel>
+            <translation><!-- AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM</masterLabel>
+            <translation><!-- PM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- What steps have you taken to recover? --></label>
+        <name>What_steps_have_you_taken_to_recover__c</name>
+    </fields>
+    <fields>
+        <label><!-- If yes, please give details --></label>
+        <name>Work_adjustments_info__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Account Holder</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Account Holders</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account with IBB Number --></label>
+        <name>Account_with_IBB_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account with IBB --></label>
+        <name>Account_with_IBB__c</name>
+        <relationshipLabel><!-- Account Holders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer EBS ID --></label>
+        <name>Customer_EBS_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer EBS ID  from profile --></label>
+        <name>Customer_EBS_ID_from_profile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deactivation Reason --></label>
+        <name>Deactivation_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- EBS ID --></label>
+        <name>EBS_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Active --></label>
+        <name>Is_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Account Holder --></label>
+        <name>Primary_Account_Holder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary --></label>
+        <name>Primary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary flag is correct --></label>
+        <name>Primary_flag_is_correct__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prospect/Customer --></label>
+        <name>Prospect_Customer__c</name>
+        <relationshipLabel><!-- Account Holders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Relationship To Primary Applicant --></label>
+        <name>Relationship_To_Primary_Applicant1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship To Primary Applicant --></label>
+        <name>Relationship_To_Primary_Applicant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship Type --></label>
+        <name>Relationship_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signatory Group --></label>
+        <name>Signatory_Group__c</name>
+        <relationshipLabel><!-- Account Holders --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Account Holder Admin Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Account Holder Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Restricted External Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

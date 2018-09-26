@@ -1,0 +1,341 @@
+<apex:page controller="xmetric.MetricWizard" sidebar="false" docType="html-5.0">
+    <!-- Javascript -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" />
+    <!--Fixing IE issue for Lockton sp1200-->
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js" />
+    <script src="{!URLFOR($Resource.Highcharts, '/highcharts.js')}" ></script>
+    <script src="{!URLFOR($Resource.Highcharts, '/modules/exporting.js')}" ></script>
+    <script src="{!URLFOR($Resource.MetricWizard,'js/knockout-3.1.0.js')}" ></script>
+    <script src="{!URLFOR($Resource.MetricWizard,'js/globalize.min.js')}" ></script>
+    <script src="{!URLFOR($Resource.MetricWizard,'js/dx.chartjs.js')}" ></script>
+    <link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css" ></link>
+    <script src="{!URLFOR($Resource.MetricWizard,'js/wizard.js')}" ></script>
+    <!-- stylesheet --> 
+    <apex:stylesheet value="{!URLFOR($Resource.xmetric__MetricWizard,'css/wizard.css')}" />
+    
+    <!-- Section Header -->
+    <table cellpadding="0" cellspacing="0" onclick="checkValue();" style="padding-bottom:2em;margin-top:1em; width:100%;" >
+        <tr>
+            <td style="width:4%;" ><apex:image value="{!URLFOR($Resource.xmetric__MetricWizard,'images/KXI.png')}" /></td>
+            <td style="padding-top:5px; width:75%; vertical-align:middle; font-weight:thick; font-size:1.8em; font-family:Helvetica;" >Enter Metric Results</td>
+            <td style="padding-top:5px; width:21%; vertical-align:middle;" >
+                <div class="links" style="float:right;" >
+                    <apex:outputLink styleClass="helpPageLink" value="{!URLFOR($Page.xmetric__MetricHelp)}" >
+                        <span class="helpLink">{!$Label.Help_for_this_Page}</span>
+                        <img src="/s.gif" alt="" class="helpIcon" />
+                    </apex:outputLink>
+                </div> 
+            </td>
+        </tr>
+    </table> 
+    
+    <apex:pageMessages id="messagePanel" />
+    
+    <apex:form id="pbForm" >
+        <input type="hidden" id="currencyCode" name="currencyCode" value="{!userCurrencyISOCode}" />
+        <!-- Comment Pop-up window -->
+        <apex:outputPanel layout="block" style="width:100%; display:none;" id="commentPopUp" >
+             <apex:outputPanel styleClass="popupBackground" layout="block"  />
+             <apex:outputPanel styleClass="custPopup" layout="block" >
+                <apex:pageBlock title="" mode="maindetail">
+                    <table>
+                        <tr>
+                            <td style="padding-bottom:3px; text-align:center;"><h2 id="kxiNameBlock" ></h2></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                 <input type="hidden" id="selKXIId" name="selKXIId" value="" />
+                                 <textarea id="commentBox" maxlength="32768" style="resize:none; width:455px; height:100px;" value="" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table style="width:100%; padding-top:15px;" >
+                                    <tr>
+                                        <td style="text-align:center;">
+                                            <div id="saveCommentButton" class="btn" style="padding:5px;" onclick="saveComment();">Save</div>
+                                            <div id="cancelCommentButton" class="btn" style="padding:5px;" onclick="closePopup('commentPopUp');" >Cancel</div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </apex:pageBlock> 
+             </apex:outputPanel> 
+        </apex:outputPanel>
+        
+        <!-- TrendGraph popup window -->
+        <apex:outputPanel layout="block" style="width:100%; display:none;" id="trendGraphPopUp" >
+            <apex:outputPanel styleClass="popupBackground" layout="block"  />
+            <apex:outputPanel styleClass="GraphPopUp" layout="block" >
+                <apex:pageBlock title="" mode="maindetail">
+                    <table align="center" >
+                        <tr>
+                            <td id="trendGraph" ></td>
+                        </tr>
+                        <tr>
+                            <td align="center" style="padding-top:10px;" >
+                                <apex:outputPanel styleClass="btn" style="padding:5px;" onclick="closePopup('trendGraphPopUp');" >Close</apex:outputPanel>
+                            </td>
+                        </tr>
+                    </table>
+                </apex:pageBlock>
+            </apex:outputPanel>
+        </apex:outputPanel>
+        
+        <apex:pageBlock id="pbBlock" mode="mainDetail" >
+            <!-- Change the monitoring frequency -->
+              <apex:actionFunction name="changeMonitoringFrequency" status="processingStatus" oncomplete="showTrendGraph(true);" action="{!refreshMetricsForMonitoringFrequency}" rerender="wizardPanel, paginationBlock" >
+                <apex:param name="monitoringFrequency" assignTo="{!monitoringFrequency}" value="" />
+            </apex:actionFunction>
+            
+            <!-- Increment/Decrement review period -->
+            <apex:actionFunction name="next" status="processingStatus" oncomplete="showTrendGraph(true); " action="{!next}" rerender="wizardPanel,messagePanel,paginationBlock" />
+            <apex:actionFunction name="previous" status="processingStatus" oncomplete="showTrendGraph(true); " action="{!previous}" rerender="wizardPanel,messagePanel,paginationBlock" />
+            
+            <!-- Save Result --> 
+            <apex:actionFunction name="saveResult" status="processingStatus" oncomplete="showTrendGraph({!NOT(submissionsEnabled)});" action="{!saveResults}" rerender="{!IF(NOT(submissionsEnabled),'wizardPanel,','')}messagePanel" />
+            
+            <!-- Update notes (Save Result but without rerender) -->
+            <apex:actionFunction name="updateNotes" status="processingStatus" oncomplete="showTrendGraph({!NOT(submissionsEnabled)});" action="{!saveResults}" rerender="{!IF(NOT(submissionsEnabled),'wizardPanel,','')}messagePanel" />
+            
+            <apex:outputPanel layout="block" id="wizardPanel" rendered="true" > 
+                <table class="frequencyTable" >
+                    <tr>
+                        <apex:repeat value="{!metricsByFrequency}" var="frequency">
+                            <apex:outputPanel layout="none" rendered="{! !metricsByFrequency[frequency].metrics.empty}" >
+                                <td class="monitoringFrequency {!IF(monitoringFrequency == frequency,'activeTableCell','inactiveTableCell')}" onclick="changeMonitoringFrequency('{!frequency}');" >
+                                    <apex:outputText value="{0} [{1}]">
+                                        <apex:param value="{!frequencyTypeLabelsMap[frequency]}" />
+                                        <apex:param value="{!metricsByFrequency[frequency].metrics.size}" />
+                                    </apex:outputText>
+                                </td>
+                            </apex:outputPanel>
+                        </apex:repeat>    
+                    </tr>
+                </table> 
+                
+                <apex:outputPanel layout="none" >
+                    <div class="divContainer" >
+                        <table class="outerWizardTable" cellpadding="24" cellspacing="0" align="center" >
+                            <tr>
+                                <td onclick="checkValue();" style="width:35%;" ></td>
+                                <td style="width:34%; verpadding-left:0px; padding-right:0px; vertical-align:middle;" >
+                                    <table class="innerWizardTable" >
+                                        <tr>
+                                            <td style="width:1%;" >
+                                                <apex:image onclick="checkValue(); previous(); if($.browser.mozilla || $.browser.chrome){event.stopPropagation();}  if($.browser.msie){window.event.cancelBubble = true;} " style="cursor:pointer;" value="{!URLFOR($Resource.xmetric__MetricWizard,'images/Previous.png')}" />
+                                            </td>
+                                            <td class="reviewDate" >
+                                                <apex:outputPanel style="white-space:nowrap;" layout="block">
+                                                    <apex:outputText value="{!currentReviewDateLabel}" /><br/>
+                                                    <apex:outputText value="{0, date, MMMM d','  yyyy}" style="font-size:10px;">
+                                                        <apex:param value="{!startDate}" /> 
+                                                    </apex:outputText>
+                                                    <apex:outputText rendered="{!IF(startDate!=null,true,false)}" value=" - " />
+                                                    <apex:outputText value="{0, date, MMMM d','  yyyy}" style="font-size:10px;">
+                                                        <apex:param value="{!selectedDate}" /> 
+                                                    </apex:outputText>
+                                                </apex:outputPanel>
+                                            </td>
+                                            <td style="width:1%; white-space:nowrap;">
+                                                <apex:image onclick="checkValue(); next(); if($.browser.mozilla || $.browser.chrome){event.stopPropagation();}  if($.browser.msie){window.event.cancelBubble = true;}" style="cursor:pointer;" value="{!URLFOR($Resource.xmetric__MetricWizard,'images/Next.png')}" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td style="width:11%;" onclick="checkValue();" >
+                                    <apex:outputPanel layout="none" id="datePanel" >
+                                        <apex:image title="Select date" id="calenderIcon" html-icon="calenderImage" onclick="showDate(); if($.browser.mozilla || $.browser.chrome){event.stopPropagation();}  if($.browser.msie){window.event.cancelBubble = true;}" style="cursor:pointer; display:block; bottom:0;" value="{!URLFOR($Resource.xmetric__MetricWizard,'images/Calender.png')}" />
+                                        <apex:outputPanel style="display:none;" layout="block" html-icon="bob" id="dateFieldPanel" styleClass="hideClass" >
+                                            <apex:pageBlockSection >
+                                                <apex:pageBlockSectionItem >
+                                                    <apex:outputPanel layout="block" style="padding: 10px 0px;" >
+                                                        <apex:input id="selectedDate" type="auto" required="true" value="{!calendarSelectedDate}" onfocus="DatePicker.pickDate(true, '{!$Component.selectedDate}', false);" style="font-size:10.5pt; width:150px; font-family:Helvetica;" >
+                                                            <apex:actionSupport status="processingStatus" oncomplete="showTrendGraph(true);" event="onchange" action="{!changeDate}" rerender="wizardPanel,messagePanel,paginationBlock" />
+                                                        </apex:input>
+                                                        <!-- blankText input text field added to stop full page refresh when hitting enter key, when the date is the only input text on the page -->
+                                                        <input id="blankText" type="text" value="" style="display:none;"
+                                                        />
+                                                    </apex:outputPanel>
+                                                </apex:pageBlockSectionItem>
+                                            </apex:pageBlockSection>
+                                        </apex:outputPanel>
+                                    </apex:outputPanel>
+                                </td>
+                                <td onclick="checkValue();" style="width:20%;" ></td>
+                            </tr>
+                        </table>
+                        
+                        <apex:outputPanel layout="block" id="quantitativePanel" >
+                            <table class="resultsTable" cellpadding="0" >
+                                <tr>
+                                    <th width="28%"><apex:outputLabel value="{!$ObjectType.xmetric__Metric__c.Label} {!$Label.Name}" /></th>
+                                    <th style="min-width:200px;" colspan="4" >{!$Label.Thresholds}</th>
+                                    <th width="120px">{!$Label.Actual_Value}</th>
+                                    <th width="90px">{!$Label.Comments}</th>
+                                    <apex:outputPanel layout="none" rendered="{!submissionsEnabled}" >
+                                        <th width="120px">&nbsp;</th>
+                                    </apex:outputPanel>
+                                    <th width="130px">{!$Label.Trend_Graph}</th>
+                                </tr>
+                                <apex:repeat value="{!metricsByFrequency[monitoringFrequency].metricsListForCurrentPage}" var="metric" rendered="{!$ObjectType.xmetric__Metric__c.Updateable}" >       
+                                    <tr>
+                                        <td onclick="{!IF((NOT(submissionsEnabled) || IF(submissionsEnabled, (ISBLANK(metric.dataObject.Id) || NOT(metric.currentResult.dataObject.Submitted__c)),false)),'checkValue();','')}" class="nameColumn" style="height:102px" >
+                                            <table style="width:100%;" >
+                                                <tr>
+                                                    <td style="width:52px" >
+                                                        <apex:image title="Key Control Indicator" value="{!URLFOR($Resource.xmetric__MetricWizard,'images/KCI.png')}" rendered="{!metric.dataObject.Type__c == 'KCI'}" />
+                                                        <apex:image title="Key Risk Indicator" value="{!URLFOR($Resource.xmetric__MetricWizard,'images/KRI.png')}" rendered="{!metric.dataObject.Type__c == 'KRI'}" />
+                                                        <apex:image title="Key Performance Indicator" value="{!URLFOR($Resource.xmetric__MetricWizard,'images/KPI.png')}" rendered="{!metric.dataObject.Type__c == 'KPI'}" />
+                                                    </td>
+                                                    <td style="width:auto; vertical-align:middle;">
+                                                        <a style="text-decoration:none;" href="/{!metric.dataObject.Id}" target="_blank" >
+                                                            <apex:outputText style="cursor:normal;" title="{!metric.dataObject.Description__c}" value="{!metric.dataObject.Name}" />
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        
+                                        <!-- Quantitative -->
+                                        <apex:outputPanel layout="none" rendered="{! metric.dataObject.Metric_Type__c != 'Qualitative'}">
+                                            <td colspan="4" class="thresholdColumn" onclick="{!IF((NOT(submissionsEnabled) || IF(submissionsEnabled, (ISBLANK(metric.dataObject.Id) || NOT(metric.currentResult.dataObject.Submitted__c)),false)),'checkValue();','')}" >
+                                                <div id="linear-{!metric.dataObject.Id}" class="Container"></div> 
+                                                <c:MetricThreshold MetricRecord="{!metric.dataObject}" ElementId="linear-{!metric.dataObject.Id}" ThresholdString="{!metric.dataObjectThreshold}" StartThreshold="{!metric.startValue}" EndThreshold="{!metric.endValue}" CurrentScore="{!metric.currentResult.dataObject.Value__c}"/>
+                                            </td>
+
+                                            
+                                            <td id="kxi-{!metric.dataObject.Id}"  onclick="{!IF((NOT(submissionsEnabled) || IF(submissionsEnabled, (ISBLANK(metric.dataObject.Id) || NOT(metric.currentResult.dataObject.Submitted__c)),false)),'checkValue();','')}" class="valueColumn {!IF((NOT(submissionsEnabled) || IF(submissionsEnabled, (ISBLANK(metric.dataObject.Id) || NOT(metric.currentResult.dataObject.Submitted__c)),false)),'valueColumnBackground','')}"  >
+                                                <apex:outputPanel styleClass="requiredInput">
+                                                <apex:outputPanel styleClass="requiredBlock" layout="block" rendered="{!metric.currentResult.commentRequired}"/>
+                                                <div id="oldValue-{!metric.dataObject.Id}" style="display:none;" >{!metric.currentResult.dataObject.Value__c}</div> 
+                                                <apex:outputText value="£" rendered="{!metric.dataObject.Metric_Type__c == 'Currency' && submissionsEnabled && NOT(ISBLANK(metric.dataObject.Id)) && metric.currentResult.dataObject.Submitted__c && NOT(ISNULL(metric.currentResult.dataObject.Value__c))}" />
+                                                <apex:inputField onfocus="checkValue();" onchange="quantitativeValueEntered();" onclick="if($.browser.mozilla || $.browser.chrome){event.stopPropagation();} if($.browser.msie){window.event.cancelBubble = true;} " style="width:90px; font-size:10.5pt; font-family:Helvetica;" value="{!metric.currentResult.dataObject.Value__c}" rendered="{!NOT(submissionsEnabled) || IF(submissionsEnabled, (ISBLANK(metric.dataObject.Id) || NOT(metric.currentResult.dataObject.Submitted__c)),false)}" />
+                                                </apex:outputPanel>
+                                                <apex:outputField value="{!metric.currentResult.dataObject.Value__c}" rendered="{!IF(submissionsEnabled,(NOT(ISBLANK(metric.dataObject.Id)) && metric.currentResult.dataObject.Submitted__c),false)}" />
+                                                <apex:outputText value="%" rendered="{!metric.dataObject.Metric_Type__c == 'Percentage' && submissionsEnabled && NOT(ISBLANK(metric.dataObject.Id)) && metric.currentResult.dataObject.Submitted__c && NOT(ISNULL(metric.currentResult.dataObject.Value__c))}" />
+                                            </td>
+                                        </apex:outputPanel>
+                                        
+                                        <!-- Qualitative -->
+                                        <apex:outputPanel layout="none" rendered="{!metric.dataObject.Metric_Type__c == 'Qualitative'}">
+                                            <td class="qual greenTextColumn" >
+                                                <apex:outputText value="{!metric.dataObject.Green_Threshold_Text__c}" />
+                                            </td>
+                                            <apex:outputPanel layout="none" rendered="{!metric.dataObject.Use_Yellow_Threshold__c}" >
+                                                <td class="qual yellowTextColumn" >
+                                                    <apex:outputText value="{!metric.dataObject.Yellow_Threshold_Text__c}" />
+                                                </td>
+                                            </apex:outputPanel>
+                                            <td class="qual amberTextColumn" >
+                                                <apex:outputText value="{!metric.dataObject.Amber_Threshold_Text__c}" />
+                                            </td>
+                                            <td class="qual redTextColumn" >
+                                                <apex:outputText value="{!metric.dataObject.Red_Threshold_Text__c}" />
+                                            </td>
+                                            <apex:outputPanel layout="none" rendered="{!NOT(metric.dataObject.Use_Yellow_Threshold__c)}" >
+                                                <td ></td>
+                                            </apex:outputPanel>
+                                            <td class="valueColumn {!IF((NOT(submissionsEnabled) || IF(submissionsEnabled, (ISBLANK(metric.currentResult.dataObject.Id) || NOT(metric.currentResult.dataObject.Submitted__c)),false)),'valueColumnBackground','')}" >
+                                                <apex:outputPanel styleClass="requiredInput">
+                                                <apex:outputPanel styleClass="requiredBlock" layout="block" rendered="{!metric.currentResult.commentRequired}"/>
+                                                <apex:selectList rendered="{!(NOT(submissionsEnabled) || (submissionsEnabled && NOT(metric.currentResult.dataObject.Submitted__c))) && metric.dataObject.Use_Yellow_Threshold__c}" value="{!metric.currentResult.dataObject.Value__c}" onchange="qualitativeSelected(this,'{!metric.dataObject.Id}','{!IF((NOT(submissionsEnabled) || IF(submissionsEnabled, (ISBLANK(metric.currentResult.dataObject.Id) || NOT(metric.currentResult.dataObject.Submitted__c)),false)),'true','false')}');" size="1" multiselect="false">
+                                                    <apex:selectOption itemValue="" itemLabel="{!$Label.None_Option}" />
+                                                    <apex:selectOption itemValue="1.00" itemLabel="{!$Label.Green}" />
+                                                    <apex:selectOption itemValue="2.00" itemLabel="{!$Label.Yellow}"/>
+                                                    <apex:selectOption itemValue="3.00" itemLabel="{!$Label.Amber}" />
+                                                    <apex:selectOption itemValue="4.00" itemLabel="{!$Label.Red}" /> 
+                                                </apex:selectList>
+                                                 <apex:selectList rendered="{!(NOT(submissionsEnabled) || (submissionsEnabled && NOT(metric.currentResult.dataObject.Submitted__c))) && NOT(metric.dataObject.Use_Yellow_Threshold__c)}" value="{!metric.currentResult.dataObject.Value__c}" onchange="qualitativeSelected(this,'{!metric.dataObject.Id}','{!IF((NOT(submissionsEnabled) || IF(submissionsEnabled, (ISBLANK(metric.currentResult.dataObject.Id) || NOT(metric.currentResult.dataObject.Submitted__c)),false)),'true','false')}');" size="1" multiselect="false" >
+                                                    <apex:selectOption itemValue="" itemLabel="{!$Label.None_Option}" />
+                                                    <apex:selectOption itemValue="1.00" itemLabel="{!$Label.Green}" />
+                                                    <apex:selectOption itemValue="2.00" itemLabel="{!$Label.Amber}" />
+                                                    <apex:selectOption itemValue="3.00" itemLabel="{!$Label.Red}" />
+                                                </apex:selectList>
+                                                <apex:outputText value="{!IF(metric.currentResult.dataObject.Value__c == 1,$Label.Green,IF(metric.currentResult.dataObject.Value__c == 2,$Label.Yellow,IF(metric.currentResult.dataObject.Value__c == 3,$Label.Amber,IF(metric.currentResult.dataObject.Value__c == 4,$Label.Red,''))))}" rendered="{!submissionsEnabled && metric.currentResult.dataObject.Submitted__c && metric.dataObject.Use_Yellow_Threshold__c}"  />
+                                                <apex:outputText value="{!IF(metric.currentResult.dataObject.Value__c == 1,$Label.Green,IF(metric.currentResult.dataObject.Value__c == 2,$Label.Amber,IF(metric.currentResult.dataObject.Value__c == 3,$Label.Red,'')))}" rendered="{!submissionsEnabled && metric.currentResult.dataObject.Submitted__c && NOT(metric.dataObject.Use_Yellow_Threshold__c)}" />
+                                                </apex:outputPanel>
+                                            </td>
+                                        </apex:outputPanel>
+                                        <!-- Comment, Submission and trend graph -->
+                                        <td onclick="{!IF((NOT(submissionsEnabled) || IF(submissionsEnabled, (ISBLANK(metric.currentResult.dataObject.Id) || NOT(metric.currentResult.dataObject.Submitted__c)),false)),'checkValue();','')}" class="commentsColumn" >
+                                            <apex:inputHidden html-commentId="comment-{!metric.dataObject.Id}" value="{!metric.currentResult.dataObject.Comment__c}" /> 
+                                            <div title="{! IF(submissionsEnabled && metric.currentResult.dataObject.Submitted__c,$Label.View_Comment,$Label.View_Edit_Comment)}" onclick="showCommentDialog('{!metric.dataObject.Id}','{!IF((NOT(submissionsEnabled) || IF(submissionsEnabled, (ISBLANK(metric.dataObject.Id) || NOT(metric.currentResult.dataObject.Submitted__c)),false)),'false','true')}','{!metric.dataObject.Name}'); if($.browser.mozilla || $.browser.chrome){event.stopPropagation();}  if($.browser.msie){window.event.cancelBubble = true;}" >
+                                                <apex:image rendered="{!LEN(metric.currentResult.dataObject.Comment__c) != 0 && (!metric.currentResult.dataObject.Submitted__c || !submissionsEnabled)}" url="{!URLFOR($Resource.xmetric__MetricWizard,'/css/images/NotesPin.png')}" width="50" height="50" style="{!IF(metric.currentResult.commentRequired, 'border-left: 4px solid #cc0000;', '')}"/>
+                                                <apex:image rendered="{!LEN(metric.currentResult.dataObject.Comment__c) == 0 && (!submissionsEnabled || !metric.currentResult.dataObject.Submitted__c)}" url="{!URLFOR($Resource.xmetric__MetricWizard,'/css/images/Notes.png')}" width="50" height="50" style="{!IF(metric.currentResult.commentRequired, 'border-left: 4px solid #cc0000;', '')}"/>
+                                                <apex:image rendered="{!metric.currentResult.dataObject.Submitted__c && submissionsEnabled}" url="{!URLFOR($Resource.xmetric__MetricWizard,'/css/images/NotesLockInverse.png')}" width="50" height="50"  />
+                                            </div>
+                                        </td>
+                                        <apex:outputPanel layout="none" rendered="{!submissionsEnabled}" >
+                                            <td class="submitColumn" >
+                                                <apex:outputPanel styleClass="button blue" rendered="{!NOT(metric.currentResult.dataObject.Submitted__c)}"> 
+                                                {!$Label.Submit}
+                                                    <apex:actionSupport event="onclick" onsubmit="if({!IF(submissionsEnabled && confirmationEnabled,true,false)}){ if( !confirm('{! IF($Label.Warning_Message == null,'Are you sure?',$Label.Warning_Message)}') ){ checkValue(); return false; }}" action="{!saveResults}" status="processingStatus" oncomplete="showTrendGraph(true);" rerender="wizardPanel,messagePanel" >
+                                                        <apex:param id="submitResult" name="submitResult" assignTo="{!metric.currentResult.submitResult}" value="true"/>
+                                                    </apex:actionSupport>
+                                                </apex:outputPanel>
+                                                <apex:outputPanel styleClass="submitted" layout="block" rendered="{!metric.currentResult.dataObject.Submitted__c}" >{!$Label.Submitted}</apex:outputPanel>
+                                            </td>
+                                        </apex:outputPanel>
+                                        <td onclick="popupTrendGraph('{!metric.dataObject.Id}'); {!IF((NOT(submissionsEnabled) || IF(submissionsEnabled, (ISBLANK(metric.dataObject.Id) || NOT(metric.currentResult.dataObject.Submitted__c)),false)),'checkValue();','')}" class="trendGraphColumn trendColumn" >
+                                            <div id="{!metric.dataObject.Id}" ></div>
+                                            <div style="display:none;" id="data" >{!metric.chartInfo}</div>
+                                        </td>
+                                    </tr>
+                                </apex:repeat>
+
+                            </table>
+                        </apex:outputPanel> 
+                    </div>
+                </apex:outputPanel>
+           </apex:outputPanel>
+        </apex:pageBlock>
+        <apex:pageBlock id="paginationBlock" >
+            <!-- Paginator section -->
+            <div class="bottomNav" >
+                <div class="paginator" >
+                    <span class="left" >
+                        <apex:outputText >{!(pageNumber * size)+1-size}-{!IF((pageNumber * size)>noOfRecords, noOfRecords,(pageNumber * size))} {!$Label.OfLabel} {!noOfRecords}
+                        </apex:outputText>
+                    </span>
+                    <span class="prevNextLinks" >
+                        <!-- First -->
+                        <apex:outputPanel layout="inline" styleClass="prevNext {!IF(hasPrevious,'active','inactive')}" >
+                            <apex:image value="/s.gif" styleClass="{!IF(NOT(hasPrevious),'firstoff','first')}" alt="{!$Label.FirstPageLabel}"/>
+                            <apex:actionSupport event="onclick" action="{!firstPage}" oncomplete="showTrendGraph(true);" status="processingStatus" reRender="wizardPanel,messagePanel,paginationBlock" rendered="{!hasPrevious}" />
+                        </apex:outputPanel>
+
+                        <!-- Previous -->
+                        <apex:outputPanel layout="inline" styleClass="prevNext {!IF(hasPrevious,'active','inactive')}" >
+                            <apex:image value="/s.gif" styleClass="{!IF(NOT(hasPrevious),'prevoff','prev')}" alt="{!$Label.PreviousLabel}" />
+                            <apex:outputText value="{!$Label.PreviousLabel}" />
+                            <apex:actionSupport event="onclick" action="{!previousPage}" oncomplete="showTrendGraph(true);" status="processingStatus" reRender="wizardPanel,messagePanel,paginationBlock" rendered="{!hasPrevious}" />
+                        </apex:outputPanel>
+
+                        <!-- Next -->
+                        <apex:outputPanel layout="inline" styleClass="prevNext {!IF(hasNext,'active','inactive')}" >
+                            <apex:outputText value="{!$Label.NextLabel}" />
+                            <apex:image value="/s.gif" styleClass="{!IF(NOT(hasNext),'nextoff','next')}" alt="{!$Label.NextLabel}" />
+                            <apex:actionSupport event="onclick" action="{!nextPage}" oncomplete="showTrendGraph(true);" status="processingStatus" reRender="wizardPanel,messagePanel,paginationBlock" rendered="{!hasNext}" />
+                        </apex:outputPanel>
+
+                        <!-- Last -->
+                        <apex:outputPanel layout="inline" styleClass="prevNext {!IF(hasNext,'active','inactive')}" >
+                            <apex:image value="/s.gif" styleClass="{!IF(NOT(hasNext),'lastoff','last')}" alt="{!$Label.LastPageLabel}" />
+                            <apex:actionSupport event="onclick" action="{!lastPage}" oncomplete="showTrendGraph(true);" status="processingStatus" reRender="wizardPanel,messagePanel,paginationBlock" rendered="{!hasNext}" />
+                        </apex:outputPanel>
+                    </span>
+                    <span class="right" >
+                       {!$Label.PageLabel} {!PageNumber} {!$Label.OfLabel} {!IF(noOfRecords < size, 1, IF(MOD(noOfRecords, size) == 0,
+                        noOfRecords / size, CEILING(noOfRecords / size)))}
+                   </span>
+                </div>
+                <div class="clearingBox"></div>
+            </div>
+        </apex:pageBlock>
+    </apex:form>
+    <c:ProcessingStatus spinnerText="{!$Label.Saving}" />
+</apex:page>

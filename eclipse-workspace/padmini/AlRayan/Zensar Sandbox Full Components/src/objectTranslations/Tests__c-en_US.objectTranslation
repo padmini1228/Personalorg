@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Tests</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Tests</value>
+    </caseValues>
+    <fields>
+        <label><!-- Actual Completion Date --></label>
+        <name>Actual_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Start Date --></label>
+        <name>Actual_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bug Closure Data --></label>
+        <name>Bug_Closure_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bug Description --></label>
+        <name>Bug_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bug ID --></label>
+        <name>Bug_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bug Open Date --></label>
+        <name>Bug_Open_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bug Priority --></label>
+        <name>Bug_Priority__c</name>
+        <picklistValues>
+            <masterLabel>Blocker</masterLabel>
+            <translation><!-- Blocker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Critical</masterLabel>
+            <translation><!-- Critical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major</masterLabel>
+            <translation><!-- Major --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor</masterLabel>
+            <translation><!-- Minor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Bug Status --></label>
+        <name>Bug_Status__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation><!-- Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invalid</masterLabel>
+            <translation><!-- Invalid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Postponed</masterLabel>
+            <translation><!-- Postponed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready for Test</masterLabel>
+            <translation><!-- Ready for Test --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Planned Completion Date --></label>
+        <name>Planned_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>Priority__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Projects Name --></label>
+        <name>Projects_Name__c</name>
+        <relationshipLabel><!-- Tests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Test Description --></label>
+        <name>Test_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test ID --></label>
+        <name>Test_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test Specification --></label>
+        <name>Test_Specification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test Status --></label>
+        <name>Test_Status__c</name>
+        <picklistValues>
+            <masterLabel>Blocked</masterLabel>
+            <translation><!-- Blocked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Executed</masterLabel>
+            <translation><!-- Not Executed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Test Type --></label>
+        <name>Test_Type__c</name>
+        <picklistValues>
+            <masterLabel>AUT - Automation Test</masterLabel>
+            <translation><!-- AUT - Automation Test --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXP - Exploratory Test</masterLabel>
+            <translation><!-- EXP - Exploratory Test --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FCT - Functional Test</masterLabel>
+            <translation><!-- FCT - Functional Test --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INT - Integration Test</masterLabel>
+            <translation><!-- INT - Integration Test --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRF - Performance Test</masterLabel>
+            <translation><!-- PRF - Performance Test --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REG - Regression Test</masterLabel>
+            <translation><!-- REG - Regression Test --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tester --></label>
+        <name>Tester__c</name>
+    </fields>
+    <layouts>
+        <layout>Tests Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

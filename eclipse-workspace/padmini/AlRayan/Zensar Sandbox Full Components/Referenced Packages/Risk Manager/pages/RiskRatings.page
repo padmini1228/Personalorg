@@ -1,0 +1,60 @@
+<apex:page standardController="grc__Risk__c" extensions="Risk.DisplayRiskAssessment" >
+<style type="text/css">
+
+.rating
+{
+    text-align:center;
+}
+
+</style>
+<apex:form >
+
+<apex:pageBlock mode="maindetail" >
+    <I><apex:outputLabel value="No Risk Assessments to Display"  rendered="{!ratingsAll.size == 0}" /></I>
+    <apex:pageBlocktable value="{!ratingsAll}" var="rating" rendered="{!ratingsAll.size > 0}" style="text-align: center;" >
+
+        <apex:repeat value="{!fieldsList}" var="field">
+
+            <apex:column value="{!rating.rar.Risk__Category__c}" headerClass="rating" rendered="{!field == $Setup.NamespacePrefix__c.Value__c+'Category__c'}" style="text-align: left;"/>
+        
+            <apex:column headerValue="Score" headerClass="rating"  rendered="{!field == $Setup.NamespacePrefix__c.Value__c+'Band__c'}" style="background-color: {!HTMLENCODE(rating.scoreColour)}; text-align: center; color:#000000; font-size:100%; font-weight:bold;" >
+            	<b><apex:facet name="header"> Score </apex:facet></b>
+            	<center><div style="display:block;font-weight:bold;border-radius: 50%;width: 17px;height: 19px;line-height: 20px;border: 1px black solid; background-color:white">
+            		{!rating.rar.Risk__Band__c}
+            	</div></center>
+            </apex:column>
+            <apex:column headerValue="Value" headerClass="rating" value="{!rating.rar.Risk__Value__c}" rendered="{!field == $Setup.NamespacePrefix__c.Value__c+'Value__c'}" style="text-align: right;"/>
+            <apex:column value="{!rating.rar.Risk__Justification__c}" headerClass="rating" rendered="{!field == $Setup.NamespacePrefix__c.Value__c+'Justification__c'}" style="text-align: left;"/>
+            <apex:column value="{!rating.rar.Risk__Best_Case__c}" headerClass="rating" rendered="{!field == $Setup.NamespacePrefix__c.Value__c+'Best_Case__c'}" style="text-align: left;"/>
+            <apex:column value="{!rating.rar.LastModifiedDate}" headerClass="rating" rendered="{!field == 'LastModifiedDate'}" style="text-align: center;"/>
+            <apex:column value="{!rating.rar.Risk__Risk_Assessment__c}" headerClass="rating" rendered="{!field == $Setup.NamespacePrefix__c.Value__c+'Risk_Assessment__c'}" style="text-align: center;"/>
+            <apex:column value="{!rating.rar.Risk__Worst_Case__c}" headerClass="rating" rendered="{!field == $Setup.NamespacePrefix__c.Value__c+'Worst_Case__c'}" style="text-align: left;"/>
+            <apex:column value="{!rating.rar.Risk__Mitigation__c}" headerClass="rating" rendered="{!field == $Setup.NamespacePrefix__c.Value__c+'Mitigation__c'}" style="text-align: left;"/>
+            <apex:column value="{!rating.rar.CreatedDate}" headerClass="rating" rendered="{!field == 'CreatedDate'}" style="text-align: center;"/>
+            <apex:column value="{!rating.rar.Name}" headerClass="rating" rendered="{!field == 'Name'}" style="text-align: center;"/>
+            <apex:column value="{!rating.rar.Id}" headerClass="rating" rendered="{!field == 'Id'}" style="text-align: center;"/>
+
+        </apex:repeat>
+
+       <apex:repeat value="{!impactFieldsList}" var="fieldd">
+         <apex:column rendered="{!fieldd == $Setup.NamespacePrefix__c.Value__c+'Symbol__c'}" style="text-align: center;">
+            	<apex:facet name="header"> <center> Symbol </center></apex:facet>
+            <apex:outputText value="{!rating.Symbol}" style="text-align: center;"/>
+            </apex:column>
+
+         <apex:column rendered="{!fieldd== $Setup.NamespacePrefix__c.Value__c+'Units__c'}" style="text-align: right;">
+            	<apex:facet name="header"><center> Units </center></apex:facet>
+          <apex:outputText value="{!rating.Units}" style="text-align: center;"/>
+            </apex:column>
+
+         <apex:column rendered="{!fieldd== $Setup.NamespacePrefix__c.Value__c+'Type_of_Risk__c'}" style="text-align: left;">
+            	<apex:facet name="header"><center> Risk Type </center></apex:facet>
+          <apex:outputText value="{!rating.Type_of_Risk}" style="text-align: center;"/>
+            </apex:column>
+
+         </apex:repeat>
+
+        </apex:pageBlocktable>
+    </apex:pageBlock>
+</apex:form>
+</apex:page>

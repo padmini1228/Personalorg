@@ -1,0 +1,9 @@
+You are recieving this email as a case has been assigned to Compliance.  Please see the below details regarding this case:
+
+Case Raised by: {!Case.CreatedBy}
+
+Subject: {!Case.Subject}
+
+Description: {!Case.Description}
+
+Case Link: {!Case.Link}

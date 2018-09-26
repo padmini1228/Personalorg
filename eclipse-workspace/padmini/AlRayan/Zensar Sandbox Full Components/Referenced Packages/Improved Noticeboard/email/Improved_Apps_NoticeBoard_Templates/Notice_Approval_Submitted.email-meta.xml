@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Example Notice Approval Submitted template from the Improved Apps team</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Improved_Apps_NoticeBoard_Letterhead</letterhead>
+    <name>Notice Approval Submitted</name>
+    <style>promotionLeft</style>
+    <subject>Notice Approval Submitted - {!Notice__c.Title__c}</subject>
+    <textOnly>Created by:
+{!Notice__c.CreatedBy}
+
+Created on:
+{!Notice__c.CreatedDate}
+
+Last modified by:
+{!Notice__c.LastModifiedBy}
+
+Requires your formal approval before publication.
+
+
+Next Action:
+To Review, Approve or Reject this Notice, please follow this link.
+{!Notice__c.Link}
+
+Notice Approval Submitted
+
+
+Notice: {!Notice__c.Title__c}
+
+Notice Summary:
+{!Notice__c.Summary__c}
+
+Notice Detail:
+{!Notice__c.Detail__c}
+
+Selected Recipients:
+{!Notice__c.SelectedRecipients__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,38 @@
+<apex:page sideBar="false" showHeader="false">
+
+<head>
+	<apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'HelpPageStylesheet.css')}"/>
+</head>
+
+<div class="heading">
+    <div class="icon">&nbsp;</div>
+    <h2>Help Pages</h2>
+    <h1>Key Risk Indicators</h1>
+</div>
+
+<div class="content">
+<p>KRIs are used to monitor the likelihood of a Risk or multiple Risks occurring. They aim to provide an early warning of a Risk before it occurs by monitoring one or more measureable metrics.
+</p>
+<p>KRI's have a monitoring frequency, e.g. monthly or quarterly, and a priority.
+</p>
+<p>KRI's are linked to one or more Metrics, which are measurable indicators relating the risk. To link a KRI to a Metric, click on the Associate Metrics button, and select the Metric/s to be linked to. For more information on Metrics, click on the "Help for this Page" button on the Metrics Tab.
+</p>
+<p>KRI Reviews are where the result of each review of the Metrics are recorded.
+</p>
+<p>To create a KRI Review click on the New KRI Review button, and enter the date of the review. Save the review, and then click on the Enter Results button to enter the results of the review.
+</p>
+<p>The RAG Rating of the KRI Review and thus the KRI itself will be set based on the values or ratings entered for each Metric. In addition, the Threshold Reached field on the KRI will be set to true if any of the Metric thresholds are exceeded.
+</p>
+<br/>
+<br/>
+<br/>
+
+<h3 >Contact Details</h3>
+
+<p>
+For further support information, please contact your local administrator.</p>
+
+
+    <div class="clear"></div>
+</div>
+</apex:page>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Property information</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Properties information</value>
+    </caseValues>
+    <fields>
+        <label><!-- Additional information? --></label>
+        <name>Additional_information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount of monthly rent received? --></label>
+        <name>Amount_of_monthly_rent_received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount of monthly repayment? --></label>
+        <name>Amount_of_monthly_repayment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount outstanding on property? --></label>
+        <name>Amount_outstanding_on_property__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date purchased --></label>
+        <name>Date_purchased__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated value --></label>
+        <name>Estimated_value__c</name>
+    </fields>
+    <fields>
+        <label><!-- ExisitingMortgageHPPLender --></label>
+        <name>ExisitingMortgageHPPLender__c</name>
+    </fields>
+    <fields>
+        <help><!-- Will there be any finance outstanding on this property at the point of drawdown on finance for this application? --></help>
+        <label><!-- Finance outstanding on prop on drawdown? --></label>
+        <name>Finance_outstanding_on_prop_on_drawdown__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- First line of address --></label>
+        <name>First_line_of_address__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsBTLProperty --></label>
+        <name>IsBTLProperty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Let property out --></label>
+        <name>Let_property_out__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Property Infor(Opportunity) --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Properties information --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>PersonAccount__c</name>
+        <relationshipLabel><!-- Properties information --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Property information Layout</layout>
+        <sections>
+            <label><!-- Additional Property Information --></label>
+            <section>Additional Property Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

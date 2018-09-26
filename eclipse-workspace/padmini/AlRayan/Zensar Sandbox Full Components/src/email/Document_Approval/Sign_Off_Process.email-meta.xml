@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email to be sent to Head of Marketing when a new case has been submitted for approval</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>Sign Off Process</name>
+    <style>freeForm</style>
+    <subject>New document awaiting sign off</subject>
+    <textOnly>To whom it may concern,
+
+This email is to inform you that a case is awaiting your approval for a document sign off. Please see the details below and click on the link to approve the case.
+
+{!Case.Link}
+Case number: {!Case.CaseNumber}
+Case subject: {!Case.Subject}
+Raised by: {!ApprovalRequest.Process_Assignee}</textOnly>
+    <type>html</type>
+</EmailTemplate>

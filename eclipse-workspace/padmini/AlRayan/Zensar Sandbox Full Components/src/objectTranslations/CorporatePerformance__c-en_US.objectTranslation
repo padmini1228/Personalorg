@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Corporate Performance</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Corporate Performances</value>
+    </caseValues>
+    <fields>
+        <label><!-- Additional External Funding --></label>
+        <name>Additional_External_Funding__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional_External_Fundingx --></label>
+        <name>Additional_External_Fundingx__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL (Buy To Let) --></label>
+        <name>BTL_Buy_To_Let__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commercial Property Finance --></label>
+        <name>Commercial_Property_Finance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commodity Murabaha Deposits --></label>
+        <name>Commodity_Murabaha_Deposits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Account --></label>
+        <name>Current_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Direct Saver --></label>
+        <name>Direct_Saver__c</name>
+    </fields>
+    <fields>
+        <label><!-- GCC Finance --></label>
+        <name>GCC_Finance__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP (Home Purchase Plan) --></label>
+        <name>HPP_Home_Purchase_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Liquid Asset Buffer --></label>
+        <name>Liquid_Asset_Buffer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month --></label>
+        <name>Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- On Demand Savings Account --></label>
+        <name>On_Demand_Savings_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Liabilities --></label>
+        <name>Other_Liabilities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other_Liabilitiesx --></label>
+        <name>Other_Liabilitiesx__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personal Finance --></label>
+        <name>Personal_Finance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Treasury Funding Line --></label>
+        <name>Treasury_Funding_Line__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wakala Deposits --></label>
+        <name>Wakala_Deposits__c</name>
+    </fields>
+    <fields>
+        <label><!-- 120 Day Notice Account --></label>
+        <name>X120_Day_Notice_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- X120_Day_Notice_Account --></label>
+        <name>X120_Day_Notice_Accountxx__c</name>
+    </fields>
+    <fields>
+        <label><!-- 12 Month Fixed Term Deposit --></label>
+        <name>X12_Month_Fixed_Term_Deposit__c</name>
+    </fields>
+    <fields>
+        <label><!-- X12_Month_Fixed_Term_Depositx --></label>
+        <name>X12_Month_Fixed_Term_Depositx__c</name>
+    </fields>
+    <fields>
+        <label><!-- 18 Month Fixed Term Deposit --></label>
+        <name>X18_Month_Fixed_Term_Deposit__c</name>
+    </fields>
+    <fields>
+        <label><!-- X18_Month_Fixed_Term_Depositx --></label>
+        <name>X18_Month_Fixed_Term_Depositx__c</name>
+    </fields>
+    <fields>
+        <label><!-- 24 Month Fixed Term Deposit --></label>
+        <name>X24_Month_Fixed_Term_Deposit__c</name>
+    </fields>
+    <fields>
+        <label><!-- X24_Month_Fixed_Term_Depositx --></label>
+        <name>X24_Month_Fixed_Term_Depositx__c</name>
+    </fields>
+    <fields>
+        <label><!-- 36 Month Fixed Term Deposit --></label>
+        <name>X36_Month_Fixed_Term_Deposit__c</name>
+    </fields>
+    <fields>
+        <label><!-- X36_Month_Fixed_Term_Depositx --></label>
+        <name>X36_Month_Fixed_Term_Depositx__c</name>
+    </fields>
+    <fields>
+        <label><!-- 3 Month Fixed Term Deposit --></label>
+        <name>X3_Month_Fixed_Term_Deposit__c</name>
+    </fields>
+    <fields>
+        <label><!-- X3_Month_Fixed_Term_Depositx --></label>
+        <name>X3_Month_Fixed_Term_Depositx__c</name>
+    </fields>
+    <fields>
+        <label><!-- 60 Day Notice Accoun --></label>
+        <name>X60_Day_Notice_Accoun__c</name>
+    </fields>
+    <fields>
+        <label><!-- X60_Day_Notice_Accountx --></label>
+        <name>X60_Day_Notice_Accountx__c</name>
+    </fields>
+    <fields>
+        <label><!-- 6 Month Fixed Term Deposit --></label>
+        <name>X6_Month_Fixed_Term_Deposit__c</name>
+    </fields>
+    <fields>
+        <label><!-- X6_Month_Fixed_Term_Depositx --></label>
+        <name>X6_Month_Fixed_Term_Depositx__c</name>
+    </fields>
+    <fields>
+        <label><!-- 90 Day Notice Account --></label>
+        <name>X90_Day_Notice_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- X90_Day_Notice_Accountx --></label>
+        <name>X90_Day_Notice_Accountx__c</name>
+    </fields>
+    <fields>
+        <label><!-- Young Persons Notice Savings Account --></label>
+        <name>Young_Persons_Notice_Savings_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Young Persons Savings Account --></label>
+        <name>Young_Persons_Savings_Account__c</name>
+    </fields>
+    <layouts>
+        <layout>Corporate Performance Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Deposit Accounts --></label>
+            <section>Customer Deposit Accounts</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Financing --></label>
+            <section>Customer Financing</section>
+        </sections>
+        <sections>
+            <label><!-- Other Liabilities --></label>
+            <section>Other Liabilities</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Metric_Movement_Direction__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The movement direction is calculated by comparing the Previous Metric Rating, with the current Metric Rating.</description>
+        <externalId>false</externalId>
+        <formula>IMAGE(
+&apos;/resource/&apos; +
+IF(Metric_Movement__c == &apos;Level&apos;, &apos;Risk__RiskClimateRightYellowArrow&apos;,
+IF(Metric_Movement__c == &apos;&apos;, &apos;Risk__empResidualDirection&apos;,
+IF(Metric_Movement__c== &apos;Down&apos;, IF(ISPICKVAL(Risk__Type__c,&apos;Opportunity&apos;),&apos;Risk__RiskClimateDownRedArrow&apos;,&apos;Risk__RiskClimateDownGreenArrow&apos;),
+IF(Metric_Movement__c == &apos;Up&apos;, IF(ISPICKVAL(Risk__Type__c,&apos;Opportunity&apos;),&apos;Risk__RiskClimateUpGreenArrow&apos;,&apos;Risk__RiskClimateUpRedArrow&apos;),&apos;&apos; )))), &apos;&apos;, 32, 32)</formula>
+        <inlineHelpText>The movement direction is calculated by comparing the Previous Metric Rating, with the current Metric Rating.</inlineHelpText>
+        <label>Metric Movement Direction</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Metric_Movement__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(AND(NOT(ISBLANK(Previous_Metric_Score__c)), Previous_Metric_Score__c ==  Metric_Score__c),
+                &apos;Level&apos;,
+                IF(Metric_Score__c &lt; Previous_Metric_Score__c,
+                    &apos;Down&apos;,
+                    IF(Metric_Score__c &gt; Previous_Metric_Score__c,
+                        &apos;Up&apos;,
+                        &apos;&apos;
+                    )
+                )
+            )</formula>
+        <label>Metric Movement</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Metric_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(Metric_Score__c =4, IMAGE(&apos;/resource/&apos; + &apos;Risk__hmc_F62817&apos;, &apos;Red&apos;,30,100),
+IF(Metric_Score__c =3, IMAGE(&apos;/resource/&apos; + &apos;Risk__hmc_FDD017&apos;, &apos;Amber&apos;,30,100),
+IF(Metric_Score__c =2, IMAGE(&apos;/resource/&apos; + &apos;Risk__hmc_F7FE2E&apos;, &apos;Yellow&apos;,30,100),
+IF(Metric_Score__c =1, IMAGE(&apos;/resource/&apos; + &apos;Risk__hmc_59E817&apos;, &apos;Green&apos;,30,100),
+IMAGE(&apos;/resource/&apos; + &apos;Risk__hmc_gray&apos;, &apos;Grey&apos;,30,100)))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Metric Rating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Metric_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Metric Score</label>
+        <summarizedField>Risk_Metric_Lookup__c.Metric_Score__c</summarizedField>
+        <summaryForeignKey>Risk_Metric_Lookup__c.Risk__c</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Previous_Metric_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(Previous_Metric_Score__c  =4, IMAGE(&apos;/resource/&apos; +  &apos;Risk__hmc_F62817&apos;, &apos;Red&apos;,30,100),
+IF(Previous_Metric_Score__c  =3, IMAGE(&apos;/resource/&apos; +  &apos;Risk__hmc_FDD017&apos;, &apos;Amber&apos;,30,100),
+IF(Previous_Metric_Score__c =2, IMAGE(&apos;/resource/&apos; +   &apos;Risk__hmc_F7FE2E&apos;, &apos;Yellow&apos;,30,100), 
+IF(Previous_Metric_Score__c  =1, IMAGE(&apos;/resource/&apos; +  &apos;Risk__hmc_59E817&apos;, &apos;Green&apos;,30,100),
+IMAGE(&apos;/resource/&apos; + &apos;Risk__hmc_gray&apos;, &apos;Grey&apos;,30,100)))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Previous Metric Rating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Previous_Metric_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Previous Metric Score</label>
+        <summarizedField>Risk_Metric_Lookup__c.Previous_Metric_Score__c</summarizedField>
+        <summaryForeignKey>Risk_Metric_Lookup__c.Risk__c</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Max_Weighted_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Total Max Weighted Score</label>
+        <summarizedField>Risk_Metric_Lookup__c.Max_Weighted_Score__c</summarizedField>
+        <summaryForeignKey>Risk_Metric_Lookup__c.Risk__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Previous_Weighted_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Total Previous Weighted Score</label>
+        <summarizedField>Risk_Metric_Lookup__c.Previous_Weighted_Score__c</summarizedField>
+        <summaryForeignKey>Risk_Metric_Lookup__c.Risk__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Weighted_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Total Weighted Score</label>
+        <summarizedField>Risk_Metric_Lookup__c.Weighted_Score__c</summarizedField>
+        <summaryForeignKey>Risk_Metric_Lookup__c.Risk__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <webLinks>
+        <fullName>Enter_Metric_Wizard_Results</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Enter Metric Wizard Results</masterLabel>
+        <openType>noSidebar</openType>
+        <protected>false</protected>
+        <url>/apex/MetricWizard?id={!grc__Risk__c.Id}</url>
+    </webLinks>
+</CustomObject>

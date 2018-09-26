@@ -1,0 +1,92 @@
+<!--
+/**
+ * @description Junction Wizard page
+ * @author Thiyagarajan Selvaraj, Matt Bradley-Roberts (Xactium)
+ * @date 12.12.2014
+ */
+-->
+<apex:page controller="rmc.JunctionWizardFormController">
+    <apex:sectionHeader subtitle="{!targetObjectLabel} {!$Label.rmc__forlabel} {!record['Name']}" />
+
+    <apex:pageMessages /> 
+
+    <style type="text/css" >
+        img:hover{
+            cursor:pointer;
+        }
+    </style>
+
+    <apex:form >
+        <apex:pageBlock id="junctionWizard" title="{!$Label.rmc__selectlabel} {!targetObjectLabel}" rendered="{!allRelatedRecords.size > 0}" >
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton value="{!$Label.rmc__savelabel}" action="{!save}"/>
+                <apex:commandButton value="{!$Label.rmc__cancellabel}" action="{!cancel}" />
+                <apex:outputPanel style="padding:4.5px;" styleClass="btn" >
+                    {!$Label.rmc__refreshlabel}
+                    <apex:actionSupport event="onclick" action="{!refresh}" status="fetchStatus" reRender="junctionWizard" />
+                </apex:outputPanel>
+            </apex:pageBlockButtons>
+            
+            <apex:pageBlockSection title="{!$Label.rmc__available} {!targetObjectLabel}" columns="1" collapsible="false" >
+                <apex:pageBlockTable width="100%;" value="{!allRelatedRecords}" var="relatedRecord">
+                    <apex:column width="5%" headerValue="{!$Label.rmc__selectlabel}">
+                        <apex:inputCheckbox value="{!relatedRecord.checked}"/>
+                    </apex:column>
+                    <apex:column width="{!IF(weightingReference != '','60%','95%')}" value="{!relatedRecord.record['Name']}"/>
+                    <apex:column width="35%" headerValue="{!$Label.rmc__weightinglabel}" rendered="{!weightingReference != ''}" >
+                        <apex:inputText value="{!relatedRecord.weighting}" />
+                    </apex:column>
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+
+            <br />
+
+            <!-- Paginator section -->
+            <div class="bottomNav" >
+                <div class="paginator" >
+                    <span class="left" >
+                        <apex:outputText >{!(setCon.pageNumber * size)+1-size}-{!IF((setCon.pageNumber * size)>noOfRecords, noOfRecords,(setCon.pageNumber * size))} {!$Label.rmc__oflabel} {!noOfRecords}</apex:outputText>
+                    </span>
+                    <span class="prevNextLinks" >
+                        <!-- First -->
+                        <span class="prevNext" >
+                            <apex:image value="/s.gif" styleClass="{!IF(NOT(setCon.hasPrevious),'firstoff','first')}" alt="{!$Label.rmc__firstpagelabel}" >
+                                <apex:actionSupport event="onclick" action="{!setCon.first}" status="fetchStatus" reRender="junctionWizard" />
+                            </apex:image>
+                        </span>
+
+                        <!-- Previous -->
+                        <span class="prevNext" >
+                            <apex:image value="/s.gif" styleClass="{!IF(NOT(setCon.hasPrevious),'prevoff','prev')}" alt="{!$Label.rmc__previouslabel}" >
+                                <apex:actionSupport event="onclick" action="{!setCon.previous}" status="fetchStatus" reRender="junctionWizard" />
+                            </apex:image><span style="color:{!IF(NOT(setCon.hasPrevious),'#CCCCCC','#000000')}" >{!$Label.rmc__previouslabel}</span>
+                        </span>
+
+                        <!-- Next -->
+                        <span class="prevNext" >
+                            <span style="color:{!IF(NOT(setCon.hasNext),'#CCCCCC','#000000')}" >{!$Label.rmc__nextlabel}</span>
+                            <apex:image value="/s.gif" styleClass="{!IF(NOT(setCon.hasNext),'nextoff','next')}" alt="{!$Label.rmc__nextlabel}" >
+                                <apex:actionSupport event="onclick" action="{!setCon.next}" status="fetchStatus" reRender="junctionWizard" />
+                            </apex:image>
+                        </span>
+
+                        <!-- Last -->
+                        <span class="prevNext" >
+                            <apex:image value="/s.gif" styleClass="{!IF(NOT(setCon.hasNext),'lastoff','last')}" alt="{!$Label.rmc__lastpagelabel}" >
+                                <apex:actionSupport event="onclick" action="{!setCon.last}" status="fetchStatus" reRender="junctionWizard" />
+                            </apex:image>
+                        </span>
+                    </span>
+                    <span class="right" >
+                        {!$Label.PageLabel} {!setCon.PageNumber} {!$Label.OfLabel} {!IF(setCon.ResultSize < setCon.pageSize, 1, IF(MOD(setCon.ResultSize, setCon.pageSize) == 0,
+                        setCon.ResultSize / setCon.pageSize, CEILING(setCon.ResultSize / setCon.pageSize)))}
+                    </span>
+                </div>
+                <div class="clearingBox"></div>
+            </div>
+        </apex:pageBlock>
+        <apex:pageBlock title="{!$Label.rmc__selectlabel} {!targetObjectLabel}" rendered="{!allRelatedRecords.size == 0}" >
+            {!$Label.NoLabel}&nbsp;{!targetObjectLabel}&nbsp;{!$Label.ToDisplay}
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

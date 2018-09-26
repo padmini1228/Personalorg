@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<font face="arial"><span style="font-size: 12pt;">Details of a new prospect/customer has been added to Salesforce containing the following -&nbsp;</span></font><div><font face="arial"><span style="font-size: 12pt;"><br></span></font></div><div><font face="arial"><span style="font-size: 12pt;">- The word 'Client' has been mentioned in the Name</span></font></div><div><font face="arial"><span style="font-size: 12pt;">or</span></font></div><div>- An Al Rayan Bank premises has been mentioned in the address</div><div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Please click on the link below to review the details:</div><div><font face="arial">{!Account.Link}</font></div></div>]]></td>
+</tr>
+</table>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>To be sent to the individuals line Manager when they have submitted their 1-2-1 form for approval</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Head Office 1-2-1 Form Notification e-mail</name>
+    <style>none</style>
+    <subject>Monthly 1-2-1 for  {!X1_2_1_Head_Office_Form__c.OwnerFullName} {!X1_2_1_Head_Office_Form__c.Performance_Month_Reviewed__c}</subject>
+    <type>text</type>
+</EmailTemplate>

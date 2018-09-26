@@ -1,0 +1,8 @@
+Dear {!Case.OwnerFirstName} 
+
+Your {!Case.RecordType} - case {!Case.CaseNumber} will breach the service level agreement (SLA) if the complaint cannot be resolved by close of business today.  Please action to try and resolve this complaint ASAP.  Your line manager has been advised.
+
+To go straight to the complaint please use this link:
+{!Case.Link}
+
+Thanks

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>IT Survey</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>IT Surveys</value>
+    </caseValues>
+    <fields>
+        <label><!-- Any general comments --></label>
+        <name>Any_general_comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Best service --></label>
+        <name>Best_service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business understanding improvement --></label>
+        <name>Business_understanding_improvement__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Have you raised a case with IT --></label>
+        <name>Have_you_raised_a_case_with_IT__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Key priority for 2014 --></label>
+        <name>Key_priority_for_2014__c</name>
+        <picklistValues>
+            <masterLabel>Enhancing existing systems</masterLabel>
+            <translation><!-- Enhancing existing systems --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Faster applications (such as the speed of EBS)</masterLabel>
+            <translation><!-- Faster applications (such as the speed of EBS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Faster internet connection</masterLabel>
+            <translation><!-- Faster internet connection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New IT equipment</masterLabel>
+            <translation><!-- New IT equipment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replacing existing systems</masterLabel>
+            <translation><!-- Replacing existing systems --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Where 10 is extremely satisfied and 1 is extremely dissatisfied. --></help>
+        <label><!-- Level of automation with IBB systems --></label>
+        <name>Level_of_automation_with_IBB_systems__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+    </fields>
+    <fields>
+        <help><!-- Where 10 is extremely satisfied and 1 is extremely dissatisfied. --></help>
+        <label><!-- Overall Satisfaction with IT --></label>
+        <name>Overall_Satisfaction_with_IT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Raise a case --></label>
+        <name>Raise_a_case__c</name>
+        <picklistValues>
+            <masterLabel>By email</masterLabel>
+            <translation><!-- By email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Face to face</masterLabel>
+            <translation><!-- Face to face --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Over the phone</masterLabel>
+            <translation><!-- Over the phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Through Salesforce</masterLabel>
+            <translation><!-- Through Salesforce --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Resolution improvement --></label>
+        <name>Resolution_improvement__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Resolution satisfaction --></label>
+        <name>Resolution_satisfaction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response improvement --></label>
+        <name>Response_improvement__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Response satisfaction --></label>
+        <name>Response_satisfaction__c</name>
+    </fields>
+    <fields>
+        <help><!-- This includes items such as desktops, printers etc.
+Where 10 is extremely satisfied and 1 is extremely dissatisfied. --></help>
+        <label><!-- Satisfaction with IBB&apos;s IT kit --></label>
+        <name>Satisfaction_with_IBB_s_IT_kit__c</name>
+    </fields>
+    <fields>
+        <help><!-- This includes all of IBB&apos;s systems such as EBS, Salesforce etc. 
+Where 10 is extremely satisfied and 1 is extremely dissatisfied. --></help>
+        <label><!-- Satisfaction with day 2 day applications --></label>
+        <name>Satisfaction_with_IBB_s_systems__c</name>
+    </fields>
+    <fields>
+        <help><!-- Where 10 is extremely satisfied and 1 is extremely dissatisfied. --></help>
+        <label><!-- Time taken to resolve noncritical issues --></label>
+        <name>Time_taken_to_resolve_Ncritical_issues__c</name>
+    </fields>
+    <fields>
+        <help><!-- Where 10 is extremely satisfied and 1 is extremely dissatisfied. --></help>
+        <label><!-- Time taken to resolve critical issues --></label>
+        <name>Time_taken_to_resolve_critical_issues__c</name>
+    </fields>
+    <fields>
+        <help><!-- Where 10 is extremely satisfied and 1 is extremely dissatisfied. --></help>
+        <label><!-- Level of business understanding --></label>
+        <name>Understand_business_needs__c</name>
+    </fields>
+    <layouts>
+        <layout>IT Survey Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General Comments --></label>
+            <section>General Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Please answer the following questions with a score of 1 to 10 --></label>
+            <section>Please answer the following questions with a score of 1 to 10</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,5 @@
+The Case {!Case.CaseNumber} has been flagged as containing expressions of disfatisfaction from the customer, {!Case.Contact}.
+
+To access this case please use the below link:
+
+{!Case.Link}

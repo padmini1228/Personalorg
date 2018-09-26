@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>Strategic plan review completed</name>
+    <style>freeForm</style>
+    <subject>New SI review completed</subject>
+    <textOnly>A new SI review has been completed
+
+Link: {!Strategic_Initiative_Review__c.Link}
+SI: {!Strategic_Initiative__c.Name}
+Date of review: {!Strategic_Initiative_Review__c.Date_of_review__c}
+Overall status: {!Strategic_Initiative_Review__c.Status__c}
+RAG rating: {!Strategic_Initiative_Review__c.Overall_strategic_initiative_RAG_rating__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

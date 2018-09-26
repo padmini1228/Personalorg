@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <customHelpPage>HelpKRI</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>KRI_Review_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>KRI_Review__r.Review_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>KRI Review Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>KRI_Review_Result_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(TEXT(RAG_Rating__c)=&apos;Red&apos;, IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_F62817&apos;, &apos;Red&apos;,30,100), 
+IF(TEXT(RAG_Rating__c)=&apos;Amber&apos;,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_FDD017&apos;, &apos;Amber&apos;,30,100), 
+IF(TEXT(RAG_Rating__c)=&apos;Green&apos;,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_59E817&apos;, &apos;Green&apos;,30,100), 
+IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_gray&apos;, &apos;Grey&apos;,30,100))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>KRI Review Result Rating</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>KRI_Review__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>KRI Review</label>
+        <referenceTo>KRI_Review__c</referenceTo>
+        <relationshipLabel>KRI Review Results</relationshipLabel>
+        <relationshipName>KRI_Review_Results</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Metric__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Metric</label>
+        <referenceTo>Metric__c</referenceTo>
+        <relationshipLabel>KRI Review Results</relationshipLabel>
+        <relationshipName>KRI_Review_Results</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>RAG_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>RAG Rating</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Red</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Amber</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Green</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(Score__c == 3, IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_F62817&apos;, &apos;Red&apos;,30,100),
+IF(Score__c == 2,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_FDD017&apos;, &apos;Amber&apos;,30,100),
+IF(Score__c == 1,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_59E817&apos;, &apos;Green&apos;,30,100),
+IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_gray&apos;, &apos;Grey&apos;,30,100))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Rating</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Score</label>
+        <precision>1</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Value__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Value</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>KRI Review Result</label>
+    <nameField>
+        <displayFormat>KRI-RR{0}</displayFormat>
+        <label>KRI Review Result Number</label>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>KRI Review Results</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <webLinks>
+        <fullName>Enter_Results</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Enter Results</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>&apos;/apex/&apos;+$Setup.Risk__NamespacePrefix__c.Risk__Value__c+&quot;KRIReviewResultCollection?id={!KRI_Review__c.Id}&quot;</url>
+    </webLinks>
+</CustomObject>

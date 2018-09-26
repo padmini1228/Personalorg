@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Teller User</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Teller Users</value>
+    </caseValues>
+    <fields>
+        <label><!-- Branch --></label>
+        <name>Branch__c</name>
+        <relationshipLabel><!-- Teller Users --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Teller Group --></label>
+        <name>Teller_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Teller Users --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

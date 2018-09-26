@@ -1,0 +1,163 @@
+<apex:page standardController="xmetric__Dashboard__c" extensions="xmetric.ShowDashboard" showheader="false" sidebar="false">
+<!-- http://gridster.net -->
+<html>
+<head></head>
+<body onload="checkStatus();"></body>
+</html>
+
+    <apex:includeScript value="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" />
+    <apex:includeScript value="{!URLFOR($Resource.xmetric__gridster, '/ducksboard-gridster.js-2603104/dist/jquery.gridster.js')}"  />
+    <apex:stylesheet value="{!URLFOR($Resource.xmetric__gridster, '/ducksboard-gridster.js-2603104/dist/jquery.gridster.css')}"  />
+    <apex:stylesheet value="{!URLFOR($Resource.xmetric__PrintMedia, '/PrintMedia/CSS/print.css')}"  />
+	<br/>
+	<center><b><apex:outputText style="font-size:25px;" value="{!xmetric__Dashboard__c.Name}"/></b></center>
+	
+<apex:form id="frm" styleClass="formButtons"> 
+    <center><div>
+    <br/>
+    	<apex:inputTextarea value="{!dashboardSaveString}" styleClass="log" style="display:none;" />
+      <apex:inputHidden id="stat" value="{!sStatus}" />
+        <apex:commandButton action="{!saveAndExit}" value="{!$Label.Save_Metric}" id="saveAndExitId" styleClass="js-seralizeSave"/> &nbsp;
+        <apex:inputTextarea value="{!dashboardSaveString}" styleClass="log" style="display:none;" />
+        <apex:commandButton action="{!quickSave}" value="{!$Label.Quick_Save}" id="saveDashString" styleClass="js-seralizeSave"/> &nbsp;
+        <apex:commandButton value="{!$Label.Print_All}" onclick="window.print()" style="align:center;"/>&nbsp;
+
+        <apex:commandButton value="{!$Label.Cancel}" id="cancelId" onclick="self.close();"/>
+   </div></center>
+    <br/>
+    <script>
+      var btn1 = document.getElementById("{!$Component.saveAndExitId}");
+      var btn = document.getElementById("{!$Component.cancelId}");
+      var sts = document.getElementById("{!$Component.frm.stat}");
+    </script>
+</apex:form> 
+
+<div class="gridster">
+    <ul></ul>
+</div>
+
+    <script type="text/javascript" id="code" align="center">
+    var gridster;
+    <apex:variable value="{!0}" var="rowNum"/>
+    $(function(){
+
+      gridster = $(".gridster > ul").gridster({
+          widget_margins: [5, 5],
+          widget_base_dimensions: [400, 440],
+          serialize_params: function($w, wgd) 
+            { 
+                return { 
+                       id: $($w).attr('id'), 
+                       col: wgd.col, 
+                       row: wgd.row, 
+                       size_x: wgd.size_x, 
+                       size_y: wgd.size_y, 
+                       htmlContent : $($w).html() 
+                     };
+            },
+          draggable: {
+            handle: 'header'
+          },
+          helper: 'clone',
+          resize: {
+            enabled: true
+          }
+      }).data('gridster');
+        var widgets = [
+        <apex:repeat value="{!dashboardItems}" var="dbItem">
+            <apex:outputPanel rendered="{!JSENCODE(dbItem.xmetric__Chart_Type__c) == 'Bar Chart'}" layout="none">
+                ['<li><header>|||</header><apex:iframe height="400px;" src="/apex/bar_chart?id={!JSENCODE(dbItem.xmetric__Indicator__c)}" /> </li>', {!dbItem.xmetric__Size_X__c}, {!dbItem.xmetric__Size_Y__c}, {!dbItem.xmetric__Position_Column__c}, {!dbItem.xmetric__Position_Row__c}],
+            </apex:outputPanel>
+            <apex:outputPanel rendered="{!JSENCODE(dbItem.xmetric__Chart_Type__c) == 'Range Chart'}" layout="none">
+                ['<li><header>|||</header><apex:iframe height="400px;" src="/apex/range_chart?id={!JSENCODE(dbItem.xmetric__Indicator__c)}" /> </li>', {!dbItem.xmetric__Size_X__c}, {!dbItem.xmetric__Size_Y__c}, {!dbItem.xmetric__Position_Column__c}, {!dbItem.xmetric__Position_Row__c}],
+            </apex:outputPanel>
+            <apex:variable var="rowNum" value="{!rowNum + 1}"/>
+        </apex:repeat>
+      ];
+
+      $.each(widgets, function(i, widget){
+          gridster.add_widget.apply(gridster, widget)
+      });
+
+       $('.js-seralizeSave').on('click', function() {
+            var s = gridster.serialize();
+            $('.log').val(JSON.stringify(s));
+        })
+
+    });
+   function checkStatus(){
+    if(sts.value == 'Saved'){
+       self.close();
+      } 
+    }
+    </script>
+    <style>
+    .gridster li header {
+        background: #999;
+        display: block;
+        font-size: 20px;
+        line-height: normal;
+        padding: 4px 0 6px ;
+        margin-bottom: 20px;
+        cursor: move;
+      }
+
+.gridster * {
+  margin:0;
+  padding:0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+/*/
+/* gridster
+/*/
+
+.gridster ul {
+    background-color: #EFEFEF;
+}
+
+.gridster li {
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100%;
+    width: 405px;
+}
+
+
+.gridster {
+    margin: 0 auto;
+
+    opacity: .8;
+
+    -webkit-transition: opacity .6s;
+    -moz-transition: opacity .6s;
+    -o-transition: opacity .6s;
+    -ms-transition: opacity .6s;
+    transition: opacity .6s;
+}
+
+.gridster .gs-w {
+    background: #DDD;
+    cursor: pointer;
+}
+
+.gridster .player {
+    background: #BBB;
+}
+
+
+.gridster .preview-holder {
+    border: none!important;
+    background: red!important;
+}
+
+    </style>
+</apex:page>

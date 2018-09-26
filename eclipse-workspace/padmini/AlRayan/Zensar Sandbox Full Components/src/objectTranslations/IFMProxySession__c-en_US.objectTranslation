@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>IFMProxySession</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>IFMProxySessions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- IFMProxySessions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ExternalUser --></label>
+        <name>ExternalUser__c</name>
+    </fields>
+    <fields>
+        <label><!-- Session Reference --></label>
+        <name>Session_Reference__c</name>
+    </fields>
+    <layouts>
+        <layout>IFMProxySession Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>IFMProxySessionExternal Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Restricted External Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

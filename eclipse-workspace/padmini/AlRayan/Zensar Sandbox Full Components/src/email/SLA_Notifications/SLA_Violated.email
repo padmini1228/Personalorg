@@ -1,0 +1,9 @@
+Dear {!Case.OwnerFirstName} 
+
+Your {!Case.RecordType} - case {!Case.CaseNumber} service level agreements (SLA) have not been met. Please action this case immediately.  Your manager has been notified of this missed SLA. 
+
+To go straight to the case please use this link: 
+
+{!Case.Link}
+
+Thanks

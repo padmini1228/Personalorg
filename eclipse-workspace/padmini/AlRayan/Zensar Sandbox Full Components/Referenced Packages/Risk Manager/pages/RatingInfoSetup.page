@@ -1,0 +1,15 @@
+<apex:page standardController="Risk__Scoring_Scheme__c" extensions="Risk.RatingInfoSetup" tabStyle="Risk__Scoring_Scheme__c">
+
+	<apex:sectionHeader title="{!$Label.risk__Configure_Heatmap}" subtitle="{!Risk__Scoring_Scheme__c.Name}" />
+	<div class="ptBreadcrumb">&nbsp;&#171;&nbsp;
+		<apex:outputlink value="/{!scoringScheme.Id}">{! SUBSTITUTE($Label.Back_To,'{0}',$ObjectType.Scoring_Scheme__c.label)}</apex:outputlink>
+	</div><br/>
+
+	<apex:pageBlock id="pb">
+		<apex:pageMessages />
+		<apex:pageBlockSection columns="1">
+			<c:SetupHeatMap rendered="{! !isError}" heatmap="{!heatmap}" height="100%" width="70%" safeMode="true" />
+		</apex:pageBlockSection>
+	</apex:pageBlock>
+
+</apex:page>

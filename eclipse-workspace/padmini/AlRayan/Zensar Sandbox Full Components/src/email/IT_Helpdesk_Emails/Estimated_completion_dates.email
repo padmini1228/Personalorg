@@ -1,0 +1,6 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[The below case has been update with an estimated completion date and time. Please expect your case to be completed by this date/time.&nbsp;<div><br></div><div>If this needs to be amended for any reason, you will be notified.&nbsp;</div><div><br></div><div>If you have any questions, please contact the case owner or the IT Servicedesk on 0121-452-7333</div><div><br></div><div>Case:&nbsp;{!Case.CaseNumber}</div><div>Subject:&nbsp;{!Case.Subject}</div><div>Current owner:&nbsp;{!Case.OwnerFullName}</div><div>Estimated date &amp; time:&nbsp;{!Case.Estimated_completion_date__c}</div><div>Link to case:&nbsp;{!Case.Link}</div><div><br></div>]]></td>
+</tr>
+</table>

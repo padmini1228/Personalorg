@@ -1,0 +1,29 @@
+<apex:page sideBar="false" showHeader="false" >
+
+<head>
+	<apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'HelpPageStylesheet.css')}"/>
+</head>
+
+    <div class="heading">
+
+        <div class="icon">&nbsp;</div>
+        <h2>Help Pages</h2>
+        <h1>Heatmap Scores</h1>
+
+    </div>
+
+    <div class="content">
+
+        <h3>Why setup scores on the heatmap?</h3>
+        <p>Setting up scores on the Heatmap enables users to rank Risks numerically according to their ratings.</p>
+        <p>They can also be used to provide a weighting which can be used in other calculations and formulas.</p>
+        <p>To enable users to view risks by their score, simply ensure that they have a view under the Risks tab that contains the score field. Users can then click on the score column to rank the risks.</p>
+
+
+
+
+        <div class="clear"></div>
+
+    </div>
+
+</apex:page>

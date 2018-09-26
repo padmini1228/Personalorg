@@ -1,0 +1,25 @@
+<!--
+/**
+* @Description The AddNewRel page provides a generic user interface for creating the lookup record and 
+*			   associate the child record newly created with the parent from which its been created.
+*              This page takes the following parameters:
+*                   - parentRecordId : Id of the parent record [Required]
+*                   - lookupObjectName : The API Name of the lookup object [Required]
+*                   - childFieldName : The API Name of the child field on the lookup object [Required]
+*                   - parentFieldName : The API Name of the parent field on the lookup object [Required]
+*					- newId : Id of the child record which has been created [Required]
+**/
+-->
+<apex:page controller="Risk.AddNewRelController">
+<apex:form >
+	<apex:pageMessages />
+    <apex:pageBlock title="{!creationTitle}" mode="edit">
+        <apex:pageBlockSection title="{!$Label.risk__AddNewRel_Relationship_Selection}" columns="1">
+            <h2>{!confirmationToLink}</h2>
+            <br/><br/>
+        </apex:pageBlockSection>
+        <apex:commandButton style="margin-left: 20px; margin-bottom: 20px;" action="{!save}" value="{!linkToParent}"/>
+        <apex:commandButton style="margin-left: 20px; margin-bottom: 20px;" action="{!cancel}" value="{!notToLinkWithParent}"/>
+    </apex:pageBlock>
+</apex:form>
+</apex:page>

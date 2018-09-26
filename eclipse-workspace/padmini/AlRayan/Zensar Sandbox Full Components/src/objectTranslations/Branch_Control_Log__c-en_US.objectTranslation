@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Branch Control Log</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Branch Control Logs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Actioned by --></label>
+        <name>Actioned_byProcedures__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actioned by --></label>
+        <name>Actioned_by_KeyRegiste__c</name>
+    </fields>
+    <fields>
+        <help><!-- All staff read Premises &amp; Security, Cashiering and Health and Safety procedures. 
+Staff to sign the Refresher document to evidence reading. --></help>
+        <label><!-- All procedures read by staff --></label>
+        <name>All_procedures_read_by_staff__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Branch --></label>
+        <name>Branch__c</name>
+        <relationshipLabel><!-- Branch Control Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>CommentsProcedures__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments_KeyRegister__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check the record of keys for each member of staff by  comparing it to the actual keys in thier possession.  
+Sign the key register for each staff member to evidence check. --></help>
+        <label><!-- Key register check completed? --></label>
+        <name>Key_register_check_completed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Daily BCL</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Half Yearly BCL</layout>
+        <sections>
+            <label><!-- Activities checks --></label>
+            <section>Activities checks</section>
+        </sections>
+        <sections>
+            <label><!-- Checks to be completed by manager or deputy --></label>
+            <section>Checks to be completed by manager or deputy</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Monthly BCL</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Quarterly BCL</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Weekly BCL</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- 1.Daily BCL --></label>
+        <name>Daily_BCL</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 5.Half Yearly BCL --></label>
+        <name>Half_Yearly_BCL</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 3.Monthly BCL --></label>
+        <name>Monthly_BCL</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 4.Quarterly BCL --></label>
+        <name>Quarterly_BCL</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 2.Weekly BCL --></label>
+        <name>Weekly_BCL</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

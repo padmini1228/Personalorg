@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>EventRollback</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>EventRollbacks</value>
+    </caseValues>
+    <fields>
+        <label><!-- Data --></label>
+        <name>Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- ProductEventDirector --></label>
+        <name>ProductEventDirector__c</name>
+        <relationshipLabel><!-- EventRollbacks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- RollBackToEvent --></label>
+        <name>RollBackToEvent__c</name>
+        <relationshipLabel><!-- EventRollbacks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- RollbackEventName --></label>
+        <name>RollbackEventName__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

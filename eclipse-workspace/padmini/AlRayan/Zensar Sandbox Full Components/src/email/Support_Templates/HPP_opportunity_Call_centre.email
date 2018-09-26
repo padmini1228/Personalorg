@@ -1,0 +1,7 @@
+Fantastic another HPP opportunity from:
+
+{!Opportunity.OwnerFirstName}
+
+This one is for:	 {!Opportunity.Finance_Required__c}
+Opportunity Name {!Opportunity.Name}
+We are building momentum who is going to be next???

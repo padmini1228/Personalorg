@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>IT Incident</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>IT Incidents</value>
+    </caseValues>
+    <fields>
+        <label><!-- Affected system --></label>
+        <name>Affected_system__c</name>
+        <picklistValues>
+            <masterLabel>ContactWorld</masterLabel>
+            <translation><!-- ContactWorld --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Datastore</masterLabel>
+            <translation><!-- Datastore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EBA</masterLabel>
+            <translation><!-- EBA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EBS</masterLabel>
+            <translation><!-- EBS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exchange</masterLabel>
+            <translation><!-- Exchange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internet Connection</masterLabel>
+            <translation><!-- Internet Connection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SF Partner Portal</masterLabel>
+            <translation><!-- SF Partner Portal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce</masterLabel>
+            <translation><!-- Salesforce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test</masterLabel>
+            <translation><!-- Test --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Webform</masterLabel>
+            <translation><!-- Webform --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Any known workaround --></label>
+        <name>Any_known_workaround__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date &amp; time of incident --></label>
+        <name>Date_time_of_incident__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date &amp; time of next update --></label>
+        <name>Date_time_of_next_update__c</name>
+    </fields>
+    <fields>
+        <label><!-- Details of incident --></label>
+        <name>Details_of_incident__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resolution actions being undertaken --></label>
+        <name>Resolution_actions_being_undertaken__c</name>
+    </fields>
+    <layouts>
+        <layout>IT Incident Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details of incident --></label>
+            <section>Details of incident</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

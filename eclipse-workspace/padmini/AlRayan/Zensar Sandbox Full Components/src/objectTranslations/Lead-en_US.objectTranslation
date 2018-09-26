@@ -1,0 +1,2372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Short Name</value>
+        </caseValues>
+        <name>company_lead</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Private Email Address</value>
+        </caseValues>
+        <name>email_lead</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>How did you hear about IBB</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>How did you hear about IBB</value>
+        </caseValues>
+        <name>lead_source</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Stage</value>
+        </caseValues>
+        <name>rating_lead</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>State</value>
+        </caseValues>
+        <name>state_lead</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>postal code</value>
+        </caseValues>
+        <name>zip_lead</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Account Features Explained --></label>
+        <name>Account_Features_Explained__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ack Form Needed --></label>
+        <name>Ack_Form_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Line 2 --></label>
+        <name>Address_Line_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Line 3 --></label>
+        <name>Address_Line_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Line 4 --></label>
+        <name>Address_Line_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Line 5 --></label>
+        <name>Address_Line_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Age --></label>
+        <name>Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Looking to Deposit --></label>
+        <name>Amount_Looking_to_Deposit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Any Method --></label>
+        <name>Any_Method__c</name>
+    </fields>
+    <fields>
+        <help><!-- Has the applicant any CCJ&apos;s or been declared bankrupt --></help>
+        <label><!-- Applicant has CCJ&apos;s or been bankrupt --></label>
+        <name>Applicant_has_CCJ_s_or_been_bancrupt__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Are all applicants UK resident --></label>
+        <name>Are_all_applicants_UK_resident__c</name>
+    </fields>
+    <fields>
+        <help><!-- Are all applicants resident in the UK? --></help>
+        <label><!-- Are all applicants resident in the UK? --></label>
+        <name>Are_all_applicants_resident_in_the_UK__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Are you Al Rayan Bank customer? --></label>
+        <name>Are_you_Al_Rayan_Bank_customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- BDM Lead Provider --></label>
+        <name>BDM_Lead_Provider__c</name>
+        <relationshipLabel><!-- Leads (BDM Lead Provider) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Main Applicants Age --></label>
+        <name>BTL_Age__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter DOB of second applicant if applicable --></help>
+        <label><!-- DOB Second Applicant --></label>
+        <name>BTL_DOB_Second_Applicant__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL - Eligible Image --></label>
+        <name>BTL_Eligible_Image__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL - Eligible? --></label>
+        <name>BTL_Eligible__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finance Amount required --></label>
+        <name>BTL_Finance_required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finance to Value --></label>
+        <name>BTL_Finance_to_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter either main applicants gross annual income or if self employed then Net profit figure for the business --></help>
+        <label><!-- Main Applicants income --></label>
+        <name>BTL_Main_Applicant_income__c</name>
+    </fields>
+    <fields>
+        <help><!-- To be eligible for our HPP BTL product at least 1 applicant must be an existing property owner for over 12 months, please ask the customer to confirm? --></help>
+        <label><!-- Min. 1 applicant is property owner --></label>
+        <name>BTL_Min_1_applicant_is_property_owner__c</name>
+        <picklistValues>
+            <masterLabel>1st Applicant is property owner over 12 months</masterLabel>
+            <translation><!-- 1st Applicant is property owner over 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2nd Applicant is a property owner over 12 months</masterLabel>
+            <translation><!-- 2nd Applicant is a property owner over 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Both applicants are property owners over 12 months</masterLabel>
+            <translation><!-- Both applicants are property owners over 12 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First time Buyer (Maximum 65% FTV Available)</masterLabel>
+            <translation><!-- First time Buyer (Maximum 65% FTV Available) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No applicants have been property owners over 12 months</masterLabel>
+            <translation><!-- No applicants have been property owners over 12 months --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please enter whether this is sole or joint (maximum 2 applicants for BTL HPP applications --></help>
+        <label><!-- Number of Applicants --></label>
+        <name>BTL_Number_of_Applicants__c</name>
+        <picklistValues>
+            <masterLabel>1 Sole Applicant</masterLabel>
+            <translation><!-- 1 Sole Applicant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 Joint Applicants</masterLabel>
+            <translation><!-- 2 Joint Applicants --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- BTL (Rent Only) eligible? --></label>
+        <name>BTL_Rent_Only_eligible__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL (Rent Only) eligible image --></label>
+        <name>BTL_Rent_Only_eligible_image__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter second applicants groos annual income if employed or net profit if self employed --></help>
+        <label><!-- Second applicants income --></label>
+        <name>BTL_Second_applicants_income__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Type --></label>
+        <name>BTL_Type__c</name>
+        <picklistValues>
+            <masterLabel>Rent Only</masterLabel>
+            <translation><!-- Rent Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Branch --></label>
+        <name>Branch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Channel which recieved lead --></label>
+        <name>Channel_which_recieved_lead__c</name>
+        <picklistValues>
+            <masterLabel>BDMs</masterLabel>
+            <translation><!-- BDMs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Branch Network</masterLabel>
+            <translation><!-- Branch Network --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call Centre</masterLabel>
+            <translation><!-- Call Centre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP Team</masterLabel>
+            <translation><!-- HPP Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intermediary</masterLabel>
+            <translation><!-- Intermediary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier Banking</masterLabel>
+            <translation><!-- Premier Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treasury</masterLabel>
+            <translation><!-- Treasury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website.</masterLabel>
+            <translation><!-- Website. --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Comments around the KYC documents --></label>
+        <name>Comments_around_the_KYC_documents__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Applicant ever had a CCJ or bankrupt --></label>
+        <name>Confirm_that_none_of_the_applicants_have__c</name>
+    </fields>
+    <fields>
+        <label><!-- Converted Lead? --></label>
+        <name>Converted_Lead__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Account --></label>
+        <name>Current_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Rental Rate --></label>
+        <name>Current_Rental_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date moved to current address --></label>
+        <name>Date_moved_to_current_address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Birth --></label>
+        <name>Date_of_Birth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Birth of Main Applicant --></label>
+        <name>Date_of_Birth_of_Main_Applicant__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the customer has stated they are self employed you MUST confirm that they have a minimum of 2 years audited accounts to proceed. --></help>
+        <label><!-- Does Customer have 2 years Accounts --></label>
+        <name>Does_Customer_have_2_years_Accounts__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Self employed</masterLabel>
+            <translation><!-- Not Self employed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Eligible --></label>
+        <name>EligibleIMAGE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eligible? --></label>
+        <name>Eligible__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email_Option__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the primary applicant in full time permanent employment or self employed with a minimum of 2 years of accounts ? --></help>
+        <label><!-- Employment Status --></label>
+        <name>Employment_Status__c</name>
+        <picklistValues>
+            <masterLabel>Employed (ETYPE)</masterLabel>
+            <translation><!-- Employed (ETYPE) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Housewife (ETYPH)</masterLabel>
+            <translation><!-- Housewife (ETYPH) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Part time (ETYPL)</masterLabel>
+            <translation><!-- Part time (ETYPL) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retired (ETYPR)</masterLabel>
+            <translation><!-- Retired (ETYPR) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self employed non-professional (ETYPN)</masterLabel>
+            <translation><!-- Self employed non-professional (ETYPN) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self employed professional (ETYPP)</masterLabel>
+            <translation><!-- Self employed professional (ETYPP) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unemployed (ETYPU)</masterLabel>
+            <translation><!-- Unemployed (ETYPU) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Estimated Finance Available --></label>
+        <name>Estimated_Finance_Available__c</name>
+    </fields>
+    <fields>
+        <help><!-- Only to be entered by John Simpson following conversation with the customer of their solicitor for the estimated completion date for the HPP --></help>
+        <label><!-- Estimated HPP Completion Date --></label>
+        <name>Estimated_HPP_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ask the Customer if they know what the anticipated monthly rental income will be for the property they are purchasing. --></help>
+        <label><!-- Expected Monthly Rent Payment --></label>
+        <name>Expected_Monthly_Rent_Payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- FTV % --></label>
+        <name>FTV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finance Period --></label>
+        <name>Finance_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finance Required --></label>
+        <name>Finance_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flat Number --></label>
+        <name>Flat_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Future date of contact --></label>
+        <name>Future_date_of_contact__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please confirm you are happy for IBB to hold the information on you. --></help>
+        <label><!-- Happy for IBB to hold your data. --></label>
+        <name>Happy_for_IBB_to_hold_your_data__c</name>
+    </fields>
+    <fields>
+        <label><!-- House Name --></label>
+        <name>House_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- House Number --></label>
+        <name>House_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- If other, please specify --></label>
+        <name>If_other_please_specify__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please ask the customer if they are refinancing how many properties they are looking to refinance with IBB on a Buy to let basis? --></help>
+        <label><!-- If refinancing How Many Properties --></label>
+        <name>If_refinancing_How_Many_Properties__c</name>
+    </fields>
+    <fields>
+        <label><!-- Income verification --></label>
+        <name>Income_verification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interested in --></label>
+        <name>Interested_in__c</name>
+        <picklistValues>
+            <masterLabel>Business Banking</masterLabel>
+            <translation><!-- Business Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial Property Finance</masterLabel>
+            <translation><!-- Commercial Property Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discretionary Portfolio Service (DPS)</masterLabel>
+            <translation><!-- Discretionary Portfolio Service (DPS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP</masterLabel>
+            <translation><!-- HPP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP BTL (Future)</masterLabel>
+            <translation><!-- HPP BTL (Future) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP Buy to Let (Rent Only)</masterLabel>
+            <translation><!-- HPP Buy to Let (Rent Only) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP Buy-to-Let (BTL)</masterLabel>
+            <translation><!-- HPP Buy-to-Let (BTL) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP Premier</masterLabel>
+            <translation><!-- HPP Premier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Long term savings</masterLabel>
+            <translation><!-- Long term savings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Finance</masterLabel>
+            <translation><!-- Personal Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier Banking</masterLabel>
+            <translation><!-- Premier Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retirement Planning</masterLabel>
+            <translation><!-- Retirement Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Short term savings</masterLabel>
+            <translation><!-- Short term savings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sukuk</masterLabel>
+            <translation><!-- Sukuk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Takaful</masterLabel>
+            <translation><!-- Takaful --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Undecided</masterLabel>
+            <translation><!-- Undecided --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West Bromwich BS lead (DO NOT APPROACH FOR MARKETING)</masterLabel>
+            <translation><!-- West Bromwich BS lead (DO NOT APPROACH FOR MARKETING) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Intermediary Contact --></label>
+        <name>Intermediary_Contact__c</name>
+        <relationshipLabel><!-- Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Keep up to date? --></label>
+        <name>Keep_up_to_date__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location of lead provider --></label>
+        <name>Location_of_lead_provider__c</name>
+        <picklistValues>
+            <masterLabel>Dewsbury (1401)</masterLabel>
+            <translation><!-- Dewsbury (1401) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>East Ham (1215)</masterLabel>
+            <translation><!-- East Ham (1215) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edgware Road (1201)</masterLabel>
+            <translation><!-- Edgware Road (1201) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Glasgow (1403)</masterLabel>
+            <translation><!-- Glasgow (1403) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP Sales/BDM</masterLabel>
+            <translation><!-- HPP Sales/BDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Head Office Birmingham (1100)</masterLabel>
+            <translation><!-- Head Office Birmingham (1100) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IBB Website Lead</masterLabel>
+            <translation><!-- IBB Website Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intermediary</masterLabel>
+            <translation><!-- Intermediary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leicester (1120)</masterLabel>
+            <translation><!-- Leicester (1120) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Luton (1404)</masterLabel>
+            <translation><!-- Luton (1404) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manchester (1301)</masterLabel>
+            <translation><!-- Manchester (1301) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier Banking</masterLabel>
+            <translation><!-- Premier Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Heath (1101)</masterLabel>
+            <translation><!-- Small Heath (1101) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southall (1202)</masterLabel>
+            <translation><!-- Southall (1202) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tooting (1402)</masterLabel>
+            <translation><!-- Tooting (1402) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treasury</masterLabel>
+            <translation><!-- Treasury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Whitechapel (1210)</masterLabel>
+            <translation><!-- Whitechapel (1210) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Mail --></label>
+        <name>Mail_Option__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Preference --></label>
+        <name>Marketing_Preference__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please tick to confirm the customer is happy to recieve marketing via the following methods --></help>
+        <label><!-- Marketing Consent? --></label>
+        <name>Marketing_consent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Middle Name(s) --></label>
+        <name>Middle_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Click to dial Mobile Phone --></help>
+        <label><!-- NVM Mobile --></label>
+        <name>NVMContactWorld__NVM_Mobile__c</name>
+    </fields>
+    <fields>
+        <help><!-- Click to dial Phone --></help>
+        <label><!-- NVM Phone --></label>
+        <name>NVMContactWorld__NVM_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Monthly Payments --></label>
+        <name>Number_of_Monthly_Payments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ask the customer the number of properties they currently have , the maximum combined for residential and buy-to let is 5 Porperties to apply for IBB&apos;s BTL product --></help>
+        <label><!-- No. properties (Maximum 5) --></label>
+        <name>Number_of_Properties__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of persons applying --></label>
+        <name>Number_of_persons_applying__c</name>
+    </fields>
+    <fields>
+        <label><!-- Occupation --></label>
+        <name>Occupation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Please enter Occupation of Main Applican --></label>
+        <name>Please_enter_Occupation_of_Main_Applican__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the customer is Self Employed then you MUST clarify and enter the NET Profit for the business for last 12 months accounts rather than the gross annual income/Gross profit --></help>
+        <label><!-- Gross Annual Income/Net profit Self Empl --></label>
+        <name>Please_enter_a_salary_amount_zero_or_a__c</name>
+    </fields>
+    <fields>
+        <label><!-- Postcode --></label>
+        <name>Postcode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Contact Number --></label>
+        <name>Preferred_Contact_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Contact Method --></label>
+        <name>Preferred_Contact_method__c</name>
+        <picklistValues>
+            <masterLabel>Email (HCON3)</masterLabel>
+            <translation><!-- Email (HCON3) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fax (HCON4)</masterLabel>
+            <translation><!-- Fax (HCON4) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Contact (HCON6)</masterLabel>
+            <translation><!-- No Contact (HCON6) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post (HCON1)</masterLabel>
+            <translation><!-- Post (HCON1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SMS (HCON5)</masterLabel>
+            <translation><!-- SMS (HCON5) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telephone (HCON2)</masterLabel>
+            <translation><!-- Telephone (HCON2) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Primary Source Campaign --></label>
+        <name>Primary_Source_Campaign__c</name>
+        <relationshipLabel><!-- Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Interested In --></label>
+        <name>Product_Interested_In__c</name>
+        <relationshipLabel><!-- Leads (Product Interested In) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Proof of Address Explained? --></label>
+        <name>Proof_of_Address_Explained__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proof of Identification Explained. --></label>
+        <name>Proof_of_Identification_Explained__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Finance --></label>
+        <name>Property_Finance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Postcode --></label>
+        <name>Property_Postcode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purpose of Finance --></label>
+        <name>Purpose_of_Finance1__c</name>
+        <picklistValues>
+            <masterLabel>Equity Release</masterLabel>
+            <translation><!-- Equity Release --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Purchase</masterLabel>
+            <translation><!-- New Purchase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Owner Moving House</masterLabel>
+            <translation><!-- Owner Moving House --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refinancing</masterLabel>
+            <translation><!-- Refinancing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Purpose of Finance --></label>
+        <name>Purpose_of_Finance__c</name>
+        <picklistValues>
+            <masterLabel>New Purchase</masterLabel>
+            <translation><!-- New Purchase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Owner Moving House</masterLabel>
+            <translation><!-- Owner Moving House --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refinancing</masterLabel>
+            <translation><!-- Refinancing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reason Ineligible --></label>
+        <name>Reason_Ineligible__c</name>
+        <picklistValues>
+            <masterLabel>Affordability</masterLabel>
+            <translation><!-- Affordability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Age Criteria Not Met</masterLabel>
+            <translation><!-- Age Criteria Not Met --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CCJs</masterLabel>
+            <translation><!-- CCJs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CPF</masterLabel>
+            <translation><!-- CPF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Council property</masterLabel>
+            <translation><!-- Council property --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employment Status</masterLabel>
+            <translation><!-- Employment Status --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance Period</masterLabel>
+            <translation><!-- Finance Period --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance amount less than £70K</masterLabel>
+            <translation><!-- Finance amount less than £70K --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP already with us</masterLabel>
+            <translation><!-- HPP already with us --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect contact details</masterLabel>
+            <translation><!-- Incorrect contact details --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insufficient deposit</masterLabel>
+            <translation><!-- Insufficient deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOT Eligible</masterLabel>
+            <translation><!-- NOT Eligible --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Reply</masterLabel>
+            <translation><!-- No Reply --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not employed 6 months</masterLabel>
+            <translation><!-- Not employed 6 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not main residence</masterLabel>
+            <translation><!-- Not main residence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not self employed 2 years</masterLabel>
+            <translation><!-- Not self employed 2 years --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Property value below £100k</masterLabel>
+            <translation><!-- Property value below £100k --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shared Ownership</masterLabel>
+            <translation><!-- Shared Ownership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Too Many People</masterLabel>
+            <translation><!-- Too Many People --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UK residents</masterLabel>
+            <translation><!-- UK residents --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsuitable Property</masterLabel>
+            <translation><!-- Unsuitable Property --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Record Type (Hidden) --></label>
+        <name>Record_Type_Hidden__c</name>
+    </fields>
+    <fields>
+        <label><!-- SMS --></label>
+        <name>SMS_Option__c</name>
+    </fields>
+    <fields>
+        <label><!-- Savings Account --></label>
+        <name>Savings_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Second Applicants Age --></label>
+        <name>Second_Applicants_Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Seller --></label>
+        <name>Seller__c</name>
+        <relationshipLabel><!-- Leads (Seller) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Seller&apos;s Team --></label>
+        <name>Seller_s_Team__c</name>
+        <picklistValues>
+            <masterLabel>Business Development Managers</masterLabel>
+            <translation><!-- Business Development Managers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Head Office Team</masterLabel>
+            <translation><!-- Head Office Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intermediaries</masterLabel>
+            <translation><!-- Intermediaries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier Banking</masterLabel>
+            <translation><!-- Premier Banking --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sole or Joint? --></label>
+        <name>Sole_or_Joint__c</name>
+        <picklistValues>
+            <masterLabel>Joint HPP</masterLabel>
+            <translation><!-- Joint HPP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sole HPP</masterLabel>
+            <translation><!-- Sole HPP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This is a sample formula field that displays stars based on the lead&apos;s rating. --></help>
+        <label><!-- Star Rating --></label>
+        <name>Star_Rating__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the status of the last email sent by marketing. If blocked or suppressed, please update. --></help>
+        <label><!-- Status of last email sent --></label>
+        <name>Status_of_last_email_sent__c</name>
+        <picklistValues>
+            <masterLabel>Bounced</masterLabel>
+            <translation><!-- Bounced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clicked</masterLabel>
+            <translation><!-- Clicked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivered</masterLabel>
+            <translation><!-- Delivered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Known Bounce</masterLabel>
+            <translation><!-- Known Bounce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opened</masterLabel>
+            <translation><!-- Opened --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Read</masterLabel>
+            <translation><!-- Read --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spam Reports</masterLabel>
+            <translation><!-- Spam Reports --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supressed</masterLabel>
+            <translation><!-- Supressed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Undeliverable</masterLabel>
+            <translation><!-- Undeliverable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsubscribed</masterLabel>
+            <translation><!-- Unsubscribed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Telephone Number to appear on Prospect --></label>
+        <name>Telephone_Number_to_appear_on_Prospect__c</name>
+    </fields>
+    <fields>
+        <label><!-- Telephone --></label>
+        <name>Telephone_Option__c</name>
+    </fields>
+    <fields>
+        <label><!-- UK resident? --></label>
+        <name>UK_resident__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unique field --></label>
+        <name>Unique_field__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the weblead reference number --></help>
+        <label><!-- Weblead Reference Number --></label>
+        <name>Weblead_Reference_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value of property --></label>
+        <name>What_is_the_purchase_price_valuation_of__c</name>
+    </fields>
+    <fields>
+        <label><!-- Where did you hear about HPP? --></label>
+        <name>Where_did_you_hear_about_HPP__c</name>
+        <picklistValues>
+            <masterLabel>E-mail - IBB</masterLabel>
+            <translation><!-- E-mail - IBB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E-mail - MDUK</masterLabel>
+            <translation><!-- E-mail - MDUK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E-mail - MPAC</masterLabel>
+            <translation><!-- E-mail - MPAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Friend &amp; Family Recommendation</masterLabel>
+            <translation><!-- Friend &amp; Family Recommendation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GPU 2010</masterLabel>
+            <translation><!-- GPU 2010 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Google</masterLabel>
+            <translation><!-- Google --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IBB Professional webpage</masterLabel>
+            <translation><!-- IBB Professional webpage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IBB Website</masterLabel>
+            <translation><!-- IBB Website --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In the Branch</masterLabel>
+            <translation><!-- In the Branch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intermediary</masterLabel>
+            <translation><!-- Intermediary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internet</masterLabel>
+            <translation><!-- Internet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Letter</masterLabel>
+            <translation><!-- Letter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Masjid Calendars - Birmingham Central</masterLabel>
+            <translation><!-- Masjid Calendars - Birmingham Central --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Masjid Calendars - Regents Park</masterLabel>
+            <translation><!-- Masjid Calendars - Regents Park --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outbound Telephone Call</masterLabel>
+            <translation><!-- Outbound Telephone Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prayer timetables</masterLabel>
+            <translation><!-- Prayer timetables --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Radio - Manchester Radio Ramadan</masterLabel>
+            <translation><!-- Radio - Manchester Radio Ramadan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Radio - Unity FM</masterLabel>
+            <translation><!-- Radio - Unity FM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ramadan Booklet Leicester</masterLabel>
+            <translation><!-- Ramadan Booklet Leicester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sold by agent</masterLabel>
+            <translation><!-- Sold by agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sold by seller</masterLabel>
+            <translation><!-- Sold by seller --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Statement Insert</masterLabel>
+            <translation><!-- Statement Insert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TV - Channel S</masterLabel>
+            <translation><!-- TV - Channel S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TV - Islam Channel</masterLabel>
+            <translation><!-- TV - Islam Channel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TV - Prime TV</masterLabel>
+            <translation><!-- TV - Prime TV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Twins of Faith 19th November</masterLabel>
+            <translation><!-- Twins of Faith 19th November --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Why lead not converted to Prospect --></label>
+        <name>Why_lead_not_converted_to_Prospect__c</name>
+        <picklistValues>
+            <masterLabel>Customer has gone to another bank</masterLabel>
+            <translation><!-- Customer has gone to another bank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer not interested</masterLabel>
+            <translation><!-- Customer not interested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed HPP eligibility</masterLabel>
+            <translation><!-- Failed HPP eligibility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not happy with the bank&apos;s processes</masterLabel>
+            <translation><!-- Not happy with the bank&apos;s processes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor customer service</masterLabel>
+            <translation><!-- Poor customer service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rate not attractive</masterLabel>
+            <translation><!-- Rate not attractive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Will the property be the main residence --></label>
+        <name>Will_the_property_be_the_main_residence__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Mobile Opt Out --></label>
+        <name>et4ae5__HasOptedOutOfMobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile Country Code --></label>
+        <name>et4ae5__Mobile_Country_Code__c</name>
+        <picklistValues>
+            <masterLabel>AC</masterLabel>
+            <translation><!-- AC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AD</masterLabel>
+            <translation><!-- AD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AE</masterLabel>
+            <translation><!-- AE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AF</masterLabel>
+            <translation><!-- AF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AG</masterLabel>
+            <translation><!-- AG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AI</masterLabel>
+            <translation><!-- AI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL</masterLabel>
+            <translation><!-- AL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AM</masterLabel>
+            <translation><!-- AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AO</masterLabel>
+            <translation><!-- AO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AQ</masterLabel>
+            <translation><!-- AQ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AS</masterLabel>
+            <translation><!-- AS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AT</masterLabel>
+            <translation><!-- AT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AU</masterLabel>
+            <translation><!-- AU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AW</masterLabel>
+            <translation><!-- AW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AX</masterLabel>
+            <translation><!-- AX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ</masterLabel>
+            <translation><!-- AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BA</masterLabel>
+            <translation><!-- BA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BB</masterLabel>
+            <translation><!-- BB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD</masterLabel>
+            <translation><!-- BD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BE</masterLabel>
+            <translation><!-- BE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BF</masterLabel>
+            <translation><!-- BF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BG</masterLabel>
+            <translation><!-- BG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BH</masterLabel>
+            <translation><!-- BH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BI</masterLabel>
+            <translation><!-- BI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BJ</masterLabel>
+            <translation><!-- BJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BL</masterLabel>
+            <translation><!-- BL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BM</masterLabel>
+            <translation><!-- BM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BN</masterLabel>
+            <translation><!-- BN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BO</masterLabel>
+            <translation><!-- BO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BQ</masterLabel>
+            <translation><!-- BQ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BR</masterLabel>
+            <translation><!-- BR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BS</masterLabel>
+            <translation><!-- BS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BT</masterLabel>
+            <translation><!-- BT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BV</masterLabel>
+            <translation><!-- BV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BW</masterLabel>
+            <translation><!-- BW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BY</masterLabel>
+            <translation><!-- BY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BZ</masterLabel>
+            <translation><!-- BZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CC</masterLabel>
+            <translation><!-- CC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CD</masterLabel>
+            <translation><!-- CD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF</masterLabel>
+            <translation><!-- CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CG</masterLabel>
+            <translation><!-- CG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CH</masterLabel>
+            <translation><!-- CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CI</masterLabel>
+            <translation><!-- CI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CK</masterLabel>
+            <translation><!-- CK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CL</masterLabel>
+            <translation><!-- CL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CM</masterLabel>
+            <translation><!-- CM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CN</masterLabel>
+            <translation><!-- CN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CR</masterLabel>
+            <translation><!-- CR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CU</masterLabel>
+            <translation><!-- CU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CV</masterLabel>
+            <translation><!-- CV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CW</masterLabel>
+            <translation><!-- CW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CX</masterLabel>
+            <translation><!-- CX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CY</masterLabel>
+            <translation><!-- CY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CZ</masterLabel>
+            <translation><!-- CZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DJ</masterLabel>
+            <translation><!-- DJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DK</masterLabel>
+            <translation><!-- DK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DM</masterLabel>
+            <translation><!-- DM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DO</masterLabel>
+            <translation><!-- DO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DZ</masterLabel>
+            <translation><!-- DZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EC</masterLabel>
+            <translation><!-- EC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EE</masterLabel>
+            <translation><!-- EE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EG</masterLabel>
+            <translation><!-- EG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ER</masterLabel>
+            <translation><!-- ER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ES</masterLabel>
+            <translation><!-- ES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ET</masterLabel>
+            <translation><!-- ET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FI</masterLabel>
+            <translation><!-- FI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FJ</masterLabel>
+            <translation><!-- FJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FK</masterLabel>
+            <translation><!-- FK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM</masterLabel>
+            <translation><!-- FM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FO</masterLabel>
+            <translation><!-- FO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FR</masterLabel>
+            <translation><!-- FR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA</masterLabel>
+            <translation><!-- GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GB</masterLabel>
+            <translation><!-- GB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GD</masterLabel>
+            <translation><!-- GD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GE</masterLabel>
+            <translation><!-- GE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GF</masterLabel>
+            <translation><!-- GF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GG</masterLabel>
+            <translation><!-- GG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GH</masterLabel>
+            <translation><!-- GH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GI</masterLabel>
+            <translation><!-- GI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GL</masterLabel>
+            <translation><!-- GL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GM</masterLabel>
+            <translation><!-- GM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GN</masterLabel>
+            <translation><!-- GN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GP</masterLabel>
+            <translation><!-- GP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GQ</masterLabel>
+            <translation><!-- GQ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GR</masterLabel>
+            <translation><!-- GR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GS</masterLabel>
+            <translation><!-- GS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GT</masterLabel>
+            <translation><!-- GT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GU</masterLabel>
+            <translation><!-- GU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GW</masterLabel>
+            <translation><!-- GW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GY</masterLabel>
+            <translation><!-- GY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HK</masterLabel>
+            <translation><!-- HK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HM</masterLabel>
+            <translation><!-- HM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HN</masterLabel>
+            <translation><!-- HN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HR</masterLabel>
+            <translation><!-- HR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HT</masterLabel>
+            <translation><!-- HT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HU</masterLabel>
+            <translation><!-- HU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IE</masterLabel>
+            <translation><!-- IE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IM</masterLabel>
+            <translation><!-- IM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IO</masterLabel>
+            <translation><!-- IO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IQ</masterLabel>
+            <translation><!-- IQ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IR</masterLabel>
+            <translation><!-- IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS</masterLabel>
+            <translation><!-- IS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT</masterLabel>
+            <translation><!-- IT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JE</masterLabel>
+            <translation><!-- JE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JM</masterLabel>
+            <translation><!-- JM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JO</masterLabel>
+            <translation><!-- JO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JP</masterLabel>
+            <translation><!-- JP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KE</masterLabel>
+            <translation><!-- KE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KG</masterLabel>
+            <translation><!-- KG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KH</masterLabel>
+            <translation><!-- KH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KI</masterLabel>
+            <translation><!-- KI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KM</masterLabel>
+            <translation><!-- KM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KN</masterLabel>
+            <translation><!-- KN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KP</masterLabel>
+            <translation><!-- KP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KR</masterLabel>
+            <translation><!-- KR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KW</masterLabel>
+            <translation><!-- KW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY</masterLabel>
+            <translation><!-- KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KZ</masterLabel>
+            <translation><!-- KZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LB</masterLabel>
+            <translation><!-- LB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LC</masterLabel>
+            <translation><!-- LC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LI</masterLabel>
+            <translation><!-- LI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LK</masterLabel>
+            <translation><!-- LK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LR</masterLabel>
+            <translation><!-- LR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LS</masterLabel>
+            <translation><!-- LS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LT</masterLabel>
+            <translation><!-- LT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LU</masterLabel>
+            <translation><!-- LU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LV</masterLabel>
+            <translation><!-- LV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LY</masterLabel>
+            <translation><!-- LY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MC</masterLabel>
+            <translation><!-- MC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MF</masterLabel>
+            <translation><!-- MF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MG</masterLabel>
+            <translation><!-- MG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MH</masterLabel>
+            <translation><!-- MH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MK</masterLabel>
+            <translation><!-- MK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ML</masterLabel>
+            <translation><!-- ML --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MM</masterLabel>
+            <translation><!-- MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN</masterLabel>
+            <translation><!-- MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO</masterLabel>
+            <translation><!-- MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MP</masterLabel>
+            <translation><!-- MP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MQ</masterLabel>
+            <translation><!-- MQ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MR</masterLabel>
+            <translation><!-- MR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MU</masterLabel>
+            <translation><!-- MU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MV</masterLabel>
+            <translation><!-- MV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MW</masterLabel>
+            <translation><!-- MW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MX</masterLabel>
+            <translation><!-- MX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MY</masterLabel>
+            <translation><!-- MY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MZ</masterLabel>
+            <translation><!-- MZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NA</masterLabel>
+            <translation><!-- NA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE</masterLabel>
+            <translation><!-- NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NF</masterLabel>
+            <translation><!-- NF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NG</masterLabel>
+            <translation><!-- NG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NI</masterLabel>
+            <translation><!-- NI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NL</masterLabel>
+            <translation><!-- NL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NO</masterLabel>
+            <translation><!-- NO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NP</masterLabel>
+            <translation><!-- NP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NR</masterLabel>
+            <translation><!-- NR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NU</masterLabel>
+            <translation><!-- NU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NZ</masterLabel>
+            <translation><!-- NZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OM</masterLabel>
+            <translation><!-- OM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PE</masterLabel>
+            <translation><!-- PE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PF</masterLabel>
+            <translation><!-- PF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PG</masterLabel>
+            <translation><!-- PG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PH</masterLabel>
+            <translation><!-- PH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PK</masterLabel>
+            <translation><!-- PK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PL</masterLabel>
+            <translation><!-- PL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM</masterLabel>
+            <translation><!-- PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PN</masterLabel>
+            <translation><!-- PN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PR</masterLabel>
+            <translation><!-- PR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PS</masterLabel>
+            <translation><!-- PS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PT</masterLabel>
+            <translation><!-- PT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PW</masterLabel>
+            <translation><!-- PW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PY</masterLabel>
+            <translation><!-- PY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QA</masterLabel>
+            <translation><!-- QA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RE</masterLabel>
+            <translation><!-- RE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RO</masterLabel>
+            <translation><!-- RO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RS</masterLabel>
+            <translation><!-- RS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RU</masterLabel>
+            <translation><!-- RU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RW</masterLabel>
+            <translation><!-- RW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SA</masterLabel>
+            <translation><!-- SA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SB</masterLabel>
+            <translation><!-- SB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SE</masterLabel>
+            <translation><!-- SE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SG</masterLabel>
+            <translation><!-- SG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SH</masterLabel>
+            <translation><!-- SH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SI</masterLabel>
+            <translation><!-- SI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SJ</masterLabel>
+            <translation><!-- SJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SK</masterLabel>
+            <translation><!-- SK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SL</masterLabel>
+            <translation><!-- SL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SM</masterLabel>
+            <translation><!-- SM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SN</masterLabel>
+            <translation><!-- SN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SO</masterLabel>
+            <translation><!-- SO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SR</masterLabel>
+            <translation><!-- SR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SS</masterLabel>
+            <translation><!-- SS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ST</masterLabel>
+            <translation><!-- ST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SV</masterLabel>
+            <translation><!-- SV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SX</masterLabel>
+            <translation><!-- SX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SY</masterLabel>
+            <translation><!-- SY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SZ</masterLabel>
+            <translation><!-- SZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TA</masterLabel>
+            <translation><!-- TA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC</masterLabel>
+            <translation><!-- TC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TD</masterLabel>
+            <translation><!-- TD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TG</masterLabel>
+            <translation><!-- TG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TH</masterLabel>
+            <translation><!-- TH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TJ</masterLabel>
+            <translation><!-- TJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TK</masterLabel>
+            <translation><!-- TK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TL</masterLabel>
+            <translation><!-- TL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TM</masterLabel>
+            <translation><!-- TM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TO</masterLabel>
+            <translation><!-- TO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TR</masterLabel>
+            <translation><!-- TR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TT</masterLabel>
+            <translation><!-- TT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TV</masterLabel>
+            <translation><!-- TV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TW</masterLabel>
+            <translation><!-- TW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TZ</masterLabel>
+            <translation><!-- TZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UA</masterLabel>
+            <translation><!-- UA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UG</masterLabel>
+            <translation><!-- UG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US</masterLabel>
+            <translation><!-- US --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UY</masterLabel>
+            <translation><!-- UY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UZ</masterLabel>
+            <translation><!-- UZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VC</masterLabel>
+            <translation><!-- VC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VE</masterLabel>
+            <translation><!-- VE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VG</masterLabel>
+            <translation><!-- VG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VI</masterLabel>
+            <translation><!-- VI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VN</masterLabel>
+            <translation><!-- VN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VU</masterLabel>
+            <translation><!-- VU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WF</masterLabel>
+            <translation><!-- WF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WS</masterLabel>
+            <translation><!-- WS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YE</masterLabel>
+            <translation><!-- YE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YT</masterLabel>
+            <translation><!-- YT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZA</masterLabel>
+            <translation><!-- ZA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZM</masterLabel>
+            <translation><!-- ZM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZW</masterLabel>
+            <translation><!-- ZW --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SMS Opt Out --></label>
+        <name>smagicinteract__SMSOptOut__c</name>
+    </fields>
+    <fields>
+        <label><!-- test --></label>
+        <name>test12__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of property? --></label>
+        <name>type_of_property__c</name>
+        <picklistValues>
+            <masterLabel>Council property</masterLabel>
+            <translation><!-- Council property --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ex- council property</masterLabel>
+            <translation><!-- Ex- council property --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flat (not retirement flat)</masterLabel>
+            <translation><!-- Flat (not retirement flat) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Housing Association</masterLabel>
+            <translation><!-- Housing Association --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Privately Owned.</masterLabel>
+            <translation><!-- Privately Owned. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shared Ownership</masterLabel>
+            <translation><!-- Shared Ownership --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>CPF</layout>
+        <sections>
+            <label><!-- HPP Eligibility --></label>
+            <section>HPP Eligibility</section>
+        </sections>
+        <sections>
+            <label><!-- Intermediary details if required --></label>
+            <section>Intermediary details if required</section>
+        </sections>
+        <sections>
+            <label><!-- Marketing Preferences --></label>
+            <section>Marketing Preferences</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Event Leads</layout>
+        <sections>
+            <label><!-- Marketing Preferences --></label>
+            <section>Marketing Preferences</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>External Leads</layout>
+        <sections>
+            <label><!-- Marketing Preferences --></label>
+            <section>Marketing Preferences</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HPP Buy To Let (Rent Only)</layout>
+        <sections>
+            <label><!-- Buy To Let - HPP Eligibility --></label>
+            <section>Buy To Let - HPP Eligibility</section>
+        </sections>
+        <sections>
+            <label><!-- Buy To Let Property Details --></label>
+            <section>Buy To Let Property Details</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Current Address Information --></label>
+            <section>Customer Current Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Intermediary details if required --></label>
+            <section>Intermediary details if required</section>
+        </sections>
+        <sections>
+            <label><!-- Marketing Preferences --></label>
+            <section>Marketing Preferences</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HPP Buy to Let</layout>
+        <sections>
+            <label><!-- Buy To Let - HPP Eligibility --></label>
+            <section>Buy To Let - HPP Eligibility</section>
+        </sections>
+        <sections>
+            <label><!-- Buy To Let Property Details --></label>
+            <section>Buy To Let Property Details</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Current Address Information --></label>
+            <section>Customer Current Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Intermediary details if required --></label>
+            <section>Intermediary details if required</section>
+        </sections>
+        <sections>
+            <label><!-- Marketing Preferences --></label>
+            <section>Marketing Preferences</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Intermediaries</layout>
+        <sections>
+            <label><!-- HPP Eligibility --></label>
+            <section>HPP Eligibility</section>
+        </sections>
+        <sections>
+            <label><!-- Intermediary details if required --></label>
+            <section>Intermediary details if required</section>
+        </sections>
+        <sections>
+            <label><!-- Marketing Preferences --></label>
+            <section>Marketing Preferences</section>
+        </sections>
+        <sections>
+            <label><!-- Savings --></label>
+            <section>Savings</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Lead Layout</layout>
+        <sections>
+            <label><!-- HPP Eligibility --></label>
+            <section>HPP Eligibility</section>
+        </sections>
+        <sections>
+            <label><!-- Intermediary details if required --></label>
+            <section>Intermediary details if required</section>
+        </sections>
+        <sections>
+            <label><!-- Marketing Preferences --></label>
+            <section>Marketing Preferences</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Liability</layout>
+        <sections>
+            <label><!-- Intermediary details if required --></label>
+            <section>Intermediary details if required</section>
+        </sections>
+        <sections>
+            <label><!-- Marketing Preferences --></label>
+            <section>Marketing Preferences</section>
+        </sections>
+        <sections>
+            <label><!-- Savings --></label>
+            <section>Savings</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>web</layout>
+        <sections>
+            <label><!-- HPP Eligibility --></label>
+            <section>HPP Eligibility</section>
+        </sections>
+        <sections>
+            <label><!-- Marketing Preferences --></label>
+            <section>Marketing Preferences</section>
+        </sections>
+        <sections>
+            <label><!-- Savings --></label>
+            <section>Savings</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Buy To Let (Rent Only) --></label>
+        <name>Buy_To_Let_Rent_Only</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Buy to Let --></label>
+        <name>Buy_to_Let</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Event --></label>
+        <name>Event</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- External prospects --></label>
+        <name>External_prospects</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- HPP --></label>
+        <name>HPP</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Liabilities --></label>
+        <name>Liabilities</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Gross Annual income must be completed --></errorMessage>
+        <name>HPP_Eligibility_Rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This customer is not eligible and therefore this lead cannot be converted. --></errorMessage>
+        <name>Lead_not_eligible</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Confirm that if the Customer is self employed that they have 2 years audited accounts --></errorMessage>
+        <name>Self_Employed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Confirm that if the Customer is self employed that they have 2 years audited accounts --></errorMessage>
+        <name>Self_Employed_non_professional_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please complete the other box. --></errorMessage>
+        <name>marketing_other</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendGmail --></label>
+        <name>SendGmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ExactTarget_Resubscribe --></label>
+        <name>et4ae5__ExactTarget_Resubscribe</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ExactTarget_Unsubscribe --></label>
+        <name>et4ae5__ExactTarget_Unsubscribe</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_ExactTarget_Email --></label>
+        <name>et4ae5__Send_ExactTarget_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_ExactTarget_SMS --></label>
+        <name>et4ae5__Send_ExactTarget_SMS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_ExactTarget_Analytics --></label>
+        <name>et4ae5__View_ExactTarget_Analytics</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Address_Finder --></label>
+        <name>pca__Address_Finder</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Bulk_SMS --></label>
+        <name>smagicinteract__Send_Bulk_SMS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_SMS --></label>
+        <name>smagicinteract__Send_SMS</name>
+    </webLinks>
+</CustomObjectTranslation>

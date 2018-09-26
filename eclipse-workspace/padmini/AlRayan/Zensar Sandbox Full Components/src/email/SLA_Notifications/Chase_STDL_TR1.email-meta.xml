@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Chase STDL/TR1</name>
+    <style>none</style>
+    <subject>Chase STDL/TR1 TR1 from the IBB solicitors</subject>
+    <type>text</type>
+</EmailTemplate>

@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Call Centre KPI&apos;s</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Call Centre KPI&apos;s</value>
+    </caseValues>
+    <fields>
+        <help><!-- Please enter the oldest dated date of any cases outstanding to the call centre from EBA Case --></help>
+        <label><!-- CASE - Oldest date Outstanding --></label>
+        <name>CASE_Oldest_date_Outstanding__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the number of open tickets outstanding at close of business each working day from EBA CASE --></help>
+        <label><!-- CASE - Open tickets Carried forward --></label>
+        <name>CASE_Open_tickets_Carried_forward__c</name>
+    </fields>
+    <fields>
+        <label><!-- CASE - Open tickets Received --></label>
+        <name>CASE_Open_tickets_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPH --></label>
+        <name>CPH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Calls taken --></label>
+        <name>Calls_taken__c</name>
+    </fields>
+    <fields>
+        <help><!-- Open ticket case items actioned by the call centre on the day from EBA CASES --></help>
+        <label><!-- Case - Open Tickets actioned --></label>
+        <name>Case_Open_Tickets__c</name>
+    </fields>
+    <fields>
+        <help><!-- Volume of complaints receioved from EBA CASE --></help>
+        <label><!-- Complaints Received --></label>
+        <name>Complaints_Received__c</name>
+    </fields>
+    <fields>
+        <help><!-- Complaints resolved from EBA CASE --></help>
+        <label><!-- Complaints Resolved --></label>
+        <name>Complaints_Resolved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Complaints --></label>
+        <name>Complaints__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compliments --></label>
+        <name>Compliments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of record --></label>
+        <name>Date_of_record__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter AHT in seconds from CISCO reports --></help>
+        <label><!-- HNW Calls AHT (Secs) --></label>
+        <name>HNW_Calls_AHT_Secs__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter av. time to answer HNW calls from CISCO reports --></help>
+        <label><!-- HNW Calls AV. Time to Answer --></label>
+        <name>HNW_Calls_AV_Time_to_Answer__c</name>
+    </fields>
+    <fields>
+        <help><!-- % calls abandoned HNW Line --></help>
+        <label><!-- HNW Calls % Abandoned --></label>
+        <name>HNW_Calls_Abandoned__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter HNW Calls answered from CISCO Reports --></help>
+        <label><!-- HNW Calls Answered --></label>
+        <name>HNW_Calls_Answered__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter HNW calls answered in 30 seconds % from CISCO Reports --></help>
+        <label><!-- HNW Calls % answered in 30 seconds --></label>
+        <name>HNW_Calls_answered_in_30_seconds__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter calls offered for HNW line from CISCO reports --></help>
+        <label><!-- HNW Calls offered --></label>
+        <name>HNW_Calls_offered__c</name>
+    </fields>
+    <fields>
+        <help><!-- Eneter HPP Calls answered from CISCO Reports --></help>
+        <label><!-- HPP Calls Answered --></label>
+        <name>HPP_Calls_Answered__c</name>
+    </fields>
+    <fields>
+        <help><!-- Eneter the av. time to answer fro HPP calls from CISCO Reports --></help>
+        <label><!-- HPP Calls Av. time to Answer (secs) --></label>
+        <name>HPP_Calls_Av_time_to_Answer_secs__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter HPP Calls offered from CISCO reports --></help>
+        <label><!-- HPP Calls Offered --></label>
+        <name>HPP_Calls_Offered__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Calls % abandoned --></label>
+        <name>HPP_Calls_abandoned__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter % HPP calls answered in 30 seconds from CISCO Reports --></help>
+        <label><!-- HPP Calls % calls answered in 30 Secs --></label>
+        <name>HPP_Calls_calls_answered_in_30_Secs__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the AHT in seconds fro HPP calls from CISCO reports --></help>
+        <label><!-- HPP calls AHT (secs) --></label>
+        <name>HPP_calls_AHT_secs__c</name>
+    </fields>
+    <fields>
+        <label><!-- IBB Overall % Calls Handled --></label>
+        <name>IBB_Overall_Calls_Handled__c</name>
+    </fields>
+    <fields>
+        <help><!-- From IVR Report --></help>
+        <label><!-- IVR - Total calls in hours --></label>
+        <name>IVR_Total_calls_in_hours__c</name>
+    </fields>
+    <fields>
+        <help><!-- From IVR Report --></help>
+        <label><!-- IVR - % calls handled on IVR --></label>
+        <name>IVR_calls_handled_on_IVR__c</name>
+    </fields>
+    <fields>
+        <help><!-- From IVR Report --></help>
+        <label><!-- IVR - total calls Out of Hours --></label>
+        <name>IVR_total_calls_Out_of_Hours__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter from CISCO reports and RTA --></help>
+        <label><!-- % Inbound Unavailable time --></label>
+        <name>Inbound_Unavailable_time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the % inbound utilisation from CSICO reports and RTA --></help>
+        <label><!-- % Inbound Utilisation --></label>
+        <name>Inbound_Utilisation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the wait time for iinbound consultants from CISCO Reports --></help>
+        <label><!-- % Inbound Wait time --></label>
+        <name>Inbound_Wait_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Not Ready --></label>
+        <name>Not_Ready__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter from CISCO Reports --></help>
+        <label><!-- Outbound Customer Service calls --></label>
+        <name>Outbound_Customer_Service_calls__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overall Av. time to Answer (Secs) --></label>
+        <name>Overall_Av_time_to_Answer_Secs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overall % Calls Answered in 30 Seconds --></label>
+        <name>Overall_Calls_Answered_in_30_Seconds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overall Calls Handled --></label>
+        <name>Overall_Calls_Handled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overall % Calls abandoned --></label>
+        <name>Overall_Calls_abandoned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overall Calls offered --></label>
+        <name>Overall_Calls_offered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person --></label>
+        <name>Person__c</name>
+        <relationshipLabel><!-- Call Centre KPI&apos;s --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Please enter the Sales calls AHT from CISCO Reports --></help>
+        <label><!-- Sales Calls AHT (Secs) --></label>
+        <name>Sales_Calls_AHT_Secs__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the av time to anser for sales calls from CISCO reports --></help>
+        <label><!-- Sales Calls AV. Time to Answer (Secs) --></label>
+        <name>Sales_Calls_AV_Time_to_Answer_Secs__c</name>
+    </fields>
+    <fields>
+        <help><!-- % Calls abandoned on Sales Line --></help>
+        <label><!-- Sales Calls Abandoned % --></label>
+        <name>Sales_Calls_Abandoned__c</name>
+    </fields>
+    <fields>
+        <help><!-- Eneter Sales Calls offered from CISCO Reports --></help>
+        <label><!-- Sales Calls Answered --></label>
+        <name>Sales_Calls_Answered__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter Sales Calls Offered from CSICO reports --></help>
+        <label><!-- Sales Calls Offered --></label>
+        <name>Sales_Calls_Offered__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the number of sales calls answered within 30 seconds from CISCO reports --></help>
+        <label><!-- Sales Calls % answered in 30 Seconds --></label>
+        <name>Sales_Calls_answered_in_30_Seconds__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the AHT for Service calls from CISCO Reports --></help>
+        <label><!-- Service Calls AHT (secs) --></label>
+        <name>Service_Calls_AHT_secs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Calls Abandoned % --></label>
+        <name>Service_Calls_Abandoned__c</name>
+    </fields>
+    <fields>
+        <help><!-- Eneter Service calls offered from CISCO reports --></help>
+        <label><!-- Service Calls Answered --></label>
+        <name>Service_Calls_Answered__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter % Service calls answered in 30 seconds from CISCO reports --></help>
+        <label><!-- Service Calls % Answered within 30 secs --></label>
+        <name>Service_Calls_Answered_within_30_secs__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter Average time to Answer Service calls from CISCO reports --></help>
+        <label><!-- Service Calls Av. Time to Answer (secs) --></label>
+        <name>Service_Calls_Av_Time_to_Answer_secs__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Service calls offered from CISCO Report --></help>
+        <label><!-- Service Calls Offered --></label>
+        <name>Service_Calls_Offered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Talk time --></label>
+        <name>Talk_time__c</name>
+    </fields>
+    <fields>
+        <help><!-- please enter the hours worked for that day --></help>
+        <label><!-- Time at Work --></label>
+        <name>Time_at_Work__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter from CISCO reports --></help>
+        <label><!-- Total Outbound Calls --></label>
+        <name>Total_Outbound_Calls__c</name>
+    </fields>
+    <fields>
+        <help><!-- Details from DB Managers Outlook mailbox --></help>
+        <label><!-- Website Customer service enquiries actio --></label>
+        <name>Website_Customer_service_enquiries_actio__c</name>
+    </fields>
+    <fields>
+        <help><!-- From HPP Inbox --></help>
+        <label><!-- Website - HPP Enquiries oldest date --></label>
+        <name>Website_HPP_Enquiries_oldest_date__c</name>
+    </fields>
+    <fields>
+        <help><!-- From HPP Inbox --></help>
+        <label><!-- Website HPP Enquiries received --></label>
+        <name>Website_HPP_Enquiries_received__c</name>
+    </fields>
+    <fields>
+        <help><!-- From HPP Inboxc --></help>
+        <label><!-- Website HPP enquiries actioned --></label>
+        <name>Website_HPP_enquiries_actioned__c</name>
+    </fields>
+    <fields>
+        <help><!-- From Sales inbox email --></help>
+        <label><!-- Website - Sales enquiries actioned --></label>
+        <name>Website_Sales_enquiries_actioned__c</name>
+    </fields>
+    <fields>
+        <help><!-- From Outbound Sales inbox --></help>
+        <label><!-- Website - Sales enquries received --></label>
+        <name>Website_Sales_enquries_received__c</name>
+    </fields>
+    <fields>
+        <help><!-- From sales inbox --></help>
+        <label><!-- Website - Sales enqury oldest date OS --></label>
+        <name>Website_Sales_enqury_oldest_date_OS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Figures from DB Managers outlook inbox by day --></help>
+        <label><!-- Website Service enquiries received --></label>
+        <name>Website_Service_enquiries_received__c</name>
+    </fields>
+    <fields>
+        <help><!-- From DB mangers outlook box --></help>
+        <label><!-- Website enquiry - oldest date Outstandin --></label>
+        <name>Website_enquiry_oldest_date_Outstandin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wrap time --></label>
+        <name>Wrap_time__c</name>
+    </fields>
+    <layouts>
+        <layout>Call Centre KPI&apos;s Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Individual KPI&apos;s Agents Call Centre --></label>
+            <section>Individual KPI&apos;s Agents Call Centre</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- WPS - Complaints Call Centre --></label>
+            <section>WPS - Complaints Call Centre</section>
+        </sections>
+        <sections>
+            <label><!-- WPS - Customer Service Call Summary --></label>
+            <section>WPS - Customer Service Call Summary</section>
+        </sections>
+        <sections>
+            <label><!-- WPS - HNW Call Summary --></label>
+            <section>WPS - HNW Call Summary</section>
+        </sections>
+        <sections>
+            <label><!-- WPS - IVR Statistics --></label>
+            <section>WPS - IVR Statistics</section>
+        </sections>
+        <sections>
+            <label><!-- WPS - Sales Call Summary --></label>
+            <section>WPS - Sales Call Summary</section>
+        </sections>
+        <sections>
+            <label><!-- WPS - Website Customer Enquiries --></label>
+            <section>WPS - Website Customer Enquiries</section>
+        </sections>
+        <sections>
+            <label><!-- WPS Cases --></label>
+            <section>WPS Cases</section>
+        </sections>
+        <sections>
+            <label><!-- WPS Outbound Customer Service Calls --></label>
+            <section>WPS Outbound Customer Service Calls</section>
+        </sections>
+        <sections>
+            <label><!-- WPS Overall Call Centre Stats --></label>
+            <section>WPS Overall Call Centre Stats</section>
+        </sections>
+        <sections>
+            <label><!-- WPS Utilisation of Resource --></label>
+            <section>WPS Utilisation of Resource</section>
+        </sections>
+        <sections>
+            <label><!-- WPS- HPP Call Summary --></label>
+            <section>WPS- HPP Call Summary</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

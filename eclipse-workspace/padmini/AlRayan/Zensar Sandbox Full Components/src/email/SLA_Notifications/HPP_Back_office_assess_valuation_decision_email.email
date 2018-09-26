@@ -1,0 +1,13 @@
+Application Number : {!Opportunity.Application_Reference_Number__c} {!Opportunity.Link}
+Underwriter Name who assessed the HPP application Form :{!Opportunity.00ND0000003MZRF}
+Customer Name : {!Opportunity.Account}
+Customer Address : {!Opportunity.00ND0000003MZOC}, {!Opportunity.00ND0000003MZR0}, {!Opportunity.00ND0000003MZRD}, {!Opportunity.00ND0000003MZPz}
+Customer Contact Number : {!Opportunity.Customer_Contact_Number__c}
+
+The application for {!Opportunity.IBB_Product__c} by {!Opportunity.Account}, is {!Opportunity.00ND0000003MZNi}. 
+
+Could you please log into Salesforce and review application comments provided and also inform the customer of the decision taken.
+
+Yours sincerely,
+
+{!Opportunity.00ND0000003MZRF}

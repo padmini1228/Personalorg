@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Available</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Available</shortDescription>
+        <value>Available</value>
+    </labels>
+    <labels>
+        <fullName>Business_Unit_Selection</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Business Unit Selection</shortDescription>
+        <value>Business Unit Selection</value>
+    </labels>
+    <labels>
+        <fullName>CancelLabel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>CancelLabel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Create</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Create</shortDescription>
+        <value>Create</value>
+    </labels>
+    <labels>
+        <fullName>Filter_templates_based_on_name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Filter templates based on name:</shortDescription>
+        <value>Filter templates based on name:</value>
+    </labels>
+    <labels>
+        <fullName>Find_Matching_Templates</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Find Matching Templates</shortDescription>
+        <value>Find Matching Templates</value>
+    </labels>
+    <labels>
+        <fullName>FirstPageLabel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FirstPageLabel</shortDescription>
+        <value>First Page</value>
+    </labels>
+    <labels>
+        <fullName>ForLabel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ForLabel</shortDescription>
+        <value>for</value>
+    </labels>
+    <labels>
+        <fullName>In_which_Category_is_the_Risk</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>In which Category is the Risk?</shortDescription>
+        <value>In which Category is the Risk?</value>
+    </labels>
+    <labels>
+        <fullName>Include_Causes</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Include Causes</shortDescription>
+        <value>Include Causes</value>
+    </labels>
+    <labels>
+        <fullName>Include_Controls</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Include Controls</shortDescription>
+        <value>Include Controls</value>
+    </labels>
+    <labels>
+        <fullName>Include_KRIs</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Include KRIs</shortDescription>
+        <value>Include KRIs</value>
+    </labels>
+    <labels>
+        <fullName>Invalid_Object</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Invalid_Object</shortDescription>
+        <value>Invalid Object passed to MetricConnectorHelper</value>
+    </labels>
+    <labels>
+        <fullName>LastPageLabel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LastPageLabel</shortDescription>
+        <value>Last Page</value>
+    </labels>
+    <labels>
+        <fullName>Matching_Risk_Templates</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Matching Risk Templates</shortDescription>
+        <value>Matching Risk Templates</value>
+    </labels>
+    <labels>
+        <fullName>Matching_Templates</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Matching Templates</shortDescription>
+        <value>Matching Templates</value>
+    </labels>
+    <labels>
+        <fullName>New_Risk</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>New Risk</shortDescription>
+        <value>New Risk</value>
+    </labels>
+    <labels>
+        <fullName>New_Risk_From_Template</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>New Risk From Template</shortDescription>
+        <value>New Risk From Template</value>
+    </labels>
+    <labels>
+        <fullName>NextLabel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NextLabel</shortDescription>
+        <value>Next</value>
+    </labels>
+    <labels>
+        <fullName>NoLabel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NoLabel</shortDescription>
+        <value>No</value>
+    </labels>
+    <labels>
+        <fullName>OfLabel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>OfLabel</shortDescription>
+        <value>of</value>
+    </labels>
+    <labels>
+        <fullName>PageLabel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PageLabel</shortDescription>
+        <value>Page</value>
+    </labels>
+    <labels>
+        <fullName>PreviousLabel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PreviousLabel</shortDescription>
+        <value>Previous</value>
+    </labels>
+    <labels>
+        <fullName>RM_Connector_Error_Business_Unit_Access</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RM Connector Error Business Unit Access</shortDescription>
+        <value>Business Unit is not accessible. Please contact your administrator.</value>
+    </labels>
+    <labels>
+        <fullName>RM_Connector_Risk_Template_error_no_templates_found</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RM Connector Risk Template error no templates found</shortDescription>
+        <value>No matching Risk Templates found</value>
+    </labels>
+    <labels>
+        <fullName>RefreshLabel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RefreshLabel</shortDescription>
+        <value>Refresh</value>
+    </labels>
+    <labels>
+        <fullName>SaveLabel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SaveLabel</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>SelectLabel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SelectLabel</shortDescription>
+        <value>Select</value>
+    </labels>
+    <labels>
+        <fullName>ToDisplay</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ToDisplay</shortDescription>
+        <value>to display.</value>
+    </labels>
+    <labels>
+        <fullName>WeightingLabel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>WeightingLabel</shortDescription>
+        <value>Weighting</value>
+    </labels>
+</CustomLabels>

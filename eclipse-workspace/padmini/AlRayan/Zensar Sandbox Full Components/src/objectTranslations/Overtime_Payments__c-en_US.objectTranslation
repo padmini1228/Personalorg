@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Overtime/Payments</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Overtime/Payments</value>
+    </caseValues>
+    <fields>
+        <label><!-- Bonus amount --></label>
+        <name>Bonus_amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incentive --></label>
+        <name>Incentive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month to pay --></label>
+        <name>Month_to_pay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Staff Member --></label>
+        <name>Staff_Member__c</name>
+        <relationshipLabel><!-- Overtime/Payments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Standby amount --></label>
+        <name>Standby_amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Awaiting approval</masterLabel>
+            <translation><!-- Awaiting approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sundays &amp; Bank Holidays (x2) --></label>
+        <name>Sundays_Bank_Holidays__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total additional hours (x1) --></label>
+        <name>Total_Hours_part_time_only__c</name>
+    </fields>
+    <fields>
+        <label><!-- Weekends &amp; Saturdays (1.5) --></label>
+        <name>Weekends_Saturdays__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

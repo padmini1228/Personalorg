@@ -1,0 +1,84 @@
+<apex:page showHeader="true" sidebar="false">
+
+<!-- .css styles -->
+<style>
+.heading{
+    background-color: #366cb4;
+    border-top: 1px solid #2377bd;
+    border-right: 1px solid #2377bd;
+    border-left: 1px solid #2377bd;
+    height: 85px;
+
+}
+.sub-section-left {
+    float: left;
+    width: 450px;
+    padding-right:15px;
+}
+
+.sub-section-right {
+    padding: 5px;
+    float: left;
+    border: 1px solid #2377bd;
+}
+h1{
+    font-size:1.2em;
+    font-weight:550;
+    color: #2377BD;
+}
+h2{
+    font-size:1em;
+    font-weight:550;
+}
+h3{
+    font-size:1em;
+    font-weight:500;
+}
+a{
+    color: #2377BD;
+}
+.content{
+    border: 1px solid #2377bd;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom:15px;
+}
+.clear{
+    clear: both;
+}
+</style>
+<apex:form >
+<div class="heading">
+    <apex:image value="{!$Resource.Risk__AboutBanner}" />
+</div>
+
+<div class="content">
+    <div class="sub-section-left">
+
+        <h1>Xactium Risk Management Solutions</h1><br/><br/>
+
+        <p>Xactium's solutions provide easy to use, collaborative, web-based applications for managing your critical risk management activities. </p>
+        <p>For more information, please visit: <apex:outputLink value="http://www.xactium.com">www.xactium.com</apex:outputLink></p>
+        <br/><br/>
+        <p>Copyright &#60; Xactium Limited, 2009-<apex:outputText value="{0, date,yyyy}"><apex:param value="{!NOW()}"/></apex:outputText></p>
+        <p>For support, please contact your local administrator.</p>
+
+        <br/>
+
+    </div>
+
+    <div class="clear"></div>
+</div>
+<div style="float:left;">
+    <apex:outputLink value="http://www.xactium.com">
+        <apex:image value="{!$Resource.Risk__XactiumLogo}"  />
+    </apex:outputLink>
+</div>
+<div style="float:right;">
+    <!-- logo here if required -->
+</div>
+<div class="clear"></div>
+</apex:form>
+</apex:page>

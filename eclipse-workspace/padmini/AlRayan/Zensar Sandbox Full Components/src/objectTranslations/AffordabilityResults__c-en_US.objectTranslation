@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>AffordabilityResults</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>AffordabilityResults</value>
+    </caseValues>
+    <fields>
+        <label><!-- AdditionalRentalIncome --></label>
+        <name>AdditionalRentalIncome__c</name>
+    </fields>
+    <fields>
+        <label><!-- AffordabilityNetMonthlyIncome --></label>
+        <name>AffordabilityNetMonthlyIncome__c</name>
+    </fields>
+    <fields>
+        <label><!-- AffordabilityPercentage --></label>
+        <name>AffordabilityPercentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- AffordabilityResult --></label>
+        <name>AffordabilityResult__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- BudgetPlannerResult --></label>
+        <name>BudgetPlannerResult__c</name>
+        <picklistValues>
+            <masterLabel>Deficit</masterLabel>
+            <translation><!-- Deficit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surplus</masterLabel>
+            <translation><!-- Surplus --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- BudgetPlannerSurplusOrDeficit --></label>
+        <name>BudgetPlannerSurplusOrDeficit__c</name>
+    </fields>
+    <fields>
+        <label><!-- BudgetPlannerTotal --></label>
+        <name>BudgetPlannerTotal__c</name>
+    </fields>
+    <fields>
+        <label><!-- DependantsApplicant1 --></label>
+        <name>DependantsApplicant1__c</name>
+    </fields>
+    <fields>
+        <label><!-- DependantsApplicant2 --></label>
+        <name>DependantsApplicant2__c</name>
+    </fields>
+    <fields>
+        <label><!-- DependantsApplicant3 --></label>
+        <name>DependantsApplicant3__c</name>
+    </fields>
+    <fields>
+        <label><!-- DependantsApplicant4 --></label>
+        <name>DependantsApplicant4__c</name>
+    </fields>
+    <fields>
+        <label><!-- FTI --></label>
+        <name>FTI__c</name>
+    </fields>
+    <fields>
+        <label><!-- FinanceRequired --></label>
+        <name>FinanceRequired__c</name>
+    </fields>
+    <fields>
+        <label><!-- GrossAnnualIncomeApplicant1 --></label>
+        <name>GrossAnnualIncomeApplicant1__c</name>
+    </fields>
+    <fields>
+        <label><!-- GrossAnnualIncomeApplicant2 --></label>
+        <name>GrossAnnualIncomeApplicant2__c</name>
+    </fields>
+    <fields>
+        <label><!-- GrossAnnualIncomeApplicant3 --></label>
+        <name>GrossAnnualIncomeApplicant3__c</name>
+    </fields>
+    <fields>
+        <label><!-- GrossAnnualIncomeApplicant4 --></label>
+        <name>GrossAnnualIncomeApplicant4__c</name>
+    </fields>
+    <fields>
+        <help><!-- Income multiplier calculated by 4.5 gross income of primary applicant --></help>
+        <label><!-- IncomeMultiplier4.5Total --></label>
+        <name>IncomeMultiplier4_5Total__c</name>
+    </fields>
+    <fields>
+        <help><!-- Income multiplier 5 primary and 1 secondary --></help>
+        <label><!-- IncomeMultiplier5+1 --></label>
+        <name>IncomeMultiplier5_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- IncomeMultiplierHigherAmount --></label>
+        <name>IncomeMultiplierHigherAmount__c</name>
+        <picklistValues>
+            <masterLabel>4.5 Primary Applicant</masterLabel>
+            <translation><!-- 4.5 Primary Applicant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 Primary plus 1 Joint</masterLabel>
+            <translation><!-- 5 Primary plus 1 Joint --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IncomeMultiplierResult --></label>
+        <name>IncomeMultiplierResult__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- NetMonthlyIncomeApplicant1 --></label>
+        <name>NetMonthlyIncomeApplicant1__c</name>
+    </fields>
+    <fields>
+        <label><!-- NetMonthlyIncomeApplicant2 --></label>
+        <name>NetMonthlyIncomeApplicant2__c</name>
+    </fields>
+    <fields>
+        <label><!-- NetMonthlyIncomeApplicant3 --></label>
+        <name>NetMonthlyIncomeApplicant3__c</name>
+    </fields>
+    <fields>
+        <label><!-- NetMonthlyIncomeApplicant4 --></label>
+        <name>NetMonthlyIncomeApplicant4__c</name>
+    </fields>
+    <fields>
+        <label><!-- NumberOfApplicants --></label>
+        <name>NumberOfApplicants__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- AffordabilityResults --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Purchase Price/Market Value --></label>
+        <name>Purchase_Price_Market_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Result used for assessment --></label>
+        <name>Result_used_for_assessment__c</name>
+    </fields>
+    <fields>
+        <label><!-- StressedHPPRepaymentUsingRevertRate --></label>
+        <name>StressedHPPRepaymentUsingRevertRate__c</name>
+    </fields>
+    <fields>
+        <help><!-- HPP Monthly repayment stressed at 2% --></help>
+        <label><!-- StressedHPPRepayment --></label>
+        <name>StressedHPPRepayment__c</name>
+    </fields>
+    <fields>
+        <label><!-- TermOfFinance --></label>
+        <name>TermOfFinance__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalAfterSchoolReligiousInstruction --></label>
+        <name>TotalAfterSchoolReligiousInstruction__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalBirthdaysCelebrationsPresents --></label>
+        <name>TotalBirthdaysCelebrationsPresents__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalBreakdownService --></label>
+        <name>TotalBreakdownService__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalBuildingInsurance --></label>
+        <name>TotalBuildingInsurance__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalCarInsurance --></label>
+        <name>TotalCarInsurance__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalCarServicing --></label>
+        <name>TotalCarServicing__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalCarTax --></label>
+        <name>TotalCarTax__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalCharitableDonations --></label>
+        <name>TotalCharitableDonations__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalClothing --></label>
+        <name>TotalClothing__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalCommitments --></label>
+        <name>TotalCommitments__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalContentsInsurance --></label>
+        <name>TotalContentsInsurance__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalCouncilTax --></label>
+        <name>TotalCouncilTax__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalElectricity --></label>
+        <name>TotalElectricity__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalFood --></label>
+        <name>TotalFood__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalGaming --></label>
+        <name>TotalGaming__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalGas --></label>
+        <name>TotalGas__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalGoingOut --></label>
+        <name>TotalGoingOut__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Gross Income --></label>
+        <name>TotalGrossIncome__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalGymHealthClub --></label>
+        <name>TotalGymHealthClub__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalHealthInsurance --></label>
+        <name>TotalHealthInsurance__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalHolidays --></label>
+        <name>TotalHolidays__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalHomeTelephone --></label>
+        <name>TotalHomeTelephone__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalIncomeProtection --></label>
+        <name>TotalIncomeProtection__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalInternet --></label>
+        <name>TotalInternet__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalLifeInsurance --></label>
+        <name>TotalLifeInsurance__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalMobilePhone --></label>
+        <name>TotalMobilePhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalMonthlyDebtRepayment --></label>
+        <name>TotalMonthlyDebtRepayment__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalNetMonthlyIncome --></label>
+        <name>TotalNetMonthlyIncome__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalNumberOfDependants --></label>
+        <name>TotalNumberOfDependants__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalOtherCommitments --></label>
+        <name>TotalOtherCommitments__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalPetExpenses --></label>
+        <name>TotalPetExpenses__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalPetrolDiesel --></label>
+        <name>TotalPetrolDiesel__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalRegularInvestments --></label>
+        <name>TotalRegularInvestments__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalSchoolFees --></label>
+        <name>TotalSchoolFees__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalSkyCableOther --></label>
+        <name>TotalSkyCableOther__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalSportingTickets --></label>
+        <name>TotalSportingTickets__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalSubscriptions --></label>
+        <name>TotalSubscriptions__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalTVLicence --></label>
+        <name>TotalTVLicence__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalTravelExpenses --></label>
+        <name>TotalTravelExpenses__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalTravelInsurance --></label>
+        <name>TotalTravelInsurance__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalWater --></label>
+        <name>TotalWater__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Gross Income --></label>
+        <name>Total_Gross_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- 3% Affordability --></label>
+        <name>X3_Affordability__c</name>
+    </fields>
+    <layouts>
+        <layout>AffordabilityResults Layout</layout>
+        <sections>
+            <label><!-- Affordability --></label>
+            <section>Affordability</section>
+        </sections>
+        <sections>
+            <label><!-- Applicant Information --></label>
+            <section>Applicant Information</section>
+        </sections>
+        <sections>
+            <label><!-- Budget Planner --></label>
+            <section>Budget Planner</section>
+        </sections>
+        <sections>
+            <label><!-- Budget Planner Figures --></label>
+            <section>Budget Planner Figures</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Income Multiplier --></label>
+            <section>Income Multiplier</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

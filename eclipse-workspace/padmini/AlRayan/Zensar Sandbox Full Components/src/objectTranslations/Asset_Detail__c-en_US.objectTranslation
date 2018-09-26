@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Asset Detail</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Asset Details</value>
+    </caseValues>
+    <fields>
+        <label><!-- Asset Tag --></label>
+        <name>Asset_Tag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned to --></label>
+        <name>Assigned_to__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brand --></label>
+        <name>Brand__c</name>
+        <picklistValues>
+            <masterLabel>Acer</masterLabel>
+            <translation><!-- Acer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Apple</masterLabel>
+            <translation><!-- Apple --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asus</masterLabel>
+            <translation><!-- Asus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brother</masterLabel>
+            <translation><!-- Brother --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canon</masterLabel>
+            <translation><!-- Canon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dell</masterLabel>
+            <translation><!-- Dell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Epson</masterLabel>
+            <translation><!-- Epson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gateway</masterLabel>
+            <translation><!-- Gateway --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HP</masterLabel>
+            <translation><!-- HP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hewlett-Packard</masterLabel>
+            <translation><!-- Hewlett-Packard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Konica Minolta</masterLabel>
+            <translation><!-- Konica Minolta --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kyocera</masterLabel>
+            <translation><!-- Kyocera --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LG</masterLabel>
+            <translation><!-- LG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lenovo</masterLabel>
+            <translation><!-- Lenovo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lexmark</masterLabel>
+            <translation><!-- Lexmark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Microsoft</masterLabel>
+            <translation><!-- Microsoft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OKI</masterLabel>
+            <translation><!-- OKI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Olivetti</masterLabel>
+            <translation><!-- Olivetti --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Packard Bell</masterLabel>
+            <translation><!-- Packard Bell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ricoh</masterLabel>
+            <translation><!-- Ricoh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Samsung</masterLabel>
+            <translation><!-- Samsung --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Samsung Electronics</masterLabel>
+            <translation><!-- Samsung Electronics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TVS Electronics</masterLabel>
+            <translation><!-- TVS Electronics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Xerox</masterLabel>
+            <translation><!-- Xerox --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Computer Name --></label>
+        <name>Computer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost including VAT --></label>
+        <name>Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost including VAT --></label>
+        <name>Cost_including_VAT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Type --></label>
+        <name>Device_Type__c</name>
+        <picklistValues>
+            <masterLabel>AiO</masterLabel>
+            <translation><!-- AiO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Desk Phone</masterLabel>
+            <translation><!-- Desk Phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Desktop</masterLabel>
+            <translation><!-- Desktop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dock - PC</masterLabel>
+            <translation><!-- Dock - PC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dock - Surface</masterLabel>
+            <translation><!-- Dock - Surface --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Laptop</masterLabel>
+            <translation><!-- Laptop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MFD</masterLabel>
+            <translation><!-- MFD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MFP</masterLabel>
+            <translation><!-- MFP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monitor</masterLabel>
+            <translation><!-- Monitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Projector</masterLabel>
+            <translation><!-- Projector --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surface</masterLabel>
+            <translation><!-- Surface --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TV</masterLabel>
+            <translation><!-- TV --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IT Component Specification --></label>
+        <name>IT_Component_Specification__c</name>
+        <relationshipLabel><!-- Asset Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Installation Date --></label>
+        <name>Installation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Installed By --></label>
+        <name>Installed_By__c</name>
+        <relationshipLabel><!-- Asset Details (Installed By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+        <picklistValues>
+            <masterLabel>Contact Centre</masterLabel>
+            <translation><!-- Contact Centre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>East Ham</masterLabel>
+            <translation><!-- East Ham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edgware Road</masterLabel>
+            <translation><!-- Edgware Road --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP Team</masterLabel>
+            <translation><!-- HPP Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Head Office</masterLabel>
+            <translation><!-- Head Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Knightsbridge</masterLabel>
+            <translation><!-- Knightsbridge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leicester</masterLabel>
+            <translation><!-- Leicester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manchester</masterLabel>
+            <translation><!-- Manchester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier Banking</masterLabel>
+            <translation><!-- Premier Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Heath</masterLabel>
+            <translation><!-- Small Heath --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southall</masterLabel>
+            <translation><!-- Southall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Whitechapel</masterLabel>
+            <translation><!-- Whitechapel --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Manufacturer --></label>
+        <name>Manufacturer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Model --></label>
+        <name>Model__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operating System --></label>
+        <name>Operating_System__c</name>
+        <picklistValues>
+            <masterLabel>Win 10</masterLabel>
+            <translation><!-- Win 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Win 7</masterLabel>
+            <translation><!-- Win 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Win 8</masterLabel>
+            <translation><!-- Win 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Win 8.1</masterLabel>
+            <translation><!-- Win 8.1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>XP</masterLabel>
+            <translation><!-- XP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Purchase Date --></label>
+        <name>Purchase_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please ensure a copy of the PO is uploaded via notes and attachments --></help>
+        <label><!-- Purchase Order Number --></label>
+        <name>Purchase_Order_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Serial Number --></label>
+        <name>Serial_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Supplier Discount --></label>
+        <name>Supplier_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Supplier --></label>
+        <name>Supplier__c</name>
+        <picklistValues>
+            <masterLabel>Keltec</masterLabel>
+            <translation><!-- Keltec --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kelway</masterLabel>
+            <translation><!-- Kelway --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Misco</masterLabel>
+            <translation><!-- Misco --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Update Date --></label>
+        <name>Update_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Asset Details (User) --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Asset Detail Layout</layout>
+        <sections>
+            <label><!-- Asset Information --></label>
+            <section>Asset Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Installation Information --></label>
+            <section>Installation Information</section>
+        </sections>
+        <sections>
+            <label><!-- Purchase Information --></label>
+            <section>Purchase Information</section>
+        </sections>
+        <sections>
+            <label><!-- Review --></label>
+            <section>Review</section>
+        </sections>
+        <sections>
+            <label><!-- User and Location --></label>
+            <section>User and Location</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

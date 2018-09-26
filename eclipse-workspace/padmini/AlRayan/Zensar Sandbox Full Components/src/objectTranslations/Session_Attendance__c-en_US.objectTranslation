@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Session Attendance</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Session Attendances</value>
+    </caseValues>
+    <fields>
+        <help><!-- Tick if the staff member has attended the session, leave unticked if they did not --></help>
+        <label><!-- Attended --></label>
+        <name>Attended__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Wednesday Session --></label>
+        <name>Branch_Wednesday_Session__c</name>
+        <relationshipLabel><!-- Session Attendances --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Branch --></label>
+        <name>Branch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Staff member --></label>
+        <name>Staff_member__c</name>
+        <relationshipLabel><!-- Session Attendances --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Session Attendance Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

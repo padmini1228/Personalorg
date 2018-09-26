@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email for case comments</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>Case Comments Email</name>
+    <style>freeForm</style>
+    <subject>Your IT Service Desk Case has been Updated</subject>
+    <textOnly>Dear {!Case.Contact},
+
+
+I can confirm that your case number {!Case.CaseNumber} has been updated. Please review the case to see the update.
+
+
+Case subject: {!Case.Subject}
+
+Link to case: {!Case.Link}
+
+Case currently with: {!Case.OwnerFullName}</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,11 @@
+To whom it may concern,
+
+A standard cash order request has been submitted by {!Cash_Order__c.Branch__c} on {!Cash_Order__c.Order_Date__c}
+
+Could you please review and approve accordingly.
+
+{!Cash_Order__c.Link}
+
+Yours sincerely, 
+
+Al Rayan Bank plc.

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>credit.admin@islamic-bank.com</email>
+    <name>Real Estate Admin Team</name>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>HPP_MI__c</sobjectType>
+    </queueSobject>
+</Queue>

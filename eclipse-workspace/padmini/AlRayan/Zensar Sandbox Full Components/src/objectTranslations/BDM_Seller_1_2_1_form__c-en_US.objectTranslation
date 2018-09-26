@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>BDM/Seller 1-2-1 form</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>BDM/HPP Seller 1-2-1 Form</value>
+    </caseValues>
+    <fields>
+        <help><!-- Please enter all agreed actions from your preious 1-2-1 --></help>
+        <label><!-- Actions from Previous 1-2-1 --></label>
+        <name>Actions_from_Previous_1_2_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreed Actions development --></label>
+        <name>Agreed_Actions_development__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Apps Written % to Target --></label>
+        <name>BTL_Apps_Written_to_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Drawdown % to Target --></label>
+        <name>BTL_Drawdown_to_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Sanctioned % to Target --></label>
+        <name>BTL_Sanctioned_to_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Submitted % to Target --></label>
+        <name>BTL_Submitted_to_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Value AIP&apos;s --></label>
+        <name>BTL_Value_AIP_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Value Application Drawdowns Target --></label>
+        <name>BTL_Value_Application_Drawdowns_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Value Application Drawdowns --></label>
+        <name>BTL_Value_Application_Drawdowns__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Value Applications Sanctioned target --></label>
+        <name>BTL_Value_Applications_Sanctioned_target__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Value Applications Submitted Target --></label>
+        <name>BTL_Value_Applications_Submitted_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Value Applications Submitted --></label>
+        <name>BTL_Value_Applications_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Value Applications Written Target --></label>
+        <name>BTL_Value_Applications_Written_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Value Applications Written --></label>
+        <name>BTL_Value_Applications_Written__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Value Opps (Branch/Agency) --></label>
+        <name>BTL_Value_Opps_Branch_Agency__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Value Opps (Contact Centre) --></label>
+        <name>BTL_Value_Opps_Contact_Centre__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Value Opps (Self generation) --></label>
+        <name>BTL_Value_Opps_Self_generation__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Value Opps (Web leads) --></label>
+        <name>BTL_Value_Opps_Web_leads__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Value Opps (intermediary) --></label>
+        <name>BTL_Value_Opps_intermediary__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Volume AIP&apos;s Target --></label>
+        <name>BTL_Volume_AIP_s_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Volume AIP&apos;s --></label>
+        <name>BTL_Volume_AIP_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Volume Applications Sanctioned --></label>
+        <name>BTL_Volume_Applications_Sanctioned__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Volume Applications Submitted --></label>
+        <name>BTL_Volume_Applications_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Volume Applications Written --></label>
+        <name>BTL_Volume_Applications_Written__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Volume Opps (Branch/Agency) --></label>
+        <name>BTL_Volume_Opps_Branch_Agency__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Volume Opps (Contact Centre) --></label>
+        <name>BTL_Volume_Opps_Contact_Centre__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Volume Opps (Self generation) --></label>
+        <name>BTL_Volume_Opps_Self_generation__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Volume Opps (Web leads) --></label>
+        <name>BTL_Volume_Opps_Web_leads__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL Volume Opps (intermediary) --></label>
+        <name>BTL_Volume_Opps_intermediary__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTL volume Application Drawdowns --></label>
+        <name>BTL_volume_Application_Drawdowns__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTl Value Applications Sanctioned --></label>
+        <name>BTl_Value_Applications_Sanctioned__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF Drawdown % to Target --></label>
+        <name>CPF_Drawdown_to_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF Sanctioned % to Target --></label>
+        <name>CPF_Sanctioned_to_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF Submitted % to Target --></label>
+        <name>CPF_Submitted_to_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF Value AIP&apos;s --></label>
+        <name>CPF_Value_AIP_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF Value Application Drawdowns Target --></label>
+        <name>CPF_Value_Application_Drawdowns_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF Value Application Drawdowns --></label>
+        <name>CPF_Value_Application_Drawdowns__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF Value Applications Sanctioned Target --></label>
+        <name>CPF_Value_Applications_Sanctioned_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF Value Applications Sanctioned --></label>
+        <name>CPF_Value_Applications_Sanctioned__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF Value Applications Submitted Target --></label>
+        <name>CPF_Value_Applications_Submitted_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF Value Applications Submitted --></label>
+        <name>CPF_Value_Applications_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF Value Applications Written --></label>
+        <name>CPF_Value_Applications_Written__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF Value Applications Written target --></label>
+        <name>CPF_Value_Applications_Written_target__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF Value Opps (Branch/Agency) --></label>
+        <name>CPF_Value_Opps_Branch_Agency__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF Value Opps (Contact Centre) --></label>
+        <name>CPF_Value_Opps_Contact_Centre__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF Value Opps (Intermediary) --></label>
+        <name>CPF_Value_Opps_Intermediary__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF Value Opps (Self generation) --></label>
+        <name>CPF_Value_Opps_Self_generation__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF Value Opps (Web leads) --></label>
+        <name>CPF_Value_Opps_Web_leads__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF Volume AIP&apos;s --></label>
+        <name>CPF_Volume_AIP_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF Volume Aip&apos;s Target --></label>
+        <name>CPF_Volume_Aip_s_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF Volume Applications Sanctioned --></label>
+        <name>CPF_Volume_Applications_Sanctioned__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF Volume Applications Written --></label>
+        <name>CPF_Volume_Applications_Written__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF Volume Opps (Contact Centre) --></label>
+        <name>CPF_Volume_Opps_Contact_Centre__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF Volume Opps (Intermediary) --></label>
+        <name>CPF_Volume_Opps_Intermediary__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF Volume Opps (Self generation) --></label>
+        <name>CPF_Volume_Opps_Self_generation__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF Volume Opps (Web leads) --></label>
+        <name>CPF_Volume_Opps_Web_leads__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF Volume application Drawdowns --></label>
+        <name>CPF_Volume_application_Drawdowns__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF Volume of Applications Submitted --></label>
+        <name>CPF_Volume_of_Applications_Submitted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the number of CPF opportunities provided by the branch /agency --></help>
+        <label><!-- CPF Volume opps (Branch/agency) --></label>
+        <name>CPF_Volume_opps_Branch_agency__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPF Written % to Target --></label>
+        <name>CPF_Written_to_Target__c</name>
+    </fields>
+    <fields>
+        <help><!-- Commentary on compliance checks for the month --></help>
+        <label><!-- Compliance Checks --></label>
+        <name>Compliance_Checks__c</name>
+    </fields>
+    <fields>
+        <help><!-- please enter the Compliance rating from compliance observation for the month --></help>
+        <label><!-- Compliance rating for Month --></label>
+        <name>Compliance_rating_for_Month__c</name>
+        <picklistValues>
+            <masterLabel>Compliant</masterLabel>
+            <translation><!-- Compliant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Compliant</masterLabel>
+            <translation><!-- Non Compliant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Date 1-2-1 conducted --></label>
+        <name>Date_1_2_1_conducted__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP AIP Target --></label>
+        <name>HPP_AIP_to_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Applications % to target --></label>
+        <name>HPP_Applications_to_target__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Drawdown % to Target --></label>
+        <name>HPP_Drawdown_to_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Sanctioned % to Target --></label>
+        <name>HPP_Sanctioned_to_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Submitted % to Target --></label>
+        <name>HPP_Submitted_to_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Value AIP&apos;s --></label>
+        <name>HPP_Value_AIP_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Value Application Drawdowns --></label>
+        <name>HPP_Value_Application_Drawdowns__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Value Application Drwadowns Target --></label>
+        <name>HPP_Value_Application_Drwadowns_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Value Applications Sanctioned Target --></label>
+        <name>HPP_Value_Applications_Sanctioned_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Value Applications Sanctioned --></label>
+        <name>HPP_Value_Applications_Sanctioned__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Value Applications Submitted Target --></label>
+        <name>HPP_Value_Applications_Submitted_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Value Applications Submitted --></label>
+        <name>HPP_Value_Applications_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Value Applications Written Target --></label>
+        <name>HPP_Value_Applications_Written_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Value Applications Written --></label>
+        <name>HPP_Value_Applications_Written__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Value Opps (Branch/Agency) --></label>
+        <name>HPP_Value_Opps_Branch_Agency__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Value Opps (Contact Centre) --></label>
+        <name>HPP_Value_Opps_Contact_Centre__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Value Opps (Intermediary) --></label>
+        <name>HPP_Value_Opps_Intermediary__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Value Opps (Self generation) --></label>
+        <name>HPP_Value_Opps_Self_generation__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Value Opps (Web Leads) --></label>
+        <name>HPP_Value_Opps_Web_Leads__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Volume AIP&apos;s --></label>
+        <name>HPP_Volume_AIP_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Volume Application Drawdowns --></label>
+        <name>HPP_Volume_Application_Drawdowns__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Volume Applications Submitted --></label>
+        <name>HPP_Volume_Applications_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Volume Applications Written --></label>
+        <name>HPP_Volume_Applications_Written__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the volume of HPP opportunites received from the Branch/Agency --></help>
+        <label><!-- HPP Volume Opps (Branch/Agency) --></label>
+        <name>HPP_Volume_Opps_Branch_Agency__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Volume Opps (Contact Centre) --></label>
+        <name>HPP_Volume_Opps_Contact_Centre__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Volume Opps (Intermediary) --></label>
+        <name>HPP_Volume_Opps_Intermediary__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Volume Opps (Self generation) --></label>
+        <name>HPP_Volume_Opps_Self_generation__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPP Volume Opps (Web leads) --></label>
+        <name>HPP_Volume_Opps_Web_leads__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hpp Volume Applications Sanctioned --></label>
+        <name>Hpp_Volume_Applications_Sanctioned__c</name>
+    </fields>
+    <fields>
+        <label><!-- LTS Referrals Value Opps --></label>
+        <name>LTS_Referrals_Value_Opps__c</name>
+    </fields>
+    <fields>
+        <label><!-- LTS Referrals Volume Opps --></label>
+        <name>LTS_Referrals_Volume_Opps__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line Manager Name --></label>
+        <name>Line_Manager_Name__c</name>
+        <relationshipLabel><!-- BDM/HPP Seller 1-2-1 Form --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Managers Comments on Review Period --></label>
+        <name>Managers_Comments_on_Review_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. Days Sickness --></label>
+        <name>No_Days_Sickness__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. Occasions Lateness --></label>
+        <name>No_Occasions_Lateness__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. Upheld Complaints (Individual) --></label>
+        <name>No_Upheld_Complaints_Individual__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Complaints against individual --></label>
+        <name>No_of_Complaints_against_individual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Performance Month reviewed --></label>
+        <name>Performance_Month_reviewed__c</name>
+        <picklistValues>
+            <masterLabel>April</masterLabel>
+            <translation><!-- April --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>April 2016</masterLabel>
+            <translation><!-- April 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>August</masterLabel>
+            <translation><!-- August --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>August 2016</masterLabel>
+            <translation><!-- August 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>December</masterLabel>
+            <translation><!-- December --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>December 2016</masterLabel>
+            <translation><!-- December 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>February</masterLabel>
+            <translation><!-- February --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>February 2016</masterLabel>
+            <translation><!-- February 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>January</masterLabel>
+            <translation><!-- January --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>January 2016</masterLabel>
+            <translation><!-- January 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>July</masterLabel>
+            <translation><!-- July --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>July 2016</masterLabel>
+            <translation><!-- July 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>June</masterLabel>
+            <translation><!-- June --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>June 2016</masterLabel>
+            <translation><!-- June 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>March</masterLabel>
+            <translation><!-- March --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>March 2016</masterLabel>
+            <translation><!-- March 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>May</masterLabel>
+            <translation><!-- May --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>May 2016</masterLabel>
+            <translation><!-- May 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>November</masterLabel>
+            <translation><!-- November --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>November 2016</masterLabel>
+            <translation><!-- November 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>October</masterLabel>
+            <translation><!-- October --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>October 2016</masterLabel>
+            <translation><!-- October 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>September</masterLabel>
+            <translation><!-- September --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>September 2016</masterLabel>
+            <translation><!-- September 2016 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Person --></label>
+        <name>Person__c</name>
+        <relationshipLabel><!-- BDM/HPP Seller 1-2-1 Form --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Regulatory Training Result --></label>
+        <name>Regulatory_Training_Result__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please enter details of any regulated training completed this month --></help>
+        <label><!-- Regulatory Training completed --></label>
+        <name>Regulatory_Training_completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Regulatory training Completion Date --></label>
+        <name>Regulatory_training_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Specific Development/Training --></label>
+        <name>Specific_Development_Training__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select your role --></help>
+        <label><!-- Staff Members Role --></label>
+        <name>Staff_Members_Role__c</name>
+        <picklistValues>
+            <masterLabel>BDM</masterLabel>
+            <translation><!-- BDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP Specialist</masterLabel>
+            <translation><!-- HPP Specialist --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Staff Members comments on review period --></label>
+        <name>Staff_Members_comments_on_review_period__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter details of what could have gone better during the review period --></help>
+        <label><!-- What Could have gone better --></label>
+        <name>What_Could_have_gone_better__c</name>
+    </fields>
+    <fields>
+        <label><!-- What went well during the review period --></label>
+        <name>What_went_well_during_the_review_period__c</name>
+    </fields>
+    <fields>
+        <label><!-- 1-2-1 Form approved --></label>
+        <name>X1_2_1_Form_approved__c</name>
+    </fields>
+    <layouts>
+        <layout>BDM/Seller 1-2-1 form Layout</layout>
+        <sections>
+            <label><!-- Achievements (What&apos;s gone Well during review Period) --></label>
+            <section>Achievements (What&apos;s gone Well during review Period)</section>
+        </sections>
+        <sections>
+            <label><!-- Actions from previous 1-2-1 --></label>
+            <section>Actions from previous 1-2-1</section>
+        </sections>
+        <sections>
+            <label><!-- Agreed Actions/Development for next review period --></label>
+            <section>Agreed Actions/Development for next review period</section>
+        </sections>
+        <sections>
+            <label><!-- BDM/HPP Specialist 1-2-1 Summary information --></label>
+            <section>BDM/HPP Specialist 1-2-1 Summary information</section>
+        </sections>
+        <sections>
+            <label><!-- BTL Drawdown --></label>
+            <section>BTL Drawdown</section>
+        </sections>
+        <sections>
+            <label><!-- BTL Sales Performance --></label>
+            <section>BTL Sales Performance</section>
+        </sections>
+        <sections>
+            <label><!-- BTL Sanctioned --></label>
+            <section>BTL Sanctioned</section>
+        </sections>
+        <sections>
+            <label><!-- BTL Submitted --></label>
+            <section>BTL Submitted</section>
+        </sections>
+        <sections>
+            <label><!-- BTL Written --></label>
+            <section>BTL Written</section>
+        </sections>
+        <sections>
+            <label><!-- CPF Drawdown --></label>
+            <section>CPF Drawdown</section>
+        </sections>
+        <sections>
+            <label><!-- CPF Sales Performance --></label>
+            <section>CPF Sales Performance</section>
+        </sections>
+        <sections>
+            <label><!-- CPF Sanctioned --></label>
+            <section>CPF Sanctioned</section>
+        </sections>
+        <sections>
+            <label><!-- CPF Submitted --></label>
+            <section>CPF Submitted</section>
+        </sections>
+        <sections>
+            <label><!-- CPF Written --></label>
+            <section>CPF Written</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Development Areas (What could have gone better during review period) --></label>
+            <section>Development Areas (What could have gone better during review period)</section>
+        </sections>
+        <sections>
+            <label><!-- HPP Drawdown --></label>
+            <section>HPP Drawdown</section>
+        </sections>
+        <sections>
+            <label><!-- HPP Sales Performance --></label>
+            <section>HPP Sales Performance</section>
+        </sections>
+        <sections>
+            <label><!-- HPP Sanctioned --></label>
+            <section>HPP Sanctioned</section>
+        </sections>
+        <sections>
+            <label><!-- HPP Submitted --></label>
+            <section>HPP Submitted</section>
+        </sections>
+        <sections>
+            <label><!-- HPP Written --></label>
+            <section>HPP Written</section>
+        </sections>
+        <sections>
+            <label><!-- LTS Referrals Performance --></label>
+            <section>LTS Referrals Performance</section>
+        </sections>
+        <sections>
+            <label><!-- Line Managers Comments --></label>
+            <section>Line Managers Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Risk &amp; Complaince --></label>
+            <section>Risk &amp; Complaince</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Opportunity Performance --></label>
+            <section>Sales Opportunity Performance</section>
+        </sections>
+        <sections>
+            <label><!-- Staff Members Comments --></label>
+            <section>Staff Members Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Training &amp; Development --></label>
+            <section>Training &amp; Development</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

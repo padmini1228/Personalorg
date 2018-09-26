@@ -1,0 +1,1383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Customer Service Observation Form</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Customer Service Observation Forms</value>
+    </caseValues>
+    <fields>
+        <help><!-- A follow up call has been booked in the diary to confirm receipt with customer. --></help>
+        <label><!-- ANC follow up arranged --></label>
+        <name>ANC_follow_up_arranged__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the consultant provide accurate process and product information to the customer and was this done in a timely and friendly manner in response to the customer request --></help>
+        <label><!-- Accurate &amp; not misleading product info --></label>
+        <name>Accurate_not_misleading_product_info__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Do case, call wrap etc. match the customers call request and is the request accurately recorded. Has the agent identified through questioning the correct CAMPAIGN CODE and entered this correctly --></help>
+        <label><!-- Accurately Update Systems --></label>
+        <name>Accurately_Update_Systems__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the consultant react positively to customer buying signals by re affirming how the product would be beneficial to the customers needs . --></help>
+        <label><!-- Acknowledge buying signals --></label>
+        <name>Acknowledge_buying_signals__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the consultant use the customers name appropriately throughout the call to control their attention? (suggested around signposting) --></help>
+        <label><!-- Appropriate use of Customer Name --></label>
+        <name>Appropriate_use_of_Customer_Name__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the consultant confirm with the customer the product they were going to open today for them e.g. So just to re-cap having discussed the most appropriate account with you you would like me to proceed with an application for the 60 day account today? --></help>
+        <label><!-- Ask for business --></label>
+        <name>Ask_for_business__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Collected customer bank details by explaining that we ask for this information to help with our Electronic verfication, overcoming customer concerns if appropriate --></help>
+        <label><!-- Bank Details captured --></label>
+        <name>Bank_Details_captured__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did we outline to the customer the benefits of IVR verification i.e. we can handle their call more quickly as well as facilities offered via on-line banking if appropriate? --></help>
+        <label><!-- Benefits of SMART Banking --></label>
+        <name>Benefits_of_SMART_Banking__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Call Centre KPI&apos;s Call Centre KPI&apos;s Link --></label>
+        <name>Call_Centre_KPI_s_Call_Centre_KPI_s_Link__c</name>
+        <relationshipLabel><!-- Customer Service Observation Forms --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Call Close --></label>
+        <name>Call_Close__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Opening Points --></label>
+        <name>Call_Opening_Points__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please copy and paste the call recording URL from the call wrap activity. --></help>
+        <label><!-- Call Recording URL --></label>
+        <name>Call_Recording_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please select what the main purpose of the customer call was? --></help>
+        <label><!-- Call Transaction Type --></label>
+        <name>Call_Transaction_Type__c</name>
+        <picklistValues>
+            <masterLabel>60 Day notice withdrawal request</masterLabel>
+            <translation><!-- 60 Day notice withdrawal request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account Closure request</masterLabel>
+            <translation><!-- Account Closure request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account Enquiry</masterLabel>
+            <translation><!-- Account Enquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BACS</masterLabel>
+            <translation><!-- BACS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Branch Enquiry</masterLabel>
+            <translation><!-- Branch Enquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHAPS</masterLabel>
+            <translation><!-- CHAPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Card query/Cancellation request</masterLabel>
+            <translation><!-- Card query/Cancellation request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change of Information</masterLabel>
+            <translation><!-- Change of Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complaint Call</masterLabel>
+            <translation><!-- Complaint Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DD Cancellation</masterLabel>
+            <translation><!-- DD Cancellation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP -not eligible</masterLabel>
+            <translation><!-- HPP -not eligible --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP Apppointments</masterLabel>
+            <translation><!-- HPP Apppointments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incoming payment issue</masterLabel>
+            <translation><!-- Incoming payment issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal transfers</masterLabel>
+            <translation><!-- Internal transfers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OB password/memorable info re-set</masterLabel>
+            <translation><!-- OB password/memorable info re-set --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online re-set</masterLabel>
+            <translation><!-- Online re-set --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other (please specify)</masterLabel>
+            <translation><!-- Other (please specify) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PIB/Cheque Book request</masterLabel>
+            <translation><!-- PIB/Cheque Book request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PIN request</masterLabel>
+            <translation><!-- PIN request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales lead</masterLabel>
+            <translation><!-- Sales lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Securecode</masterLabel>
+            <translation><!-- Securecode --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standing Order Amendment</masterLabel>
+            <translation><!-- Standing Order Amendment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standing Order cancellation</masterLabel>
+            <translation><!-- Standing Order cancellation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standing Order set up</masterLabel>
+            <translation><!-- Standing Order set up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TD withdrawal request</masterLabel>
+            <translation><!-- TD withdrawal request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transaction disputes</masterLabel>
+            <translation><!-- Transaction disputes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the agent correctly wrap the call against the nature of the enquiry? --></help>
+        <label><!-- Call Wrapped --></label>
+        <name>Call_Wrapped__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case Added --></label>
+        <name>Case_Added__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Coachee&apos;s Line Manager --></label>
+        <name>Coachee_s_Line_Manager__c</name>
+        <relationshipLabel><!-- Customer Service Observation Forms (Coachee&apos;s Line Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Colleague to Sign Here --></help>
+        <label><!-- Colleagues Signature --></label>
+        <name>Colleagues_Signature__c</name>
+    </fields>
+    <fields>
+        <help><!-- Did consultant ask where they had heard about Al Rayan Bank products to discuss quoting Source Promo code where applicable. --></help>
+        <label><!-- Collection of Marketing info --></label>
+        <name>Collection_of_Marketing_info__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments11__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments12__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments13__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments14__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments15__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments16__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments17__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments18__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments19__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments20__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments21__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments22__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments23__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments24__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments25__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments26__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments27__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments28__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments9__c</name>
+    </fields>
+    <fields>
+        <help><!-- Free format commentary on section of call --></help>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compliant --></label>
+        <name>Compliant__c</name>
+    </fields>
+    <fields>
+        <help><!-- Did the consultant during the call close confirm the customers satisfaction with the service received? e.g. Are you happy with everything we&apos;ve discussed today? --></help>
+        <label><!-- Confirm Customer Satisfaction --></label>
+        <name>Confirm_Customer_Satisfaction__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did we confirm and update the customers contact details on the call? --></help>
+        <label><!-- Correct Contact Details --></label>
+        <name>Correct_Contact_Details__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Correct ID &amp; V process followed for identifying the customer --></help>
+        <label><!-- Correct ID &amp; V --></label>
+        <name>Correct_ID_V__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the consultant confirm with the customer that they understood the cover discussed whilst mirroring the customers pace of understanding? --></help>
+        <label><!-- Courteous &amp; professional --></label>
+        <name>Courteous_professional__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Serv Sales Coaching Record link --></label>
+        <name>Customer_Serv_Sales_Coaching_Record_link__c</name>
+        <relationshipLabel><!-- Customer Service Observation Forms --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Did the consultant gather and use the customers name in the call opening. Was this done in a friendly and enthusiastic way? --></help>
+        <label><!-- Customer name &amp; Active listening --></label>
+        <name>Customer_name_Active_listening__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the consultant set the agenda upfront for the whole call including timescales and discuss options and commitments including advantage of EKYC over ANC process --></help>
+        <label><!-- Customer ownership --></label>
+        <name>Customer_ownership__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please enter the customers name --></help>
+        <label><!-- Customers name --></label>
+        <name>Customers_name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date Coaching record completed --></help>
+        <label><!-- Date of Observation --></label>
+        <name>Date_of_Observation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date and time of customer call observed --></help>
+        <label><!-- Date &amp; time of Call --></label>
+        <name>Date_time_of_Call__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter EBS Number for the customer (Maximum 6 digit nmemonic) --></help>
+        <label><!-- EBS Customer No. --></label>
+        <name>EBS_Customer_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- EKYC ANC Processing --></label>
+        <name>EKYC_ANC_Processing__c</name>
+    </fields>
+    <fields>
+        <help><!-- Did the agent correctly block the account apply special conditions and apply the correct alert/case notes for the customer? --></help>
+        <label><!-- EKYC Account Block/Alert --></label>
+        <name>EKYC_Account_Block_Alert__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Was full disclaimer read out to the customer and customer consent obtained. If EKYC fail then is this handled appropriately outlining the full KYC documentation requirements to the customer! --></help>
+        <label><!-- EKYC Disclaimer and savings disclaimer --></label>
+        <name>EKYC_Disclaimer_and_savings_disclaimer__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the consultant actively listen to the customers request and clearly understand the customers requirements? Did they use appropriate questionining and positive phrases e.g. I will be more than happy to get that sorted for you? --></help>
+        <label><!-- Empathy --></label>
+        <name>EmpathySales__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the consultant actively listen to the customers request and clearly understand the customers requirements? Did they use appropriate questionining and positive phrases? --></help>
+        <label><!-- Empathy, Friendly &amp; Helpful --></label>
+        <name>Empathy__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- When discussing the features of the product did they promote the benefits conversationally by linking back or identifying customer needs promote (USP)? E.g explanation of the halal savings, T&amp;C&apos;s, how profit rates work, SMART Banking, --></help>
+        <label><!-- Explain product features and benefits --></label>
+        <name>Explain_product_features_and_benefits__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Outcome of lead updated on sales force to enable colleague to see whether lead has been converted to a sale. --></help>
+        <label><!-- Feedback provided to lead generator --></label>
+        <name>Feedback_provided_to_lead_generator__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Was the consultants tone, pace and clarity warm and friendly towards the customer. Did they use the customers name appropriately throughout the call, build customer rapport, match and mirror customer pace and tone (if appropriate). --></help>
+        <label><!-- Friendly &amp; helpful --></label>
+        <name>Friendly_helpful__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Consent to hold details on our computer/consent to refer on and also consent to mail (Opt in or Opt out) --></help>
+        <label><!-- Full DPA Disclaimers --></label>
+        <name>Full_DPA_Disclaimers__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did they use the standard call opening adopting a warm and friendly tone, allowing the customer to respond where applicable? Inform the customer that the calls are recorded for training and monitoring purposes? --></help>
+        <label><!-- Greet the Customer --></label>
+        <name>Greet_the_Customer__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the consultant pick up on any other buying signals to maximise any selling/cross-selling opportunities --></help>
+        <label><!-- Identify all selling opportunities --></label>
+        <name>Identify_all_selling_opportunities__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the consultant listen attentively during the call and confidently present any potential other suitable products to the customer e.g. notice account fixed term deposits, HPP. Did the agent create the opportunity/lead with correct CAMPAIGN CODE --></help>
+        <label><!-- Identifying Other Needs/Suitable Product --></label>
+        <name>Identifying_Other_Needs__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter three development areas to be implemented before next call coaching observation 
+1 
+2 
+3 --></help>
+        <label><!-- Key learning next call (Maximum 3) --></label>
+        <name>Key_learning_next_call_Maximum_3__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the Length of the call in seconds --></help>
+        <label><!-- Length of Call (Seconds) --></label>
+        <name>Length_of_Call_Seconds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line Manager Signature --></label>
+        <name>Line_Manager_Signature__c</name>
+    </fields>
+    <fields>
+        <help><!-- Did the consultant take note any alerts on the customers profile? --></help>
+        <label><!-- Noted Alerts --></label>
+        <name>Missed_Alerts__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Name of Coach --></label>
+        <name>Name_of_Coach__c</name>
+        <relationshipLabel><!-- Customer Service Observation Forms (Name of Coach) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Did the consultant during the call close ask the customer if they could be of further assistance? e.g. Is there anything else I can help you with today? --></help>
+        <label><!-- Offer further Assistance? --></label>
+        <name>Offer_further_Assistance__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Open Call &amp; Verification Points --></label>
+        <name>Open_Call_Verification_Points__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Link --></label>
+        <name>Opportunity_Link__c</name>
+        <relationshipLabel><!-- Customer Service Observation Forms --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Spotting and Close Points --></label>
+        <name>Opportunity_Spotting_and_Close_Points__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overall Call Rating Sales --></label>
+        <name>Overall_Call_Rating_Sales__c</name>
+        <picklistValues>
+            <masterLabel>Development required</masterLabel>
+            <translation><!-- Development required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation><!-- Good --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outstanding</masterLabel>
+            <translation><!-- Outstanding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unacceptable - ROC required</masterLabel>
+            <translation><!-- Unacceptable - ROC required --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Scoring of call based upon overall % (i.e.95-100% Outstanding, 85-95% Good, 75-85% Development required, &lt;75% Unacceptable) --></help>
+        <label><!-- Overall Call Rating --></label>
+        <name>Overall_Call_Rating__c</name>
+        <picklistValues>
+            <masterLabel>Development required</masterLabel>
+            <translation><!-- Development required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation><!-- Good --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outstanding</masterLabel>
+            <translation><!-- Outstanding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unacceptable - ROC required</masterLabel>
+            <translation><!-- Unacceptable - ROC required --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Commentary on call --></help>
+        <label><!-- Overall Commentary --></label>
+        <name>Overall_Commentary__c</name>
+    </fields>
+    <fields>
+        <help><!-- Did the consultant adopt an appropriate tone, pace and pitch to suit the customer throughout the whole call --></help>
+        <label><!-- Overall Pace, Tone &amp; Pitch --></label>
+        <name>Overall_Pace_Tone_Pitch__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the consultant attempt to overcome the customers objection by understanding the customer whilst continuing to display an appropriate style to suit the customer? --></help>
+        <label><!-- Overcome objections --></label>
+        <name>Overcome_objections__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Person Record --></label>
+        <name>Person_Record__c</name>
+        <relationshipLabel><!-- Customer Service Observation Forms --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- If the customer is placed on hold is the reason clearly explained and customer returned to every 30 seconds to ask if still o.k. to hold. If appropriate was a customer call back offered? --></help>
+        <label><!-- Placing Customers on Hold --></label>
+        <name>Placing_Customers_on_Hold__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Previous Development (Max 3) --></label>
+        <name>Previous_Development_Max_3__c</name>
+    </fields>
+    <fields>
+        <help><!-- Did the consultant confirm with the customer that they understood the product including how it works, different whilst mirroring the customers pace of understanding? --></help>
+        <label><!-- Probe customers understanding of account --></label>
+        <name>Probe_customers_understanding_of_account__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Process / Procedural Knowledge Points --></label>
+        <name>Process_Procedural_Knowledge_Points__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Knowledge (F&amp;B) points --></label>
+        <name>Product_Knowledge_F_B_points__c</name>
+    </fields>
+    <fields>
+        <help><!-- Did the consultant confidently portray up to date and accurate product/technical information to the customer --></help>
+        <label><!-- Process Knowledge --></label>
+        <name>Product_process_Knowledge__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the consultant provide accurate process and product information to the customer and was this done in a timely and friendly manner in response to the customer request --></help>
+        <label><!-- Provide Accurate &amp; not misleading infor --></label>
+        <name>Provide_Accurate_not_misleading_infor__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Quality &amp; Behaviours --></label>
+        <name>Quality_Behaviours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quality and Behaviours Points --></label>
+        <name>Quality_and_Behaviours_Points__c</name>
+    </fields>
+    <fields>
+        <help><!-- Did the consultant (establish the customers/inform the customer the) reason for calling (asking open &amp; probing questions/adopting a style to suit the customer) allowing them time to respond? --></help>
+        <label><!-- Reason for calling --></label>
+        <name>Reason_for_calling__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the consultant recap the call and confirm back the main points covered e.g. what has been agreed, actions whilst mirroring the customers pace? --></help>
+        <label><!-- Recap Call --></label>
+        <name>Recap_Call__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the consultant ask the customer for recommendation for friends and family --></help>
+        <label><!-- Recommendation --></label>
+        <name>Recommendation__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sales Call Type --></label>
+        <name>Sales_Call_Type__c</name>
+        <picklistValues>
+            <masterLabel>60 Day Notice</masterLabel>
+            <translation><!-- 60 Day Notice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Care Call</masterLabel>
+            <translation><!-- Care Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact programme Call</masterLabel>
+            <translation><!-- Contact programme Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Account</masterLabel>
+            <translation><!-- Current Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dormancy call</masterLabel>
+            <translation><!-- Dormancy call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FTD</masterLabel>
+            <translation><!-- FTD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP lead</masterLabel>
+            <translation><!-- HPP lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multiple products</masterLabel>
+            <translation><!-- Multiple products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other (please specify)</masterLabel>
+            <translation><!-- Other (please specify) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal finance</masterLabel>
+            <translation><!-- Personal finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Savings Account</masterLabel>
+            <translation><!-- Savings Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YPSA</masterLabel>
+            <translation><!-- YPSA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the consultant clearly outline the key features and benefits of the Al Rayan Bank product discussed and our USP of &apos;Sharia Compliant banking? Was this accurate and confidently presented --></help>
+        <label><!-- Sharia&apos;a Compliance --></label>
+        <name>Sharia_a_Compliance__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the consultant signpost the next step of the call so the customer was clear with and further action who and when they would be responded to! --></help>
+        <label><!-- Signpost Next Steps --></label>
+        <name>Signpost_Next_Steps__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Soft Skills Service Excellence Points --></label>
+        <name>Soft_Skills_Service_Excellence_Points__c</name>
+    </fields>
+    <fields>
+        <label><!-- Soft Skills &amp; Servive Excellence --></label>
+        <name>Soft_Skills_Servive_Excellence_Sales__c</name>
+    </fields>
+    <fields>
+        <help><!-- Did the consultant during the call close give their name and end the call with the brand? e.g. You&apos;ve been speaking to Mohammed today and thank you for calling Al Rayan Bank --></help>
+        <label><!-- Standard Call Close --></label>
+        <name>Standard_Call_Close__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the consultant propose the ideal product to match the customer needs? Linking it back to the customers requirements --></help>
+        <label><!-- Summarise needs and match --></label>
+        <name>Summarise_needs_and_match__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the consultant gather all required information to input on to Salesforce and do this conversationally using a good tone and pace and listen, respond and probe further where applicable whilst asking system questions --></help>
+        <label><!-- System Question &amp; Gather all required in --></label>
+        <name>System_Question_Gather_all_required_in__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- In providing a response to the customer would the customer have felt impressed and confident with the knowledge of the consultant --></help>
+        <label><!-- Technical Knowledge --></label>
+        <name>Technical_Knowledge__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the consultant confidently and appropriately ask for the business using natural conversational selling techniques? --></help>
+        <label><!-- Tone, Pace &amp; Clarity --></label>
+        <name>Tone_Pace_Clarity__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Points --></label>
+        <name>Total_Points_Inbound__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Points --></label>
+        <name>Total_Points_Sales__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the main purpose of the call if other selected on call type? --></help>
+        <label><!-- Transaction Type (other) --></label>
+        <name>Transaction_Type_other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of monitoring --></label>
+        <name>Type_of_monitoring__c</name>
+        <picklistValues>
+            <masterLabel>Remote</masterLabel>
+            <translation><!-- Remote --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Side by Side</masterLabel>
+            <translation><!-- Side by Side --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did the agent probe to understand the customers satisfaction with their current product provider and react with positive example where applicable? (outbound upsell only) --></help>
+        <label><!-- Understand customers satisfaction with c --></label>
+        <name>Understand_customers_satisfaction_with_c__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did they use open questions adopting a empathetic approach to identify what would make the customer purchase Al Rayan Bank Products --></help>
+        <label><!-- Understand what would make the customer --></label>
+        <name>Understand_what_would_make_the_customer__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Inbound</layout>
+        <sections>
+            <label><!-- COACHING RECORD HEADER --></label>
+            <section>COACHING RECORD HEADER</section>
+        </sections>
+        <sections>
+            <label><!-- Call Closure --></label>
+            <section>Call Closure</section>
+        </sections>
+        <sections>
+            <label><!-- Call Opening --></label>
+            <section>Call Opening</section>
+        </sections>
+        <sections>
+            <label><!-- Commentary --></label>
+            <section>Commentary</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Spotting --></label>
+            <section>Opportunity Spotting</section>
+        </sections>
+        <sections>
+            <label><!-- Process Knowledge --></label>
+            <section>Process Knowledge</section>
+        </sections>
+        <sections>
+            <label><!-- Quality &amp; Behaviours --></label>
+            <section>Quality &amp; Behaviours</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sales</layout>
+        <sections>
+            <label><!-- Call Opening --></label>
+            <section>Call Opening</section>
+        </sections>
+        <sections>
+            <label><!-- Close Call --></label>
+            <section>Close Call</section>
+        </sections>
+        <sections>
+            <label><!-- Coaching Record Header --></label>
+            <section>Coaching Record Header</section>
+        </sections>
+        <sections>
+            <label><!-- Commentary --></label>
+            <section>Commentary</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- EKYC/ANC Processing --></label>
+            <section>EKYC/ANC Processing</section>
+        </sections>
+        <sections>
+            <label><!-- Product Knowledge Features &amp; Benefits --></label>
+            <section>Product Knowledge Features &amp; Benefits</section>
+        </sections>
+        <sections>
+            <label><!-- Quality &amp; Behaviours --></label>
+            <section>Quality &amp; Behaviours</section>
+        </sections>
+        <sections>
+            <label><!-- Soft Skills &amp; Service Excellence --></label>
+            <section>Soft Skills &amp; Service Excellence</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Inbound --></label>
+        <name>Inbound</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sales --></label>
+        <name>Sales</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,6 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="1" aEditID="c1r1" >
+<![CDATA[The below case has been opened for more than 16 hours. Please review and take forward as required.&nbsp;<div><br></div><div>Case number:&nbsp;{!Case.CaseNumber}</div><div>Subject:&nbsp;{!Case.Subject}</div><div>Date/Time opened:&nbsp;{!Case.CreatedDate}</div><div>Link to case:&nbsp;{!Case.Link}</div><div>Created by:&nbsp;{!Case.CreatedBy}</div><div>Currently with:&nbsp;{!Case.OwnerFullName}</div>]]></td>
+</tr>
+</table>

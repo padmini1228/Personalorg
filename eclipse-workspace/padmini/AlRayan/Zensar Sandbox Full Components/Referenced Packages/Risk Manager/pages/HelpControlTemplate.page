@@ -1,0 +1,31 @@
+<apex:page sideBar="false" showHeader="false">
+
+<head>
+	<apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'HelpPageStylesheet.css')}"/>
+</head>
+
+<div class="heading">
+<div class="icon">&nbsp;</div>
+    <h2>Help Pages</h2>
+    <h1>Control Templates</h1>
+</div>
+
+<div class="content">
+<p>Control Templates provide a way of building up a library of controls that can be easily reused across the organization.</p>
+
+<p>To create a Control Template, simply provide a name, category and description for the control. Subject to the approval of the Control Template, it will be visible to users when they choose to create a control using the "New Control From Template" custom link. Controls created from a Control Template will inherit its field values - however, these may then be changed by the user if required.</p>
+
+<p>
+Controls created from a Control Template are recorded in the Controls related list. Over time, this can provide a useful insight into the most popular control types.</p>
+
+<br/>
+<br/>
+<br/>
+
+<h3 >Contact Details</h3>
+
+<p>
+For further support information, please contact your local administrator.</p>
+<div class="clear"></div>
+</div>
+</apex:page>

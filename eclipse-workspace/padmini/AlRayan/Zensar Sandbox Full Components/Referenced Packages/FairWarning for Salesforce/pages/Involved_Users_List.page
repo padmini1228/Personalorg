@@ -1,0 +1,21 @@
+<apex:page standardController="fairwarn__Involved_User__c" showHeader="true" recordSetVar="records"  >
+   
+    <apex:pageBlock > 
+        <apex:pageBlockSection title="Involved Users ({!selected} records)" columns="1"> 
+            <apex:dataTable value="{!selected}" var="var" width="100%"  rowClasses="odd,even" styleClass="tableClass" headerClass="headerRow" columns="3" cellspacing="5px" >
+               <apex:column headerClass="zen-deemphasize" styleClass="dataCell">
+                   <apex:facet name="header">Username</apex:facet>
+                   <apex:outputLink value="/{!var.fairwarn__assocUser__r.id}" id="theLink" target="_parent">{!var.fairwarn__assocUser__r.Username}</apex:outputLink>
+               </apex:column>
+               <apex:column headerClass="zen-deemphasize" styleClass="dataCell">
+                   <apex:facet name="header">Lastname</apex:facet>
+                   <apex:outputText value="{!var.fairwarn__assocUser__r.LastName}"></apex:outputText>
+               </apex:column>
+               <apex:column headerClass="zen-deemphasize" styleClass="dataCell">
+                   <apex:facet name="header">Firstname</apex:facet>
+                   <apex:outputText value="{!var.fairwarn__assocUser__r.FirstName}"></apex:outputText>
+               </apex:column> 
+           </apex:dataTable> 
+        </apex:pageBlockSection>
+    </apex:pageBlock> 
+</apex:page>

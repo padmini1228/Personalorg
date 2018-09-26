@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_Letterhead_Left</letterhead>
+    <name>Alert for approved Factfind</name>
+    <style>freeForm</style>
+    <subject>Approved Premier/DPS Factfind for your review.</subject>
+    <textOnly>Dear {!Receiving_User.FirstName},
+
+The below factfind has been keyed and approved by {!Premier__c.Location__c}.
+
+Please review and submit to the IFA if required.
+
+Factfind: {!Premier__c.Link}
+Reference: {!Premier__c.Name}
+
+Thanks
+
+Change Delivery</textOnly>
+    <type>html</type>
+</EmailTemplate>

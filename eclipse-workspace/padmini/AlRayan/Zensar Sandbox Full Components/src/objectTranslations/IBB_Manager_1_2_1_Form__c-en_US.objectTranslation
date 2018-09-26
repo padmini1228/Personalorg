@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Manager 1-2-1 Form</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>1-2-1 Form Manager</value>
+    </caseValues>
+    <fields>
+        <label><!-- Feedback from Staff --></label>
+        <name>Feedback_from_Staff__c</name>
+    </fields>
+    <fields>
+        <label><!-- Managers Comments on Review Period --></label>
+        <name>Managers_Comments_on_Review_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Managers Name --></label>
+        <name>Managers_Name__c</name>
+        <relationshipLabel><!-- 1-2-1 Form Manager --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Period of review --></label>
+        <name>Period_of_review__c</name>
+        <picklistValues>
+            <masterLabel>April</masterLabel>
+            <translation><!-- April --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>April 2016</masterLabel>
+            <translation><!-- April 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>August</masterLabel>
+            <translation><!-- August --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>August 2016</masterLabel>
+            <translation><!-- August 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>December</masterLabel>
+            <translation><!-- December --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>December 2016</masterLabel>
+            <translation><!-- December 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>February</masterLabel>
+            <translation><!-- February --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>February 2016</masterLabel>
+            <translation><!-- February 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>January</masterLabel>
+            <translation><!-- January --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>January 2016</masterLabel>
+            <translation><!-- January 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>July</masterLabel>
+            <translation><!-- July --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>July 2016</masterLabel>
+            <translation><!-- July 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>June</masterLabel>
+            <translation><!-- June --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>June 2016</masterLabel>
+            <translation><!-- June 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>March</masterLabel>
+            <translation><!-- March --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>March 2016</masterLabel>
+            <translation><!-- March 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>May</masterLabel>
+            <translation><!-- May --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>May 2016</masterLabel>
+            <translation><!-- May 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>November</masterLabel>
+            <translation><!-- November --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>November 2016</masterLabel>
+            <translation><!-- November 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>October</masterLabel>
+            <translation><!-- October --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>October 2016</masterLabel>
+            <translation><!-- October 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>September</masterLabel>
+            <translation><!-- September --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>September 2016</masterLabel>
+            <translation><!-- September 2016 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>Role_and_Location__c</name>
+        <picklistValues>
+            <masterLabel>Branch Manager</masterLabel>
+            <translation><!-- Branch Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial BDM</masterLabel>
+            <translation><!-- Commercial BDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Business Development Manager</masterLabel>
+            <translation><!-- Community Business Development Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Centre Manager</masterLabel>
+            <translation><!-- Contact Centre Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Services Manager</masterLabel>
+            <translation><!-- Customer Services Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deputy Branch Manager</masterLabel>
+            <translation><!-- Deputy Branch Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deputy Contact Centre Manager</masterLabel>
+            <translation><!-- Deputy Contact Centre Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Head of Customer Services</masterLabel>
+            <translation><!-- Head of Customer Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales &amp; Service Team Leader</masterLabel>
+            <translation><!-- Sales &amp; Service Team Leader --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Branch Manager</masterLabel>
+            <translation><!-- Senior Branch Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Business Development manager</masterLabel>
+            <translation><!-- Senior Business Development manager --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Staff Members comments on review period --></label>
+        <name>Staff_Members_comments_on_review_period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Staff Name --></label>
+        <name>Staff_Name__c</name>
+        <relationshipLabel><!-- 1-2-1 Form Manager --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- 1. Action Points from last One to One --></label>
+        <name>X1_Action_Points_from_last_One_to_One__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2. Updates since last month --></label>
+        <name>X2_Updates_since_last_month__c</name>
+    </fields>
+    <fields>
+        <label><!-- 3. Progress against performance Objectiv --></label>
+        <name>X3_Progress_against_performance_Objectiv__c</name>
+    </fields>
+    <fields>
+        <label><!-- 4. Risks --></label>
+        <name>X4_Risks__c</name>
+    </fields>
+    <fields>
+        <label><!-- 5. Departmental Project Status --></label>
+        <name>X5_Departmental_Project_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- 6. Development &amp; Coaching --></label>
+        <name>X6_Development_Coaching__c</name>
+    </fields>
+    <fields>
+        <label><!-- 7. Staffing/Personnel Issues/Admin --></label>
+        <name>X7_Staffing_Personnel_Issues_Admin__c</name>
+    </fields>
+    <fields>
+        <label><!-- 8. Any other Issues/Points to raise --></label>
+        <name>X8_Any_other_Issues_Points_to_raise__c</name>
+    </fields>
+    <fields>
+        <label><!-- 9. Specific Action Points --></label>
+        <name>X9_Specific_Action_Points__c</name>
+    </fields>
+    <layouts>
+        <layout>IBB Manager 1-2-1 Form Layout</layout>
+        <sections>
+            <label><!-- 1. Action Points from last 1-2-1 --></label>
+            <section>1. Action Points from last 1-2-1</section>
+        </sections>
+        <sections>
+            <label><!-- Any other issues --></label>
+            <section>Any other issues</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Departmental Project Status --></label>
+            <section>Departmental Project Status</section>
+        </sections>
+        <sections>
+            <label><!-- Development &amp; Coaching --></label>
+            <section>Development &amp; Coaching</section>
+        </sections>
+        <sections>
+            <label><!-- IBB Manager 1-2-1 Form --></label>
+            <section>IBB Manager 1-2-1 Form</section>
+        </sections>
+        <sections>
+            <label><!-- Managers/Staff Members Comments --></label>
+            <section>Managers/Staff Members Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Progress against Performance Objectives --></label>
+            <section>Progress against Performance Objectives</section>
+        </sections>
+        <sections>
+            <label><!-- Risks --></label>
+            <section>Risks</section>
+        </sections>
+        <sections>
+            <label><!-- Specific Action Points --></label>
+            <section>Specific Action Points</section>
+        </sections>
+        <sections>
+            <label><!-- Staffing Issues/Personnel Admin --></label>
+            <section>Staffing Issues/Personnel Admin</section>
+        </sections>
+        <sections>
+            <label><!-- Update since last month --></label>
+            <section>Update since last month</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

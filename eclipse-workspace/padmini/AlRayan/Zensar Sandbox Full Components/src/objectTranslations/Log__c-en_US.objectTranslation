@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Log</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Logs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Data --></label>
+        <name>Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debug --></label>
+        <name>Debug__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error --></label>
+        <name>Error__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exception --></label>
+        <name>Exception__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fatal --></label>
+        <name>Fatal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Highest Level --></label>
+        <name>Highest_Log_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- Info --></label>
+        <name>Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Level --></label>
+        <name>Level__c</name>
+        <picklistValues>
+            <masterLabel>Debug</masterLabel>
+            <translation><!-- Debug --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fatal</masterLabel>
+            <translation><!-- Fatal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Info</masterLabel>
+            <translation><!-- Info --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warning</masterLabel>
+            <translation><!-- Warning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Log_10 --></label>
+        <name>Log_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Log_1 --></label>
+        <name>Log_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Log_2 --></label>
+        <name>Log_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Log_3 --></label>
+        <name>Log_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Log_4 --></label>
+        <name>Log_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Log_5 --></label>
+        <name>Log_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Log_6 --></label>
+        <name>Log_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Log_7 --></label>
+        <name>Log_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Log_8 --></label>
+        <name>Log_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Log_9 --></label>
+        <name>Log_9__c</name>
+    </fields>
+    <fields>
+        <label><!-- Page --></label>
+        <name>Page__c</name>
+    </fields>
+    <fields>
+        <label><!-- TimeTaken --></label>
+        <name>TimeTaken__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trace --></label>
+        <name>Trace__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Warn --></label>
+        <name>Warn__c</name>
+    </fields>
+    <layouts>
+        <layout>Log Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Restricted External Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

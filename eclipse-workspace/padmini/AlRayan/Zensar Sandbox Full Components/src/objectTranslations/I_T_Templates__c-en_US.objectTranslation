@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>IT Template</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>IT Templates</value>
+    </caseValues>
+    <fields>
+        <label><!-- Aqua Global --></label>
+        <name>Aqua_Global__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- BACS --></label>
+        <name>BACS__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Call Recording --></label>
+        <name>Call_Recording__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Datastore --></label>
+        <name>Datastore__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- EBA Template --></label>
+        <name>EBA_Template__c</name>
+    </fields>
+    <fields>
+        <label><!-- EBA --></label>
+        <name>EBA__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- EBS Template --></label>
+        <name>EBS_Template__c</name>
+    </fields>
+    <fields>
+        <label><!-- EBS --></label>
+        <name>EBS__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- FIS --></label>
+        <name>FIS__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IFM Admin --></label>
+        <name>IFM_Admin__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Internet --></label>
+        <name>Internet__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- NT --></label>
+        <name>NT__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- NVM ContactWorld --></label>
+        <name>NVM_ContactWorld__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Salesforce Profile --></label>
+        <name>Salesforce_Profile__c</name>
+        <picklistValues>
+            <masterLabel>Account Reconciliations (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Account Reconciliations (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account Service Team Leader (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Account Service Team Leader (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account Services Manager (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Account Services Manager (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account Services Staff (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Account Services Staff (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agency Manager (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Agency Manager (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BDM (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- BDM (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Branch HPP Sellers (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Branch HPP Sellers (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Branch Manager (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Branch Manager (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Branch Staff (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Branch Staff (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call Centre Manager (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Call Centre Manager (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call Centre Team Leader (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Call Centre Team Leader (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change Delivery Manager (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Change Delivery Manager (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change Delivery Staff (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Change Delivery Staff (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial Manager (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Commercial Manager (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial Staff (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Commercial Staff (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compliance Manager (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Compliance Manager (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Manager (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Credit Manager (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Staff (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Credit Staff (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Care Staff (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Customer Care Staff (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Developer (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Developer (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Executive (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FCU Manager (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- FCU Manager (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FCU Staff (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- FCU Staff (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Facilities Manager (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Facilities Manager (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Facilities Staff (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Facilities Staff (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance Manager (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Finance Manager (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance Staff (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Finance Staff (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP Sales Support Team (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- HPP Sales Support Team (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HR Manager (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- HR Manager (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HR Staff (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- HR Staff (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Head of Operations (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Head of Operations (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Head of Sales and Service (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Head of Sales and Service (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT Infrastructure (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- IT Infrastructure (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT Manager (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- IT Manager (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT Security Officer (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- IT Security Officer (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT Service desk (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- IT Service desk (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI Specialist (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- MI Specialist (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Staff (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Marketing Staff (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Manager (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Payment Manager (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Staff (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Payment Staff (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier Manager (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Premier Manager (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REAT Manager (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- REAT Manager (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REAT Staff (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- REAT Staff (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Risk Manager (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Risk Manager (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFDC Code Deployment (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- SFDC Code Deployment (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior BDM (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Senior BDM (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Branch Manager (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Senior Branch Manager (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sharia (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Sharia (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard (BASE PROFILE)</masterLabel>
+            <translation><!-- Standard (BASE PROFILE) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System Administrator</masterLabel>
+            <translation><!-- System Administrator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training Manager (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Training Manager (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treasury Staff (POST PROFILE REVIEW)</masterLabel>
+            <translation><!-- Treasury Staff (POST PROFILE REVIEW) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Salesforce Role --></label>
+        <name>Salesforce_Role__c</name>
+        <picklistValues>
+            <masterLabel>Account Services Manager</masterLabel>
+            <translation><!-- Account Services Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account Services Staff</masterLabel>
+            <translation><!-- Account Services Staff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account Services Team Leader</masterLabel>
+            <translation><!-- Account Services Team Leader --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agency Manager</masterLabel>
+            <translation><!-- Agency Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Audit Manager</masterLabel>
+            <translation><!-- Audit Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCA (Name of Branch)</masterLabel>
+            <translation><!-- BCA (Name of Branch) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCA Edgware Road</masterLabel>
+            <translation><!-- BCA Edgware Road --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCA Leicester</masterLabel>
+            <translation><!-- BCA Leicester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCA Manchester</masterLabel>
+            <translation><!-- BCA Manchester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCA Small Heath</masterLabel>
+            <translation><!-- BCA Small Heath --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCA Whitechapel</masterLabel>
+            <translation><!-- BCA Whitechapel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCA under DBM Small Heath</masterLabel>
+            <translation><!-- BCA under DBM Small Heath --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BDM</masterLabel>
+            <translation><!-- BDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BDM Leicester</masterLabel>
+            <translation><!-- BDM Leicester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Branch Manager (Branch Name)</masterLabel>
+            <translation><!-- Branch Manager (Branch Name) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Branch Manager Edgware Road</masterLabel>
+            <translation><!-- Branch Manager Edgware Road --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Branch Manager Leicester</masterLabel>
+            <translation><!-- Branch Manager Leicester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Branch Manager Manchester</masterLabel>
+            <translation><!-- Branch Manager Manchester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Branch Manager Small Heath</masterLabel>
+            <translation><!-- Branch Manager Small Heath --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Branch Manager Whitechapel</masterLabel>
+            <translation><!-- Branch Manager Whitechapel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Analyst</masterLabel>
+            <translation><!-- Business Analyst --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call Centre Agent</masterLabel>
+            <translation><!-- Call Centre Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call Centre Team Leader</masterLabel>
+            <translation><!-- Call Centre Team Leader --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change Delivery Manager</masterLabel>
+            <translation><!-- Change Delivery Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chief Executive Officer</masterLabel>
+            <translation><!-- Chief Executive Officer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chief Financial Officer</masterLabel>
+            <translation><!-- Chief Financial Officer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chief Operating Officer</masterLabel>
+            <translation><!-- Chief Operating Officer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collections</masterLabel>
+            <translation><!-- Collections --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial Assistant/ Resi Underwriter</masterLabel>
+            <translation><!-- Commercial Assistant/ Resi Underwriter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial BDM</masterLabel>
+            <translation><!-- Commercial BDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial Underwriter</masterLabel>
+            <translation><!-- Commercial Underwriter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compliance</masterLabel>
+            <translation><!-- Compliance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Care</masterLabel>
+            <translation><!-- Customer Care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Services Manager</masterLabel>
+            <translation><!-- Customer Services Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deputy Branch Manager Edgware Road</masterLabel>
+            <translation><!-- Deputy Branch Manager Edgware Road --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deputy Branch Manager Leicester</masterLabel>
+            <translation><!-- Deputy Branch Manager Leicester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deputy Branch Manager Manchester</masterLabel>
+            <translation><!-- Deputy Branch Manager Manchester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deputy Branch Manager Small Heath</masterLabel>
+            <translation><!-- Deputy Branch Manager Small Heath --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deputy Branch Manager Whitechapel</masterLabel>
+            <translation><!-- Deputy Branch Manager Whitechapel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deputy Contact Centre Manager</masterLabel>
+            <translation><!-- Deputy Contact Centre Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External User</masterLabel>
+            <translation><!-- External User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FCU</masterLabel>
+            <translation><!-- FCU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FCU Manager</masterLabel>
+            <translation><!-- FCU Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Facilities Manager</masterLabel>
+            <translation><!-- Facilities Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance Staff</masterLabel>
+            <translation><!-- Finance Staff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP Branch Seller</masterLabel>
+            <translation><!-- HPP Branch Seller --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP Sales &amp; Service Manager</masterLabel>
+            <translation><!-- HPP Sales &amp; Service Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP Sales Support</masterLabel>
+            <translation><!-- HPP Sales Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPP Specialist</masterLabel>
+            <translation><!-- HPP Specialist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HR Staff</masterLabel>
+            <translation><!-- HR Staff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Head of Commercial</masterLabel>
+            <translation><!-- Head of Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Head of Credit</masterLabel>
+            <translation><!-- Head of Credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Head of HR</masterLabel>
+            <translation><!-- Head of HR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Head of IT &amp; Change</masterLabel>
+            <translation><!-- Head of IT &amp; Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Head of Marketing</masterLabel>
+            <translation><!-- Head of Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Head of Operations</masterLabel>
+            <translation><!-- Head of Operations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Head of Premier Banking</masterLabel>
+            <translation><!-- Head of Premier Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Head of Risk &amp; Compliance</masterLabel>
+            <translation><!-- Head of Risk &amp; Compliance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Head of Sales &amp; Service</masterLabel>
+            <translation><!-- Head of Sales &amp; Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Head of Sharia and Product Development</masterLabel>
+            <translation><!-- Head of Sharia and Product Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IFA</masterLabel>
+            <translation><!-- IFA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT Helpdesk</masterLabel>
+            <translation><!-- IT Helpdesk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT Operations Manager</masterLabel>
+            <translation><!-- IT Operations Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Infrastructure Engineer</masterLabel>
+            <translation><!-- Infrastructure Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Infrastructure Manager</masterLabel>
+            <translation><!-- Infrastructure Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intermediary &amp; HPP Direct Manager</masterLabel>
+            <translation><!-- Intermediary &amp; HPP Direct Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI Specialist</masterLabel>
+            <translation><!-- MI Specialist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI and Resource Specialist</masterLabel>
+            <translation><!-- MI and Resource Specialist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manchester BDM</masterLabel>
+            <translation><!-- Manchester BDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Team</masterLabel>
+            <translation><!-- Marketing Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ops Admin Staff</masterLabel>
+            <translation><!-- Ops Admin Staff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outbound Sales Advisor</masterLabel>
+            <translation><!-- Outbound Sales Advisor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payments Manager</masterLabel>
+            <translation><!-- Payments Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payments Staff</masterLabel>
+            <translation><!-- Payments Staff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier Banking Customer Service Officer</masterLabel>
+            <translation><!-- Premier Banking Customer Service Officer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier Banking Relationship Manager</masterLabel>
+            <translation><!-- Premier Banking Relationship Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Manager</masterLabel>
+            <translation><!-- Product Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Manager</masterLabel>
+            <translation><!-- Project Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Staff</masterLabel>
+            <translation><!-- Project Staff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REAT Team Leader</masterLabel>
+            <translation><!-- REAT Team Leader --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Real Estate Admin Team Member</masterLabel>
+            <translation><!-- Real Estate Admin Team Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residential Underwriter</masterLabel>
+            <translation><!-- Residential Underwriter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Risk Manager</masterLabel>
+            <translation><!-- Risk Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SGH Martineau</masterLabel>
+            <translation><!-- SGH Martineau --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Advisor Edgware Road</masterLabel>
+            <translation><!-- Sales Advisor Edgware Road --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Advisor Leicester</masterLabel>
+            <translation><!-- Sales Advisor Leicester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Advisor Manchester</masterLabel>
+            <translation><!-- Sales Advisor Manchester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Advisor Small Heath</masterLabel>
+            <translation><!-- Sales Advisor Small Heath --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Advisor Whitechapel</masterLabel>
+            <translation><!-- Sales Advisor Whitechapel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Branch Manager</masterLabel>
+            <translation><!-- Senior Branch Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior CSA Call Centre</masterLabel>
+            <translation><!-- Senior CSA Call Centre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Developer</masterLabel>
+            <translation><!-- Senior Developer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Manager GCC Corporate</masterLabel>
+            <translation><!-- Senior Manager GCC Corporate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Sales Manager</masterLabel>
+            <translation><!-- Senior Sales Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support Services</masterLabel>
+            <translation><!-- Support Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System Administrator</masterLabel>
+            <translation><!-- System Administrator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tester</masterLabel>
+            <translation><!-- Tester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trainer</masterLabel>
+            <translation><!-- Trainer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training Manager</masterLabel>
+            <translation><!-- Training Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treasury</masterLabel>
+            <translation><!-- Treasury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Underwriter</masterLabel>
+            <translation><!-- Underwriter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web Developer</masterLabel>
+            <translation><!-- Web Developer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Salesforce --></label>
+        <name>Salesforce__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- VPN --></label>
+        <name>VPN__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Webform --></label>
+        <name>Webform__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>I.T Template Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- EBA --></label>
+            <section>EBA</section>
+        </sections>
+        <sections>
+            <label><!-- EBS --></label>
+            <section>EBS</section>
+        </sections>
+        <sections>
+            <label><!-- Other --></label>
+            <section>Other</section>
+        </sections>
+        <sections>
+            <label><!-- Phones --></label>
+            <section>Phones</section>
+        </sections>
+        <sections>
+            <label><!-- Salesforce --></label>
+            <section>Salesforce</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- If NVM contact world access has been given to this template, call recording is not  required. Please select no. --></errorMessage>
+        <name>Contact_world_and_call_recording</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,161 @@
+<apex:page controller="Risk.MovementReport" showHeader="false" sidebar="false" standardStylesheets="false" >
+
+<head>
+	<apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'RiskReportStylesheet.css')}"/>
+</head>
+
+	<apex:includeScript value="{!URLFOR($Resource.Risk__CanvasJs, 'excanvas.js')}"/>
+	<apex:includeScript value="{!URLFOR($Resource.Risk__CanvasJs, 'canvas.text.js')}"/>
+	<apex:includeScript value="{!URLFOR($Resource.Risk__CanvasJs, 'optimer-normal-normal.js')}"/>
+	<apex:includeScript value="{!URLFOR($Resource.Risk__canvasObjectHandler)}"/>
+
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript">
+
+		google.load("visualization", "1", {packages:["corechart"]});
+
+		google.setOnLoadCallback(drawChart);
+
+		function drawChart()
+		{
+		  var data = google.visualization.arrayToDataTable([
+		    ['Risk', 'Q1', 'Q2', 'Q3', 'Q4'],
+
+		    <apex:repeat value="{!theRiskChartItems}" var="riskItem" >
+		    	['{!riskItem.theRisk.Name}'
+
+		    	<apex:repeat value="{!riskItem.quarters}" var="quarter">
+
+		    		,{!quarter.Score}
+
+		    	</apex:repeat>
+
+		    	],
+		    </apex:repeat>
+
+		  ]);
+
+		  var options = {};
+
+		  options.title = 'Residual Movement';
+		  options.vAxis = {title: 'Risk', titleTextStyle: {color: 'blue'}};
+		  options.hAxis = {title: 'Score', titleTextStyle: {color: 'blue'}};
+
+		  /*
+
+		  options.colors = [<apex:repeat value="{!theRiskChartItems}" var="riskItem" >
+		  						 <apex:repeat value="{!riskItem.quarters}" var="quarter" >
+		  						 	<apex:outputPanel layout="none" rendered="{!IF(quarter.endOfRisk == false, true, false)}">
+		  						 		'{!quarter.color}',
+		  						 	</apex:outputPanel>
+		  						 	<apex:outputPanel layout="none" rendered="{!IF(quarter.endOfRisk == true, true, false)}">
+		  						 		'{!quarter.color}'
+		  						 	</apex:outputPanel>
+		  						 </apex:repeat>
+		                    </apex:repeat>
+		                   ];
+			*/
+
+		  var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+		  chart.draw(data, options);
+		}
+
+	</script>
+
+	<h1 class="header">Movement Report <br/>
+	<apex:outputText value="{0, date,dd MMMM yyyy}"><apex:param value="{!today()}"/></apex:outputText></h1>
+
+	<apex:pageMessages />
+
+	<apex:outputPanel layout="none" rendered="{!IF(theRiskChartItems.size > 0, true, false)}">
+
+	<!-- 	<div id="chart_div" style="width: 900px; height: 500px;"></div> -->
+
+	</apex:outputPanel>
+
+	<apex:outputPanel rendered="{!theRiskChartItems != ''}" style="float:left;">
+
+		<table>
+
+			<tr>
+				<th align="left">
+					Risk
+				</th>
+				<th align="left">
+					{!$Label.risk__Residual} Heatmap Rating
+				</th>
+			</tr>
+
+			<apex:repeat value="{!theRiskChartItems}" var="riskItem">
+
+				<tr>
+					<td style="padding-right: 75px; padding-bottom: 50px;">
+						{!riskItem.theRisk.Name}
+					</td>
+					<td>
+						<canvas id="movements-{!riskItem.theRisk.Id}" width="{!canvasWidth}" height="{!canvasHeight}"></canvas>
+					</td>
+				</tr>
+
+			</apex:repeat>
+
+		</table>
+
+	</apex:outputPanel>
+
+	<script type="text/javascript">
+
+	var canvas;
+	var ctx;
+	var colourBars;
+	var riskNames;
+	var rectangle;
+	var quarterScores;
+	var quarterNames;
+
+	<apex:repeat value="{!theRiskChartItems}" var="riskItem">
+
+		canvas = document.getElementById('movements-{!riskItem.theRisk.Id}');
+
+		if (canvas.getContext)
+		{
+			ctx = canvas.getContext('2d');
+
+			//Generic
+			ctx.font = "14px Arial";
+
+			//colour squares
+			ctx.lineWidth = 0;
+
+			colourBars = newObjectGroup('colourBars');
+
+			quarterScores = newObjectGroup('quarterScores');
+
+			quarterNames = newObjectGroup('quarterNames');
+
+			<apex:repeat value="{!riskItem.quarters}" var="quarter">
+
+				rectangle = newObject('colourBar', ctx,'rectangle', 80, {!((quarter.quarterCount * 25))}, {!(quarter.Score * 50)}, 25, '#ffffff', '{!quarter.color}');
+				colourBars.addObject(rectangle);
+
+				var score = newObject('quarterScore',ctx,'text',{!((quarter.Score * 50)+90)},{!((quarter.quarterCount * 25)+18)},'{!quarter.Score}', undefined, undefined, '#000000');
+				quarterScores.addObject(score);
+
+				var quarterName = newObject('quarterName',ctx,'text',0,{!((quarter.quarterCount * 25)+18)},'Q{!quarter.quarterNumber} ({!quarter.year})', undefined, undefined, '#000000');
+				quarterNames.addObject(quarterName);
+
+
+			</apex:repeat>
+
+			quarterNames.draw();
+			colourBars.draw();
+			quarterScores.draw();
+
+		}
+
+	</apex:repeat>
+
+
+	</script>
+
+</apex:page>

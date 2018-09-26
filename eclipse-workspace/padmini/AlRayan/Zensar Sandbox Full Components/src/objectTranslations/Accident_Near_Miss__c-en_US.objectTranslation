@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Accident/Near Miss</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Accidents/Near Misses</value>
+    </caseValues>
+    <fields>
+        <label><!-- Date reported --></label>
+        <name>Date_reported__c</name>
+    </fields>
+    <fields>
+        <label><!-- Describe any Injuries Occurred --></label>
+        <name>Describe_any_Injuries_Occurred__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has the cause of the issue been fixed? --></label>
+        <name>Has_the_cause_of_the_issue_been_fixed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- How has/will the issue be resolved? --></label>
+        <name>How_has_will_the_issue_be_resolved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Immediate cause of the accident --></label>
+        <name>Immediate_cause_of_the_accident__c</name>
+    </fields>
+    <fields>
+        <label><!-- Medical assistance required? --></label>
+        <name>Medical_assistance_required__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes (ambulance)</masterLabel>
+            <translation><!-- Yes (ambulance) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes (first aider)</masterLabel>
+            <translation><!-- Yes (first aider) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Name of person injured Near Miss --></label>
+        <name>Name_of_person_injured_Near_Miss__c</name>
+    </fields>
+    <fields>
+        <label><!-- Please provide details of what occurred --></label>
+        <name>Please_provide_details_of_what_occurred__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Accident</masterLabel>
+            <translation><!-- Accident --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Near Miss</masterLabel>
+            <translation><!-- Near Miss --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Name of person reporting the accident --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Accidents/Near Misses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- When did the accident/Near Miss Occur? --></label>
+        <name>When_did_the_accident_Near_Miss_Occur__c</name>
+    </fields>
+    <fields>
+        <label><!-- Where did the accident occur? --></label>
+        <name>Where_did_the_accident_occur__c</name>
+    </fields>
+    <layouts>
+        <layout>Accident/Near Miss Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Detailed Information --></label>
+            <section>Detailed Information</section>
+        </sections>
+        <sections>
+            <label><!-- Resolution --></label>
+            <section>Resolution</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

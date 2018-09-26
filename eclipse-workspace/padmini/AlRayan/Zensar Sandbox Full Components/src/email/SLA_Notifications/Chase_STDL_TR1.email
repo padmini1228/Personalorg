@@ -1,0 +1,19 @@
+It has now been 10 days since completion, therefor can you please chase for the SDLR/TR1 from the IBB solicitors.
+
+Customer 6 digit number: {!Opportunity.Customer_EBS_Number__c} 
+Product: {!Opportunity.IBB_Product__c} 
+Customer Name : {!Opportunity.Account} 
+Customer Security Address : 
+{!HPP_MI__c.Address_Line_1__c}
+{!HPP_MI__c.Address_Line_2__c}
+{!HPP_MI__c.Address_Line_3__c}
+{!HPP_MI__c.Address_Line_4__c}
+{!HPP_MI__c.Postcode__c}
+Completion Date {!HPP_MI__c.Actual_Completion_Date__c}
+
+
+{!Opportunity.Link} 
+{!HPP_MI__c.Link}
+
+Yours sincerely, 
+Islamic Bank of Britain plc

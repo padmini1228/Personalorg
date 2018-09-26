@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email automatically issued when a case is logged with IT helpdesk</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IBB_letterhead</letterhead>
+    <name>Case Created</name>
+    <style>freeForm</style>
+    <subject>Your case has been logged with IT Helpdesk.</subject>
+    <textOnly>Dear {!Case.Contact}
+ 
+Your incident has been logged to the IT Service Desk 
+Your case reference is - {!Case.CaseNumber}
+Your case subject is: {!Case.Subject}
+ 
+Your case will be looked at within the approved SLAs. 
+ 
+Thanks
+ 
+IT Helpdesk.</textOnly>
+    <type>html</type>
+</EmailTemplate>

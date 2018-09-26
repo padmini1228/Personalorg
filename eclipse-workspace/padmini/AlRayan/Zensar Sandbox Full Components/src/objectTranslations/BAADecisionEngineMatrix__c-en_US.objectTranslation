@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>BAA Decision Engine Matrix</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>BAA Decision Engine Matrix</value>
+    </caseValues>
+    <fields>
+        <label><!-- DoAML --></label>
+        <name>DoAML__c</name>
+    </fields>
+    <fields>
+        <label><!-- DoCredit --></label>
+        <name>DoCredit__c</name>
+    </fields>
+    <fields>
+        <label><!-- DoSanction --></label>
+        <name>DoSanction__c</name>
+    </fields>
+    <fields>
+        <label><!-- DoSetUp --></label>
+        <name>DoSetUp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entity Type --></label>
+        <name>EntityType__c</name>
+    </fields>
+    <fields>
+        <label><!-- ProductCategory --></label>
+        <name>ProductCategory__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Teller Function Account</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Teller Function Accounts</value>
+    </caseValues>
+    <fields>
+        <label><!-- Teller AccountType --></label>
+        <name>Teller_AccountType__c</name>
+        <relationshipLabel><!-- Teller Function Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Teller Function --></label>
+        <name>Teller_Function__c</name>
+        <relationshipLabel><!-- Teller Function Accounts --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

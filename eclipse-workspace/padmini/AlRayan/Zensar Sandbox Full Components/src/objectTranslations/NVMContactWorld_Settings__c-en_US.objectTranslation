@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>NVMContactWorld Settings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>NVMContactWorld Settings</value>
+    </caseValues>
+    <fields>
+        <label><!-- NVMContactWorld_baseURL --></label>
+        <name>NVMContactWorld_baseURL__c</name>
+    </fields>
+    <fields>
+        <label><!-- NVMContactWorld_clientId --></label>
+        <name>NVMContactWorld_clientId__c</name>
+    </fields>
+    <fields>
+        <label><!-- NVMContactWorld_clientSecret --></label>
+        <name>NVMContactWorld_clientSecret__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

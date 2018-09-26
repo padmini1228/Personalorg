@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Event Rewind</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Event Rewinds</value>
+    </caseValues>
+    <fields>
+        <label><!-- Events Opened --></label>
+        <name>Events_Opened__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Event Rewinds --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- RewindType --></label>
+        <name>RewindType__c</name>
+        <picklistValues>
+            <masterLabel>Post Submission</masterLabel>
+            <translation><!-- Post Submission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre Submission</masterLabel>
+            <translation><!-- Pre Submission --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rewind Comments --></label>
+        <name>Rewind_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rewind Reason --></label>
+        <name>Rewind_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Change of finance amount</masterLabel>
+            <translation><!-- Change of finance amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change of term</masterLabel>
+            <translation><!-- Change of term --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missed information/addresses taken incorrectly and amended</masterLabel>
+            <translation><!-- Missed information/addresses taken incorrectly and amended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Switch Rewind</masterLabel>
+            <translation><!-- Product Switch Rewind --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product suitability needs to be reviewed</masterLabel>
+            <translation><!-- Product suitability needs to be reviewed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Re-issue of Offer Letter</masterLabel>
+            <translation><!-- Re-issue of Offer Letter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Re-key of Budget Planner following return of application form</masterLabel>
+            <translation><!-- Re-key of Budget Planner following return of application form --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RewoundBy --></label>
+        <name>RewoundBy__c</name>
+        <relationshipLabel><!-- Event Rewinds --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- RewoundDate --></label>
+        <name>RewoundDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rewound From Stage --></label>
+        <name>Rewound_From_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rewound From Status --></label>
+        <name>Rewound_From_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rewound To Stage --></label>
+        <name>Rewound_To_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rewound To Status --></label>
+        <name>Rewound_To_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rewound To --></label>
+        <name>Rewound_To__c</name>
+        <relationshipLabel><!-- Event Rewinds --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Event Rewind Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Event details --></label>
+            <section>Event details</section>
+        </sections>
+        <sections>
+            <label><!-- Stage and Statuses --></label>
+            <section>Stage and Statuses</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Show_field_changes --></label>
+        <name>Show_field_changes</name>
+    </webLinks>
+</CustomObjectTranslation>
