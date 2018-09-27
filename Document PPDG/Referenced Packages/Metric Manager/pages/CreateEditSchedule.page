@@ -1,0 +1,63 @@
+<apex:page standardController="xmetric__Schedule__c" extensions="xmetric.ScheduleController" showHeader="true" sidebar="true">
+    <apex:sectionHeader title="{!$Label.Data_Feed_Scheduling}" subtitle="{!IF(schedule.Id == '', $Label.Create_New, $Label.Edit)} {!$ObjectType.xmetric__Schedule__c.Label}"/>
+    <c:ProcessingStatus />
+    <apex:pageMessages id="pgMsg"/>
+    <apex:form id="formId">
+        <apex:actionFunction name="saveSchedule" action="{!save}" status="processingStatus" reRender="formId, pgMsg"/>
+        <apex:actionFunction name="saveActivate" action="{!saveActivate}" status="processingStatus" reRender="formId, pgMsg"/>
+
+        <apex:pageBlock title="{!IF(schedule.Id == '', $Label.New, $Label.Edit)} {!$ObjectType.xmetric__Schedule__c.Label}" tabStyle="Schedule__c" mode="edit">
+            <apex:pageBlockSection title="{!$Label.Information}" columns="3">
+                <apex:inputField required="true" value="{!schedule.Name}" />
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="{!$ObjectType.xmetric__Schedule__c.Fields.xmetric__Type__c.Label}"/>
+                    <apex:actionRegion >
+                        <apex:inputField value="{!schedule.xmetric__Type__c}">
+                            <apex:actionSupport event="onchange" action="{!updatePage}" rerender="schedulePanel" >
+                            </apex:actionSupport>
+                        </apex:inputField>
+                    </apex:actionRegion>
+                </apex:pageBlockSectionItem> 
+                <apex:pageBlockSectionItem />
+              
+            </apex:pageBlockSection>
+            <apex:pageBlockSection id="schedulePanel" columns="1">
+                <apex:pageBlockSectionItem rendered="{!schedule.xmetric__Type__c == 'Daily'}" labelStyle="padding-right:1.5%;" dataStyle="padding-left:0px;" >
+                    <apex:outputLabel for="daily" value="Schedule Detail"  />
+                    <apex:outputPanel id="daily">
+                        <apex:outputText value="At " /><apex:inputText value="{!schedule.xmetric__Hours__c}" size="2" maxlength="2" /><apex:outputText value=":" /><apex:inputText value="{!schedule.xmetric__Minutes__c}" size="2" maxlength="2" /><apex:outputText value=" every day." />
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!schedule.xmetric__Type__c == 'Weekly'}" labelStyle="padding-right:1.5%;" dataStyle="padding-left:0px;" >
+                    <apex:outputLabel for="weekly" value="Schedule Detail"/>
+                    <apex:outputPanel id="weekly">
+                        <apex:outputText value="At " /><apex:inputText value="{!schedule.xmetric__Hours__c}" size="2" maxlength="2" /><apex:outputText value=":" /><apex:inputText value="{!schedule.xmetric__Minutes__c}" size="2" maxlength="2" /><apex:outputText value=" every " /><apex:inputField value="{!schedule.xmetric__Weekday__c}" />
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!schedule.xmetric__Type__c == 'Monthly'}" labelStyle="padding-right:1.5%;" dataStyle="padding-left:0px;" >
+                    <apex:outputLabel for="monthly" value="Schedule Detail" />
+                    <apex:outputPanel id="monthly">
+                        <apex:outputText value="At " /><apex:inputText value="{!schedule.xmetric__Hours__c}" size="2" maxlength="2" /><apex:outputText value=":" /><apex:inputText value="{!schedule.xmetric__Minutes__c}" size="2" maxlength="2" /><apex:outputText value=" on day number " /><apex:inputText size="2" value="{!schedule.xmetric__Day__c}" maxlength="2" /><apex:outputText value=" of every month. (Enter L for last day of the month)" />
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!schedule.xmetric__Type__c == 'Quarterly'}" labelStyle="padding-right:1.5%;" dataStyle="padding-left:0px;" >
+                    <apex:outputLabel for="quarterly" value="Schedule Detail" />
+                    <apex:outputPanel id="quarterly">
+                        <apex:outputText value="Quarterly starting at  " /><apex:inputText value="{!schedule.xmetric__Hours__c}" size="2" maxlength="2" /><apex:outputText value=":" /><apex:inputText value="{!schedule.xmetric__Minutes__c}" size="2" maxlength="2" /><apex:outputText value=" on day number " /><apex:inputText size="2" value="{!schedule.xmetric__Day__c}" maxlength="2" /><apex:outputText value=" of " /><apex:inputField value="{!schedule.xmetric__Month__c}" /> <apex:outputText value="(Enter L for last day of the month)" />
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem labelStyle="padding-right:1.5%;" dataStyle="padding-left:0px;" rendered="{!schedule.xmetric__Type__c == 'Annually'}">
+                    <apex:outputLabel for="annually" value="Schedule Detail" />
+                    <apex:outputPanel id="annually">
+                        <apex:outputText value="At " /><apex:inputText value="{!schedule.xmetric__Hours__c}" size="2" maxlength="2" /><apex:outputText value=":" /><apex:inputText value="{!schedule.xmetric__Minutes__c}" size="2" maxlength="2" /><apex:outputText value=" on day number " /><apex:inputText size="2" value="{!schedule.xmetric__Day__c}" maxlength="2" /><apex:outputText value=" of " /><apex:inputField value="{!schedule.xmetric__Month__c}" /> <apex:outputText value=" every year." />
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons location="bottom" >
+                <apex:commandButton value="{!$Label.Save_Metric}" onclick="saveSchedule();" reRender="formId, pgMsg"/>
+                <apex:commandButton value="{!$Label.Save_and_Activate}" onclick="saveActivate();" reRender="formId, pgMsg"/>
+                <apex:commandButton value="{!$Label.Cancel}" action="{!cancel}" />
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

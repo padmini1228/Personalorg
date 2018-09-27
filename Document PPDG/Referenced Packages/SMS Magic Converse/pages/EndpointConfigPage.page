@@ -1,0 +1,29 @@
+<apex:page controller="smagicinteract.EndpointConfigController"> 
+
+<apex:form >
+
+<apex:pageMessages />
+
+<apex:pageBlock id="main" title="Configure Endpoint"  rendered="{! isConfigAllowable }" >
+ 
+	<apex:pageBlockSection id="sectionURL" title="Set URL "  >
+		<label>Current Endpoint :</label> 
+		<apex:outputText value="{!currentURL}" />	
+
+ 		<label>New Endpoint :</label> 
+		<apex:inputText value="{!newURL}" style="width:600px"/>
+	</apex:pageBlockSection>
+
+
+ 
+<apex:pageBlockButtons id="buttonsBlock">
+    <apex:commandButton id="Save" action="{!save}" value="Save" title="Save"    />
+    <apex:commandButton id="Cancel" action="{!redirectToHome}"   value="Cancel" title="Cancel" />
+</apex:pageBlockButtons>
+
+
+</apex:pageBlock>
+
+</apex:form>
+
+</apex:page>

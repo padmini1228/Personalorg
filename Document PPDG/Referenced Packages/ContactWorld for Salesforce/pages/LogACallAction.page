@@ -1,0 +1,113 @@
+<apex:page controller="NVMContactWorld.LogACallActionController" action="{!init}" >
+
+    <apex:stylesheet value="{!URLFOR($Resource.NVMContactWorld__Assets, 'assets/Styles-NVM.css')}"/>
+
+    <apex:includeScript value="https://code.jquery.com/jquery-1.7.1.js" />
+    <apex:includeScript value="/canvas/sdk/js/publisher.js" />
+
+
+        <apex:form id="logACallForm">
+
+            <apex:actionFunction name="refresh"
+                action="{!init}"
+                reRender="logACallContainer"/>
+            <apex:actionFunction name="saveFreshDataAndRefresh"
+                action="{!saveFreshDataAndRefresh}"
+                reRender="logACallContainer"
+                oncomplete="refreshFeed()"/>
+            <apex:actionFunction name="refreshStaleData"
+                action="{!refreshStaleData}"
+                reRender="logACallContainer" />
+
+
+            <apex:outputPanel id="logACallContainer" layout="block" >
+            <div id="NvmPublisherAction">
+                <apex:outputPanel layout="none" rendered="{!IsRenderingNoActiveCallMessage}">
+                    <p id="noActiveCallMsg">{!$Label.nvmcontactworld__NoActiveCallMessage}</p>
+                    <apex:commandButton action="{!init}" value="{!$Label.nvmcontactworld__RefreshButton}" id="btnRefresh"/>
+                </apex:outputPanel>
+
+                <apex:outputPanel layout="none" rendered="{!IsRenderingNotesPanel}">
+
+                    <apex:outputPanel layout="none" rendered="{!HasCustomFields == false}">
+                        <div class="quickActionFieldLabel">
+                          <label>{!$Label.nvmcontactworld__NotesLabel}</label>
+                        </div>
+                        <div class="quickActionFieldElement">
+                          <apex:inputTextarea id="notesField" html-placeholder="{!$Label.nvmcontactworld__NotesPlaceholder}" value="{!CallNote}" rows="{!CallNoteRows}" styleClass="notesField"/>
+                        </div>
+                        <apex:outputPanel rendered="{!ErrorMessage != null}">
+                            <div class="errorMsg">
+                                <strong>{!ErrorMessage}</strong>
+                            </div>
+                        </apex:outputPanel>
+                    </apex:outputPanel>
+
+                    <apex:pageBlock mode="maindetail" rendered="{!HasCustomFields}">
+                        <apex:pageBlockSection showHeader="false" columns="1">
+                            <apex:inputTextarea id="notesField" html-placeholder="{!$Label.nvmcontactworld__NotesPlaceholder}" value="{!CallNote}" label="{!$Label.nvmcontactworld__NotesLabel}" rows="{!CallNoteRows}" styleClass="notesField"/>
+                            <apex:repeat value="{!CustomFieldNames}" var="customFieldName">
+                                <apex:inputField value="{!CustomFieldsTask[customFieldName]}" styleClass="additionalField"/>
+                            </apex:repeat>
+                            <apex:outputPanel rendered="{!ErrorMessage != null}">
+                                <div class="errorMsg">
+                                    <strong>{!ErrorMessage}</strong>
+                                </div>
+                            </apex:outputPanel>
+                        </apex:pageBlockSection>
+                    </apex:pageBlock>
+
+                    <div class="quickActionBottomBar">
+                        <apex:commandButton id="linkCallBtn" value="{!LinkToVisibleObjectLabel}" action="{!linkEventToVisibleObject}" rendered="{!IsRenderingLinkCallButton}"/>
+                        <apex:commandButton id="saveNoteBtn" action="{!saveNote}" rerender="logACallContainer" value="{!$Label.nvmcontactworld__SaveNoteButton}" styleClass="mainAction" oncomplete="refreshFeed();" onclick="disableSaveNoteButton();"/>
+                    </div>
+                </apex:outputPanel>
+              </div>
+             </apex:outputPanel>
+        </apex:form>
+
+    <script type="text/javascript">
+        (function refreshStaleDataOnBrowserTabBecomingVisible() {
+            var hidden = "hidden";
+            if (hidden in document)
+                document.addEventListener("visibilitychange", onchange);
+            else if ((hidden = "mozHidden") in document)
+                document.addEventListener("mozvisibilitychange", onchange);
+            else if ((hidden = "webkitHidden") in document)
+                document.addEventListener("webkitvisibilitychange", onchange);
+            else if ((hidden = "msHidden") in document)
+                document.addEventListener("msvisibilitychange", onchange);
+
+            function onchange () {
+                var isVisible = !this[hidden];
+                
+                if (isVisible) {
+                    refreshStaleData();
+                }
+            }
+        })();
+
+        $(function(){
+            Sfdc.canvas.publisher.subscribe([{name : "publisher.customActionMessage", onData : function(e) {
+                if (e.message === 'Call_Start_Event') {
+                    refresh();
+                } else if (e.message === 'Call_End_Event') {
+                    saveFreshDataAndRefresh();
+                } else if (e.message === 'Console_Tab_Change_Event'){
+                    refreshStaleData();
+                }
+            }}]);
+        });
+
+        function disableSaveNoteButton() {
+            $(".quickActionBottomBar .mainAction").prop('disabled', true);
+        }
+
+        function refreshFeed() {
+            if (document.querySelectorAll('.errorMsg').length == 0) {
+                Sfdc.canvas.publisher.publish({name : 'publisher.refresh', payload : { feed: true }});
+            }
+        }
+    </script>
+
+</apex:page>

@@ -1,0 +1,654 @@
+<apex:page standardController="XRB__Report__c"  extensions="XRB.CreateReportController">
+    <head>
+        <apex:includeScript value="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"/>
+        <apex:includeScript value="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"/>
+        <apex:includeScript value="{!URLFOR($Resource.XRB__ReportBuilder,'/js/jquery.treeview.js')}" />
+
+        <apex:stylesheet value="{!URLFOR($Resource.XRB__ReportBuilder,'/css/jquery-ui.css')}" />
+        <apex:stylesheet value="{!URLFOR($Resource.XRB__ReportBuilder,'/css/jquery.treeview.css')}" />
+        <apex:stylesheet value="{!URLFOR($Resource.XRB__ReportBuilder,'/css/BusinessUnitTreeView.css')}" />
+        <apex:stylesheet value="{!URLFOR($Resource.Risk__Spinner, '/Spinner/Spinner.css')}"/>
+
+        <style>
+            .bu_block{
+                cursor: pointer;
+                text-align: left;
+                padding-top: 2px;
+                padding-bottom: 2px;
+                background: #d2e1f0;
+                font-weight: bold;
+                padding-left: 10px;
+            }
+
+            .category_block label{
+                float:right;
+                padding-right:5px;
+            }
+
+            .dataCol{
+                width:14% !important;
+            }
+
+            option:selected {
+                background-color:green;
+            }
+            
+            /* Z-Index with calc was not behaving as expected on IE11 */
+            .slds-spinner_container{
+                z-index: 9002;
+                z-index: calc(9000 + 2);
+            }
+        </style>
+
+        <script type="text/javascript" >
+                var isAnythingchanged = false ;
+                $j = jQuery.noConflict();
+            $j(document).ready(function(){
+                // Disable the related list if it is not selected
+                $j("#rTable > tbody > tr:odd").each(function() {
+                    if (!$j(this).prev().find('input:checkbox').is(':checked')){
+                        $j(this).css('display','none');
+                    }
+                });
+
+                $j("select[id$='riskTypePickList']").find("option[value='']").remove();
+
+                //Initialize Tree using jquery treeview plugin
+                $j("#businessUnitTree").treeview({
+                    collapsed : 'true',
+                    toggle: function(e) {
+                        var className = $j(this).children("span").attr("class") ;
+                        if(className.indexOf("blank") != -1) {
+                            e.preventDefault();
+                        }
+                        var reqSpan = $j(this).children("span");
+                        if(className.indexOf("icon-close") != -1 ) {
+                            reqSpan.removeClass("icon-close");
+                            reqSpan.addClass("icon-open");
+                        } else if(className.indexOf("icon-open") != -1 ) {
+                            reqSpan.removeClass("icon-open");
+                            reqSpan.addClass("icon-close");
+                        }
+                    }
+                });
+
+                var chosenId = '{!JSENCODE(chosenBusinessUnitId)}';
+
+                if(chosenId != null) {
+                   $j('#'+chosenId).attr('checked',true);
+                   $j('#selectedBusinessUnitId').val(chosenId);
+
+                   showChildren(chosenId);
+                }
+            });
+
+            // Display the filters for the related list
+            function toggleFiltersAndColumns(className){
+                $j('.'+className).closest("tr").next().toggle();
+                $j('.'+className).closest("tr").next().find('div:eq(1)').toggle();
+            }
+
+            // disable all the businesss unit other than selected one
+            function enableBusinessUnit(eId){
+                $j('#'+eId).closest('div').find('input:checkbox').each(function() {
+                    $j(this).attr('checked',false);
+                });
+                $j('#'+eId).attr('checked',true);
+                $j('#selectedBusinessUnitId').val(eId);
+            }
+
+            // show all the child business units
+            function showChildren(eleId){
+                $j('#'+eleId).closest('div').find('ul').each(function() {
+                    $j(this).find('span').removeClass('icon-close').addClass('icon-open');
+                    $j(this).css('display','block');
+                });
+            }
+
+            // hide all the child business units
+            function hideChildren(eleId){
+                $j('#'+eleId).closest('div').find('ul:eq(0)').find('span:eq(0)').removeClass('icon-open').addClass('icon-close');
+                $j('#'+eleId).closest('div').find('ul:gt(0)').each(function() {
+                    $j(this).find('span').removeClass('icon-open').addClass('icon-close');
+                    $j(this).css('display','none');
+                });
+            }
+
+            // Move option from available select list to selected select List
+            function MoveRight(firstListId, secondListId) {
+               if ($j('#'+firstListId).find('select option:selected').length != 0){
+                    $j('#'+firstListId).find('select option:selected').each(function () {
+                        $j('#'+secondListId).find('select option').each(function() {
+                            $j(this).css({'background-color':'white','color':'black'}).removeAttr('selected');
+                        })
+                        var option = $j('<option ></option>').val($j(this).val()).text($j(this).text());
+                        $j('#'+firstListId).find('select option:selected').remove();
+                        $j('#'+secondListId).find('select').append(option);
+                    });
+                    $j('#'+secondListId).find('select option:last-child').css({'background-color':'#1589FF','color':'white'}).attr('selected','selected');
+                }
+            }
+
+            // Move option from selected select list to available select List
+            function MoveLeft(firstListId, secondListId) {
+                if ($j('#'+secondListId).find('select option:selected').length != 0){
+                    $j('#'+secondListId).find('select option:selected').each(function () {
+                        var option = $j('<option></option>').val($j(this).val()).text($j(this).text());
+                        $j('#'+secondListId).find('select option:selected').remove();
+                        $j('#'+firstListId).find('select').append(option);
+                    });
+                }
+            }
+
+            //Move the option upwards in the selectList
+            function MoveUp(selectListId){
+                if ($j('#'+selectListId).find('select option:selected').length != 0){
+                    $j('#'+selectListId).find('select option:selected').first().prev().before($j('#'+selectListId).find('select option:selected'));
+                }
+            }
+
+            //Move the option downwards in the selectList
+            function MoveDown(selectListId){
+                if ($j('#'+selectListId).find('select option:selected').length != 0) {
+                    $j('#'+selectListId).find('select option:selected').last().next().after($j('#'+selectListId).find('select option:selected'));
+                }
+            }
+
+            // Change the option style to default
+            function changeOptionStyle(elementId,removeattr){
+                $j('#'+elementId).find('select option').each(function() {
+                    $j(this).css({'background-color':'white','color':'black'});
+                    if (removeattr) $j(this).removeAttr('selected');
+                })
+            }
+
+            // Pass the select fields into the controller
+            function selectedFieldsList(){
+                var selectedFields = '';
+                $j('#selected-parentObj').find('select').val('');
+                // Get the parent records
+                if($j('#selected-parentObj option').length > 0){
+                    var fieldsList = '';
+                    $j('#selected-parentObj option').each(function () {
+                        fieldsList += (fieldsList == '') ? $j(this).val() : ',' + $j(this).val();
+                    });
+                    $j('#sel-parent-grc__risk__c').val(fieldsList);
+                }else $j('#sel-parent-grc__risk__c').val('');
+
+                // Get the selected business unit fields
+                $j("[id$='selectedTitleFields']").val('');
+                if ($j("[id$='selectedTitleFields'] option").length > 0){
+                    $j("[id$='selectedTitleFields'] option").each(function() {
+                        selectedFields += ((selectedFields == '') ? $j(this).val() : ','+$j(this).val());
+                    })
+                }
+                $j('#selectedReportTitleFields').val(selectedFields);
+
+                // Get the related lists
+                $j("#rTable > tbody > tr:odd").each(function() {
+                    if ($j(this).prev().find('input:checkbox').is(':checked')){
+                        var fieldsList = '';
+                        var objName = $j(this).find('table#rListTable > tbody > tr:eq(0)').attr('id');
+                        if ($j(this).find('table#rListTable').find('select:eq(1) option').length > 0){
+                            $j(this).find('table#rListTable').find('select:eq(1)').val('');
+                            $j(this).find('table#rListTable').find('select:eq(1) option').each(function () {
+                                fieldsList += (fieldsList == '') ? $j(this).val() : ',' + $j(this).val();
+                            });
+                            $j('#sel-'+objName).val(fieldsList);
+                        }else $j('#sel-'+objName).val('');
+                    }
+                });
+            }
+        </script>
+    </head>
+
+    <apex:pageMessages id="MessagePanel"/>
+
+    <!-- "Loading" or "Processing" popup -->
+    <apex:actionStatus id="processingStatus" stopText="" >
+        <apex:facet name="start">
+            <div class = "slds">
+                <div class="slds-spinner_container">
+                <div class="popupPanel">
+                    <table border="0" width="100%" height="100%">
+                        <tr>
+                            <td>
+                                <img src="{!URLFOR($Resource.Risk__Spinner, '/Spinner/slds_spinner_brand.gif')}" align="center" height="35px" width="35px"/>
+                                    Loading ...
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                </div>
+            </div>
+        </apex:facet>
+    </apex:actionStatus>
+
+    <!-- Page Content -->
+    <apex:form id="form">
+         <apex:sectionHeader title="{!$Label.xrb__home}" subtitle="{!IF(NOT(ISNULL(XRB__Report__c.Id)),XRB__Report__c.Name, $Label.xrb__new_report_title)}" />
+
+         <!-- Hidden inputs -->
+         <input type="hidden" id="showChildBusinessUnits" name="showChildBusinessUnits" value="" />
+         <input type="hidden" id="selectedReportType" name="selectedReportType" value="" />
+         <input type="hidden" id="selectedBusinessUnitId" name="selectedBusinessUnitId" value="" />
+         <input type="hidden" id="sel-parent-grc__risk__c" name="sel-parent-grc__risk__c" value="" />
+         <apex:repeat value="{!RelatedList}" var="rList" >
+            <input type="hidden" id="sel-{!rList.objectName}" name="sel-{!JSENCODE(rList.objectName)}" value="" />
+         </apex:repeat>
+
+         <!-- Add Filter Row -->
+         <apex:actionFunction status="processingStatus" name="addRow" action="{!addFilterRow}" rerender="filterTable,relatedListTable" >
+            <apex:param name="objectName" value="{!objName}" assignTo="{!objName}" />
+            <apex:param name="isChild" value="" assignTo="{!isChild}" />
+         </apex:actionFunction>
+
+         <!-- Remove Filter Row -->
+         <apex:actionFunction status="processingStatus" name="removeRow" action="{!removeFilterRow}" rerender="filterTable,relatedListTable" >
+            <apex:param name="objectName" value="{!objName}" assignTo="{!objName}" />
+            <apex:param name="isChild" value="" assignTo="{!isChild}" />
+         </apex:actionFunction>
+
+         <apex:pageBlock id="pbBlock" title="{!$Label.xrb__report} {!IF(NOT(ISNULL(XRB__Report__c.Id)),IF(isBuildReport,$Label.xrb__build_report,$Label.xrb__edit_report), $Label.xrb__new_report)}" >
+            <apex:pageBlockButtons >
+                <apex:commandButton value="{!$Label.xrb__save_report}" onclick="selectedFieldsList();" action="{!saveReport}" rendered="{!NOT(isBuildReport) && NOT(isReadOnly)}" />
+                <apex:commandButton value="{!$Label.xrb__cancel_report}" action="{!cancel}" />
+                <apex:commandLink style="text-decoration:none; padding:4px;" value="{!$Label.xrb__show_report}" action="{!BuildReport}" styleClass="btn" target="_blank" rendered="{!isBuildReport}" />
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="{!$Label.xrb__information}" columns="2" collapsible="false" >
+
+                <!-- Report Name -->
+                <apex:inputField value="{!XRB__Report__c.Name}" rendered="{!NOT(isBuildReport)}" />
+
+                <!-- Report Type  -->
+                <apex:pageBlockSectionItem rendered="{!isBuildReport}" >
+                    <apex:outputLabel style="vertical-align " value="{!$Label.xrb__report_type}" />
+                    <apex:selectList value="{!reportType}" size="1" multiselect="false" >
+                       <apex:selectOption itemValue="" itemLabel="{!$Label.xrb__picklist_none}" />
+                        <apex:selectOption itemValue="pdfa3" itemLabel="{!$Label.xrb__pdf_a3}" />
+                        <apex:selectOption itemValue="pdfa3flat" itemLabel="{!$Label.xrb__pdf_a3_flat}" />
+                        <apex:selectOption itemValue="pdfa4" itemLabel="{!$Label.xrb__pdf_a4}" />
+                        <apex:selectOption itemValue="excel" itemLabel="{!$Label.xrb__excel}" />
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+
+                <apex:inputField value="{!XRB__Report__c.XRB__Font_Size__c}"/>
+                
+                <!-- Report Description -->
+                <apex:inputField value="{!XRB__Report__c.XRB__Description__c}" rendered="{!NOT(isBuildReport)}" />
+
+                <apex:pageBlockSectionItem />
+
+                <apex:pageBlockSectionItem rendered="{!isBuildReport}" helpText="{!limitsError}">
+                    <apex:outputLabel value="{!$Label.xrb__record_limit}" />
+                    <apex:inputText value="{!recordLimitString}"/>
+                </apex:pageBlockSectionItem>
+
+                </apex:pageBlockSection>
+
+                <apex:pageBlockSection title="{!$Label.xrb__heading_logos}" collapsible="false" columns="2" rendered="{!NOT(isBuildReport)}" >
+                <!-- Left Logo -->
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="{!$ObjectType.XRB__Report__c.fields.XRB__Left_Logo__c.Label}" />
+                    <apex:selectList value="{!leftLogo}" multiselect="false" size="1" >
+                        <apex:selectOption itemValue="" itemLabel="{!$Label.xrb__picklist_none}" />
+                        <apex:selectOptions value="{!Logos}" />
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+
+                <!-- Right Logo -->
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="{!$ObjectType.XRB__Report__c.fields.XRB__Right_Logo__c.Label}" />
+                    <apex:selectList value="{!rightLogo}" multiselect="false" size="1" >
+                        <apex:selectOption itemValue="" itemLabel="{!$Label.xrb__picklist_none}" />
+                        <apex:selectOptions value="{!Logos}" />
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+
+            </apex:pageBlockSection>
+
+            <!-- Filters Section -->
+            <apex:pageBlockSection title="{!$Label.xrb__filters_section}" columns="2" collapsible="false" >
+                <!-- Date Filter -->
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="{!$Label.xrb__date_filter}" />
+                    <apex:selectList value="{!selectedDateFilterField}" multiselect="false" size="1" >
+                        <apex:selectOption itemValue="" itemLabel="{!$Label.xrb__picklist_none}" />
+                        <apex:selectOptions value="{!DateFilters}" />
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+
+                <!-- From Date -->
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="{!$ObjectType.XRB__Report__c.fields.XRB__StartDate__c.Label}" />
+                    <apex:inputField value="{!XRB__Report__c.XRB__StartDate__c}" />
+                </apex:pageBlockSectionItem>
+
+                <!-- Risk Owner -->
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="{!$ObjectType.XRB__Report__c.fields.XRB__Risk_Owner__c.Label}" />
+                    <apex:inputField value="{!XRB__Report__c.XRB__Risk_Owner__c}" />
+                </apex:pageBlockSectionItem>
+
+                <!-- To Date -->
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="{!$ObjectType.XRB__Report__c.fields.XRB__EndDate__c.Label}" />
+                    <apex:inputField value="{!XRB__Report__c.XRB__EndDate__c}" />
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+
+            <!-- Business Unit tree view -->
+            <apex:pageBlockSection title="{!$Label.xrb__business_unit}" collapsible="false" columns="2" rendered="{!isBuildReport && NOT(isReadOnly)}" >
+                <apex:repeat value="{!BusinessUnitTopLevel}" var="topLevelBUId" >
+                    <apex:outputPanel layout="block" id="BUtreeview" >
+                        <span style="padding-left:20px; padding-bottom:35px;" >
+                            <a href="#" style="text-decoration:underline; cursor:pointer; padding-top:6px;" id="enableTree" onclick="showChildren(this.id);" >{!$Label.Expand_All}</a>
+                            <a href="#" style="text-decoration:underline; cursor:pointer; padding-top:6px; padding-left:10px;" id="disableTree" onclick="hideChildren(this.id);" >{!$Label.Collapse_All}</a>
+                        </span>
+                        <apex:outputText escape="false" value="{!mapBusinessUnitTree[topLevelBUId]}" rendered="{!NOT(ISBLANK(mapBusinessUnitTree[topLevelBUId]))}" />
+                    </apex:outputPanel>
+                </apex:repeat>
+
+                <!-- </apex:outputpanel> -->
+            </apex:pageBlockSection>
+            <apex:pageBlockSection columns="5" id="aggregationLimit">
+
+                <!--Heatmap Type Picklist -->
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="{!$ObjectType.XRB__Report__c.fields.XRB__Heatmap_Type__c.Label}" />
+                        <apex:actionregion >
+                            <apex:inputField value="{!XRB__Report__c.XRB__Heatmap_Type__c}">
+                             <apex:actionSupport event="onchange" action="{!updateChildBUcheck}" rerender="childBUcheckBoxPanel, aggregationLimit, showInherentPanel" />
+                            </apex:inputField>
+                        </apex:actionregion>
+                </apex:pageBlockSectionItem>
+
+                    <!-- Child Business Units -->
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="{!$Label.xrb__result_for_child_bu}" />
+                    <apex:outputpanel id="childBUcheckBoxPanel">
+                    <apex:inputCheckbox value="{!childBusinessUnits}" disabled="{!IF(XRB__Report__c.XRB__Heatmap_Type__c==null,'false', 'true')}"/>
+                    </apex:outputpanel>
+                </apex:pageBlockSectionItem>
+
+                    <!-- Show Inherent values -->
+                    <apex:pageBlockSectionItem rendered="{!IF(XRB__Report__c.XRB__Heatmap_Type__c!=null,true,false)}" helpText="When Residual Score is empty, plot Inherent Score of available Risks.">
+                        <apex:outputLabel value="{!$Label.xrb__show_inherent}" />
+                        <apex:outputpanel id="showInherentPanel">
+                            <apex:inputCheckbox value="{!showInherent}" title="{!$Label.xrb__plot_inherent_score}"/>
+                        </apex:outputpanel>
+                    </apex:pageBlockSectionItem>
+                    <!-- We have a blank page block section here to maintain the page layout when the above show inherent isn't rendered. -->
+                    <apex:pageBlockSectionItem rendered="{!IF(XRB__Report__c.XRB__Heatmap_Type__c==null,true,false)}" />
+
+                    <!--Risk Type Picklist -->
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="{!$ObjectType.XRB__Report__c.fields.XRB__Include_Risks_Type__c.Label}" />
+                            <apex:actionregion >
+                                <apex:inputField id="riskTypePickList" required="true" value="{!XRB__Report__c.XRB__Include_Risks_Type__c}">
+                                </apex:inputField>
+                            </apex:actionregion>
+                    </apex:pageBlockSectionItem>
+
+                    <!-- Show Aggregation Limit -->
+                    <apex:pageBlockSectionItem helpText="{!$Label.xrb__help_text_for_child_business_units}" rendered="{!XRB__Report__c.XRB__Heatmap_Type__c == 'Aggregated'}">
+                        <apex:outputLabel value="{!$Label.xrb__financial_aggregation_limit}" />
+                        <apex:outputpanel >
+                            <apex:inputField value="{!XRB__Report__c.XRB__Financial_Aggregation_limit__c}" />
+                        </apex:outputpanel>
+                    </apex:pageBlockSectionItem>
+
+            </apex:pageBlockSection>
+
+            <!-- Field Filters -->
+            <apex:pageBlockSection id="filterTable" columns="1" title="{!$Label.xrb__field_filters}" collapsible="false" rendered="{!NOT(isReadOnly)}">
+                <apex:pageBlockTable value="{!reportFilters}" var="filter" >
+                    <apex:column style="width:5%;" headerValue="{!$Label.xrb__no}" value="{!filter.filterNo}." />
+                    <apex:column style="width:35%;" headerValue="{!$Label.xrb__field}" >
+                        <apex:selectList style="width:20em;" value="{!filter.selectedField}" multiselect="false" size="1" >
+                            <apex:selectOption itemValue="" itemLabel="{!$Label.xrb__picklist_none}" />
+                            <apex:selectOptions value="{!filter.fieldsList}" />
+                            <apex:actionSupport event="onchange" onsubmit="selectedFieldsList();" action="{!validateFilters}" status="processingStatus" rerender="filterTable"  >
+                                <apex:param name="objectName" value="{!filter.objectName}" assignTo="{!objName}" />
+                                <apex:param name="isChild" value="false" assignTo="{!isChild}" />
+                                <apex:param name="filterNumber" value="{!filter.filterNo}" assignTo="{!filterNo}" />
+                            </apex:actionSupport>
+                        </apex:selectList>
+                    </apex:column>
+                    <apex:column style="width:20%;" headerValue="{!$Label.xrb__operator}" >
+                        <apex:selectList style="width:10em;" value="{!filter.selectedOperator}" multiselect="false" size="1" >
+                            <apex:selectOptions value="{!filter.operatorsList}" />
+                            <apex:actionSupport event="onchange" status="processingStatus" rerender="filterTable" />
+                        </apex:selectList>
+                    </apex:column>
+                    <apex:column style="width:20%;" headerValue="{!$Label.xrb__value}" id="valueColumn">
+                        <div style="display: {!IF(filter.selectedOperator!=EQUALS && filter.selectedOperator!=NOT_EQUALS && filter.selectedOperator!='','', 'none')}; height:20px; background-color:#C00; width:3px; float:left; margin-right:1px;"></div>
+                        <apex:inputText style="width:10em;" value="{!filter.value}" rendered="{!(NOT(filter.isCustomField) || NOT(filter.isLookorPickOrDate) || filter.selectedField != filter.tempField || ISBLANK(filter.selectedField)) && NOT(filter.isDependentOrMultiPick)}" />
+                        <apex:inputField required="false" style="width:10em;" value="{!filter.obj[filter.selectedField]}" rendered="{!filter.isCustomField && filter.isLookorPickOrDate && filter.selectedField == filter.tempField && NOT(filter.isDependentOrMultiPick) && NOT(ISBLANK(filter.selectedField))}" />
+                        <apex:selectList style="width:10em;"  value="{!filter.value}" size="1" multiselect="false" rendered="{!(NOT(filter.isCustomField) || NOT(filter.isLookorPickOrDate)) && filter.isDependentOrMultiPick && NOT(ISBLANK(filter.selectedField))}" >
+                            <apex:selectOption itemValue="" itemLabel="{!$Label.xrb__picklist_none}" />
+                            <apex:selectOptions value="{!filter.pickListValues}" />
+                        </apex:selectList>
+                    </apex:column>
+                    <apex:column headerValue="{!$Label.xrb__filter_logic}" >
+                        <apex:selectList style="width:4em;" value="{!filter.selectedLogic}" multiselect="false" size="1" rendered="{!NOT(filter.isLastFilter)}" >
+                            <apex:selectOptions value="{!filter.logicList}" />
+                        </apex:selectList>
+                    </apex:column>
+                    <apex:column headerValue="Error">
+                        <apex:outputText style="color:#C00;" value="{!filter.error}" rendered="{!filter.error!=null&&filter.error!=''}"/>
+                    </apex:column>
+                </apex:pageBlockTable>
+                <a hef="#" style="text-decoration:underline; cursor:pointer;" onclick="selectedFieldsList();addRow('{!reportFilters[0].objectName}', 'false')" >{!$Label.Add_Row}</a>
+                <a hef="#" style="text-decoration:underline; cursor:pointer;" onclick="selectedFieldsList();removeRow('{!reportFilters[0].objectName}', 'false')">{!$Label.Remove_Row}</a>
+            </apex:pageBlockSection>
+
+            <!-- Fields List -->
+            <apex:pageBlockSection columns="2" title="{!$ObjectType.grc__Risk__c.Label} {!$Label.xrb__fields}"  collapsible="false" rendered="{!NOT(isBuildReport) && NOT(isReadOnly)}" >
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="{!$Label.xrb__fields}" />
+                    <apex:outputPanel layout="block" >
+                        <apex:outputPanel layout="none" rendered="{!parentObj.selectedFieldsList.size > 0 || parentObj.availableFieldsList.size > 0}" >
+                            <table>
+                                <tr>
+                                    <td style="text-align:center;"><b>{!$Label.Available}</b></td>
+                                    <td></td>
+                                    <td style="text-align:center;"><b>{!$Label.Selected}</b></td>
+                                </tr>
+                                <tr>
+                                    <!-- Available Fields -->
+                                    <td id="available-parentObj" >
+                                        <apex:selectList id="available" style="min-width:12em; height:8em;" value="{!parentObj.availableFields}" multiselect="true" size="{!parentObj.size}" >
+                                        <apex:selectOptions value="{!parentObj.availableFieldsList}" />
+                                        </apex:selectList>
+                                    </td>
+                                    <td>
+                                         <table>
+                                            <tr><td><img src="/s.gif" alt="Add" class="picklistArrowRight"  onclick="MoveRight('available-parentObj','selected-parentObj');" style="cursor:pointer; margin-top:1.8em;" title="{!$Label.Add}" /></td></tr>
+                                            <tr><td><img src="/s.gif" alt="Remove" class="picklistArrowLeft" onclick="MoveLeft('available-parentObj','selected-parentObj');" style="cursor:pointer; margin-top:2.2em;" title="{!$Label.Remove}" /></td></tr>
+                                        </table>
+                                    </td>
+                                    <!-- Selected Fields -->
+                                    <td id="selected-parentObj">
+                                        <apex:selectList id="parentselected" style="min-width:12em; height:8em;" value="{!parentObj.selectedFields}" multiselect="true" size="{!parentObj.size}" >
+                                            <apex:selectOptions value="{!parentObj.selectedFieldsList}" />
+                                            </apex:selectList>
+                                    </td>
+                                    <td>
+                                         <table>
+                                            <tr><td><img src="/s.gif" alt="Up" class="upArrowIcon" onclick="MoveUp('selected-parentObj');" style="cursor:pointer; margin-top:1.8em;" title="{!$Label.Up}" /></td></tr>
+                                            <tr><td><img src="/s.gif" alt="Down" class="downArrowIcon" onclick="MoveDown('selected-parentObj');" style="cursor:pointer; margin-top:2.2em;" title="{!$Label.Down}" /></td></tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </apex:outputPanel>
+                        <apex:outputLabel value="{!$Label.xrb__none}" rendered="{!parentObj.selectedFieldsList.size == 0 && parentObj.availableFieldsList.size == 0}" />
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!parentObj.selectedFieldsList.size > 0 || parentObj.availableFieldsList.size > 0}" >
+                    <apex:pageBlockSection columns="1" >
+                        <apex:outputPanel layout="none"  >
+                            <table style="padding-top:4em; padding-right:8em;">
+                                <tr>
+                                    <td class="labelCol" style="vertical-align:middle;"><apex:outputLabel style="white-space:nowrap;" value="{!$Label.xrb__sort_by}" /></td>
+                                    <td>
+                                        <apex:selectList value="{!parentObj.sortSection.selectedField}" multiselect="false" size="1" >
+                                            <apex:selectOption itemValue="" itemLabel="{!$Label.xrb__picklist_none}" />
+                                            <apex:selectOptions value="{!parentObj.sortSection.fieldsList}" />
+                                        </apex:selectList>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="labelCol" style="vertical-align:middle;"><apex:outputLabel style="white-space:nowrap;" value="{!$Label.xrb__order}" /></td>
+                                    <td>
+                                        <apex:selectList value="{!parentObj.sortSection.selectedOrder}" multiselect="false" size="1" >
+                                            <apex:selectOptions value="{!parentObj.sortSection.orderList}" />
+                                        </apex:selectList>
+                                    </td>
+                                </tr>
+                            </table>
+                        </apex:outputPanel>
+                    </apex:pageBlockSection>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+
+            <!-- related List Section -->
+            <apex:pageBlockSection id="relatedListTable" columns="1" title="{!$Label.xrb__related_list_section}" collapsible="false" rendered="{!NOT(isBuildReport) && NOT(isReadOnly)}" >
+                <apex:outputPanel layout="none"  >
+                    <table id="rTable" style="width:100%; table-layout:fixed;" >
+                        <apex:repeat value="{!RelatedList}" var="rList" >
+                            <tr class="relatedList" >
+                                <td style="width:2%;" >
+                                    <apex:inputCheckbox value="{!rList.isSelected}" >
+                                        <apex:actionSupport onsubmit="selectedFieldsList();" status="processingStatus" action="{!showRelatedListFilters}" event="onchange" rerender="relatedListTable" >
+                                            <apex:param name="objectName"  value="{!rList.objectName}" assignTo="{!objName}" />
+                                        </apex:actionSupport>
+                                    </apex:inputCheckbox>
+                                </td>
+                                <td style="width:98%; vertical-align:middle;" align="left" >{!rList.relationshipLabel}</td>
+                            </tr>
+                            <tr class="relatedList" id="row-{!rList.objectName}" >
+                                <td colspan="2" style="width:100%;" >
+                                    <!-- Related List filters -->
+                                    <apex:pageBlockSection title="{!rList.objectLabel} {!$Label.xrb__filters}" collapsible="false" columns="1"  rendered="{!rList.isSelected && !rList.isNoFilter}" >
+                                        <apex:pageBlockTable value="{!rList.relatedListFilters}" var="filter" >
+                                            <apex:column style="width:5%;" headerValue="{!$Label.xrb__no}" value="{!filter.filterNo}." />
+                                            <apex:column style="width:35%;" headerValue="{!$Label.xrb__field}" >
+                                                <apex:selectList style="width:20em;" value="{!filter.selectedField}" multiselect="false" size="1" >
+                                                    <apex:selectOption itemValue="" itemLabel="{!$Label.xrb__picklist_none}" />
+                                                    <apex:selectOptions value="{!filter.fieldsList}" />
+                                                    <apex:actionSupport event="onchange" onsubmit="selectedFieldsList();" action="{!validateFilters}" status="processingStatus" rerender="relatedListTable"  >
+                                                        <apex:param name="objectName" value="{!filter.objectName}" assignTo="{!objName}" />
+                                                        <apex:param name="isChild" value="true" assignTo="{!isChild}" />
+                                                        <apex:param name="filterNumber" value="{!filter.filterNo}" assignTo="{!filterNo}" />
+                                                    </apex:actionSupport>
+                                                </apex:selectList>
+                                            </apex:column>
+                                            <apex:column style="width:20%;" headerValue="{!$Label.xrb__operator}" >
+                                                <apex:selectList style="width:10em;" value="{!filter.selectedOperator}" multiselect="false" size="1" >
+                                                    <apex:selectOptions value="{!filter.operatorsList}" />
+                                                </apex:selectList>
+                                            </apex:column>
+                                            <apex:column style="width:20%;" headerValue="{!$Label.xrb__value}" >
+                                                <apex:inputText style="width:10em;" value="{!filter.value}" rendered="{!(NOT(filter.isCustomField) || NOT(filter.isLookorPickOrDate) || (filter.selectedField != filter.tempField) || ISBLANK(filter.selectedField)) && NOT(filter.isDependentOrMultiPick)}" />
+
+                                                <apex:inputField style="width:10em;" value="{!filter.obj[filter.selectedField]}" rendered="{!filter.isCustomField && filter.isLookorPickOrDate && NOT(filter.isDependentOrMultiPick) && (filter.selectedField == filter.tempField) && NOT(ISBLANK(filter.selectedField))}" />
+
+                                                <apex:selectList style="width:10em;"  value="{!filter.value}" size="1" multiselect="false" rendered="{!(NOT(filter.isCustomField) || NOT(filter.isLookorPickOrDate)) && filter.isDependentOrMultiPick && NOT(ISBLANK(filter.selectedField))}" >
+                                                    <apex:selectOption itemValue="" itemLabel="{!$Label.xrb__picklist_none}" />
+                                                    <apex:selectOptions value="{!filter.pickListValues}" />
+                                                </apex:selectList>
+
+                                            </apex:column>
+                                            <apex:column headerValue="{!$Label.xrb__filter_logic}" >
+                                                <apex:selectList style="width:4em;" value="{!filter.selectedLogic}" multiselect="false" size="1" rendered="{!NOT(filter.isLastFilter)}" >
+                                                    <apex:selectOptions value="{!filter.logicList}" />
+                                                </apex:selectList>
+                                            </apex:column>
+                                        </apex:pageBlockTable>
+                                        <a hef="#" style="text-decoration:underline; cursor:pointer;" onclick="selectedFieldsList();addRow('{!JSINHTMLENCODE(rList.objectName)}', 'true')" >{!$Label.Add_Row}</a>
+                                        <a hef="#" style="text-decoration:underline; cursor:pointer;" onclick="selectedFieldsList();removeRow('{!JSINHTMLENCODE(rList.objectName)}', 'true')">{!$Label.Remove_Row}</a>
+                                    </apex:pageBlockSection>
+
+                                    <!-- Realted List Display options -->
+                                    <apex:pageBlockSection title="{!$Label.xrb__display_options}" collapsible="false" columns="2" rendered="{!rList.isSelected}">
+                                        <apex:pageBlockSectionItem >
+                                            <apex:outputLabel value="{!$Label.xrb__fields}" />
+                                            <apex:outputPanel layout="block" >
+                                                <apex:outputPanel layout="none" rendered="{!rList != null && (rList.fieldsList.selectedFieldsList.size > 0 || rList.fieldsList.availableFieldsList.size > 0)}" >
+                                                    <table id="rListTable" >
+                                                        <tr id="{!JSENCODE(rList.objectName)}" >
+                                                            <td style="text-align:center;"><b>{!$Label.Available}</b></td>
+                                                            <td></td>
+                                                            <td style="text-align:center;"><b>{!$Label.Selected}</b></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <!-- Available Fields -->
+                                                            <td id="available-{!JSENCODE(rList.objectName)}" >
+                                                                <apex:selectList id="available" style="min-width:12em; height:8em;" value="{!rList.fieldsList.availableFields}" multiselect="true" size="{!rList.fieldsList.size}" >
+                                                                    <apex:selectOptions value="{!rList.fieldsList.availableFieldsList}" />
+                                                                </apex:selectList>
+                                                            </td>
+                                                            <td>
+                                                                 <table>
+                                                                    <tr><td><img src="/s.gif" alt="Add" class="picklistArrowRight"  onclick="MoveRight('available-{!JSENCODE(rList.objectName)}','selected-{!JSENCODE(rList.objectName)}');" style="cursor:pointer; margin-top:1.8em;" title="{!$Label.Add}" /></td></tr>
+                                                                    <tr><td><img src="/s.gif" alt="Remove" class="picklistArrowLeft" onclick="MoveLeft('available-{!JSENCODE(rList.objectName)}','selected-{!JSENCODE(rList.objectName)}');" style="cursor:pointer; margin-top:2.2em;" title="{!$Label.Remove}" /></td></tr>
+                                                                </table>
+                                                            </td>
+                                                            <!-- Selected Fields -->
+                                                            <td id="selected-{!JSENCODE(rList.objectName)}">
+                                                                <apex:selectList id="selected" style="min-width:12em; height:8em;" value="{!rList.fieldsList.selectedFields}" multiselect="true" size="{!rList.fieldsList.size}" >
+                                                                    <apex:selectOptions value="{!rList.fieldsList.selectedFieldsList}" />
+                                                                </apex:selectList>
+                                                            </td>
+                                                            <td>
+                                                                 <table>
+                                                                    <tr><td><img src="/s.gif" alt="Up" class="upArrowIcon" onclick="MoveUp('selected-{!JSENCODE(rList.objectName)}');" style="cursor:pointer; margin-top:1.8em;" title="{!$Label.Up}" /></td></tr>
+                                                                    <tr><td><img src="/s.gif" alt="Down" class="downArrowIcon" onclick="MoveDown('selected-{!JSENCODE(rList.objectName)}');" style="cursor:pointer; margin-top:2.2em;" title="{!$Label.Down}" /></td></tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </apex:outputPanel>
+                                                <apex:outputLabel value="{!$Label.xrb__none}" rendered="{!rList.fieldsList.selectedFieldsList.size == 0 && rList.fieldsList.availableFieldsList.size == 0}" />
+                                                <apex:outputPanel layout="block"  style="vertical-align:middle; padding-top:5px;" rendered="{!(rList.fieldsList.selectedFieldsList.size > 0 || rList.fieldsList.availableFieldsList.size > 0) && rList.isLimitRequired}" >
+                                                    <b>{!rList.limitLabel}</b>
+                                                </apex:outputPanel>
+                                            </apex:outputPanel>
+                                        </apex:pageBlockSectionItem>
+                                        <apex:pageBlockSectionItem rendered="{!(rList.fieldsList.selectedFieldsList.size > 0 || rList.fieldsList.availableFieldsList.size > 0) && !rList.isNoSort}">
+                                            <apex:pageBlockSection columns="1" >
+                                                <apex:outputPanel layout="none"  >
+                                                    <table style="padding-top:4em; padding-right:8em;">
+                                                        <tr>
+                                                            <td class="labelCol" style="vertical-align:middle;"><apex:outputLabel style="white-space:nowrap;" value="{!$Label.xrb__sort_by}" /></td>
+                                                            <td>
+                                                                <apex:selectList value="{!rList.fieldsList.sortSection.selectedField}" multiselect="false" size="1" >
+                                                                    <apex:selectOption itemValue="" itemLabel="{!$Label.xrb__picklist_none}" />
+                                                                    <apex:selectOptions value="{!rList.fieldsList.sortSection.fieldsList}" />
+                                                                </apex:selectList>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="labelCol" style="vertical-align:middle;"><apex:outputLabel style="white-space:nowrap;" value="{!$Label.xrb__order}" /></td>
+                                                            <td>
+                                                                <apex:selectList value="{!rList.fieldsList.sortSection.selectedOrder}" multiselect="false" size="1" >
+                                                                    <apex:selectOptions value="{!rList.fieldsList.sortSection.orderList}" />
+                                                                </apex:selectList>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </apex:outputPanel>
+                                            </apex:pageBlockSection>
+                                        </apex:pageBlockSectionItem>
+                                    </apex:pageBlockSection>
+                                </td>
+                            </tr>
+                        </apex:repeat>
+                    </table>
+                </apex:outputPanel>
+            </apex:pageBlockSection>
+         </apex:pageBlock>
+    </apex:form>
+</apex:page>

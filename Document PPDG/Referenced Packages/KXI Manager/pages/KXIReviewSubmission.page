@@ -1,0 +1,11 @@
+<apex:page controller="KXI.KXIReviewSubmission"> 
+<apex:form >
+ <apex:pageBlock >
+ 	<apex:pageMessages />
+ 	 <apex:pageBlockButtons >
+     	<apex:commandButton value="Back to Review" action="{!cancel}"/>
+     	<apex:commandButton value="Submit" action="{!submitReview}" />
+     </apex:pageBlockButtons>
+ </apex:pageBlock>
+ </apex:form>
+</apex:page>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Business_Unit__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Business Unit</label>
+        <referenceTo>grc__Business_Unit__c</referenceTo>
+        <relationshipLabel>Processes</relationshipLabel>
+        <relationshipName>Processes</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Parent_Process__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Parent Process</label>
+        <referenceTo>grc__Process__c</referenceTo>
+        <relationshipLabel>Child Processes</relationshipLabel>
+        <relationshipName>Processes</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Ref__c</fullName>
+        <deprecated>false</deprecated>
+        <displayFormat>P{000000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Reference No</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>Source__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Source</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Basel 2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>COSO</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISO9000</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sarbanes-Oxley</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TCF</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <webLinks>
+        <fullName>View_Details</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>View Control Details</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/{!$Setup.NamespacePrefix__c.Value__c}PROC_ViewDetails?pId={!grc__Process__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>View_Process_Hierarchy</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>View Process Hierarchy</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>/apex/{!$Setup.NamespacePrefix__c.Value__c}PROC_ViewDetails?pId={!grc__Process__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>View_Risk_Matrix</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>View Heatmap</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>/apex/{!$Setup.NamespacePrefix__c.Value__c}PROC_Heatmap?pid={!grc__Process__c.Id}</url>
+    </webLinks>
+</CustomObject>

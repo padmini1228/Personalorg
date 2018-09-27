@@ -1,0 +1,41 @@
+<apex:page sideBar="false" showHeader="false">
+
+<head>
+	<apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'HelpPageStylesheet.css')}"/>
+</head>
+
+<div class="heading">
+<div class="icon">&nbsp;</div>
+    <h2>Help Pages</h2>
+    <h1>Processes</h1>
+</div>
+
+<div class="content">
+<p>A Process is a series of activities which achieve a specific business function, for example a sales or procurement process. Processes are related to a specific Business Unit, and have a source.
+</p>
+<p>Use the Processes tab to manage the Processes that will be assessed as part of your risk management process.
+</p>
+<p>Once a Process has been created, detailed process steps can be added using the New Process Step button. Process Steps are used to provide a detailed breakdown of what happens in a Process. Note, Process Steps can also be linked to any Controls that apply to that stage of the Process.
+</p>
+<p>Processes can be linked to more detailed Processes using the New Process button on the Child Processes related list.
+</p>
+<p>Processes can also be associated with Risks and Controls using the Associate Risks and Associate Controls buttons on the related lists.
+</p>
+<p>A number of custom links are provided for viewing related Process information:
+</p>
+<ul>
+<li>View Process Hierarchy: shows a tree list of Processes and their children.</li>
+<li>View Controls: view a table of the controls related to this Process via the Control Steps. </li>
+<li>View a Heat Map for the Process.</li>
+</ul>
+<br/>
+<br/>
+<br/>
+
+<h3 >Contact Details</h3>
+
+<p>
+For further support information, please contact your local administrator.</p>
+<div class="clear"></div>
+</div>
+</apex:page>

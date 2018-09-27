@@ -1,0 +1,1557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ATM_Balance__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>ATM Balance</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>ATM_replenishment_needed__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>ATM replenishment needed</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Address_mismatch_cases_completed__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <inlineHelpText>Ensure all address mismatch cases are completed with full details and new credit score updated with decision ID completed. (Evidence obtained)</inlineHelpText>
+        <label>Address mismatch cases completed</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Address_mismatch_report__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Address mismatch report</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>All_KYC_checklists_attached__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>All KYC checklists attached</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>All_checks_carried_out__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>All checks carried out</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>All_entries_passed_on_Engage__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>All entries passed on Engage</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Any_issue_and_action_taken__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Any issues and action taken</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Any_issues_and_action_taken__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Any issues and action taken</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Any_unusual_transactions__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Any unusual transactions</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Approved_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Today()</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Approved Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Approved_by__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Approved by</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Daily_Branch_Control_Log9</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Authenticity_Log_updated__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Authenticity Log updated</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Branch_name__c</fullName>
+        <externalId>false</externalId>
+        <label>Branch name</label>
+        <picklist>
+            <picklistValues>
+                <fullName>London- Knightsbridge</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London- Edgware Road</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London- Whitechapel</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Birmingham</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Leicester</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Manchester</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Branch_pending_work_due_today_completed__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <inlineHelpText>All pending work due today completed from branch pending tray/folder</inlineHelpText>
+        <label>Branch pending work due today completed</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Branch_scanning_complete__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <inlineHelpText>Confirm all customers instructions, journals have been scanned, indexed and archived (flushed) on DSX and Authenticity Log updated.</inlineHelpText>
+        <label>Branch scanning complete</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Brochure_racks_well_stocked__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Brochure racks well stocked</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>CCTV_equipment_checked__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>CCTV equipment checked</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>CCTV_working__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>CCTV working</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>CMS_Salesforce_Balance_Entered__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>CMS Salesforce Balance Entered</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>COB_physical_cash_checked__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>COB physical cash checked</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Cash_agrees_with_vault_register__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Cash agrees with vault register</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Cash_difference_form_completed__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Cash difference form completed</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Cash_difference_reporting__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Cash difference reporting</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Check_SFDC_case_updated__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Check SFDC case updated</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Check_and_authorise_pending_RSO_UGA__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Check and authorise pending RSO &amp; UGA</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Check_any_outstanding_orders__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Check any outstanding orders</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Check_banking_hall_for_tidiness__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Check banking hall for tidiness</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Check_cash_levels_for_branch__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Check cash levels for branch</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Check_sample_of_3_closed_cases__c</fullName>
+        <description>Check a sample of 3 closed cases for the previous day and check the quality of notes made. Record the sample on the BCL and the finding.</description>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Check sample of 3 closed cases</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Check_the_vault_is_under_dual_control__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Check the vault is under dual control</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Check_till_drawers_locked__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Check till drawers locked</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Check_vault_register_completed__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Check vault register completed</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Checked_by__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Checked by</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Daily_Branch_Control_Log1</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Clear_desk_policy_followed__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Clear desk policy followed</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Completed_by__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Completed by</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Daily_Branch_Control_Log</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Confidential_info_stored_correctly__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Confidential info stored correctly</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Confirm_attended_engineer_visits_today__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Confirm attended engineer visits today</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Confirm_vault_locked__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Confirm vault locked</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Correct_approvals_on_system__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Correct approvals on system</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Custodian_bag_delivered_successfully__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Custodian bag delivered successfully</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Customer_accounts_meet_opening_criteria__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Customer accounts meet opening criteria</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Date__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Day_close_done_by__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Day close done by</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Daily_Branch_Control_Log2</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Day_close_journal_keyed_in_EBS__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Day close journal keyed in EBS</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Decide_if_courier_service_required__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Decide if courier service required</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Delivered_by__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Delivered by</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Done_by1__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Done by</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Daily_Branch_Control_Log4</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Done_by2__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Done by</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Daily_Branch_Control_Log5</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Done_by3__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Done by</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Daily_Branch_Control_Log6</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Done_by4__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Done by</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Daily_Branch_Control_Log7</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Done_by5__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Done by</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Daily_Branch_Control_Log8</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Done_by__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Done by</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Daily_Branch_Control_Log3</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>EBS_balance_checked__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>EBS balance checked</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>EBS_total__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>EBS total</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Email_sent__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Email sent</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Email_sent_to_Facilities__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>E-mail sent to Facilities</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Engage_cash_total__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Engage cash total</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Engage_dashboard_report_attached__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Engage dashboard report attached</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Engage_reconciled__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Engage reconciled</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Engage_report_attached__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Engage report attached</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Escalate_as_necessary__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Escalate as necessary</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Evidence_of_cash_deposit__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Evidence of cash deposit</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Findings1__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Findings</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Findings2__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Findings</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Findings3__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Findings</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Findings4__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Findings</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Findings__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Findings</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>How_many__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>How many</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_No_remedial_carried_out__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If No remedial carried out</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments10__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments11__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments12__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments13__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments14__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments15__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments16__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments17__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments18__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments19__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments1__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments20__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments21__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments22__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments23__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments24__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments25__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments26__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments27__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments28__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments29__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments2__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments30__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments31__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments32__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments33__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments34__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments35__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments36__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments37__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments38__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments39__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments3__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments40__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments41__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments42__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments43__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments44__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments45__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments46__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments47__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments48__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments49__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments4__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments50__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments51__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments52__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments53__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments54__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments55__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments5__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments6__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments7__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments8__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments9__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_no_comments__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>If no comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Log_ATM_downtime__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Log ATM downtime</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Name_of_company_ies_attended__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Name of company(ies) attended</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Number_of_Address_mismatches__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Number of Address mismatches</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_breached_cases__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Number of breached cases</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_deposits__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Number of deposits</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Open_SFDC_case_at_COB_updated__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Open SFDC case at COB updated</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Open_SFDC_case_check_AM__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Open SFDC case check AM</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Open_SFDC_case_check_EOD__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Open SFDC case check EOD</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Open_SFDC_case_check_PM__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Open SFDC case check PM</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Ordered__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Ordered</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Physical_banking_hall_check__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <inlineHelpText>Check banking hall for tidiness and brochure racks well stocked and that no confidential material has been left in rooms or the front desk. Also, to ensure up to date collateral/posters on display.
+Clear desk policy is maintained throughout the day.</inlineHelpText>
+        <label>Physical banking hall check</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Playback_viewed_of__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Playback viewed of</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Prepare_for_uplift__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Prepare for uplift</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Random_till_check__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Random till check</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Receipt_obtained__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Receipt obtained</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Replenishment_done__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Replenishment done</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Sample_check_of_3_closed_cases__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Sample check of 3 closed cases</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Till_1__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Till 1</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Till_2__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Till 2</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Till_3__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Till 3</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Till_bulk_check_completed__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <inlineHelpText>Ensure that all tills have had a bulk check completed by the manager before the cashier goes home. Record balances in the comments.
+ 
+Vault balance by COB
+(Email sent to Senior Management if limit exceeded)
+if 5 working days exceeded, escalate</inlineHelpText>
+        <label>Till bulk check completed</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Till_or_vault_differences_investigated__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Till or vault differences investigated</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Tills_Over__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Tills Over</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Time_checked__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Time checked</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Time_of_check__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Time of check</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Time_tills_checked__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Time tills checked</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Time_vault_checked__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Time vault checked</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Vault_balance_COB__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Vault balance COB</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Wakala_and_Term_EBS__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>Wakala and Term EBS</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>X13_00_ATM_ok__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>13:00 ATM ok</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>X17_00_ATM_ok__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <label>17:00 ATM ok</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>X9_30_ATM_ok__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No_NA</globalPicklist>
+        <inlineHelpText>Check ATM 3 times to ensure no evidence of tampering. Inform police; BM; Ops manager, FCU, Head of Branches and ATM service provider where there are concerns of ATM tampering.</inlineHelpText>
+        <label>9:30 ATM ok</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <label>Daily Branch Control Log</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Daily Branch Control Log Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Daily Branch Control Log</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

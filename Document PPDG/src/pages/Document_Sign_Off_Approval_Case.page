@@ -1,0 +1,49 @@
+<apex:page Standardcontroller="Case" extensions="DocumentSignOffApprovalCase" tabStyle="Case" >
+   <div>
+   <apex:form >
+ 
+   <center>  
+       <apex:pageBlock title="Approval Details">
+        <apex:pageBlockSection columns="1">
+    
+        <apex:pageBlockSectionItem >
+        <apex:outputLabel >Case Owner</apex:outputLabel>
+        <apex:outputField value="{!Case.Owner.Name }"/> 
+        </apex:pageBlockSectionItem>
+        
+        <apex:pageBlockSectionItem >
+        <apex:outputLabel >Case Number</apex:outputLabel>
+        <apex:outputField value="{!Case.CaseNumber }"/>
+        </apex:pageBlockSectionItem>
+        
+        <apex:pageBlockSectionItem >
+        <apex:outputLabel >Sign Off Type</apex:outputLabel>
+        <apex:outputField value="{!Case.Sign_Off_Type__c }"/>
+        </apex:pageBlockSectionItem>
+        
+        <apex:pageBlockSectionItem >
+        <apex:outputLabel >Document Name</apex:outputLabel>
+        <apex:outputField value="{!Case.Subject }"/>
+        </apex:pageBlockSectionItem>
+        
+        <apex:pageBlockSectionItem >
+        <apex:outputLabel > Approver Comments</apex:outputLabel>
+        <apex:inputtextarea value="{!comments}"/>
+        </apex:pageBlockSectionItem>
+       
+       </apex:pageBlockSection>
+       
+       
+       <apex:commandButton value="Approve" action="{!approve}"  styleClass="buttonStyle">
+       </apex:commandButton>
+        
+       <apex:commandButton value="Decline" action="{!reject}" styleClass="buttonStyle" />
+       <apex:pageMessages id="showmsg"></apex:pageMessages>
+       
+       </apex:pageBlock>
+      
+    </center>
+  
+   </apex:form>
+   </div>
+</apex:page>

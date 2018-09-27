@@ -1,0 +1,82 @@
+<apex:page controller="Risk.RiskActionReportCont" renderAs="{!renderAs}" tabStyle="grc__Risk__c" showheader="false">
+
+    <apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'RiskActionStylesheets.css')}"/>
+
+    <apex:sectionheader title="Risk Action Report" subtitle="Risks with Open Actions" rendered="{!renderAs!='PDF'}" />
+
+    <apex:repeat value="{!businessUnitItems.businessUnitItemList}" var="businessUnit">
+
+        <table class="riskTable" cellpadding="0" cellspacing="0">
+            
+            <tr style="background-color:#fff; border:0;">
+                <th  style="background-color:#fff; border:0;" colspan="8">
+                   <h1 class="headera">Risk Action Report <apex:outputText value=" {0, date,dd MMMM yyyy}"><apex:param value="{!today()}"/></apex:outputText></h1>
+                   <h2>{!businessUnit.Name}</h2>
+                </th>
+            </tr>
+            
+            <tr>
+                <th style="width: 250px;">Risk Name</th>
+                <th style="width: 100px;">{!$ObjectType.grc__Risk__c.fields.Residual_Rating__c.Label}</th>
+                <th style="width: 100px;">{!$ObjectType.grc__Risk__c.fields.Target_Rating__c.Label}</th>
+
+                <th >Action Owner</th>
+                <th style="width: 500px;">Action Required</th>
+                <th >Action Status</th>
+                <th style="width: 100px;">Target Completion Date</th>
+                <th >Date Completed</th>
+            </tr>
+
+
+            <apex:repeat value="{!businessUnit.Categories.categoriesItemList}" var="riskCat">
+                <tbody>
+                    <tr style="background-color: #ffff99; font-weight:bold;"><td colspan="10">{!riskCat.Name}</td></tr>
+
+                        <apex:repeat value="{!riskCat.RiskItems}" var="r">
+                    <tr>
+
+
+                            <td style="{!riskCat.CssText }" ><apex:outputText value="{!r.therisk.name}"/></td>
+
+                        <td><apex:outputField value="{!r.therisk.Risk__Residual_Rating__c}" /></td>
+                            <td><apex:outputField value="{!r.therisk.Risk__Target_Rating__c}" /></td>
+
+                            <apex:repeat id="as" value="{!r.actions}" var="a" first="0" rows="1">
+                                <td>{!a.Action_Owner__r.Name}</td>
+                        <td>
+                                   <apex:outputText value="{!HTMLENCODE(a.name)} - {!HTMLENCODE(a.Risk__Description__c)}" />
+
+                                </td>
+                                <td>{!a.Risk__Status__c}</td>
+
+                                <td><apex:outputField value="{!a.Risk__Target_Completion_Date__c}"/></td>
+                                <td><apex:outputField value="{!a.Risk__Date_Completed__c}"/></td>
+                                 </apex:repeat>
+                        </tr>
+                            <apex:repeat id="lk" value="{!r.actions}" var="a" first="1">
+                             <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>{!a.Action_Owner__r.Name}</td>
+                                <td>
+                                    <apex:outputText value="{!HTMLENCODE(a.name)} - {!HTMLENCODE(a.Risk__Description__c)}" />
+
+                        </td>
+                                <td>{!a.Risk__Status__c}</td>
+                                <td>
+                                    <apex:outputField value="{!a.Risk__Target_Completion_Date__c}"/>
+                                </td>
+                                <td><apex:outputField value="{!a.Risk__Date_Completed__c}"/></td>
+                    </tr>
+                           </apex:repeat>
+                        </apex:repeat>
+                </tbody>
+            </apex:repeat>
+        </table>
+        
+    <div style="page-break-after: always;" ></div>
+
+    </apex:repeat>
+
+</apex:page>

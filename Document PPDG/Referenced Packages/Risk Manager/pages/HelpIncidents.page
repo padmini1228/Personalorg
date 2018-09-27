@@ -1,0 +1,40 @@
+<apex:page sideBar="false" showHeader="false" >
+
+<head>
+	<apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'HelpPageStylesheet.css')}"/>
+</head>
+
+    <div class="heading">
+
+        <div class="icon">&nbsp;</div>
+        <h2>Help Pages</h2>
+        <h1>Incidents</h1>
+
+    </div>
+
+    <div class="content">
+
+        <p>
+        Incidents are events that relate to Risks within the organization, e.g. Data Loss. Incidents provide a number of customizable fields for recording the details of the incident, including:
+        <ul>
+            <li>Business Unit - the business entity, e.g. division or subsidiary, that the incident relates to.</li>
+            <li>Severity - the level of impact of the Incident.</li>
+            <li>Risk - used to mark the Risk that is related to the Incident, e.g. IT Security.</li>
+            <li>Incident Category - the type of the Incident and related sub-categories.</li>
+            <li>Cost - the cost to the business of the Incident.</li>
+        </ul>
+        </p>
+
+        <br/>
+        <br/>
+        <br/>
+
+        <h3 >Contact Details</h3>
+
+        <p>For further support information, please contact your local administrator.</p>
+
+        <div class="clear"></div>
+
+    </div>
+
+</apex:page>

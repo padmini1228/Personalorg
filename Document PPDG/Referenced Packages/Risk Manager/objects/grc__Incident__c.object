@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Cost__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Quarter__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>CASE( Month( grc__Issue_Date__c ), 
+1, &apos;Q1&apos;,
+2, &apos;Q1&apos;,
+3, &apos;Q1&apos;,
+4, &apos;Q2&apos;,
+5, &apos;Q2&apos;,
+6, &apos;Q2&apos;,
+7, &apos;Q3&apos;,
+8, &apos;Q3&apos;,
+9, &apos;Q3&apos;,
+10, &apos;Q4&apos;,
+11, &apos;Q4&apos;,
+&apos;Q4&apos;)</formula>
+        <label>Quarter</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>All1</fullName>
+        <columns>NAME</columns>
+        <columns>grc__Title__c</columns>
+        <columns>grc__Issue_Date__c</columns>
+        <columns>grc__Incident_Category__c</columns>
+        <columns>grc__Business_Unit__c</columns>
+        <columns>grc__Description__c</columns>
+        <columns>grc__Severity__c</columns>
+        <columns>grc__Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <webLinks>
+        <fullName>Close_Incident</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Close Incident</masterLabel>
+        <openType>sidebar</openType>
+        <page>Incident_CloseIncident</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>Create_Risk</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Create Risk</masterLabel>
+        <openType>sidebar</openType>
+        <page>Issue_CreateRisk</page>
+        <protected>false</protected>
+    </webLinks>
+</CustomObject>

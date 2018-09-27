@@ -1,0 +1,34 @@
+<apex:page sideBar="false" showHeader="false">
+
+<head>
+	<apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'HelpPageStylesheet.css')}"/>
+</head>
+
+<div class="heading">
+<div class="icon">&nbsp;</div>
+    <h2>Help Pages</h2>
+    <h1>Causes</h1>
+</div>
+
+<div class="content">
+
+<p>
+A Cause represents an event or condition that results in the occurrence of a Risk, e.g. Failure of IT.
+</p>
+<p>
+Causes can be associated with one or more Risks and vice versa.
+</p>
+<br/>
+<br/>
+<br/>
+
+<div>
+
+<h3 >Contact Details</h3>
+
+<p>
+For further support information, please contact your local administrator.</p>
+<div class="clear"></div>
+</div>
+</div>
+</apex:page>

@@ -1,0 +1,197 @@
+<apex:page title="Full Risk Report" controller="Risk.RiskReport" showHeader="false" sidebar="false" standardStylesheets="false" renderAs="pdf" >
+
+<head>
+	<apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'RiskReportStylesheet.css')}"/>
+</head>
+
+    <apex:pageMessages />
+
+    <apex:repeat value="{!riskBusinessUnits}" var="riskBU">
+
+        <h1 class="header">Full Risk Report <br/> {!riskBU.Name} <br/> <apex:outputText value="{0, date,dd MMMM yyyy}"><apex:param value="{!today()}"/></apex:outputText></h1>
+
+        <apex:repeat value="{!riskBU.riskCategories}" var="riskCat">
+
+            <apex:repeat value="{!riskCat.riskItems}" var="riskItem">
+
+                <table class="riskTable" cellpadding="0" cellspacing="0" style="width:auto;">
+                    <thead>
+                        <tr>
+                            <th style="width: 115px; background-color: #CCC; border-right:1px solid #000;">
+                                {!$ObjectType.grc__Risk__c.fields.Name.Label}
+                            </th>
+                            <th style="width: 350px; background-color: #fff; font-weight:normal;">
+                                {!riskItem.therisk.Name}
+                            </th>
+                            <th style="width: 95px; background-color: #CCC; border-right:1px solid #000;">
+                                {!$ObjectType.grc__Risk__c.fields.Risk_Template__c.Label}
+                            </th>
+                            <th style="width: 370px; background-color: #fff; font-weight:normal;">
+                                {!riskItem.therisk.Risk_Template__r.Name}
+                            </th>
+                            <th style="width: 500px;">
+                                {!$ObjectType.grc__Risk__c.fields.grc__Description__c.Label}
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="width: 465px; padding:5px;" colspan="2">
+
+                                <table cellpadding="0" cellspacing="0" style="width:auto;" >
+                                    <thead>
+                                        <tr>
+                                            <th style="border:0px; background-color: #fff; ">&nbsp;</th>
+                                            <th style="border:0px; background-color: #fff; width:160px; ">{!$ObjectType.grc__Risk__c.fields.Inherent_Impact_Text__c.Label}</th>
+                                            <th style="border:0px; background-color: #fff; width:160px; ">{!$ObjectType.grc__Risk__c.fields.Inherent_Likelihood_Text__c.Label}</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="border:0px; font-weight:bold; text-align:right;" >{!$ObjectType.grc__Risk__c.fields.Inherent_Rating__c.Label}</td>
+                                            <td style="text-align:center; padding:5px; font-size:11pt;" ><apex:outputField value="{!riskItem.therisk.Risk__Inherent_Impact_Text__c}"/></td>
+                                            <td style="text-align:center; padding:5px; font-size:11pt;" ><apex:outputField value="{!riskItem.therisk.Risk__Inherent_Likelihood_Text__c}"/></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border:0px; font-weight:bold; text-align:right;" >Overall</td>
+                                            <td colspan="2">
+                                                <div style="text-align:center; padding:5px; font-size:11pt; background-color:{!riskItem.therisk.Inherent_Rating_Lookup__r.Colour__c};">
+                                                    <apex:outputField value="{!riskItem.therisk.Risk__Inherent_Score__c}"/>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </td>
+
+                            <td style="width: 465px; padding:5px;" colspan="2">
+
+                                <table cellpadding="0" cellspacing="0" style="width:auto;" >
+                                    <thead>
+                                        <tr>
+                                            <th style="border:0px; background-color: #fff; ">&nbsp;</th>
+                                            <th style="border:0px; background-color: #fff; width:160px; ">{!$ObjectType.grc__Risk__c.fields.Residual_Impact_Text__c.Label}</th>
+                                            <th style="border:0px; background-color: #fff; width:160px; ">{!$ObjectType.grc__Risk__c.fields.Residual_Likelihood_Text__c.Label}</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="border:0px; font-weight:bold; text-align:right;" >{!$ObjectType.grc__Risk__c.fields.Residual_Rating__c.Label}</td>
+                                            <td style="text-align:center; padding:5px; font-size:11pt;" ><apex:outputField value="{!riskItem.therisk.Risk__Residual_Impact_Text__c}"/></td>
+                                            <td style="text-align:center; padding:5px; font-size:11pt;" ><apex:outputField value="{!riskItem.therisk.Risk__Residual_Likelihood_Text__c}"/></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border:0px; font-weight:bold; text-align:right;" >Overall</td>
+                                            <td colspan="2">
+                                                <div style="text-align:center; padding:5px; font-size:11pt; background-color:{!riskItem.therisk.Residual_Rating_Lookup__r.Colour__c};">
+                                                    <apex:outputField value="{!riskItem.therisk.Risk__Residual_Score__c}"/>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+
+                            <td style="width: 500px;">
+                                <apex:outputField value="{!riskItem.therisk.grc__Description__c}"/>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="riskTable" cellpadding="0" cellspacing="0" style="width:auto;">
+                    <thead>
+                        <tr>
+                            <th style="width: 960px;">
+                                {!$ObjectType.grc__Risk__c.fields.grc__Impact__c.Label}
+                            </th>
+                            <th style="width: 495px;">
+                                {!$ObjectType.grc__Risk__c.fields.Control_Effectiveness__c.Label}
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="width: 960px;">
+                                <apex:repeat value="{!riskItem.ImpactList}" var="impact">
+                                    {!impact}<br/>
+                                </apex:repeat>
+                            </td>
+                            <td style="width: 495px;">
+                                <div style="text-align:center; padding:5px; font-size:11pt; background:url({!riskItem.ControlEffectivenessColour}) ">
+                                    <apex:outputField value="{!riskItem.therisk.Risk__Control_Effectiveness__c}"/>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="riskTable" cellpadding="0" cellspacing="0" style="width:auto;">
+                    <thead>
+                        <tr>
+                            <th style="width: 378px;">
+                                Causes
+                            </th>
+                            <th style="width: 378px;" colspan="2">
+                                Controls
+                            </th>
+                            <!-- <th style="width: 172px;">
+                                Control Effectiveness
+                            </th> -->
+                            <th style="width: 245px;">
+                                Proposed Mitigant Improvements
+                            </th>
+                            <th style="width: 135px;">
+                                Owner
+                            </th>
+                            <th style="width: 85px;">
+                                Next Review
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="width: 378px;">
+                                <apex:repeat value="{!riskItem.causes}" var="cause">
+                                    {!cause.Name}<br/>
+                                </apex:repeat>
+                            </td>
+                            <td style="width: 563px;" colspan="2">
+                                <apex:repeat value="{!riskItem.controls}" var="control">
+                                    {!control.Name}<br/>
+                                </apex:repeat>
+                            </td>
+                            <!-- <td style="width: 172px;">
+                                &nbsp;
+                            </td> -->
+                            <td style="width: 245px;">
+                                        <apex:repeat value="{!riskItem.Actions}" var="action">
+                                    {!action.Name}<br/>
+                                </apex:repeat>
+                            </td>
+                            <td style="width: 135px;">
+                                <apex:outputText rendered="{!riskItem.therisk.grc__Risk_Owner__r == null}" value="{!riskItem.therisk.Owner.Name}"/>
+                                <apex:outputText rendered="{!riskItem.therisk.grc__Risk_Owner__r != null}" value="{!riskItem.therisk.grc__Risk_Owner__r.Name}"/>
+                            </td>
+                            <td style="width: 85px;">
+                                <apex:outputText value="{0,date,dd'/'MM'/'yyyy}">
+                                    <apex:param value="{!riskItem.therisk.grc__Next_Review_Date__c}" />
+                                </apex:outputText>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br/><br/><br/><br/><br/>
+
+            </apex:repeat>
+
+        </apex:repeat>
+
+        <apex:outputPanel rendered="{! riskBU != LastRiskBusinessUnit}" >
+            <div style="page-break-before:always;"></div>
+        </apex:outputPanel>
+    </apex:repeat>
+
+</apex:page>

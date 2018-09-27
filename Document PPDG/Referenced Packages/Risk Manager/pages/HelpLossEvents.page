@@ -1,0 +1,43 @@
+<apex:page sideBar="false" showHeader="false" >
+
+<head>
+	<apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'HelpPageStylesheet.css')}"/>
+</head>
+
+    <div class="heading">
+
+        <div class="icon">&nbsp;</div>
+        <h2>Help Pages</h2>
+        <h1>Loss Events</h1>
+
+    </div>
+
+    <div class="content">
+
+        <p>
+        Loss Events are events that have resulted in a loss within the organization, e.g. an Insurance Claim or Fraud. Loss Events provide a number of customizable fields for recording losses, including:
+        <ul>
+            <li>Business Unit - the business entity, e.g. division or subsidiary, that the loss event relates to.</li>
+            <li>Contributing Causes - the cause, e.g. human error, which led to the loss.</li>
+            <li>Related Risk - used to mark the Risk that is related to the Loss, e.g. Financial Fraud.</li>
+            <li>Recoveries - the mechanism by which the loss will be recovered.</li>
+            <li>Control point - the area of control that caught the loss event.</li>
+            <li>Status - the status of the Loss Event.</li>
+            <li>Indicator in effect - the Key Risk Indicator that relates to the Loss Event.</li>
+            <li>Event type - the type of the Loss Event and related sub-categories.</li>
+        </ul>
+        </p>
+
+        <br/>
+        <br/>
+        <br/>
+
+        <h3 >Contact Details</h3>
+
+        <p>For further support information, please contact your local administrator.</p>
+
+        <div class="clear"></div>
+
+    </div>
+
+</apex:page>

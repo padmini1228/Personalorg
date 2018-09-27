@@ -1,0 +1,1102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <customHelpPage>HelpRiskTemplate</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Approved__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Approved</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Category__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Category</label>
+        <picklist>
+            <picklistValues>
+                <fullName>1 Credit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2 Market</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3 Strategy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4 Financial Soundness</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5 Product &amp; Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6 Legal &amp; Regulatory</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>7 Customer Treatment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>8 Theft, Fraud &amp; Other Criminal Acts</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>9 Impact of Change</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>10 People</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>11 Transaction &amp; Internal Process</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>12 Outsourcing &amp; Third Party Supplier</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>13 Information Technology</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>14 Sharia</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>7</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Subcategory__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Subcategory</label>
+        <picklist>
+            <controllingField>Category__c</controllingField>
+            <picklistValues>
+                <fullName>1.1	Concentration</fullName>
+                <default>false</default>
+                <controllingFieldValues>1 Credit</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1.2	Counterparty Risk</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1.3	Collateral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1.4	Credit Assessment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1.5	Default or Arrears</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2.1	Foreign Exchange Risk</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2.2	Profit Rate Risk</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2.3	Structural Market Risk</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3.1	Strategic Choice</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3.2	Strategic Delivery</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3.3	Risk Appetite</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3.4	Competitors</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3.5	Political Environment &amp; Macroeconomic Factors</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3.6	Mergers, Acquisitions &amp; Strategic Alliances</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3.7	Brand Management &amp; Intellectual Property</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3.8	Strategic Change Initiatives</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4.1	Liquidity</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4.2	Funding</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4.3	Capital</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4.4	Volatile Earnings</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5.1	Product Life Cycle</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5.2	Product / Service Pricing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5.3	Product / Service Promotion</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5.4	Distribution</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5.5	Complexity</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5.6	Product Design</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5.7	Product Flaws</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6.1	Regulatory Requirements</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6.2	Legal Requirements</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6.3	Corporate Governance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6.4	Health &amp; Safety and Employment Legislation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6.5	External Communication or Reporting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>7.1	Customer Service Risks</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>7.2	Best Advice/ Sales Practice Risk</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>8.1	Theft or Damage to Assets</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>8.2	External Fraud</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>8.3	Internal Fraud</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>8.4	Other Criminal Acts</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>9.1	Strategic Alignment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>9.2	Project Definition</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>9.3	Project Delivery</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>9.4	Business and Customer Impact</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>9.5	Benefits Realisation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>10.1 Employee Relations</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>10.2 Human Resources</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>10.3 Inadequate or Ineffective Management Structure</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>10.4 Board &amp; Senior Executive Talents and Resourcing Skills</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>10.5 Resourcing Skills</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>11.1	 Documentation &amp; Administration Processing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>11.2	 Damage to Physical Assets</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>11.3	 Transaction &amp; Payment Processing (Including Data Entry Error)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>11.4	 Financial Information</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>12.1 Service Delivery</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>12.2 Supplier Failure</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>12.3 Contractual Failure</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>13.1 IT Systems Failure</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>13.2 Inadequate IT Systems</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>13.3 IT Security &amp; Integrity</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>13.4 IT Assets</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>14.1 Sharia Compliance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>14.2 Product Development / Delivery</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>14.3 Sharia Integrity</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <label>Risk Template</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Category__c</columns>
+        <columns>Subcategory__c</columns>
+        <columns>Description__c</columns>
+        <columns>Approved__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Risk Template Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Risk Templates</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Approved_Risk_Template</fullName>
+        <active>true</active>
+        <label>Approved Risk Template</label>
+        <picklistValues>
+            <picklist>Category__c</picklist>
+            <values>
+                <fullName>1 Credit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10 People</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11 Transaction %26 Internal Process</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>12 Outsourcing %26 Third Party Supplier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>13 Information Technology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>14 Sharia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2 Market</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 Strategy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4 Financial Soundness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5 Product %26 Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6 Legal %26 Regulatory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7 Customer Treatment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8 Theft%2C Fraud %26 Other Criminal Acts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9 Impact of Change</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subcategory__c</picklist>
+            <values>
+                <fullName>1%2E1%09Concentration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1%2E2%09Counterparty Risk</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1%2E3%09Collateral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1%2E4%09Credit Assessment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1%2E5%09Default or Arrears</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E1 Employee Relations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E2 Human Resources</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E3 Inadequate or Ineffective Management Structure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E4 Board %26 Senior Executive Talents and Resourcing Skills</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E5 Resourcing Skills</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11%2E1%09 Documentation %26 Administration Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11%2E2%09 Damage to Physical Assets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11%2E3%09 Transaction %26 Payment Processing %28Including Data Entry Error%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11%2E4%09 Financial Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>12%2E1 Service Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>12%2E2 Supplier Failure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>12%2E3 Contractual Failure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>13%2E1 IT Systems Failure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>13%2E2 Inadequate IT Systems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>13%2E3 IT Security %26 Integrity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>13%2E4 IT Assets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>14%2E1 Sharia Compliance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>14%2E2 Product Development %2F Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>14%2E3 Sharia Integrity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E1%09Foreign Exchange Risk</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E2%09Profit Rate Risk</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E3%09Structural Market Risk</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E1%09Strategic Choice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E2%09Strategic Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E3%09Risk Appetite</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E4%09Competitors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E5%09Political Environment %26 Macroeconomic Factors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E6%09Mergers%2C Acquisitions %26 Strategic Alliances</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E7%09Brand Management %26 Intellectual Property</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E8%09Strategic Change Initiatives</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2E1%09Liquidity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2E2%09Funding</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2E3%09Capital</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2E4%09Volatile Earnings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5%2E1%09Product Life Cycle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5%2E2%09Product %2F Service Pricing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5%2E3%09Product %2F Service Promotion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5%2E4%09Distribution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5%2E5%09Complexity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5%2E6%09Product Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5%2E7%09Product Flaws</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6%2E1%09Regulatory Requirements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6%2E2%09Legal Requirements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6%2E3%09Corporate Governance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6%2E4%09Health %26 Safety and Employment Legislation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6%2E5%09External Communication or Reporting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7%2E1%09Customer Service Risks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7%2E2%09Best Advice%2F Sales Practice Risk</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8%2E1%09Theft or Damage to Assets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8%2E2%09External Fraud</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8%2E3%09Internal Fraud</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8%2E4%09Other Criminal Acts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2E1%09Strategic Alignment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2E2%09Project Definition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2E3%09Project Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2E4%09Business and Customer Impact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2E5%09Benefits Realisation</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Unapproved_Risk_Template</fullName>
+        <active>true</active>
+        <label>Unapproved Risk Template</label>
+        <picklistValues>
+            <picklist>Category__c</picklist>
+            <values>
+                <fullName>1 Credit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10 People</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11 Transaction %26 Internal Process</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>12 Outsourcing %26 Third Party Supplier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>13 Information Technology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>14 Sharia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2 Market</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 Strategy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4 Financial Soundness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5 Product %26 Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6 Legal %26 Regulatory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7 Customer Treatment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8 Theft%2C Fraud %26 Other Criminal Acts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9 Impact of Change</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subcategory__c</picklist>
+            <values>
+                <fullName>1%2E1%09Concentration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1%2E2%09Counterparty Risk</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1%2E3%09Collateral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1%2E4%09Credit Assessment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1%2E5%09Default or Arrears</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E1 Employee Relations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E2 Human Resources</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E3 Inadequate or Ineffective Management Structure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E4 Board %26 Senior Executive Talents and Resourcing Skills</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E5 Resourcing Skills</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11%2E1%09 Documentation %26 Administration Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11%2E2%09 Damage to Physical Assets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11%2E3%09 Transaction %26 Payment Processing %28Including Data Entry Error%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11%2E4%09 Financial Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>12%2E1 Service Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>12%2E2 Supplier Failure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>12%2E3 Contractual Failure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>13%2E1 IT Systems Failure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>13%2E2 Inadequate IT Systems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>13%2E3 IT Security %26 Integrity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>13%2E4 IT Assets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>14%2E1 Sharia Compliance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>14%2E2 Product Development %2F Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>14%2E3 Sharia Integrity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E1%09Foreign Exchange Risk</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E2%09Profit Rate Risk</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E3%09Structural Market Risk</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E1%09Strategic Choice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E2%09Strategic Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E3%09Risk Appetite</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E4%09Competitors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E5%09Political Environment %26 Macroeconomic Factors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E6%09Mergers%2C Acquisitions %26 Strategic Alliances</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E7%09Brand Management %26 Intellectual Property</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E8%09Strategic Change Initiatives</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2E1%09Liquidity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2E2%09Funding</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2E3%09Capital</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2E4%09Volatile Earnings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5%2E1%09Product Life Cycle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5%2E2%09Product %2F Service Pricing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5%2E3%09Product %2F Service Promotion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5%2E4%09Distribution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5%2E5%09Complexity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5%2E6%09Product Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5%2E7%09Product Flaws</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6%2E1%09Regulatory Requirements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6%2E2%09Legal Requirements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6%2E3%09Corporate Governance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6%2E4%09Health %26 Safety and Employment Legislation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6%2E5%09External Communication or Reporting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7%2E1%09Customer Service Risks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7%2E2%09Best Advice%2F Sales Practice Risk</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8%2E1%09Theft or Damage to Assets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8%2E2%09External Fraud</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8%2E3%09Internal Fraud</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8%2E4%09Other Criminal Acts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2E1%09Strategic Alignment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2E2%09Project Definition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2E3%09Project Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2E4%09Business and Customer Impact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2E5%09Benefits Realisation</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Category__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Subcategory__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Description__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Approved__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <webLinks>
+        <fullName>Link_to_KRI_Templates</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Link to KRI Templates</masterLabel>
+        <openType>noSidebar</openType>
+        <protected>false</protected>
+        <url>/apex/{!$Setup.NamespacePrefix__c.Value__c}JunctionWizardFormPage?Id={!Risk_Template__c.Id}&amp;junctionObjectTypeName={!$Setup.NamespacePrefix__c.Value__c}RiskTemplateKRITemplateLookup__c&amp;targetObjectTypeName={!$Setup.NamespacePrefix__c.Value__c}KRITemplate__c&amp;originReference={!$Setup.NamespacePrefix__c.Value__c}AssociatedRiskTemplate__c&amp;targetReference={!$Setup.NamespacePrefix__c.Value__c}AssociatedKRITemplate__c&amp;weightingReference={!$Setup.NamespacePrefix__c.Value__c}Weighting__c</url>
+    </webLinks>
+</CustomObject>

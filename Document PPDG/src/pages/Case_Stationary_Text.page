@@ -1,0 +1,76 @@
+<!-- C0731 - Created by Zensar -->
+<apex:page standardController="Case" standardStylesheets="false">
+    <apex:form >
+    <html>
+    <head>
+
+<script>
+tableclass  {
+ border-style:solid;
+  border-width:3px 0;}
+
+a:link {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+}  
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+ 
+</script>
+
+     </head>  
+     <body>
+    
+     <center>  <h1 style="color : red;font-size: 20px;"> Top 10 Items </h1> </center>
+     <br/>
+     <br/>
+    
+     <div class="container-fluid" >
+    
+        <table  frame="box" class="tableclass">
+         
+        <tr>
+        <td></td>
+        <td></td>
+        <td><b> <a href="https://www.viking-direct.co.uk" target="_blank" style="font-size: 16px;">Vikings Website Link</a></b></td>
+        <td></td>
+        <td></td>
+        </tr>
+        
+       
+        <tr style="font-size: 14px;">
+        <center><b> Please Note - The items listed below are the recommended items to buy.where possible please ensure you order from list.</b> </center>
+ 
+        <td > Bic Ballpoint Pen ND53B216 £10.79 </td>
+        <td> Viking BX Paper A4 5630812 £19.79 </td>
+        <td> Calculator 5841792 £10.79 </td>
+        <td> PKS Multi-Coloured Post it notes 654N £13.79 </td>
+        <td> PK3 A5 Jotta Pads 1087216 £8.39 </td>
+        </tr>
+        
+        <tr style="font-size: 14px;">
+        <td> BX12 Pen BK FixGrp Retr 1116736 £17.99 </td>
+        <td> Highlighters PK4 704 £6.59 </td>
+        <td> PK12 Post it Sticky Notes 654 £17.99 </td>
+        <td> PK3 A4 Jotta Pads 1001902 £11.99 </td>
+        <td> Stapler (30 Sheets) L5502-BK £15.59 </td>
+        </tr>
+        
+        </table>
+        
+      </div>
+        
+    </body>
+ 
+    <tfoot>
+        
+    <center><b> Disclaimer - For the items shown, the prices might vary when order placed due to the discount ARB receives on some items with 'Viking'</b> </center>
+    </tfoot>  
+ </html>
+ </apex:form>
+
+</apex:page>

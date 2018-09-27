@@ -1,0 +1,9 @@
+The following risk needs reviewing by {!grc__Risk__c.grc__Next_Review_Date__c}:
+
+Title: {!grc__Risk__c.Name}
+Description: {!grc__Risk__c.grc__Description__c}
+Category: {!grc__Risk__c.grc__Category__c}
+
+Please complete a Risk Assessment for the Risk, and update any Mitigating Actions or Controls.
+
+Thanks

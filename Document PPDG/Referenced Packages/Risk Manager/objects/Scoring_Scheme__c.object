@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <customHelpPage>HelpScoringScheme</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Appetite_Set__c</fullName>
+        <deprecated>false</deprecated>
+        <description>True if the number of related rating infos marked as out of appetite is greater than 0, false othewise</description>
+        <externalId>false</externalId>
+        <formula>IF( Number_Of_Rating_Info_Out_Of_Appetite__c &gt; 0,true,false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Indicates if there are 1 or more heatmap cells marked as out of appetite for the scoring scheme</inlineHelpText>
+        <label>Appetite Set</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Is_Heatmap_Configured__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF((Number_of_Impact_Bands__c * Number_of_Likelihood_Bands__c) == Number_of_Rating_Info_Records__c &amp;&amp; Number_of_Rating_Info_Records__c &gt; 0,true,false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Heatmap Configured</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Likelihood_Justification__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Sets whether a justification is required for likelihood.</inlineHelpText>
+        <label>Likelihood Justification</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Inherent</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Residual</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Target</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Multiply_Impact_Likelihood__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Tick if value of risk is calculated by multiplying impact value by likelihood, otherwise just uses impact value.</inlineHelpText>
+        <label>Multiply Impact Likelihood</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Number_Of_Rating_Info_Out_Of_Appetite__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Count of the number of the related rating infos that are flagged as being out of appetite</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The number of the heatmap cells for this scoring scheme that are flagged as being out of appetite</inlineHelpText>
+        <label>Number Of Heatmap Cells Out Of Appetite</label>
+        <summaryFilterItems>
+            <field>Rating_Info__c.Out_Of_Appetite__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Rating_Info__c.Scoring_Scheme__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Number_of_Impact_Bands__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Number of Impact Bands</label>
+        <summaryFilterItems>
+            <field>Score_Band__c.Type__c</field>
+            <operation>equals</operation>
+            <value>Impact</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Score_Band__c.Scoring_Scheme__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Number_of_Likelihood_Bands__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Number of Likelihood Bands</label>
+        <summaryFilterItems>
+            <field>Score_Band__c.Type__c</field>
+            <operation>equals</operation>
+            <value>Likelihood</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Score_Band__c.Scoring_Scheme__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Number_of_Rating_Info_Records__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Number of Rating Info Records</label>
+        <summaryFilterItems>
+            <field>Rating_Info__c.Overall_Rating__c</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </summaryFilterItems>
+        <summaryForeignKey>Rating_Info__c.Scoring_Scheme__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Rating_Defaults__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Sets the default assessment page mode - qualitative, quantitative or the mode last saved in.</inlineHelpText>
+        <label>Rating Defaults</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Qualitative</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Qualitative Only</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Quantitative</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Quantitative Only</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Use Last Saved</fullName>
+                <default>true</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Risk_Assessment_Default__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Risk Assessment Default</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Inherent First</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Residual Assessment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Inherent Assessment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <label>Scoring Scheme</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Scoring Scheme Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Scoring Schemes</pluralLabel>
+    <recordTypes>
+        <fullName>Opportunity</fullName>
+        <active>true</active>
+        <description>Opportunity Scoring Scheme</description>
+        <label>Opportunity</label>
+        <picklistValues>
+            <picklist>Likelihood_Justification__c</picklist>
+            <values>
+                <fullName>Inherent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Residual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Target</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rating_Defaults__c</picklist>
+            <values>
+                <fullName>Qualitative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Qualitative Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quantitative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quantitative Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Use Last Saved</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Risk_Assessment_Default__c</picklist>
+            <values>
+                <fullName>Inherent Assessment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inherent First</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Residual Assessment</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Threat</fullName>
+        <active>true</active>
+        <description>Threat Scoring Scheme</description>
+        <label>Threat</label>
+        <picklistValues>
+            <picklist>Likelihood_Justification__c</picklist>
+            <values>
+                <fullName>Inherent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Residual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Target</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rating_Defaults__c</picklist>
+            <values>
+                <fullName>Qualitative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Qualitative Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quantitative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quantitative Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Use Last Saved</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Risk_Assessment_Default__c</picklist>
+            <values>
+                <fullName>Inherent Assessment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inherent First</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Residual Assessment</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Description__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <webLinks>
+        <fullName>Clone_All</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>page</linkType>
+        <masterLabel>Clone All</masterLabel>
+        <openType>replace</openType>
+        <page>CloneScoringScheme</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>Configure_Heatmap</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <linkType>page</linkType>
+        <masterLabel>Configure Heatmap</masterLabel>
+        <openType>replace</openType>
+        <page>RatingInfoSetup</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>Configure_Scoring_Scheme</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <linkType>page</linkType>
+        <masterLabel>Configure Scoring Scheme</masterLabel>
+        <openType>replace</openType>
+        <page>ImpactRatingAdmin</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>View_Scoring_Scheme</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>View Scoring Scheme</masterLabel>
+        <openType>sidebar</openType>
+        <page>ImpactRatingViewer</page>
+        <protected>false</protected>
+    </webLinks>
+</CustomObject>

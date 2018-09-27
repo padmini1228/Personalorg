@@ -1,0 +1,47 @@
+<apex:page tabStyle="grc__Process__c" controller="Risk.PROCManageStepOrderController" showheader="true" sidebar="true">
+
+  <script>
+    function showDiv(){
+        document.getElementById('messages').innerHTML = 'Please wait - updating data';
+    }
+    function hideDiv(){
+        document.getElementById('messages').innerHTML = '';
+    }
+ </script>
+ <div id="messages" style="color: #ff0000; font-weight: bold">&nbsp;</div>
+  <apex:form >
+      <apex:pageBlock title="Process steps for {!ProcessName}" >
+        <apex:pageBlockTable value="{!ProcessSteps}" var="step" id="pnlData" style="width:300px">
+            <apex:column >
+                <apex:facet name="header">Ref</apex:facet>
+                {!step.Risk__Ref__c}
+            </apex:column>
+            <apex:column >
+                <apex:facet name="header">Name</apex:facet>
+                {!step.name}
+            </apex:column>
+            <apex:column style="width:50px">
+                <apex:facet name="header">Up</apex:facet>
+                <apex:commandLink action="{!moveUp}" rerender="pnlData" rendered="{!step.Index__c > minIndex}" status="showData">
+                        <apex:param name="stepID" value="{!step.id}"/>
+                        <img src="/s.gif" alt="Up"  class="upArrowIcon" title="Up"/>
+                </apex:commandLink>&nbsp;
+            </apex:column>
+            <apex:column style="width:50px">
+                <apex:facet name="header">Down</apex:facet>
+                <apex:commandLink action="{!moveDown}" rerender="pnlData" rendered="{!maxIndex > step.Index__c }" status="showData">
+                        <apex:param name="stepID" value="{!step.id}"/>
+                        <img src="/s.gif" alt="Down"  class="downArrowIcon" title="Down"/>
+                </apex:commandLink>&nbsp;
+            </apex:column>
+
+
+        </apex:pageBlockTable>
+              </apex:pageBlock>
+
+         <input type="button" value="Done" onclick="parent.parent.document.location='/{!JSENCODE(ProcessID)}'" class="btn"/>
+
+      <apex:actionStatus id="showData" onstart="showDiv();" onstop="hideDiv();"/>
+
+      </apex:form>
+</apex:page>

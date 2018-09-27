@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used to notify Owner of creation of Risk Review</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Risk_Letterhead</letterhead>
+    <name>Notify Risk Review Owner</name>
+    <style>freeForm</style>
+    <subject>Risk Manager: New Risk Review ({!01Id0000001ELFw.Name})</subject>
+    <textOnly>Dear {!User.Name},
+
+You have been assigned the following Risk Review to Manage:
+
+	Risk Review Number: {!01Id0000001ELFw.Name}
+	Deadline: {!01Id0000001ELFw.00Nd0000005oTWj}
+	Business Unit: {!Risk_Review__c.00NG0000008iSFJ}
+	Risk Audit: {!01Id0000001ELFw.00Nd0000005oTWk}
+	Current Status: {!01Id0000001ELFw.00Nd0000005oTWl}
+
+Best Regards,
+
+Xactium Risk Manager</textOnly>
+    <type>html</type>
+</EmailTemplate>

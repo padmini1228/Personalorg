@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <validationRules>
+        <fullName>Validate_Submission_on_Result</fullName>
+        <active>false</active>
+        <errorConditionFormula>Risk__KRI_Review__r.RecordType.Name = &apos;Standard_KRI_View&apos; &amp;&amp; Risk__KRI_Review__r.Risk__Submitted__c</errorConditionFormula>
+        <errorMessage>The Review associated with this Result is already submitted. You cannot enter results for a Review that is currently submitted.</errorMessage>
+    </validationRules>
+</CustomObject>

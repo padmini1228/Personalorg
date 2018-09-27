@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Average_Control_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(Average_Control_Score__c == 3,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_F62817&apos;, &apos;Red&apos;,30,100),
+IF(Average_Control_Score__c == 2,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_FDD017&apos;, &apos;Amber&apos;,30,100),
+IF(Average_Control_Score__c == 1,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_59E817&apos;, &apos;Green&apos;,30,100),
+IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_gray&apos;, &apos;Grey&apos;,30,100))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Average Control KCI Rating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Average_Control_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Average Control KCI Score</label>
+        <precision>1</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Average_Risk_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(Average_Risk_Score__c == 3,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_F62817&apos;, &apos;Red&apos;,30,100),
+IF(Average_Risk_Score__c == 2,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_FDD017&apos;, &apos;Amber&apos;,30,100),
+IF(Average_Risk_Score__c == 1,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_59E817&apos;, &apos;Green&apos;,30,100),
+IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_gray&apos;, &apos;Grey&apos;,30,100))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Average Risk KRI Rating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Average_Risk_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Average Risk KRI Score</label>
+        <precision>1</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Control_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(Control_Score__c == 3,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_F62817&apos;, &apos;Red&apos;,30,100),
+IF(Control_Score__c == 2,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_FDD017&apos;, &apos;Amber&apos;,30,100),
+IF(Control_Score__c == 1,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_59E817&apos;, &apos;Green&apos;,30,100),
+IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_gray&apos;, &apos;Grey&apos;,30,100))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>KCI Control Rating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Control_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>KCI Control Score</label>
+        <precision>1</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cost_Best_Case__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Cost Best Case</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cost_Most_Likely_Case__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Cost Most Likely Case</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cost_Worst_Case__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Cost Worst Case</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Duration_Override__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Overrides the duration of a project</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Overrides the duration of a project</inlineHelpText>
+        <label>Duration Override</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Duration_Remaining__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>BLANKVALUE(Duration_Override__c,Project_End_Date__c - TODAY())</formula>
+        <inlineHelpText>The remaining days on the project from today until the project end date. Override this value by entering a number in the Duration Override field.</inlineHelpText>
+        <label>Duration Remaining</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Financial_Threshold__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This value is used to determine the threshold for displaying threat risks in the embedded heatmap.</inlineHelpText>
+        <label>Financial Threshold</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Hierarchy_Level__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Hierarchy Level</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Incident_Manager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The person responsible for managing incidents in this Business Unit</inlineHelpText>
+        <label>Incident Manager</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Business_Units1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Opp_Scoring_Scheme__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Opportunity Scoring Scheme</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Scoring_Scheme__c.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Opportunity</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Scoring_Scheme__c</referenceTo>
+        <relationshipLabel>Business Units (Opportunity Scoring Scheme)</relationshipLabel>
+        <relationshipName>Business_Units1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Cost_Best_Case__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Opportunity Cost Best Case</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Cost_Most_Likely_Case__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Opportunity Cost Most Likely Case</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Cost_Worst_Case__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Opportunity Cost Worst Case</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Time_Best_Case__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Opportunity Time Best Case</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Time_Most_Likely_Case__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Opportunity Time Most Likely Case</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Time_Worst_Case__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Opportunity Time Worst Case</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Previous_Average_Control_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(Previous_Average_Control_Score__c=3, IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_F62817&apos;, &apos;Red&apos;,30,100),
+IF(Previous_Average_Control_Score__c=2, IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_FDD017&apos;, &apos;Amber&apos;,30,100),
+IF(Previous_Average_Control_Score__c=1, IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_59E817&apos;, &apos;Green&apos;,30,100),
+IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_gray&apos;, &apos;Grey&apos;,30,100))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Previous Average KCI Control Rating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Previous_Average_Control_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Previous Average KCI Control Score</label>
+        <precision>1</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Previous_Average_Risk_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(Previous_Average_Risk_Score__c == 3,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_F62817&apos;, &apos;Red&apos;,30,100),
+IF(Previous_Average_Risk_Score__c == 2,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_FDD017&apos;, &apos;Amber&apos;,30,100),
+IF(Previous_Average_Risk_Score__c == 1,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_59E817&apos;, &apos;Green&apos;,30,100),
+IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_gray&apos;, &apos;Grey&apos;,30,100))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Previous Average KRI  Risk Rating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Previous_Average_Risk_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Previous Average KRI Risk Score</label>
+        <precision>1</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Previous_Control_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(Previous_Control_Score__c== 3,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_F62817&apos;, &apos;Red&apos;,30,100),
+IF(Previous_Control_Score__c== 2,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_FDD017&apos;, &apos;Amber&apos;,30,100),
+IF(Previous_Control_Score__c== 1,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_59E817&apos;, &apos;Green&apos;,30,100),
+IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_gray&apos;, &apos;Grey&apos;,30,100))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Previous KCI Control Rating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Previous_Control_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Previous KCI  Control Score</label>
+        <precision>1</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Previous_Risk_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(Previous_Risk_Score__c == 3,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_F62817&apos;, &apos;Red&apos;,30,100),
+IF(Previous_Risk_Score__c == 2,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_FDD017&apos;, &apos;Amber&apos;,30,100),
+IF(Previous_Risk_Score__c == 1,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_59E817&apos;, &apos;Green&apos;,30,100),
+IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_gray&apos;, &apos;Grey&apos;,30,100))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Previous KRI Risk Rating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Previous_Risk_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Previous KRI Risk Score</label>
+        <precision>1</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Project_Budget__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The budget for the project</inlineHelpText>
+        <label>Project Budget</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Project_Cost__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Project_Duration__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Project_End_Date__c  -  Project_Start_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The duration of the project in days from the start date to the end date</inlineHelpText>
+        <label>Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Project_End_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Project End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Project_Start_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Project Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Read_Write_Access_to_Child_BUs__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Read/Write Access to Child BUs</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Risk_Manager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The person who is responsible for managing risks on a day to day basis for the Business Unit</inlineHelpText>
+        <label>Risk Manager</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Business_Units</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Risk_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(Risk_Score__c == 3,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_F62817&apos;, &apos;Red&apos;,30,100),
+IF(Risk_Score__c == 2,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_FDD017&apos;, &apos;Amber&apos;,30,100),
+IF(Risk_Score__c == 1,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_59E817&apos;, &apos;Green&apos;,30,100),
+IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_gray&apos;, &apos;Grey&apos;,30,100))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>KRI Risk Rating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Risk_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>KRI Risk Score</label>
+        <precision>1</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Scoring_Scheme__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The scoring scheme that applies to all Risks owned by this Business Unit</inlineHelpText>
+        <label>Scoring Scheme</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Scoring_Scheme__c.RecordTypeId</field>
+                <operation>notEqual</operation>
+                <value>Opportunity</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Scoring_Scheme__c</referenceTo>
+        <relationshipLabel>Business Units</relationshipLabel>
+        <relationshipName>Business_Units</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Scoring_Update__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Scoring Update</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Sharing_Group_Name_Check__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Sharing Group Name Check</label>
+        <length>28</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Sharing_Group_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Shortened Business Unit name used to prefix the associated sharing group</inlineHelpText>
+        <label>Sharing Group Name</label>
+        <length>28</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_Best_Case__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Time Best Case</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_Most_Likely_Case__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Time Most Likely Case</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_Worst_Case__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Time Worst Case</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <recordTypes>
+        <fullName>Business_Unit</fullName>
+        <active>true</active>
+        <description>A Business Entity that is part of the organisation hierarchy.</description>
+        <label>Business Unit</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Project</fullName>
+        <active>true</active>
+        <description>A Project with timelines that is being performed by the organisation hierarchy.</description>
+        <label>Project</label>
+    </recordTypes>
+    <validationRules>
+        <fullName>No_Dashes_in_Sharing_Group_Name_Allowed</fullName>
+        <active>true</active>
+        <errorConditionFormula>CONTAINS(Sharing_Group_Name__c, &apos;-&apos;)</errorConditionFormula>
+        <errorDisplayField>Sharing_Group_Name__c</errorDisplayField>
+        <errorMessage>Sharing Group Name cannot contain any dashes &apos;-&apos;.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Manage_Members</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Manage Members</masterLabel>
+        <openType>sidebar</openType>
+        <page>BusinessUnitMemberAdmin</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>Mitigated_Risk_Heatmap</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Risk Heatmap</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/{!$Setup.NamespacePrefix__c.Value__c}BusinessUnitHeatmap?parent={!grc__Business_Unit__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>View_Hierarchy</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>View Hierarchy</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>/apex/{!$Setup.NamespacePrefix__c.Value__c}OrgHierarchy?Id={!grc__Business_Unit__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>View_Opportunity_Scoring_Scheme</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>View Opportunity Scoring Scheme</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>if(&apos;{!grc__Business_Unit__c.Opp_Scoring_SchemeId__c}&apos;!= &apos;&apos;)
+window.open(&apos;/apex/{!$Setup.NamespacePrefix__c.Value__c}ImpactRatingViewer?id={!grc__Business_Unit__c.Opp_Scoring_SchemeId__c}&apos;,&apos;_score&apos;,&apos;&apos;);
+else{
+alert(&apos;Please set the scoring scheme.&apos;);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>View_Scoring_Scheme</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>View Scoring Scheme</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>if(&apos;{!grc__Business_Unit__c.Scoring_SchemeId__c}&apos;!= &apos;&apos;)
+window.open(&apos;/apex/{!$Setup.NamespacePrefix__c.Value__c}ImpactRatingViewer?id={!grc__Business_Unit__c.Scoring_SchemeId__c}&apos;,&apos;_score&apos;,&apos;&apos;);
+else{
+alert(&apos;Please set the scoring scheme.&apos;);
+}</url>
+    </webLinks>
+</CustomObject>

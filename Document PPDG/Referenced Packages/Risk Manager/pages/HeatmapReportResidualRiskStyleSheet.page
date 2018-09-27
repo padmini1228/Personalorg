@@ -1,0 +1,67 @@
+<apex:page contentType="text/css">
+body
+{
+    font-family: sans-serif;
+    font-size: 10pt;
+}
+table {
+            -fs-table-paginate: paginate;
+        }
+
+.riskTables
+{
+    border-collapse: collapse;
+    /* page-break-inside: avoid; NOTE:causes break after table header on some occasions*/
+    width: 100%;
+}
+
+.riskTables th
+{
+    background-color: #ccc;
+    font-size: 12pt;
+}
+
+.riskTables th, .riskTables td
+{
+    padding: 5px;
+    border: 1px solid black;
+    vertical-align: top;
+}
+
+.logo
+{
+    position: running(logo);
+}
+
+.header
+{
+    position: running(header);
+    text-align: center;
+}
+
+@page
+{
+
+    size: A4 landscape;
+    margin-bottom: 100px;
+    margin-top: 150px;
+
+    @top-center
+    {
+        content: element(header);
+        font-size: 18pt;
+    }
+    @top-right-corner
+    {
+        content: element(logo);
+    }
+
+    @bottom-center
+    {
+        content: "Page " counter(page);
+        font-size: 12pt;
+    }
+
+
+}
+</apex:page>

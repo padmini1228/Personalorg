@@ -1,0 +1,83 @@
+<apex:page controller="Risk.RiskReport" showHeader="false" sidebar="false" standardStylesheets="false" renderAs="pdf">
+
+<head>
+	<apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'RiskReportStylesheet.css')}"/>
+</head>
+
+	<apex:messages />
+
+	<apex:repeat value="{!riskBusinessUnits}" var="riskBU">
+
+		<h1 class="header">Risk Register Report <br/> {!riskBU.Name} <br/> <apex:outputText value="{0, date,dd MMMM yyyy}"><apex:param value="{!today()}"/></apex:outputText>
+		    <br/>
+		    <apex:outputText value="Categories: " rendered="{!Categories.size > 1}"/>
+		    <apex:outputText value="Category: " rendered="{!Categories.size == 1}"/>
+		    <apex:outputText value="{!chosenCategories}" rendered="{!!(LEFT(chosenCategories,3) =='all')}"/>
+		    <apex:outputText value="ALL" rendered="{!(LEFT(chosenCategories,3) =='all')}"/>
+		</h1>
+
+		<table class="riskTable" cellpadding="0" cellspacing="0">
+		    <thead>
+		        <tr>
+		            <th style="width: 30px;">Risk No.</th>
+		         <!--    <th style="width: 30px;">Risk Name</th> -->
+		            <th style="width: 310px;">Risk Description</th>
+		            <th style="width: 100px;">Risk Owner</th>
+		            <th style="width: 470px;">Risk Controls</th>
+		            <th style="width: 80px;">{!$ObjectType.grc__Risk__c.fields.Residual_Likelihood_Text__c.Label}</th>
+		            <th style="width: 65px;">{!$ObjectType.grc__Risk__c.fields.Residual_Impact_Text__c.Label}</th>
+		            <th style="width: 50px;">{!$ObjectType.grc__Risk__c.fields.Residual_Rating__c.Label}</th>
+		            <th style="width: 355px;">Notes</th>
+		        </tr>
+		    </thead>
+
+		<apex:repeat value="{!riskBU.riskCategories}" var="riskCat">
+		    <tbody>
+		        <tr style="background-color: #ffff99; font-weight:bold;"><td colspan="13"> {!riskCat.name}</td></tr>
+		        <apex:repeat value="{!riskCat.riskItems}" var="riskItem">
+
+		        <tr>
+			        <td style="text-align:center"><apex:outputText value="{!riskItem.therisk.grc__Risk_Name__c}"/></td>
+
+			        <td>
+			            <ul style="padding-left:0.5em; margin-left:0; margin-top:0px; padding-top:0px;">
+			                <li><b>{!riskItem.therisk.name} : </b><br/><apex:outputField value="{!riskItem.therisk.grc__Description__c}" /></li>
+			            </ul>
+			        </td>
+			        <td>
+			        	<apex:outputText rendered="{!riskItem.therisk.grc__Risk_Owner__r == ''}" value="{!riskItem.therisk.Owner.Name}"/>
+		           		<apex:outputText rendered="{!riskItem.therisk.grc__Risk_Owner__r != ''}" value="{!riskItem.therisk.grc__Risk_Owner__r.Name}"/>
+			        </td>
+			        <td>
+			            <ul style="padding-left:0.5em; margin-left:0; margin-top:0px; padding-top:0px;">
+			            <apex:repeat value="{!riskItem.controls}" var="control">
+			                <li><b>{!control.name} : </b><br/><apex:outputText value="{! IF(control.grc__Description__c != '#NAME?', control.grc__Description__c,'')}" /></li>
+			            </apex:repeat>
+			            </ul>
+			        </td>
+
+		            <td><apex:outputField value="{!riskItem.therisk.Risk__Residual_Likelihood_Text__c}" /></td>
+		            <td><apex:outputField value="{!riskItem.therisk.Risk__Residual_Impact_Text__c}" /></td>
+		            <td style="width:50px; overflow:hidden; background-color:{!riskItem.therisk.Residual_Rating_Lookup__r.Colour__c};" >
+
+		            </td>
+
+		          	<td>
+		            	<apex:repeat value="{!riskItem.therisk.Notes}" var="note">
+		                	<apex:outputText style="font-weight:bold;"  value="{!note.Title}" /><br/>
+		                	<apex:outputText value="{!note.Body}" /><br/><br/>
+		            	</apex:repeat>
+		        	</td>
+		    	</tr>
+		    	</apex:repeat>
+		    </tbody>
+
+
+		</apex:repeat>
+
+		</table>
+		<apex:outputPanel rendered="{! riskBU != LastRiskBusinessUnit}" >
+		        <div style="page-break-before:always;"></div>
+		</apex:outputPanel>
+	</apex:repeat>
+</apex:page>

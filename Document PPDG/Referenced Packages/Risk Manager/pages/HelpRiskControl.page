@@ -1,0 +1,34 @@
+<apex:page sideBar="false" showHeader="false">
+
+<head>
+	<apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'HelpPageStylesheet.css')}"/>
+</head>
+
+<div class="heading">
+<div class="icon">&nbsp;</div>
+    <h2>Help Pages</h2>
+    <h1>Risk - Control relationships</h1>
+</div>
+
+<div class="content">
+
+<p>
+Within the system there is the ability to define which Controls mitigate Risks. It is possible for a Control to mitigate many Risks and for a Risk to have many Controls
+</p>
+<p>
+It is possible to define which of the Controls are key to the Risk by checking the corresponding checkbox on the Set Key Controls page.
+</p>
+<p>
+The Related list shows the items that are linked together and allows for new Risk - Control relationships to be managed via the buttons provided. This could be the creation of a new Control or an association with an existing Control.
+</p>
+<br/>
+<br/>
+<br/>
+
+<h3 >Contact Details</h3>
+
+<p>
+For further support information, please contact your local administrator.</p>
+<div class="clear"></div>
+</div>
+</apex:page>

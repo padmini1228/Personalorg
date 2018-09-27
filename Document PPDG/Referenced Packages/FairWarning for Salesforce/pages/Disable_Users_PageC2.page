@@ -1,0 +1,82 @@
+<apex:page docType="html-5.0" applyBodyTag="true" applyHtmlTag="true" cache="true" showHeader="false" standardStylesheets="true"
+    standardController="fairwarn__Alert__c" extensions="fairwarn.fairwarn_Alert_Controller" >
+<html> 
+<head> 
+    <title>Disable Users</title>
+    <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    
+
+    <!-- jQuery Mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    
+    <!-- added today -->
+    <script type='text/javascript' src='/canvas/sdk/js/publisher.js'></script>
+	<script> 
+        Sfdc.canvas.publisher.subscribe({name: "publisher.showPanel",
+            onData:function(e) {
+                Sfdc.canvas.publisher.publish({name:"publisher.setValidForSubmit", payload:"true"});
+        }});
+        Sfdc.canvas.publisher.subscribe({ name: "publisher.post",
+            onData: function(e) {
+                disableAllUsersJS();
+                Sfdc.canvas.publisher.publish({ name: "publisher.close",
+                    payload:{ refresh:"true" }});
+        }}); 
+    </script>
+    
+    <style type="text/css">
+        
+        .forceListRecord {list-style:none}
+        .forceListRecord .body {padding:14px}
+        .forceListRecord.light {border-bottom:1px solid #f5f6f7}
+        .forceListRecord.actionable:active {background-color:#ffffff}
+        .forceListRecord.dark {border-bottom:1px solid #dadee2}
+        .forceListRecord .itemTitle {color:#3c3d3e; font-size:1rem; font-family:'ProximaNovaSoft-Regular'; padding-bottom:3px}
+        .forceListRecord .itemTitle, .forceListRecord .itemTitle div {overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+        .forceListRecord .itemRows {color:#3c3d3e; font-size:.875rem; font-family:'ProximaNovaSoft-Regular'; list-style:none; margin:0; padding:0}
+        .forceListRecord .tableRowGroup {list-style:none}
+        
+        
+        .forceRelatedList .forceListRecord {
+            background-color: #ffffff;
+            border-radius: .3125rem;
+        }
+        
+        .forceActionRow.uiInfiniteListRow .body {
+            background-color: #ffffff;
+            border-bottom: 1px solid #f5f6f7;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        
+        .forceRelatedList ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        ul li, ol li {
+            margin-left: 0em;
+            margin-bottom: 2px;
+            padding-left: 0;
+        }
+    </style>
+</head>    
+<body>
+    
+    
+    <apex:form >
+        <apex:actionFunction action="{!disableAllUsers}" reRender="script" name="disableAllUsersJS"/>
+        
+        <apex:pageBlock >
+            <div style="font-size: 14px">
+                <apex:outputLabel value="The following users will be disabled."></apex:outputLabel>
+            </div>
+        </apex:pageBlock>
+        
+        <apex:include pageName="fairwarn__Involved_Users_TabC3"/>
+    </apex:form>
+</body>
+</html>
+</apex:page>

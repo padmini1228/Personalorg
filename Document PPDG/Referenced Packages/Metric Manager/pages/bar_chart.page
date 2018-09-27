@@ -1,0 +1,116 @@
+<apex:page standardController="xmetric__Metric__c" extensions="xmetric.ChartExtController"  showheader="false" sidebar="false">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+ <I><apex:outputLabel value="No Metric Results to display in {!myObject.Name}" rendered="{!MetricResultBarList.size == 0}" ></apex:outputLabel></I>
+ <br/><I><apex:outputLabel value="{!myObject.Name} Record is Inactive" rendered="{!myObject.xmetric__Active__c == false}" ></apex:outputLabel></I>
+   <apex:outputPanel rendered="{!myObject.xmetric__Active__c == true}">     
+    <script type="text/javascript">
+    var metricResultsSize = parseInt({!MetricResultBarList.size});
+    var minSize = (metricResultsSize > 4 ? metricResultsSize - 4 : 0);
+    $(function () {
+        $('#container').highcharts({
+            chart: {
+                zoomType: 'x',               
+                type: 'column'
+            },
+            title: {
+                text: '{!JSENCODE(myObject.Name)}'
+            },
+            xAxis: {
+                type: 'category',
+                min : minSize,
+                range: metricResultsSize
+   
+            },
+            yAxis: {
+                title: { 
+                    text: '{!JSENCODE(myObject.xmetric__Description__c)}' 
+                },
+                min: {!minValue},
+                max: {!maxValue}           
+            },                      
+            scrollbar: {
+            enabled: true,
+            barBackgroundColor: 'gray',
+            barBorderRadius: 7,
+            barBorderWidth: 0,
+            buttonBackgroundColor: 'gray',
+            buttonBorderWidth: 0,
+            buttonArrowColor: 'yellow',
+            buttonBorderRadius: 7,
+            rifleColor: 'yellow',
+            trackBackgroundColor: 'white',
+            trackBorderWidth: 1,
+            trackBorderColor: 'silver',
+            trackBorderRadius: 7            
+        },
+        navigator: {
+            enabled: true,
+            height: 18,                                        
+        },
+        plotOptions: {
+            series: {
+                minPointLength: 5,
+                cursor: 'pointer',
+                point: {
+                    events: {
+                        click: function() {
+                            window.open( this.options.url , '_blank');
+                        }
+                    }
+                }
+            }
+        },
+        tooltip: {
+            hideDelay : 0,
+            formatter: function() {
+                this.y = parseFloat(this.y).toFixed(2);
+                var yValue = this.y.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                var metricType = new String("{!JSENCODE(LOWER(myObject.xmetric__Metric_Type__c))}");
+                if (metricType == 'currency'){
+                    yValue = '{!JSENCODE(userCurrencyISOCode)}'+yValue;
+                }else if (metricType  == 'percentage'){
+                    yValue = yValue+'%';
+                }
+                
+                return '<table align="right" style="z-index:100;"  >'+
+                            '<tr>'+
+                                '<td style="font-size:9px;"><b>'+
+                                    this.point.name+
+                                '</b></td><br />'+
+                            '</tr>'+
+                            '<tr>'+
+                                '<td style="font-size:9px;"><b>'+
+                                   yValue+
+                                '</b></td>'+
+                            '</tr>'+
+                        '</table>';
+            }
+        },
+        series: [{
+            name: '{!JSENCODE(myObject.xmetric__Type__c)}',
+            data: [
+                <apex:repeat value="{!MetricResultBarList}" var="metric" >
+                {
+                    name:  '{!JSENCODE(metric.XaxisValue)}',
+                    color:  '{!JSENCODE(metric.resultColour)}' ,
+                    x:  {!metric.counter}, 
+                    y:  {!metric.resultValue} ,
+                    url: '/{!JSENCODE(metric.resultObjId)}' 
+                },  
+                </apex:repeat>
+            ] 
+         }]
+        ,
+        navigation: {
+            menuItemStyle: {
+                fontSize: '10px'
+            }
+        }
+    });        
+});
+</script>
+<script src="{!URLFOR($Resource.Stockcharts, 'Stockcharts/highstock.js')}"></script>
+<script src="{!URLFOR($Resource.Stockcharts, 'Stockcharts/modules/exporting.js')}"></script>
+<div id="container" style="height: 400px; margin: 0 auto"></div>
+</apex:outputPanel>
+</apex:page>

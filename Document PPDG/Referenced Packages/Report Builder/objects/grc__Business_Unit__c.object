@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <webLinks>
+        <fullName>Risk_Register</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>page</linkType>
+        <masterLabel>Risk Register</masterLabel>
+        <openType>replace</openType>
+        <page>ReportBuilderProject</page>
+        <protected>false</protected>
+    </webLinks>
+</CustomObject>

@@ -1,0 +1,115 @@
+<apex:component >
+    <apex:attribute name="SectionName" type="String" description="" />
+    <apex:attribute name="cid" type="string" description="" />
+    <apex:attribute name="model" type="string" description="" />
+    <apex:attribute name="ShowUSPerson" type="Boolean" description="" required="false" default="false" />
+    <apex:attribute name="USPersonPropertyName" type="String" description="" required="true" />
+    <apex:attribute name="CountryTaxResidencyPropertyName" type="String" description="" required="true" />
+    <apex:attribute name="HasTinPropertyName" type="String" description="" required="true" />
+    <apex:attribute name="TinReasonCodePropertyName" type="String" description="" required="true" />
+    <apex:attribute name="TinReasonBPropertyName" type="String" description="" required="true" />
+    <apex:attribute name="TinPropertyName" type="String" description="" required="true" />
+    <apex:attribute name="YPSA" type="Boolean" description="" />
+
+    <div class="SectionTitle">{!SectionName}</div>
+    <apex:outputPanel rendered="{!ShowUSPerson}">
+        <div class="row" ng-show="{!model}.{!USPersonPropertyName}=='Yes'">
+            <div class="col-sm-12">
+                <p>Please note that we will require you to print, sign and return the application form produced, for us to finalise your application.</p>
+            </div>
+        </div>
+        <div class="row" ng-class="{ 'has-error':( myform.{!USPersonPropertyName}{{$index}}.$touched|| Submitted) && myform.{!USPersonPropertyName}{{$index}}.$invalid }">
+            <div class="col-sm-12">
+                <div>
+                    <label class="control-label">Are you a US person?</label>
+                </div>
+                <div>
+                    <label class="radio-inline">
+                        <input type="radio" ng-required="!{!model}.{!USPersonPropertyName} && !app.EBS_ID_c && !({!YPSA} && $index==0)" name="{!USPersonPropertyName}{{$index}}"
+                            ng-model="{!model}.{!USPersonPropertyName}" value="Yes" />Yes</label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-required="!{!model}.{!USPersonPropertyName} && !app.EBS_ID_c && !({!YPSA} && $index==0)" name="{!USPersonPropertyName}{{$index}}"
+                            ng-model="{!model}.{!USPersonPropertyName}" value="No" />No</label>
+                </div>
+                <c:CAA_InputError field="{!USPersonPropertyName}" />
+            </div>
+        </div>
+    </apex:outputPanel>
+
+    <div ng-class="{ 'has-error':( myform.{!CountryTaxResidencyPropertyName}{{$index}}.$touched|| Submitted) && myform.{!CountryTaxResidencyPropertyName}{{$index}}.$invalid }">
+        <div>
+            <label class="control-label">Country of Tax Residence</label>
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <select class="form-control arbBox" ng-model="{!model}.{!CountryTaxResidencyPropertyName}" 
+                    ng-required="!({!YPSA} && $index==0) && !app.EBS_ID_c && ({!ShowUSPerson} || {!model}.{!USPersonPropertyName} == 'Yes')"
+                    ng-options="option.Key as option.Value  for option in Data.CountriesOfBirth" name="{!CountryTaxResidencyPropertyName}{{$index}}"
+                    id="{!CountryTaxResidencyPropertyName}{{$index}}">
+                </select>
+                <c:CAA_InputError field="{!CountryTaxResidencyPropertyName}" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row" ng-class="{ 'has-error':( myform.{!HasTinPropertyName}{{$index}}.$touched|| Submitted) && myform.{!HasTinPropertyName}{{$index}}.$invalid }">
+        <div class="col-sm-12">
+            <div>
+                <label class="control-label">Do you have a TIN / NI number / NINo?</label>
+            </div>
+            <div>
+                <label class="radio-inline">
+                    <input type="radio" ng-required="!({!YPSA} && $index==0) && !app.EBS_ID_c && ({!ShowUSPerson} || {!model}.{!USPersonPropertyName} == 'Yes')" ng-model="{!model}.{!HasTinPropertyName}"
+                        name="{!HasTinPropertyName}{{$index}}" value="Yes" />Yes</label>
+                <label class="radio-inline">
+                    <input type="radio" ng-required="!({!YPSA} && $index==0) && !app.EBS_ID_c && ({!ShowUSPerson} || {!model}.{!USPersonPropertyName} == 'Yes')" ng-model="{!model}.{!HasTinPropertyName}"
+                        name="{!HasTinPropertyName}{{$index}}" value="No" />No</label>
+            </div>
+            <c:CAA_InputError field="{!HasTinPropertyName}" />
+        </div>
+    </div>
+
+    <div ng-class="{ 'has-error':( myform.{!TinPropertyName}{{$index}}.$touched|| Submitted) && myform.{!TinPropertyName}{{$index}}.$invalid }" ng-show="{!model}.{!HasTinPropertyName} == 'Yes'">
+        <div>
+            <label class="control-label">TIN / NI number / NINo - {!cid}</label>
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <input type="text" class="form-control arbBox" ng-model="{!model}.{!TinPropertyName}" 
+                    ng-required="!app.EBS_ID_c && {!model}.{!HasTinPropertyName} == 'Yes'" 
+                    name="{!TinPropertyName}{{$index}}"
+                    id="{!TinPropertyName}{{$index}}" />
+                <c:CAA_InputError field="{!TinPropertyName}" />
+            </div>
+        </div>
+    </div>
+
+    <div ng-class="{ 'has-error':( myform.{!TinReasonCodePropertyName}{{$index}}.$touched|| Submitted) && myform.{!TinReasonCodePropertyName}{{$index}}.$invalid }"  ng-show="{!model}.{!HasTinPropertyName} == 'No'">
+        <div>
+            <label class="control-label">Please select a reason code</label>
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <select class="form-control arbBox" ng-model="{!model}.{!TinReasonCodePropertyName}" 
+                ng-required="!app.EBS_ID_c && {!model}.{!HasTinPropertyName} == 'No'" 
+                ng-options="option.Key as option.Value  for option in Data.TinReasonCodes"
+                    name="{!TinReasonCodePropertyName}{{$index}}" id="{!TinReasonCodePropertyName}{{$index}}">
+                </select>
+                <c:CAA_InputError field="{!TinReasonCodePropertyName}" />
+            </div>
+        </div>
+    </div>
+
+    <div ng-class="{ 'has-error': (myform.{!TinReasonBPropertyName}{{$index}}.$touched || Submitted) && myform.{!TinReasonBPropertyName}{{$index}}.$invalid }" ng-show="{!model}.{!HasTinPropertyName} == 'No' && {!model}.{!TinReasonCodePropertyName}.includes('Reason B')">
+        <div>
+            <label class="control-label">TIN {!cid}: If you have selected reason B, please give explanation</label>
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <input class="form-control arbBox" ng-model="{!model}.{!TinReasonBPropertyName}" name="{!TinReasonBPropertyName}{{$index}}"
+                    id="{!TinReasonBPropertyName}{{$index}}" ng-required="!app.EBS_ID_c && {!model}.{!HasTinPropertyName} == 'No' && {!model}.{!TinReasonCodePropertyName}.includes('Reason B')" />
+                <c:CAA_InputError field="{!TinReasonBPropertyName}" />
+            </div>
+        </div>
+    </div>
+</apex:component>

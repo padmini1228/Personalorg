@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <webLinks>
+        <fullName>Enter_KRI_Reviews</fullName>
+        <availability>online</availability>
+        <description>This button allows users to select multiple KRI&apos;s for the review process.</description>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Enter KRI Reviews</masterLabel>
+        <openType>sidebar</openType>
+        <page>KRIReviews</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>Review_All</fullName>
+        <availability>online</availability>
+        <description>Review all KRIs</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Review All</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>{!URLFOR(&apos;/apex/&apos;+$Setup.KRI_Extension_Settings__c.NamespacePrefix__c+&apos;KRIReviews&apos;, null, 
+[ 
+reviewall = &quot;on&quot; 
+] 
+)}</url>
+    </webLinks>
+</CustomObject>

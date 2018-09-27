@@ -1,0 +1,37 @@
+<apex:page sideBar="false" showHeader="false">
+
+<head>
+	<apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'HelpPageStylesheet.css')}"/>
+</head>
+
+<div class="heading">
+<div class="icon">&nbsp;</div>
+    <h2>Help Pages</h2>
+    <h1>Risk Templates</h1>
+</div>
+
+<div class="content">
+<p>Risk Templates provide a way of building up a library of risk templates that be easily reused across the organization.</p>
+
+<p>To create a Risk Template, simply provide a name, category, sub-category and description for the risk. Once created, Risk Templates can also be associated with Control Templates, KRI Templates and Causes (see below).
+</p>
+<p>Subject to the Risk Template being approved, it will be visible to users when they choose to create a Risk using the "New Risk From Template" custom link.
+</p>
+<p>In addition, when creating a Risk from a Risk Template, users may also choose to create (or link to) the appropriate Control Templates, KRI Templates and Causes that relate to the Risk Template.
+</p>
+<p>This facilitates the easy creation of Risks with appropriately related Controls, KRIs and Causes in one simple step.
+</p>
+<p>Risks created from a Risk Template are recorded in the Risks related list. Over time, this can provide a useful insight into the most popular risk types.
+</p>
+
+<br/>
+<br/>
+<br/>
+
+<h3 >Contact Details</h3>
+
+<p>
+For further support information, please contact your local administrator.</p>
+<div class="clear"></div>
+</div>
+</apex:page>

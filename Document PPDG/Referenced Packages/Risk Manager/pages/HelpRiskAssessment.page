@@ -1,0 +1,37 @@
+<apex:page sideBar="false" showHeader="false">
+
+<head>
+	<apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'HelpPageStylesheet.css')}"/>
+</head>
+
+<div class="heading">
+<div class="icon">&nbsp;</div>
+    <h2>Help Pages</h2>
+    <h1>Risk Assessments</h1>
+</div>
+
+<div class="content">
+<p>Risk Assessments are assessments of the Inherent, Residual and Target risk at a particular point in time.
+</p>
+<p>To create a Risk Assessment, navigate to the Risk that you wish to assess. Then click the New Risk Assessment button (on the Risk Assessments related list) or Assess Risks button at the top of the Risk.
+</p>
+<p>An editor will appear that uses the Scoring Scheme associated with the Risk's Business Unit (for more information click on the "Help for this Page" on the Scoring Band tab).
+</p>
+<p>Use the editor to assess the Risk by selecting the relevant Likelihood and Impact bands.
+</p>
+<p>Qualitative or Quantitative ratings can be used by selecting the "Qualitative" or "Quantitative" entry mode.
+</p>
+<p>Save the assessment at any time by clicking on the Quick Save button, or save and quit using the Save button. This will update the Risk ratings as defined by the Scoring Scheme.
+</p>
+<br/>
+<br/>
+<br/>
+
+
+<h3 >Contact Details</h3>
+
+<p>
+For further support information, please contact your local administrator.</p>
+<div class="clear"></div>
+</div>
+</apex:page>

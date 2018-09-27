@@ -1,0 +1,31 @@
+<apex:page sideBar="false" showHeader="false">
+
+<head>
+	<apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'HelpPageStylesheet.css')}"/>
+</head>
+
+<div class="heading">
+    <div class="icon">&nbsp;</div>
+    <h2>Help Pages</h2>
+    <h1>Control Deficiency Logs</h1>
+</div>
+
+<div class="content">
+
+<p>Control Deficiency Logs are used to record identified deficiencies in the control, for instance an estimation that the control may fail, has failed, or has caused a "near miss". </p>
+
+<p>Use the New CDL Action button to create any action resulting from the control deficiency log.</p>
+
+<br/>
+<br/>
+<br/>
+
+<h3 >Contact Details</h3>
+
+<p>
+For further support information, please contact your local administrator.</p>
+
+
+    <div class="clear"></div>
+</div>
+</apex:page>

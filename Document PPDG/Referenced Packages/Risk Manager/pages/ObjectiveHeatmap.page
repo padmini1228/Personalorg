@@ -1,0 +1,43 @@
+<apex:page controller="Risk.ObjectiveHeatmapController" standardStylesheets="{! !isPrintableView}" tabstyle="grc__Objective__c" showheader="{! !isPrintableView}" sidebar="{! !isPrintableView}" id="pg" renderAs="{! IF( isPrintableView, 'pdf', 'html')}">
+    <head>
+        <apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'BusinessUnitHeatmapReport.css')}"/>
+    </head>
+
+    <div class="header">
+        <apex:sectionHeader rendered="{! !isPrintableView}" title="Heatmaps" subTitle="Objective - '{!objective.Name}'"/>
+    </div>
+
+    <apex:outputPanel rendered="{! isPrintableView}">
+        <h2>HeatMaps</h2>
+        <h3>Objective - '{!objective.Name}'</h3>
+    </apex:outputPanel>
+
+    <apex:pageMessages rendered="{! !isPrintableView}" />
+       <apex:outputPanel rendered="{!businessUnit.Id!= '' && !isPrintableView}">
+           <div class="ptBreadcrumb">
+               <div style="float:left;" >
+                    &nbsp;&#171;&nbsp;
+                    <a href="{!URLFOR($Action.grc__Objective__c.View,objective.Id)}">
+                        Back to Objective
+                    </a>
+                </div>
+                <div style="float:right;">
+                	<apex:form >
+	                	<apex:commandlink value="Printable View" action="{!printHeatmap}" target="_blank"/>
+	                    |
+	                    <a href="javascript:openPopupFocusEscapePounds(%27{!$Page.HelpBusinessUnitHeatmap}%27, %27Help%27, 700, 600, %27width=700,height=600,resizable=yes,toolbar=yes,status=no,scrollbars=yes,menubar=yes,directories=no,location=no,dependant=no%27, false, false);" title="Help Heatmap Report">
+	                        Help for this Page
+	                        <img src="/s.gif" alt="Help"  class="helpIcon" title="Help"/>
+	                    </a>
+                    </apex:form>
+                </div>
+                <div style="clear:both;"/>
+                <br/><br/>
+          </div>
+       </apex:outputPanel>
+
+
+        <div class="riskHeatmaps">
+            <c:HeatmapCollection heatmaps="{!heatmaps}" heatmapFilter="{!hf}" height="400px" width="100%" printableView="{!isPrintableView}" ignoreFieldsOverride="true"/>
+        </div>
+</apex:page>

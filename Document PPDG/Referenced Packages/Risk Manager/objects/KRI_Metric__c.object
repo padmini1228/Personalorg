@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>KRI__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>KRI</label>
+        <referenceTo>KRI__c</referenceTo>
+        <relationshipLabel>Associated Metrics</relationshipLabel>
+        <relationshipName>KRI_Metrics</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Metric__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Metric</label>
+        <referenceTo>Metric__c</referenceTo>
+        <relationshipLabel>Associated KRIs</relationshipLabel>
+        <relationshipName>KRI_Metrics</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <label>KRI Metric Lookup</label>
+    <nameField>
+        <displayFormat>KM-{0000}</displayFormat>
+        <label>KRI Metric Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>KRI Metric Lookups</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <webLinks>
+        <fullName>Add_Metric</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Add/Edit Metrics</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!URLFOR(&apos;/apex/&apos;+$Setup.NamespacePrefix__c.Value__c+&apos;AddMetric&apos;, null,
+[
+recordId= KRI__c.Id,
+type= &quot;KRI&quot;
+]
+)}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Associate_KRIs</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Associate KRIs</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!URLFOR(&apos;/apex/&apos;+$Setup.NamespacePrefix__c.Value__c+&apos;Many2ManyAssociator&apos;, null,
+[
+parentId = Metric__c.Id ,
+lookupObjectName = $Setup.NamespacePrefix__c.Value__c+&quot;KRI_Metric__c&quot;,
+childFieldName = $Setup.NamespacePrefix__c.Value__c+&quot;KRI__c&quot;,
+parentFieldName = $Setup.NamespacePrefix__c.Value__c+&quot;Metric__c&quot;,
+filterCriteriaCollection = &quot;Many2ManyFilterCriteriaCollection&quot;
+]
+)}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Associate_Metrics</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Associate Metrics</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!URLFOR(&apos;/apex/&apos;+$Setup.NamespacePrefix__c.Value__c+&apos;Many2ManyAssociator&apos;, null,
+[
+parentId = KRI__c.Id ,
+lookupObjectName = $Setup.NamespacePrefix__c.Value__c+&quot;KRI_Metric__c&quot;,
+childFieldName = $Setup.NamespacePrefix__c.Value__c+&quot;Metric__c&quot;,
+parentFieldName = $Setup.NamespacePrefix__c.Value__c+&quot;KRI__c&quot;,
+filterCriteriaCollection = &quot;Many2ManyFilterCriteriaCollection&quot;
+]
+)}</url>
+    </webLinks>
+</CustomObject>

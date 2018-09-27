@@ -1,0 +1,111 @@
+<apex:page controller="Risk.GroupRiskDashboard" renderAs="pdf" showHeader="false" sidebar="false" standardStylesheets="false" >
+
+<head>
+	<apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'RiskReportStylesheet.css')}"/>
+</head>
+
+	<apex:pageMessages />
+
+	<h1 class="header">Group Risk Dashboard<br/>
+	<apex:outputText value="{0, date,dd MMMM yyyy}"><apex:param value="{!today()}"/></apex:outputText></h1>
+
+	<table style="border-collapse:collapse; font-size: 12pt;" cellspacing="0" cellpadding="12">
+		<tr>
+			<th style="text-align: center; border:1px solid #FFF;" colspan="4">
+
+			</th>
+			<th style="text-align: center; border:1px solid #000;" colspan="2">
+				Control Status
+			</th>
+			<th style="text-align: center; border:1px solid #FFF;">
+
+			</th>
+			<th style="text-align: center; border:1px solid #000;" colspan="2">
+				Group Risk Score
+			</th>
+			<th style="text-align: center; border:1px solid #FFF;">
+
+			</th>
+		</tr>
+		<tr>
+			<th style="text-align: center; border:1px solid #000;">
+				Risk Number
+			</th>
+			<th style="text-align: center; border:1px solid #000;">
+				Risk Title
+			</th>
+			<th style="text-align: center; border:1px solid #000;">
+				Business Unit
+			</th>
+			<th style="text-align: center; border:1px solid #000;">
+				Risk Category
+			</th>
+			<th style="text-align: center; border:1px solid #000;">
+				Current
+			</th>
+			<th style="text-align: center; border:1px solid #000;">
+				Future
+			</th>
+			<th style="text-align: center; border:1px solid #000;">
+				Risk Climate
+			</th>
+			<th style="text-align: center; border:1px solid #000;">
+				Prior
+			</th>
+			<th style="text-align: center; border:1px solid #000;">
+				Current
+			</th>
+			<th style="text-align: center; border:1px solid #000;">
+				Risk Owner
+			</th>
+		</tr>
+
+		<apex:repeat value="{!theRiskChartItems}" var="riskItem" >
+			<tr>
+				<td style="border:1px solid #000;">
+					{!riskItem.theRisk.grc__Risk_Name__c}
+				</td>
+				<td style="border:1px solid #000;">
+					{!riskItem.theRisk.Name}
+				</td>
+				<td style="border:1px solid #000;">
+					{!riskItem.theRisk.grc__Business_Unit__r.Name}
+				</td>
+				<td style="border:1px solid #000;">
+					{!riskItem.theRisk.grc__Category__c}
+				</td>
+				<td style="border:1px solid #000; background-image:url({!riskItem.currentControlColor});">
+				 	<!-- background colour only -->
+				</td>
+				<td style="border:1px solid #000; background-image:url({!riskItem.anticipatedControlColor});">
+					<!-- background colour only -->
+				</td>
+				<td style="border:1px solid #000; text-align: center;">
+					<apex:image rendered="{!IF(riskItem.riskClimate == 'Down', true, false)}" value="{!$Resource.Risk__RiskClimateDownGreenArrow}" width="32" height="32"/>
+					<apex:image rendered="{!IF(riskItem.riskClimate == 'Level', true, false)}" value="{!$Resource.Risk__RiskClimateRightYellowArrow}" width="32" height="32"/>
+					<apex:image rendered="{!IF(riskItem.riskClimate == 'Up', true, false)}" value="{!$Resource.Risk__RiskClimateUpRedArrow}" width="32" height="32"/>
+				</td>
+
+				<apex:repeat value="{!riskItem.quarters}" var="quarter">
+					<apex:outputPanel layout="none" rendered="{!IF(quarter.quarterNumber == 3, true, false)}">
+						<td style="border:1px solid #000; text-align: center; background-color: {!quarter.color};">
+							{!quarter.score}
+						</td>
+					</apex:outputPanel>
+					<apex:outputPanel layout="none" rendered="{!IF(quarter.quarterNumber == 4, true, false)}">
+						<td style="border:1px solid #000; text-align: center; background-color: {!quarter.color};">
+							{!quarter.score}
+						</td>
+					</apex:outputPanel>
+				</apex:repeat>
+
+				<td style="border:1px solid #000;">
+					<apex:outputText rendered="{!riskItem.therisk.grc__Risk_Owner__r == null}" value="{!riskItem.therisk.Owner.Name}"/>
+                    <apex:outputText rendered="{!riskItem.therisk.grc__Risk_Owner__r != null}" value="{!riskItem.therisk.grc__Risk_Owner__r.Name}"/>
+				</td>
+			</tr>
+		</apex:repeat>
+
+	</table>
+
+</apex:page>

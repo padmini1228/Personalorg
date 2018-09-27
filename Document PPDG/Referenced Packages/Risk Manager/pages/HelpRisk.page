@@ -1,0 +1,57 @@
+<apex:page sideBar="false" showHeader="false">
+
+<head>
+	<apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'HelpPageStylesheet.css')}"/>
+</head>
+
+    <div class="heading">
+    <div class="icon">&nbsp;</div>
+        <h2>Help Pages</h2>
+        <h1>Risks</h1>
+    </div>
+
+    <div class="content">
+        <p>
+            Risks are events or conditions which if they occur may have a harmful or negative effect on the Business. A variety of information to be recorded against a Risk, including:
+            <ul>
+                <li>Business Unit - the business entity, e.g. division or subsidiary, that the risk impacts.</li>
+                <li>Type - a Risk can be a Threat or an Opportunity.</li>
+                <li>Category/Subcategory - the category and sub-category of the risk.</li>
+                <li>Source - indicates how the risk arose. E.g. audit, legislation, assessment, regulator.</li>
+                <li>Impact - a list of potential impacts of the risk on the business.</li>
+                <li>Risk Owner - if required, a Contact can be assigned to be the owner of the Risk.</li>
+                <li>Status - mark the risk as active, emerging or closed.</li>
+                <li>Key Risk - used to mark the Risk as Key to the Business.</li>
+                <li>Risk Ranking - this field can be used to assign a numerical ranking to the risk, which is then used to order the Risk in some reports.</li>
+                <li>Submitted for Deletion - if ticked, this means that a user has submitted the Risk for deletion. However, only the System Administrator or Super User can deleted a Risk.</li>
+                <li>Next/Previous Review Date - used to drive your review process and see when it was last reviewed and when the next review is due.</li>
+                <li>Parent Risk - enables Risks to be related to a parent Risk (owned by a parent Business Unit).</li>
+                <li>Risk Ratings/Target Ratings (residual, inherent, target) - calculated fields and colour ratings based on the most recent risk assessment (likelihood vs impact) made for the risk.</li>
+                <li>Control Effectiveness Ratings - calculated fields that show the overall effectiveness of the Controls associated with the Risk.</li>
+            </ul>
+        </p>
+
+        <p>Risk Assessments provide a record of all the risk assessments made against the risk. To assess the Risk click on the Assess Risks button at the top of the Risk or the New Risk Assessment button on the Risk Assessments related list. You will then be taken to the Risk Assessment wizard where you can rate the Risk. Note, the parameters for the assessment will be based on the Scoring Schemes that are associated with the Risk's Business Unit.
+        </p>
+
+        <p>There are a number of additional related lists for managing risk related information:
+            <ul>
+                <li>Actions can be put in place to mitigate Risks and can be assigned to specific contacts. Actions can be populated with information about the activity to be undertaken, and when it should be completed by.</li>
+                <li>Risks can be associated with multiple Controls (and vice-versa) that mitigate or manage the Risk on an on-going basis. A Risk may have many controls which can be marked as 'Key' to the Risk using the 'Set Key Control' button on the Controls related list.</li>
+                <li>Risks can be associated with multiple Causes.</li>
+                <li>Risks can be associated with multiple Business Objectives within the organization.</li>
+                <li>Incidents can also be associated to Risks. Linking Incidents to a Risk thus gives a full historical picture of its occurrence.</li>
+            </ul>
+        </p>
+
+        <br/>
+        <br/>
+        <br/>
+
+        <h3 >Contact Details</h3>
+
+        <p>
+            For further support information, please contact your local administrator.</p>
+        <div class="clear"></div>
+    </div>
+</apex:page>

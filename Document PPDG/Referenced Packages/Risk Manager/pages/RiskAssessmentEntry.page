@@ -1,0 +1,65 @@
+<apex:page standardcontroller="Risk__Risk_Assessment__c" extensions="Risk.RiskAssessmentEntry" showHeader="true" sidebar="false">
+
+<!--
+	Functionality of this page (* indicates new or updated feature).
+	
+	1. Default Mitigation
+	2. Available Mitigations [Controlled by Custom Settings - RM VF Settings: Hide Inherent | Hide Target Tab]
+	3. * Default Edit Mode
+	4. * Avaliable Edit Modes (Qualitative / Quantitative)
+		- * If validation error, edit mode cannot be changed until validation resolved (to ensure form is valid).
+	5. ReadOnly [Controlled by URL param - 'readOnly']
+	6. Single Point Likelihood [Controlled by Custom Setting - RM VF Settings: Use Single Point Likelihood Ratings]
+		- Qualitative Likelihood only provides input for 'Most Likely' value
+		- Automatically populate the 'Best Case' and 'Worst Case' values to be the same as 'Most Likely'.
+	7. Debug Mode [Controlled by URL param - 'debug']
+	8. Expanded justifications [Controlled by Custom Setting - RM VF Settings: Expanded Justification Functionality]
+		- Justifications for: Best Case, Most Likely, Worst Case
+		- Modeling Notes
+		- IF Single Point Likelihood Enabled: Likelihood will only display standard Justification (not expanded).
+	9. Toggle Justification (change button label from Show to Hide as required)
+		- * now uses custom label for both show and hide labels
+	10. Validation for impact bands (band range) - current product supports this for Cost and Time
+	11. * Where possible JS and CSS are in static resources
+	12. Required Justifications
+		- Likelihood Justification [Controlled by Scoring Scheme Field - 'Likelihood Justification' for each mitigation]
+		- Impact categories Justification. [Controlled by Impact Category Field - 'Justification Required' for each mitigation]
+		- * Required Justifications not collapsable
+		- * If not editable for user, required is ignored
+		- * Field is only required when a value is entered / band selected
+	13. * Enable Click Deselection (on qualitative mode)
+	14. * ReadOnly Based on User Access
+		- Qualitative Assessments 
+			- Users who have read only access on Band (RAR) field will be able to view existing selected items but not 
+			  able to modify.
+			- Users who have edit access on Band (RAR) field will be able to modify ratings.
+			- User who do not have ready access on Band (RAR) field will be not be able to view selected Ratings on existing
+			  ratings.
+		- Quantitative Assessments
+			- Users who have Read only access on Best Case, Mostlikely Case and/or Worst Case will be able to view existing ratings but not modify/create new.
+			- Users who have Edit access on Best Case, Mostlikely Case and/or Worst Case will be able to modify/create new ratings.
+			- Users who do not have read acess on Best Case, Mostlikely Case and/or Worst Case will not be able to view existing ratings or create new ratings.
+-->
+
+
+	<apex:variable value="{! IF($CurrentPage.parameters.debug == 'true', true, false)}" var="debugMode" />
+	
+	<apex:form >
+		<apex:sectionHeader title="{!$Label.risk__RAE_Title}" subtitle="{!riskAssessment.Risk__r.Name}" />
+		
+		<!-- Risk Assessment Page Component Setup -->
+		<!--
+			editMode = (PROVIDED BY CONTROLLER) qualitative (DEFAULT)
+			displayedEditModes = (PROVIDED BY CONTROLLER BASED ON SCORING SCHEME INFO) (DEFAULT)
+			defaultMitigation = (PROVIDED BY CONTROLLER BASED ON CUSTOM SETTINGS)
+			displayedMitigations = (PROVIDED BY CONTROLLER BASED ON CUSTOM SETTINGS)
+			defaultResults = true (DEFAULT)
+			enableClickDeselection = false (DEFAULT)
+			readOnly = (PROVIDED BY CONTROLLER BASED ON URL)
+			debugMode = (PROVIDED BY URL)
+		-->
+		<c:RiskAssessment record="{!riskAssessment}" retURL="{!retURL}" nextPageURL="{!nextURL}" defaultEditMode="{!editMode}" displayedEditModes="{!editModes}" defaultMitigation="{!selectedMitigationStep}" displayedMitigations="{!mitigationSteps}" singlePointLikelihood="{!singlePointLikelihood}" expandedJustifications="{!expandedJustifications}" readOnly="{!readOnly}" debugMode="{!debugMode}" />
+		
+	</apex:form>
+	
+</apex:page>

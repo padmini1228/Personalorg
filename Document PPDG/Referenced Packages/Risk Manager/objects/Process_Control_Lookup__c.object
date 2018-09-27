@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Control__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Control</label>
+        <referenceTo>grc__Control__c</referenceTo>
+        <relationshipLabel>Associated Processes</relationshipLabel>
+        <relationshipName>Process_Control_Lookups</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Process__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Process</label>
+        <referenceTo>grc__Process__c</referenceTo>
+        <relationshipLabel>Associated Controls</relationshipLabel>
+        <relationshipName>Process_Control_Lookups</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <label>Process Control Lookup</label>
+    <nameField>
+        <displayFormat>PC{0000}</displayFormat>
+        <label>Process Control No</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Process Control Lookups</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <webLinks>
+        <fullName>Associate_Controls</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Associate Controls</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>{!URLFOR(&apos;/apex/&apos;+$Setup.NamespacePrefix__c.Value__c+&apos;Many2ManyAssociator&apos;, null,
+[
+parentId = grc__Process__c.Id ,
+lookupObjectName = $Setup.NamespacePrefix__c.Value__c+&quot;Process_Control_Lookup__c&quot;,
+childFieldName = $Setup.NamespacePrefix__c.Value__c+&quot;Control__c&quot;,
+parentFieldName = $Setup.NamespacePrefix__c.Value__c+&quot;Process__c&quot;,
+filterCriteriaCollection = &quot;Many2ManyFilterCriteriaCollection&quot;,
+filterCriteriaDefaults = &quot;Many2ManyFilterCriteriaDefaults&quot;
+]
+)}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Associate_Processes</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Associate Processes</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>{!URLFOR(&apos;/apex/&apos;+$Setup.NamespacePrefix__c.Value__c+&apos;Many2ManyAssociator&apos;, null,
+[
+parentId = grc__Control__c.Id ,
+lookupObjectName = $Setup.NamespacePrefix__c.Value__c+&quot;Process_Control_Lookup__c&quot;,
+childFieldName = $Setup.NamespacePrefix__c.Value__c+&quot;Process__c&quot;,
+parentFieldName = $Setup.NamespacePrefix__c.Value__c+&quot;Control__c&quot;,
+filterCriteriaCollection = &quot;Many2ManyFilterCriteriaCollection&quot;,
+filterCriteriaDefaults = &quot;Many2ManyFilterCriteriaDefaults&quot;
+]
+)}</url>
+    </webLinks>
+</CustomObject>

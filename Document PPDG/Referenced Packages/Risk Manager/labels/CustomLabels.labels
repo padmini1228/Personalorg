@@ -1,0 +1,1531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>AddNewRel_Confirmation</fullName>
+        <categories>AddNewRel</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AddNewRel_Confirmation</shortDescription>
+        <value>Do you want to create a link to the {0}?</value>
+    </labels>
+    <labels>
+        <fullName>AddNewRel_Creation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AddNewRel_Creation</shortDescription>
+        <value>{0} Creation</value>
+    </labels>
+    <labels>
+        <fullName>AddNewRel_Dont_Link_To</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AddNewRel_Dont_Link_To</shortDescription>
+        <value>Do not link to {0}</value>
+    </labels>
+    <labels>
+        <fullName>AddNewRel_Link_To</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AddNewRel_Link_To</shortDescription>
+        <value>Link to {0}</value>
+    </labels>
+    <labels>
+        <fullName>AddNewRel_Provide_Required_Params</fullName>
+        <categories>AddNewRel</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AddNewRel_Provide_Required_Params</shortDescription>
+        <value>This page cannot be used without providing all the required parameters. Please Inform your System Administrator.</value>
+    </labels>
+    <labels>
+        <fullName>AddNewRel_Relationship_Selection</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AddNewRel_Relationship_Selection</shortDescription>
+        <value>Relationship Selection</value>
+    </labels>
+    <labels>
+        <fullName>AddNewRel_Unrecognised_Field_Name_Lookup</fullName>
+        <categories>AddNewRel</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AddNewRel_Unrecognised_Field_Name_Lookup</shortDescription>
+        <value>Unrecognised field name: {0} for lookup. Please Inform your System Administrator.</value>
+    </labels>
+    <labels>
+        <fullName>AddNewRel_Unrecognised_Object_Type_Lookup</fullName>
+        <categories>AddNewRel</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AddNewRel_Unrecognised_Object_Type_Lookup</shortDescription>
+        <value>Unrecognised object type: {0} for lookup. Please Inform your System Administrator.</value>
+    </labels>
+    <labels>
+        <fullName>Aggregated</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Aggregated</shortDescription>
+        <value>Aggregated</value>
+    </labels>
+    <labels>
+        <fullName>Appetite_Display</fullName>
+        <categories>BusinessUnitHeatmap, Embedded Heatmap</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Appetite Display Toggle Label</shortDescription>
+        <value>Appetite Display</value>
+    </labels>
+    <labels>
+        <fullName>Appetite_Display_Both</fullName>
+        <categories>BusinessUnitHeatmap, Embedded Heatmap</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Appetite Display Toggle Value</shortDescription>
+        <value>Both</value>
+    </labels>
+    <labels>
+        <fullName>Appetite_Display_Out_Of_Appetite</fullName>
+        <categories>BusinessUnitHeatmap, Embedded Heatmap</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Appetite Display toggle Value</shortDescription>
+        <value>Out of Appetite</value>
+    </labels>
+    <labels>
+        <fullName>Appetite_Setting</fullName>
+        <categories>SetupHeatMap</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Appetite Setting Heading</shortDescription>
+        <value>Appetite Setting</value>
+    </labels>
+    <labels>
+        <fullName>ApplyFilter</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ApplyFilter</shortDescription>
+        <value>Apply Filter</value>
+    </labels>
+    <labels>
+        <fullName>Are_You_Sure</fullName>
+        <categories>Risk Template Browser</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Are You Sure Message</shortDescription>
+        <value>Are you sure?</value>
+    </labels>
+    <labels>
+        <fullName>AssessControlsTitle</fullName>
+        <categories>SetControlEffectiveness Page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AssessControlsTitle</shortDescription>
+        <value>Assess Controls</value>
+    </labels>
+    <labels>
+        <fullName>Available</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Available</shortDescription>
+        <value>Available</value>
+    </labels>
+    <labels>
+        <fullName>BUByUserFilename</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BUByUserFilename</shortDescription>
+        <value>Business Unit By User</value>
+    </labels>
+    <labels>
+        <fullName>Back_To</fullName>
+        <categories>Risk Manager</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Back To</shortDescription>
+        <value>Back to {0}</value>
+    </labels>
+    <labels>
+        <fullName>Best_Case</fullName>
+        <categories>Risk Manager</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Best Case</shortDescription>
+        <value>Best Case</value>
+    </labels>
+    <labels>
+        <fullName>BusinessUnitHeatmap_ApplyingFilter</fullName>
+        <categories>BusinessUnitHeatmap</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Business Unit Heatmap Applying Filter Message</shortDescription>
+        <value>Applying filter ...</value>
+    </labels>
+    <labels>
+        <fullName>BusinessUnitHeatmap_BackToBU</fullName>
+        <categories>BusinessUnitHeatmap</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Back to Business Unit</shortDescription>
+        <value>Back to Business Unit</value>
+    </labels>
+    <labels>
+        <fullName>BusinessUnitHeatmap_BusinessUnitTitle</fullName>
+        <categories>BusinessUnitHeatmap</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Business Unit title</shortDescription>
+        <value>Business Unit -</value>
+    </labels>
+    <labels>
+        <fullName>BusinessUnitHeatmap_Filter</fullName>
+        <categories>BusinessUnitHeatmap</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Filter</shortDescription>
+        <value>Filter</value>
+    </labels>
+    <labels>
+        <fullName>BusinessUnitHeatmap_HeatMaps</fullName>
+        <categories>BusinessUnitHeatmap</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Heatmaps</shortDescription>
+        <value>Heatmaps</value>
+    </labels>
+    <labels>
+        <fullName>BusinessUnitHeatmap_HelpForThisPage</fullName>
+        <categories>BusinessUnitHeatmap</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Help for this Page</shortDescription>
+        <value>Help for this Page</value>
+    </labels>
+    <labels>
+        <fullName>BusinessUnitHeatmap_RiskType</fullName>
+        <categories>BusinessUnitHeatmap</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Risk Type</shortDescription>
+        <value>Risk Type</value>
+    </labels>
+    <labels>
+        <fullName>BusinessUnitHeatmap_UpdatingFilter</fullName>
+        <categories>BusinessUnitHeatmap</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Business Unit Heatmap Updating Filter Message</shortDescription>
+        <value>Updating filter ...</value>
+    </labels>
+    <labels>
+        <fullName>Business_Unit_Delete</fullName>
+        <categories>Business Unit Trigger (Before Delete)</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Business Unit Delete</shortDescription>
+        <value>Risks has to be remapped with different business unit or deleted in order to delete the business unit</value>
+    </labels>
+    <labels>
+        <fullName>Business_Unit_Sharing_Group_Name_Blank_Error</fullName>
+        <categories>Business Unit</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Business Unit - Sharing Group Name Blank Error</shortDescription>
+        <value>You Must Provide A Sharing Group Name To Save A Business Unit.</value>
+    </labels>
+    <labels>
+        <fullName>ByLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ByLabel</shortDescription>
+        <value>by</value>
+    </labels>
+    <labels>
+        <fullName>CancelLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CancelLabel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Cannot_Change_Type</fullName>
+        <categories>Scoring Scheme</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot_Change_Type</shortDescription>
+        <value>This Impact Categories type cannot be changed while Risk Assessments exist</value>
+    </labels>
+    <labels>
+        <fullName>Cannot_Delete_IC</fullName>
+        <categories>Scoring Scheme</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot_Delete_IC</shortDescription>
+        <value>This Impact Category cannot be deleted until all related Risk Assessments are removed.</value>
+    </labels>
+    <labels>
+        <fullName>Cannot_Delete_SS</fullName>
+        <categories>Scoring Scheme</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot_Delete_SS</shortDescription>
+        <value>You cannot delete a Scoring scheme that has a risk assessment</value>
+    </labels>
+    <labels>
+        <fullName>Category</fullName>
+        <categories>Risk Manager</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Category</shortDescription>
+        <value>Category</value>
+    </labels>
+    <labels>
+        <fullName>Causes_Created</fullName>
+        <categories>Risk Template Browser</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Causes Created</shortDescription>
+        <value>({0} Causes)</value>
+    </labels>
+    <labels>
+        <fullName>Causes_Created_Help_Text</fullName>
+        <categories>Risk Template Browser</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Causes Created Help Text</shortDescription>
+        <value>Tick this to allow creation of Causes via Risk Templates</value>
+    </labels>
+    <labels>
+        <fullName>Colour_Palette</fullName>
+        <categories>SetupHeatMap</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Colour Palette Heading</shortDescription>
+        <value>Colour Palette</value>
+    </labels>
+    <labels>
+        <fullName>ColumnNamesMissing</fullName>
+        <categories>Risk Template Browser</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Column Names Missing Message</shortDescription>
+        <value>Column names must be passed in to indicate number of columns for grid.</value>
+    </labels>
+    <labels>
+        <fullName>Config_Scoring_Scheme_Success_msg</fullName>
+        <categories>RiskAssessmentEntry Page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Config Scoring Scheme Success msg</shortDescription>
+        <value>Heatmap save successful</value>
+    </labels>
+    <labels>
+        <fullName>Configure_Heatmap</fullName>
+        <categories>Heatmap</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Configure Heatmap</shortDescription>
+        <value>Configure Heatmap</value>
+    </labels>
+    <labels>
+        <fullName>Confirmation_RAClearAll</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Confirmation RAClearAll</shortDescription>
+        <value>{0} values has been cleared out, Are you sure to save the assessment?</value>
+    </labels>
+    <labels>
+        <fullName>Confirmation_message</fullName>
+        <categories>Risk Template Browser</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Confirmation Message for Risk Creation</shortDescription>
+        <value>Are you sure you wish to create {0} Risks?</value>
+    </labels>
+    <labels>
+        <fullName>ControlEffectivenessParagraph</fullName>
+        <categories>SetControlEffectiveness Page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ControlEffectivenessParagraph</shortDescription>
+        <value>Listed below are the Controls linked to this Risk. The effectiveness of specific Controls and whether they are Key Controls can be set here.</value>
+    </labels>
+    <labels>
+        <fullName>Controls_Created</fullName>
+        <categories>Risk Template Browser</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Controls Created Message</shortDescription>
+        <value>({0} Controls)</value>
+    </labels>
+    <labels>
+        <fullName>Controls_Created_Help_Text</fullName>
+        <categories>Risk Template Browser</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Controls Created Help Text</shortDescription>
+        <value>Tick this to allow creation of Controls via Risk Templates</value>
+    </labels>
+    <labels>
+        <fullName>Cost</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cost</shortDescription>
+        <value>Cost</value>
+    </labels>
+    <labels>
+        <fullName>CostOrTime</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CostOrTime</shortDescription>
+        <value>Cost or Time</value>
+    </labels>
+    <labels>
+        <fullName>CreateCauses</fullName>
+        <categories>Risk Template Browser</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Create Causes</shortDescription>
+        <value>Create Causes</value>
+    </labels>
+    <labels>
+        <fullName>CreateControls</fullName>
+        <categories>Risk Template Browser</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Create Controls Label</shortDescription>
+        <value>Create Controls</value>
+    </labels>
+    <labels>
+        <fullName>Create_Exit</fullName>
+        <categories>Risk Template Browser</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Create Exit Button Text</shortDescription>
+        <value>Create and Exit</value>
+    </labels>
+    <labels>
+        <fullName>Create_Risk_Permission_Error</fullName>
+        <categories>Incident Manager</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Create Risk Permission Error</shortDescription>
+        <value>Current user does not have permission to create a risk or update relevant required fields of a Risk</value>
+    </labels>
+    <labels>
+        <fullName>Deselect_All</fullName>
+        <categories>Risk Template Browser</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Deselect All Button Text</shortDescription>
+        <value>Deselect All</value>
+    </labels>
+    <labels>
+        <fullName>Direct</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Direct</shortDescription>
+        <value>Direct</value>
+    </labels>
+    <labels>
+        <fullName>Enable_Appetite_Settings</fullName>
+        <categories>SetupHeatMap</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Enable Appetite Settings</shortDescription>
+        <value>Enable appetite settings for this heatmap.</value>
+    </labels>
+    <labels>
+        <fullName>Error_Business_Unit_Access</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error Business Unit Access</shortDescription>
+        <value>Business Unit is not accessible. Please contact your administrator.</value>
+    </labels>
+    <labels>
+        <fullName>Error_Control_Business_Unit_Required</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error Control Business Unit Required</shortDescription>
+        <value>Control Business Unit Required.</value>
+    </labels>
+    <labels>
+        <fullName>Error_No_Control_Templates_Found</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error No Control Templates Found</shortDescription>
+        <value>No matching Controls found</value>
+    </labels>
+    <labels>
+        <fullName>Error_Occurred</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error Occurred</shortDescription>
+        <value>Error occurred while saving. Please contact your administrator.</value>
+    </labels>
+    <labels>
+        <fullName>Error_Risk_Business_Unit_Required</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error Risk Business Unit Required</shortDescription>
+        <value>Risk Business Unit is Required</value>
+    </labels>
+    <labels>
+        <fullName>Error_With_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error With Message</shortDescription>
+        <value>Exception Occurred Please contact your administrator.</value>
+    </labels>
+    <labels>
+        <fullName>ExportToExcelLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ExportToExcelLabel</shortDescription>
+        <value>Export To Excel</value>
+    </labels>
+    <labels>
+        <fullName>FilterPanel_Filter</fullName>
+        <categories>FilterPanel</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FilterPanel Filter</shortDescription>
+        <value>Filter</value>
+    </labels>
+    <labels>
+        <fullName>FilterPanel_Filtering_Status</fullName>
+        <categories>FilterPanel</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FilterPanel Filtering Status</shortDescription>
+        <value>filtering...</value>
+    </labels>
+    <labels>
+        <fullName>FirstPageLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FirstPageLabel</shortDescription>
+        <value>First Page</value>
+    </labels>
+    <labels>
+        <fullName>ForLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ForLabel</shortDescription>
+        <value>for</value>
+    </labels>
+    <labels>
+        <fullName>HeatMapConfigErrorMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HeatMapConfigErrorMsg</shortDescription>
+        <value>Please configure the Heatmap attached to your Scoring Scheme</value>
+    </labels>
+    <labels>
+        <fullName>HeatmapCollection_LoadingRisks</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Loading Risks status</shortDescription>
+        <value>Loading Risks...</value>
+    </labels>
+    <labels>
+        <fullName>HeatmapCollection_Reset</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>reset</shortDescription>
+        <value>reset</value>
+    </labels>
+    <labels>
+        <fullName>HeatmapType</fullName>
+        <categories>BusinessUnitHeatmap, Embedded Heatmap</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HeatmapType</shortDescription>
+        <value>Heatmap Type</value>
+    </labels>
+    <labels>
+        <fullName>Heatmap_LoadingRisks</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Loading Risks status</shortDescription>
+        <value>Loading Risks...</value>
+    </labels>
+    <labels>
+        <fullName>Heatmap_SelectACell</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Select a heatmap cell</shortDescription>
+        <value>Select a heatmap cell with a risk indicator to see the risks here.</value>
+    </labels>
+    <labels>
+        <fullName>Heatmap_no_Risks_for_BU</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Heatmap no Risks for BU</shortDescription>
+        <value>There are no Risks Related to this Business Unit</value>
+    </labels>
+    <labels>
+        <fullName>Heatmaps</fullName>
+        <categories>BusinessUnitHeatmap Page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Heatmaps</shortDescription>
+        <value>Heatmaps</value>
+    </labels>
+    <labels>
+        <fullName>HelpHeatmapReport</fullName>
+        <categories>BusinessUnitHeatmap Page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Help Heatmap Report</shortDescription>
+        <value>Help Heatmap Report</value>
+    </labels>
+    <labels>
+        <fullName>Impact</fullName>
+        <categories>Risk Manager</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Impact</shortDescription>
+        <value>Impact</value>
+    </labels>
+    <labels>
+        <fullName>ImpactCategory</fullName>
+        <categories>Risk Manager</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ImpactCategory</shortDescription>
+        <value>Impact Category</value>
+    </labels>
+    <labels>
+        <fullName>ImpactCategoryOrWorstCase</fullName>
+        <categories>Risk Manager</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ImpactCategoryOrWorstCase</shortDescription>
+        <value>Impact Categories or Worst Case</value>
+    </labels>
+    <labels>
+        <fullName>In_Appetite</fullName>
+        <categories>SetupHeatMap</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>In Appetite Button Label</shortDescription>
+        <value>In Appetite</value>
+    </labels>
+    <labels>
+        <fullName>Incident_Update_Risk_Reference_Permission_Error</fullName>
+        <categories>Incident Manager</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Incident Update Risk Reference Permission Error</shortDescription>
+        <value>Current user does not have permission to update the risk reference of the Incident</value>
+    </labels>
+    <labels>
+        <fullName>IncludeAllChildren</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IncludeAllChildren</shortDescription>
+        <value>Include All Children</value>
+    </labels>
+    <labels>
+        <fullName>Inherent</fullName>
+        <categories>Risk Manager</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Inherent</shortDescription>
+        <value>Inherent</value>
+    </labels>
+    <labels>
+        <fullName>JustifcationRequired</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>JustifcationRequired</shortDescription>
+        <value>Justification is Required :</value>
+    </labels>
+    <labels>
+        <fullName>Justification</fullName>
+        <categories>Risk Manager</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Justification</shortDescription>
+        <value>Justification</value>
+    </labels>
+    <labels>
+        <fullName>Justification_Limited</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Justification Limited</shortDescription>
+        <value>Justification and Modelling Notes fields are limited to 255 characters each</value>
+    </labels>
+    <labels>
+        <fullName>LastPageLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LastPageLabel</shortDescription>
+        <value>Last Page</value>
+    </labels>
+    <labels>
+        <fullName>Likelihood</fullName>
+        <categories>Risk Manager</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Likelihood</shortDescription>
+        <value>Likelihood</value>
+    </labels>
+    <labels>
+        <fullName>Many2ManyAssociator_Cancel</fullName>
+        <categories>Many2ManyAssociator</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Many2ManyAssociator Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Many2ManyAssociator_Filter_Available</fullName>
+        <categories>Many2ManyAssociator</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Many2ManyAssociator Filter Available</shortDescription>
+        <value>Filter Available</value>
+    </labels>
+    <labels>
+        <fullName>Many2ManyAssociator_Insufficient_Privilege_Error</fullName>
+        <categories>Many2ManyAssociator</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Many2ManyAssociator Insufficient Privilege Error</shortDescription>
+        <value>You don&apos;t have enough permission to do this operation. Please contact your system administrator.</value>
+    </labels>
+    <labels>
+        <fullName>Many2ManyAssociator_Intro_p1</fullName>
+        <categories>Many2ManyAssociator</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Many2ManyAssociator Intro p1</shortDescription>
+        <value>Managing the association of</value>
+    </labels>
+    <labels>
+        <fullName>Many2ManyAssociator_Intro_p2</fullName>
+        <categories>Many2ManyAssociator</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Many2ManyAssociator Intro p2</shortDescription>
+        <value>to</value>
+    </labels>
+    <labels>
+        <fullName>Many2ManyAssociator_More_Results</fullName>
+        <categories>Many2ManyAssociator</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Many2ManyAssociator More Results</shortDescription>
+        <value>There are more results, refine your filter.</value>
+    </labels>
+    <labels>
+        <fullName>Many2ManyAssociator_Provide_Required_Params</fullName>
+        <categories>Many2ManyAssociator</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Many2ManyAssociator Provide Required Params</shortDescription>
+        <value>This page cannot be used without providing all the required parameters. Please Inform your System Administrator.</value>
+    </labels>
+    <labels>
+        <fullName>Many2ManyAssociator_Save</fullName>
+        <categories>Many2ManyAssociator</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Many2ManyAssociator Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>Many2ManyAssociator_Title_For</fullName>
+        <categories>Many2ManyAssociator</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Many2ManyAssociator Title For</shortDescription>
+        <value>for</value>
+    </labels>
+    <labels>
+        <fullName>Many2ManyAssociator_Unrecognised_Child_Object</fullName>
+        <categories>Many2ManyAssociator</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Many2ManyAssociator Unrecognised Child Object</shortDescription>
+        <value>Unrecognised child object name. Please Inform your System Administrator.</value>
+    </labels>
+    <labels>
+        <fullName>Many2ManyAssociator_Unrecognised_Criteria_Collection</fullName>
+        <categories>Many2ManyAssociator</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Many2ManyAssociator Unrecognised Criteria Collection</shortDescription>
+        <value>Unrecognised filter criteria collection class. Please Inform your System Administrator.</value>
+    </labels>
+    <labels>
+        <fullName>Many2ManyAssociator_Unrecognised_Criteria_Defaults</fullName>
+        <categories>Many2ManyAssociator</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Many2ManyAssociator Unrecognised Criteria Defaults</shortDescription>
+        <value>Unrecognised filter criteria defaults class. Please Inform your System Administrator.</value>
+    </labels>
+    <labels>
+        <fullName>Many2ManyAssociator_Unrecognised_Field_Name_Lookup</fullName>
+        <categories>Many2ManyAssociator</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Many2ManyAssociator Unrecognised Field Name Lookup</shortDescription>
+        <value>Unrecognised field name for lookup. Please Inform your System Administrator.</value>
+    </labels>
+    <labels>
+        <fullName>Many2ManyAssociator_Unrecognised_Lookup_Object</fullName>
+        <categories>Many2ManyAssociator</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Many2ManyAssociator Unrecognised Lookup Object</shortDescription>
+        <value>Unrecognised lookup object name. Please Inform your System Administrator.</value>
+    </labels>
+    <labels>
+        <fullName>Many2ManyAssociator_Unrecognised_Object_Type_Lookup</fullName>
+        <categories>Many2ManyAssociator</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Many2ManyAssociator Unrecognised Object Type Lookup</shortDescription>
+        <value>Unrecognised object type for lookup. Please Inform your System Administrator.</value>
+    </labels>
+    <labels>
+        <fullName>Many2ManyAssociator_description_p1</fullName>
+        <categories>Many2ManyAssociator</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Many2ManyAssociator description p1</shortDescription>
+        <value>To include additional</value>
+    </labels>
+    <labels>
+        <fullName>Many2ManyAssociator_description_p2</fullName>
+        <categories>Many2ManyAssociator</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Many2ManyAssociator description p2</shortDescription>
+        <value>, select the</value>
+    </labels>
+    <labels>
+        <fullName>Many2ManyAssociator_description_p3</fullName>
+        <categories>Many2ManyAssociator</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Many2ManyAssociator description p3</shortDescription>
+        <value>on the left and click Add.</value>
+    </labels>
+    <labels>
+        <fullName>Many2ManyAssociator_description_p4</fullName>
+        <categories>Many2ManyAssociator</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Many2ManyAssociator description p4</shortDescription>
+        <value>To remove any</value>
+    </labels>
+    <labels>
+        <fullName>Many2ManyAssociator_description_p5</fullName>
+        <categories>Many2ManyAssociator</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Many2ManyAssociator description p5</shortDescription>
+        <value>, simply select them on the right and click Remove.</value>
+    </labels>
+    <labels>
+        <fullName>MissingBusinessUnit</fullName>
+        <categories>Risk Trigger</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Label to be displayed if risk is missing a business unit</shortDescription>
+        <value>Business Unit is a required field</value>
+    </labels>
+    <labels>
+        <fullName>MissingRisk</fullName>
+        <categories>RiskAssessment Trigger</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Label to be displayed if risk assessment is missing a risk</shortDescription>
+        <value>Risk is a required field</value>
+    </labels>
+    <labels>
+        <fullName>Most_Likely_Case</fullName>
+        <categories>Risk Manager</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Most Likely Case</shortDescription>
+        <value>Most Likely</value>
+    </labels>
+    <labels>
+        <fullName>MultiSelectList_Add</fullName>
+        <categories>MultiSelectList</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MultiSelectList Add</shortDescription>
+        <value>Add</value>
+    </labels>
+    <labels>
+        <fullName>MultiSelectList_Down</fullName>
+        <categories>MultiSelectList</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MultiSelectList Down</shortDescription>
+        <value>Down</value>
+    </labels>
+    <labels>
+        <fullName>MultiSelectList_Remove</fullName>
+        <categories>MultiSelectList</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MultiSelectList Remove</shortDescription>
+        <value>Remove</value>
+    </labels>
+    <labels>
+        <fullName>MultiSelectList_Up</fullName>
+        <categories>MultiSelectList</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MultiSelectList Up</shortDescription>
+        <value>Up</value>
+    </labels>
+    <labels>
+        <fullName>NextLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NextLabel</shortDescription>
+        <value>Next</value>
+    </labels>
+    <labels>
+        <fullName>NoApprovedTemplates</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NoApprovedTemplates</shortDescription>
+        <value>No Approved Templates exist, please create approved templates to view this page.</value>
+    </labels>
+    <labels>
+        <fullName>NoBusinessUnitForReportError</fullName>
+        <categories>Risk Manager</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NoBusinessUnitForReportError</shortDescription>
+        <value>You are not assigned to a Business Unit or a business unit has not been selected. The report cannot run without a business unit. Contact your system administrator for support.</value>
+    </labels>
+    <labels>
+        <fullName>NoFilter</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NoFilter</shortDescription>
+        <value>All</value>
+    </labels>
+    <labels>
+        <fullName>NoLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NoLabel</shortDescription>
+        <value>No</value>
+    </labels>
+    <labels>
+        <fullName>NoRecordsToDisplay</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No records to display</shortDescription>
+        <value>No records to display.</value>
+    </labels>
+    <labels>
+        <fullName>NoScoringSchemeForBusinessUnitError</fullName>
+        <categories>Risk Manager</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NoScoringSchemeForBusinessUnitError</shortDescription>
+        <value>This Business Unit does not have an assigned Scoring Scheme</value>
+    </labels>
+    <labels>
+        <fullName>NoScoringSchemeSet</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NoScoringSchemeSet</shortDescription>
+        <value>No Scoring Scheme has been set for this Business Unit</value>
+    </labels>
+    <labels>
+        <fullName>NoTemplateSelectError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NoTemplateSelectError</shortDescription>
+        <value>Please select at least one template.</value>
+    </labels>
+    <labels>
+        <fullName>No_Permission_To_Fields</fullName>
+        <categories>Risk Assessment Review</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No Permission To Fields</shortDescription>
+        <value>You do not have permission to view any of the fields on this page</value>
+    </labels>
+    <labels>
+        <fullName>No_Risk_Assessment_Found</fullName>
+        <categories>Risk Assessment Review</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No Risk Assessment Found</shortDescription>
+        <value>No risk assessment found</value>
+    </labels>
+    <labels>
+        <fullName>No_Risks_Created</fullName>
+        <categories>Risk Template Browser Page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No Risks Created</shortDescription>
+        <value>No Risks Selected</value>
+    </labels>
+    <labels>
+        <fullName>NotActiveError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NotActiveError</shortDescription>
+        <value>This record is not active. Please activate before attempting to link to other records.</value>
+    </labels>
+    <labels>
+        <fullName>NumberOutOfBounds</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NumberOutOfBounds</shortDescription>
+        <value>You have entered a value that is not supported by the scoring scheme: {0}. Please re-enter the value</value>
+    </labels>
+    <labels>
+        <fullName>NumbersOnly</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NumbersOnly</shortDescription>
+        <value>Error: Invalid Number</value>
+    </labels>
+    <labels>
+        <fullName>OfLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OfLabel</shortDescription>
+        <value>of</value>
+    </labels>
+    <labels>
+        <fullName>Organisation_Hierarchy</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Organisation_Hierarchy</shortDescription>
+        <value>Organisation Hierarchy</value>
+    </labels>
+    <labels>
+        <fullName>Out_Of_Appetite</fullName>
+        <categories>SetupHeatMap</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Out of Appetite Button Label</shortDescription>
+        <value>Out of Appetite</value>
+    </labels>
+    <labels>
+        <fullName>PageLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PageLabel</shortDescription>
+        <value>Page</value>
+    </labels>
+    <labels>
+        <fullName>PerLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PerLabel</shortDescription>
+        <value>Per</value>
+    </labels>
+    <labels>
+        <fullName>PleaseWaitLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PleaseWaitLabel</shortDescription>
+        <value>Please wait...</value>
+    </labels>
+    <labels>
+        <fullName>PreviousLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PreviousLabel</shortDescription>
+        <value>Previous</value>
+    </labels>
+    <labels>
+        <fullName>Printable_View</fullName>
+        <categories>BusinessUnitHeatmap Page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Printable View</shortDescription>
+        <value>Printable View</value>
+    </labels>
+    <labels>
+        <fullName>Probability</fullName>
+        <categories>Risk Manager</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Likelihood</shortDescription>
+        <value>Likelihood</value>
+    </labels>
+    <labels>
+        <fullName>Quick_Create</fullName>
+        <categories>Risk Template Browser</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Quick Create Button Text</shortDescription>
+        <value>Quick Create</value>
+    </labels>
+    <labels>
+        <fullName>Quick_Save</fullName>
+        <categories>Risk Assessment Entry</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Quick Save</shortDescription>
+        <value>Quick Save</value>
+    </labels>
+    <labels>
+        <fullName>RAE_Bands</fullName>
+        <categories>Risk Assessment Entry</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RAE Bands</shortDescription>
+        <value>Bands</value>
+    </labels>
+    <labels>
+        <fullName>RAE_Clear_All</fullName>
+        <categories>Risk Assessment Entry</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RAE Clear All</shortDescription>
+        <value>Clear All</value>
+    </labels>
+    <labels>
+        <fullName>RAE_Clear_Row</fullName>
+        <categories>Risk Assessment Entry</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RAE Clear Row</shortDescription>
+        <value>Clear Row</value>
+    </labels>
+    <labels>
+        <fullName>RAE_Confirm_Destructive_Changes</fullName>
+        <categories>Risk Assessment Entry</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RAE Confirm Destructive Changes</shortDescription>
+        <value>\nAre you sure you want to save these changes? \n{0}</value>
+    </labels>
+    <labels>
+        <fullName>RAE_Hide_Justifications</fullName>
+        <categories>Risk Assessment Entry</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RAE Hide Justifications</shortDescription>
+        <value>Hide Justifications</value>
+    </labels>
+    <labels>
+        <fullName>RAE_Mitigation_Has_Cleared_Rows</fullName>
+        <categories>Risk Assessment Entry</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RAE Mitigation Has Cleared Rows</shortDescription>
+        <value>- {0} mitigation has {1} cleared rows.\n</value>
+    </labels>
+    <labels>
+        <fullName>RAE_Modelling_Notes</fullName>
+        <categories>Risk Assessment Entry</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RAE Modelling Notes</shortDescription>
+        <value>Modelling Notes</value>
+    </labels>
+    <labels>
+        <fullName>RAE_Number</fullName>
+        <categories>Risk Assessment Entry - Validation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RAE Number</shortDescription>
+        <value>Please enter a valid number.</value>
+    </labels>
+    <labels>
+        <fullName>RAE_Number_0_to_100_p1</fullName>
+        <categories>Risk Assessment Entry - Validation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RAE Number 0 to 100 p1</shortDescription>
+        <value>Please enter a value between</value>
+    </labels>
+    <labels>
+        <fullName>RAE_Number_0_to_100_p2</fullName>
+        <categories>Risk Assessment Entry - Validation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RAE Number 0 to 100 p2</shortDescription>
+        <value>and</value>
+    </labels>
+    <labels>
+        <fullName>RAE_Processing_Message</fullName>
+        <categories>Risk Assessment Entry</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RAE Processing Message</shortDescription>
+        <value>Processing... Please Wait</value>
+    </labels>
+    <labels>
+        <fullName>RAE_Qualitative</fullName>
+        <categories>Risk Assessment Entry</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RAE Qualitative</shortDescription>
+        <value>Qualitative</value>
+    </labels>
+    <labels>
+        <fullName>RAE_Quantitative</fullName>
+        <categories>Risk Assessment Entry</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RAE Quantitative</shortDescription>
+        <value>Quantitative</value>
+    </labels>
+    <labels>
+        <fullName>RAE_Rating</fullName>
+        <categories>Risk Assessment Entry</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RAE Rating</shortDescription>
+        <value>Rating</value>
+    </labels>
+    <labels>
+        <fullName>RAE_Show_Justifications</fullName>
+        <categories>Risk Assessment Entry</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RAE Show Justifications</shortDescription>
+        <value>Show Justifications</value>
+    </labels>
+    <labels>
+        <fullName>RAE_Title</fullName>
+        <categories>Risk Assessment Entry</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RAE Title for section Header</shortDescription>
+        <value>Risk Assessment Entry</value>
+    </labels>
+    <labels>
+        <fullName>RAR_Just_Mod_limit</fullName>
+        <categories>Risk Assessment Rating</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RAR Justification and Modelling Notes limit</shortDescription>
+        <value>Justification and Modelling Notes fields are limited to 255 characters</value>
+    </labels>
+    <labels>
+        <fullName>RAR_Modelling_Notes</fullName>
+        <categories>Risk Assessment Rating</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RAR Modelling Notes</shortDescription>
+        <value>Modelling Notes</value>
+    </labels>
+    <labels>
+        <fullName>RA_Save_Exception</fullName>
+        <categories>RiskAssessment Exception</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Risk Assessment Exception whilst saving.</shortDescription>
+        <value>An Error occurred whilst saving the assessment, please reload page and try again.</value>
+    </labels>
+    <labels>
+        <fullName>RA_ScoringScheme_Exception</fullName>
+        <categories>RiskAssessment Exception</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Risk Assessment Exception if Scoring Scheme cannot be found</shortDescription>
+        <value>You cannot assess a Risk without a valid scoring scheme.</value>
+    </labels>
+    <labels>
+        <fullName>REA_Qualitative</fullName>
+        <categories>Risk Assessment Entry</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>REA Qualitative</shortDescription>
+        <value>Qualitative</value>
+    </labels>
+    <labels>
+        <fullName>RecordsLabel</fullName>
+        <categories>Risk Manager</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Records</shortDescription>
+        <value>Records</value>
+    </labels>
+    <labels>
+        <fullName>RefreshLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RefreshLabel</shortDescription>
+        <value>Refresh</value>
+    </labels>
+    <labels>
+        <fullName>Residual</fullName>
+        <categories>Risk Manager</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Residual</shortDescription>
+        <value>Residual</value>
+    </labels>
+    <labels>
+        <fullName>RiskAssessmentNotFound</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RiskAssessmentNotFound</shortDescription>
+        <value>Could not find Risk Assessment. Please pass a valid Risk Assessment ID.</value>
+    </labels>
+    <labels>
+        <fullName>RiskAssessmentsExist</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RiskAssessmentsExist</shortDescription>
+        <value>The Risk Type cannot be changed once the Risk has been assessed</value>
+    </labels>
+    <labels>
+        <fullName>RiskBrowserSideTitle</fullName>
+        <categories>Risk Template Browser</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RiskBrowserSideTitle</shortDescription>
+        <value>Subcategory</value>
+    </labels>
+    <labels>
+        <fullName>RiskBrowserTitle</fullName>
+        <categories>Risk Template Browser</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RiskBrowserTitle</shortDescription>
+        <value>Risk Template Browser</value>
+    </labels>
+    <labels>
+        <fullName>RiskBrowserTopTitle</fullName>
+        <categories>Risk Template Browser</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RiskBrowserTopTitle</shortDescription>
+        <value>Category</value>
+    </labels>
+    <labels>
+        <fullName>RiskCategories</fullName>
+        <categories>Risk Manager, Heatmap Filter Component</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Risk Categories section header</shortDescription>
+        <value>Risk Categories</value>
+    </labels>
+    <labels>
+        <fullName>RiskNotFound</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RiskNotFound</shortDescription>
+        <value>Risk not found by Id</value>
+    </labels>
+    <labels>
+        <fullName>RiskStatuses</fullName>
+        <categories>Risk Manager, Heatmap Filter Component</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Risk Statuses section header</shortDescription>
+        <value>Risk Statuses</value>
+    </labels>
+    <labels>
+        <fullName>Risk_Assessment_Review_Title</fullName>
+        <categories>Risk Assessment Review</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Risk Assessment Review Title</shortDescription>
+        <value>Risk Assessment Review</value>
+    </labels>
+    <labels>
+        <fullName>Risk_Mitigation</fullName>
+        <categories>Embedded Heatmap</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Risk Mitigation</shortDescription>
+        <value>Mitigation</value>
+    </labels>
+    <labels>
+        <fullName>Risk_Template_Error_No_Templates_Found</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Risk Template Error No Templates Found</shortDescription>
+        <value>No matching Risk Templates found</value>
+    </labels>
+    <labels>
+        <fullName>Risks_Created</fullName>
+        <categories>Risk Template Browser</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Risks Created Message</shortDescription>
+        <value>{0} Risks Selected</value>
+    </labels>
+    <labels>
+        <fullName>Risks_Created_From_Template</fullName>
+        <categories>Risk Template Browser</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Risks Created From Template</shortDescription>
+        <value>Risks Created</value>
+    </labels>
+    <labels>
+        <fullName>SaveLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SaveLabel</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>Save_and_Next</fullName>
+        <categories>Risk Assessment Component</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Save and Next</shortDescription>
+        <value>Save and Next</value>
+    </labels>
+    <labels>
+        <fullName>Saving</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Saving</shortDescription>
+        <value>Saving ...</value>
+    </labels>
+    <labels>
+        <fullName>Search</fullName>
+        <categories>Risk Manager Business Unit heatmap page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search</shortDescription>
+        <value>Search:</value>
+    </labels>
+    <labels>
+        <fullName>SelectFromTemplates</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SelectFromTemplates</shortDescription>
+        <value>Press to select from available templates</value>
+    </labels>
+    <labels>
+        <fullName>SelectLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SelectLabel</shortDescription>
+        <value>Select</value>
+    </labels>
+    <labels>
+        <fullName>Select_All</fullName>
+        <categories>Risk Template Browser</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Select All Button Text</shortDescription>
+        <value>Select All</value>
+    </labels>
+    <labels>
+        <fullName>Select_Appetite_Cells</fullName>
+        <categories>SetupHeatMap</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Select Appetite Cells</shortDescription>
+        <value>Select cells to set appetite</value>
+    </labels>
+    <labels>
+        <fullName>Set_Appetite</fullName>
+        <categories>SetupHeatMap</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Set Appetite Button Label</shortDescription>
+        <value>Set Appetite</value>
+    </labels>
+    <labels>
+        <fullName>Setup</fullName>
+        <categories>Risk Manager</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Setup</shortDescription>
+        <value>{0} Setup</value>
+    </labels>
+    <labels>
+        <fullName>Target</fullName>
+        <categories>Risk Manager</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Target</shortDescription>
+        <value>Target</value>
+    </labels>
+    <labels>
+        <fullName>Time</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Time</shortDescription>
+        <value>Time</value>
+    </labels>
+    <labels>
+        <fullName>ToDisplay</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ToDisplay</shortDescription>
+        <value>to display.</value>
+    </labels>
+    <labels>
+        <fullName>Type_Of_Risk_validation_in_ImpactCategory</fullName>
+        <categories>Risk Manager</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Type_Of_Risk validation in ImpactCategory</shortDescription>
+        <value>Type is already used please select another one.</value>
+    </labels>
+    <labels>
+        <fullName>UnrecognisedRiskType</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UnrecognisedRiskType</shortDescription>
+        <value>The Risk type is not recognised. Please contact an administrator</value>
+    </labels>
+    <labels>
+        <fullName>UserByBUFilename</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UserByBUFilename</shortDescription>
+        <value>Users by Business Unit</value>
+    </labels>
+    <labels>
+        <fullName>WeightingLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WeightingLabel</shortDescription>
+        <value>Weighting</value>
+    </labels>
+    <labels>
+        <fullName>Worst_Case</fullName>
+        <categories>Risk Manager</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Worst Case</shortDescription>
+        <value>Worst Case</value>
+    </labels>
+    <labels>
+        <fullName>XcordOutOfBounds</fullName>
+        <categories>Risk Template Browser</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Xcord Out of Bounds Message</shortDescription>
+        <value>The X co-ordinate is out of bounds.</value>
+    </labels>
+    <labels>
+        <fullName>YcordOutOfBounds</fullName>
+        <categories>Risk Template Browser</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Ycord Out of Bounds Message</shortDescription>
+        <value>The Y co-ordinate is out of bounds.</value>
+    </labels>
+    <labels>
+        <fullName>heatmap_config_error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>heatmap config error</shortDescription>
+        <value>Please add Impact Categories and Score Bands to configure this heatmap.</value>
+    </labels>
+</CustomLabels>

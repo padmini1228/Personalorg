@@ -1,0 +1,250 @@
+<apex:page standardController="grc__Business_Unit__c" extensions="Risk.RiskTemplateBrowserController" docType="html-5.0" sidebar="false" showHeader="false" standardStylesheets="false" cache="false" applyHtmlTag="false" applyBodyTag="false">
+    <html>
+        <head>
+            <title>{!$Label.RiskBrowserTitle}</title>
+            <apex:stylesheet value="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css" />
+            <apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"/>
+            <apex:includeScript value="https://code.jquery.com/ui/1.12.0/jquery-ui.js"/>
+            <apex:includeScript value="{!URLFOR($Resource.Risk__RiskTemplateBrowser, 'RiskTemplateBrowser.js')}" />
+            <apex:stylesheet value="{!URLFOR($Resource.Risk__RiskTemplateBrowser, 'RiskTemplateBrowser.css')}" />
+        </head>
+        <body>
+            <br/>
+            <apex:pageMessages id="messages"/>
+            <div class="overlay">
+            </div>
+            <!--
+            Labels are put here and hidden so we can reference them in Javascript static resources.
+            -->
+            <div style="display:none; white-space:pre;" id="confirm_message">{!$Label.Confirmation_Message}</div>
+            <div style="display:none; white-space:pre;" id="risks_created">&nbsp;{!$Label.Risks_Created}</div>
+            <div style="display:none; white-space:pre;" id="controls_created">&nbsp;{!$Label.Controls_Created}</div>
+            <div style="display:none; white-space:pre;" id="causes_created">&nbsp;{!$Label.Causes_Created}</div>
+            <!--
+            End of hidden labels;
+            -->
+            <apex:form >
+                <!--
+                Creation of risks action functions.
+                -->
+                <apex:actionFunction name="quickCreateRisks" action="{!quickCreateRisks}" />
+                <apex:actionFunction name="createRisks" action="{!slowCreateRisks}" />
+
+                <!--
+                Header of page. Contains title at top and the check boxes for record creation.
+                -->
+                <apex:pageBlock title="Create Risks for {!grc__Business_Unit__c.Name}">
+                <div style="height:60px;">
+                    <div style="float:left;">
+                        <apex:outputPanel layout="none" rendered="{!!$Setup.RiskManagerVisualforce__c.Disable_Control_Creation__c}">
+                            <div id="control_div">
+
+                                    <apex:outputLabel styleClass="createCheckbox" for="controlCheckbox" value="{!$Label.risk__CreateControls}" />
+
+                                    <img class="helpOrb" src="/img/alohaSkin/help_orange.png" title="{!$Label.risk__Controls_Created_Help_Text}"/>
+                                    <apex:inputCheckbox styleClass="createCheckbox" title="{!$Label.risk__Controls_Created_Help_Text}" id="controlCheckbox" value="{!enableControls}" />
+
+                            </div>
+                        </apex:outputPanel>
+                        <apex:outputPanel layout="none" rendered="{!!$Setup.RiskManagerVisualforce__c.Disable_Cause_Creation__c}">
+                            <div id="cause_div">
+
+                                    <apex:outputLabel styleClass="createCheckbox" for="causeCheckbox" value="{!$Label.risk__CreateCauses}" />
+
+                                    <img class="helpOrb" src="/img/alohaSkin/help_orange.png" title="{!$Label.risk__Causes_Created_Help_Text}"/>
+                                    <apex:inputCheckbox styleClass="createCheckbox" title="{!$Label.risk__Causes_Created_Help_Text}" id="causeCheckbox" value="{!enableCauses}" />
+
+
+                            </div>
+                        </apex:outputPanel>
+                    </div>
+                </div>
+                <!--
+                End of page header
+                -->
+
+                <!--
+                Panel for the buttons at the top of the page and the string informing how many records are being created;
+                -->
+                <div class="buttonTable buttonPanel">
+                    <div class="buttonTableBody">
+                        <div class="buttonTableRow">
+                            <div class="buttonTableCell">&nbsp;</div>
+                            <div class="buttonTableCell" style="text-align:center;">
+                                <input type="button" class="btn" value="{!$Label.Quick_Create}" onclick="showConfirmation();"/>
+                                <input type="button" class="btn" value="{!$Label.Create_Exit}" onclick="showConfirmationAndExit();"/>
+                                <apex:commandButton styleClass="btn" action="{!cancel}" value="{!$Label.risk__CancelLabel}"/>
+                            </div>
+                            <div class="divTableCell" style="text-align:right;">
+                                <div id="selectAll" class="btn">{!$Label.Select_All}</div>
+                                <div id="deSelectAll" class="btn">{!$Label.Deselect_All}</div>
+                                <apex:outputPanel rendered="{!filtersAreAvailable}">
+                                    <div class="dropdown">
+                                        <div class="dropbtn">{!$ObjectType.ScorecardTemplate__c.labelPlural}</div>
+                                        <div class="dropdown-content">
+                                            <div class="scorecardTemplateItem selected" value="blank">
+                                                <span class="itemSelection"></span>
+                                                <span class="itemLabel">{!$Label.NoFilter}</span>
+                                                <span class="itemInfo"></span>
+                                            </div>
+                                            <apex:repeat value="{!availableFilters}" var="filter">
+                                                <div class="scorecardTemplateItem" value="{!filter}">
+                                                    <span class="itemSelection"></span>
+                                                    <span class="itemLabel">{!availableFilters[filter]}</span>
+                                                    <span class="itemInfo">
+                                                        <span class="selectedCount">0</span>
+                                                    </span>
+                                                </div>
+                                            </apex:repeat>
+                                        </div>
+                                    </div>
+                                </apex:outputPanel>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="countPanel" style="text-align:center;"></div>
+                <!--
+                End of button panel
+                -->
+
+                <div class="xLabel" style="{!IF(templateGrid==null, 'display:none;', '')}" >{!$Label.RiskBrowserTopTitle}</div>
+                <div class="yLabel" style="{!IF(templateGrid==null, 'display:none;', '')}" >{!$Label.RiskBrowserSideTitle}</div>
+                <div id="mainTable">
+                    <!--Header Section-->
+                    <div class="row" id="headerRow">
+                        <div id="hiddenCell" class="headerCell"></div>
+                        <apex:repeat var="colHeader" value="{!templateGrid.columnNames}">
+                           <div class="headerCell columnHeader">
+                               {!colHeader}
+                           </div>
+                        </apex:repeat>
+                    </div>
+                    <apex:repeat var="row" value="{!templateGrid.rows}">
+                        <div class="row">
+                            <div class="rowHeader headerCell">{!row.name}</div>
+                            <apex:variable value="{!1}" var="colNum"/>
+                            <apex:repeat var="template" value="{!row.cells}">
+                                <apex:outputText rendered="{!template.items.size == 1}">
+                                    <!-- this is a bog standard cell with a single item in it.  -->
+                                    <div class="cellWrapper" columnNumber="{!colNum}">
+                                        <div controlsCount="{!template.items[0].controlsSize}" causesCount="{!template.items[0].causesSize}" sct="{!template.items[0].scorecardTemplateString}" class="contentCell {!IF(template.items[0].alreadyExists,'alreadySelected','')}" templateId="{!template.items[0].record['Id']}">
+
+                                            <apex:inputcheckbox style="display:none;" value="{!template.items[0].selected}" />
+
+                                            <div class="title">
+                                                <div class="element" >
+                                                    {!template.items[0].record['Name']}
+                                                </div>
+                                                <div class="element icon">
+                                                    <a class="templateLink" target="_blank" href="/{!template.items[0].record['Id']}">
+                                                        <apex:image value="{!URLFOR($Resource.Risk__RiskTemplateBrowser, 'information_icon.png')}" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="description">
+                                                {!template.items[0].record['Description__c']}
+                                            </div>
+                                            <apex:outputPanel layout="none" rendered="{!template.items[0].controlsSize>0||template.items[0].causesSize>0}">
+                                                <div class="informationPanel">
+                                                    <hr/>
+                                                    <apex:outputPanel layout="none" rendered="{!template.items[0]['controlsSize']>0}">
+                                                        {!$ObjectType.grc__Control__c.labelPlural}: {!template.items[0].controlsSize}
+                                                    </apex:outputPanel>
+                                                    <apex:outputPanel layout="none" rendered="{!template.items[0].causesSize>0}">
+                                                        {!$ObjectType.Risk__Cause__c.labelPlural}: {!template.items[0].causesSize}
+                                                    </apex:outputPanel>
+                                                </div>
+                                            </apex:outputPanel>
+                                        </div>
+                                    </div>
+                                </apex:outputText>
+                                <!-- this bit is for when there are no templates for that cell.  -->
+                                <apex:outputText rendered="{!template.items.size < 1}">
+                                    <div class="cell" templateId=""></div>
+                                </apex:outputText>
+                                <apex:outputText rendered="{!template.items.size > 1}">
+                                    <div class="cellWrapper" columnNumber="{!colNum}">
+                                        <!-- we specify the cursor here because alreadySelected removes the pointer cursor, making it look unclickable
+                                             we want this to be cickable so that people can see the sub risks already created. they still won't be able
+                                             to change any of the selections though. -->
+                                        <div style="cursor: pointer;" sct="{!template.sct}" class="contentCell hasMore {!IF(template.selectedItemCount == template.items.size, 'alreadySelected', '')}" templateId="{!template.items[0].record['Id']}">
+                                            <span>{!$Label.SelectFromTemplates}</span>
+                                            <!-- this is to put hidden checkboxs on the parent container cell of a many item cell. these are checked when
+                                                 the user clicks the cell. it's all handled by the javascript. -->
+                                            <apex:repeat var="ti" value="{!template.items}">
+                                                <apex:inputcheckbox style="display:none;" html-checkbox-id="checkbox-{!ti.record['Id']}" value="{!ti.selected}" />
+                                            </apex:repeat>
+                                            <!-- each cell that has more than one item, gets the css class hasMore and its own personal counter to indicate how many cells
+                                                 have been clicked. -->
+                                            <div class="subTemplateCounter" id="subTemplateCount-{!template.items[0].record['Id']}"><span class="count">{!template.selectedItemCount}</span> / <span class="maxCount">{!template.items.size}</span></div>
+                                            <!-- once a popup appears on screen, it no longer exists in this location. Using parents/children/find/prev won't locate the counter
+                                                 another thing to note is that jquery dialog will move the cell out of the form and append it to the end of the page. this means
+                                                 any elements inside the popup that require submission by the form, won't be submitted. Using jquery, i've hidden a checkbox on
+                                                 the parent container cell (the one that hasMore css class) that gets ticked when a sub cell in a dialog is clicked. I do this using
+                                                 javascript. -->
+                                            <div id="hiddenPopup{!template.items[0].record['Id']}" class="hiddenPopup" title="{!template.items[0].record['Category__c']} / {!template.items[0].record['Subcategory__c']}">
+                                                <div id="hiddenTable" parentTemplateId="{!template.items[0].record['Id']}">
+                                                    <apex:repeat var="ti" value="{!template.items}">
+                                                        <div class="subrow" style="float:left; width:33%; display:inline-table;">
+                                                            <div class="cellWrapper">
+                                                                <div status="{!IF(ti.alreadyExists,'old','')}" controlsCount="{!ti['controlsSize']}" causesCount="{!ti['causesSize']}" sct="{!ti['scorecardTemplateString']}" class="contentCell subTableCell limitSize {!IF(ti.alreadyExists,' alreadySelected','')}" parentTemplateId="{!template.items[0].record['Id']}" templateId="{!ti.record['Id']}">
+
+                                                                    <div class="title">
+                                                                        <div class="element">
+                                                                            {!ti.record['Name']}
+                                                                        </div>
+                                                                        <div class="element icon">
+                                                                            <a class="templateLink" target="_blank" href="/{!ti.record['Id']}">
+                                                                                <apex:image value="{!URLFOR($Resource.Risk__RiskTemplateBrowser, 'information_icon.png')}" />
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="description">
+                                                                        <div class="element">{!ti.record['Description__c']}</div>
+                                                                    </div>
+                                                                    <apex:outputPanel layout="none" rendered="{!ti['controlsSize']>0||ti['causesSize']>0}">
+
+                                                                        <div class="informationPanel" style="{!IF(ti.alreadyExists,'color:black;','')}">
+                                                                            <hr/>
+                                                                            <apex:outputPanel layout="none" rendered="{!ti['controlsSize']>0}">
+                                                                                {!$ObjectType.grc__Control__c.labelPlural}: {!ti['controlsSize']}
+                                                                            </apex:outputPanel>
+                                                                            <apex:outputPanel layout="none" rendered="{!ti['causesSize']>0}">
+                                                                                {!$ObjectType.Risk__Cause__c.labelPlural}: {!ti['causesSize']}
+                                                                            </apex:outputPanel>
+                                                                        </div>
+                                                                    </apex:outputPanel>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </apex:repeat>
+                                                </div>
+                                                <div style="width:100%;">
+                                                    <div class="subTemplateCounter" id="popupSubTemplateCount-{!template.items[0].record['Id']}">
+                                                        <span class="count">{!template.selectedItemCount}</span> / <span class="maxCount">{!template.items.size}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </apex:outputText>
+                                <apex:variable var="colNum" value="{!colNum + 1}"/>
+                            </apex:repeat>
+                        </div>
+                    </apex:repeat>
+                </div>
+                <div class="buttonPanel">
+                    <input type="button" class="btn" value="{!$Label.Quick_Create}" onclick="showConfirmation();"/>
+                    <input type="button" class="btn" value="{!$Label.Create_Exit}" onclick="showConfirmationAndExit();"/>
+                    <apex:commandButton styleClass="btn" action="{!cancel}" value="{!$Label.risk__CancelLabel}"/>
+                    <div id="countPanel2"></div>
+                </div>
+                </apex:pageBlock>
+                <div id="confirmationBox" class="hiddenPopup" title="{!$Label.Are_You_sure}">
+
+                </div>
+            </apex:form>
+        </body>
+    </html>
+</apex:page>

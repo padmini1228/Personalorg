@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>KXI Manager</fullName>
+    <apiAccessLevel>Unrestricted</apiAccessLevel>
+    <namespacePrefix>KXI</namespacePrefix>
+    <types>
+        <members>KCIReviewWizard</members>
+        <members>KCIReviewWizardTest</members>
+        <members>KRIReviewWizard</members>
+        <members>KRIReviewWizardTest</members>
+        <members>KXIReviewResultHelper</members>
+        <members>KXIReviewResultHelperTest</members>
+        <members>KXIReviewSubmission</members>
+        <members>KXIReviewSubmissionTest</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>KCIReviewWizard</members>
+        <members>KRIReviewWizard</members>
+        <members>KXIReviewSubmission</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>Risk__NamespacePrefix__c.Value__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Risk__KRI_Review__c.ReadOnly</members>
+        <members>Risk__KRI_Review__c.Standard_KRI_View</members>
+        <name>RecordType</name>
+    </types>
+    <types>
+        <members>DefaultRiskClimateArrow</members>
+        <members>Icons</members>
+        <name>StaticResource</name>
+    </types>
+    <types>
+        <members>Risk__KCI_Review__c.Submit_Review</members>
+        <members>Risk__KCI__c.Enter_KCI_Reviews</members>
+        <members>Risk__KCI__c.Review_All</members>
+        <members>Risk__KRI_Review__c.Submit_Review</members>
+        <members>Risk__KRI__c.Enter_KRI_Reviews</members>
+        <members>Risk__KRI__c.Review_All</members>
+        <name>WebLink</name>
+    </types>
+    <types>
+        <members>Risk__KCI_Review__c.Update_KCIs_to_Standard_RecordType</members>
+        <members>Risk__KRI_Review__c.Update_KRIs_to_Read_only_RecordType</members>
+        <members>Risk__KRI_Review__c.Update_KRIs_to_Standard_RecordType</members>
+        <name>WorkflowFieldUpdate</name>
+    </types>
+    <types>
+        <members>Risk__KCI_Review__c.Update KCIs to Read only View</members>
+        <members>Risk__KCI_Review__c.Update KCIs to Standard View</members>
+        <members>Risk__KRI_Review__c.Update KRIs to Read only View</members>
+        <members>Risk__KRI_Review__c.Update KRIs to Standard View</members>
+        <name>WorkflowRule</name>
+    </types>
+    <version>36.0</version>
+</Package>

@@ -1,0 +1,434 @@
+<!-- Start code - C0732 -->
+<apex:page showHeader="false" sidebar="false"  docType="html-5.0" standardStylesheets="false" controller="CAA_Core_Controller" action="{!PrivateEligibilitySetup}">
+
+ <apex:composition template="CAA_Template">
+    <apex:define name="include">
+        <apex:includeScript value="{!URLFOR($Resource.CAA_Includes, '/js/controller/controller_privateeligibility.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.CAA_Includes, '/js/service/privateservice_eligibility.js')}"/>
+    </apex:define>
+
+        <apex:define name="body">
+       
+        
+        <div ng-controller="controllerPrivateEligibility" ng-init="Data.AccountId='{!m_AccountId}';
+                                                            Data.FirstName='{!PrivateEligibilityAcc.FirstName}';
+                                                            Data.LastName='{!PrivateEligibilityAcc.LastName}';
+                                                            Data.Salutation='{!PrivateEligibilityAcc.Salutation}';
+                                                            Data.Email='{!PrivateEligibilityAcc.Email}';
+                                                            Data.PreferedContact='{!PrivateEligibilityAcc.PreferedContact}';
+                                                            Data.NationalityofCountry = '{!PrivateEligibilityAcc.NationalityofCountry}';
+                                                            Data.CountryofResidence = '{!PrivateEligibilityAcc.CountryofResidence}';
+                                                           
+                                                          
+                                                            Data.Postcode='{!PrivateEligibilityAcc.Postcode}';
+                                                            Data.WebFormDataId='{!PrivateEligibilityAcc.WebFormDataId}';
+                                                            "> <!--ctl -->
+         
+        <div class="row">
+
+<div class="col-md-9">
+        
+
+<div class="SectionHeader" style="margin-bottom:18px;">
+    
+    <div>Private Eligibility</div>
+</div>
+
+<div class=""/>
+
+<div class="PanelContents" ng-show="result && result.Success && result.Success == true">
+    <div class="alert alert-success">
+        Opportunity Created - <a href="/{{oppId}}">click to open</a>
+    </div>
+    
+</div>
+ 
+<div class="PanelContents" ng-show="result.Success == false">
+    <div class="alert alert-success">
+        Please enter Last Name.
+    </div>
+    
+</div>
+
+
+
+<div class="PanelContents" ng-hide="result && result.Success && result.Success == true">
+
+
+<div ng-hide="Data.AccountId">
+    <div>
+        <label class="control-label">Title</label>
+  </div>
+  <div>
+      <apex:repeat value="{!Titles}" var="t">
+          <label class="radio-inline"><input type="radio" ng-model="Data.Salutation" value="{!t.Key}"/>{!t.Value}</label>
+
+      </apex:repeat>
+  
+    </div>
+  <c:CAA_InputError field="optTitle"/>
+
+<hr/>
+<div class="row">
+  <div class="col-sm-4" >
+      <label class="control-label">First Name</label>
+      <input class="form-control" ng-model="Data.FirstName" name="FirstName{{$index}}" id="FirstName{{$index}}" required= "FirstName{{$index}}">
+      <c:CAA_InputError field="FirstName"/>
+     
+   
+    </input>
+    
+   
+      
+  </div>
+  
+  
+
+  <div class="col-sm-8">
+      <label class="control-label">Last Name</label>
+      <input class="form-control" ng-model="Data.LastName" name="LastName{{$index}}" id="LastName{{$index}}" required="required"/>
+      <!--<c:CAA_InputError field="LastName"/> -->
+  </div>
+</div>   
+   
+<!--<c:CAA_Date title="Date of birth" model="Data" field="DOB" NumYears="-120" /> -->
+
+     <div>
+        <label class="control-label">Contact Number</label>
+    </div>   
+    <div class="row">
+        <div class="col-sm-4">
+            <input type="text" class="form-control" ng-model="Data.PreferedContact"/>
+        </div>
+    </div>
+    
+      <div>
+        <label class="control-label">Email address</label>
+    </div>   
+    <div class="row">
+        <div class="col-sm-8">
+            <input type="email" class="form-control" ng-model="Data.Email"/>
+        </div>
+    </div>
+
+
+    
+</div>
+
+    
+
+ <!--   <div>
+        <label class="control-label">Postcode</label>
+    </div>   
+    <div class="row">
+        <div class="col-sm-4">
+            <input type="text" class="form-control" ng-model="Data.Postcode"/>
+        </div>
+    </div>-->
+    
+   
+  
+
+<div ng-show="Data.AccountId">
+  
+    
+  
+    <div class="row">
+         <div class="col-sm-2">
+            <div>
+                <label>Title</label>
+            </div>
+            <div>
+                {{Data.Salutation}}
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div>
+                <label>First Name</label>
+            </div>
+            <div>
+                {{Data.FirstName}}
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div>
+                <label>Last Name</label>
+            </div>
+            <div>
+                {{Data.LastName}}
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div>
+                <label>Date of Birth</label>
+            </div>
+            <div ng-show="Data.DOB">
+                {{DDOB}}
+            </div>
+        </div>
+        
+    </div>
+    <hr/>
+    
+    <div class="row">
+        <div class="col-sm-4">
+            <div>
+                <label>Postcode</label>
+            </div>
+            <div>
+                {{Data.Postcode}}
+            </div>
+        </div>
+        
+        <div class="col-sm-4">
+            <div>
+                <label>Preferred contact number</label>
+            </div>
+            <div>
+                {{Data.PreferedContact}}
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div>
+                <label>Email Address</label>
+            </div>
+            <div>
+                {{Data.Email}}
+            </div>
+        </div>
+    
+    </div>
+    <hr/>
+    
+
+</div>
+    
+    
+    
+    <div>
+        <label class="control-label">Primary campaign source</label>
+    </div>   
+    <div class="row">
+        <div class="col-sm-8">
+            
+        <select class="form-control" ng-model="Data.Campaign">
+        <apex:repeat value="{!Campaigns}" var="c">
+            <option value="{!c.id}">{!c.name}</option>
+        </apex:repeat>
+        
+        </select>
+        
+        <!--
+            <input type="test" class="form-control" ng-model="Data.Campaign"/>
+           <c:CAA_Lookup ></c:CAA_Lookup>
+        -->
+            <!--<select class="form-control" ng-model="Data.Campaign"/>-->
+        </div>
+    </div>
+    
+  
+    
+    <div>
+        <label class="control-label">Interested in</label>
+    </div>   
+    <div class="row">
+        <div class="col-sm-8">
+            <select class="form-control" ng-model="Data.InterestedIn">
+                <apex:repeat value="{!PrivateInterestedIn}" var="val">
+                    <option value="{!val.Key}">{!val.Value}</option>
+                </apex:repeat>
+            </select>
+        </div>
+    </div>
+    
+      <div>
+        <label class="control-label">Nationality</label>
+    </div>   
+    <div class="row">
+        <div class="col-sm-8" >
+        <select class="form-control" ng-model="Data.NationalityofCountry">
+                <apex:repeat value="{!Nationality}" var="val">
+                    <option value="{!val.Key}">{!val.Value}</option>
+                </apex:repeat>
+            </select>
+       </div>
+    </div> 
+    
+    <div>
+        <label class="control-label">Country of Residence</label>
+    </div>   
+    <div class="row">
+        <div class="col-sm-8" >
+        <select class="form-control" ng-model="Data.CountryofResidence">
+                <apex:repeat value="{!Nationality}" var="val">
+                    <option value="{!val.Key}">{!val.Value}</option>
+                </apex:repeat>
+            </select>
+       </div>
+    </div> 
+    
+    
+    <div>
+        <label class="control-label">Comments</label>
+    </div>   
+    <div class="row">
+        <div class="col-sm-8">
+            <textarea class="form-control" ng-model="Data.Comments"/>
+        </div>
+    </div>
+    
+  <br/>
+    
+    
+    <div class="SectionTitle" ng-show="Data.InterestedIn =='HPPP'"> HPPP Section </div>
+   
+   
+    <div class="row" ng-show="Data.InterestedIn =='HPPP'">
+       
+        <div class="col-sm-8">
+            <label class="control-label">Have you sourced a Property</label>
+        </div>
+        
+         
+        <div class="col-sm-8">    
+          
+             <select class="form-control" ng-model="Data.SourceProperty">
+                <apex:repeat value="{!SourceProperty}" var="val">
+                    <option value="{!val.Key}">{!val.Value}</option>
+                </apex:repeat>
+            </select>
+        </div> 
+        
+        
+        <div class="col-sm-8">
+            <label class="control-label"> Property Address</label>
+             </div>
+        
+        <div class="col-sm-8">
+            <input type="text" class="form-control" ng-model="Data.PropertyAddress" />
+        </div> 
+        
+        
+         <div class="col-sm-8">
+            <label class="control-label">Agreed Purchase Price</label>
+             </div>
+         
+        <div class="col-sm-8">
+            <input type="text" class="form-control" ng-model="Data.AgreedPurchasePrice" />
+        </div> 
+        
+         <div class="col-sm-8">
+            <label class="control-label">Property Price</label>
+             </div>
+         
+        <div class="col-sm-8">
+            <input type="text" class="form-control" ng-model="Data.PropertyPrice" />
+        </div> 
+        
+        
+        
+        <div class="col-sm-8">
+            <label class="control-label">How much finance is required?</label>
+             </div>
+         
+         
+        <div class="col-sm-8">
+            <input type="text" class="form-control" ng-model="Data.FinanceRequired" />
+        </div> 
+      
+        
+        
+        <div class="col-sm-8">
+            <label class="control-label">Maximum Finance Required?</label>
+             </div>
+        
+        
+        <div class="col-sm-8">
+            <input type="text" class="form-control" ng-model="Data.MaximumFinanceRequired" />
+        </div>
+        
+       
+        
+         <div class="col-sm-8">
+            <label class="control-label">Proposed FTV</label>
+             </div>
+        
+        <div class="col-sm-8">
+            <input type="text" class="form-control" ng-model="Data.ProposedFTV" />
+        </div> 
+       
+                 
+   </div>
+   
+   
+    
+     <div class="SectionTitle" ng-show="Data.InterestedIn =='Current Account'"> Current Account</div>
+   
+   
+    <div class="row" ng-show="Data.InterestedIn =='Current Account'">
+        <div class="col-sm-8">
+            <label class="control-label">Will minimum charges be maintained or will customer pay account charges</label>
+             </div>
+         
+        <div class="col-sm-8">
+            <input type="text" class="form-control" ng-model="Data.CustomerPayAccountCharges" />
+        </div>
+         
+        
+        <div class="col-sm-8">
+            <label class="control-label">Initial Deposit</label>
+             </div>
+         
+        <div class="col-sm-8">
+            <input type="text" class="form-control" ng-model="Data.InitialDeposit" />
+        </div> 
+      
+        
+    </div>
+    
+    <div class="SectionTitle" ng-show="Data.InterestedIn =='Safety Deposit Box'"> Safety Deposit Box </div>
+    <div class="row" ng-show="Data.InterestedIn =='Safety Deposit Box'">
+        <div class="col-sm-8">
+            <label class="control-label">Size</label>
+             </div>
+         
+        <div class="col-sm-8">
+            <input type="text" class="form-control" ng-model="Data.Size" />
+        </div>  
+       
+        
+        <div class="col-sm-8">
+            <label class="control-label">Period of Lease</label>
+             </div>
+        
+        <div class="col-sm-8">
+            <input type="text" class="form-control" ng-model="Data.PeriodofLease" />
+        </div>  
+        
+        
+    </div>
+  
+        
+    
+     <div class="SectionBreak"/>     
+     
+    <div>    
+        <button class="btn btnArb" ng-click="Save()" >Complete</button>
+    </div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="rightcol visible-md visible-lg" id="sidebar" >    
+</div>
+
+</div>
+</div> <!-- row -->
+</div> <!-- ctl -->
+
+
+</apex:define>
+
+</apex:composition>
+
+</apex:page>

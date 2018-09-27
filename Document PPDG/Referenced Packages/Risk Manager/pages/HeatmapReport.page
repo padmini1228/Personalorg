@@ -1,0 +1,88 @@
+<apex:page controller="Risk.HeatmapReport" tabstyle="grc__Risk__c" showheader="true" sidebar="true" id="pg" renderAs="{! IF( isPrintableView, 'pdf', 'html')}">
+
+<head>
+	<apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'A4LandscapeHeatmapReport.css')}"/>
+</head>
+	<apex:outputPanel layout="none" id="riskTable">
+		<apex:form style="width: 100%">
+			<div class="header">
+		    	<apex:sectionHeader title="Heatmaps" subTitle="Risks shown for {!currentBU.Name}" rendered="{! !isPrintableView}"/>
+		    	<apex:outputPanel layout="none" rendered="{! isPrintableView}">
+		    		<h1>Risks shown for {!currentBU.Name}</h1>
+		    	</apex:outputPanel>
+		    </div>
+
+		    <br/>
+
+	        <apex:outputPanel rendered="{! !isPrintableView}" style="width: 1000px;" ><br/>
+
+	       		<apex:outputPanel style="float:left;" rendered="{! IF(topLevelBusinessUnit != null, true, false)}" >
+	       			<a href="{! URLFOR($Page.HeatmapReport)}" >Clear filters</a>
+	       		</apex:outputPanel>
+
+	     		<div style="float:right;">
+
+	       			<apex:commandlink value="Printable View" action="{!printReport}" target="_blank"/>
+	       			|
+	       			<a href="javascript:openPopupFocusEscapePounds(%27{!$Page.HelpHeatmapReport}%27, %27Help%27, 700, 600, %27width=700,height=600,resizable=yes,toolbar=yes,status=no,scrollbars=yes,menubar=yes,directories=no,location=no,dependant=no%27, false, false);" title="Help Printing Heatmap Report">
+	       				Help for this Page
+	       				<img src="/s.gif" alt="Help"  class="helpIcon" title="Help"/>
+	       			</a>
+	       		</div>
+	       		<div style="clear:both;" ></div>
+	       		<br/>
+	        </apex:outputPanel>
+
+	        <apex:outputPanel rendered="{! !isPrintableView}" style="width: 100%;">
+		        <apex:pageBlock >
+			        <apex:pageMessage summary="You are not assigned to a Business Unit, please contact your system administrator for support." severity="Warning" strength="3" rendered="{!topLevelBusinessUnit == null}" />
+				    <apex:pageMessages />
+
+			        <apex:pageBlockSection columns="1" rendered="{! IF(topLevelBusinessUnit != null, true, false)}">
+				        <apex:pageBlockSectionItem >
+				        	Filter By Business Unit:
+							<apex:outputPanel layout="block" style="height: 200px; width:400px; overflow-y:auto;">
+
+					        	<apex:repeat value="{!availableBusinessUnitHierarchy}" var="buId">
+					        		<apex:repeat value="{!availableBusinessUnitHierarchy[buId]}" var="busUnit">
+					        			<apex:outputPanel layout="block" style="cursor: pointer; margin-left:{!busUnit.level * 10}px">
+					        				<apex:outputField value="{!busUnit.me.name}"/>
+					        				<apex:actionSupport event="onclick" rerender="riskTable" action="{!setupHeatMaps}">
+					                        	<apex:param name="bob" assignTo="{!topLevelBusinessUnit}" value="{!busUnit.me.Id}"/>
+					                    	</apex:actionSupport>
+					        			</apex:outputPanel>
+					        		</apex:repeat>
+					        		<br/>
+					        	</apex:repeat>
+					        </apex:outputPanel>
+				        </apex:pageBlockSectionItem>
+
+				        <apex:pageBlockSectionItem >
+				        	<apex:outputLabel value="Filter by Key Risks" for="chkKey"/>
+				        	<apex:inputCheckBox value="{!filterKeyRisks}" id="chkKey"/>
+				        </apex:pageBlockSectionItem>
+
+				        <apex:pageBlockSectionItem >
+				        	<apex:outputLabel value="Filter by Risk {!$ObjectType.grc__Risk__c.fields.grc__Category__c.Label}" for="categories"/>
+
+							<apex:selectList value="{!selectedCategories}" multiselect="true" >
+				        		<apex:selectOptions value="{!categories}"/>
+				        	</apex:selectList>
+				        </apex:pageBlockSectionItem>
+
+				        <apex:pageBlockSectionItem >
+				        	<apex:commandButton value="filter" rerender="riskTable" status="myStatus" action="{!setupHeatmaps}"/>
+				        </apex:pageBlockSectionItem>
+
+			        </apex:pageBlockSection>
+		        </apex:pageBlock>
+
+		        </apex:outputPanel>
+	        </apex:form>
+
+        	<div style="float: left; margin-bottom: 20px;width:100%;">
+        		<c:HeatmapCollection heatmaps="{!heatmaps}" height="400px" width="100%"  />
+    		</div>
+
+	      </apex:outputPanel>
+</apex:page>

@@ -1,0 +1,37 @@
+<apex:page sideBar="false" showHeader="false" >
+
+<head>
+	<apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'HelpPageStylesheet.css')}"/>
+</head>
+
+    <div class="heading">
+
+        <div class="icon">&nbsp;</div>
+        <h2>Help Pages</h2>
+        <h1>Heatmap Report</h1>
+
+    </div>
+
+    <div class="content">
+
+        <p>Heatmaps summarize the ratings of all active Risks in the current Business Unit.</p>
+        <p>Each cell represents the number of Risks with a specific Impact and Likelihood.</p>
+        <p>Click on the cell to view the Risks as a filtered list.</p>
+        <p>You can navigate to the Risks themselves by clicking on the link in the list.</p>
+        <p>Risks can also be filtered by Business Unit, by selecting the relevant Business Unit in the Business Unit hierarchy list.</p>
+        <p>Tick the "Show results for child Business Units" to show Risks belonging to the Business Unit and its subsidiaries.</p>
+        <p>To print a Heatmap, click on the Printable View link and then Print the resulting page.</p>
+
+        <br/>
+        <br/>
+        <br/>
+
+        <h3 >Contact Details</h3>
+
+        <p>For further support information, please contact your local administrator.</p>
+
+        <div class="clear"></div>
+
+    </div>
+
+</apex:page>

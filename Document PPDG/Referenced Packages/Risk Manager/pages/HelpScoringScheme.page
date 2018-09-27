@@ -1,0 +1,41 @@
+<apex:page sideBar="false" showHeader="false">
+
+<head>
+	<apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'HelpPageStylesheet.css')}"/>
+</head>
+
+<div class="heading">
+    <div class="icon">&nbsp;</div>
+    <h2>Help Pages</h2>
+    <h1>Scoring Schemes</h1>
+</div>
+
+<div class="content">
+<p>Scoring Schemes define the ratings that are used when assessing the Likelihood and Impact of Risks.
+</p>
+<p>Once created, Scoring Schemes can be assigned to one or more Business Units. Any Risks that impact those Business Units will thus be assessed using the assigned scheme.
+</p>
+<p>The following steps should be used to set up a Scoring Scheme:
+</p>
+<ul>
+<li>First, create new Score Bands for each Impact and Likelihood rating. Assign each one a name, a type (Impact or Likelihood) a rating number (that ranks the band) and a colour.</li>
+<li>Next, create the different Impact Categories that can apply, for example, Cost, Environmental or Regulatory.</li>
+<li>The Scoring Scheme can now be configured: to do this, click on the link "Configure Scoring Scheme". Using the Scoring Scheme editor, enter a description and lower and upper values (where applicable) for each rating in the scheme.</li>
+<li>Save the Scoring Scheme.</li>
+<li>Finally, click on the link "Configure Heatmap" to configure the scores and colours that will be assigned to each rating in the scheme. Save the Scoring Scheme.</li>
+</ul>
+<p>Once the Scoring Scheme has been completed, it can be assigned to one or more Business Units. To do this, navigate to the relevant Business Unit record, and assign the Scoring Scheme to the Scoring Scheme field.
+</p>
+<br/>
+<br/>
+<br/>
+
+<h3 >Contact Details</h3>
+
+<p>
+For further support information, please contact your local administrator.</p>
+
+
+    <div class="clear"></div>
+</div>
+</apex:page>

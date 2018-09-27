@@ -1,0 +1,29 @@
+<apex:page sideBar="false" showHeader="false">
+
+    <head>
+        <!--<apex:stylesheet value="{!URLFOR($Resource.MetricManager, 'Css/HelpPageStylesheet.css')}"/>-->
+    </head>
+
+    <div class="heading">
+        <div class="icon">&nbsp;</div>
+        <h2>Help Pages</h2> 
+        <h1>Metrics</h1>
+    </div>
+ 
+    <div class="content">
+        <p>Metrics are measurable indicators that capture key performance or key risk and control information for an organization. 
+        </p>
+        <p>Metrics have a monitoring frequency, e.g. monthly or quarterly, and a priority. 
+        </p>
+        <br/>
+        <br/>
+        <br/>
+        
+        <h3 >Contact Details</h3>
+        
+        <p>
+        For further support information, please contact your local administrator.</p>
+        
+        <div class="clear"></div>
+    </div>
+</apex:page>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Business_Unit_Hierarchy_Level__c</fullName>
+        <defaultValue>4</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Default number of levels to display on the business unit hierarchy (Default is 4)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Default number of levels to display on the business unit hierarchy (Default is 4)</inlineHelpText>
+        <label>Business Unit Hierarchy Level</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Business_Unit_Selection_Colour__c</fullName>
+        <defaultValue>&quot;000000&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Colour of the text and Border of the selected business unit on the Org Hierarchy Page. Use hex codes. Do not include the hash.</inlineHelpText>
+        <label>Business Unit Selection Colour</label>
+        <length>6</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Control_Assessment_FieldSet__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Api name for the Field set on the control risk junction object. Used when assessing the control.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Control Assessment Field Set Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Disable_Cause_Creation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Disables creation of causes from the Risk Browser page</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Disables creation of causes from the Risk Browser page</inlineHelpText>
+        <label>Disable Cause Creation</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Disable_Control_Creation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Disables creation of controls from the risk browser page.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Disables creation of controls from the risk browser page.</inlineHelpText>
+        <label>Disable Control Creation</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Embedded_Heatmap_Table_FieldSet__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Embedded Heatmap Table Fieldset</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Expanded_Justification_Functionality__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Expands into three Justification fields on the Risk Assessment.</description>
+        <externalId>false</externalId>
+        <label>Expanded Justification Functionality</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Hide_Inherent_Tab__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Hide Inherent</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Hide_Target_Tab__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Hide the target tab on the Risk Assessment page.</inlineHelpText>
+        <label>Hide Target Tab</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Many_To_Many_Associator_List_Size__c</fullName>
+        <defaultValue>500</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The list size for Unassociated list on the Many To Many Associator page (Min 10 / Max 10,000)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The list size for Unassociated list on the Many To Many Associator page (Min 10 / Max 10,000)</inlineHelpText>
+        <label>Many To Many Associator List Size</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Risk_Assessment_Review_Fieldset_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Risk Assessment Review Fieldset Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Risk_Table_Column_Fieldset_API_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Risk Table Column Fieldset API Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Scroll_Animation_speed__c</fullName>
+        <defaultValue>2000</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Lower is faster. Default 2000</inlineHelpText>
+        <label>Scroll Animation speed</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Use_Appetite_On_Heatmap__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Enable the use of Appetite on Heatmaps.</inlineHelpText>
+        <label>Use Appetite on Heatmap</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Use_single_point_Likelihood_ratings__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Use single point Likelihood ratings</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Risk Manager Visualforce Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

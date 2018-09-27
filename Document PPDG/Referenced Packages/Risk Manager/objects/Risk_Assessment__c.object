@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>RiskAssessmentEntry</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <customHelpPage>HelpRiskAssessment</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Best_Case__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Best Case</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Business_Unit__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Business Unit</label>
+        <referenceTo>grc__Business_Unit__c</referenceTo>
+        <relationshipLabel>Risk Assessments</relationshipLabel>
+        <relationshipName>Risk_Assessments</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Inherent_Cost_Most_Likely_Case__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Inherent Cost Most Likely Case</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Inherent_Direct_Likelihood__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Inherent Direct Likelihood</label>
+        <summarizedField>Risk_Assessment_Rating__c.Band_Number__c</summarizedField>
+        <summaryFilterItems>
+            <field>Risk_Assessment_Rating__c.Mitigation__c</field>
+            <operation>equals</operation>
+            <value>Inherent</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Risk_Assessment_Rating__c.Category__c</field>
+            <operation>equals</operation>
+            <value>Likelihood</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Risk_Assessment_Rating__c.Band_Number__c</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </summaryFilterItems>
+        <summaryForeignKey>Risk_Assessment_Rating__c.Risk_Assessment__c</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Inherent_Highest_Impact__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Inherent Highest Impact</label>
+        <summarizedField>Risk_Assessment_Rating__c.Band_Number__c</summarizedField>
+        <summaryFilterItems>
+            <field>Risk_Assessment_Rating__c.Mitigation__c</field>
+            <operation>equals</operation>
+            <value>Inherent</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Risk_Assessment_Rating__c.Category__c</field>
+            <operation>notEqual</operation>
+            <value>Likelihood</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Risk_Assessment_Rating__c.Band_Number__c</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </summaryFilterItems>
+        <summaryForeignKey>Risk_Assessment_Rating__c.Risk_Assessment__c</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Inherent_Impact_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Inherent Impact Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Inherent_Impact_Text__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Inherent_Rating_Lookup__r.Impact__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Inherent Impact</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Inherent_Likelihood_Most_Likely_Case__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Inherent Likelihood Most Likely Case</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Inherent_Likelihood_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Inherent Likelihood Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Inherent_Likelihood_Text__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Inherent_Rating_Lookup__r.Likelihood__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Inherent Likelihood</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Inherent_Rating_Lookup__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Inherent Rating Lookup</label>
+        <referenceTo>Rating_Info__c</referenceTo>
+        <relationshipLabel>Risk Assessments</relationshipLabel>
+        <relationshipName>Risk_Assessments</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Inherent_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;Colours/hmc_&apos; +
+  IF(Inherent_Rating_Lookup__r.Colour__c == &apos;&apos;
+    ,&apos;gray.png&apos;
+    , UPPER(SUBSTITUTE(
+       Inherent_Rating_Lookup__r.Colour__c, &apos;#&apos;, &apos;&apos;
+      )
+    ) + &apos;.png&apos;
+  ),
+  IF(Inherent_Rating_Lookup__r.Colour__c == &apos;&apos;
+    ,&apos;gray&apos;
+    , Inherent_Rating_Lookup__r.Colour__c
+  )
+  , 25, 100
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Inherent Rating</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Inherent_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Inherent_Rating_Lookup__r.Overall_Rating__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Inherent Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Edited_Mode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This was the mode selected when the record was last saved.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This was the mode selected when the record was last saved.</inlineHelpText>
+        <label>Last Edited Mode</label>
+        <picklist>
+            <picklistValues>
+                <fullName>qualitative</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>quantatative</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Likelihood_Best_Case__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Likelihood Best Case</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Likelihood_Most_Likely_Case__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Residual Likelihood Most Likely Case</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Likelihood_Worst_Case__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Likelihood Worst Case</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Maximum_Most_Likely_Case__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Maximum Most Likely Case</label>
+        <summarizedField>Risk_Assessment_Rating__c.Value__c</summarizedField>
+        <summaryFilterItems>
+            <field>Risk_Assessment_Rating__c.Mitigation__c</field>
+            <operation>equals</operation>
+            <value>Residual</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Risk_Assessment_Rating__c.Risk_Assessment__c</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Most_Likely_Case__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Residual Cost Most Likely Case</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Rating_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Rating Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>qualitative</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>quantitative</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Residual_Direct_Likelihood__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Residual Direct Likelihood</label>
+        <summarizedField>Risk_Assessment_Rating__c.Band_Number__c</summarizedField>
+        <summaryFilterItems>
+            <field>Risk_Assessment_Rating__c.Mitigation__c</field>
+            <operation>equals</operation>
+            <value>Residual</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Risk_Assessment_Rating__c.Category__c</field>
+            <operation>equals</operation>
+            <value>Likelihood</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Risk_Assessment_Rating__c.Band_Number__c</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </summaryFilterItems>
+        <summaryForeignKey>Risk_Assessment_Rating__c.Risk_Assessment__c</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Residual_Highest_Impact__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Residual Highest Impact</label>
+        <summarizedField>Risk_Assessment_Rating__c.Band_Number__c</summarizedField>
+        <summaryFilterItems>
+            <field>Risk_Assessment_Rating__c.Mitigation__c</field>
+            <operation>equals</operation>
+            <value>Residual</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Risk_Assessment_Rating__c.Category__c</field>
+            <operation>notEqual</operation>
+            <value>Likelihood</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Risk_Assessment_Rating__c.Band_Number__c</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </summaryFilterItems>
+        <summaryForeignKey>Risk_Assessment_Rating__c.Risk_Assessment__c</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Residual_Impact_Category__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Residual Impact Category</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Residual_Impact_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Residual Impact Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Residual_Impact_Text__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Residual_Rating_Lookup__r.Impact__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Residual Impact</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Residual_Likelihood_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Residual Likelihood Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Residual_Likelihood_Text__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Residual_Rating_Lookup__r.Likelihood__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Residual Likelihood</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Residual_Most_Likely_Cost__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Residual Most Likely Cost</label>
+        <summarizedField>Risk_Assessment_Rating__c.Value__c</summarizedField>
+        <summaryFilterItems>
+            <field>Risk_Assessment_Rating__c.Impact_Category_Type__c</field>
+            <operation>equals</operation>
+            <value>Cost</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Risk_Assessment_Rating__c.Mitigation__c</field>
+            <operation>equals</operation>
+            <value>Residual</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Risk_Assessment_Rating__c.Risk_Assessment__c</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Residual_Most_Likely_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Residual Most Likely Time</label>
+        <summarizedField>Risk_Assessment_Rating__c.Value__c</summarizedField>
+        <summaryFilterItems>
+            <field>Risk_Assessment_Rating__c.Impact_Category_Type__c</field>
+            <operation>equals</operation>
+            <value>Time</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Risk_Assessment_Rating__c.Mitigation__c</field>
+            <operation>equals</operation>
+            <value>Residual</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Risk_Assessment_Rating__c.Risk_Assessment__c</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Residual_Rating_Lookup__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Residual Rating Lookup</label>
+        <referenceTo>Rating_Info__c</referenceTo>
+        <relationshipLabel>Risk Assessments (Residual Rating Lookup)</relationshipLabel>
+        <relationshipName>Risk_Assessments1</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Residual_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;Colours/hmc_&apos; +
+  IF(Residual_Rating_Lookup__r.Colour__c == &apos;&apos;
+    ,&apos;gray.png&apos;
+    , UPPER(SUBSTITUTE(
+      Residual_Rating_Lookup__r.Colour__c, &apos;#&apos;, &apos;&apos;
+      )
+    ) + &apos;.png&apos;
+  ),
+  IF(Residual_Rating_Lookup__r.Colour__c == &apos;&apos;
+    ,&apos;gray&apos;
+    , Residual_Rating_Lookup__r.Colour__c
+  )
+  , 25, 100
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Residual Rating</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Residual_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Residual_Rating_Lookup__r.Overall_Rating__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Residual Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Risk_Assessment_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Risk Assessment Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Risk__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Risk</label>
+        <referenceTo>grc__Risk__c</referenceTo>
+        <relationshipLabel>Risk Assessments</relationshipLabel>
+        <relationshipName>Risk_Assessments</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Scoring_Scheme_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(Risk__r.Type__c,&apos;Opportunity&apos;),Business_Unit__r.Opp_Scoring_Scheme__r.Id,Business_Unit__r.Scoring_Scheme__r.Id)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Scoring Scheme Id</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Scoring_Update__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Scoring Update</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Target_Direct_Likelihood__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Target Direct Likelihood</label>
+        <summarizedField>Risk_Assessment_Rating__c.Band_Number__c</summarizedField>
+        <summaryFilterItems>
+            <field>Risk_Assessment_Rating__c.Mitigation__c</field>
+            <operation>equals</operation>
+            <value>Target</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Risk_Assessment_Rating__c.Category__c</field>
+            <operation>equals</operation>
+            <value>Likelihood</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Risk_Assessment_Rating__c.Band_Number__c</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </summaryFilterItems>
+        <summaryForeignKey>Risk_Assessment_Rating__c.Risk_Assessment__c</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Target_Highest_Impact__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Target Highest Impact</label>
+        <summarizedField>Risk_Assessment_Rating__c.Band_Number__c</summarizedField>
+        <summaryFilterItems>
+            <field>Risk_Assessment_Rating__c.Mitigation__c</field>
+            <operation>equals</operation>
+            <value>Target</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Risk_Assessment_Rating__c.Category__c</field>
+            <operation>notEqual</operation>
+            <value>Likelihood</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Risk_Assessment_Rating__c.Band_Number__c</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </summaryFilterItems>
+        <summaryForeignKey>Risk_Assessment_Rating__c.Risk_Assessment__c</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Target_Impact_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Target Impact Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Target_Impact_Text__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Target_Rating_Lookup__r.Impact__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Target Impact</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Target_Likelihood_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Target Likelihood Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Target_Likelihood_Text__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Target_Rating_Lookup__r.Likelihood__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Target Likelihood</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Target_Rating_Lookup__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Target Rating Lookup</label>
+        <referenceTo>Rating_Info__c</referenceTo>
+        <relationshipLabel>Risk Assessments (Target Rating Lookup)</relationshipLabel>
+        <relationshipName>Risk_Assessments2</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Target_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;Colours/hmc_&apos; +
+  IF(Target_Rating_Lookup__r.Colour__c == &apos;&apos;
+    ,&apos;gray.png&apos;
+    , UPPER(SUBSTITUTE(
+      Target_Rating_Lookup__r.Colour__c, &apos;#&apos;, &apos;&apos;
+      )
+    ) + &apos;.png&apos;
+  ),
+  IF(Target_Rating_Lookup__r.Colour__c == &apos;&apos;
+    ,&apos;gray&apos;
+    , Target_Rating_Lookup__r.Colour__c
+  )
+  , 25, 100
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Target Rating</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Target_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Target_Rating_Lookup__r.Overall_Rating__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Target Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_Best_Case__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Time Best Case</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_Most_Likely_Case__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Time Most Likely Case</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_Worst_Case__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Time Worst Case</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type_of_Risk__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Type of Risk</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Worst_Case__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Worst Case</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <label>Risk Assessment</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>RA-{00000}</displayFormat>
+        <label>Risk Assessment No</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Risk Assessments</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>Private</sharingModel>
+    <webLinks>
+        <fullName>Enter_Scores</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Enter Scores</masterLabel>
+        <openType>sidebar</openType>
+        <page>RiskAssessmentEntry</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Risk_Assessment</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Risk Assessment</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>{!URLFOR(&apos;/apex/&apos;+$Setup.NamespacePrefix__c.Value__c+&apos;RiskAssessmentEntry&apos;, null,
+[
+riskId = grc__Risk__c.Id
+]
+)}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Read</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Read</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/RiskAssessmentEntry?Id={!Risk_Assessment__c.Id}&amp;readOnly=true</url>
+    </webLinks>
+</CustomObject>

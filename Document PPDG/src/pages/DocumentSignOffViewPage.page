@@ -1,0 +1,266 @@
+<!-- C0733 - Task code - Created by Zensar -->
+
+<apex:page standardController="Case" showHeader="true" sidebar="true" extensions="DocumentSignOffController">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script> 
+    <apex:form >
+    <apex:pageMessages ></apex:pageMessages>
+
+      <apex:pageBlock id="pbId">
+         <apex:pageblockButtons >
+         <apex:commandButton value="Submit For Approval" action="{!submitapproval}"/>
+         <apex:commandButton value="Edit" reRender="pbId" rendered="{!Case.id!=editId}">
+                <apex:param assignTo="{!editId}" name="edit" value="{!Case.id}"/>
+         </apex:commandButton>
+    
+         <apex:commandButton value="Save" reRender="pbId" rendered="{!Case.id==editId}" action="{!saveCase}">
+         </apex:commandButton>
+    
+         </apex:pageblockButtons>
+    
+         <apex:pageBlockSection columns="2" rendered="{!Case.id!=editId}">
+   
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >Case Owner</apex:outputLabel>
+            <apex:outputField value="{!Case.Owner.Name }"/> 
+            </apex:pageBlockSectionItem>
+            
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >Case Number</apex:outputLabel>
+            <apex:outputField value="{!Case.CaseNumber }"/>
+            </apex:pageBlockSectionItem>
+            
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >Status</apex:outputLabel>
+            <apex:outputField id="caseStatus" value="{!case.Status}" />
+            </apex:pageBlockSectionItem>
+            
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >Previous Reference Number</apex:outputLabel>
+            <apex:outputField value="{!Case.ParentId }"/>
+            </apex:pageBlockSectionItem>
+            
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >Document Name</apex:outputLabel>
+            <apex:outputField value="{!Case.Subject}" />
+            </apex:pageBlockSectionItem>
+            
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >Sign Off Type</apex:outputLabel>
+            <apex:outputField value="{!Case.Sign_Off_Type__c }"/>
+            </apex:pageBlockSectionItem>
+
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >Document Version</apex:outputLabel>
+            <apex:outputField value="{!Case.Document_Version__c }"/>
+            </apex:pageBlockSectionItem>
+            
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >Originator</apex:outputLabel>
+            <apex:outputField value="{!Case.Originator__c}"/>
+            </apex:pageBlockSectionItem>
+        
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >Additional Recipient</apex:outputLabel>
+            <apex:outputField value="{!Case.Staff_member_at_fault2__c }"/>
+            </apex:pageBlockSectionItem>
+        
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >Additional Recipient</apex:outputLabel>
+            <apex:outputField value="{!Case.Staff_member_at_fault_2__c }"/>
+            </apex:pageBlockSectionItem>
+        
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >Additional Recipient</apex:outputLabel>
+            <apex:outputField value="{!Case.Staff_member_at_fault_3__c }"/>
+            </apex:pageBlockSectionItem>
+        
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >Additional Recipient</apex:outputLabel>
+            <apex:outputField value="{!Case.Staff_member_name__c }"/>
+            </apex:pageBlockSectionItem>
+        
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >SLA</apex:outputLabel>
+            <apex:outputField value="{!Case.SLA__c }"/>
+            </apex:pageBlockSectionItem>
+        
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >Gone Live</apex:outputLabel>
+            <apex:outputField value="{!Case.Gone_Live__c }"/>
+            </apex:pageBlockSectionItem>
+        
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >New Material or Major Amendment</apex:outputLabel>
+            <apex:outputField value="{!Case.New_Material_or_Major_Amendment__c}"/>
+            </apex:pageBlockSectionItem>
+        
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >Minor Amendment</apex:outputLabel>
+            <apex:outputField value="{!Case.Minor_Amendment__c}"/>
+            </apex:pageBlockSectionItem>
+        
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >PR or Social</apex:outputLabel>
+            <apex:outputField value="{!Case.PR_or_Social__c}"/>
+            </apex:pageBlockSectionItem>
+    
+     
+         </apex:pageBlockSection>
+    
+    
+         <apex:pageBlockSection columns="2" rendered="{!Case.id==editId}" >
+            
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >Case Owner</apex:outputLabel>
+            <apex:outputField value="{!Case.Owner.Name }"/> 
+            </apex:pageBlockSectionItem>
+            
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >Case Number</apex:outputLabel>
+            <apex:outputField value="{!Case.CaseNumber }"/>
+            </apex:pageBlockSectionItem>
+            
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >Status</apex:outputLabel>
+            <apex:inputField id="caseStatus" value="{!case.Status}" />
+            </apex:pageBlockSectionItem>     
+            
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >Previous Reference Number</apex:outputLabel>
+            <apex:inputField value="{!Case.ParentId }"/>
+            </apex:pageBlockSectionItem>
+            
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >PPDG Sign Off</apex:outputLabel>                    
+            <apex:inputField id="ppdgsignoff" value="{!case.PPDG_Sign_Off__c}" />
+            </apex:pageBlockSectionItem>
+                
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >Document Change Sign Off</apex:outputLabel>                    
+            <apex:inputField id="ppdgsignoff" value="{!case.Document_Change_Sign_Off__c}" />
+            </apex:pageBlockSectionItem>
+            
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >Document Name</apex:outputLabel>
+            <apex:inputField value="{!Case.Subject}"/>
+            </apex:pageBlockSectionItem>
+            
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >Document Version</apex:outputLabel>
+            <apex:inputField value="{!Case.Document_Version__c }"/>
+            </apex:pageBlockSectionItem>
+        
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >Additional Recipient</apex:outputLabel>
+            <apex:inputField value="{!Case.Staff_member_at_fault2__c }"/>
+            </apex:pageBlockSectionItem>
+        
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >Additional Recipient</apex:outputLabel>
+            <apex:inputField value="{!Case.Staff_member_at_fault_2__c }"/>
+            </apex:pageBlockSectionItem>
+        
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >Additional Recipient</apex:outputLabel>
+            <apex:inputField value="{!Case.Staff_member_at_fault_3__c }"/>
+            </apex:pageBlockSectionItem>
+        
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >Additional Recipient</apex:outputLabel>
+            <apex:inputField value="{!Case.Staff_member_name__c }"/>
+            </apex:pageBlockSectionItem>
+        
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >SLA</apex:outputLabel>
+            <apex:inputField value="{!Case.SLA__c }"/>
+            </apex:pageBlockSectionItem>
+        
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >Gone Live</apex:outputLabel>
+            <apex:inputField value="{!Case.Gone_Live__c }"/>
+            </apex:pageBlockSectionItem>
+        
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >New Material or Major Amendment</apex:outputLabel>
+            <apex:inputField value="{!Case.New_Material_or_Major_Amendment__c}"/>
+            </apex:pageBlockSectionItem>
+        
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >Minor Amendment</apex:outputLabel>
+            <apex:inputField value="{!Case.Minor_Amendment__c}"/>
+            </apex:pageBlockSectionItem>
+        
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >PR or Social</apex:outputLabel>
+            <apex:inputField value="{!Case.PR_or_Social__c}"/>
+            </apex:pageBlockSectionItem>
+        
+         </apex:pageBlockSection>
+   
+      </apex:pageBlock>
+    </apex:form> 
+      
+    <apex:relatedlist list="CombinedAttachments" title="Notes & Attachments"/>
+  
+    <apex:pageblock title="Approval History">
+
+    <div class="pbBody">
+           <table class="list hoverTable" border="0" cellpadding="0" cellspacing="0">
+               <tbody>
+                   <tr class="dataRow" id="headerRow">
+                   <td class="dataCell"></td>
+                   <td class="dataCell"></td>                  
+                   <td class="dataCell" colspan="3">
+                     
+                       
+                   </td>
+
+                   <td class="dataCell"></td>
+                   <td class="dataCell"></td>                                                        
+                   </tr>
+                   <tr class="headerRow" >
+                       <th>Action</th>
+                       <th>Date</th>
+                       <th>Status</th>
+                       <th>Assigned To</th>
+                       <th>Comments</th>
+                       <th>Actual Approver</th>
+                       <th>Overall Status</th>
+                   </tr>                   
+                   <apex:repeat value="{!aSW.approvals}" var="s">
+                       <tr class="overAllStatusRow dataRow" id="overAllStatusRow">
+                           <td colspan="6" class="dataCell whiteHead">
+                               {!IF(AND(s['listOfSteps'][0].stepstatus != 'Started', s['listOfSteps'][0].ProcessNode.Name != NULL),IF( s['listOfSteps'][0].stepstatus !='Removed','Step : '+s['listOfSteps'][0].ProcessNode.Name + IF(s['listOfSteps'][0].stepstatus=='Pending',' (Pending for first approval) ',''),'Approval Request Recalled'), 'Approval Request Submitted')}
+                           </td>
+                           <td class="dataCell {!s['listOfSteps'][0].stepstatus}">
+                                {!IF(AND(s['listOfSteps'][0].stepstatus != 'Started',s['listOfSteps'][0].stepstatus != 'NoResponse'),IF( s['listOfSteps'][0].stepstatus !='Removed',s['listOfSteps'][0].stepstatus,'Recalled'), '')}
+                           </td>
+                       </tr>
+                           <apex:repeat var="step" value="{!s.listOfSteps}">
+                               <tr class="dataRow">
+                                   <td class="dataCell">
+                                       <apex:outputText rendered="{!step.stepstatus == 'Pending'}">
+                                                <a href="{!s.workItemApproveOrRejectLink}" target="_parent"> Approve / Reject</a>
+                                       </apex:outputText>
+                                   </td>
+                                   <td class="dataCell">
+                                       <apex:outputText value="{0,date,dd/MM/YYYY HH:mm:ss}">
+                                           <apex:param value="{!step.CreatedDate}"/>
+                                       </apex:outputText> 
+                                   </td>
+                                   <td class="dataCell">{!IF(step.Stepstatus!='NoResponse',step.Stepstatus,'')}</td>
+                                   <td class="dataCell"><a href="/{!step.OriginalActorID}" target='_parent'>{!step.OriginalActor.Name}</a></td>
+                                   <td class="dataCell">{!step.comments}</td>
+                                   <td class="dataCell"><a href="/{!step.ActorId}" target='_parent'>{!step.Actor.Name}</a></td>
+                                   <td></td>
+                               </tr>
+                           </apex:repeat>
+                </apex:repeat>
+               </tbody>
+           </table>
+       </div>
+
+
+    </apex:pageblock>
+
+</apex:page>

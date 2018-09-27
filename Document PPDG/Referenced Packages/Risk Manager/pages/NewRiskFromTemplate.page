@@ -1,0 +1,60 @@
+<apex:page extensions="Risk.NewRiskFromTemplate" standardController="grc__Risk__c" tabstyle="Risk__Risk_Template__c" standardStylesheets="true">
+
+    <apex:sectionHeader title="New Risk From Template" subtitle="New Risk"/>
+
+    <apex:form id="theForm">
+        <apex:pageMessages />
+         <apex:actionRegion >
+         <apex:pageBlock title="In which Category is the Risk?" >
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton value="Find Matching Templates" rerender="theForm" action="{!acquireMatchingTemplates}"/>
+            </apex:pageBlockButtons>
+
+            <apex:pageBlockSection columns="1">
+                <apex:inputField value="{!aRisk.grc__Category__c}"/>
+                <apex:inputField value="{!aRisk.grc__Subcategory__c}"/>
+                <apex:inputText value="{!searchFilter}" label="Filter templates based on name:"/>
+            </apex:pageBlockSection>
+
+        </apex:pageBlock>
+
+       </apex:actionRegion>
+
+        <apex:pageBlock title="Matching Templates" id="matching" rendered="{!aRisk.grc__Category__c != null}">
+
+            <apex:pageBlockSection title="Matching Risk Templates" collapsible="false" columns="1">
+
+                <apex:outputPanel layout="none" rendered="{!matchingTemplates.size == 0}">
+                    No templates found that match criteria
+                </apex:outputPanel>
+
+                <apex:pageBlockTable value="{!matchingTemplates}" var="template" rendered="{!matchingTemplates.size > 0}">
+                    <apex:column value="{!template.theRiskTemplate.Name}" title="Name"/>
+                    <apex:column value="{!template.theRiskTemplate.Risk__Description__c}" title="Description"/>
+                    <apex:column headerValue="Include Controls" style="text-align:center;">
+                        <apex:inputCheckBox value="{!template.includeControls}" />
+                    </apex:column>
+                    <apex:column headerValue="Include Causes" style="text-align:center;">
+                        <apex:inputCheckBox value="{!template.includeCauses}" />
+                    </apex:column>
+                    <apex:column headerValue="Business Unit Selection">
+                        <div class="requiredInput">
+                            <div class="requiredBlock"></div>
+                            <apex:inputField value="{!template.theRiskBusinessUnit.grc__Business_Unit__c}"/>
+                        </div>
+                    </apex:column>
+                    <apex:column title="Action">
+                        <apex:commandLink action="{!createRisk}" styleClass="btn" style="text-decoration: none;" rerender="theForm">
+                            Create
+                            <apex:param name="templateId" assignTo="{!templateId}" value="{!template.theRiskTemplate.Id}" />
+                        </apex:commandLink>
+                    </apex:column>
+                </apex:pageBlockTable>
+
+            </apex:pageBlockSection>
+
+        </apex:pageBlock>
+
+    </apex:form>
+
+</apex:page>

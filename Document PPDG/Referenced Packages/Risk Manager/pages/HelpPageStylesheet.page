@@ -1,0 +1,52 @@
+<apex:page contentType="text/css" showHeader="false">
+
+body{
+font-family: Verdana, Geneva, sans-serif;
+}
+.heading{
+    background-color: #2377bd;
+    border-top: 1px solid #2377bd;
+    border-right: 1px solid #2377bd;
+    border-left: 1px solid #2377bd;
+    height: 65px;
+    color: #fff;
+
+
+}
+.icon{
+    width:48px;
+    height:48px;
+    margin: 10px;
+    background-image:url('{!URLFOR($Resource.Risk__HelpLogo)}');
+    float:left;
+    background-repeat:no-repeat;
+}
+h1{
+    font-size:1em;
+    font-weight:550;
+    margin-left:20px;
+}
+h2{
+    font-size:0.8em;
+    font-weight:550;
+    margin-left:20px;
+}
+h3{
+    font-size:1em;
+    font-weight:550;
+}
+a{
+    color: #2377BD;
+}
+.content{
+    border: 1px solid #2377bd;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size:0.8em;
+}
+.clear{
+    clear: both;
+}
+
+</apex:page>

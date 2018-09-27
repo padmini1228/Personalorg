@@ -1,0 +1,15 @@
+<apex:page standardController="User" extensions="Risk.UserAccessDetails">
+
+<apex:pageBlock title="BU/Project Membership">
+	<apex:pageBlockTable value="{!theBuGroups}" var="group">
+		<apex:column headerValue="BU/Project Name">
+        	<a href="/{!group.theBusinessUnit.Id}" target="_blank">{!group.theBusinessUnit.Name}</a>
+        </apex:column>
+	    <apex:column headerValue="Group Name">
+        	<a href="/setup/own/groupdetail.jsp?id={!group.theGroup.Id}&setupid=PublicGroups" target="_blank">{!group.theGroup.Name}</a>
+        </apex:column>
+        <!-- <apex:column value="{!group.theBusinessUnit.ProjectType__c}"/> -->
+	</apex:pageBlockTable>
+</apex:pageBlock>
+
+</apex:page>

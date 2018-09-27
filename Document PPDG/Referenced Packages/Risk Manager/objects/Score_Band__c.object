@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Colour_Code__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF( ISPICKVAL(Colour__c,&apos;Black&apos;) , &apos;000000&apos;,
+        IF( ISPICKVAL(Colour__c,&apos;Grey&apos;) , &apos;Grey&apos;,
+        IF( ISPICKVAL(Colour__c,&apos;Red&apos;) , &apos;F62817&apos;,
+        IF( ISPICKVAL(Colour__c,&apos;Orange&apos;) , &apos;FDD017&apos;,
+        IF( ISPICKVAL(Colour__c,&apos;Yellow&apos;) , &apos;F7FE2E&apos;,
+        IF( ISPICKVAL(Colour__c,&apos;Neon Green&apos;) , &apos;41FBAA&apos;,
+        IF( ISPICKVAL(Colour__c,&apos;Lime Green&apos;) , &apos;A1FB41&apos;,
+        IF( ISPICKVAL(Colour__c,&apos;Green&apos;) , &apos;59E817&apos;,
+        IF( ISPICKVAL(Colour__c,&apos;Dark Green&apos;) , &apos;00A000&apos;,
+        IF( ISPICKVAL(Colour__c,&apos;Turquoise&apos;) , &apos;68EFEA&apos;,
+        IF( ISPICKVAL(Colour__c,&apos;Very Light Blue&apos;) , &apos;4BC5F4&apos;,
+        IF( ISPICKVAL(Colour__c,&apos;Light Blue&apos;) , &apos;2E9AFE&apos;,
+        IF( ISPICKVAL(Colour__c,&apos;Blue&apos;) , &apos;2E64FE&apos;,
+        IF( ISPICKVAL(Colour__c,&apos;Dark Blue&apos;) , &apos;2E2EFE&apos;,
+        IF( ISPICKVAL(Colour__c,&apos;Purple&apos;) , &apos;8533D6&apos;,
+        IF( ISPICKVAL(Colour__c,&apos;Coral&apos;) , &apos;FD3EB7&apos;,
+        &apos;&apos;
+        ))))))))))))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Colour Code</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Colour__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Colour</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Black</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Grey</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Red</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Orange</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Yellow</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lime Green</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Green</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Turquoise</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Light Blue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Blue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dark Blue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Coral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Hex_Code__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF( ISPICKVAL(Colour__c,&apos;Black&apos;) , &apos;#000000&apos;,
+        IF( ISPICKVAL(Colour__c,&apos;Grey&apos;) , &apos;Grey&apos;,
+        IF( ISPICKVAL(Colour__c,&apos;Red&apos;) , &apos;#F62817&apos;,
+        IF( ISPICKVAL(Colour__c,&apos;Orange&apos;) , &apos;#FDD017&apos;,
+        IF( ISPICKVAL(Colour__c,&apos;Yellow&apos;) , &apos;#F7FE2E&apos;,
+        IF( ISPICKVAL(Colour__c,&apos;Neon Green&apos;) , &apos;#41FBAA&apos;,
+        IF( ISPICKVAL(Colour__c,&apos;Lime Green&apos;) , &apos;#A1FB41&apos;,
+        IF( ISPICKVAL(Colour__c,&apos;Green&apos;) , &apos;#59E817&apos;,
+        IF( ISPICKVAL(Colour__c,&apos;Dark Green&apos;) , &apos;#00A000&apos;,
+        IF( ISPICKVAL(Colour__c,&apos;Turquoise&apos;) , &apos;#68EFEA&apos;,
+        IF( ISPICKVAL(Colour__c,&apos;Very Light Blue&apos;) , &apos;#4BC5F4&apos;,
+        IF( ISPICKVAL(Colour__c,&apos;Light Blue&apos;) , &apos;#2E9AFE&apos;,
+        IF( ISPICKVAL(Colour__c,&apos;Blue&apos;) , &apos;#2E64FE&apos;,
+        IF( ISPICKVAL(Colour__c,&apos;Dark Blue&apos;) , &apos;#2E2EFE&apos;,
+        IF( ISPICKVAL(Colour__c,&apos;Purple&apos;) , &apos;#8533D6&apos;,
+        IF( ISPICKVAL(Colour__c,&apos;Coral&apos;) , &apos;#FD3EB7&apos;,
+        &apos;&apos;
+        ))))))))))))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Hex Code</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter a number, e.g. 1,2, that orders the score band</inlineHelpText>
+        <label>Rating</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Scoring_Scheme__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Scoring Scheme</label>
+        <referenceTo>Scoring_Scheme__c</referenceTo>
+        <relationshipLabel>Score Bands</relationshipLabel>
+        <relationshipName>Score_Bands</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Impact</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Likelihood</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <label>Score Band</label>
+    <nameField>
+        <label>Score Band Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Score Bands</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

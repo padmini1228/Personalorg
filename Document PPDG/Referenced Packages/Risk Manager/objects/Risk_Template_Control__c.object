@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Control_Template__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Control Template</label>
+        <referenceTo>Control_Template__c</referenceTo>
+        <relationshipLabel>Risk Templates</relationshipLabel>
+        <relationshipName>Risk_Template_Controls</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Risk_Template__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Risk Template</label>
+        <referenceTo>Risk_Template__c</referenceTo>
+        <relationshipLabel>Control Templates</relationshipLabel>
+        <relationshipName>Risk_Template_Controls</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <label>Risk Template Control</label>
+    <nameField>
+        <displayFormat>RTC-{0000}</displayFormat>
+        <label>Risk Template Control No</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Risk Template Controls</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <webLinks>
+        <fullName>Associated_Control_Templates</fullName>
+        <availability>online</availability>
+        <description>Links a risk Template to control Templates</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Associate Control Templates</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>{!URLFOR(&apos;/apex/&apos;+$Setup.NamespacePrefix__c.Value__c+&apos;Many2ManyAssociator&apos;, null,
+[
+parentId = Risk_Template__c.Id ,
+lookupObjectName = $Setup.NamespacePrefix__c.Value__c+&quot;Risk_Template_Control__c&quot;,
+childFieldName = $Setup.NamespacePrefix__c.Value__c+&quot;Control_Template__c&quot;,
+parentFieldName = $Setup.NamespacePrefix__c.Value__c+&quot;Risk_Template__c&quot;, 
+filterCriteriaCollection = &quot;Many2ManyFilterCriteriaCollection&quot;
+]
+)}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Associated_Risk_Template</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Associated Risk Templates</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!URLFOR(&apos;/apex/&apos;+$Setup.NamespacePrefix__c.Value__c+&apos;Many2ManyAssociator&apos;, null,
+[
+parentId = Control_Template__c.Id ,
+lookupObjectName = $Setup.NamespacePrefix__c.Value__c+&quot;Risk_Template_Control__c&quot;,
+childFieldName = $Setup.NamespacePrefix__c.Value__c+&quot;Risk_Template__c&quot;,
+parentFieldName = $Setup.NamespacePrefix__c.Value__c+&quot;Control_Template__c&quot;,
+filterCriteriaCollection = &quot;Many2ManyFilterCriteriaCollection&quot;
+]
+)}</url>
+    </webLinks>
+</CustomObject>

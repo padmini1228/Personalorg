@@ -1,0 +1,39 @@
+<apex:page controller="Risk.ManageOrder">
+	<script>
+	    function showDiv(){
+	        document.getElementById('messages').innerHTML = 'Please wait - updating data';
+	    }
+	    function hideDiv(){
+	        document.getElementById('messages').innerHTML = '';
+	    }
+	</script>
+	<div id="messages" style="color: #ff0000; font-weight: bold">&nbsp;</div>
+	<apex:form >
+   		<apex:pageBlock title="Order {!parentRecord['Name']} {!childObjectLabel}" >
+   			<apex:pageBlockButtons >
+   				<apex:commandButton action="{!save}" value="Save" />
+   			</apex:pageBlockButtons>
+     		<apex:pageBlockTable value="{!recordsToOrder}" var="item" id="pnlData" style="width:300px">
+	            <apex:column >
+	                <apex:facet name="header">Name</apex:facet>
+	                {!item['Name']}
+	            </apex:column>
+           		<apex:column style="width:50px">
+               		<apex:facet name="header">Up</apex:facet>
+	                <apex:commandLink action="{!moveUp}" rerender="pnlData" rendered="{!item[orderField] > minIndex}" status="showData">
+	                        <apex:param name="itemID" value="{!item['Id']}"/>
+	                        <img src="/s.gif" alt="Up"  class="upArrowIcon" title="Up"/>
+	                </apex:commandLink>&nbsp;
+           		</apex:column>
+	            <apex:column style="width:50px">
+	                <apex:facet name="header">Down</apex:facet>
+	                <apex:commandLink action="{!moveDown}" rerender="pnlData" rendered="{!maxIndex   > item[orderField]}" status="showData">
+	                        <apex:param name="itemID" value="{!item['Id']}"/>
+	                        <img src="/s.gif" alt="Down"  class="downArrowIcon" title="Down"/>
+	                </apex:commandLink>&nbsp;
+	            </apex:column>
+        	</apex:pageBlockTable>
+       	</apex:pageBlock>
+     	<apex:actionStatus id="showData" onstart="showDiv();" onstop="hideDiv();"/>
+	</apex:form>
+</apex:page>

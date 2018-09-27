@@ -1,0 +1,6 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[Dear&nbsp;{!User.Name},<div><br></div><div>You have been assigned the following Risk Review to Manage:</div><div><br></div><div><span class="Apple-tab-span" style="white-space:pre">	</span><b>Risk Review Number</b>: {!01Id0000001ELFw.Name}</div><div><span class="Apple-tab-span" style="white-space:pre">	</span><b>Deadline</b>:&nbsp;{!01Id0000001ELFw.00Nd0000005oTWj}</div><div><span class="Apple-tab-span" style="white-space:pre">	</span><b>Business Unit</b>: {!Risk_Review__c.00NG0000008iSFJ}</div><div><span class="Apple-tab-span" style="white-space:pre">	</span><b>Risk Audit</b>:&nbsp;{!01Id0000001ELFw.00Nd0000005oTWk}</div><div><span class="Apple-tab-span" style="white-space:pre">	</span><b>Current Status</b>:&nbsp;{!01Id0000001ELFw.00Nd0000005oTWl}</div><div><br></div><div>Best Regards,</div><div><br></div><div>Xactium Risk Manager</div><div><br></div><div><br></div><div><br></div><div><span class="Apple-tab-span" style="white-space:pre">	</span></div><div><span class="Apple-tab-span" style="white-space:pre">	</span></div>]]></td>
+</tr>
+</table>

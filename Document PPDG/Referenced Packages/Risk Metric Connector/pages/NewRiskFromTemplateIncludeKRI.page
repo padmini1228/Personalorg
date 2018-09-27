@@ -1,0 +1,61 @@
+<apex:page controller="rmc.NewRiskFromTemplateIncludeKRIController" tabstyle="Risk__Risk_Template__c" standardStylesheets="true">
+
+    <apex:sectionHeader title="{!$Label.rmc__new_risk_from_template}" subtitle="{!$Label.rmc__new_risk}"/>
+    
+    <apex:form id="theForm">
+        <apex:pageMessages />
+         <apex:actionRegion >
+         <apex:pageBlock title="{!$Label.rmc__in_which_category_is_the_risk}">
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton value="{!$Label.rmc__find_matching_templates}" rerender="theForm" action="{!acquireMatchingTemplates}"/>
+            </apex:pageBlockButtons>
+            
+            <apex:pageBlockSection columns="1">
+                <apex:inputText value="{!searchFilter}" label="{!$Label.rmc__filter_templates_based_on_name}"/>
+                <apex:inputField value="{!aRisk.grc__Category__c}"/>
+                <apex:inputField value="{!aRisk.grc__Subcategory__c}"/>
+            </apex:pageBlockSection>
+            
+        </apex:pageBlock>
+        
+       </apex:actionRegion>
+        
+        <apex:pageBlock title="{!$Label.rmc__matching_templates}" id="matching" rendered="{!(searchFilter != null || aRisk.grc__Category__c != null) && matchingTemplates != null}">
+
+            <apex:pageBlockSection title="{!$Label.rmc__matching_risk_templates}" collapsible="false" columns="1">
+                
+                <apex:pageBlockTable value="{!matchingTemplates}" var="template" rendered="{!matchingTemplates.size > 0}">    
+                    <apex:column value="{!template.theRiskTemplate.Name}" title="Name"/>
+                    <apex:column value="{!template.theRiskTemplate.Risk__Description__c}" title="Description"/>
+
+                    <apex:column headerValue="{!$Label.rmc__include_controls}" style="text-align:center;">
+                        <apex:inputCheckBox value="{!template.includeControls}" />
+                    </apex:column>
+                    <apex:column headerValue="{!$Label.rmc__include_causes}" style="text-align:center;">
+                        <apex:inputCheckBox value="{!template.includeCauses}" />
+                    </apex:column>
+                    <apex:column headerValue="{!$Label.rmc__include_kris}" style="text-align:center;">
+                        <apex:inputCheckBox value="{!template.includeKRIs}" />
+                    </apex:column>
+
+                    <apex:column headerValue="{!$Label.rmc__business_unit_selection}">
+                        <div class="requiredInput">
+                            <div class="requiredBlock"></div>
+                            <apex:inputField value="{!template.theRisk.grc__Business_Unit__c}"/>
+                        </div>
+                    </apex:column>
+                    <apex:column title="Action">
+                        <apex:commandLink action="{!createRisk}" styleClass="btn" style="text-decoration: none;" rerender="theForm">
+                            {!$Label.rmc__create}
+                            <apex:param name="templateId" assignTo="{!templateId}" value="{!template.theRiskTemplate.Id}" />
+                        </apex:commandLink>
+                    </apex:column>
+                </apex:pageBlockTable>
+            
+            </apex:pageBlockSection>
+        
+        </apex:pageBlock>
+        
+    </apex:form>
+    
+</apex:page>

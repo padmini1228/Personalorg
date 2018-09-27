@@ -1,0 +1,50 @@
+<apex:page standardController="grc__Incident__c" extensions="Risk.CreateRiskFromIncidentController" tabStyle="grc__Risk__c">
+
+    <apex:sectionHeader title="Create Risk from Incident: {!incident.Name}" subtitle="New Risk" />
+
+    <!-- ONLY RENDER THIS FORM IF THE USER CAN CONTINUE TO CREATE THE RISK OR UPDATE THE INCIDENT -->
+    <apex:form rendered="{!canCreateRisk}">
+
+        <!-- Controller will generate appropriate messages and be displayed here -->
+        <apex:pagemessages />
+
+        <apex:pageBlock title="Create Risk" tabStyle="grc__Risk__c">
+
+            <apex:pageBlockSection title="Risk" collapsible="false" columns="1">
+            <!-- Risk details taken from the incident -->
+               <apex:inputField value="{!risk.Name}" required="true" />
+                <!-- If the business unit is populated then re-use -->
+               <apex:inputField value="{!risk.grc__Business_Unit__c}" required="true"/>
+            </apex:pageBlockSection>
+
+            <!--  Incident details for reference -->
+            <apex:pageBlockSection title="Source Incident Details" columns="1">
+                <apex:outputField value="{!incident.Name}"/>
+                <apex:outputField value="{!incident.grc__Title__c}"/>
+                <apex:outputField value="{!incident.grc__Business_Unit__c}"/>
+            </apex:pageBlockSection>
+
+            <apex:pageBlockButtons location="bottom" >
+                    <apex:commandButton action="{!CreateRisk}" value="CreateRisk"/>
+                    <apex:commandButton action="{!cancel}" value="Cancel"/>
+            </apex:pageBlockButtons>
+
+        </apex:pageBlock>
+
+    </apex:form>
+
+    <!-- ONLY RENDER THIS ERROR FORM IF THE USER CANNOT CONTINUE TO CREATE THE RISK OR UPDATE THE INCIDENT -->
+    <apex:form rendered="{!NOT(canCreateRisk)}">
+
+        <apex:pageBlock rendered="{!NOT(canCreateRisk)}">
+            <!-- Controller will generate appropriate messages and be displayed here -->
+            <apex:pagemessages />
+            <apex:pageBlockButtons location="bottom" >
+
+                   <apex:commandButton action="{!cancel}" value="Return to Incident" />
+            </apex:pageBlockButtons>
+       </apex:pageBlock>
+
+    </apex:form>
+
+</apex:page>

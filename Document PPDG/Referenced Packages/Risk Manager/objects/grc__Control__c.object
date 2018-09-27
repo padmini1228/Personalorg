@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Average_KCI_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(Average_KCI_Score__c &gt;= 2.5,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_F62817&apos;, &apos;Red&apos;,30,100), 
+IF(Average_KCI_Score__c &gt;= 1.5,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_FDD017&apos;, &apos;Amber&apos;,30,100), 
+IF(Average_KCI_Score__c &gt; 0,IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_59E817&apos;, &apos;Green&apos;,30,100), 
+IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_gray&apos;, &apos;Grey&apos;,30,100))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Average KCI Rating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Average_KCI_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(Total_KCI_Lookup_Records__c &gt; 0 , Total_KCI_Average_Score__c / Total_KCI_Lookup_Records__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Average KCI Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Control_Template__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Control Template</label>
+        <referenceTo>Control_Template__c</referenceTo>
+        <relationshipLabel>Controls</relationshipLabel>
+        <relationshipName>Controls1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>KCI_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(KCI_Score__c=3, IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_F62817&apos;, &apos;Red&apos;,30,100),
+IF(KCI_Score__c=2, IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_FDD017&apos;, &apos;Amber&apos;,30,100),
+IF(KCI_Score__c=1, IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_59E817&apos;, &apos;Green&apos;,30,100),
+IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_gray&apos;, &apos;Grey&apos;,30,100))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>KCI Rating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>KCI_Score_Movement_Direction__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c+
+IF(OR(Previous_KCI_Score__c == KCI_Score__c, Previous_KCI_Score__c == 0),&apos;RiskClimateRightYellowArrow&apos;,
+IF((KCI_Score__c)&lt;(Previous_KCI_Score__c),&apos;RiskClimateDownGreenArrow&apos;,
+IF((KCI_Score__c)&gt;(Previous_KCI_Score__c),&apos;RiskClimateUpRedArrow&apos;,&apos;&apos;))),&apos;&apos;,32,32)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>KCI Score Movement Direction</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>KCI_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>KCI Score</label>
+        <summarizedField>Control_KCI_Lookup__c.Score__c</summarizedField>
+        <summaryForeignKey>Control_KCI_Lookup__c.Control__c</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Objectives__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Set control objectives according to the standard CAVRU indicators (Completeness, Accuracy, Validity, Restricted access, Uniqueness)</inlineHelpText>
+        <label>Objectives</label>
+        <picklist>
+            <picklistValues>
+                <fullName>C</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>A</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>V</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>R</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>U</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Previous_Average_KCI_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(Previous_Average_KCI_Score__c &gt;= 2.5, IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_F62817&apos;, &apos;Red&apos;,30,100), 
+IF(Previous_Average_KCI_Score__c &gt;= 1.5, IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_FDD017&apos;, &apos;Amber&apos;,30,100), 
+IF(Previous_Average_KCI_Score__c &gt; 0, IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_59E817&apos;, &apos;Green&apos;,30,100), 
+IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_gray&apos;, &apos;Grey&apos;,30,100))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Previous Average KCI Rating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Previous_Average_KCI_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(Total_Previous_KCI_Lookup_Records__c &gt; 0, Total_Previous_Average_KCI_Score__c / Total_Previous_KCI_Lookup_Records__c , 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Previous Average KCI Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Previous_KCI_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(Previous_KCI_Score__c=3, IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_F62817&apos;, &apos;Red&apos;,30,100), 
+IF(Previous_KCI_Score__c=2, IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_FDD017&apos;, &apos;Amber&apos;,30,100), 
+IF(Previous_KCI_Score__c=1, IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_59E817&apos;, &apos;Green&apos;,30,100), 
+IMAGE(&apos;/resource/&apos; + $Setup.NamespacePrefix__c.Value__c + &apos;hmc_gray&apos;, &apos;Grey&apos;,30,100))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Previous KCI Rating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Previous_KCI_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Previous KCI Score</label>
+        <summarizedField>Control_KCI_Lookup__c.Previous_Score__c</summarizedField>
+        <summaryForeignKey>Control_KCI_Lookup__c.Control__c</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Scoring_Update__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Scoring Update</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Total_KCI_Average_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Total KCI Average Score</label>
+        <summarizedField>Control_KCI_Lookup__c.Average_Score__c</summarizedField>
+        <summaryForeignKey>Control_KCI_Lookup__c.Control__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_KCI_Lookup_Records__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Total KCI Lookup Records</label>
+        <summaryFilterItems>
+            <field>Control_KCI_Lookup__c.Score__c</field>
+            <operation>notEqual</operation>
+            <value>0</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Control_KCI_Lookup__c.Control__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_KCI_Lookup_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Total KCI Lookup Score</label>
+        <summarizedField>Control_KCI_Lookup__c.Average_Score__c</summarizedField>
+        <summaryForeignKey>Control_KCI_Lookup__c.Control__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Previous_Average_KCI_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Total Previous Average KCI Score</label>
+        <summarizedField>Control_KCI_Lookup__c.Previous_Average_Score__c</summarizedField>
+        <summaryForeignKey>Control_KCI_Lookup__c.Control__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Previous_KCI_Lookup_Records__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total number of KCI Lookup Records that contain a previous score</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total number of KCI Lookup Records that contain a previous score</inlineHelpText>
+        <label>Total Previous KCI Lookup Records</label>
+        <summaryFilterItems>
+            <field>Control_KCI_Lookup__c.Previous_Score__c</field>
+            <operation>notEqual</operation>
+            <value>0</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Control_KCI_Lookup__c.Control__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+</CustomObject>

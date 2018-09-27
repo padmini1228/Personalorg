@@ -1,0 +1,32 @@
+<apex:page sideBar="false" showHeader="false">
+
+<head>
+	<apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'HelpPageStylesheet.css')}"/>
+</head>
+
+<div class="heading">
+    <div class="icon">&nbsp;</div>
+    <h2>Help Pages</h2>
+    <h1>Key Control Indicators</h1>
+</div>
+
+<div class="content">
+<p>KCIs are measurable indicators of effectiveness of the control. For example, a control on the way data is accessed might be associated with a KCI which measures the number of security violations over a 6 month period.</p>
+
+<p>The monitoring frequency records how often the KCI should be measured, whilst the threshold can be used to set an upper limit on the value being measured. A measurement above this threshold indicates the likelihood of an ineffective control.</p>
+
+<p>Use actions to record any activities resulting from the audit.</p>
+
+<br/>
+<br/>
+<br/>
+
+<h3 >Contact Details</h3>
+
+<p>
+For further support information, please contact your local administrator.</p>
+
+
+    <div class="clear"></div>
+</div>
+</apex:page>

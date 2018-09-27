@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Bar_Colour__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(Score__c == 1, &apos;#008D36&apos;, 
+IF(Score__c == 2, &apos;#F6A316&apos;, 
+IF(Score__c == 3, &apos;#FF0000&apos;,&apos;#CCCCCC&apos; 
+)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Bar Colour</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Column_Display_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(TEXT(Metric__r.Monitoring_Frequency__c) == &apos;Daily&apos;,TEXT(DAY(Date__c))&amp;&apos;/&apos;&amp;TEXT(MONTH(Date__c))&amp;&apos;/&apos;&amp;TEXT(YEAR(Date__c)),
+	IF(TEXT(Metric__r.Monitoring_Frequency__c) == &apos;Weekly&apos;,&apos;Week &apos;&amp;TEXT(Week__c),
+		IF(TEXT(Metric__r.Monitoring_Frequency__c) == &apos;Monthly&apos;, CASE(MONTH(Date__c),
+																1, &quot;January&quot;,
+																2, &quot;February&quot;,
+																3, &quot;March&quot;,
+																4, &quot;April&quot;,
+																5, &quot;May&quot;,
+																6, &quot;June&quot;,
+																7, &quot;July&quot;,
+																8, &quot;August&quot;,
+																9, &quot;September&quot;,
+																10, &quot;October&quot;,
+																11, &quot;November&quot;,
+																12, &quot;December&quot;,
+																&quot;None&quot;),
+			IF(TEXT(Metric__r.Monitoring_Frequency__c) == &apos;Quarterly&apos;, CASE(MONTH(Date__c),
+																1, &quot;Quarter 1&quot;,
+																2, &quot;Quarter 1&quot;,
+																3, &quot;Quarter 1&quot;,
+																4, &quot;Quarter 2&quot;,
+																5, &quot;Quarter 2&quot;,
+																6, &quot;Quarter 2&quot;,
+																7, &quot;Quarter 3&quot;,
+																8, &quot;Quarter 3&quot;,
+																9, &quot;Quarter 3&quot;,
+																10, &quot;Quarter 4&quot;,
+																11, &quot;Quarter 4&quot;,
+																12, &quot;Quarter 4&quot;,
+																&quot;None&quot;),
+				IF(TEXT(Metric__r.Monitoring_Frequency__c) == &apos;Annually&apos;,TEXT(YEAR(Date__c)),&apos;&apos;										
+		)))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Column Display Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Column_Series_Data__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Column_Display_Name__c&amp;&apos;,&apos;&amp;TEXT(Value__c)&amp;&apos;,&apos;&amp;
+IF(Score__c == 1, &apos;#008D36&apos;,
+	IF(Score__c == 2, &apos;#F6A316&apos;,
+		IF(Score__c == 3, &apos;#FF0000&apos;,&apos;#CCCCCC&apos;
+		)))&amp;&apos;,&apos;&amp;LOWER(TEXT(Metric__r.Metric_Type__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Column Series Data</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comment__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>32768</length>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Currency_Value__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Currency Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Date_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Date/Time</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>DATEVALUE(Date_Time__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Metric__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Metric</label>
+        <referenceTo>Metric__c</referenceTo>
+        <relationshipLabel>Metric Results</relationshipLabel>
+        <relationshipName>Metric_Results</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Month__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Month(Date__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Month</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Qualitative_Value__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Qualitative Value</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quarter__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>CASE(MONTH(Date__c),
+	 1, 	1,
+	 2, 	1, 
+	 3, 	1, 
+	 4, 	2, 
+	 5, 	2, 
+	 6, 	2, 
+	 7, 	3, 
+	 8, 	3, 
+	 9, 	3, 
+	 10, 	4, 
+	 11, 	4,
+	 12, 	4,
+ 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Quarter</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(NOT(Metric__r.Use_Yellow_Threshold__c),IF(Score__c=3, IMAGE(&apos;/resource/&apos;+ $Setup.Metric_Settings__c.Namespace_Prefix__c +&apos;MetricManager/Images/Red.png&apos;, &apos;Red&apos;,30,100),
+IF(Score__c=2,IMAGE(&apos;/resource/&apos;+$Setup.Metric_Settings__c.Namespace_Prefix__c +&apos;MetricManager/Images/Amber.png&apos;, &apos;Amber&apos;,30,100),
+IF(Score__c=1,IMAGE(&apos;/resource/&apos;+$Setup.Metric_Settings__c.Namespace_Prefix__c +&apos;MetricManager/Images/Green.png&apos;, &apos;Green&apos;,30,100),
+IMAGE(&apos;/resource/&apos;+$Setup.Metric_Settings__c.Namespace_Prefix__c +&apos;MetricManager/Images/Grey.png&apos;, &apos;Grey&apos;,30,100)))),
+IF(Score__c=4, IMAGE(&apos;/resource/&apos;+ $Setup.Metric_Settings__c.Namespace_Prefix__c +&apos;MetricManager/Images/Red.png&apos;, &apos;Red&apos;,30,100), 
+IF(Score__c=3,IMAGE(&apos;/resource/&apos;+$Setup.Metric_Settings__c.Namespace_Prefix__c +&apos;MetricManager/Images/Amber.png&apos;, &apos;Amber&apos;,30,100), 
+IF(Score__c=2,IMAGE(&apos;/resource/&apos;+$Setup.Metric_Settings__c.Namespace_Prefix__c +&apos;MetricManager/Images/Yellow.png&apos;, &apos;Yellow&apos;,30,100), 
+IF(Score__c=1,IMAGE(&apos;/resource/&apos;+$Setup.Metric_Settings__c.Namespace_Prefix__c +&apos;MetricManager/Images/Green.png&apos;, &apos;Green&apos;,30,100), 
+IMAGE(&apos;/resource/&apos;+$Setup.Metric_Settings__c.Namespace_Prefix__c +&apos;MetricManager/Images/Grey.png&apos;, &apos;Grey&apos;,30,100)))))
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Rating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Score</label>
+        <precision>1</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Submitted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Submitted</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Value__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Week__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>FLOOR((((Date__c - DATE(YEAR(Date__c),01,01))+1)+(MOD(DATE(YEAR(Date__c),01,01) - DATE(1900, 01, 06), 7))-2)/7)+ IF((MOD((((Date__c - DATE(YEAR(Date__c),01,01))+1)+(MOD(DATE(YEAR(Date__c),01,01) - DATE(1900, 01, 06), 7))-2),7) == 0), 0, 1)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Week</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Year__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Year(Date__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Year</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Metric Result</label>
+    <nameField>
+        <displayFormat>Metric-R{0}</displayFormat>
+        <label>Metric Result No</label>
+        <trackHistory>true</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Metric Results</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

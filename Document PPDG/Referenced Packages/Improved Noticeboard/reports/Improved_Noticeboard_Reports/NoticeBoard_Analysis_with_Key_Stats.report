@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <block>
+        <blockInfo>
+            <blockId>B0</blockId>
+            <joinTable>x</joinTable>
+        </blockInfo>
+        <columns>
+            <aggregateTypes>Sum</aggregateTypes>
+            <field>NoticeBoard__c.TotalNotices__c</field>
+        </columns>
+        <filter>
+            <criteriaItems>
+                <column>CUST_NAME</column>
+                <operator>equals</operator>
+                <value>Channel Management,Company News,Facilities Management,Health and Safety,Product Management,Release Management,Sales Operations,Training &amp; Certification</value>
+            </criteriaItems>
+        </filter>
+        <format>Summary</format>
+        <name>Analysis</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>CustomEntity$NoticeBoard__c</reportType>
+        <scope>organization</scope>
+        <timeFrameFilter>
+            <dateColumn>CUST_CREATED_DATE</dateColumn>
+            <interval>INTERVAL_CUSTOM</interval>
+        </timeFrameFilter>
+    </block>
+    <block>
+        <blockInfo>
+            <blockId>B1</blockId>
+            <joinTable>fkx</joinTable>
+        </blockInfo>
+        <columns>
+            <field>CUST_NAME</field>
+        </columns>
+        <columns>
+            <aggregateTypes>Sum</aggregateTypes>
+            <field>Notice__c.SelectedRecipients__c</field>
+        </columns>
+        <columns>
+            <aggregateTypes>Sum</aggregateTypes>
+            <field>Notice__c.OpenedNotifications__c</field>
+        </columns>
+        <columns>
+            <aggregateTypes>Sum</aggregateTypes>
+            <field>Notice__c.AcknowledgedAndFlaggedNotifications__c</field>
+        </columns>
+        <format>Summary</format>
+        <name>Detailed Analysis</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>CustomEntity$Notice__c@Notice__c.NoticeBoard__c</reportType>
+        <scope>user</scope>
+        <timeFrameFilter>
+            <dateColumn>Notice__c.ApprovalRequestSubmittedDate__c</dateColumn>
+            <interval>INTERVAL_CUSTOM</interval>
+        </timeFrameFilter>
+    </block>
+    <blockInfo>
+        <blockId xsi:nil="true"/>
+        <joinTable>x</joinTable>
+    </blockInfo>
+    <format>MultiBlock</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>NoticeBoard Analysis with Key Stats</name>
+    <params>
+        <name>lsk</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$NoticeBoard__c</reportType>
+    <showDetails>false</showDetails>
+</Report>

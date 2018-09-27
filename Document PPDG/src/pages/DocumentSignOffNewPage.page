@@ -1,0 +1,118 @@
+<!-- C0733 - Task code - Created by Zensar -->
+<apex:page standardController="Case" showHeader="true" sidebar="true" extensions="DocumentSignOffController">
+
+<!--<style>  
+    .hideDropdown select{
+        visibility: hidden !important;
+        display: block !important;
+    }
+</style>-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ <script>
+  $(document).ready(function(){
+  $ = jQuery.noConflict();
+  $("[id$=mlktp]").hide();
+  });
+  </script>
+  
+  <script>
+        function confirmDisbaled(ifchecked, id1 ,id2) {
+            document.getElementById(id1).disabled = ifchecked;
+            document.getElementById(id2).disabled = ifchecked;
+            
+        }
+        </script>
+
+    <apex:form id="myForm">
+        <apex:pageBlock id="pgBlock" mode="New" title="New Case" >
+         <apex:pageMessages ></apex:pageMessages>
+            <apex:pageBlockButtons location="both">
+                <apex:commandButton value="Save" action="{!saveCase}" />
+            </apex:pageBlockButtons>
+           
+            <apex:pageBlockSection id="pgBlockSectionDescriptionInfo" title="Case Details" collapsible="false" columns="2">
+                <apex:pageBlockSectionItem >
+                <apex:outputLabel >Status</apex:outputLabel>
+                <apex:inputField id="caseStatus" value="{!case.Status}" />
+                </apex:pageBlockSectionItem>
+            
+                <apex:pageBlockSectionItem >
+                <apex:outputLabel >Previous Reference Number</apex:outputLabel>                    
+                <apex:inputField id="ppdgsignoff" value="{!case.ParentId}" />
+                </apex:pageBlockSectionItem>
+            
+                <apex:pageBlockSectionItem >
+                <apex:outputLabel >PPDG Sign Off</apex:outputLabel>                    
+                <apex:inputField value="{!case.PPDG_Sign_Off__c}" id="ppdg" >
+                
+                </apex:inputField>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                <apex:outputLabel >Document Change Sign Off</apex:outputLabel>                    
+                <apex:inputField value="{!case.Document_Change_Sign_Off__c}"  id="docsignoff" onchange="return confirmDisbaled(this.checked, {!$Component.ppdg})"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                <apex:outputLabel >Document Name</apex:outputLabel>                    
+                <apex:inputField id="docname" value="{!case.Subject}" />
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                <apex:outputLabel >Document Version</apex:outputLabel>                    
+                <apex:inputField id="caseSubject" value="{!case.Document_Version__c}" />
+                </apex:pageBlockSectionItem>
+                
+                                
+                <apex:pageBlockSectionItem >
+                <apex:outputLabel >Additional Recipient</apex:outputLabel>                    
+                <apex:inputField id="firstrecipient" styleClass="hideDropdown" value="{!case.Staff_member_at_fault2__c}" />
+                </apex:pageBlockSectionItem>
+                
+               
+                <apex:pageBlockSectionItem >
+                <apex:outputLabel >Additional Recipient</apex:outputLabel>                    
+                <apex:inputField id="secondrecipient" styleClass="hideDropdown" value="{!case.Staff_member_at_fault_2__c}" />
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                <apex:outputLabel >Additional Recipient</apex:outputLabel>                    
+                <apex:inputField id="thirdrecipient" styleClass="hideDropdown" value="{!case.Staff_member_at_fault_3__c}" />
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                <apex:outputLabel >Additional Recipient</apex:outputLabel>                    
+                <apex:inputField id="fourthrecipient" styleClass="hideDropdown" value="{!case.Staff_member_name__c}" />
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                <apex:outputLabel >SLA</apex:outputLabel>                    
+                <apex:inputField id="fourthrecipient" value="{!case.SLA__c}" />
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                <apex:outputLabel >Gone Live</apex:outputLabel>                    
+                <apex:inputField id="fourthrecipient" value="{!case.Gone_Live__c}" />
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                <apex:outputLabel >New Material or Major Amendment</apex:outputLabel>                    
+                <apex:inputField id="fourthrecipient" value="{!case.New_Material_or_Major_Amendment__c}" />
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                <apex:outputLabel >Minor Amendment</apex:outputLabel>                    
+                <apex:inputField id="fourthrecipient" value="{!case.Minor_Amendment__c}" />
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                <apex:outputLabel >PR or Social</apex:outputLabel>                    
+                <apex:inputField id="fourthrecipient" value="{!case.PR_or_Social__c}" />
+                </apex:pageBlockSectionItem>
+                
+            </apex:pageBlockSection>
+            
+        </apex:pageBlock>        
+    </apex:form>
+</apex:page>

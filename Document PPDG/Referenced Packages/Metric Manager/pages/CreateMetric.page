@@ -1,0 +1,60 @@
+<apex:page standardController="xmetric__Metric__c" extensions="xmetric.MetricController" showHeader="true" sidebar="true">
+    <apex:sectionHeader title="{!$Label.Home}" subtitle="{!IF(ISBLANK(xmetric__Metric__c.Id),$Label.New_Metric, xmetric__Metric__c.Name)}" />
+    <c:ProcessingStatus spinnerText="{!$Label.Saving}" />
+
+    <apex:form id="pbForm" >
+        <apex:actionFunction name="saveMetric" action="{!saveMetric}" status="processingStatus" reRender="pbForm, pbBlock"/>
+        <apex:actionFunction name="saveActivate" action="{!saveAndActivateMetric}" status="processingStatus" rendered="{!NOT(ISBLANK(xmetric__Metric__c.xmetric__Metric_Type__c)) && NOT(xmetric__Metric__c.xmetric__Active__c)}" reRender="pbForm, pbBlock"/>
+        <apex:actionFunction name="saveDeactive" action="{!saveAndActivateMetric}" status="processingStatus" rendered="{!NOT(ISBLANK(xmetric__Metric__c.xmetric__Metric_Type__c)) && xmetric__Metric__c.xmetric__Active__c}" reRender="pbForm, pbBlock"/>
+        
+        <apex:pageBlock title="{!IF(ISBLANK(xmetric__Metric__c.Id), $Label.New,$Label.Edit)} {!$ObjectType.xmetric__Metric__c.Label}" id="pbBlock" >
+            <apex:pageBlockButtons >
+                <apex:commandButton value="{!$Label.Save_Metric}" onclick="saveMetric();" reRender="pbForm, pbBlock" />
+                <apex:commandButton value="{!$Label.Save_and_Activate}" onclick="saveActivate();" reRender="pbForm, pbBlock" rendered="{!NOT(ISBLANK(xmetric__Metric__c.xmetric__Metric_Type__c)) && NOT(xmetric__Metric__c.xmetric__Active__c)}" />
+                <apex:commandButton value="{!$Label.Save_and_Deactivate}" onclick="saveDeactive();" reRender="pbForm, pbBlock" rendered="{!NOT(ISBLANK(xmetric__Metric__c.xmetric__Metric_Type__c)) && xmetric__Metric__c.xmetric__Active__c}" />
+                <apex:commandButton value="{!$Label.Cancel}" action="{!cancel}" />
+            </apex:pageBlockButtons>
+
+            <!-- Metric Detail -->
+            <apex:pageBlockSection title="{!$ObjectType.xmetric__Metric__c.Label} Detail" collapsible="true" columns="2" >
+                <apex:repeat value="{!$ObjectType.xmetric__Metric__c.fieldSets.xmetric__Metric_Detail}" var="field" >
+                    <apex:inputField value="{!xmetric__Metric__c[field]}" rendered="{!field != metricThreshold && field != useYellowThreshold && field != metricType}" />
+                    <apex:inputField value="{!xmetric__Metric__c[field]}" rendered="{!(field == metricThreshold || field == metricType)}" >
+                        <apex:actionSupport status="processingStatus" event="onchange" rerender="pbForm, pbBlock" />
+                    </apex:inputField>
+
+                    <apex:inputField value="{!xmetric__Metric__c[field]}" rendered="{!(field == useYellowThreshold && xmetric__Metric__c.xmetric__Type__c != 'KPI')}" >
+                        <apex:actionSupport status="processingStatus" event="onchange" rerender="pbForm, pbBlock" />
+                    </apex:inputField>
+                </apex:repeat>
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection >
+            <apex:pageBlockSectionItem />
+            <apex:inputField value="{!xmetric__Metric__c.xmetric__Data_Source__c}" >
+                    <apex:actionSupport status="processingStatus" event="onchange" rerender="pbForm, pbBlock" />
+                </apex:inputField> 
+                <apex:pageBlockSectionItem />
+                <apex:inputField style="align: right" value="{!xmetric__Metric__c.xmetric__Data_Feed__c}" rendered="{!xmetric__Metric__c.xmetric__Data_Source__c == 'Automatic'}" /> 
+            </apex:pageBlockSection>
+            
+            
+            <!-- Threshold Section -->
+            <apex:pageBlockSection title="{!$Label.Threshold_Detail}" collapsible="false" columns="1" rendered="{!NOT(ISBLANK(xmetric__Metric__c.xmetric__Metric_Type__c))}" >
+                <apex:inputField value="{!xmetric__Metric__c.xmetric__Yellow_Threshold__c}" rendered="{!(xmetric__Metric__c.xmetric__Metric_Type__c == 'Number' || xmetric__Metric__c.xmetric__Metric_Type__c == 'Percentage') && xmetric__Metric__c.xmetric__Use_Yellow_Threshold__c && xmetric__Metric__c.xmetric__Type__c != 'KPI'}" />
+                <apex:inputField value="{!xmetric__Metric__c.xmetric__Amber_Threshold__c}" rendered="{!xmetric__Metric__c.xmetric__Metric_Type__c == 'Number' || xmetric__Metric__c.xmetric__Metric_Type__c == 'Percentage'}" />
+                <apex:inputField value="{!xmetric__Metric__c.xmetric__Red_Threshold__c}" rendered="{!(xmetric__Metric__c.xmetric__Metric_Type__c == 'Number' || xmetric__Metric__c.xmetric__Metric_Type__c == 'Percentage') && xmetric__Metric__c.xmetric__Type__c != 'KPI'}" />
+                <apex:inputField value="{!xmetric__Metric__c.xmetric__Target__c}" rendered="{!(xmetric__Metric__c.xmetric__Metric_Type__c == 'Number' || xmetric__Metric__c.xmetric__Metric_Type__c == 'Percentage') && xmetric__Metric__c.xmetric__Type__c == 'KPI'}" />
+
+                <apex:inputField value="{!xmetric__Metric__c.xmetric__Yellow_Currency_Threshold__c}" rendered="{!xmetric__Metric__c.xmetric__Metric_Type__c == 'Currency' && xmetric__Metric__c.xmetric__Use_Yellow_Threshold__c && xmetric__Metric__c.xmetric__Type__c != 'KPI'}" />
+                <apex:inputField value="{!xmetric__Metric__c.xmetric__Amber_Currency_Threshold__c}" rendered="{!xmetric__Metric__c.xmetric__Metric_Type__c == 'Currency'}"/>
+                <apex:inputField value="{!xmetric__Metric__c.xmetric__Red_Currency_Threshold__c}" rendered="{!xmetric__Metric__c.xmetric__Metric_Type__c == 'Currency' && xmetric__Metric__c.xmetric__Type__c != 'KPI'}" />
+                <apex:inputField value="{!xmetric__Metric__c.xmetric__Target_Currency__c}" rendered="{!xmetric__Metric__c.xmetric__Metric_Type__c == 'Currency' && xmetric__Metric__c.xmetric__Type__c == 'KPI'}" />
+                <apex:inputField value="{!xmetric__Metric__c.xmetric__Green_Threshold_Text__c}" rendered="{!xmetric__Metric__c.xmetric__Metric_Type__c == 'Qualitative'}" />
+                <apex:inputField value="{!xmetric__Metric__c.xmetric__Yellow_Threshold_Text__c}" rendered="{!xmetric__Metric__c.xmetric__Metric_Type__c == 'Qualitative' && xmetric__Metric__c.xmetric__Use_Yellow_Threshold__c}" />
+                <apex:inputField value="{!xmetric__Metric__c.xmetric__Amber_Threshold_Text__c}" rendered="{!xmetric__Metric__c.xmetric__Metric_Type__c == 'Qualitative'}" />
+                <apex:inputField value="{!xmetric__Metric__c.xmetric__Red_Threshold_Text__c}" rendered="{!xmetric__Metric__c.xmetric__Metric_Type__c == 'Qualitative'}" />
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

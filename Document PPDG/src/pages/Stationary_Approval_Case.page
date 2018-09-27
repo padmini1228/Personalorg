@@ -1,0 +1,23 @@
+<!-- C0731 - Created by Zensar -->
+
+<apex:page Standardcontroller="Case" extensions="ProcessInstanceController" tabStyle="Case" >
+   <div>
+   <apex:form >
+ 
+   <center>  
+       <apex:outputPanel rendered="{!IF((Case.Status == 'Awaiting Approval' && Case.Approximate_Current_Budget_del__c <= 0) , true, false)}" layout="none">
+       <h1 style="color:red;font-size: 14px;"> You have exceeded your budget. Do you wish to continue?</h1>
+       
+       <br/><br/>
+       
+       <apex:commandButton value="Approve" action="{!approve}"  styleClass="buttonStyle">
+       </apex:commandButton>
+        
+       <apex:commandButton value="Decline" action="{!reject}" styleClass="buttonStyle" />
+       <apex:pageMessages id="showmsg"></apex:pageMessages>
+       </apex:outputPanel>
+    </center>
+  
+   </apex:form>
+   </div>
+</apex:page>

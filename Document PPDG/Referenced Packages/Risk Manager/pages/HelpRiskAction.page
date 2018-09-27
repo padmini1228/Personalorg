@@ -1,0 +1,28 @@
+<apex:page sideBar="false" showHeader="false">
+
+<head>
+	<apex:stylesheet value="{!URLFOR($Resource.Risk__RiskManagerStyles, 'HelpPageStylesheet.css')}"/>
+</head>
+
+<div class="heading">
+<div class="icon">&nbsp;</div>
+    <h2>Help Pages</h2>
+    <h1>Risk Actions</h1>
+</div>
+
+<div class="content">
+<p>Use Actions to keep track of the actions you put in place to mitigate a risk.</p>
+<p>Actions can be assigned to specific contacts or users and can also be populated with information about the action to be undertaken, its cost, and when it should be completed by.</p>
+<p>Use the Activities related list to create specific Tasks and Events that are related to the Action.</p>
+<br/>
+<br/>
+<br/>
+
+
+<h3 >Contact Details</h3>
+
+<p>
+For further support information, please contact your local administrator.</p>
+<div class="clear"></div>
+</div>
+</apex:page>

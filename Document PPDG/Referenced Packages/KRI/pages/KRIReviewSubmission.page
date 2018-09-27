@@ -1,0 +1,12 @@
+<apex:page standardController="Risk__KRI_Review__c" extensions="KRI.KRIReviewSubmissionController"> 
+<apex:form >
+ <apex:pageBlock >
+ 	<apex:pageMessages />
+ 	 <apex:pageBlockButtons >
+     	<apex:commandButton value="Back to Reviews" action="{!URLFOR($Action.Risk__KRI_Review__c.view, Review.id)}"/>
+     	<apex:commandButton value="Yes" action="{!submit}" rendered="{!Review.Risk__Submitted__c}"/>
+     	<apex:commandButton value="Cancel" action="{!URLFOR($Action.Risk__KRI_Review__c.View, Review.id)}"/>
+     </apex:pageBlockButtons>
+ </apex:pageBlock>
+ </apex:form>
+</apex:page>
